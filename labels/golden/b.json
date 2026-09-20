@@ -1,0 +1,202 @@
+{
+  "gp:55cfe709-0af": {
+    "category": "refund_request",
+    "secondary_categories": ["trial_converted"],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "Asks for the money back on a charge that has just landed, and the edit says the support address they were sent to has not replied - so pointing them there again would repeat what failed.",
+    "confidence": 0.6
+  },
+  "gp:bf7ca7c9-f1e": {
+    "category": "trial_converted",
+    "secondary_categories": ["refund_request"],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Debited without ever having a consultation or using the three free minutes, and asks how to get a refund; no store is named.",
+    "confidence": 0.6
+  },
+  "as:13540954035": {
+    "category": "unauthorized_charge",
+    "secondary_categories": ["refund_request", "pricing_unclear"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "77.30 went through Apple Pay without the usual Face ID and without a confirmation step, moments after an accepted 1-dollar charge, so it renewed nothing. A 50% settlement was refused and Consumer Affairs is named.",
+    "confidence": 0.7
+  },
+  "gp:1fd14cb2-984": {
+    "category": "cancellation_failed",
+    "secondary_categories": [],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "Wants to cancel before any further charge and cannot work out how; nothing is disputed yet, so the answer is the cancellation route.",
+    "confidence": 0.6
+  },
+  "as:14369349630": {
+    "category": "unauthorized_charge",
+    "secondary_categories": ["trial_converted", "refund_request"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "29.99 was taken immediately alongside the 1-dollar trial, which renews nothing, and 49.99 followed seven days later with no notice. Cancellation and a full refund are demanded.",
+    "confidence": 0.6
+  },
+  "as:14450344254": {
+    "category": "trial_converted",
+    "secondary_categories": ["unauthorized_charge"],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "Three months of charges followed a 1-dollar trial, but support refunded them quickly once contacted; what remains is an accusation about the pattern, not an open case.",
+    "confidence": 0.65
+  },
+  "as:14000315965": {
+    "category": "trial_converted",
+    "secondary_categories": ["refund_request", "unauthorized_charge"],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "1 euro for a sketch, then 42.99 on the card with no further use of the app - the converted-trial pattern - and a refund is requested. No store is named.",
+    "confidence": 0.65
+  },
+  "as:14056071581": {
+    "category": "trial_converted",
+    "secondary_categories": ["service_not_delivered", "unauthorized_charge"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Paid 1 pound for quiz results that never arrived, was subscribed unknowingly, and the 50-pound attempt was blocked by the bank as fraudulent - which puts an institution in the case.",
+    "confidence": 0.65
+  },
+  "gp:2835ec28-9d3": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["refund_request"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled, unsubscribed and deleted the app, and the charges continue - the documented route has already been followed.",
+    "confidence": 0.7
+  },
+  "as:14550479655": {
+    "category": "trial_converted",
+    "secondary_categories": ["refund_request", "unauthorized_charge"],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "1 dollar for an advertisement followed seven days later by 51 automatically - the converted-trial pattern - with a demand for a full refund and no store named.",
+    "confidence": 0.65
+  },
+  "gp:3e7e2275-b5e": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["refund_request", "trial_converted"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Believed the subscription ended last year and was billed for months afterwards; the app shows no subscription status and the support bot answers nothing.",
+    "confidence": 0.7
+  },
+  "gp:e18e8473-db4": {
+    "category": "cancellation_failed",
+    "secondary_categories": [],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "Misread what the app was and wants out; no charge is disputed, the only thing missing is where to cancel.",
+    "confidence": 0.6
+  },
+  "gp:1e7e13aa-1c9": {
+    "category": "trial_converted",
+    "secondary_categories": ["data_privacy", "unauthorized_charge"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "50 dollars keeps being taken after a single 1-dollar question, the stored debit card cannot be removed, and the bank is being asked to cancel the card.",
+    "confidence": 0.65
+  },
+  "gp:acae8516-ecf": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["unauthorized_charge"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "SGD 63.50 taken for the second time with no way to unsubscribe, so the charge is repeating and the writer cannot stop it.",
+    "confidence": 0.65
+  },
+  "as:13277034138": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["refund_request"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Followed the in-app cancellation directions, the bot confirmed it, and 45 was charged a month later anyway - the documented route has demonstrably failed.",
+    "confidence": 0.75
+  },
+  "gp:8e3810f3-e94": {
+    "category": "trial_converted",
+    "secondary_categories": ["refund_request", "unauthorized_charge"],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "1 dollar on 17 October became 43.99 on 30 October with no subscription applied for, and the question is how to get it back. No store is named.",
+    "confidence": 0.65
+  },
+  "as:14322764387": {
+    "category": "trial_converted",
+    "secondary_categories": ["refund_request", "pricing_unclear"],
+    "priority": "2",
+    "next_step": "process_refund",
+    "rationale": "A free trial ended as an annual plan that was never intended; Apple declined the request because it went through a third party, which names the rail Nebula can refund itself.",
+    "confidence": 0.65
+  },
+  "gp:a9836e23-588": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["refund_request"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "49.99 taken two months running with the subscription absent from the store list, so it cannot be cancelled, and the writer says it is money they cannot afford to lose.",
+    "confidence": 0.7
+  },
+  "as:14518204004": {
+    "category": "trial_converted",
+    "secondary_categories": ["pricing_unclear"],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "A 1-dollar Soulmate offer carried a 49.99 renewal that was not made obvious, but support has already refunded it in full and confirmed the cancellation.",
+    "confidence": 0.7
+  },
+  "as:13254291446": {
+    "category": "refund_request",
+    "secondary_categories": ["unauthorized_charge"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "The purchase was made by a 73-year-old with Alzheimer's, PayPal closed its claim over a week ago, and the refund is still being withheld from someone on a fixed low income who cannot buy medication.",
+    "confidence": 0.8
+  },
+  "gp:eede1f7d-7fe": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["refund_request"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled and never used it, and the charges keep being attempted - the attempts are ongoing, not a single charge to reverse.",
+    "confidence": 0.65
+  },
+  "gp:44d651fb-41a": {
+    "category": "pricing_unclear",
+    "secondary_categories": ["refund_request", "unauthorized_charge"],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Charged 13.67 reais and then nearly 80 after a conversion into dollars, which is not the amount that was presented; a refund is demanded.",
+    "confidence": 0.55
+  },
+  "gp:267d293f-a16": {
+    "category": "pricing_unclear",
+    "secondary_categories": ["content_quality"],
+    "priority": "3",
+    "next_step": "send_kb_article",
+    "rationale": "Paying a subscription and still being charged for individual sections is the complaint; no charge is disputed and what a subscription includes is documented.",
+    "confidence": 0.6
+  },
+  "gp:d8080fd8-fc2": {
+    "category": "cancellation_failed",
+    "secondary_categories": ["unauthorized_charge"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A failed charge of 148,000 pesos is pending on a service never used, and the subscription appears neither in the Play Store nor in the account, so there is nothing to cancel.",
+    "confidence": 0.65
+  },
+  "as:13611286141": {
+    "category": "unauthorized_charge",
+    "secondary_categories": ["cancellation_failed"],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Over 50 dollars taken every month with no active subscription and no use of the app for months, so nothing is being renewed.",
+    "confidence": 0.7
+  }
+}

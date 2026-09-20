@@ -7750,7 +7750,7 @@
       "reviewId": "e7e677d6-45eb-460b-8374-5e5ed5ff2a15",
       "score": 1,
       "content": "Je recommande pas c'est de la ... Il ont pris au dessus 200 $ sur ma carte de crédit",
-      "reply": "Hello [Name],\nWelcome to Nebula’s support 🔮 I am Bella and I am here to help!\nWe apologize for the issue you have experienced. We strive to provide a satisfactory experience for all our users. Please contact us via support@asknebula.com email so we can assist you further.",
+      "reply": "Hello [Name],\nWelcome to Nebula’s support 🔮 I am [Agent] and I am here to help!\nWe apologize for the issue you have experienced. We strive to provide a satisfactory experience for all our users. Please contact us via support@asknebula.com email so we can assist you further.",
       "at": "2024-07-06 21:55:56",
       "repliedAt": "2024-07-07 23:49:22",
       "version": "4.8.46",

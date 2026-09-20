@@ -1,0 +1,112 @@
+{
+  "as:14252277944": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "pricing_unclear",
+      "trial_converted"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "A three-day free trial was displayed and 363 RMB was taken on download instead; Apple has already refused the refund and Nebula answered only \"we'll look into it\", so repeating the Apple route would be the instruction that already failed.",
+    "confidence": 0.6
+  },
+  "as:14133480377": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed"
+    ],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "The trial auto-converted and was debited, but the writer cancelled in-app despite the English-only flow and then also killed the PayPal automatic payment, so nothing is moving and no refund is asked for.",
+    "confidence": 0.8
+  },
+  "as:14312098923": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "unauthorized_charge"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Deductions are still running after the app was deleted and every cancellation route was tried, so money is moving and the writer cannot stop it by any documented path.",
+    "confidence": 0.65
+  },
+  "gp:d531010e-e31": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "cancellation_failed",
+      "service_not_delivered",
+      "trial_converted",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "The $1 sketch purchase carried a separate $29.99 charge on the same day as the download rather than a later renewal, the sketch never arrived, and hours of searching found no cancel/refund tab, so the subscription is still running.",
+    "confidence": 0.55
+  },
+  "gp:fc04bcca-56d": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Told it was free, money was taken and a refund is demanded; no amount, repetition or store is named, so the first action is to establish where it was bought and the fury does not raise the priority.",
+    "confidence": 0.6
+  },
+  "gp:f21ba9eb-0b2": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Wants back a single credit-card charge called absurd and abusive after misleading advertising; the credit card is not a purchase rail and Play Store is mentioned only as the app's distributor, so the store must be asked for, and the demand for a reply in Portuguese is a handling flag, not the subject.",
+    "confidence": 0.6
+  },
+  "as:14011743614": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "cancellation_failed",
+      "trial_converted"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "42.99 euros was debited after the writer had already unsubscribed, and the refund request was answered by pointing at PayPal, so the documented route was followed and failed and one bounded charge is owed back.",
+    "confidence": 0.6
+  },
+  "gp:72e76b58-33a": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "unauthorized_charge",
+      "pricing_unclear"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "1 euro became an automatic 46 euro payment a week later, which is the converted-trial pattern whatever \"nobody authorised\" says, and a formal dispute has just been opened while the subscription is still unstopped.",
+    "confidence": 0.7
+  },
+  "gp:1cf837ac-86a": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "cancellation_failed"
+    ],
+    "priority": "1",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Only the free subscription was ordered yet money was debited repeatedly; the repetition, not the threat of legal consequences, is what makes it priority 1, and no store is named so the rail must be established before any refund can move.",
+    "confidence": 0.6
+  },
+  "gp:8f7008e4-4ca": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "service_not_delivered",
+      "trial_converted",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "$78 (over 2,000 lira) was taken from the credit card after the writer had deleted the account and removed the app, the $0.50 soulmate sketch never arrived in 8 days, and the police are named.",
+    "confidence": 0.65
+  }
+}

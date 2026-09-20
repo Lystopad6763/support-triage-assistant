@@ -263,6 +263,42 @@ SELF_NAME = re.compile(
     re.UNICODE,
 )
 
+# "Hello, I'm Tuan Anh." A bare "I'm" is a much weaker cue than "my name is",
+# and it was missing: three real names sat in the corpus behind it, one of them
+# in the published golden set. It cannot simply be added to the cue list above,
+# because on this corpus the word after a self-introduction is far more often a
+# nationality, a zodiac sign or a mood than a person - of 21 capitalised words
+# following one, three are people. So the weak cue is allowed and the tail is
+# checked against a stop list instead.
+_SELF_INTRO = r"i[’']m|i\s+am|this\s+is|my\s+name[’']s"
+
+NOT_A_SELF_NAME = {
+    # nationalities and demonyms, the commonest thing to follow "I am"
+    "american", "australian", "brazilian", "british", "canadian", "chinese",
+    "colombian", "dutch", "english", "filipino", "french", "german", "greek",
+    "indian", "indonesian", "irish", "italian", "japanese", "korean", "mexican",
+    "nigerian", "polish", "portuguese", "romanian", "russian", "scottish",
+    "spanish", "swedish", "thai", "turkish", "ukrainian", "vietnamese",
+    # faiths, which read exactly the same way
+    "atheist", "buddhist", "catholic", "christian", "hindu", "jewish", "muslim",
+    # zodiac signs: this corpus is made of them
+    "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio",
+    "sagittarius", "capricorn", "aquarius", "pisces",
+    # states of mind and verdicts observed following the cue in this corpus
+    "angry", "aware", "awesome", "bad", "bait", "confused", "correct", "disabled",
+    "disappointed", "done", "entertaining", "fine", "furious", "good", "happy",
+    "lost", "magical", "more", "pretty", "sketchy", "sorry", "sure", "tired",
+    "trap", "unable", "upset",
+    # verbs that a capital letter at the start of a sentence lets through
+    "call", "doing", "going", "making", "saying", "trying", "writing",
+}
+
+SELF_INTRO_NAME = re.compile(
+    rf"\b((?i:{_SELF_INTRO}))([ \t]+)"
+    rf"((?:[^\W\d_a-zà-ÿ]{_NAME_CHARS}{{1,20}}[ \t]*){{1,2}})",
+    re.UNICODE,
+)
+
 # "Onay Kodu: 822468" — a Turkish reviewer pasted a live confirmation code into
 # a public review. A short digit run behind a code cue is never something the
 # dataset needs, and may be something a reader could use.
@@ -479,6 +515,25 @@ def _swap_tail(match: re.Match, placeholder: str = "[Name]") -> str:
     return f"{lead_in}{gap}{tail[:start]}{placeholder}{tail[end:]}"
 
 
+def _swap_self_intro(match: re.Match, placeholder: str = "[Name]") -> str:
+    """Take the tail of a weak self-introduction only when it looks like a name.
+
+    "I'm Tuan Anh" is a person. "I'm Brazilian", "I'm Capricorn" and "this is
+    Sketchy" are not, and redacting any of them would destroy the content the
+    dataset exists to carry.
+
+    The placeholder depends on who is speaking: in a review the self-introducer
+    is the customer, in a support reply it is the agent.
+    """
+    words = match.group(3).split()
+    if not words:
+        return match.group(0)
+    first = words[0].lower().strip(".,!?;:'’")
+    if first in NOT_A_SELF_NAME:
+        return match.group(0)
+    return _swap_tail(match, placeholder)
+
+
 def _redact_signature(text: str, signer: str) -> str:
     """Replace a signed-off name and any "X from Nebula" mention.
 
@@ -545,6 +600,12 @@ def redact_reply(text: str) -> str:
             break
         text = stripped
     text = HONORIFIC_NAME.sub(_swap_tail, text)
+    # "Welcome to Nebula's support, I'm Barb, and I'm here to help." Five
+    # replies introduce the agent this way, and the signature pass cannot see
+    # it: the name is in the opening line, not at the foot. In a reply the
+    # person introducing themselves is the agent, so the placeholder differs.
+    text = SELF_INTRO_NAME.sub(
+        lambda m: _swap_self_intro(m, placeholder="[Agent]"), text)
     text = _redact_advisors(text)
     return _redact_signature(text, "[Agent]")
 
@@ -584,6 +645,7 @@ def redact_review(text: str) -> str:
         return match.group(0)
 
     text = SELF_NAME.sub(_swap_tail, text)
+    text = SELF_INTRO_NAME.sub(_swap_self_intro, text)
     text = SOCIAL_HANDLE.sub(swap_handle, text)
     text = BIRTH_TIME.sub(swap_birth("[BirthTime]"), text)
     text = BIRTH_DATE.sub(swap_birth("[BirthDate]"), text)
@@ -667,6 +729,20 @@ AUDIT = {
     "self-name": (
         re.compile(rf"(?:{_MY_NAME_IS})[ \t]+{_WINDOW}", re.I),
         SENTENCE_STARTERS | _NOT_PEOPLE, True),
+    # A separate detector rather than an extra cue in the one above: the audit
+    # has to be able to SEE a weak self-introduction even if the redaction's
+    # stop list is wrong about it, which is the whole point of keeping the two
+    # sides independent.
+    # Its own narrow window rather than the shared four-token one. A weak cue
+    # with a wide window produced 253 findings on this corpus - "SCAM", "I've",
+    # "TOTAL" - and an audit nobody can read is an audit nobody reads. Requiring
+    # a capitalised word with lower-case letters after it drops the shouting and
+    # the contractions while keeping every actual name.
+    "self-intro": (
+        re.compile(rf"(?i:{_SELF_INTRO})[ \t]+"
+                   r"([A-Z][a-zà-ÿ’'\-]{2,19}"
+                   r"(?:[ \t]+[A-Z][a-zà-ÿ’'\-]{1,19})?)"),
+        SENTENCE_STARTERS | _NOT_PEOPLE | NOT_A_SELF_NAME, True),
     "confirmation-code": (
         re.compile(r"(?:onay kodu|do[ğg]rulama kodu|verification code|"
                    r"confirmation code|security code|c[óo]digo|otp)"
@@ -769,6 +845,12 @@ SELF_TEST = [
     ("We are glad Luna’s reading resonated.", "Luna", "reply"),
     ("Warm regards,\nMichael", "Michael", "reply"),
     ("my name is Karen Alomia and I have a problem.", "Karen", "review"),
+    # Found while labelling the golden set, in a row already published.
+    ("Hello, I'm Tuan Anh.\nI have an urgent issue.", "Tuan", "review"),
+    ("hi, i am Tammy and I was charged twice", "Tammy", "review"),
+    # An agent introducing themselves in the opening line of a reply.
+    ("Welcome to Nebula support. I’m Barb, and I’m here to help.",
+     "Barb", "reply"),
     ("Find me on Twitter @CleDonger, cheers.", "CleDonger", "review"),
     ("I was born on October 9, 2003 at 00:50 am.", "2003", "review"),
     ("I would like to recommend Mr Alvin. He is great.", "Alvin", "review"),
@@ -807,6 +889,12 @@ NO_CHANGE_TEST = [
     ("Dear User, hello there! Thank you.", "reply"),
     ("the history of astrology is long", "reply"),
     ("I was charged 1 star St for nothing.", "review"),
+    # The other side of the weak self-introduction cue: what follows it is
+    # usually not a person, and redacting these would destroy the content.
+    ("I'm Brazilian and they charged me twice.", "review"),
+    ("I am Thai and support only writes English.", "review"),
+    ("I’m Capricorn but the app says Sagittarius.", "review"),
+    ("still waiting for my sketch, this is Sketchy", "review"),
     # Two-word verdicts that end a review. Redacting these would destroy
     # content, and 40 of the 67 trailing candidates look exactly like this.
     ("The app is a joke. Absolute Nightmare", "review"),

@@ -862,7 +862,7 @@
       "text": "tidak ada pemberitahuan apapun tau tau saldo terpotong",
       "date": "2025-08-06T19:12:39Z",
       "is_edited": false,
-      "reply": "Hello [Name], \n\nWelcome to Nebula’s support 🔮\nI’m Barb, and I’m here to help. \n\nDuring the quiz and at checkout, we inform customers that a subscription begins with a trial when they order a reading.\n\nBefore your trial ended, we sent an email to the address you used when placing your readings order. The subject line is “How was your first week of astrological insights?” - it includes details about upcoming billing after the trial. \n\nThe amount paid covers the billing period of your subscription that renewed after the trial ended. \n\nIf you have any questions or need help with anything else, we’re here for you. \n\nRespectfully, \n[Agent] from Nebula Support Team 🔮",
+      "reply": "Hello [Name], \n\nWelcome to Nebula’s support 🔮\nI’m [Agent], and I’m here to help. \n\nDuring the quiz and at checkout, we inform customers that a subscription begins with a trial when they order a reading.\n\nBefore your trial ended, we sent an email to the address you used when placing your readings order. The subject line is “How was your first week of astrological insights?” - it includes details about upcoming billing after the trial. \n\nThe amount paid covers the billing period of your subscription that renewed after the trial ended. \n\nIf you have any questions or need help with anything else, we’re here for you. \n\nRespectfully, \n[Agent] from Nebula Support Team 🔮",
       "reply_date": "2025-08-09T07:24:33Z"
     },
     {

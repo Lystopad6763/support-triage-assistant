@@ -1,0 +1,534 @@
+{
+  "as:14252277944": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "trial_converted",
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "363 RMB was taken at download against a displayed three-day free trial, Apple has already refused the refund and Nebula's only reply was 'we'll look into it', so the documented route is exhausted and one charge remains to reverse.",
+    "confidence": 0.55
+  },
+  "as:14133480377": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed"
+    ],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "The trial auto-converted and was debited, but the writer found the in-app cancellation by translating the English, then also stopped the PayPal auto-payment - the case is closed by their own hand and the post is advice for others.",
+    "confidence": 0.65
+  },
+  "as:14312098923": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "unauthorized_charge"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Deductions are still running after the app was deleted and after cancellation was attempted 'by every method', and the auto-refill has no visible cancel route - money is moving and the documented route already failed.",
+    "confidence": 0.55
+  },
+  "gp:d531010e-e31": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request",
+      "service_not_delivered"
+    ],
+    "priority": "1",
+    "next_step": "ask_purchase_rail",
+    "rationale": "$1 for a soulmate sketch came with a simultaneous $29.99 charge, the sketch never arrived, and hours of searching found no cancel/refund tab - the explicit question is where to cancel and be refunded, and no store is named.",
+    "confidence": 0.6
+  },
+  "gp:fc04bcca-56d": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Told the app was free and then charged, the writer states one demand - a refund - with no amount, no recurring charge and no store named, so the rail must be asked before money can move.",
+    "confidence": 0.7
+  },
+  "gp:f21ba9eb-0b2": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Wants the credit-card charge returned after deceptive advertising; the Play Store is mentioned only as the host that allows the app, not as the purchase rail, and no amount is given, so the case is not clear enough to refund directly.",
+    "confidence": 0.65
+  },
+  "as:14011743614": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "Debited 42.99 EUR after already unsubscribing, and the refund request was deflected onto PayPal - they followed the documented route and were charged anyway, leaving one bounded charge to reverse.",
+    "confidence": 0.6
+  },
+  "gp:72e76b58-33a": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "pricing_unclear"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "1 EUR became an automatic 46 EUR payment a week later - a converted trial whatever the writer calls authorisation - and a payment dispute has already been opened.",
+    "confidence": 0.7
+  },
+  "gp:1cf837ac-86a": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request",
+      "trial_converted"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Ordered only the free subscription and cancelled immediately, yet amounts are debited continually, and legal consequences are named for the next one - money still moving plus stated legal exposure.",
+    "confidence": 0.65
+  },
+  "gp:8f7008e4-4ca": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "refund_request",
+      "service_not_delivered",
+      "trial_converted"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "$0.50 bought a soulmate drawing that never arrived, the account and app were deleted, and $78 (over 2,000 lira) was then taken from the credit card - a charge landing after deletion, with the police named if it is not returned.",
+    "confidence": 0.55
+  },
+  "gp:f509687c-69e": {
+    "category": "service_not_delivered",
+    "secondary_categories": [
+      "refund_request",
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "request_evidence",
+    "rationale": "Paid for a palm reading that never arrived and asks for that money back, so the missing deliverable is what support must verify first.",
+    "confidence": 0.65
+  },
+  "gp:1a5f3a36-2e5": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A 7.99 trial they did authorise became two 35.99 charges in two weeks, and the cancellation method shown in their Play Store account does not work, so the charging has not stopped.",
+    "confidence": 0.65
+  },
+  "gp:b04894fd-bff": {
+    "category": "other",
+    "secondary_categories": [],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "Unqualified praise with no request in it; a thank-you reply is owed and no work is queued.",
+    "confidence": 0.85
+  },
+  "as:12136193056": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "trial_converted",
+      "refund_request",
+      "advisor_conduct",
+      "pricing_unclear"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled the day after starting the free trial and was charged 60+ anyway, and support said it could find no subscription to cancel, so the yearly term they never agreed to is still live and unstoppable.",
+    "confidence": 0.55
+  },
+  "as:11918006893": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Two 39$ charges against an account whose only purchase was one 9$ chat, so neither is a renewal of anything agreed, and the writer deleted the account to make the charging stop after three weeks of silence from support.",
+    "confidence": 0.75
+  },
+  "gp:14528ce0-b72": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "unauthorized_charge",
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "A 1 dollar sketch payment they did make was followed by 29.99 for a subscription, which is a converted trial however the writer words it; one bounded charge to reverse and no store named.",
+    "confidence": 0.65
+  },
+  "gp:08385e3d-45b": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "pricing_unclear",
+      "refund_request",
+      "unauthorized_charge"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "Agreed to 1$ from an advert and was then charged 14$, so the money came from the offer they accepted; one charge to reverse, the app is already uninstalled, and no purchase rail is named.",
+    "confidence": 0.6
+  },
+  "gp:329c4dbd-da9": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "service_not_delivered",
+      "content_quality"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A 70-year-old who states they cannot afford the subscription has already found the self-serve cancellation too hard and asks Nebula to do it, and the soulmate sketch they paid for was never delivered.",
+    "confidence": 0.6
+  },
+  "gp:fa462cf6-83a": {
+    "category": "service_not_delivered",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "request_evidence",
+    "rationale": "Bought 80 credits for 9.99 and never received them, support claimed some were already spent without saying on what and then closed the ticket unanswered.",
+    "confidence": 0.7
+  },
+  "gp:9ffcf41c-33c": {
+    "category": "content_quality",
+    "secondary_categories": [
+      "cancellation_failed"
+    ],
+    "priority": "3",
+    "next_step": "guide_cancellation",
+    "rationale": "The two-page star sign reading was wrong where page one was right, and the cancellation is a demand with no charge disputed and no failed attempt described.",
+    "confidence": 0.5
+  },
+  "gp:5dcf0661-216": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed",
+      "service_not_delivered",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A $1 palmistry offer became a $26 two-week subscription, the cancellation link could not be found and customer service resolved nothing, so the recurring charge is still running.",
+    "confidence": 0.65
+  },
+  "as:12190236921": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "cancellation_failed",
+      "data_privacy",
+      "trial_converted",
+      "content_quality"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "39 euros was taken after the account and app were deleted and with nothing showing in the phone's subscriptions, and the writer still cannot log in to stop it.",
+    "confidence": 0.6
+  },
+  "as:7100042476": {
+    "category": "app_technical",
+    "secondary_categories": [],
+    "priority": "3",
+    "next_step": "send_kb_article",
+    "rationale": "After an update the app shows a pop-up on every feature, glitches and freezes on the loading image on current iPhone software; no money is mentioned and nothing is blocked.",
+    "confidence": 0.75
+  },
+  "as:12339183335": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "app_technical"
+    ],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "Credits were charged during an admitted technical glitch and, after the writer cited consumer law and bank routes, Nebula confirmed it will refund, so the money question is already settled.",
+    "confidence": 0.55
+  },
+  "gp:1ab36f69-034": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "app_technical"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "The website unsubscribe link is broken and the app freezes on the cancellation attempt while 39 per month keeps being charged, and the writer names suing; repeating the route that just failed is not an answer.",
+    "confidence": 0.7
+  },
+  "gp:fc7472ac-1c1": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request",
+      "service_not_delivered"
+    ],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "The $50 has not been taken yet and the writer's request is to cancel before it lands plus get the $1 back, so the cancellation route is the action.",
+    "confidence": 0.6
+  },
+  "as:13354574554": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "unauthorized_charge",
+      "pricing_unclear"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "A one-time $1 payment from an Instagram ad was followed a week later by $65 AUD: the fact pattern is a converted trial despite the wording, one bounded charge to reverse and no store named.",
+    "confidence": 0.7
+  },
+  "gp:955a8abf-f27": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "unauthorized_charge"
+    ],
+    "priority": "2",
+    "next_step": "ask_purchase_rail",
+    "rationale": "$1 paid for a one-time three-minute reading then an exorbitant debit after the app was deleted - the 1-dollar-to-subscription pattern - with one charge to reverse and no purchase rail stated.",
+    "confidence": 0.7
+  },
+  "gp:11b675dc-7bc": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed",
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "The $1 trial became a $45 charge with no subscription visible to cancel, and customer service has already answered with only refusals, so the charge is bounded but support has failed them.",
+    "confidence": 0.65
+  },
+  "as:14551516138": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "pricing_unclear"
+    ],
+    "priority": "1",
+    "next_step": "ask_purchase_rail",
+    "rationale": "A roughly $1 ad sign-up became $49.99 and was charged again after the app was deleted, so the billing is still recurring and unstopped; the refund needs a rail the ticket never names.",
+    "confidence": 0.6
+  },
+  "as:13613859375": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "pricing_unclear",
+      "unauthorized_charge"
+    ],
+    "priority": "1",
+    "next_step": "guide_cancellation",
+    "rationale": "A $50 charge is repeating every month and the writer's single stated demand is to cancel, but they cannot sign back into the old account and only get the signup ad again, so the recurring charge is unstoppable from their side.",
+    "confidence": 0.55
+  },
+  "gp:d4eafab3-834": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Two different amounts, $43 and $71, taken three days apart is not the renewal cycle of anything agreed to, and nothing indicates the billing has stopped.",
+    "confidence": 0.7
+  },
+  "gp:6b654831-ab0": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "USD 20.99 taken for four consecutive months while repeated checks show no subscription in the app, so there is no agreed subscription for the charges to be renewing and no visible way to stop the fifth.",
+    "confidence": 0.65
+  },
+  "gp:d42a2c2c-c6d": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "refund_request",
+      "unauthorized_charge"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "$5 paid for a survey reading became $67 debited a week later, the textbook converted-trial pattern, and the card is blocked with a bank dispute already open.",
+    "confidence": 0.7
+  },
+  "as:14492078493": {
+    "category": "refund_request",
+    "secondary_categories": [
+      "unauthorized_charge",
+      "cancellation_failed",
+      "data_privacy"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Asks for a full refund and written confirmation that recurring billing has stopped after already deleting the account, and states they will dispute with their bank if it is not resolved.",
+    "confidence": 0.6
+  },
+  "gp:5bcde7fc-cf4": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "service_not_delivered"
+    ],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "The in-app controls the instructions describe are not present, so the subscription cannot be ended; no charge is reported as taken and no refund is asked for.",
+    "confidence": 0.7
+  },
+  "gp:597f7476-722": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled five days ago with three confirmation emails from support and was still billed a full month today, the bank has flagged the merchant, and the support link sent led to a page not found, so repeating the cancellation instruction is what already failed.",
+    "confidence": 0.8
+  },
+  "gp:ea35c182-8ba": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "trial_converted",
+      "pricing_unclear"
+    ],
+    "priority": "1",
+    "next_step": "guide_cancellation",
+    "rationale": "Being billed for a subscription following a free trial with no cancel control found anywhere in the app, so the charge is recurring and unstoppable; they have searched only the app and not the purchase rail, so the route still needs to be given.",
+    "confidence": 0.6
+  },
+  "gp:773442e1-d66": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "trial_converted",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A one-time soulmate-sketch purchase turned into annual billing that keeps bouncing, costing three separate sets of bank reversal charges, and the writer asks Nebula itself to cancel because no cancellation method can be found.",
+    "confidence": 0.55
+  },
+  "gp:1f2146f8-5fb": {
+    "category": "cancellation_failed",
+    "secondary_categories": [],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "Repeats twice that they want the subscription cancelled and cannot work out how; no charge, amount or refund demand is mentioned, so the missing thing is the cancellation route.",
+    "confidence": 0.8
+  },
+  "gp:af7bdde4-21a": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "trial_converted",
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled before the trial ended and was still charged, and the near-50 charge repeats \"again and again\" after uninstalling, so the charges are recurring and unstoppable by the writer.",
+    "confidence": 0.55
+  },
+  "gp:76d080ff-04f": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "Followed the published cancellation instructions and was charged $61.00 anyway - one charge to reverse, and repeating the instruction that just failed is not an answer.",
+    "confidence": 0.75
+  },
+  "as:14543848514": {
+    "category": "unauthorized_charge",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "49.99 USD taken with no prior payment or trial described and auto-renewal denied outright, so the charge renews nothing the writer agreed to; a single bounded amount to reverse.",
+    "confidence": 0.6
+  },
+  "gp:764df98a-261": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "unauthorized_charge"
+    ],
+    "priority": "3",
+    "next_step": "acknowledge_and_close",
+    "rationale": "No cancellation option after the free trial and a daily GBP 0.94 debit, but the bank has already blocked future payments and refunded what was taken, so nothing is moving and nothing is asked of Nebula.",
+    "confidence": 0.6
+  },
+  "as:14304708630": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "unauthorized_charge",
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "Paid only for a one-off sketch and was then billed a subscription - the same small-purchase-then-subscription sequence the calibration treats as a converted trial - and the emailed refund request went unanswered.",
+    "confidence": 0.55
+  },
+  "gp:dcce2851-e69": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "trial_converted",
+      "refund_request"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "Cancelled on the last day of the trial and was charged $54 regardless: the documented route was followed and failed, leaving one bounded charge to reverse.",
+    "confidence": 0.7
+  },
+  "as:14161665940": {
+    "category": "pricing_unclear",
+    "secondary_categories": [
+      "trial_converted",
+      "content_quality"
+    ],
+    "priority": "3",
+    "next_step": "send_kb_article",
+    "rationale": "A warning to other readers that the first payment silently sets up a subscription with a direct-debit mandate - a transparency complaint with no amount, no date and no request, so no money is moving.",
+    "confidence": 0.7
+  },
+  "gp:c0c4abb2-9cc": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "unauthorized_charge"
+    ],
+    "priority": "2",
+    "next_step": "guide_cancellation",
+    "rationale": "No charge has landed yet - the writer wants to stop a future debit and cannot find any way to cancel, so the cancellation route is the answer they are missing.",
+    "confidence": 0.7
+  },
+  "gp:7983368e-950": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "refund_request"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "The subscription does not appear in Google Play so it cannot be stopped and will charge again, and PayPal is named as the next dispute channel.",
+    "confidence": 0.65
+  },
+  "as:13635950628": {
+    "category": "trial_converted",
+    "secondary_categories": [
+      "cancellation_failed",
+      "unauthorized_charge"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "A USD 0.50 birth chart reading became a monthly subscription already charged twice, and Nebula was told once already and billed again, so the collections are still running.",
+    "confidence": 0.75
+  }
+}
