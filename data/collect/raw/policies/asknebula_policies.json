@@ -9,25 +9,29 @@
       "id": "pol-01",
       "category": "Safety & Escalation",
       "title": "Situations Nebula advisors cannot support",
-      "url": "https://www.asknebula.com/app/safety-resources",
+      "url": "https://www.asknebula.com/trust-safety-center/safety-resources-and-support",
       "body": "Nebula is not a medical, psychological, psychiatric, legal, or crisis-intervention service. Advisors are not trained to assess risk, provide diagnoses, or offer guidance in situations that require emergency or professional care. Nebula psychics cannot offer insight or support for situations that require direct intervention, emergency response, or specialized professional care, including:\n• self-harm, suicidal thoughts, or threats to personal safety\n• emergency or life-threatening situations\n• medical or mental health conditions that require professional treatment or diagnosis\n• experiences of physical or psychological abuse, including domestic or sexual violence\n• addiction-related concerns, such as substance use or gambling, that require specialized support\n• legal matters, criminal activity, or decisions with legal consequences\n• financial decisions, investments, or gambling outcomes\n• interactions involving minors or situations that could place someone at risk\n\nIf a message touches on urgent safety concerns or serious harm, advisors may need to step back from the conversation. If you or someone you know feels unsafe, overwhelmed, or in danger, reach out to local emergency services or crisis support organizations.",
-      "operational_note": "This is the company's own do-not-automate list. Eight named situations, each observable in review text."
+      "operational_note": "This is the company's own do-not-automate list. Eight named situations, each observable in review text.",
+      "url_status": "verified"
     },
     {
       "id": "pol-02",
       "category": "Safety & Escalation",
-      "title": "Crisis support resources (United States)",
-      "url": "https://www.asknebula.com/app/safety-resources",
+      "title": "Crisis support resources, by country",
+      "url": "https://www.asknebula.com/trust-safety-center/safety-resources-and-support",
       "body": "Suicide and Crisis Lifeline — https://www.988lifeline.org/ — 1-800-273-TALK (8255), text 988\nCrisis Text Line — text TRUST to 741741\nNational Domestic Violence Hotline — https://www.thehotline.org/ — 1-800-799-SAFE (7233)\nVeterans/Military Crisis Line — http://www.veteranscrisisline.net — 1-800-273-8255 press 1, SMS 838255\nThe Trevor Project (LGBTQ+) — http://www.thetrevorproject.org — 1-866-488-7386\nSAMHSA National Helpline (drugs & alcohol) — https://www.samhsa.gov — 1-800-662-HELP (4357)\nNational Problem Gambling Helpline — https://www.ncpgambling.org — 1-800-522-4700\nNational Alliance for Eating Disorders — https://www.allianceforeatingdisorders.com/ — (866) 662-1235\n\nAvailability varies by country.",
-      "operational_note": "Where a crisis ticket is routed. The assistant surfaces these rather than drafting a reply."
+      "operational_note": "The page lists crisis lines for roughly 54 countries plus a worldwide fallback, not the United States alone as first recorded. That matters here: the corpus spans 124 App Store storefronts, so a safety escalation should surface the line for the user's own country. Where the country is unknown - every Google Play row, because its locale is a LANGUAGE - the worldwide entry is the honest fallback.",
+      "url_status": "verified"
     },
     {
       "id": "pol-03",
       "category": "Automation Policy",
       "title": "Where automation is used on Nebula",
-      "url": "https://www.asknebula.com/app/human-guidance",
-      "body": "On Nebula, some support interactions may begin with automated assistance, particularly for routine requests such as subscription questions, account access, or general platform information. Automated assistance helps route and handle common requests. Support conversations may also involve human agents, depending on the nature of the request and the context of the interaction.\n\nOur approach to responsible technology:\n• Limited use of automation for operational support — technology is used within defined boundaries to support platform operations, in limited operational contexts such as general information and routine support requests.\n• Human insight is central — guidance is shaped by human insight and advisor expertise.\n• Privacy and safety are prioritized — data-protection safeguards apply to how information is handled in connection with automation.\n• Responsible development — innovation supports, rather than replaces, the personal nature of the community.",
-      "operational_note": "The company's own automation scope: subscription questions, account access, general platform information. Readings themselves are explicitly out of scope for automation."
+      "url": "https://www.asknebula.com/trust-safety-center/human-guidance-and-the-role-of-technology",
+      "body": "On Nebula, some support interactions may begin with automated assistance, particularly for routine requests such as subscription questions, account access, or general platform information. Automated assistance helps route and handle common requests. Support conversations may also involve human agents, depending on the nature of the request and the context of the interaction.\n\nThe published approach to responsible technology:\n• Limited use of automation for operational support — technology is used within defined boundaries to support platform operations, and automation may be used in limited operational contexts such as general information and routine support requests.\n• Human insight is central — guidance is designed to be shaped by human insight and advisor expertise.\n• Privacy and safety are prioritized — data-protection safeguards apply to how information is handled in connection with the technology, including automation.\n• Responsible development — the technology is continuously refined with a focus on ethical use, so that innovation supports, rather than replaces, the personal nature of the community.",
+      "operational_note": "The company's own automation scope, published: subscription questions, account access, general platform information. That is almost exactly the boundary this project derived from the corpus, so the automation boundary can be cited rather than asserted. Readings are explicitly outside it (see pol-20, same page).",
+      "url_status": "verified",
+      "source_page": "Human Guidance & the Role of Technology"
     },
     {
       "id": "pol-04",
@@ -35,7 +39,9 @@
       "title": "Refund routing depends on where the subscription was bought",
       "url": "https://www.asknebula.com/app/terms",
       "body": "IMPORTANT NOTICE REGARDING AUTOMATIC RENEWALS. This Service includes subscriptions that automatically renew. To avoid being charged, you must cancel your subscription before the end of your trial or current billing cycle.\n\nIf you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple. You can submit a request following the instructions on the Apple Support page.\n\nIf you subscribed or started a free trial through the Google Play Store or directly via our website, please contact the Support center.\n\nDeleting the app does not cancel your subscription, trial or introductory offer. If you intend to cancel, ensure you follow the appropriate cancellation process for your platform.",
-      "operational_note": "The correct next action for a refund request DIFFERS by store. An App Store ticket routes to Apple; a Google Play or web ticket stays with support. This makes `store` a routing input, not just provenance."
+      "operational_note": "The correct next action for a refund request DIFFERS by store. An App Store ticket routes to Apple; a Google Play or web ticket stays with support. This makes `store` a routing input, not just provenance.",
+      "url_status": "verified",
+      "source_section": "Section 6b — Auto-Renewal, Subscription Continuity and Cancellation"
     },
     {
       "id": "pol-05",
@@ -43,7 +49,9 @@
       "title": "Balance units, per-minute charging and auto-refill",
       "url": "https://www.asknebula.com/app/terms",
       "body": "To access certain features you top up an account Balance with Balance Units. Units are deducted on a per-minute basis, charged at the beginning of each minute of use. The cost per minute varies by the offer accepted and the advisor's rate, and is disclosed before access.\n\nAuto-refill automatically tops up the Balance whenever Units run out, until cancelled. It is cancelled by deactivating auto-refill in account settings; remaining Units stay usable.\n\nBalance Units have no monetary value, do not constitute currency or property, cannot be sold, transferred, traded, withdrawn or gifted, and are non-refundable unless the Money-Back Policy or applicable law says otherwise. Units may be forfeited if an account is suspended or terminated.",
-      "operational_note": "Explains the 'my credits disappeared' complaint class and what support can and cannot offer."
+      "operational_note": "Explains the 'my credits disappeared' complaint class and what support can and cannot offer.",
+      "url_status": "verified",
+      "source_section": "Section 6a — Balance Terms"
     },
     {
       "id": "pol-06",
@@ -51,47 +59,46 @@
       "title": "Age restriction: 18 and older",
       "url": "https://www.asknebula.com/app/terms",
       "body": "The Service is intended for users aged 18 and older. By creating an Account, you confirm that you are at least 18 years old and have the legal authority to enter into and comply with these Terms. If you are under 18, you are prohibited from using the Service.",
-      "operational_note": "Reconciles the age-gate complaints: reviewers born 2006-2009 hit an 18+ gate. 'Interactions involving minors' is also on the do-not-automate list."
-    },
-    {
-      "id": "pol-07",
-      "category": "About Nebula",
-      "title": "Advisors are independent practitioners who may use stage names and illustrative images",
-      "url": "https://www.asknebula.com/app/advisors",
-      "body": "Advisors on Nebula are independent practitioners, not Nebula employees. They bring their own backgrounds, expertise and approaches to spiritual guidance, and may use professional names or representative images as part of their practice.\n\nFrom the Terms: the Company does not represent or warrant that any advisor is licensed or qualified. Some advisors may use professional stage names and/or illustrative images instead of a legal name or personal photograph. The Company is not responsible for the truth, accuracy, completeness, safety, timeliness, quality, appropriateness, legality or applicability of anything said or written by advisors.\n\nEvery advisor passes a structured application and verification process: initial screening and expertise review, an ethics and communication-style review, and possibly a live simulation mirroring real sessions.",
-      "operational_note": "The official answer to the 107 reviews accusing Nebula of AI-generated or fake psychics. Note the admission that images may be 'representative' — which is what reviewers noticed."
+      "operational_note": "Reconciles the age-gate complaints: reviewers born 2006-2009 hit an 18+ gate. 'Interactions involving minors' is also on the do-not-automate list.",
+      "url_status": "verified",
+      "source_section": "Section 3 — Age Restriction"
     },
     {
       "id": "pol-08",
       "category": "Safety & Escalation",
       "title": "Reporting a safety concern is a separate intake from support",
-      "url": "https://www.asknebula.com/app/report",
+      "url": "https://www.asknebula.com/trust-safety-center/report-a-safety-concern",
       "body": "If you encounter behavior or content that feels inappropriate, uncomfortable, or misaligned with Nebula's values, you are encouraged to report it, whether it happened during a live chat or elsewhere on the platform.\n\nConsider submitting a report if you experience or notice:\n• harassment, threats, or hateful language\n• sexual, inappropriate, or boundary-crossing behavior\n• content that feels unsafe, manipulative, or distressing\n• repeated violations of boundaries during a chat\n\nAfter submitting a report you receive a confirmation. Reports are reviewed to assess whether there may have been a policy violation. Some are reviewed quickly; others require additional context or follow-up. The outcome may not always be shared.",
-      "operational_note": "A SECOND intake path beside the support form. A ticket about advisor misconduct belongs here, not in the normal support queue — a routing decision the classifier must be able to make."
+      "operational_note": "A SECOND intake path beside the support form. A ticket about advisor misconduct belongs here, not in the normal support queue — a routing decision the classifier must be able to make.",
+      "url_status": "verified"
     },
     {
       "id": "pol-09",
       "category": "Content Standards",
       "title": "Guidance must be free from fear-based messaging and manipulation",
-      "url": "https://www.asknebula.com/app/ethical-guidance",
+      "url": "https://www.asknebula.com/trust-safety-center/ethical-guidance",
       "body": "Guidance on Nebula is expected to be free from fear-based messaging, undue urgency, or emotional manipulation. Language suggesting unavoidable harm, curses, irreversible consequences, or pressure to act in order to avoid negative outcomes falls outside these ethical standards. Guidance should help users feel steady, grounded, and more aware of their experience.\n\nGuidance does not include medical, psychological, psychiatric, legal, financial or any other professional advice; diagnoses, treatment recommendations, or instructions for emergency or crisis situations; or direction or pressure around specific actions, decisions, or continued engagement.\n\nAdvisors are expected to avoid framing insights in ways that override a user's judgment or autonomy.",
-      "operational_note": "Gives a category for the distressing-horoscope complaints found in the corpus ('You may have a death of someone close to you'). The help center has no such category; this policy does."
+      "operational_note": "Gives a category for the distressing-horoscope complaints found in the corpus ('You may have a death of someone close to you'). The help center has no such category; this policy does.",
+      "url_status": "verified"
     },
     {
       "id": "pol-10",
       "category": "Content Standards",
       "title": "Community guidelines: what is not supported",
-      "url": "https://www.asknebula.com/app/community-guidelines",
+      "url": "https://www.asknebula.com/trust-safety-center/community-guidelines",
       "body": "Not supported on the platform — requests or content involving:\n• instructions for self-harm, suicide, or harm to others\n• violence, abuse, or threats of physical harm\n• sexual content, sexual exploitation, or explicit behavior\n• manipulation, coercion, or attempts to control another person's actions\n• medical, psychological, legal, financial or other professional advice requiring licensed professionals\n• illegal activity or guidance that could cause real-world harm\n• requests to share personal contact details or move conversations outside Nebula\n\nRespectful conduct — not supported:\n• harassment, hate speech, or discriminatory language\n• intimidation, pressure, or repeated boundary-crossing\n• personal attacks or demeaning behavior toward advisors or users\n\nWhen guidelines are not followed, conversations may be paused or ended, and further steps may be taken.",
-      "operational_note": "The company's own line on abusive tone — useful for deciding how the classifier should treat the 2,711 aggressive reviews without conflating tone with priority."
+      "operational_note": "The company's own line on abusive tone — useful for deciding how the classifier should treat the 2,711 aggressive reviews without conflating tone with priority.",
+      "url_status": "verified"
     },
     {
       "id": "pol-11",
       "category": "About Nebula",
-      "title": "Entertainment purposes only, no guarantee of outcomes",
+      "title": "Entertainment purposes only, no guarantee of outcomes, and no warranty that an advisor is qualified",
       "url": "https://www.asknebula.com/app/terms",
-      "body": "This Service is provided for entertainment purposes only. Any information provided within the Service or in any report or reading is not scientific and should not be treated as fact. It does not constitute, and should not be used as a substitute for, professional advice of any kind, including psychological, medical, legal or financial advice.\n\nThe Company makes no representations, warranties, or guarantees as to the accuracy, reliability, or outcome of the Services, and is not responsible for personal choices or actions a user may take following a consultation.",
-      "operational_note": "The standing answer to 'the reading was wrong' complaints."
+      "body": "This Service is provided for entertainment purposes only. Any information provided within the Service or in any report or reading is not scientific and should not be treated as fact. It does not constitute, and should not be used as a substitute for, professional advice of any kind, including psychological, medical, legal or financial advice.\n\nThe Company makes no representations, warranties, or guarantees as to the accuracy, reliability, or outcome of the Services, and is not responsible for personal choices or actions a user may take following a consultation.\n\nThe Company does not represent or warrant that any advisor is licensed or qualified. Advisors are independent practitioners, not employees, and some may use professional stage names and/or illustrative images instead of a legal name or personal photograph. The Company is not responsible for the truth, accuracy, completeness, safety, timeliness, quality, appropriateness, legality or applicability of anything said or written by advisors.",
+      "operational_note": "The standing answer to 'the reading was wrong' complaints. The second paragraph arrived here from the retired pol-07 because Terms is its real source and Terms is verified. It is also the uncomfortable half of the answer to 'the photo is fake': the policy permits illustrative images, so a drafter must not deny it — see pol-20 for what the company does claim.",
+      "url_status": "verified",
+      "source_section": "Section 2 — Important Disclaimers"
     },
     {
       "id": "pol-12",
@@ -99,7 +106,343 @@
       "title": "Chargebacks, disputes and binding arbitration",
       "url": "https://www.asknebula.com/app/terms",
       "body": "The Terms include sections on Refunds, Chargebacks and Payment Disputes, and Taxes.\n\nSection 12 governs dispute resolution: it includes a binding arbitration agreement, meaning disputes are resolved through final and binding arbitration rather than in court, with limited exceptions. It includes a class action and jury trial waiver. Users may opt out of the arbitration agreement by following the process in Section 12.\n\nThe operating entity is Spiritual Nebula Limited, 62 Athalassas Avenue, Mezzanine Floor, Strovolos, 2012 Nicosia, Cyprus.",
-      "operational_note": "542 reviews threaten a chargeback or legal action. A ticket mentioning chargeback, lawsuit or arbitration has legal consequences and is a natural human-in-the-loop trigger."
+      "operational_note": "542 reviews threaten a chargeback or legal action. A ticket mentioning chargeback, lawsuit or arbitration has legal consequences and is a natural human-in-the-loop trigger.",
+      "url_status": "verified",
+      "source_section": "Section 6c — Chargebacks and Payment Disputes; Section 12 — Arbitration"
+    },
+    {
+      "id": "pol-13",
+      "category": "Subscriptions & Billing",
+      "title": "The small verification charge is refunded within 10 business days",
+      "url": "https://www.asknebula.com/app/terms",
+      "url_status": "verified",
+      "source_section": "Section 6b — Auto-Renewal",
+      "body": "We may verify your payment method with a small temporary charge, which will be refunded to you within ten (10) business days.",
+      "operational_note": "Directly answers the largest single complaint shape in the corpus — 'they took $1 / 1 euro'. Many of those are this verification hold, not a purchase. A classifier that knows this can separate a verification hold from a real unauthorised charge, which are different tickets with different next steps."
+    },
+    {
+      "id": "pol-14",
+      "category": "Subscriptions & Billing",
+      "title": "A confirmed refund takes at least 15 business days to appear",
+      "url": "https://www.asknebula.com/app/terms",
+      "url_status": "verified",
+      "source_section": "Section 6c — Refunds",
+      "body": "Refunds, when applicable, are not processed in real-time. If we confirm that a refund has been issued, please allow at least 15 business days for the refund to reflect in your account. You are not entitled to receive multiple refunds for the same transaction.\n\nUnless otherwise specified under the Money-Back Policy or required by applicable law, all purchases are non-refundable. To determine eligibility, refer to the Money-Back Policy.",
+      "operational_note": "Gives the assistant a number to quote instead of a vague 'soon'. Note the Money-Back Policy is a SEPARATE document we do not have — eligibility cannot be answered from what is collected."
+    },
+    {
+      "id": "pol-15",
+      "category": "Subscriptions & Billing",
+      "title": "Contact support before a chargeback, because a chargeback can terminate the account",
+      "url": "https://www.asknebula.com/app/terms",
+      "url_status": "verified",
+      "source_section": "Section 6c — Chargebacks and Payment Disputes",
+      "body": "If you wish to request a refund, we strongly encourage you to contact us first before initiating a chargeback with your payment provider.\n\nInitiating a chargeback or reversing a payment through your bank may result in the immediate termination of your account at our sole discretion. If a chargeback is overturned in our favour, you may contact the Support center to discuss reinstating your account. Fraudulent or improper chargebacks may result in a permanent ban and potential legal action.\n\nYour personally identifiable information may be shared with our payment processor to respond to chargeback requests.",
+      "operational_note": "542 reviews in the corpus threaten a chargeback. This is what support must tell them, and it is time-critical: once the chargeback is filed the account may be gone. That makes a chargeback threat a priority-1 signal on its own."
+    },
+    {
+      "id": "pol-16",
+      "category": "Subscriptions & Billing",
+      "title": "Where to cancel depends on where it was bought",
+      "url": "https://www.asknebula.com/app/terms",
+      "url_status": "verified",
+      "source_section": "Section 6b — Auto-Renewal, Subscription Continuity and Cancellation",
+      "body": "For Direct Purchases, cancellation must be completed through the Website's account settings or by following the cancellation instructions provided at the time of purchase. For In-App Purchases, cancellation must be done through the respective App Store's account settings. Deleting the App does not cancel your subscription.\n\nAfter cancelling, access to paid features remains active until the end of the current subscription period.\n\nCancelling the main subscription also cancels any associated recurring add-ons, but cancelling an add-on alone does not affect the primary subscription.",
+      "operational_note": "The same purchase-rail split as refunds. 203 tickets in the pool are cancellation failures, and the correct instruction is different for each rail — which is why ask_purchase_rail is the default next step."
+    },
+    {
+      "id": "pol-17",
+      "category": "Content Standards",
+      "title": "Abusive conduct toward support can terminate the account",
+      "url": "https://www.asknebula.com/app/terms",
+      "url_status": "verified",
+      "source_section": "Section 7 — Respectful Conduct Towards Customer Support",
+      "body": "We expect all users to interact with our customer support team in a respectful and professional manner. If at any time your communication or behavior is deemed harassing, abusive, threatening, or offensive, we reserve the right to terminate your account immediately.",
+      "operational_note": "Relevant to the aggressive-tone edge case, and a caution: 24 of the 100 golden tickets carry aggressive language. The policy permits termination, but tone is NOT severity — the measured aggression lexicon fires on 22-31% of long complaints while genuinely severe cases are 2.6%. An assistant that escalates on tone would act on this policy ten times too often."
+    },
+    {
+      "id": "pol-18",
+      "category": "Subscriptions & Billing",
+      "title": "Refund Policy — withdrawal rights depend on where the user lives",
+      "url": "https://www.asknebula.com/app/refund-policy",
+      "url_status": "verified",
+      "source_section": "Refund Policy, last updated 2 April 2026",
+      "body": "GENERAL RULE. To the extent permitted by applicable law, all purchases are non-refundable and non-exchangeable unless stated otherwise or required by law.\n\nEEA AND UNITED KINGDOM — 14 DAYS. Residents may withdraw from a service or digital-goods agreement without charge and WITHOUT GIVING ANY REASON within fourteen (14) days of conclusion. The agreement is concluded on the date of the first purchase OR the activation of a free trial, whichever is earlier, and the period covers every subsequent purchase made inside it. On withdrawal all payments are reimbursed, without undue delay and no later than 14 days after being informed, by the same means of payment, with no fees to the user.\n\nTHE CONSENT CARVE-OUT. If the user gave prior express consent to begin performance during the withdrawal period AND acknowledged losing the right of withdrawal, then, unless the Service is defective, there is no refund for digital CONTENT and only a proportional refund for a digital SERVICE. Where this applies the company must provide a copy of that consent on a durable medium.\n\nBRAZIL — 7 DAYS. Same structure, seven days.\n\nHOW TO EXERCISE IT. Notify Spiritual Nebula Limited, 62 Athalassas Avenue, Mezzanine Floor, Strovolos, 2012 Nicosia, Cyprus, email support@asknebula.com, by a clear unequivocal statement. A model withdrawal form is offered but not obligatory; it asks for the service, the date received, name, address, signature (post only) and date. Sending before the deadline is sufficient.\n\nPURCHASE RAIL. App Store purchases and trials are refunded by Apple, via the Apple support page. Google Play purchases go to the Nebula Support center.",
+      "operational_note": "This is the document the Terms point to for eligibility, and it changes the shape of the refund_request category: the correct answer is not one answer. An EEA or UK user inside 14 days has an unconditional right and the ticket is a withdrawal request, not a negotiation. A US user has no such right and the ticket is a goodwill request. Brazil sits at 7 days. The withdrawal clock starts at the FREE TRIAL, not at the charge — which is exactly the trial_converted complaint shape, where users notice weeks later.\nNote the consent carve-out is what most of these tickets will actually turn on, and it is not decidable from ticket text alone: it needs the checkout record. That makes it a human-in-the-loop trigger rather than something the classifier should guess."
+    },
+    {
+      "id": "pol-19",
+      "category": "How to Use",
+      "title": "Advisor availability and how long a consultation can run",
+      "url": "https://www.asknebula.com/app/experts",
+      "url_status": "verified",
+      "body": "A consultation is available whether the advisor is online, offline or busy; only the channel differs. Online: a Live-chat session, connected within 60 seconds of pressing 'Start chat'. Offline or busy: a messenger-style chat, answered as soon as the advisor is free.\n\nThere are no restrictions on the topics that may be discussed, and no time limit on a chat - users are told to stay as long as they need to get their answers.",
+      "operational_note": "Sits against the FAQ's stated 2-minute online and 48-hour offline answer times, and against the 43 reviews complaining of no reply from an advisor. 'No time limit' also reads badly beside per-minute billing, which is worth knowing before drafting a reply that quotes it."
+    },
+    {
+      "id": "pol-20",
+      "category": "About Nebula",
+      "title": "Readings are human-led: created by people, for people",
+      "url": "https://www.asknebula.com/trust-safety-center/human-guidance-and-the-role-of-technology",
+      "url_status": "verified",
+      "source_page": "Human Guidance & the Role of Technology",
+      "body": "Guidance on Nebula is centered around human insight and interpretation, with clear boundaries around the role of technology.\n\nReadings on Nebula are created by people, for people. When an advisor prepares a reading, they take time to review what the user has shared, reflect on their context, and express their insights thoughtfully. Guidance is shaped by emotional awareness, accountability and human presence; authenticity is described as part of how spiritual sessions are designed and delivered.",
+      "operational_note": "This is the sourced answer to the 107 reviews accusing Nebula of AI or fake psychics, and it replaces the unsourced pol-07. Two cautions before a drafter quotes it: the page claims readings are human-led but never says an advisor may use no tool at all, and the Terms still say the Company does not warrant that any advisor is licensed or qualified (pol-11). faq-03 answers the same question in one sentence — cite one, not both."
+    }
+  ],
+  "url_verification": {
+    "verified": [
+      "https://www.asknebula.com/app/experts",
+      "https://www.asknebula.com/app/refund-policy",
+      "https://www.asknebula.com/app/terms",
+      "https://www.asknebula.com/trust-safety-center/community-guidelines",
+      "https://www.asknebula.com/trust-safety-center/ethical-guidance",
+      "https://www.asknebula.com/trust-safety-center/human-guidance-and-the-role-of-technology",
+      "https://www.asknebula.com/trust-safety-center/report-a-safety-concern",
+      "https://www.asknebula.com/trust-safety-center/safety-resources-and-support"
+    ],
+    "method": "Every URL here was supplied by the engineer from the browser address bar. They could not be discovered by probing: the site is a single-page app that answers HTTP 200 with an identical 33,001-byte shell for any path, so a fetch proves nothing. An earlier version of this file carried guessed /app/* paths; all of them were wrong - the real prefix is /trust-safety-center/.",
+    "why_others_are_null": "Page is client-rendered and the SPA answers HTTP 200 with an identical 33,001-byte shell for ANY /app/* path, so a URL cannot be verified by fetching it. Only /app/faq and /app/terms are confirmed, from the browser address bar. This article's own URL is unknown and deliberately left null rather than guessed.",
+    "consequence": "Task 2 may cite only articles whose url_status is verified. An article with a null url can still ground an answer, but the interface must show it as an uncited source rather than print a link that 404s."
+  },
+  "counts": {
+    "articles": 19,
+    "retired": 1
+  },
+  "crisis_resources": {
+    "url": "https://www.asknebula.com/trust-safety-center/safety-resources-and-support",
+    "url_status": "verified",
+    "note": "Country-keyed, because that is the lookup the assistant performs. 'worldwide' is the fallback when the country is not known, which is every Google Play row.",
+    "by_country": {
+      "worldwide": [
+        "Befrienders Worldwide http://www.befrienders.org",
+        "RAINN https://www.rainn.org/international-sexual-assault-resources",
+        "Narcotics Anonymous https://www.na.org",
+        "Alcoholics Anonymous https://www.aa.org",
+        "Gamblers Anonymous https://www.gamblersanonymous.org"
+      ],
+      "us": [
+        "988 Suicide & Crisis Lifeline https://www.988lifeline.org/ 1-800-273-8255, text 988",
+        "Crisis Text Line: text TRUST to 741741",
+        "National Domestic Violence Hotline https://www.thehotline.org/ 1-800-799-7233",
+        "Veterans Crisis Line http://www.veteranscrisisline.net 1-800-273-8255 press 1",
+        "The Trevor Project http://www.thetrevorproject.org 1-866-488-7386",
+        "SAMHSA https://www.samhsa.gov 1-800-662-4357",
+        "National Problem Gambling Helpline https://www.ncpgambling.org 1-800-522-4700"
+      ],
+      "ar": [
+        "Entrenadores de Vida https://www.facebook.com/suicidologiaargentina/"
+      ],
+      "au": [
+        "Lifeline Australia http://www.lifeline.org.au 13 11 14",
+        "beyondblue 1300 224 636",
+        "1800RESPECT 1800 737 732",
+        "QLife 1800 184 527",
+        "Gambling Help Online 1800 858 858"
+      ],
+      "at": [
+        "Rat auf Draht http://rataufdraht.orf.at 147",
+        "TelefonSeelsorge http://www.telefonseelsorge.at 142"
+      ],
+      "be": [
+        "Zelfmoordlijn http://www.zelfmoord1813.be 1813",
+        "Centre de Prevention du Suicide https://www.preventionsuicide.be/ 0800 32 123"
+      ],
+      "br": [
+        "CVV http://www.cvv.org.br 188",
+        "SaferNet https://canaldeajuda.org.br/helpline"
+      ],
+      "ca": [
+        "988 Suicide Crisis Helpline https://988.ca/",
+        "ShelterSafe https://www.sheltersafe.ca",
+        "Kids Help Phone 1-800-668-6868"
+      ],
+      "cl": [
+        "Todo Mejora https://todomejora.org/apoyo/",
+        "Linea de Prevencion 4141"
+      ],
+      "co": [
+        "Fundacion Sergio Urrego https://sergiourrego.org/"
+      ],
+      "cr": [
+        "Colegio de Psicologia https://juntosnospodemoscuidar.psicologiacr.com/"
+      ],
+      "cy": [
+        "Befrienders https://befrienders.org/"
+      ],
+      "cz": [
+        "Linka bezpeci https://www.linkabezpeci.cz 116 111"
+      ],
+      "dk": [
+        "Livslinien http://www.livslinien.dk 70 201 201",
+        "Boerne Telefon 116 111"
+      ],
+      "sv": [
+        "Befrienders https://befrienders.org/"
+      ],
+      "fj": [
+        "Lifeline https://www.lifelinefiji.com/ 13245424"
+      ],
+      "fi": [
+        "MIELI https://mieli.fi/ 09 2525 0111"
+      ],
+      "fr": [
+        "3114 https://3114.fr/",
+        "SOS Amitie https://www.sos-amitie.com/ 09 72 39 40 50",
+        "3919 Violences Femmes Info",
+        "Joueurs Info Service 09 74 75 13 13"
+      ],
+      "de": [
+        "Telefonseelsorge http://www.telefonseelsorge.de 0800 111 0 111",
+        "Hilfetelefon Gewalt gegen Frauen 08000 116 016"
+      ],
+      "gr": [
+        "Klimaka http://www.klimaka.org.gr",
+        "Suicide Help Greece 1018"
+      ],
+      "hk": [
+        "OpenUp https://www.openup.hk/ 9101 2012",
+        "Samaritan Befrienders http://www.sbhk.org.hk 2389 2222"
+      ],
+      "hu": [
+        "SOS505 http://www.sos505.hu 116 123",
+        "Kek Vonal 116 111"
+      ],
+      "is": [
+        "Red Cross +1717"
+      ],
+      "in": [
+        "AASRA http://www.aasra.info 91-22-27546669",
+        "iCALL 093720 48501"
+      ],
+      "il": [
+        "ERAN http://www.eran.org.il 1201",
+        "SAHAR http://www.sahar.org.il"
+      ],
+      "it": [
+        "Telefono Azzurro https://www.azzurro.it 19696",
+        "Telefono Amico http://www.telefonoamico.it 199 284 284",
+        "1522 Antiviolenza e Stalking"
+      ],
+      "jp": [
+        "Inochi no Denwa https://www.inochinodenwa.org/lifeline.php 0570-783-556",
+        "Tokyo English Lifeline 0357740992"
+      ],
+      "ke": [
+        "Befrienders Kenya http://www.befrienderskenya.org/ 0722 178177",
+        "Childline 116"
+      ],
+      "lb": [
+        "Embrace Lifeline 1564"
+      ],
+      "lt": [
+        "Vilties linija https://www.viltieslinija.lt 116 123",
+        "Vaiku linija 116 111"
+      ],
+      "lu": [
+        "SOS Detresse http://www.454545.lu 454545",
+        "Kanner-Jugendtelefon 116 111"
+      ],
+      "mx": [
+        "Consejo Ciudadano http://consejociudadanomx.org 55 5533-5533"
+      ],
+      "ma": [
+        "Sourire de Reda https://www.stopsilence.net/ 05228-74740"
+      ],
+      "nl": [
+        "113 Zelfmoordpreventie http://www.113online.nl 0800 0113",
+        "Veilig Thuis https://veiligthuis.nl 0800 2000"
+      ],
+      "nz": [
+        "The Lowdown http://www.thelowdown.co.nz 0800 111 757",
+        "Youthline http://www.youthline.co.nz 0800 376633"
+      ],
+      "no": [
+        "Kirkens SOS http://www.kirkens-sos.no 815 33 300"
+      ],
+      "pk": [
+        "Rozan 0335 5000401",
+        "Umang https://www.umang.com.pk/ 0311 7786264"
+      ],
+      "pl": [
+        "116111 http://www.116111.pl/napisz",
+        "Centrum Praw Kobiet https://cpk.org.pl"
+      ],
+      "pt": [
+        "SOS Voz Amiga https://www.sosvozamiga.org/ 213 544 545"
+      ],
+      "qa": [
+        "Befrienders https://befrienders.org/",
+        "MEEDA https://www.meeda.me/"
+      ],
+      "rs": [
+        "Centar Srce http://www.centarsrce.org 0800 300 303"
+      ],
+      "sg": [
+        "Mindline 1771 https://mindline.sg/fsmh",
+        "Samaritans of Singapore http://samaritans.org.sg 1800 221 4444"
+      ],
+      "za": [
+        "SADAG http://www.sadag.org 0800 567 567, SMS 31393"
+      ],
+      "kr": [
+        "KFSP http://www.kfsp.org 02-3706-0500",
+        "MOHW 129",
+        "Mental Health Crisis Line 1577-0199"
+      ],
+      "es": [
+        "Telefono de la Esperanza http://telefonodelaesperanza.org 717 00 37 17",
+        "016 Violencia de Genero"
+      ],
+      "se": [
+        "Bris 116 111",
+        "MIND Aldrelinjen 020-22 22 33",
+        "Kvinnofridslinjen 020-50 50 50",
+        "Stodlinjen 020-819100"
+      ],
+      "ch": [
+        "Tel 143 La Main Tendue http://www.143.ch 143"
+      ],
+      "tw": [
+        "Safety Hotline 1925",
+        "Lifeline http://www.life1995.org.tw/"
+      ],
+      "tr": [
+        "Befrienders https://befrienders.org/",
+        "Aile Ici Siddet Acil Yardim https://tkdf.org.tr/ 656 96 96"
+      ],
+      "ua": [
+        "Lifeline Ukraine https://lifelineukraine.com/ 7333",
+        "La Strada https://la-strada.org.ua 0800 500 335 / 116 123"
+      ],
+      "ae": [
+        "Befrienders https://befrienders.org/",
+        "MEEDA https://www.meeda.me/"
+      ],
+      "gb": [
+        "Samaritans http://www.samaritans.org 116 123",
+        "National Domestic Abuse Helpline 0808 2000 247",
+        "Shout: text 85258",
+        "FRANK 0300 123 6600",
+        "GamCare 0808 8020 133"
+      ],
+      "vn": [
+        "Befrienders https://befrienders.org/"
+      ],
+      "ye": [
+        "Befrienders https://befrienders.org/"
+      ],
+      "zw": [
+        "Befrienders https://befrienders.org/"
+      ]
+    }
+  },
+  "retired_articles": [
+    {
+      "id": "pol-07",
+      "title": "Advisors are independent practitioners who may use stage names and illustrative images",
+      "why_retired": "No page could be found for it. Its Terms-quoted paragraph (independent practitioners, stage names, no warranty of qualification) moved to pol-11, which cites Terms. One claim was dropped outright, because nothing verifiable supports it: that every advisor passes a structured application with initial screening, an ethics and communication-style review and a possible live simulation. If that page turns up, the claim can come back with a URL.",
+      "dropped_claim": "Every advisor passes a structured application and verification process: initial screening and expertise review, an ethics and communication-style review, and possibly a live simulation mirroring real sessions."
     }
   ]
 }

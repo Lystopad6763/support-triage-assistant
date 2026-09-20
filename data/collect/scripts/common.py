@@ -226,14 +226,53 @@ NAME_REMNANT = re.compile(
 
 # --- the customer's own words ---------------------------------------------
 
-# "my name is Karen Alomia" — two full names and a handful of first ones. The
-# pattern deliberately excludes "this is X", which only ever matched "this is
-# Magical" and three other adjectives.
+# "my name is Karen Alomia", "MI NOMBRE ES VERONICA TORRES", "me llamo Luna".
+# Deliberately excludes "this is X", which only ever matched "this is Magical"
+# and three other adjectives.
+#
+# The non-English forms are here because an English-only version missed two
+# real names, found by an independent review of the corpus — the same failure
+# as _DEAR and _SIGNOFF had. The pattern requires the following word to START
+# CAPITALISED, which is what separates "me llamo Luna" from the Spanish idiom
+# "me llamo la atención".
+# \s+ rather than a literal space: the one real Spanish case on disk is written
+# "MI NOMBRE  ES VERONICA TORRES" with a double space, and a single-space cue
+# walks straight past it.
+#
+# Turkish bare "adım" is deliberately absent — it means "my step" as often as
+# "my name" ("Kader adım atmayan kişiye..."), and it produced two false
+# positives. Only the unambiguous "benim adım" is kept.
+_MY_NAME_IS = (r"my\s+name\s+is|i\s+am\s+called|i[’']m\s+called|"
+               r"mi\s+nombre\s+es|me\s+llamo|"
+               r"je\s+m[’']appelle|mon\s+nom\s+est|"
+               r"ich\s+hei[ßs]e|mein\s+name\s+ist|"
+               r"mi\s+chiamo|il\s+mio\s+nome\s+è|"
+               r"meu\s+nome\s+[ée]|"
+               r"mijn\s+naam\s+is|nazywam\s+si[ęe]|"
+               r"benim\s+ad[ıi]m|ad[ıi]m\s+da|"
+               r"меня\s+зовут|"
+               r"мене\s+звати|"
+               r"моє\s+ім[’']я")
+# The cue is case-insensitive, the NAME is not. They cannot share a flag:
+# under re.IGNORECASE the negated class [^a-zà-ÿ] also excludes A-Z, so the
+# name group matches nothing at all — which is how this pattern silently
+# stopped working the moment it went multilingual.
 SELF_NAME = re.compile(
-    rf"\b(my name is|i am called|i'm called|i’m called)([ \t]+)"
-    rf"((?:[A-Z]{_NAME_CHARS}{{1,20}}[ \t]*){{1,2}})",
-    re.UNICODE | re.IGNORECASE,
+    rf"\b((?i:{_MY_NAME_IS}))([ \t]+)"
+    rf"((?:[^\W\d_a-zà-ÿ]{_NAME_CHARS}{{1,20}}[ \t]*){{1,2}})",
+    re.UNICODE,
 )
+
+# "Onay Kodu: 822468" — a Turkish reviewer pasted a live confirmation code into
+# a public review. A short digit run behind a code cue is never something the
+# dataset needs, and may be something a reader could use.
+CONFIRMATION_CODE = re.compile(
+    r"((?:onay kodu|do[ğg]rulama kodu|verification code|confirmation code|"
+    r"security code|c[óo]digo(?: de (?:confirmaci[óo]n|verificaci[óo]n))?|"
+    r"code de (?:confirmation|v[ée]rification)|best[äa]tigungscode|"
+    r"kod potwierdzaj[ąa]cy|код подтверждения|"
+    r"код підтвердження|otp)"
+    r"\s*[:=#]?\s*)(\d{4,8})\b", re.I)
 
 # "@CleDonger" (a Twitter account), "@Mirijana" ("My PayPal name is:").
 SOCIAL_HANDLE = re.compile(r"(?<![\w@])@([A-Za-z][A-Za-z0-9_.]{2,29})\b")
@@ -549,6 +588,7 @@ def redact_review(text: str) -> str:
     text = BIRTH_TIME.sub(swap_birth("[BirthTime]"), text)
     text = BIRTH_DATE.sub(swap_birth("[BirthDate]"), text)
     text = PHONE.sub(lambda m: f"{m.group(1)}[Phone]", text)
+    text = CONFIRMATION_CODE.sub(lambda m: f"{m.group(1)}[Code]", text)
     text = STREET_ADDRESS.sub("[Address]", text)
     text = HONORIFIC_NAME.sub(_swap_tail, text)
     text = _redact_advisors(text)
@@ -570,13 +610,13 @@ def redact_review(text: str) -> str:
 # redaction does not know about surfaces here rather than on disk.
 # ---------------------------------------------------------------------------
 PLACEHOLDER = re.compile(
-    r"\[(?:Name|Agent|Advisor|Handle|BirthDate|BirthTime|Address|Phone)\]")
+    r"\[(?:Name|Agent|Advisor|Handle|BirthDate|BirthTime|Address|Phone|Code)\]")
 
 # The same words without their brackets. A placeholder split off a trailing
 # bracket ("[Agent] from Nebula" matches from the A) reads as a finding called
 # "Agent" otherwise — 55 of them in one pull.
 _PLACEHOLDER_WORDS = {"name", "agent", "advisor", "handle", "birthdate",
-                      "birthtime", "address", "phone"}
+                      "birthtime", "address", "phone", "code"}
 
 _NOT_PEOPLE = NOT_A_NAME | SENTENCE_STARTERS | ADDRESSEE | _PLACEHOLDER_WORDS
 
@@ -625,9 +665,13 @@ AUDIT = {
         _NOT_PEOPLE | {"customer", "japanese", "french", "chinese", "spanish",
                        "english", "experts", "support"}, True),
     "self-name": (
-        re.compile(rf"(?:my name is|i[' ’]?m called|i am called)[ \t]+{_WINDOW}",
-                   re.I),
-        SENTENCE_STARTERS, True),
+        re.compile(rf"(?:{_MY_NAME_IS})[ \t]+{_WINDOW}", re.I),
+        SENTENCE_STARTERS | _NOT_PEOPLE, True),
+    "confirmation-code": (
+        re.compile(r"(?:onay kodu|do[ğg]rulama kodu|verification code|"
+                   r"confirmation code|security code|c[óo]digo|otp)"
+                   r"\s*[:=#]?\s*(\d{4,8})\b", re.I),
+        set(), False),
     "handle": (
         re.compile(r"(?<![\w@])@([A-Za-z][A-Za-z0-9_.]{2,29})\b"),
         BRAND_HANDLES, False),
@@ -745,6 +789,12 @@ SELF_TEST = [
      "Flament", "review"),
     ("Bestaetigen Sie die Loeschung meiner Daten!!!  Sandra Maringer",
      "Maringer", "review"),
+    # Found by an independent review of the corpus, after three earlier rounds
+    # had already declared it clean. All three are non-English.
+    ("ES UN ROBO. HOLA MI NOMBRE ES VERONICA TORRES, ME HAN ECHO UN COBRO",
+     "VERONICA", "review"),
+    ("Holi me llamo Luna y te quiero decir que acabo de intalarlo", "Luna", "review"),
+    ("Tekrar ucret alinmamasini rica ederim. Onay Kodu: 822468", "822468", "review"),
 ]
 
 # Text that must come back UNCHANGED — there is no person in it. Redaction that

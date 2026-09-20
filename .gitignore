@@ -3,3 +3,8 @@ __pycache__/
 .venv/
 
 data/corpus.jsonl
+
+# secrets
+.env
+.cache/
+.tiktoken_cache/

@@ -1,1 +1,11 @@
+# The classifier needs three things and nothing more: an OpenAI-compatible
+# client (OpenRouter speaks that wire format), schema validation, and a
+# tokenizer for cost accounting.
+openai==2.38.0
+pydantic==2.13.0
+python-dotenv==1.1.1
+tiktoken==0.13.0
+
+# Data collection only. Kept because the corpus is reproducible from the raw
+# dumps, and a pipeline you cannot re-run is not provenance.
 google-play-scraper==1.2.7
