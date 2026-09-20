@@ -1,0 +1,80 @@
+{
+  "store": "googleplay",
+  "lang": "ms",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:47+00:00",
+  "count": 7,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "971ffdbe-0ec3-46f9-b817-e4b99cbd41f1",
+      "score": 1,
+      "content": "scam",
+      "reply": "Hi [Name]! Thank you for sharing your thoughts. We take your concerns seriously and want to ensure that everyone who uses Nebula feels secure and supported. If you’d like to tell us more about your experience or need assistance, please reach out to us at support-googleplay@asknebula.com. With gratitude for your journey, Nebula",
+      "at": "2026-09-09 14:57:14",
+      "repliedAt": "2026-09-09 15:02:59",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "93dc6720-01ff-46a2-83cb-179eaca774c1",
+      "score": 5,
+      "content": "seronok bermain",
+      "reply": "Your review made our day 💜 So lovely to hear Nebula has been fun for you. With gratitude, Nebula Team 🔮",
+      "at": "2026-07-15 20:53:37",
+      "repliedAt": "2026-07-15 20:54:24",
+      "version": "4.80.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "754b067f-dd43-4c10-acc7-6eee295aec07",
+      "score": 5,
+      "content": "ia sangat membantu dan memudahkan saye untuk berfikir dan meneruskan keinginan yg tidak kesampaian. terbaik dan Sye suka👍👍👍",
+      "reply": "Your kindness means the world to us 💜 It’s beautiful to know Nebula could bring a little clarity and support to your thoughts. Warmly, Nebula Team 🔮",
+      "at": "2026-07-13 13:09:49",
+      "repliedAt": "2026-07-13 13:10:28",
+      "version": "4.80.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "76c28b65-85e2-413f-a1e2-e215f115507c",
+      "score": 5,
+      "content": "Ohsem,ya aplikasi yg menakjubkan...ayuh semua komuniti untuk mencubanya:!!!",
+      "reply": "Dear User, hello there!\nWe thank you for your feedback and want you to know that we appreciate it very much. It is very special to receive such feedback. It reminds us again and again that our work is needed and appreciated and provides the energy to keep working on our app for you - our users!\nBest wishes, Nebula team",
+      "at": "2024-06-24 00:57:01",
+      "repliedAt": "2024-06-29 20:42:28",
+      "version": "4.8.44",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "cae17593-a341-47da-8548-dc3a61f1b9de",
+      "score": 2,
+      "content": "Zamzilaharun",
+      "reply": "Greetings User!\nAppreciate you making the effort to provide us with a review.\nWishing you the utmost success, Nebula team",
+      "at": "2023-07-12 05:04:31",
+      "repliedAt": "2023-07-13 23:02:09",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "90da879e-0c9c-4a85-968d-340f97da0348",
+      "score": 5,
+      "content": "Perfect",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review and 5 star rating.\n\nBest wishes, Nebula team",
+      "at": "2022-06-22 03:30:47",
+      "repliedAt": "2022-06-22 09:36:20",
+      "version": "4.7.26",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "54e950f9-6b31-4187-b9cf-f82df1f7db2b",
+      "score": 5,
+      "content": "Nice",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review and for your kind words!\n\nBest wishes, Nebula team\n",
+      "at": "2021-06-03 15:19:02",
+      "repliedAt": "2021-06-07 09:37:40",
+      "version": "4.2.1",
+      "thumbsUp": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "tj",
+  "fetched_at": "2026-09-20T00:17:10+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "11425186331",
+      "rating": 5,
+      "title": "Silvia",
+      "text": "She said exactly what I felt would be right! Thank you so much, dear Silvia and wonderful Nebula!",
+      "date": "2024-06-26T13:13:13Z",
+      "is_edited": false,
+      "reply": "Hello dear user!\nThank you for taking the time to leave us a review! It’s very important for us as it helps us to improve in order to provide you with more high-quality service!\nYour kind words greatly help us to understand that we are on the right path.\nBest wishes, Nebula team 🔮",
+      "reply_date": "2024-06-29T12:51:40Z"
+    },
+    {
+      "id": "13736822277",
+      "rating": 1,
+      "title": "Ограбит вас",
+      "text": "Плохое приложение, плохо работает, не информативно. Еще и незаконно списывает деньги. Я не давала свое согласие на месячную подписку. Нигде не стояла галочка, что теперь будет автосписание. Горите в аду",
+      "date": "2026-02-11T08:11:41Z",
+      "is_edited": false,
+      "reply": "Hi there! Thank you for sharing your feedback. We’re really sorry to hear that this experience left you feeling upset and frustrated — that’s certainly not the impression we want anyone to have. We’d like the opportunity to review your case and help clarify what may have happened. Please reach out to us at support-appstore@asknebula.com with a few details about the charge, and our team will gladly look into it and assist you further. Respectfully, Nebula Team 🔮",
+      "reply_date": "2026-03-05T01:01:04Z"
+    }
+  ]
+}

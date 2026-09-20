@@ -1,0 +1,49 @@
+{
+  "store": "appstore",
+  "country": "na",
+  "fetched_at": "2026-09-20T00:09:54+00:00",
+  "count": 4,
+  "with_reply": 4,
+  "reviews": [
+    {
+      "id": "13375246723",
+      "rating": 5,
+      "title": "Insightful",
+      "text": "I love that the psychics are spot on and can pick up your energy very fast for a quick and accurate response. I’m sticking around !",
+      "date": "2025-11-09T06:59:28Z",
+      "is_edited": false,
+      "reply": "Hello there,\n\nThank you for leaving your review.\n\nWe’re so happy to know that you’ve had such a great experience with our psychics and that their readings felt quick, accurate, and truly connected to your energy. \n\nIt’s wonderful to hear that Nebula brings you clarity and confidence, and we’re glad to have you with us.\n\nIf you ever have any questions or need assistance, feel free to reach us at support-appstore@asknebula.com.\n\nWarm regards,\nNebula Team 🔮",
+      "reply_date": "2025-11-10T23:02:36Z"
+    },
+    {
+      "id": "6503287556",
+      "rating": 1,
+      "title": "Subscription",
+      "text": "I downloaded this app and i was automatically debited. I uninstalled this app immediately and two months later they still try to debit my account. Please stop these debit orders, they are messed up my bank account.",
+      "date": "2020-10-05T14:18:53Z",
+      "is_edited": false,
+      "reply": "Hello! This situation may occur if you have downloaded the app before and have used a free trial before. Then, when you reinstall the application and start a free trial again, you will be automatically charged for the first week, because there is no second free trial. To cancel your subscription: \nOn your iPhone, open Settings → [your name] → Subscriptions. When doing this, please make sure to open your phone's settings, not the settings inside the Nebula application.\n\nThere you will see a list of all active and expired subscriptions. When you tap on a subscription from the list, you can choose a different subscription option or tap Cancel Subscription. \n \nIf you don’t see Cancel Subscription, the subscription is already canceled and won't renew.\n\nHere's a more detailed guide on that from Apple: \nhttps://support.apple.com/en-us/HT202039 ",
+      "reply_date": "2020-10-07T07:38:00Z"
+    },
+    {
+      "id": "9553630584",
+      "rating": 1,
+      "title": "Waste of money",
+      "text": "This was a very expensive experience. I hope i can get a refund. \n\nTransactions and subscriptions doesn’t match. \n\nI really am disappointed.",
+      "date": "2023-01-27T19:00:17Z",
+      "is_edited": false,
+      "reply": "Nebula welcomes you, dear user! We appreciate your feedback and comments! Contact us at http://help.answers-365.com so we can assist you in resolving the problem by logging into our payment system. We pledge to make use of all of the tools at our disposal to help you quickly find a fix for the problem. Have a nice day, Nebula team 🔮",
+      "reply_date": "2023-01-28T23:21:34Z"
+    },
+    {
+      "id": "10535575842",
+      "rating": 1,
+      "title": "I’d like a refund",
+      "text": "More money was taken than what I initially subscribed for.",
+      "date": "2023-10-31T16:34:07Z",
+      "is_edited": false,
+      "reply": "Greetings there!\r\n\r\nThanks for your feedback.\r\n\r\nIt is sad to hear about your negative user experience with our services. We are sorry for the payment troubles that happened.\r\n\r\n\nPlease provide us with more information about your problem at nebula.support@nebulahoroscope.com, this information will greatly help our support team to solve it and let you enjoy our service without any confusion.\r\n\r\n",
+      "reply_date": "2023-11-02T13:48:40Z"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "cm",
+  "fetched_at": "2026-09-19T23:50:30+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "14044585878",
+      "rating": 5,
+      "title": "Nebula help",
+      "text": "She help me, I love her",
+      "date": "2026-05-09T09:51:23Z",
+      "is_edited": false,
+      "reply": "Hi [Name],\n\nThank you for sharing this with us! It truly warms our hearts to know we were able to help you and make such a positive impression. Our advisors genuinely care about every user they work with, and your feedback is a wonderful reminder of that.\n\nIf you have anything more to share, please contact us at support-appstore@asknebula.com — we are always here whenever you need a little more insight or support\n\nGrateful for you,\nNebula Team 🔮",
+      "reply_date": "2026-05-10T19:10:04Z"
+    }
+  ]
+}

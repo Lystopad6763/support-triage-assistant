@@ -1,0 +1,30 @@
+{
+  "store": "googleplay",
+  "lang": "bs",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:20:30+00:00",
+  "count": 2,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "d438015f-4f31-4ebf-accf-d7fec87990c6",
+      "score": 5,
+      "content": "Very good !!!",
+      "reply": "Dear [Name], hello! Thank you so much for your feedback, you put a big smile on our faces! Our team is hard at work trying to continuously improve our app and it’s always rewarding to hear kind words. We love that you love us! Best wishes, Nebula team",
+      "at": "2024-04-01 21:17:51",
+      "repliedAt": "2024-04-01 22:38:47",
+      "version": "4.8.33",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e41da6f4-e82d-45b7-bbea-757592feb603",
+      "score": 3,
+      "content": "3 jer neznam kako namjestit jezik hrvacki",
+      "reply": "Hello, [Name] Thank you for contacting us and sharing your feedback. We apologize for any negative experience you've had with Nebula. To resolve your issue, please email us at nebula.support@nebulahoroscope.com with more details. We're here to assist you and ensure your satisfaction.",
+      "at": "2024-03-25 18:28:24",
+      "repliedAt": "2024-03-25 19:30:36",
+      "version": "4.8.30",
+      "thumbsUp": 0
+    }
+  ]
+}

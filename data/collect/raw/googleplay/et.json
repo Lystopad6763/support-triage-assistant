@@ -1,0 +1,110 @@
+{
+  "store": "googleplay",
+  "lang": "et",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:39+00:00",
+  "count": 10,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "62fc3056-e850-4a9e-a3b9-d95527059d6d",
+      "score": 4,
+      "content": "i like it.",
+      "reply": "Thank you, truly 💜 It’s lovely to know Nebula is bringing you something you enjoy. Warmly, Nebula Team 🔮",
+      "at": "2026-07-16 23:01:33",
+      "repliedAt": "2026-07-16 23:02:22",
+      "version": "4.81.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "7dd31a90-ee18-4d3b-8e15-304bf202d346",
+      "score": 5,
+      "content": "Pretty good",
+      "reply": "Your kindness means the world to us 💜 Thank you for taking a moment to share it. With gratitude, Nebula 🔮",
+      "at": "2026-05-15 23:08:06",
+      "repliedAt": "2026-05-15 23:12:26",
+      "version": "4.69.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "5d23ce88-012d-4c57-9297-8502fe17a999",
+      "score": 1,
+      "content": "Be noticed not to dowload the app, it is a total AI-scam and just charges full money from your account even in 7-trial period. Be wiser than me 😶",
+      "reply": "Hi [Name], thank you for sharing your feedback — we’re truly sorry to hear about the frustration with charges during the trial period and your experience with the app. Please reach out to support-googleplay@asknebula.com for assistance.\nTrust your path,\nNebula\n\n",
+      "at": "2026-03-15 23:50:46",
+      "repliedAt": "2026-03-15 23:56:23",
+      "version": "4.55.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "3b549f2e-93cd-45a9-bcf8-6f1e684553b3",
+      "score": 1,
+      "content": "Pettus! Esimene makse oli 1€ ja 7 päeva hiljem võttis Paypali kaudu maha 42,99€.",
+      "reply": "We regret that this caused frustration. Our intention is always to be transparent and helpful. We want to ensure clarity regarding your account details. Please reach out to us at support-googleplay@asknebula.com so we can review the details together. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-20 12:32:59",
+      "repliedAt": "2026-02-20 12:34:29",
+      "version": null,
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "25f0dbe0-07de-4226-a8cb-db4142d7812c",
+      "score": 1,
+      "content": "Complete scam. They take money from the account and promise to refund it but the money never arrives.",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-18 19:21:57",
+      "repliedAt": "2026-02-18 19:24:23",
+      "version": "4.55.00",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "a44754f8-a81a-4012-b6b8-287ee5f4ed86",
+      "score": 1,
+      "content": "Peatasin maksed kuid võttis ikkagi 39€. Täiesti mõtetu röövel. Soovin oma raha tagasi",
+      "reply": "Hi there, [Name]! Thank you for your time. We are sorry that the payment problems with our service did not meet your expectations. Contact us at nebula.support@nebulahoroscope.com so that we can access the payment system and help with fixing the problem in a timely manner. Best wishes, Support Team.",
+      "at": "2025-05-26 17:29:52",
+      "repliedAt": "2025-05-26 17:54:47",
+      "version": "4.21.00",
+      "thumbsUp": 8
+    },
+    {
+      "reviewId": "f0392fe6-23ed-4642-bbb9-191dd18b331e",
+      "score": 1,
+      "content": "Still took my money and alot of it, very mad. I had no idea it was gonna do that",
+      "reply": "Hello dear customer! I am grateful for your time. We apologize that our service was not able to meet your expectations due to payment issues. Contact us at nebula.support@nebulahoroscope.com so we can access the payment system and assist with resolving the problem. We will strive to assist you in quickly settling the problem. Nebula team",
+      "at": "2025-01-16 02:51:42",
+      "repliedAt": "2025-01-16 02:57:06",
+      "version": "4.8.63",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "a0ad246d-2d86-46db-a67b-76bc6b2ea31f",
+      "score": 1,
+      "content": "Sama jama varasemate kasutajatega, et ikka võtab iseseisvalt raha maha. Sellise kogemuse puhul oleks ka üks tärn liiga palju anda.",
+      "reply": "Dear [Name],\nWe're genuinely sorry to learn about your frustrating experience. Your feedback is incredibly valuable to us.Could you kindly share more details with us at nebula.support@nebulahoroscope.com? We're committed to resolving this issue and ensuring your satisfaction.\nWarm regards,\nNebula Support Team 🌌✨",
+      "at": "2024-02-06 17:20:27",
+      "repliedAt": "2024-02-06 21:14:01",
+      "version": "4.8.23",
+      "thumbsUp": 14
+    },
+    {
+      "reviewId": "8c35dd82-a38d-40a0-accf-211ccc04af51",
+      "score": 1,
+      "content": "Kustutasin konto kuid samuti võtab raha maha",
+      "reply": "Hey there, valued customer! Appreciate your input. We apologize that the payment issues with our service left you unsatisfied. Reach out to us at http://help.answers-365.com so that we can reach out to the payment system and assist you in resolving the issue. We will do everything to aid you in resolving the issue quickly. Regards, Support Team.",
+      "at": "2023-09-09 14:49:01",
+      "repliedAt": "2023-09-10 04:30:04",
+      "version": null,
+      "thumbsUp": 11
+    },
+    {
+      "reviewId": "eb677605-de9b-4b19-9f7e-6d5a94f2c5d6",
+      "score": 1,
+      "content": "Isegi kui maksed on lõpetatud ja äpp desinstallitud võtab edasi raha kaardikt maha.",
+      "reply": "Dear User, hello there!\n\nWe apologize if the Nebula app did not meet your expectations, and appreciate you taking the time to share your concerns. Please email us at support.nebula@gen.tech for assistance in solving any issues you may have had.\n\nBest wishes, Nebula team\n",
+      "at": "2021-07-01 14:27:25",
+      "repliedAt": "2021-07-04 13:30:06",
+      "version": "4.2.1",
+      "thumbsUp": 21
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "store": "googleplay",
+  "lang": "km",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:46+00:00",
+  "count": 3,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "bd7399f5-8d15-41c5-af18-970a5c285170",
+      "score": 5,
+      "content": "nebula charge my money from the bank multiple times by mistake. I was so confused at the first time. but thank god this company it really got a big responsibility they try to help me and find a solution for me immediately too. really appreciate the system and their manner 💜💜",
+      "reply": "Hi there,\n\nWe’re really glad to hear that our team was able to step in quickly and help resolve the situation for you. It’s great to know you felt supported and that everything was handled in a responsible and helpful way. We truly appreciate you taking the time to share your experience. ✨️\n\nTrust in the journey,\nNebula Support Team 🔮",
+      "at": "2026-04-08 16:41:07",
+      "repliedAt": "2026-04-08 16:52:39",
+      "version": "4.64.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "db747402-22f7-4394-8c16-96c7b43b8c00",
+      "score": 5,
+      "content": "Good luck",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review and for your kind words!\n\nBest wishes, Nebula team\n",
+      "at": "2022-02-15 20:03:18",
+      "repliedAt": "2021-09-03 10:14:47",
+      "version": "4.7.14",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "3c59e19a-91f4-4142-84bb-6e0c722ca424",
+      "score": 5,
+      "content": "good, help me alots",
+      "reply": "Dear User, hello there!\n\nThank you so much for your feedback, you put a big smile on our faces! Our team is hard at work trying to continuously improve our app and it’s always rewarding to hear kind words. We love that you love us!\n\nBest wishes, Nebula team\n",
+      "at": "2021-07-08 03:03:35",
+      "repliedAt": "2021-07-13 15:52:22",
+      "version": "4.3.0",
+      "thumbsUp": 2
+    }
+  ]
+}

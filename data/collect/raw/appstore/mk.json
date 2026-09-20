@@ -1,0 +1,59 @@
+{
+  "store": "appstore",
+  "country": "mk",
+  "fetched_at": "2026-09-20T00:08:18+00:00",
+  "count": 5,
+  "with_reply": 5,
+  "reviews": [
+    {
+      "id": "12961004496",
+      "rating": 5,
+      "title": "Hi",
+      "text": "I purchased the Premium version, but even after payment I still cannot access the paid features. I have refreshed and reinstalled the app multiple times, yet nothing works. This is very frustrating and feels misleading. If this is not fixed immediately, I request a full refund. Please solve this issue or process my refund without further delay. \nWith respect from : Hanif Zaimi",
+      "date": "2025-08-01T01:07:49Z",
+      "is_edited": false,
+      "reply": "Hello [Name]! Thank you for taking the time to leave us a review! Since we don't yet have the full picture of your experience, we kindly invite you to contact our support team at support-appstore@asknebula.com , and our dedicated team will assist you with the care and attention you deserve. Best wishes, Nebula team",
+      "reply_date": "2025-08-02T07:14:19Z"
+    },
+    {
+      "id": "14462548071",
+      "rating": 5,
+      "title": "Best app",
+      "text": "Best app",
+      "date": "2026-08-23T13:25:02Z",
+      "is_edited": false,
+      "reply": "Thank you so much for the kind words ✨ It truly means a lot to our team. Warmly, Nebula 🔮",
+      "reply_date": "2026-08-24T23:28:00Z"
+    },
+    {
+      "id": "12870874227",
+      "rating": 1,
+      "title": "Charging without reason",
+      "text": "I tried trial mode of nebula astrology, after they charged me with 39€ for nothing. I did unsubscribe, but I didn’t get the receive from Apple and the app is not listed in subscription history. So month later, they charged me again 39-€. If anyone can help me what to do, can’t reach nebula management, I only speak with the bot.",
+      "date": "2025-07-09T11:44:37Z",
+      "is_edited": false,
+      "reply": "Dear [Name], Hello!\n\nThank you for your feedback. We are very sorry that you have experienced multiple charges without explicit confirmation or control over your subscription. We understand how frustrating it is when an app does not appear in your subscription list and you cannot get real support.\n\nPlease note that we do not want you to experience this situation. We take such cases very seriously. Contact us directly at support-appstore@asknebula.com, and our representative will personally deal with the issue, stop further charges and help you.\n\nWe are ready to help and will do everything possible to fix the situation.\n\nBest regards,\nNebula Team 🔮",
+      "reply_date": "2025-07-10T22:55:17Z"
+    },
+    {
+      "id": "10220260302",
+      "rating": 1,
+      "title": "Money gets taken without permission",
+      "text": "42 dollars were taken from me without permission through the spinning wheel telling ive only claimed a sale price but it asks you to confirm it immediately which then takes money directly",
+      "date": "2023-08-04T22:12:21Z",
+      "is_edited": false,
+      "reply": "Greetings there! Thanks for your feedback. Your negative feedback is the saddest news for our team. Contact us at http://help.answers-365.com so that we can contact our payment system on your behalf and help you to resolve the problem. We pledge to exert every effort to help you find a quick solution to the problem. Best regards, support team.\n\n",
+      "reply_date": "2023-08-11T11:32:03Z"
+    },
+    {
+      "id": "10559558421",
+      "rating": 1,
+      "title": "Spam",
+      "text": "Spam",
+      "date": "2023-11-07T12:41:53Z",
+      "is_edited": false,
+      "reply": "Dear customer, hello there!\r\n\r\nPlease accept our apologies for this inconvenience!\r\n\r\n\nCould you please tell us more about your problem with our service at nebula.support@nebulahoroscope.com? We want to hear everything about the problem to solve it and improve our product for you.\r\n\r\n\nRespectfully, Nebula team. ",
+      "reply_date": "2023-11-09T00:56:17Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "mo",
+  "fetched_at": "2026-09-20T00:08:25+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "14437464680",
+      "rating": 1,
+      "title": "騙錢說有解讀",
+      "text": "在instagram 看到廣告，回答了很多問題最後出現付款才+下載app才能得到解讀，結果什麼都沒有，介面變成是找人聊天，沒有解讀，是騙人的，不要下載！！！！隔了幾天，這個app會自動進行再次扣款！不要下載！！因為他們有你的信用卡資料！會自動扣款！！大家要小心！",
+      "date": "2026-08-17T05:01:14Z",
+      "is_edited": false,
+      "reply": "Hello,\n\nThank you for sharing your feedback. We’re sorry to hear about your experience and would be happy to help clarify the situation. \nPlease contact us at support-appstore@asknebula.com, and we’ll be glad to assist you.\n\nHolding space for your journey, \nNebula",
+      "reply_date": "2026-08-18T16:39:06Z"
+    },
+    {
+      "id": "14379147742",
+      "rating": 1,
+      "title": "This app keeps automatically charging money. Don’t download it.",
+      "text": "This app keeps automatically charging money. Don’t download it.",
+      "date": "2026-08-02T15:45:19Z",
+      "is_edited": false,
+      "reply": "Hi, we’re sorry for the concern caused by repeated automatic charges. Please contact us at support-appstore@asknebula.com so we can review your account, help with cancellation, and check your refund request.\nTrust your path, Nebula",
+      "reply_date": "2026-08-17T19:05:07Z"
+    }
+  ]
+}

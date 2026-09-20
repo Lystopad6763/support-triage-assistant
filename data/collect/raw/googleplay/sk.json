@@ -1,0 +1,340 @@
+{
+  "store": "googleplay",
+  "lang": "sk",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:54+00:00",
+  "count": 33,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "eb462f70-6cd9-4229-855c-7475bd8e2b0b",
+      "score": 1,
+      "content": "scam",
+      "reply": "Hello there,\nIt's sad that you came away feeling this way. We understand that calling an app a “scam” reflects a serious loss of trust, and we’d like the chance to understand what happened. Please email support-googleplay@asknebula.com with the details so our team can review your experience.\nLet your path feel clear and calm,\nNebula Team",
+      "at": "2026-09-10 08:03:47",
+      "repliedAt": "2026-09-10 08:16:28",
+      "version": "4.88.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "3c4942a4-49d8-4bda-a5c2-df5d3f0ac4cb",
+      "score": 5,
+      "content": "so far so true, like the reading",
+      "reply": "Reviews like yours keep our whole team inspired ✨ So glad Nebula is landing well for you. Warmly, Nebula Team 🔮",
+      "at": "2026-08-23 23:50:29",
+      "repliedAt": "2026-08-23 23:54:23",
+      "version": "4.85.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "b6ae9e44-0194-48c2-9623-b1d1d70a7092",
+      "score": 5,
+      "content": "zatial to vyzera slubne",
+      "reply": "Hi [Name],\n\nThank you so much for your kind words! We’re glad to hear that the experience still feels promising for you, and we hope it continues to meet your expectations as you explore more features.✨\nIf you ever need any help, please contact us at support-googleplay@asknebula.com.\n\nGrateful for you,\nNebula Team 🔮",
+      "at": "2026-05-07 21:50:35",
+      "repliedAt": "2026-05-07 21:58:47",
+      "version": "4.69.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "8743ef4e-cfbd-4e9e-8872-a537fbc5bdea",
+      "score": 5,
+      "content": "The sketch for my soulmate looks identical to my expectations. I like it.",
+      "reply": "Hi [Name],\nThank you for sharing your experience! We’re so glad to hear that the soulmate sketch matched your expectations so closely and that you enjoyed it. That kind of connection is exactly what we hope to create.\nIf you ever need any help, please contact us at support-googleplay@asknebula.com.\n\nGrateful for you,\nNebula Team",
+      "at": "2026-05-07 18:05:13",
+      "repliedAt": "2026-05-07 18:12:22",
+      "version": "4.69.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "4f3a7224-68bd-48f3-be5c-8468357f0311",
+      "score": 1,
+      "content": "scam",
+      "reply": "Hi [Name], thank you for your feedback.\n\nWe’re sorry to hear this was your experience — it’s not the impression we want to create. Please reach out to us at support-googleplay@asknebula.com so we can look into this and assist you.\n\nWith gratitude, Nebula",
+      "at": "2026-05-01 00:23:21",
+      "repliedAt": "2026-05-01 00:31:47",
+      "version": "4.67.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "86402b93-aafe-479b-b48d-5470497e4115",
+      "score": 5,
+      "content": "So realiable ,great support, clear answers, nice communication",
+      "reply": "Hi [Name],\n\nThank you for your review.\nWe’re glad to hear you find the experience reliable and appreciate the support, clear answers, and communication. Your feedback means a lot to our team.\nIf you ever need assistance, reach out to us at support-googleplay@asknebula.com\n\nKind regards,\nNebula Team 🔮",
+      "at": "2026-03-10 01:20:53",
+      "repliedAt": "2026-03-10 01:24:57",
+      "version": "4.59.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ee3f8c1c-3f4d-42cd-944d-a3015dcd0be9",
+      "score": 5,
+      "content": "i can truly advise to give a try",
+      "reply": "Thank you for your wonderful recommendation! We're thrilled to hear that you're enjoying Nebula. Your support means the world to us, and we’re excited to be part of your journey. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-18 22:48:26",
+      "repliedAt": "2026-02-18 22:50:24",
+      "version": "4.57.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "a392fe33-5bfd-4b4b-8767-0e6880ba7d69",
+      "score": 5,
+      "content": "great customerservice👍🏼",
+      "reply": "Thank you for your kind words! We're thrilled to hear that our customer service has made a positive impact on your experience. Your support inspires us to continue providing clarity and assistance on your journey. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-14 13:29:14",
+      "repliedAt": "2026-01-14 13:30:27",
+      "version": "4.52.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "815fe2f5-79aa-4b09-ab07-3e0b7db3226e",
+      "score": 1,
+      "content": "they are charging you without any information and you are not able to \"cancel\" unexisted subscription. IT IS A SCAM",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-11 18:32:36",
+      "repliedAt": "2026-01-11 18:34:25",
+      "version": "4.52.00",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "e3c8223f-bdb6-4b65-872f-f45186135d4c",
+      "score": 1,
+      "content": "trash only want to pay for all",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-06 22:36:13",
+      "repliedAt": "2026-01-06 22:38:26",
+      "version": "4.49.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "7fa6ba00-6292-4ff7-aee3-3158d6240115",
+      "score": 1,
+      "content": "Unexpected charges from Nebula App (42.99€) I DO NOT HAVE ANY ACTIVE SUBSCRIPTION FOR THIS APP",
+      "reply": "Hi [Name],\nThank you for sharing! We’re very sorry to hear about the unexpected charge. Our team will reach out to you directly to review your account and assist with resolving this matter. You can also contact us at support-googleplay@asknebula.com just in case.\nWarm regards,\nNebula Team 🔮️",
+      "at": "2025-12-08 20:04:57",
+      "repliedAt": "2025-12-08 20:29:36",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "97f1c11b-0763-4653-bdcd-cdb5df236f80",
+      "score": 5,
+      "content": "Nebula nikdy nesklame a trafia do čierneho. Ďakujem",
+      "reply": "Hi [Name],\n\nThank you for your positive review.\nWe are happy to hear Nebula continues to meet your expectations and bring meaningful guidance. Your support motivates our team to keep improving the experience.\nIf you ever need assistance, please reach out to support-googleplay@asknebula.com\n\nKind regards,\nNebula Team 🔮",
+      "at": "2025-11-01 10:23:03",
+      "repliedAt": "2025-11-01 10:54:55",
+      "version": "4.40.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "c47799d5-9a80-4409-bbf1-e2630fe1b175",
+      "score": 1,
+      "content": "Why are you taking my money? I'm not using the app anymore",
+      "reply": "",
+      "at": "2025-06-08 12:20:40",
+      "repliedAt": "None",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "945808a0-0670-41e5-83a1-705ad6cb837d",
+      "score": 1,
+      "content": "I want to cancel my subscription, I don't use your application. I canceled my account yesterday. I canceled my subscription via gmail and they still withdrew my money without my permission. I didn't give you any permission to withdraw the money! I want my money back 39eur, otherwise I will deal with the bank.",
+      "reply": "Hi  [Name]! Thank you for your time. We are sorry that the payment problems with our service did not meet your expectations. Contact us at nebula.support@nebulahoroscope.com so that we can access the payment system and help with fixing the problem. We will do all we can to help you solve the problem in a timely manner. Best wishes.",
+      "at": "2025-05-26 17:08:18",
+      "repliedAt": "2025-05-26 17:26:28",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "683e125b-15f3-47d5-b0e3-0ff400601653",
+      "score": 1,
+      "content": "peniaze, peniaze a peniaze o nič iné nejde v tejto aplikácií ... za mňa hrozne a smutne ...",
+      "reply": "Milá Marta, dobrý deň! Ďakujeme, že ste si venovali čas a zanechali nám recenziu! Je nám ľúto, že ste mali zlú skúsenosť. Viac informácií o probléme nám môžete poskytnúť na adrese nebula.support@nebulahoroscope.com. Radi by sme to vyriešili a zmenili váš názor! Prajeme vám krásny deň! S pozdravom, tím Nebula",
+      "at": "2025-05-24 13:22:20",
+      "repliedAt": "2025-05-24 13:28:24",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ee25027f-2905-4ab6-9fd4-648001c7d4f8",
+      "score": 1,
+      "content": "Okay, I've seen way too many ads about this app so I wanted to try it. Turns out you have to pay for absolutely everything (well, for the most part). If you just wanted to see what the next day will bring you depending on you zodiac sign, well, you're out of luck if you decide to not pay for it. Everything is behind a paywall and I understand that they have to get their money somehow but most definitely not like this. If you have spare money and want to get rid of it, this is the app for you.",
+      "reply": "Hello [Name],\nThank you for your feedback. We’re sorry Nebula didn’t meet your expectations. While some features require a subscription to maintain quality, we understand your concerns and appreciate your input. Feel free to share more with us at nebula.support@nebulahoroscope.com.\nBest regards,\nThe Nebula Team",
+      "at": "2025-02-04 17:36:42",
+      "repliedAt": "2025-02-04 17:48:38",
+      "version": "4.8.65",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "2e5b850f-ac55-4d6d-8d75-4ab3df1ce6f2",
+      "score": 1,
+      "content": "I do not recommend this app. I cancelled this app and they took my money anyway! It's nôt a fair trade, stay away from this kind of apps.",
+      "reply": "Hey there, [Name]! Appreciate your input. We apologize that the payment issues with our service left you unsatisfied. Reach out to us at nebula.support@nebulahoroscope.com so that we can reach out to the payment system and assist you in resolving the issue. We will do everything to aid you in resolving the issue quickly. Regards, Support Team.",
+      "at": "2024-11-13 09:26:34",
+      "repliedAt": "2024-11-13 09:33:24",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "1fd30c1e-fccb-4a78-8e9a-52321cc04177",
+      "score": 5,
+      "content": "Super",
+      "reply": "Dear [Name],\n\nThank you so much for your review! 🌟 We're thrilled to hear you had a super experience!\n\nIf you ever need any assistance in the future, feel free to reach out to us at nebula.support@nebulahoroscope.com. We're always here to help! 😊\n\nWarm regards,\nNebula Team",
+      "at": "2024-09-11 15:49:27",
+      "repliedAt": "2024-09-11 15:58:58",
+      "version": "4.8.51",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "a793706f-a8c6-4fce-b3f8-7d9c59559a95",
+      "score": 1,
+      "content": "I strongly advise to stay as far away from this app as possible, they will give you $1 \"premium reading single payment\" without warnings of opening monthly subscriptions... they took 40€ off of my card for subscription i did not sign up for nor approved of. They dont even include this information in your payment confirmation email, where should be included that after the \"single payment\" then they reopen a subscription for big money and let you know 3 days before they charge you",
+      "reply": "Greetings! I appreciate you taking the time. Apologies that the payment difficulties with our service didn't meet your goals. Reach out to us at nebula.support@nebulahoroscope.com so that we can get into the payment system and help with troubleshooting the issue. We will do our best to help you in resolving the issue promptly. Have a nice day!",
+      "at": "2024-08-01 22:36:53",
+      "repliedAt": "2024-08-01 22:47:33",
+      "version": "4.8.47",
+      "thumbsUp": 7
+    },
+    {
+      "reviewId": "42ae7af9-6221-4a7d-a749-b34a58662221",
+      "score": 1,
+      "content": "I cant canceled my subscription. Help me,please!!!!",
+      "reply": "Dear customer, hello there!\nThank you so much for your feedback\nIt is sad to hear about your negative user experience with our product.\nPlease contact our support service at nebula.support@nebulahoroscope.com. They work day and night to solve any problems that our users may have.\nBest wishes, Nebula team 🔮",
+      "at": "2024-07-23 23:51:30",
+      "repliedAt": "2024-07-24 00:21:55",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "9138e1a7-2496-49c0-b7b7-4ae73e0e67b0",
+      "score": 1,
+      "content": "I can't cancel my subscribtion !!!! 29€ is too much for me!!!!!!!!!!!!!!!",
+      "reply": "Hello [Name]! I am grateful for the hard work you have done. We apologize that our performance did not meet your expectations because of payment problems. Contact us at nebula.support@nebulahoroscope.com so we can find a solution to this problem. We will strive to assist you in resolving the problem. Have a great day!",
+      "at": "2024-06-09 12:51:15",
+      "repliedAt": "2024-06-17 00:52:19",
+      "version": "4.8.43",
+      "thumbsUp": 6
+    },
+    {
+      "reviewId": "98b5664f-da2c-4bf4-94ae-1c557409e462",
+      "score": 1,
+      "content": "Careful, it is a scam!!! Avoid so you do not lose 40€ as I did",
+      "reply": "Hi, [Name]! I appreciate you taking the time. Apologies that the payment difficulties with our service didn't meet your goals. Reach out to us at nebula.support@nebulahoroscope.com so that we can get into the payment system and help with troubleshooting the issue. We will do our best to help you in resolving the issue promptly. Have a nice day!",
+      "at": "2024-06-02 14:50:37",
+      "repliedAt": "2024-06-07 12:09:05",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "3da269f6-c3b0-42f8-a19b-8fc47b1d60f7",
+      "score": 1,
+      "content": "Mrzí ma to, ale to skenovanie rúk je podvod...ruka vôbec nebola skenovaná...VV",
+      "reply": "Dear [Name], hello there! Thank you for your feedback, and I apologize for any inconvenience caused. Please accept our apologies once again. Kindly reach out to this email address: nebula.support@nebulahoroscope.com, so we can assist you further and resolve any issues you may have encountered.",
+      "at": "2024-05-19 01:46:49",
+      "repliedAt": "2024-05-19 01:50:43",
+      "version": "4.8.37",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "bd4b347a-f64e-4044-8ffe-0be6c4f2c2a4",
+      "score": 1,
+      "content": "Platená aplikácia",
+      "reply": "Hello dear [Name]! Thank you for your review! Nebula has both paid and free content due to our dedicated team's efforts. Subscriptions support the app's development, but there's plenty of free, personalized content available as well. In case of any questions, please contact us at nebula.support@nebulahoroscope.com. Best regards, Nebula Team.\n\n\n",
+      "at": "2024-04-23 16:55:43",
+      "repliedAt": "2024-04-23 17:24:03",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "bb1cb75a-3127-412f-868b-aa9958f6aedd",
+      "score": 1,
+      "content": "I would like to cancel my subscription. Can you please advise me how? Thank you",
+      "reply": "Hello! We're sorry to hear you're considering canceling your subscription. For assistance, please reach out to our support team at nebula.support@nebulahoroscope.com. We're here to help and address any concerns you may have. Warm regards, Nebula Team🔮",
+      "at": "2023-11-09 21:37:35",
+      "repliedAt": "2023-11-09 22:03:15",
+      "version": "4.8.8",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "cd82dde0-81c3-4f9c-aa13-e67ae6bb9494",
+      "score": 1,
+      "content": "You cant login in the app with account you created in web asknebula.. lost 1 euro. ... Enjoy IT.. terrible app",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review! You can tell us more about your problem via our help center http://help.answers-365.com. It will be very helpful for us to investigate and fix it.\n\nBest wishes, Nebula team\n",
+      "at": "2022-08-13 22:52:44",
+      "repliedAt": "2022-08-14 07:38:14",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "fd3144b1-ff40-458d-92a1-ef751972496f",
+      "score": 3,
+      "content": "Good but the ads... :/ and you must Pay for Some things",
+      "reply": "Dear User, hello there!\nWe have a big team of astrologers and developers working on this app daily, and their work has to be paid for. That is why Nebula has a paid subscription option without ads. However, our app also offers a lot of completely free highly personalized content that you can access without a subscription.\nBest wishes, Nebula team",
+      "at": "2022-07-10 12:56:46",
+      "repliedAt": "2022-07-10 20:51:07",
+      "version": "4.7.29",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "65b378ef-67ff-46f2-a53c-8faa8bf82f43",
+      "score": 1,
+      "content": "Hello, I would like to cancel my subscription, byť I dont know how. Can you help me please? Lenka",
+      "reply": "Dear User, hello there!\nThank you for taking the time to leave us a review! We’re sorry to hear you had a bad experience. You can tell us more detail about the issue at http://help.answers-365.com. We'd like to make it up and change your mind! Have a beautiful day!\nBest wishes, Nebula team",
+      "at": "2022-06-22 19:21:09",
+      "repliedAt": "2022-06-23 03:30:36",
+      "version": "4.7.27",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "833d788e-872d-4a69-9ede-d5354792b1b9",
+      "score": 2,
+      "content": "disappointed that I can't use it if I'm not 16 and over....",
+      "reply": "Dear User, hello. Thank you for taking the time to leave us a review! Unfortunately, we need to follow the legal requirements of your country.We have the following age restrictions for different countries:\n16 years for the EU\n13 years for USA / Canada\n15 years for Australia\nfor all other countries -13 years",
+      "at": "2022-04-01 23:54:34",
+      "repliedAt": "2022-04-02 11:16:25",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e75f1654-e71a-4161-ae8e-a795dfed5509",
+      "score": 5,
+      "content": "Odporúčam stiahnuť, veľmi dobrá aplikácia :)",
+      "reply": "Dear [Name], hello there!\n\nThank you for taking the time to leave us a review and for your kind words!\n\nBest wishes, Nebula team\n\n",
+      "at": "2022-01-09 11:14:34",
+      "repliedAt": "2022-01-09 14:19:08",
+      "version": "4.7.9",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "af5f4dab-d265-49d5-8834-c4306112fbbe",
+      "score": 1,
+      "content": "I thought that 3rd trial was for free and it's charged only if you continue the subscription after the 3 days...",
+      "reply": "Dear User, hello there!\n\nThank you so much for your feedback! This situation may occur if you have downloaded the app before and have used a free trial before. Then, when you reinstall the application and start a free trial again, you will be automatically charged, because there is no second free trial.\n\nBest wishes, Nebula team",
+      "at": "2021-12-01 13:01:37",
+      "repliedAt": "2021-12-01 16:34:31",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "a6d4a0a9-ff3a-496c-b46b-73d4757b2fc0",
+      "score": 1,
+      "content": "Please cancel my subscription which has not been in 24 hours. I meet all your conditions. I contacted support, no further response. Let us be responsible and compassionate to each other. Thank you in advance.",
+      "reply": "Hi, thank you for your feedback. The support processes the request in due course and within 24 hours. You request was reviewed, subscription canceled. Thank you for your patience and understanding.",
+      "at": "2021-02-25 06:30:53",
+      "repliedAt": "2021-02-25 13:08:54",
+      "version": "3.3.0",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "c86eb5ed-ed29-41b8-a58f-6a6ca5cc8c6a",
+      "score": 2,
+      "content": "Add more languages or at least do texts that can be copied to google translator.",
+      "reply": "Thank you for your comment. Please accept our apologies for the faced inconvenience! Unfortunately, we have not yet finished translating all content into another languages on the app for Android. We are doing our best to improve our product so stay tuned for new features in future releases!",
+      "at": "2020-10-24 00:25:55",
+      "repliedAt": "2020-10-27 14:11:37",
+      "version": "2.2.0",
+      "thumbsUp": 6
+    }
+  ]
+}

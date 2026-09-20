@@ -1,0 +1,105 @@
+{
+  "source": "asknebula_policy_pages",
+  "host": "www.asknebula.com",
+  "collected_how": "supplied by hand from the rendered pages, NOT scraped — same client-rendering problem as the FAQ",
+  "collected_at": "2026-09-20",
+  "why_it_matters": "These pages carry the company's OWN statements about what may be automated, what must never be, and how a refund is routed. The assignment asks for automation boundaries and a recommended next action; sourcing both from the operator's published policy is stronger than inventing them.",
+  "articles": [
+    {
+      "id": "pol-01",
+      "category": "Safety & Escalation",
+      "title": "Situations Nebula advisors cannot support",
+      "url": "https://www.asknebula.com/app/safety-resources",
+      "body": "Nebula is not a medical, psychological, psychiatric, legal, or crisis-intervention service. Advisors are not trained to assess risk, provide diagnoses, or offer guidance in situations that require emergency or professional care. Nebula psychics cannot offer insight or support for situations that require direct intervention, emergency response, or specialized professional care, including:\n• self-harm, suicidal thoughts, or threats to personal safety\n• emergency or life-threatening situations\n• medical or mental health conditions that require professional treatment or diagnosis\n• experiences of physical or psychological abuse, including domestic or sexual violence\n• addiction-related concerns, such as substance use or gambling, that require specialized support\n• legal matters, criminal activity, or decisions with legal consequences\n• financial decisions, investments, or gambling outcomes\n• interactions involving minors or situations that could place someone at risk\n\nIf a message touches on urgent safety concerns or serious harm, advisors may need to step back from the conversation. If you or someone you know feels unsafe, overwhelmed, or in danger, reach out to local emergency services or crisis support organizations.",
+      "operational_note": "This is the company's own do-not-automate list. Eight named situations, each observable in review text."
+    },
+    {
+      "id": "pol-02",
+      "category": "Safety & Escalation",
+      "title": "Crisis support resources (United States)",
+      "url": "https://www.asknebula.com/app/safety-resources",
+      "body": "Suicide and Crisis Lifeline — https://www.988lifeline.org/ — 1-800-273-TALK (8255), text 988\nCrisis Text Line — text TRUST to 741741\nNational Domestic Violence Hotline — https://www.thehotline.org/ — 1-800-799-SAFE (7233)\nVeterans/Military Crisis Line — http://www.veteranscrisisline.net — 1-800-273-8255 press 1, SMS 838255\nThe Trevor Project (LGBTQ+) — http://www.thetrevorproject.org — 1-866-488-7386\nSAMHSA National Helpline (drugs & alcohol) — https://www.samhsa.gov — 1-800-662-HELP (4357)\nNational Problem Gambling Helpline — https://www.ncpgambling.org — 1-800-522-4700\nNational Alliance for Eating Disorders — https://www.allianceforeatingdisorders.com/ — (866) 662-1235\n\nAvailability varies by country.",
+      "operational_note": "Where a crisis ticket is routed. The assistant surfaces these rather than drafting a reply."
+    },
+    {
+      "id": "pol-03",
+      "category": "Automation Policy",
+      "title": "Where automation is used on Nebula",
+      "url": "https://www.asknebula.com/app/human-guidance",
+      "body": "On Nebula, some support interactions may begin with automated assistance, particularly for routine requests such as subscription questions, account access, or general platform information. Automated assistance helps route and handle common requests. Support conversations may also involve human agents, depending on the nature of the request and the context of the interaction.\n\nOur approach to responsible technology:\n• Limited use of automation for operational support — technology is used within defined boundaries to support platform operations, in limited operational contexts such as general information and routine support requests.\n• Human insight is central — guidance is shaped by human insight and advisor expertise.\n• Privacy and safety are prioritized — data-protection safeguards apply to how information is handled in connection with automation.\n• Responsible development — innovation supports, rather than replaces, the personal nature of the community.",
+      "operational_note": "The company's own automation scope: subscription questions, account access, general platform information. Readings themselves are explicitly out of scope for automation."
+    },
+    {
+      "id": "pol-04",
+      "category": "Subscriptions & Billing",
+      "title": "Refund routing depends on where the subscription was bought",
+      "url": "https://www.asknebula.com/app/terms",
+      "body": "IMPORTANT NOTICE REGARDING AUTOMATIC RENEWALS. This Service includes subscriptions that automatically renew. To avoid being charged, you must cancel your subscription before the end of your trial or current billing cycle.\n\nIf you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple. You can submit a request following the instructions on the Apple Support page.\n\nIf you subscribed or started a free trial through the Google Play Store or directly via our website, please contact the Support center.\n\nDeleting the app does not cancel your subscription, trial or introductory offer. If you intend to cancel, ensure you follow the appropriate cancellation process for your platform.",
+      "operational_note": "The correct next action for a refund request DIFFERS by store. An App Store ticket routes to Apple; a Google Play or web ticket stays with support. This makes `store` a routing input, not just provenance."
+    },
+    {
+      "id": "pol-05",
+      "category": "Subscriptions & Billing",
+      "title": "Balance units, per-minute charging and auto-refill",
+      "url": "https://www.asknebula.com/app/terms",
+      "body": "To access certain features you top up an account Balance with Balance Units. Units are deducted on a per-minute basis, charged at the beginning of each minute of use. The cost per minute varies by the offer accepted and the advisor's rate, and is disclosed before access.\n\nAuto-refill automatically tops up the Balance whenever Units run out, until cancelled. It is cancelled by deactivating auto-refill in account settings; remaining Units stay usable.\n\nBalance Units have no monetary value, do not constitute currency or property, cannot be sold, transferred, traded, withdrawn or gifted, and are non-refundable unless the Money-Back Policy or applicable law says otherwise. Units may be forfeited if an account is suspended or terminated.",
+      "operational_note": "Explains the 'my credits disappeared' complaint class and what support can and cannot offer."
+    },
+    {
+      "id": "pol-06",
+      "category": "Account Management",
+      "title": "Age restriction: 18 and older",
+      "url": "https://www.asknebula.com/app/terms",
+      "body": "The Service is intended for users aged 18 and older. By creating an Account, you confirm that you are at least 18 years old and have the legal authority to enter into and comply with these Terms. If you are under 18, you are prohibited from using the Service.",
+      "operational_note": "Reconciles the age-gate complaints: reviewers born 2006-2009 hit an 18+ gate. 'Interactions involving minors' is also on the do-not-automate list."
+    },
+    {
+      "id": "pol-07",
+      "category": "About Nebula",
+      "title": "Advisors are independent practitioners who may use stage names and illustrative images",
+      "url": "https://www.asknebula.com/app/advisors",
+      "body": "Advisors on Nebula are independent practitioners, not Nebula employees. They bring their own backgrounds, expertise and approaches to spiritual guidance, and may use professional names or representative images as part of their practice.\n\nFrom the Terms: the Company does not represent or warrant that any advisor is licensed or qualified. Some advisors may use professional stage names and/or illustrative images instead of a legal name or personal photograph. The Company is not responsible for the truth, accuracy, completeness, safety, timeliness, quality, appropriateness, legality or applicability of anything said or written by advisors.\n\nEvery advisor passes a structured application and verification process: initial screening and expertise review, an ethics and communication-style review, and possibly a live simulation mirroring real sessions.",
+      "operational_note": "The official answer to the 107 reviews accusing Nebula of AI-generated or fake psychics. Note the admission that images may be 'representative' — which is what reviewers noticed."
+    },
+    {
+      "id": "pol-08",
+      "category": "Safety & Escalation",
+      "title": "Reporting a safety concern is a separate intake from support",
+      "url": "https://www.asknebula.com/app/report",
+      "body": "If you encounter behavior or content that feels inappropriate, uncomfortable, or misaligned with Nebula's values, you are encouraged to report it, whether it happened during a live chat or elsewhere on the platform.\n\nConsider submitting a report if you experience or notice:\n• harassment, threats, or hateful language\n• sexual, inappropriate, or boundary-crossing behavior\n• content that feels unsafe, manipulative, or distressing\n• repeated violations of boundaries during a chat\n\nAfter submitting a report you receive a confirmation. Reports are reviewed to assess whether there may have been a policy violation. Some are reviewed quickly; others require additional context or follow-up. The outcome may not always be shared.",
+      "operational_note": "A SECOND intake path beside the support form. A ticket about advisor misconduct belongs here, not in the normal support queue — a routing decision the classifier must be able to make."
+    },
+    {
+      "id": "pol-09",
+      "category": "Content Standards",
+      "title": "Guidance must be free from fear-based messaging and manipulation",
+      "url": "https://www.asknebula.com/app/ethical-guidance",
+      "body": "Guidance on Nebula is expected to be free from fear-based messaging, undue urgency, or emotional manipulation. Language suggesting unavoidable harm, curses, irreversible consequences, or pressure to act in order to avoid negative outcomes falls outside these ethical standards. Guidance should help users feel steady, grounded, and more aware of their experience.\n\nGuidance does not include medical, psychological, psychiatric, legal, financial or any other professional advice; diagnoses, treatment recommendations, or instructions for emergency or crisis situations; or direction or pressure around specific actions, decisions, or continued engagement.\n\nAdvisors are expected to avoid framing insights in ways that override a user's judgment or autonomy.",
+      "operational_note": "Gives a category for the distressing-horoscope complaints found in the corpus ('You may have a death of someone close to you'). The help center has no such category; this policy does."
+    },
+    {
+      "id": "pol-10",
+      "category": "Content Standards",
+      "title": "Community guidelines: what is not supported",
+      "url": "https://www.asknebula.com/app/community-guidelines",
+      "body": "Not supported on the platform — requests or content involving:\n• instructions for self-harm, suicide, or harm to others\n• violence, abuse, or threats of physical harm\n• sexual content, sexual exploitation, or explicit behavior\n• manipulation, coercion, or attempts to control another person's actions\n• medical, psychological, legal, financial or other professional advice requiring licensed professionals\n• illegal activity or guidance that could cause real-world harm\n• requests to share personal contact details or move conversations outside Nebula\n\nRespectful conduct — not supported:\n• harassment, hate speech, or discriminatory language\n• intimidation, pressure, or repeated boundary-crossing\n• personal attacks or demeaning behavior toward advisors or users\n\nWhen guidelines are not followed, conversations may be paused or ended, and further steps may be taken.",
+      "operational_note": "The company's own line on abusive tone — useful for deciding how the classifier should treat the 2,711 aggressive reviews without conflating tone with priority."
+    },
+    {
+      "id": "pol-11",
+      "category": "About Nebula",
+      "title": "Entertainment purposes only, no guarantee of outcomes",
+      "url": "https://www.asknebula.com/app/terms",
+      "body": "This Service is provided for entertainment purposes only. Any information provided within the Service or in any report or reading is not scientific and should not be treated as fact. It does not constitute, and should not be used as a substitute for, professional advice of any kind, including psychological, medical, legal or financial advice.\n\nThe Company makes no representations, warranties, or guarantees as to the accuracy, reliability, or outcome of the Services, and is not responsible for personal choices or actions a user may take following a consultation.",
+      "operational_note": "The standing answer to 'the reading was wrong' complaints."
+    },
+    {
+      "id": "pol-12",
+      "category": "Subscriptions & Billing",
+      "title": "Chargebacks, disputes and binding arbitration",
+      "url": "https://www.asknebula.com/app/terms",
+      "body": "The Terms include sections on Refunds, Chargebacks and Payment Disputes, and Taxes.\n\nSection 12 governs dispute resolution: it includes a binding arbitration agreement, meaning disputes are resolved through final and binding arbitration rather than in court, with limited exceptions. It includes a class action and jury trial waiver. Users may opt out of the arbitration agreement by following the process in Section 12.\n\nThe operating entity is Spiritual Nebula Limited, 62 Athalassas Avenue, Mezzanine Floor, Strovolos, 2012 Nicosia, Cyprus.",
+      "operational_note": "542 reviews threaten a chargeback or legal action. A ticket mentioning chargeback, lawsuit or arbitration has legal consequences and is a natural human-in-the-loop trigger."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "store": "appstore",
+  "country": "mu",
+  "fetched_at": "2026-09-20T00:08:31+00:00",
+  "count": 3,
+  "with_reply": 3,
+  "reviews": [
+    {
+      "id": "12208215637",
+      "rating": 5,
+      "title": "Cozy",
+      "text": "Very nice, friendly and easy going app",
+      "date": "2025-01-20T16:03:21Z",
+      "is_edited": false,
+      "reply": "Hello dear User,\n\nThanks for choosing the Nebula and for your review!\n\nWe are very glad that you are satisfied with our application. Your positive feedback inspires us!\n\nIf you have any questions or need help regarding our service, you can always contact us at nebula.support@nebulahoroscope.com оur support service works 24/7!\n\nBest regards, Nebula team 🔮",
+      "reply_date": "2025-01-22T15:29:11Z"
+    },
+    {
+      "id": "12277165176",
+      "rating": 5,
+      "title": "Experiences",
+      "text": "Great experience with this app",
+      "date": "2025-02-06T10:19:20Z",
+      "is_edited": false,
+      "reply": "Hello [Name]!\n\nThank you for taking the time to leave us feedback.  \n  \nYour supportive remarks give us certainty that we are on the right track.  \n  \nHave a nice day, Nebula team 🔮",
+      "reply_date": "2025-02-07T22:02:05Z"
+    },
+    {
+      "id": "13264078020",
+      "rating": 1,
+      "title": "Do not trust this app",
+      "text": "I have paid $13.47 for palmistry reading and I have not received it.",
+      "date": "2025-10-14T05:33:05Z",
+      "is_edited": false,
+      "reply": "Hello!\nThank you for the feedback. We’re truly sorry to hear that you problem with your palmistry reading — we completely understand how disappointing that must be. Our team can look into this right away to make sure you receive what you purchased. Please contact us at support-appstore@asknebula.com, and we’ll personally review your order and assist you in resolving this.\nBest wishes, Nebula Team 🔮",
+      "reply_date": "2025-10-15T23:32:56Z"
+    }
+  ]
+}

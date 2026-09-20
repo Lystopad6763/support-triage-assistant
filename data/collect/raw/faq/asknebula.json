@@ -1,0 +1,98 @@
+{
+  "source": "asknebula_faq",
+  "host": "www.asknebula.com",
+  "url": "https://www.asknebula.com/app/faq",
+  "product": "AskNebula web platform (psychic chat), distinct from the Nebula mobile app that the Zendesk help center covers",
+  "collected_how": "supplied by hand from the rendered page, NOT scraped",
+  "why_not_scraped": "The page is a client-rendered React app: the server returns 33KB of HTML holding 86 characters of visible text ('You need to enable JavaScript to run this app'). No __NEXT_DATA__, no server rendering, and the JS bundle lazy-loads its chunks, so no content API was findable. A headless browser is the only automated route.",
+  "collected_at": "2026-09-20",
+  "counts": {
+    "articles": 14
+  },
+  "articles": [
+    {
+      "id": "faq-01",
+      "category": "About the service",
+      "title": "What consultation can bring me?",
+      "body": "Your path is unique, as are your worries and problems. Our task is to help you solve these problems by working specifically with your energy, and fully adjusting to your situation. In our practice, there have been situations when a person came to us being on the verge for one reason or another. Each of these stories has found its positive solution through the help of our empathic non-judgemental psychics, their powerful readings and rituals, as well as support. If you are feeling overwhelmed right now, come to us, and we will settle your feelings down and bring the answers to all of your questions. We are always in touch and ready to help! Contact us."
+    },
+    {
+      "id": "faq-02",
+      "category": "About the service",
+      "title": "How platform can enhance my life on a daily basis?",
+      "body": "Your friends and family are busy with their own lives, as well as you are worried about a most important decision that will affect your whole life and career, or you just want to know if it's a good day for this or that activity, as well as you, want to get advice and daily guidelines for your love relationship or boost your energy level getting a guide on practices and rituals or struggling to find out if your ex comes back - all your concerns are a top priority for us, and our mission is to help you improve the quality of your life every day. You can get the needed support and assistance on our platform 24 hours a day, 7 days a week, 365 days a year."
+    },
+    {
+      "id": "faq-03",
+      "category": "About the service",
+      "title": "Are our advisors real people or AI?",
+      "body": "All readings on our platform are provided by real advisors. Every psychic you meet here is a human who brings real-life experience and intuition into each consultation."
+    },
+    {
+      "id": "faq-04",
+      "category": "How to Use",
+      "title": "How can I get prepared for the reading?",
+      "body": "Our readings and consultations do not require personal presence, there are no boundaries for energy. You can text us anytime and anywhere when you feel you need guidance and wise advice. Just think about your question, be honest and open, and we will do everything to help you live happily and deal with your worries. Remember that our consultations are always confidential. You did not come to us by chance. Don't waste your precious time. Ask us any questions at the Live chat."
+    },
+    {
+      "id": "faq-05",
+      "category": "How to Use",
+      "title": "How it can help to get the most precise and fast reading?",
+      "body": "Our psychics apply a variety of techniques and instruments to help you, and many of them do require the exact details of your birth date, time, and place in order to provide you with the most precise answers. Thus indicating all these details in your profile, the psychic won't take your time in chat requesting the details. Also, be sure that all the information you provide is confidential."
+    },
+    {
+      "id": "faq-06",
+      "category": "How to Use",
+      "title": "How can I choose a psychic?",
+      "body": "Firstly, it's not easy to be selected as one of our psychics. All our psychics, before starting to work at our platform, are passing through security and reputation checks. Moreover, before starting to work, we are educating them according to our own unique techniques and our empathy policy. We do our best to make sure that you will get the unique and best experience with our consultations. Our psychics will provide you with answers to any of your questions, and there is nothing impossible for them. You can choose your personal psychic with help of convenient filters, as well as checking the psychic's personal information in the bio or based on the cost rate and reviews. There are a lot of factors that come into play with psychics' cost rate: experience, popularity, achievements, availability, range, techniques knowledge etc. But what unites all of them is talent and genuine willingness to help. If you feel hard to choose, your personal psychic, you can always apply to Customer Support, and we will help you to choose the best psychic for your needs."
+    },
+    {
+      "id": "faq-07",
+      "category": "How to Use",
+      "title": "How are the reviews displayed?",
+      "body": "You may leave feedback for your reading as soon as your reading is over. Only star ratings submitted with written feedback will appear at the bottom of the psychic's listing page under the corresponding username. Feedbacks are very helpful when choosing the best psychic. So this is a great way to help us to enhance our service even better, as well as help other customers to choose the best psychic for them."
+    },
+    {
+      "id": "faq-08",
+      "category": "How to Use",
+      "title": "How can I use this platform?",
+      "body": "You can click the \"Psychics\" tab on the main page and choose the psychic.\nPsychics may have 3 different statuses: online, offline, and busy. If an psychic is online, you will have a chat by means of Live-chat sessions. Psychic won't be distracted by any other messages and will provide you with the fastest answers and readings. To start the chat, please press the \"Start chat\" button and a psychic will connect to you within 60 seconds.\nIf a psychic is offline or busy, you will have a chat similar to chatting with messengers, as soon as the psychic is free, you will get the reading at once.\nOur psychics will shed light on any sphere of your life. We will do our best for securing your happiness in a relationship and provide you with such answers: when you will get married, whether your partner is loyal to you, what your loved one is thinking about you, and if your ex comes back."
+    },
+    {
+      "id": "faq-09",
+      "category": "Subscriptions & Billing",
+      "title": "How does the payment system work?",
+      "body": "In both cases, whether you decide to chat online by means of Live-chat or send a message if the psychic is busy or offline, you will be charged a per-minute fee.\nDuring the Live-chat it will be a private session with our psychic, without any distraction, just you and the psychic in the real chat. At the same time, when sending a message if the psychic is busy or offline, you will be able to send as many messages as you want free of charge within 1 minute. You won't be charged for the time it takes the psychic to answer you."
+    },
+    {
+      "id": "faq-10",
+      "category": "Subscriptions & Billing",
+      "title": "Should I pay for the additional services in the chat (Tarot, Runes, Rituals, etc.)?",
+      "body": "Absolutely not! You can choose the type of reading that you like and trust. It doesn't matter which reading you want to get; you only pay for communicating with the psychic."
+    },
+    {
+      "id": "faq-11",
+      "category": "How to Use",
+      "title": "How will I get my readings?",
+      "body": "Any type of reading will be provided by your psychic through a chat. Once you choose your package, you'll be redirected to a chat room to start a conversation and get the answers."
+    },
+    {
+      "id": "faq-12",
+      "category": "How to Use",
+      "title": "How much time it usually takes to get my reading?",
+      "body": "When the psychic is online, you can get the answer within 2 minutes. Sometimes, it might take longer, depending on your request. Some questions require deeper analysis. To provide you with complete satisfaction from the consultation and obtain clarity on your questions, the psychic should choose the proper type of reading for your question, study and analyze the reading result as well as the horoscope thoroughly and meticulously, and it can take some time.\n\nWhen the psychic is offline, you will get your answer within 48h. Thank you for your patience and understanding! In case you miss a reply, we'll notify you via email."
+    },
+    {
+      "id": "faq-13",
+      "category": "Tech Assistance",
+      "title": "How was my Zodiac sign calculated on the platform?",
+      "body": "To determine your Zodiac sign, Modern Western Astrology looks at the three most important factors:\nYour date of birth\nYour place of birth\nYour time of birth\nThe change of sign does not happen precisely at midnight. The exact time when the Sun switches signs also depends on your location.\n\nFor example, in 2019, the Sun entered Virgo on August 23rd at 6:02 AM in New York, but in Los Angeles, it happened at 03:02 AM. In 2020, since it was a leap year, everything shifted one day (after February), and the Sun changed from Leo to Virgo on the 22nd of August at 11:45 AM in New York and 8:45 AM in Los Angeles.\n\nThe dates for the \"beginning\" of a new Zodiac sign are the dates when (most of the years) the Sun changes signs. Thus, by providing a specific time and location you help us determine where the Sun was positioned at the exact moment of your birth."
+    },
+    {
+      "id": "faq-14",
+      "category": "How to Use",
+      "title": "How can I find a compatibility report?",
+      "body": "It can take up to an hour from the time of order to generate a compatibility report based on the information provided and send it to you. You will get your report at the email address you used to register on the platform. Please check your inbox and spam folders carefully."
+    }
+  ]
+}

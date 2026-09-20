@@ -1,0 +1,50 @@
+{
+  "store": "googleplay",
+  "lang": "ka",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:46+00:00",
+  "count": 4,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "be917a56-c0a3-4039-98eb-e3ad382baf9c",
+      "score": 1,
+      "content": "Add Georgian🇬🇪 language, please",
+      "reply": "Greetings!\nWe greatly appreciate your feedback! We regret any inconvenience caused. Please note that not all content has been translated into other languages within the Android app at this time. We are diligently working to enhance our product, and we encourage you to watch for upcoming releases to enjoy new features!\nWarmest regards, Nebula squad",
+      "at": "2024-04-24 22:29:50",
+      "repliedAt": "2024-04-24 23:05:06",
+      "version": null,
+      "thumbsUp": 14
+    },
+    {
+      "reviewId": "077aae35-21e9-410d-9d4b-ac738624f4ab",
+      "score": 1,
+      "content": "please add google translate function",
+      "reply": "Greetings User, [Name]!\nWe appreciate you taking the time to provide us with your feedback! We apologize for the confusion. Nevertheless, we desire to gain further knowledge regarding the circumstances so that we can fix them. You can provide further information regarding the matter at http://help.answers-365.com.\nWarmest regards, Nebula squad",
+      "at": "2023-05-17 00:16:06",
+      "repliedAt": "2023-05-17 07:04:27",
+      "version": null,
+      "thumbsUp": 5
+    },
+    {
+      "reviewId": "e3a8996c-3e02-4399-8bac-40a8f2e3ce2d",
+      "score": 1,
+      "content": "money trap",
+      "reply": "Hi there, [Name] customer!\nThank you for your time. We are sorry that the payment problems with our service did not meet your expectations. Reach out to us at Support so we can discover a solution for your issue. We will do all we can to help you solve the problem in a timely manner.\nBest wishes, Support Team.",
+      "at": "2023-03-21 11:29:43",
+      "repliedAt": "2023-03-21 22:59:48",
+      "version": "4.7.67",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "0f91c110-94e0-49fc-a158-952f770677b3",
+      "score": 5,
+      "content": "💞💞💞💞",
+      "reply": "Thanks for your rating!",
+      "at": "2020-12-20 22:27:26",
+      "repliedAt": "2020-12-22 23:41:04",
+      "version": null,
+      "thumbsUp": 2
+    }
+  ]
+}

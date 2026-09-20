@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "uz",
+  "fetched_at": "2026-09-20T00:27:12+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "13241342636",
+      "rating": 4,
+      "title": "Interesting experience",
+      "text": "Quite a journey for those in confusion, for now positive",
+      "date": "2025-10-08T20:15:43Z",
+      "is_edited": false,
+      "reply": "Hi there,\n\nThank you for taking a moment to share your thoughts.\n\nWe’re happy to hear that your experience with Nebula has been positive so far and that it’s been a helpful guide on your personal journey. \n\nWe hope it continues to bring you clarity and inspiration along the way.\n\nIf you ever need any help or have questions, feel free to reach us at support-appstore@asknebula.com.\n\nWarm regards,\nNebula Team 🔮",
+      "reply_date": "2025-10-11T22:35:59Z"
+    }
+  ]
+}

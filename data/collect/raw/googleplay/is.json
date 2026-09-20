@@ -1,0 +1,70 @@
+{
+  "store": "googleplay",
+  "lang": "is",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:44+00:00",
+  "count": 6,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "931777fe-9c30-48a8-b901-aa486f2f774a",
+      "score": 5,
+      "content": "virkilega skemmtilegar spár, sem gefa mér mikið. Hjálpa mér með skilning á sjálfri mér",
+      "reply": "It’s wonderful to hear that Nebula is providing you with the clarity you seek! ✨ We’re honored to be part of your journey. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-14 18:04:54",
+      "repliedAt": "2026-02-14 18:06:20",
+      "version": "4.56.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ae4fa010-5c0e-4e7c-91bd-378bb1ea1779",
+      "score": 1,
+      "content": "it's a scam",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-29 17:15:54",
+      "repliedAt": "2026-01-29 17:16:29",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "17386fea-fdb6-4ce8-8340-abe6deb1994e",
+      "score": 5,
+      "content": "Nákvæmt og mjög áhugavert 🌟",
+      "reply": "Hi [Name],\n\nThank you for your wonderful feedback!\nWe’re thrilled to hear that you found Nebula accurate and interesting.\nIf you ever have questions or need assistance, feel free to reach out at support-googleplay@asknebula.com\n\nWarm regards,\nNebula Team 🔮",
+      "at": "2025-11-26 00:29:25",
+      "repliedAt": "2025-11-26 00:34:21",
+      "version": "4.45.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ba1c145d-d691-4b69-92e2-47183876859b",
+      "score": 5,
+      "content": "Good 😃",
+      "reply": "Hi [Name],\nThank you for your kind feedback 😀 We’re so glad to know you’re enjoying the app, and your positivity means a lot to us! If you’d ever like to share more thoughts, feel free to reach us at support-googleplay@asknebula.com.\nWarm regards,\nNebula Support Team",
+      "at": "2025-09-21 12:23:55",
+      "repliedAt": "2025-09-21 15:20:25",
+      "version": "4.33.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e08e9307-65f6-42a8-892f-635ccda7c297",
+      "score": 5,
+      "content": "The payment did surprise me when i had forgotten about my subscription and not having an easy way to find out what the payment was made me uneasy but I truly recommend this app and the service they provide. The customer service was 10/10. One of the best apps to get when you want to know more about yourself and the future.",
+      "reply": "Dear User, hello there! Thank you for taking the time to leave us such a lovely review! It is users like you that keep pushing us to deliver the best customer experience, while at the same time making our job enjoyable. Best wishes, Nebula team",
+      "at": "2021-07-13 16:35:36",
+      "repliedAt": "2021-07-16 18:46:45",
+      "version": "4.3.0",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "82d0812d-5c54-4bfb-af5f-338a0aac6ee9",
+      "score": 1,
+      "content": "I cant find any info about purchase nor how to cancel ... but still I am being charged upp for this app on my card!",
+      "reply": "Hello,\nThank you for your comment. Could you please contact us at support.nebula@gen.tech\nWe will do our best to assist you as soon as possible.",
+      "at": "2021-03-22 18:22:02",
+      "repliedAt": "2021-03-22 22:36:35",
+      "version": "3.3.0",
+      "thumbsUp": 10
+    }
+  ]
+}

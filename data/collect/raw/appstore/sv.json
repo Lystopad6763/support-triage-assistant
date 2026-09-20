@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "sv",
+  "fetched_at": "2026-09-20T00:16:43+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "13871833543",
+      "rating": 5,
+      "title": "Great advice",
+      "text": "I feel after being in the app for a while, I’m more secure of my self and feel better",
+      "date": "2026-03-21T15:09:06Z",
+      "is_edited": false,
+      "reply": "Hi there! Thank you for sharing your reflections — we truly appreciate hearing from you. 💜 It’s wonderful to know that the guidance offered has helped you feel more confident and at ease with yourself. Our aim is always to create an experience that feels supportive, encouraging, and meaningful, and your words reassure us that this intention is resonating. Your feedback is very valuable, as it inspires us to keep refining the service so it continues to bring clarity and positivity to everyone. If you’d ever like our team to assist you more directly, please reach out at support-appstore@asknebula.com — we’ll be glad to help. Grateful for you, Nebula",
+      "reply_date": "2026-03-23T00:58:54Z"
+    },
+    {
+      "id": "13054946494",
+      "rating": 5,
+      "title": "Amazing",
+      "text": "I have had a great experience. So accurate.",
+      "date": "2025-08-24T14:07:37Z",
+      "is_edited": false,
+      "reply": "Hello, thank you so much for your kind words! 🌟 We’re thrilled to hear you’ve had such an accurate and positive experience with Nebula. Our team is always ready to assist you further. Contact us anytime at support-appstore@asknebula.com, and we`ll respond promptly with the support you need. Kindest regards, Nebula team 🔮",
+      "reply_date": "2025-08-26T02:18:39Z"
+    }
+  ]
+}

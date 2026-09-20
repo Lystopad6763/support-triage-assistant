@@ -1,0 +1,59 @@
+{
+  "store": "appstore",
+  "country": "md",
+  "fetched_at": "2026-09-20T00:08:12+00:00",
+  "count": 5,
+  "with_reply": 4,
+  "reviews": [
+    {
+      "id": "5486229651",
+      "rating": 5,
+      "title": "WOOOOW",
+      "text": "NNNIIICE MY HEALTH IS OK THANK YOU WOOOOOW 😱😱",
+      "date": "2020-02-04T09:39:15Z",
+      "is_edited": false,
+      "reply": "Thanks! ",
+      "reply_date": "2020-02-05T08:35:55Z"
+    },
+    {
+      "id": "6078118967",
+      "rating": 1,
+      "title": "Robbed 9,99 for nothing",
+      "text": "Give my money back!! I don’t have the app on my phone!",
+      "date": "2020-06-15T09:36:45Z",
+      "is_edited": false,
+      "reply": "",
+      "reply_date": null
+    },
+    {
+      "id": "14177553098",
+      "rating": 3,
+      "title": "Nebula",
+      "text": "Îmi place ce citesc și ce aflu e minunat să știi ceva despre tine însuți",
+      "date": "2026-06-13T11:53:40Z",
+      "is_edited": false,
+      "reply": "Hi [Name], thank you for your feedback. We’re glad Nebula helps you discover more about yourself. We’re sorry if anything felt less than perfect. Please contact us at support-appstore@asknebula.com. With gratitude, Nebula",
+      "reply_date": "2026-06-14T23:05:51Z"
+    },
+    {
+      "id": "11771538551",
+      "rating": 1,
+      "title": "Нет перевода",
+      "text": "Не имеет другого языка чем Английский",
+      "date": "2024-09-27T20:04:20Z",
+      "is_edited": false,
+      "reply": "Dear customer, hello there!\nThank you for sharing your feedback with us. We’re sorry to hear about your negative experience with Nebula. Please provide more details about the issue by reaching out to us at nebula.support@nebulahoroscope.com. Your opinion is invaluable, as it helps us improve our product for all users.\nBest wishes,\nNebula team 🔮",
+      "reply_date": "2024-09-29T16:44:17Z"
+    },
+    {
+      "id": "13356872950",
+      "rating": 1,
+      "title": "Falsely advertising",
+      "text": "Falsely advertising on youtube. Bad practices, takes money then dont let you find subscriptions",
+      "date": "2025-11-04T20:40:09Z",
+      "is_edited": false,
+      "reply": "Hi there,\n\nThank you for sharing your feedback.\n\nWe’re sorry that you were left with this impression of Nebula and understand how upsetting this situation must feel. \n\nPlease be assured that our platform is fully secure, and no charges can be made without a user’s explicit consent. \nAll purchase details are always shown before confirmation, and subscriptions can be managed or canceled anytime.\n\nWe’d like to review your case carefully and assist you personally. \n\nPlease contact us at support-appstore@asknebula.com, and our team will look into this matter and help.\n\nWarm regards,\nNebula Team 🔮",
+      "reply_date": "2025-11-06T06:48:13Z"
+    }
+  ]
+}

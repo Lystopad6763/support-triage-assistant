@@ -1,0 +1,20 @@
+{
+  "store": "googleplay",
+  "lang": "si",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:53+00:00",
+  "count": 1,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "adc2289b-0e37-4623-a098-64c482c41b9e",
+      "score": 5,
+      "content": "Comments As VirajEanaj Feedback helpful",
+      "reply": "Dear User,hello there!\n\nThank you for sharing your feedback! We're glad to hear that you found the astrology session with VirajEanaj helpful. If you have any questions or need further assistance, please don't hesitate to contact us at nebula.support@nebulahoroscope.com.\n\nBest regards,\nNebula Support Team 🌌✨",
+      "at": "2024-07-17 19:55:19",
+      "repliedAt": "2024-07-17 20:52:27",
+      "version": "4.8.46",
+      "thumbsUp": 0
+    }
+  ]
+}

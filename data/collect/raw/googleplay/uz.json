@@ -1,0 +1,30 @@
+{
+  "store": "googleplay",
+  "lang": "uz",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:57+00:00",
+  "count": 2,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "362da639-dca0-4021-bf29-5d49947c4273",
+      "score": 2,
+      "content": "I think this app is better than others but it asks for money immediately after entering it which is bad.So this app is a junk app",
+      "reply": "Hi there, [Name] customer! Thank you for your time. We are sorry that the payment problems with our service did not meet your expectations. Contact us at nebula.support@nebulahoroscope.com so that we can help with fixing the problem. We will do all we can to help you solve the problem in a timely manner. Best wishes, Support Team.",
+      "at": "2024-09-11 22:05:01",
+      "repliedAt": "2024-09-11 22:12:40",
+      "version": "4.8.51",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "12061c19-07c9-40fe-b5c9-6ef7a324673b",
+      "score": 5,
+      "content": "Baribir boq",
+      "reply": "Dear User, hello there!\nThank you for taking the time to leave us a review.\nBest wishes, Nebula team",
+      "at": "2022-11-03 04:24:39",
+      "repliedAt": "2022-10-12 15:51:40",
+      "version": "4.7.36",
+      "thumbsUp": 5
+    }
+  ]
+}

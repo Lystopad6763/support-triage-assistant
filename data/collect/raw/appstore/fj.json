@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "fj",
+  "fetched_at": "2026-09-19T23:55:20+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "13373358997",
+      "rating": 1,
+      "title": "Scam",
+      "text": "Don’t use this app it will deduct from you without you know it",
+      "date": "2025-11-08T19:21:56Z",
+      "is_edited": false,
+      "reply": "Hi there,\n\nThank you for sharing this with us. We’re truly sorry for the unexpected charge you experienced. We completely understand how upsetting that feels, and we want to help make this right. Please reach out to us at support-appstore@asknebula.com and our team will review your case carefully and assist you as soon as possible.\n\nWarm regards, Nebula Team 🔮",
+      "reply_date": "2025-11-15T20:42:13Z"
+    }
+  ]
+}

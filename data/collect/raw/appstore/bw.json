@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "bw",
+  "fetched_at": "2026-09-19T23:44:44+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "5914654657",
+      "rating": 1,
+      "title": "Payment",
+      "text": "I cancelled and uninstalled this app from my phone. I had this app for less than 24 hours before uninstalling it and it’s still trying to deduct money from my acc! \nPlease assist. \nThank you.",
+      "date": "2020-05-07T12:42:44Z",
+      "is_edited": false,
+      "reply": "Hello,\n\nTo cancel your subscription: \nOn your iPhone, open Settings → [your name] → Subscriptions. When doing this, please make sure to open your phone's settings, not the settings inside the Nebula application.\n\nThere you will see a list of all active and expired subscriptions. When you tap on a subscription from the list, you can choose a different subscription option or tap Cancel Subscription. \n \nIf you don’t see Cancel Subscription, the subscription is already canceled and won't renew.\n\nHere's a more detailed guide on that from Apple: \nhttps://support.apple.com/en-us/HT202039 ",
+      "reply_date": "2020-07-30T13:55:36Z"
+    }
+  ]
+}

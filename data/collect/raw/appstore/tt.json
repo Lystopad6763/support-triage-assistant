@@ -1,0 +1,49 @@
+{
+  "store": "appstore",
+  "country": "tt",
+  "fetched_at": "2026-09-20T00:18:50+00:00",
+  "count": 4,
+  "with_reply": 4,
+  "reviews": [
+    {
+      "id": "7913089333",
+      "rating": 5,
+      "title": "Recommended",
+      "text": "This app is very helpful and insightful, and can provide a sense of clarity to carry on with your day.",
+      "date": "2021-10-14T09:40:02Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\nThank you so much for your feedback, you put a big smile on our faces! Our team is hard at work trying to continuously improve our app and it’s always rewarding to hear kind words. We love that you love us!\nBest wishes, Nebula team",
+      "reply_date": "2021-10-17T13:05:54Z"
+    },
+    {
+      "id": "6039068695",
+      "rating": 1,
+      "title": "Be careful with your information",
+      "text": "I downloaded this app and signed in with the info of date of birth etc, however what this app does not tell you from the beginning is that is also collecting automatically your device language settings, IP address, time zone, operating system, mobile carrier, hardware ID, Facebook ID & other unique identifiers. I am not comfortable with this data collection and they are not upfront with this info before you enter your details. Also you cannot see their reviews to know what other ppl have to say. If you see this before you download be careful",
+      "date": "2020-06-05T16:29:01Z",
+      "is_edited": false,
+      "reply": "Hello, all [Name] that you give us is stored in your phone. We do not use it for any purposes different from those described in the terms of use. Regards, Nebula Team",
+      "reply_date": "2020-06-10T14:23:23Z"
+    },
+    {
+      "id": "13553646557",
+      "rating": 5,
+      "title": "Interesting",
+      "text": "Interesting finds about one’s personal self!",
+      "date": "2025-12-25T15:36:57Z",
+      "is_edited": false,
+      "reply": "Hi there, Thank you so much for sharing your feedback. We’re delighted to hear that you found the insights interesting and that they helped you discover more about yourself. It’s wonderful to know the guidance resonated and added value to your experience. If you ever have questions or need assistance, please don’t hesitate to reach out at support-appstore@asknebula.com — our team will be glad to help. Warm wishes, Nebula Team🔮",
+      "reply_date": "2026-03-15T15:52:55Z"
+    },
+    {
+      "id": "11841816847",
+      "rating": 1,
+      "title": "Not working",
+      "text": "App stopped working after the previous update. If it starts back working it would be a very decent app to continue to have.",
+      "date": "2024-10-16T22:49:56Z",
+      "is_edited": false,
+      "reply": "Dear [Name], hello!  \n  \nThank you for sharing your feedback with us. We sincerely apologize for the issue you're experiencing with the app after the recent update.  \n \nWe’d love to help resolve this for you. Please feel free to contact us at nebula.support@nebulahoroscope.com, and we’ll assist you in getting everything back on track.  \n \nThank you for your understanding!  \n  \nWarm regards,  \nNebula Team",
+      "reply_date": "2024-10-18T09:01:25Z"
+    }
+  ]
+}

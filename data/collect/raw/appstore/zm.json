@@ -1,0 +1,39 @@
+{
+  "store": "appstore",
+  "country": "zm",
+  "fetched_at": "2026-09-20T00:29:15+00:00",
+  "count": 3,
+  "with_reply": 3,
+  "reviews": [
+    {
+      "id": "13733655011",
+      "rating": 5,
+      "title": "❣️",
+      "text": "Very helpful",
+      "date": "2026-02-10T11:15:18Z",
+      "is_edited": false,
+      "reply": "Hello, [Name]! Thank you for the kind feedback! We’re really glad to hear that you found the experience helpful — that means a lot to our team. If you ever have questions or want to share more about your experience, feel free to reach out to us at support-appstore@asknebula.com anytime. Best regards, Nebula Team 🔮",
+      "reply_date": "2026-03-05T00:10:06Z"
+    },
+    {
+      "id": "13685232875",
+      "rating": 5,
+      "title": "Fact about life",
+      "text": "Try nebula and tell a friend to tell a friend about it real life guidance,",
+      "date": "2026-01-28T13:28:59Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for sharing your feedback. We’re so glad to hear that you recommend Nebula to friends and find it to be real-life guidance. It’s wonderful when the app resonates so strongly that you want to spread the word. Feedback like yours motivates us to keep creating meaningful experiences that help people discover more about themselves. If you’d ever like to share more about your journey or suggest ways we can improve, please feel free to reach out to us at support-appstore@asknebula.com — we’d love to hear from you. Best regards, Nebula Team🔮",
+      "reply_date": "2026-03-13T14:17:47Z"
+    },
+    {
+      "id": "13408356977",
+      "rating": 5,
+      "title": "Medium Orion",
+      "text": "Medium Orion gave me an honest reading and I appreciated that 🙏",
+      "date": "2025-11-17T09:54:02Z",
+      "is_edited": false,
+      "reply": "Hi there! Thank you for sharing your experience — we truly appreciate your kind words. 💜 It’s wonderful to know the reading felt genuine and meaningful for you. Our mission is always to create a space where guidance comes across with sincerity, care, and inspiration, and hearing that it resonated in this way is very encouraging. If you’d ever like to share more reflections or suggestions, we’re always here at support-appstore@asknebula.com. Wishing you continued clarity and positivity on your journey, The Nebula Team",
+      "reply_date": "2025-11-22T21:23:27Z"
+    }
+  ]
+}

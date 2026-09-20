@@ -1,0 +1,209 @@
+{
+  "store": "appstore",
+  "country": "do",
+  "fetched_at": "2026-09-19T23:53:22+00:00",
+  "count": 20,
+  "with_reply": 20,
+  "reviews": [
+    {
+      "id": "6137859007",
+      "rating": 5,
+      "title": "Me enseñó quien soy muy buena aplicación 🥰",
+      "text": "Leo",
+      "date": "2020-06-30T00:50:48Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review.\n\nBest wishes, Nebula team",
+      "reply_date": "2022-08-25T05:09:31Z"
+    },
+    {
+      "id": "14531044215",
+      "rating": 5,
+      "title": "Nice",
+      "text": "Chulito",
+      "date": "2026-09-09T23:43:19Z",
+      "is_edited": false,
+      "reply": "Your review made our day 💜 So glad Nebula brought a little joy your way. Holding space for your journey, Nebula 🔮",
+      "reply_date": "2026-09-11T16:58:26Z"
+    },
+    {
+      "id": "6055759482",
+      "rating": 4,
+      "title": "Problems with the spanish language",
+      "text": "The app is good, but the horoscope in Spanish is not working, please fix it🙏🏻",
+      "date": "2020-06-09T18:08:55Z",
+      "is_edited": false,
+      "reply": "We are sincerely sorry about this inconvenience. We updated our application, so it gives a more specific horoscope depending on the location where you were born. So please try to reinstall the app and when entering your place of birth, make sure that you choose a location from the list when it appears. If the app does not suggest the location you entered in the list, please try to simplify the location to find it in the list. \n\nIf you have started our paid subscription, you'll be able to re-activate it - just tap “Restore” on a subscription screen you get. \n\nPlease let us know if this does not help. Again, our team apologizes for this inconvenience. We are just trying to make our users' experience better. \n",
+      "reply_date": "2020-06-10T13:35:34Z"
+    },
+    {
+      "id": "14161116858",
+      "rating": 5,
+      "title": "A mi gustó mucho",
+      "text": "Lo mejor que me pasado en la vida",
+      "date": "2026-06-09T06:15:15Z",
+      "is_edited": false,
+      "reply": "Your kindness means the world to us 💜 We're so touched to hear Nebula has brought you so much joy. Warmly, Nebula Team 🔮",
+      "reply_date": "2026-06-10T16:29:00Z"
+    },
+    {
+      "id": "14333257788",
+      "rating": 1,
+      "title": "Scam",
+      "text": "Fraud",
+      "date": "2026-07-22T06:35:54Z",
+      "is_edited": false,
+      "reply": "Hi,\n\nThank you for your feedback! We're sorry to hear that you feel this way. We'd appreciate the opportunity to understand what happened and address your concerns.\nPlease contact us at support-appstore@asknebula.com using the email address associated with your account. We'll review your case and do our best to help.\n\nWith care,\nNebula",
+      "reply_date": "2026-07-23T08:39:14Z"
+    },
+    {
+      "id": "13765165892",
+      "rating": 5,
+      "title": "Olivia",
+      "text": "Maravillosa",
+      "date": "2026-02-19T06:39:41Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for sharing your feedback. We’re delighted to hear you found the app marvelous! It’s wonderful to know the experience resonated with you so positively, and we truly appreciate you taking the time to let us know. If you’d like to share more about what makes it stand out for you or suggest any improvements, please reach out at support-appstore@asknebula.com — your insights help us continue to refine and enhance the app. Best regards, Nebula Team🔮",
+      "reply_date": "2026-03-05T04:28:41Z"
+    },
+    {
+      "id": "14148460094",
+      "rating": 3,
+      "title": "Claridad",
+      "text": "Ye ayuda a analizar y clarificar situaciones que no entiendes y que el\nUniverso se encarga de alinearlas sin que te des cuenta. No es magia pero encamina tus necesidades.",
+      "date": "2026-06-05T22:39:16Z",
+      "is_edited": false,
+      "reply": "Hello there, thank you for your feedback. \nWe’re sorry your experience wasn’t fully 5-star, but we’re glad Nebula helped bring clarity. Please contact us at support-appstore@asknebula.com. \nWith gratitude, Nebula",
+      "reply_date": "2026-06-07T06:33:15Z"
+    },
+    {
+      "id": "13095750502",
+      "rating": 5,
+      "title": "D",
+      "text": "Es muy buena",
+      "date": "2025-09-03T23:39:48Z",
+      "is_edited": false,
+      "reply": "Greetings,\n\nThank you for your wonderful feedback! 🌟 We’re so happy to hear you’re enjoying Nebula. If you ever need assistance or want to share your ideas, feel free to reach out to us at support-appstore@asknebula.com or via the in-app chat - we’re always here to listen!\n\nBest regards,\nThe Nebula Support Team 💜",
+      "reply_date": "2025-09-05T16:32:23Z"
+    },
+    {
+      "id": "11174225623",
+      "rating": 5,
+      "title": "Muy acertado!",
+      "text": "Muy acertado y preciso! Buena guía!!",
+      "date": "2024-04-18T18:48:50Z",
+      "is_edited": false,
+      "reply": "Hello, [Name], \r\n\r\nThank you so much for taking the time to share your positive experience with us!\r\n\r\nWe're delighted to hear that you enjoyed our services and we're thrilled that we could meet your expectations.\r\n\r\nIf you ever have any further questions or need assistance in the future, please don't hesitate to reach out to us at nebula.support@nebulahoroscope.com. We're always here to help!\r\n\r\nThank you again for choosing Nebula, and we look forward to serving you again in the future.\r\n\r\nBest regards,\r\n\r\nNebula Team",
+      "reply_date": "2024-04-20T02:40:12Z"
+    },
+    {
+      "id": "13035480203",
+      "rating": 1,
+      "title": "Fake/ COUP",
+      "text": "debited money from your account without authorization and make it difficult to cancel",
+      "date": "2025-08-19T14:07:22Z",
+      "is_edited": false,
+      "reply": "Hi,  \nWe’re truly sorry to hear about your experience 💜   \nNebula never charges without consent — subscriptions always start with a trial and can be canceled anytime in your account settings. Please reach out to us at support-appstore@asknebula.com, and we can resolve this quickly and ensure no further charges.  \nWarm regards, Nebula team 🔮",
+      "reply_date": "2025-08-21T02:35:33Z"
+    },
+    {
+      "id": "12879683622",
+      "rating": 1,
+      "title": "SCAM!!!!!!!",
+      "text": "You pay $1 for a reading and then they charge you $45! It even happened to me. My account didn't even exist when they charged me.",
+      "date": "2025-07-11T16:05:36Z",
+      "is_edited": false,
+      "reply": "Hi [Name],  \n  \nYour feedback is very important to us as it helps us to grow so we can provide you with better service!  \n  \nWe`re sorry to hear about your negative experience with the payment process. Please rest assured that we`re here to ensure a smoother journey for you.  \n  \nWe want to make the payment process as clear and seamless as possible. Please contact us at support-appstore@asknebula.com, and our team will help resolve any concerns.  \n  \nKindest regards, Nebula team 🔮",
+      "reply_date": "2025-07-13T06:24:59Z"
+    },
+    {
+      "id": "12697326457",
+      "rating": 1,
+      "title": "Estafadores",
+      "text": "Me cobraron una suscripción que no seleccioné cuando solo duré unos minutos usando la aplicación y después borré mi cuenta. No es justo, quiero que me devuelvan mi dinero, esto es una estafa",
+      "date": "2025-05-25T17:30:02Z",
+      "is_edited": false,
+      "reply": "Hi [Name],\n\nThank you for taking your time to leave us feedback. We’re truly sorry for the frustration and concern this situation has caused. We understand how upsetting it is to be charged for a subscription you didn’t knowingly select, especially after using the app briefly and deleting your account.\n\nPlease note that all subscription and payment details are clearly shown on the offer screen before confirmation. We’d like to review your case and assist you with a refund. Please contact us at nebula.support@nebulahoroscope.com, and our support team will be happy to help.\n\nRespectfully,\nNebula Team 🔮",
+      "reply_date": "2025-05-27T07:51:23Z"
+    },
+    {
+      "id": "12375186178",
+      "rating": 1,
+      "title": "Scam",
+      "text": "I'm getting charged for this and I don't find a way to unsubscribe. The webpage says I don't have a subscription. It doesn't appear in iCloud neither. I contact support and they say They can't find my email. But I've been charged 3 times!! I will have to cancel my credit card because of this.",
+      "date": "2025-03-02T23:46:14Z",
+      "is_edited": false,
+      "reply": "Greetings there,\n\nThank you for taking the time to leave us feedback.\n\nWe regret hearing about your concerns with the payment. We`re dedicated to creating a more seamless experience for you moving forward.\n\nWe want to make the payment process as clear and seamless as possible. Please contact us at nebula.support@nebulahoroscope.com, and our team will help resolve any concerns.\n\nAlso ,you can easily manage your subscription by following the simple steps in the Subscription Terms. Also, just keep in mind that deleting the app won`t automatically cancel your subscription since it is tied to the account subscriptions, not your phone storage.\n\nWarm regards, Nebula team 🔮",
+      "reply_date": "2025-03-04T16:34:24Z"
+    },
+    {
+      "id": "11423326449",
+      "rating": 1,
+      "title": "This is to much!!!",
+      "text": "Y’all need to stop monetizing everything!!! It was comforting when y’all had the birthchart\nand the love reading for free 🙂 thing about those people who can’t afford paying FOR EVERYTHING!!!!!",
+      "date": "2024-06-26T00:35:41Z",
+      "is_edited": false,
+      "reply": "Dear Customer,\n\nWe sincerely apologize for any frustration. Your feedback regarding the birth chart and love reading features being monetized is valuable to us.\n\nWe understand the importance of accessibility and are continuously striving to balance offering valuable services while considering different financial situations. We would like to discuss your concerns further to find a solution that works for you.\n\nPlease reach out to our support team at nebula.support@nebulahoroscope.com so we can better understand your specific needs and explore potential options together.\n\nThank you for bringing this to our attention. We look forward to resolving this matter and improving your experience with our app.\n\nBest regards,",
+      "reply_date": "2024-06-29T14:38:15Z"
+    },
+    {
+      "id": "11214036922",
+      "rating": 1,
+      "title": "Estafa",
+      "text": "Son unos estafadores. Entre el mismo día por curiosidad. Me cobraron $5.00. A los minitos de crear el usuario, cancele la suscripción como explican en la web. A la semana me cobraron $39.00 porque supuestamente elloa cancelaron ese día. No hubo forma de que me devolvieran mi dinero. Es una estafa.",
+      "date": "2024-04-29T18:12:31Z",
+      "is_edited": false,
+      "reply": "Hola,\nLamentamos mucho tu experiencia. Nos gustaría investigar lo sucedido para poder ayudarte y resolver cualquier problema. Por favor, contáctanos en nebula.support@nebulahoroscope.com nebula.support@nebulahoroscope.com para que podamos solucionar este inconveniente lo antes posible.\nAtentamente,\n[Agent] equipo de Nebula",
+      "reply_date": "2024-05-02T15:07:43Z"
+    },
+    {
+      "id": "13189582805",
+      "rating": 5,
+      "title": "Accuracy",
+      "text": "100%",
+      "date": "2025-09-27T01:15:42Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for sharing your feedback. Your words mean so much to us, and we’re thrilled to hear that our readings have felt completely accurate for you. Feedback like yours reminds us why we’re dedicated to offering genuine insights that truly resonate and support our users. Should you ever need support or have any questions about your journey with us, please don't hesitate to contact us at support-appstore@asknebula.com. Kind regards, Nebula Team 🔮",
+      "reply_date": "2025-10-07T14:45:48Z"
+    },
+    {
+      "id": "7943503447",
+      "rating": 4,
+      "title": "Algo más",
+      "text": "Hola, la aplicación es muy buena y me encanta, pero creo que le deberían de agregar una parte para el periodo menstrual, donde nos muestre a las mujeres cuando nos llega cuando se nos quita y ese tipo de cosas, que no ayude a estar alerta con ese tipo de cosas❤️❤️",
+      "date": "2021-10-23T01:43:38Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\nThank you for taking the time to leave us a review and for your kind words and involvement!\nBest wishes, Nebula team",
+      "reply_date": "2021-10-25T07:51:56Z"
+    },
+    {
+      "id": "7865934454",
+      "rating": 3,
+      "title": "nebula",
+      "text": "it dosent let me place my birth month, it say it’s unavailable",
+      "date": "2021-10-01T15:40:55Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\nUnfortunately, we need to follow the legal requirements of your country.We have the following age restrictions for different countries:\n16 years for the EU,\n13 years for USA / Canada,\n15 years for Australia,\nfor all other countries -13 years,\n\nIn the future, we plan to add a new feature - Family Member: Adult users will register an account, and then will be able to add a user less than the limited age.",
+      "reply_date": "2021-10-06T14:33:12Z"
+    },
+    {
+      "id": "6919711956",
+      "rating": 1,
+      "title": "Engaño!!!!",
+      "text": "Me ofrecieron prueba gratis y me debitaron al instante!!! A quien debo dirigirme para mi reembolso ????  Si no me reembolsan dejo esto aquí!",
+      "date": "2021-01-27T14:12:21Z",
+      "is_edited": false,
+      "reply": "Hola, [Name]. Lamentamos saber que está decepcionado con nuestra aplicación, sin embargo, no cobramos a los usuarios por una prueba gratuita, si la prueba gratuita no se usó antes en la cuenta. Desafortunadamente, no hay forma de iniciar un reembolso por nuestra parte, ya que se procesa a través de la App Store. Para enviar una solicitud de reembolso, debe comunicarse con el soporte de la App Store, así es como se hace: https://support.apple.com/en-us/HT204084 ¡Cuidado!",
+      "reply_date": "2021-01-30T20:09:30Z"
+    },
+    {
+      "id": "5728492139",
+      "rating": 4,
+      "title": "Almost perfect",
+      "text": "It’s really good and I love it’s visuals, also very accurate, however I still can’t find settings or options to share the app.",
+      "date": "2020-03-29T01:01:20Z",
+      "is_edited": false,
+      "reply": "Thanks for your feedback! \nSettings are coming in one of the nearest updates, please stay tuned ",
+      "reply_date": "2020-03-30T09:26:10Z"
+    }
+  ]
+}

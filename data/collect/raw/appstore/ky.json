@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "ky",
+  "fetched_at": "2026-09-20T00:07:19+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "13187832183",
+      "rating": 5,
+      "title": "Great",
+      "text": "So point on n helpfu",
+      "date": "2025-09-26T15:41:52Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for your feedback! We’re so pleased to hear that you found our service both spot-on and helpful. Your feedback truly brightens our day and confirms that we’re delivering the precise guidance and support our users are looking for. It’s incredibly satisfying to know we’ve made a positive impact on your experience. If you need any assistance or have questions moving forward, please feel free to contact us at support-appstore@asknebula.com. Warm wishes, Nebula Team 🔮",
+      "reply_date": "2025-10-07T15:34:54Z"
+    },
+    {
+      "id": "10376090464",
+      "rating": 5,
+      "title": "great!!",
+      "text": "great job!",
+      "date": "2023-09-17T01:13:08Z",
+      "is_edited": false,
+      "reply": "Greetings there! Thanks for choosing the Nebula and for your review! Your encouraging words keep us motivated to keep creating this application for you, our users, as they serve as a constant reminder that our efforts are both required and appreciated. Thank you for reading and reviewing. Kindest regards, Nebula team 🔮",
+      "reply_date": "2023-09-19T13:51:20Z"
+    }
+  ]
+}

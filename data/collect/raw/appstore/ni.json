@@ -1,0 +1,69 @@
+{
+  "store": "appstore",
+  "country": "ni",
+  "fetched_at": "2026-09-20T00:10:07+00:00",
+  "count": 6,
+  "with_reply": 6,
+  "reviews": [
+    {
+      "id": "14127566478",
+      "rating": 5,
+      "title": "Wow",
+      "text": "Amé esta app !!!",
+      "date": "2026-05-31T14:54:07Z",
+      "is_edited": false,
+      "reply": "Your review made our day 💜 So lovely to know Nebula brought you joy. Holding space for your journey, Nebula 🔮",
+      "reply_date": "2026-06-01T22:51:21Z"
+    },
+    {
+      "id": "9787186343",
+      "rating": 5,
+      "title": "My favorite app",
+      "text": "<4",
+      "date": "2023-04-04T20:48:10Z",
+      "is_edited": false,
+      "reply": "Hello dear user! Thank you for taking the time to leave us feedback and 5-star rating 🤩\nYour feedback helps us in improving the service! Best regards, support team.\n\n",
+      "reply_date": "2023-04-06T05:57:00Z"
+    },
+    {
+      "id": "13958429422",
+      "rating": 3,
+      "title": "Realidad",
+      "text": "Es buena, pero en los precios siento que están súper valorados. Te cobran aparte de cada cosa que te recomiendan. Muy bonito todo lo que dice, pero siento que es más para tenerte enganchado y seguir gastando, aparte que también te cobran mensual la aplicación. En un solo día se me fueron $50 solo por una conversación que era gratis 3 minutos y como se pasó se cobraron más, aparte que contestan bien atrasados en tiempo y eso aún así lo cobran, no son muy claros con la respuesta pero en algunas te termina agradando",
+      "date": "2026-04-14T22:00:30Z",
+      "is_edited": false,
+      "reply": "Hi there, \n\nThank you for being so open about your experience. I’m sorry to hear that parts of it felt overwhelming or not as clear as expected, especially regarding pricing and chat timing. It’s good to hear there were still aspects you found valuable, but I understand that doesn’t balance out the frustration. \n\nPlease reach out to support-appstore@asknebula.com, and we’ll personally review your case and help you make sense of everything.\n\nHolding space for your journey,\nNebula",
+      "reply_date": "2026-04-16T14:11:52Z"
+    },
+    {
+      "id": "12243017343",
+      "rating": 1,
+      "title": "Bad Interfaz",
+      "text": "I don’t understand why you guys change the page interface. I used to love my astral chart. Bad decision that’s leads to delete the app.",
+      "date": "2025-01-29T00:53:08Z",
+      "is_edited": false,
+      "reply": "Hello dear [Name],  \n  \nThank you for sharing your feedback with us. We’re really sorry to hear that the changes to the interface have caused you frustration. We understand how important the astral chart is, and we appreciate your past support.  \n \nYour input is valuable, and we’ll make sure to pass your comments on to our development team as we continue to improve the app. If there’s anything else we can do to assist you or if you’d like to share more thoughts, please don’t hesitate to reach out to us at nebula.support@nebulahoroscope.com.  \n \nHave a great day 💜️",
+      "reply_date": "2025-01-30T08:33:21Z"
+    },
+    {
+      "id": "10821749574",
+      "rating": 1,
+      "title": "Charged After Unsubscribing",
+      "text": "I tried the app for 2 days and then I unsubscribed and deleted it. But 3 days later, they charged my card. I have written to them, but they do not respond",
+      "date": "2024-01-14T17:05:35Z",
+      "is_edited": false,
+      "reply": "Hello, dear user. Thank you for your feedback. \n\nWe sincerely apologize for the inconvenience you experienced and appreciate your patience. Your satisfaction is our priority and we are actively working to resolve your billing issue.\n\nYou can also rest assured that your request is a high priority for our support team. To speed up the resolution of this situation, please contact us again via this email nebula.support@nebulahoroscope.com.\n\nThank you for bringing this to our attention, and we appreciate your understanding.\n\nBest regards, Nebula team.",
+      "reply_date": "2024-01-16T08:36:47Z"
+    },
+    {
+      "id": "6345979551",
+      "rating": 1,
+      "title": "They always find away to charge u .",
+      "text": "They always find away to charge u .",
+      "date": "2020-08-21T19:07:06Z",
+      "is_edited": false,
+      "reply": "Hello! We have a big team of astrologers and developers working on this app daily, and their work has to be paid. That is why Nebula has a paid subscription option. However, our app also offers a lot of completely free highly-personalized content that you can easily access without a subscription.",
+      "reply_date": "2020-08-26T13:08:19Z"
+    }
+  ]
+}

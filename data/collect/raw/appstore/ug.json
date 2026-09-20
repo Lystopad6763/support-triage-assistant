@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "ug",
+  "fetched_at": "2026-09-20T00:20:17+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "14031604637",
+      "rating": 5,
+      "title": "Review on Nebula",
+      "text": "It was fun overall. It makes you feel hopeful🥰",
+      "date": "2026-05-05T17:12:39Z",
+      "is_edited": false,
+      "reply": "Hello there,\n\nThank you for your feedback. We’re glad to hear the app was fun for you and that it left you feeling hopeful — that’s exactly the kind of positive experience we aim to bring.\n\nIf you’d like to share more about what made it uplifting or suggest improvements, please reach out at support-appstore@asknebula.com.\n\nWith appreciation,\nNebula",
+      "reply_date": "2026-05-06T22:57:41Z"
+    },
+    {
+      "id": "13464435948",
+      "rating": 1,
+      "title": "Do not download",
+      "text": "This is for your own good it’s a big scam",
+      "date": "2025-12-01T23:51:14Z",
+      "is_edited": false,
+      "reply": "Hi there, We’re sorry to hear that you feel this way and appreciate you sharing your feedback. We’d really like the chance to look into your experience and assist you. Please reach out to us at support-appstore@asknebula.com so we can help you directly. Warmly, Nebula Team 🔮",
+      "reply_date": "2026-03-06T15:16:50Z"
+    }
+  ]
+}

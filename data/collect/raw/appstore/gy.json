@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "gy",
+  "fetched_at": "2026-09-20T00:02:23+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "12904238610",
+      "rating": 5,
+      "title": "Relationships reading",
+      "text": "Readings were very accurate and very straightforward and helpful",
+      "date": "2025-07-17T21:55:49Z",
+      "is_edited": false,
+      "reply": "Hi Miss [Name],\n\nThank you very much for sharing your feedback with us.\n\nWe are truly glad to hear that the reading felt accurate, clear, and supportive. It is wonderful to know that the guidance provided offered valuable insight. This is exactly what we strive to deliver with every experience on our platform.\n\nIf you have any further questions or need assistance, please don’t hesitate to contact us at support-appstore@asknebula.com. We’re here to support you every step of the way.\n\nWarm regards,\nNebula team 🔮",
+      "reply_date": "2025-07-19T07:37:28Z"
+    }
+  ]
+}

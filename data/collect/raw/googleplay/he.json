@@ -1,0 +1,870 @@
+{
+  "store": "googleplay",
+  "lang": "he",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:42+00:00",
+  "count": 86,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "2d4cbc50-83a6-453d-a4a9-54047452921d",
+      "score": 5,
+      "content": "ממש נכון ומדוייק.תמיד הרגשתי כך שיש יד מכוונת ומגנה תמיד לכל אורך הדרך",
+      "reply": "We're truly touched by your words ✨ It means a lot to know Nebula feels meaningful in your path. Holding space for your journey, Nebula 🔮",
+      "at": "2026-09-18 10:48:41",
+      "repliedAt": "2026-09-18 10:52:27",
+      "version": "4.90.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "b949fd7b-e951-47d4-b49f-c21585f03d2c",
+      "score": 1,
+      "content": "צריך לשלם על הכל סתם טמטום",
+      "reply": "Hello, [Name]!\nThanks for sharing your feedback. We’re sorry the free features felt frustrating and too limited. We want Nebula to feel clear and useful. Please email us at support-googleplay@asknebula.com so we can review your concern and assist you where we can.\nKeep growing at your pace,\nNebula Team",
+      "at": "2026-09-17 10:50:26",
+      "repliedAt": "2026-09-17 11:19:30",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "b6aeab2e-6806-4779-9f74-f98b3013b10c",
+      "score": 2,
+      "content": "🇭🇷",
+      "reply": "Hi there!\n\nThank you for taking the time to leave a review. We’re always ready to help if there’s a specific issue you’d like us to review. Please email us at support-googleplay@asknebula.com so we can review your case and assist you directly with it.\n\nKeep listening inward,\nNebula Team",
+      "at": "2026-09-17 07:20:16",
+      "repliedAt": "2026-09-17 07:49:20",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "0e116e47-638a-4e64-8f48-1bfa3d3383f2",
+      "score": 2,
+      "content": "מנסה כל הזמן למכור וקשה מאד לקבל את הנסיון החינמי. עדיף לא להכנס",
+      "reply": "Hello! Thank you for sharing your honest feedback. We understand how frustrating it can be to feel overwhelmed by sales prompts and experience difficulty accessing a free trial. If you have any suggestions or would like to share more about your experience, please feel free to reach out at support-googleplay@asknebula.com. Trust your path, Nebula",
+      "at": "2026-09-04 17:14:35",
+      "repliedAt": "2026-09-04 17:32:23",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "213512c2-db34-4a4c-aa49-f95a78e29e8a",
+      "score": 5,
+      "content": "אם כבר תקשור רק עם Nebula 💛נותנים השראה למחשבה שלך. ממליצה בחום",
+      "reply": "Your review made our day 💜 It’s so lovely to know Nebula sparked inspiration for you and felt worth recommending. Warmly, Nebula Team 🔮",
+      "at": "2026-09-04 11:33:07",
+      "repliedAt": "2026-09-04 11:36:27",
+      "version": "4.87.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "f24bee7e-b197-4b90-82c4-b07fe19cfaa8",
+      "score": 5,
+      "content": "amayzing❣️",
+      "reply": "Reviews like yours keep our whole team inspired ✨ Thank you, sincerely. Warmly, Nebula Team 🔮",
+      "at": "2026-09-02 16:23:33",
+      "repliedAt": "2026-09-02 16:26:23",
+      "version": "4.87.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "51ce9fa9-723e-4171-9d7a-eddda3200b99",
+      "score": 5,
+      "content": "מצויין",
+      "reply": "Thank you so much for the kind words ✨ It truly means a lot to our team. Warmly, Nebula 🔮",
+      "at": "2026-08-30 19:28:01",
+      "repliedAt": "2026-08-30 19:34:22",
+      "version": "4.86.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ce6f1b34-fcff-45d1-8a88-ebb7b4cd2c44",
+      "score": 5,
+      "content": "נראית אפליקציה טובה ממליצה ולא יקרה",
+      "reply": "Hi [Name]! Thank you so much for your kind words and recommendation! We're delighted to hear you’re enjoying Nebula and finding it accessible. If you ever have questions or suggestions, please feel free to reach out to us at support-googleplay@asknebula.com. We're always here to support you. Enjoy your journey, Nebula",
+      "at": "2026-08-27 17:52:21",
+      "repliedAt": "2026-08-27 19:52:24",
+      "version": "4.86.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "f4fe8e05-b915-4cbd-a397-95c91fddfdc1",
+      "score": 5,
+      "content": "נהנית",
+      "reply": "Your review made our day 💜 So lovely to hear Nebula brought you a bit of joy. Warmly, Nebula 🔮",
+      "at": "2026-08-26 16:11:17",
+      "repliedAt": "2026-08-26 16:14:30",
+      "version": "4.86.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "9b884559-63f7-4443-8932-631d1a72a743",
+      "score": 1,
+      "content": "גובים כסף ללא אישור",
+      "reply": "Hello [Name], we’re sorry to hear about your concern regarding an unexpected charge. We’d like to review the payment details and help clarify what happened. Please contact us at support-googleplay@asknebula.com so we can investigate this with you.\n\nTrust what feels right,\nNebula",
+      "at": "2026-08-23 20:44:00",
+      "repliedAt": "2026-08-23 20:58:01",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "55b610f2-44b6-41aa-b5d0-5e6f5a7ad7d7",
+      "score": 5,
+      "content": "מדהים",
+      "reply": "Thank you, truly 💜 So glad Nebula brought a little delight to your day. With gratitude, Nebula 🔮",
+      "at": "2026-08-22 22:31:14",
+      "repliedAt": "2026-08-22 22:34:22",
+      "version": "4.84.02",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "3fc8e5fb-daf9-4c3a-8ff4-9fb16da4f2fe",
+      "score": 5,
+      "content": "brilliant",
+      "reply": "Your review made our day 💜 It’s lovely to know Nebula left such a bright impression. With gratitude, Nebula 🔮",
+      "at": "2026-08-18 11:08:05",
+      "repliedAt": "2026-08-18 11:10:23",
+      "version": "4.84.02",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "800178ab-9310-40a5-844d-da2853091afb",
+      "score": 5,
+      "content": "חדשה באפליקציה קיבלתי תשובות יחסית באמצע",
+      "reply": "Your review made our day 💜 It’s lovely to know Nebula is already feeling helpful and easy to use. With gratitude, Nebula Team 🔮",
+      "at": "2026-08-12 04:45:19",
+      "repliedAt": "2026-08-12 04:46:22",
+      "version": "4.84.02",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "62ffb5f1-794b-4144-9ca9-6ef1d3383661",
+      "score": 5,
+      "content": "נחמד",
+      "reply": "Your review made our day 💜 So lovely to know Nebula felt right to you. Holding space for your journey, Nebula 🔮",
+      "at": "2026-08-10 19:28:19",
+      "repliedAt": "2026-08-10 19:30:21",
+      "version": "4.84.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e93c4659-b971-40a8-b1e7-e0b197150b45",
+      "score": 5,
+      "content": "נשמע נחמד",
+      "reply": "Thank you, truly 💜 It’s lovely to know Nebula left a good impression. With gratitude, Nebula 🔮",
+      "at": "2026-08-10 15:35:26",
+      "repliedAt": "2026-08-10 15:36:21",
+      "version": "4.84.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "7c7b932f-e439-406b-b4d6-f21a2c33ee2c",
+      "score": 1,
+      "content": "זהירות !!!! גנבים",
+      "reply": "Hi, we’re sorry Nebula left you feeling this way. Please contact us at support-googleplay@asknebula.com so we can review your account and help with any billing, subscription, or refund concerns.\nTrust your path, Nebula",
+      "at": "2026-08-09 02:36:50",
+      "repliedAt": "2026-08-09 02:49:23",
+      "version": "4.83.00",
+      "thumbsUp": 7
+    },
+    {
+      "reviewId": "69c2a79c-6c02-4e63-9098-24c183ad862f",
+      "score": 5,
+      "content": "מאוד עוזר וחמוד",
+      "reply": "Your kindness means the world to us 💜 So lovely to know Nebula feels helpful and charming. Warmly, Nebula Team 🔮",
+      "at": "2026-08-06 06:02:53",
+      "repliedAt": "2026-08-06 06:10:25",
+      "version": "4.82.02",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "ca8f69b2-2ff8-4698-a9c7-0bb22ee072b8",
+      "score": 3,
+      "content": "בינתיים סבבה, לא אהבתי שחייבים אותי במירמה",
+      "reply": "Hello [Name],\n\nWe’re glad some parts felt okay so far, but we’re sorry you felt charged in a misleading way. Please contact us at support-googleplay@asknebula.com so we can review your payment details and help.\n\nTrust what feels right,\nNebula",
+      "at": "2026-08-03 09:52:15",
+      "repliedAt": "2026-08-03 10:00:31",
+      "version": "4.83.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "1b6de1e6-d3b0-41e1-a2f0-07772424e345",
+      "score": 5,
+      "content": "מדויק. ממש הופתעתי.",
+      "reply": "Your kindness means the world to us 💜 We're truly grateful your experience felt so clear. Warmly, Nebula Team 🔮",
+      "at": "2026-07-31 15:27:33",
+      "repliedAt": "2026-07-31 15:30:30",
+      "version": "4.82.02",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "c27a1faa-526e-462f-babd-511930e02afc",
+      "score": 1,
+      "content": "It’s a huge scam—be careful and protect your money. These crooks publish false information; they lure you into paying to discover something that doesn't exist, and afterwards, there is no way to cancel the subscription. Be careful and warn your friends—don't fall for this massive scam!",
+      "reply": "Hi there!\n\nThank you for your feedback.We're sorry to hear about your experience 💜\nIf you've had trouble with your subscription or cancellation, please contact us at support-googleplay@asknebula.com. We'll review your case and do our best to help.\n\nWith gratitude,\nNebula 🔮",
+      "at": "2026-07-27 23:03:00",
+      "repliedAt": "2026-07-27 23:16:20",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "cf978835-b80d-4ce7-abea-af69ed1e2447",
+      "score": 4,
+      "content": "it looks interesting but I didn't see much of it yet",
+      "reply": "Thank you for taking a moment to share this 💜 We’re glad Nebula caught your interest, and it means a lot to have you here. Warmly, Nebula Team 🔮",
+      "at": "2026-07-27 13:37:49",
+      "repliedAt": "2026-07-27 13:40:23",
+      "version": "4.82.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "7468a06f-e763-483a-a765-3744b5001d65",
+      "score": 3,
+      "content": "חבל שכל מישפט עולה כסף אצלכם!",
+      "reply": "Hi [Name]. We are deeply sorry for the disappointment. We completely understand your frustration; it is incredibly discouraging when you expect a free trial but end up having to pay. We want to look into this and help right away.\nPlease email support-googleplay@asknebula.com.\nTrust your path,\nNebula 🔮",
+      "at": "2026-07-24 02:33:51",
+      "repliedAt": "2026-07-24 02:36:38",
+      "version": "4.81.01",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "66bc77c0-11f2-4d73-b193-f8342b378054",
+      "score": 1,
+      "content": "לא נתן לי תמונה של הנפש התאומה וכל דבר עולה כסף",
+      "reply": "Hi [Name], Thank you for sharing your feedback. We understand your disappointment about not receiving the soulmate sketch you were hoping for. We’d really like to look into this and help — please contact us at support-googleplay@asknebula.com so we can assist you directly. Holding space for your journey, Nebula",
+      "at": "2026-07-23 14:08:56",
+      "repliedAt": "2026-07-23 14:26:57",
+      "version": "4.81.01",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "131678c7-b70b-4838-a1ca-2f743405a642",
+      "score": 1,
+      "content": "ביקשו דולר וחייבו 29 דולר. ממש תרמית",
+      "reply": "Hi [Name]. We sincerely apologize for this distressing experience. It is a terrible feeling to see an unexpected charge on your account, and your anger is totally valid. Let our human support team step in right now to fix this.\nPlease contact support-googleplay@asknebula.com.\nGrateful for you,\nNebula 🔮",
+      "at": "2026-07-21 21:56:54",
+      "repliedAt": "2026-07-21 22:09:12",
+      "version": "4.81.00",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "0f7ce500-1513-4e36-bbf5-a1b17f556d46",
+      "score": 5,
+      "content": "Nice & interesting app 👍",
+      "reply": "Your kindness means the world to us 💜 So glad Nebula brought a little spark to your day. Holding space for your journey, Nebula 🔮",
+      "at": "2026-07-20 16:03:11",
+      "repliedAt": "2026-07-20 16:04:29",
+      "version": "4.81.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "a411ed8f-9fea-4603-9c92-1acc37fb3ca8",
+      "score": 5,
+      "content": "נשמע מעניין מחכה לראות מה יקרה במציאות",
+      "reply": "Thank you for the lovely review ✨ We’re glad Nebula sparked your curiosity and hope it continues to feel meaningful to you. Warmly, Nebula Team 🔮",
+      "at": "2026-07-20 01:58:34",
+      "repliedAt": "2026-07-20 02:00:26",
+      "version": "4.81.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "79d3f31e-6f11-489f-aaee-16adef18ec25",
+      "score": 4,
+      "content": "נחמד צריך לבדוק את המקומות שהומלצו לי",
+      "reply": "Thank you so much for the kind words ✨ It means a lot to know Nebula left a good impression. Warmly, Nebula Team 🔮",
+      "at": "2026-07-19 08:37:41",
+      "repliedAt": "2026-07-19 08:40:22",
+      "version": "4.81.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "7df2f7bc-83a5-4e52-8809-c3c9c0fa8c79",
+      "score": 5,
+      "content": "מקסים!",
+      "reply": "Your kindness means the world to us 💜 Such a lovely note to receive. Warmly, Nebula 🔮",
+      "at": "2026-07-18 13:43:14",
+      "repliedAt": "2026-07-18 13:46:25",
+      "version": "4.81.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "bc5f5865-e677-46cb-9aca-5e7e0fa37ec1",
+      "score": 1,
+      "content": "גנבים תחזירו את הכסף ! לא קיבלתי כלום וגם חייבתם פי50 ממה שהראתם לי",
+      "reply": "Hi, we’re sorry for the frustration caused by this charge and that you didn’t receive what you expected. Please contact us at support-googleplay@asknebula.com so we can review your account and help with your refund request.\nTrust your path, Nebula",
+      "at": "2026-07-17 19:27:43",
+      "repliedAt": "2026-07-17 19:48:29",
+      "version": "4.80.00",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "df36d1ca-bca2-4e84-91ab-8e7e05e20268",
+      "score": 5,
+      "content": "חמוד ממש",
+      "reply": "Your kindness means the world to us 💜 So happy Nebula brought a little charm to your day. Warmly, Nebula 🔮",
+      "at": "2026-07-16 02:39:02",
+      "repliedAt": "2026-07-16 02:42:24",
+      "version": "4.80.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e16e44da-624f-402d-815a-35198f194d9d",
+      "score": 4,
+      "content": "נחמד לדעת מה צבע ההילה שלי. הניתוח לא ככ מעמיק",
+      "reply": "Thank you for sharing this 🌙 It’s lovely to know Nebula brought you something interesting, even if the experience felt a bit light. Warmly, Nebula Team 🔮",
+      "at": "2026-07-15 18:18:48",
+      "repliedAt": "2026-07-15 18:22:25",
+      "version": "4.80.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "883c0154-12f5-46fe-8fa3-c8c85db96848",
+      "score": 5,
+      "content": "מרתק ממש ומפתיע..הרבה דברחם לגבי עצמי מאוד מתאימים אז אולי גם החיזוי ...ימים יגידו 😆",
+      "reply": "We're honored to be part of your journey ✨ So lovely to hear Nebula sparked curiosity and a little surprise. Holding space for your journey, Nebula 🔮",
+      "at": "2026-07-11 11:49:09",
+      "repliedAt": "2026-07-11 11:54:25",
+      "version": "4.78.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "f7f8cec0-c4c7-42bb-9599-8186b2c428b5",
+      "score": 5,
+      "content": "וואו כמה שזה אמיתי זה מדוייק אחלה דבר",
+      "reply": "Reviews like yours keep our whole team inspired ✨ So lovely to hear Nebula felt clear and meaningful to you. With gratitude, Nebula Team 🔮",
+      "at": "2026-07-09 18:51:19",
+      "repliedAt": "2026-07-09 18:54:29",
+      "version": "4.80.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "a436d5d6-e6f2-435a-b060-884751d819c3",
+      "score": 1,
+      "content": "the app charged me without premission!! be carefull do dont give them any payment device!!! and nothing inside is really what the publish",
+      "reply": "Hi [Name],\n\nThank you for sharing✨️ We truly understand your concerns.\n\nWe’d like to note that all payments on our platform are user-authorized. If anything about the charge or your account seems unclear, please contact us at support-googleplay@asknebula.com.\n\nWith gratitude,\nNebula",
+      "at": "2026-07-09 13:49:49",
+      "repliedAt": "2026-07-09 14:02:23",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "53cc2225-75af-4ebe-9220-4a2ad9c9b76a",
+      "score": 4,
+      "content": "נמשכתי לתדר של האתר וזה' למרותש-אני בּורר תכנ'ים...🎱 עם. פ' זיקה-קוסמית ופשוט הגעתי' שווה יותר מכמה שקלים.👌 ואני אחרי פוסט וחצי תרתיי😉 תו- דה' מ.חפ'🙏1️⃣⚜️",
+      "reply": "Your review made our day 💜 It’s wonderful to hear Nebula felt worth it to you, and we’re grateful you shared that glow. Warmly, Nebula Team 🔮",
+      "at": "2026-07-07 11:49:21",
+      "repliedAt": "2026-07-07 11:52:20",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "18e0559e-fb1d-4c3f-8996-4246f0d68dc2",
+      "score": 5,
+      "content": "נחמד ואמיתי אפליקציה מאןד טובה",
+      "reply": "Your kindness means the world to us 💜 It’s lovely to know Nebula felt genuine and helpful to you. Warmly, Nebula 🔮",
+      "at": "2026-07-06 04:54:43",
+      "repliedAt": "2026-07-06 04:58:24",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "1c9b6d78-4931-4db4-b519-4328eba7203f",
+      "score": 4,
+      "content": "גנבים גנבו מימני 15 דולר אמרו זה עולה דולר ולקחו 15 תיזהרו",
+      "reply": "Hi there!\n\nThank you for your feedback. We’re sorry to hear about your concerns regarding the charge 💜\nPlease contact us at support-googleplay@asknebula.com so we can review your case, clarify what happened, and help resolve the situation.\n\nWith gratitude,\nNebula 🔮",
+      "at": "2026-07-05 21:44:05",
+      "repliedAt": "2026-07-06 01:18:48",
+      "version": "4.79.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "ed3e3be7-1e45-475b-b84a-af92ee40aa52",
+      "score": 5,
+      "content": "נחמד נראה אם זה באמת עובד..",
+      "reply": "Thank you so much for the kind words ✨ We’re glad Nebula made a good first impression. Warmly, Nebula Team 🔮",
+      "at": "2026-07-05 15:42:27",
+      "repliedAt": "2026-07-05 15:46:19",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "1a7547ca-6180-45ba-86db-8433b8408ce9",
+      "score": 4,
+      "content": "מעניין ומיוחד",
+      "reply": "Thank you for sharing this — it means more than you know 💜 We’re glad Nebula felt interesting and a little different to you. Warmly, Nebula Team 🔮",
+      "at": "2026-07-05 11:43:41",
+      "repliedAt": "2026-07-05 11:46:21",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "c1bcf71c-294e-419c-bf32-48dd8df6f475",
+      "score": 5,
+      "content": "בנתיים מדויק",
+      "reply": "We’re truly touched by your words ✨ It means a lot to know Nebula is feeling clear and on point for you. Warmly, Nebula Team 🔮",
+      "at": "2026-07-04 19:02:22",
+      "repliedAt": "2026-07-04 19:06:21",
+      "version": "4.79.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "59ecbad5-cd48-4f07-9e7d-24fa34d5b127",
+      "score": 1,
+      "content": "גונבים כסף",
+      "reply": "Hi [Name]! Thank you for sharing your experience. I understand how concerning it is to feel that money has been taken unexpectedly, and I want you to know we take situations like this very seriously. Please email us at support-googleplay@asknebula.com so we can look into your situation together and help resolve this. Trust in the journey, Nebula",
+      "at": "2026-07-04 16:02:16",
+      "repliedAt": "2026-07-04 16:22:17",
+      "version": "4.79.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "d968755a-c6f5-4118-8812-fbfab3a14466",
+      "score": 1,
+      "content": "רמאות!!!",
+      "reply": "Hello [Name],\n\nWe’re sorry Nebula felt like a dishonest experience to you. Please contact us at support-googleplay@asknebula.com so we can understand what happened and do our best to help.\n\nTrust what feels right,\nNebula",
+      "at": "2026-07-03 09:56:16",
+      "repliedAt": "2026-07-03 10:24:21",
+      "version": null,
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "38209478-bae5-4182-865c-f04117701d4d",
+      "score": 1,
+      "content": "גנבים ניסו לגנוב ממני כסף על מנויים שלא הפעלתי , הם עשו את זה בעצמם האשראי שלי נחסם בגללם",
+      "reply": "Hello,\n\nWe’re sorry you saw subscription charges you didn’t expect and had to block your card. We understand how stressful that feels. Please contact us at support-googleplay@asknebula.com so we can review your case and do our best to help.\n\nTrust what feels right,\nNebula",
+      "at": "2026-07-03 06:48:34",
+      "repliedAt": "2026-07-03 07:05:49",
+      "version": "4.78.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "f7570fcb-ba84-4165-a5e0-b214538c1bc6",
+      "score": 1,
+      "content": "Very disappointing experience. I believed I was making a one-time $1 purchase. Soon after, a $29.99 charge was attempted on my card without me expecting it, and I declined it through my credit card provider. I could not find a clear way to manage or cancel the subscription inside the app. I strongly recommend reading every term carefully before making any payment.",
+      "reply": "Hi!\nThank you for the feedback. We’re sorry to hear about your experience and understand how unexpected charges can feel. We take billing transparency seriously and appreciate you sharing your concerns with us. Please contact us at support-googleplay@asknebula.com so we can review your case and assist you further.\nTrust your path,\nNebula Team",
+      "at": "2026-07-03 00:30:41",
+      "repliedAt": "2026-07-03 00:51:13",
+      "version": "4.79.00",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "c058db8e-f38c-4d27-ab3b-cccb0b11511e",
+      "score": 5,
+      "content": "טוב",
+      "reply": "Your review made our day 💜 Thank you for taking a moment to share it. Warmly, Nebula Team 🔮",
+      "at": "2026-06-28 14:59:11",
+      "repliedAt": "2026-06-28 15:00:27",
+      "version": "4.78.01",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "6767f101-d118-42c1-b1e2-ad6a2bcd32ae",
+      "score": 5,
+      "content": "החיזוי היה מצויין. שוןה כל שקל.",
+      "reply": "Your review made our day 💜 It means so much to know the experience felt worthwhile to you. Warmly, Nebula 🔮",
+      "at": "2026-06-26 05:36:22",
+      "repliedAt": "2026-06-26 05:38:24",
+      "version": "4.78.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "d7bc3592-4dc9-4ecf-8499-7fc9f3f0f06b",
+      "score": 1,
+      "content": "לא ענו למייל ולאחר שבוע לקחו 42.99$ מבלי שידעתי בשום אופן לא להוריד ולא לשלם אין שם שרות לקוחות",
+      "reply": "Hi [Name]. We are deeply sorry. Missing your email and then charging $42.99 is awful. We understand why you feel there's no customer service. We want to find your message right now, fix this, and refund you.\nPlease email support-googleplay@asknebula.com.\nTrust your path,\nNebula 🔮",
+      "at": "2026-06-25 15:22:21",
+      "repliedAt": "2026-06-25 15:44:37",
+      "version": "4.76.00",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "d41e916d-6683-44e5-a837-a6c30f8a2142",
+      "score": 4,
+      "content": "נחמד",
+      "reply": "Your review made our day 💜 So glad Nebula brought a pleasant moment your way. With gratitude, Nebula 🔮",
+      "at": "2026-06-23 20:41:50",
+      "repliedAt": "2026-06-23 20:42:23",
+      "version": "4.76.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "222e0dad-6986-470a-bdda-b28b3fa867e6",
+      "score": 5,
+      "content": "interesting but its a bit expensive...",
+      "reply": "Thank you for sharing this — it means more than you know 💜 We’re glad Nebula caught your interest, and your note truly helps us keep listening. Warmly, Nebula 🔮",
+      "at": "2026-06-21 00:48:28",
+      "repliedAt": "2026-06-21 00:52:25",
+      "version": "4.76.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "d95c2df9-bec5-427a-b5d0-fd8f44a9667a",
+      "score": 1,
+      "content": "They speak to you in your native language, and give the impression that you are protected and in good hands, and that they really care about you, even though it all turns out to be a lie, they want to take money from you, and in return for the spiritual reading they demand more money, Thieves and oppressors",
+      "reply": "Hi, thank you for your feedback. We’re sorry to hear that your experience left you feeling this way. Our goal is to provide guidance that feels meaningful. We understand your concerns, and we'd appreciate the opportunity to learn more. Please contact us at support-googleplay@asknebula.com so we can assist you. Holding space for your journey, Nebula",
+      "at": "2026-06-13 08:15:19",
+      "repliedAt": "2026-06-13 08:30:20",
+      "version": "4.73.01",
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "9d91ed80-f573-410f-b24e-34528ac18f94",
+      "score": 5,
+      "content": "זה מגניב ממש",
+      "reply": "Thank you, truly 💜 It means a lot to know Nebula brought a bit of delight your way. Warmly, Nebula Team 🔮",
+      "at": "2026-06-05 19:55:50",
+      "repliedAt": "2026-06-05 19:58:23",
+      "version": "4.73.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "11897394-0d02-413a-a800-d7aae0eebf07",
+      "score": 1,
+      "content": "אין שום אפליקציה כאן, סתם מסך כחול. הכל עקיצה!!!!",
+      "reply": "Hello,\nThank you for your feedback. We’re sorry to hear that you’ve experienced issues with the app and understand how frustrating this must be. We’d appreciate the opportunity to investigate what happened and help resolve the problem.\nPlease contact us at support-googleplay@asknebula.com 💜\n\nTrust your path,\nNebula 🔮",
+      "at": "2026-06-05 04:19:23",
+      "repliedAt": "2026-06-05 04:34:21",
+      "version": "4.72.00",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "25d6a024-ad79-45e6-9d7b-ce4ee29e70e9",
+      "score": 5,
+      "content": "good",
+      "reply": "Thank you, truly 💜 Feedback like yours reminds us why we do what we do. Warmly, Nebula Team 🔮",
+      "at": "2026-06-05 00:28:01",
+      "repliedAt": "2026-06-05 00:30:26",
+      "version": "4.72.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "dc1c4ff3-bec6-4e46-b93c-ea8ca01cf6e1",
+      "score": 1,
+      "content": "פשיניג. ראו הוזהרתם!!!! גונבים כסף דרך פרסומות שקריות בלי אפשרות לבטל שירות לקוחות גרוע נראה שמדברים עם רובוטים שולחים לך את אותה תשובה מיליון פעם אז מי שהכסף שלו חשוב לו שיזהר תדווחו גם לגוגל כדי שיחסמו את האפליקציה",
+      "reply": "Hi [Name]! We hear your frustration and take your words very seriously — no one should ever feel misled or unsupported when reaching out for help. If you’re willing, please reach out to us directly at support-googleplay@asknebula.com so we can provide further details. Let your path feel clear and calm, Nebula",
+      "at": "2026-06-04 16:17:06",
+      "repliedAt": "2026-06-04 17:08:28",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "3b61d71e-78eb-49e1-8f43-1ad5af6a6a45",
+      "score": 1,
+      "content": "זהירות גנבים ונוכלים אסור להוריד גונבים כסף",
+      "reply": "Hello there,\nThat’s not the experience we want for our users. We’re really sorry to see your feedback and understand how strongly you feel. If something went wrong with your purchase or account, please email support-googleplay@asknebula.com so we can review your case and help resolve it properly.\nLet your own light guide you, Nebula Team 🔮",
+      "at": "2026-06-01 16:24:34",
+      "repliedAt": "2026-06-01 16:44:26",
+      "version": "4.72.00",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "c9535b26-0f78-4289-be50-4b892520641f",
+      "score": 5,
+      "content": "מאוד נחמד ומעניין",
+      "reply": "Your review made our day 💜 So lovely to hear Nebula felt interesting and enjoyable. With gratitude, Nebula Team 🔮",
+      "at": "2026-05-31 19:29:50",
+      "repliedAt": "2026-05-31 19:32:25",
+      "version": "4.71.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "c00fc82b-b7fb-481a-9c03-17de5b05b13c",
+      "score": 5,
+      "content": "דיי טוב אני עדיין לא יודע אם זה נכון ברגע שאני ידע אני ישירות יכתוב ביקורת מלאה",
+      "reply": "Hi [Name],Thank you for your review and for sharing your perspective! We completely understand—when it comes to cosmic guidance and predictions, it takes time to see how things unfold in your life. If you ever have any questions or need assistance, feel free to reach out to us at support-googleplay@asknebula.com. With gratitude, Nebula",
+      "at": "2026-05-30 15:38:52",
+      "repliedAt": "2026-05-31 16:18:35",
+      "version": "4.71.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "6a93a458-069c-4ab2-86d6-6aecebd1592c",
+      "score": 1,
+      "content": "נוכלים",
+      "reply": "Hi! Thank you for sharing your feelings with us. Your experience matters, and we would like the opportunity to look into your situation together. Please reach out to us at support-googleplay@asknebula.com so we can listen, provide support, and address any issues you’ve encountered. Trust your path, Nebula",
+      "at": "2026-05-27 19:37:36",
+      "repliedAt": "2026-05-27 20:22:32",
+      "version": "4.71.00",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "1200953f-2663-4be1-bb38-0787260c9d05",
+      "score": 5,
+      "content": "נחמד וטוב אהבתי נראה בעתיד אם הם צדקו 🫠",
+      "reply": "Thank you, truly 💜 So lovely to know Nebula left you curious and smiling. With gratitude, Nebula 🔮",
+      "at": "2026-05-27 03:46:35",
+      "repliedAt": "2026-05-27 03:50:28",
+      "version": "4.71.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "4dfd17fb-246e-4996-840e-9e90e07acad4",
+      "score": 1,
+      "content": "It's a scam. You are urged to download it for free, and than they start charging you monthly",
+      "reply": "Hi [Name]! Thank you for sharing. I understand how frustrating it feels to encounter unexpected monthly charges. We always provide all pricing details upfront so everyone can make informed choices. If you would like us to review your situation, please contact us at support-googleplay@asknebula.com. Let your path feel clear and calm, Nebula",
+      "at": "2026-04-14 21:18:59",
+      "repliedAt": "2026-04-14 21:24:56",
+      "version": "4.64.00",
+      "thumbsUp": 5
+    },
+    {
+      "reviewId": "05944f61-a3e3-4362-9afe-fe1879eb5d0b",
+      "score": 1,
+      "content": "scam. they charge you even if you don't authorize",
+      "reply": "Hi [Name]! Thank you for letting us know about your experience. We truly want to look into this for you and ensure your concerns are fully addressed. Please reach out to us at support-googleplay@asknebula.com so we can investigate further and help resolve this together. Your trust is very important to us. Kind regards, Nebula Team",
+      "at": "2026-03-11 16:06:08",
+      "repliedAt": "2026-03-11 16:22:28",
+      "version": null,
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "150d1f19-53c9-4345-990b-edb0a385c046",
+      "score": 1,
+      "content": "שילמתי דולר אחד ועכשיו יורד לי 40 דולר כל חודש!!!! הונאה!!! איך אני מבטלת את התשלומים??",
+      "reply": "Hello!\nThank you for the feedback. We’re sorry to hear how upsetting this situation feels. A charge appearing after trying a trial can definitely be confusing. Our team will reach out to help you review your account and make sure everything is sorted. You can also contact us anytime at support-googleplay@asknebula.com.\nKindly, Nebula Team 🔮",
+      "at": "2026-03-09 06:18:25",
+      "repliedAt": "2026-03-09 08:06:28",
+      "version": null,
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "7ede1e0f-8f3b-4960-8a16-87ca44de7451",
+      "score": 1,
+      "content": "horrible! dont pay 1$ even. it's impossible to find the non renewal option so after a week you're charged with 42.99$",
+      "reply": "Hi [Name],\n\nThank you for openly sharing your experience🙏️ We’re very sorry for the unexpected charge; we never want this kind of surprise and always try to explain everything as clearly as possible. To help resolve this and answer any questions, contact us at support-googleplay@asknebula.com\n\nWith care,\nNebula Team 🔮",
+      "at": "2026-03-05 10:40:52",
+      "repliedAt": "2026-03-05 10:48:36",
+      "version": "4.59.01",
+      "thumbsUp": 7
+    },
+    {
+      "reviewId": "3affb8a6-9987-4cc3-b410-f2b0a7cd6575",
+      "score": 1,
+      "content": "They take your money and give you nothing!!!! Thank they still taking it no promotion 😱 😱 😱 😱",
+      "reply": "Greetings, thank you for sharing your concern with us. We’re sorry this experience feels frustrating. Transparency is very important to our team, and all charges are made with user authorization. We’d like to review your situation and help you properly — please contact us at support-googleplay@asknebula.com.\n\nWith care,\nNebula Team 🔮",
+      "at": "2026-02-19 16:09:31",
+      "repliedAt": "2026-02-19 16:40:45",
+      "version": null,
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "0ec7d841-048f-4bac-a3d7-fde6491165e1",
+      "score": 1,
+      "content": "too hard to cancel. I asked for 1 dollar reading. it now auto renews at 39 dollars without warning.",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-19 10:16:23",
+      "repliedAt": "2026-02-19 10:18:29",
+      "version": "4.57.00",
+      "thumbsUp": 5
+    },
+    {
+      "reviewId": "914f3ac1-205a-47b4-a22e-8be0f69a3daa",
+      "score": 5,
+      "content": "מאוד מקצועי והמון מידע",
+      "reply": "Thank you for your kind words! We're thrilled to hear that you find Nebula professional and informative. Your journey towards clarity is important to us, and we're honored to be a part of it. Warm regards, Nebula Team 🔮",
+      "at": "2026-02-04 16:06:31",
+      "repliedAt": "2026-02-04 16:08:28",
+      "version": "4.55.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "9184b002-42cd-477c-a124-9eac0df5095d",
+      "score": 1,
+      "content": "לא עובד, לא ניתן לשלם את סכום החיוב",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-23 11:27:55",
+      "repliedAt": "2026-01-23 11:28:30",
+      "version": null,
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "eb1d57cf-f719-484b-a472-ce3f4fb49817",
+      "score": 5,
+      "content": "מדהים ממליץ בחום",
+      "reply": "Thank you for your glowing recommendation! We're thrilled to hear that Nebula is providing you with such a wonderful experience. Your support means the world to us! Warm regards, Nebula Team 🔮",
+      "at": "2026-01-15 18:59:33",
+      "repliedAt": "2026-01-15 19:00:34",
+      "version": "4.52.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "6410b5b7-c511-4a10-8a60-cd44dc0515e2",
+      "score": 1,
+      "content": "ביקשתי סקצ' של הבן זוג רק בשביל הסקרנות שילמתי דולר אחד אבל כלום לא קרה.",
+      "reply": "Hi there,\nThank you for sharing your experience. I’m truly sorry that you did not receive anything. We always want our service and deliveries to be reliable. If you haven’t yet received your sketch or need help, please contact us at support-googleplay@asknebula.com so we can assist you personally.\nTake care,\nNebula Team 🔮",
+      "at": "2025-12-29 16:31:53",
+      "repliedAt": "2025-12-29 18:47:26",
+      "version": "4.49.00",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "795e886f-0926-4170-9318-873c7e6238a4",
+      "score": 5,
+      "content": "I got the sketch and waiting for the tips. thanks a lot.",
+      "reply": "Hi there,\n\nThank you for taking the time to share your kind thoughts! 💭💕 We’re delighted you received your sketch and can’t wait for you to explore the tips.\n\nIf any questions come up, you can always write to us - we’re here around the clock at support-googleplay@asknebula.com.\n\nSincerely,\nNebula Team 🔮",
+      "at": "2025-12-12 17:06:14",
+      "repliedAt": "2025-12-12 17:11:49",
+      "version": "4.49.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "f8b821df-4811-423d-9dbd-b079630524a6",
+      "score": 1,
+      "content": "חברה של רמאים. מחייבים כל חודש באופן שרירותי",
+      "reply": "Hi there,\n\nThank you for bringing this to our attention. We’re truly sorry for the unexpected charges and understand how upsetting this feels. Please contact us at support-googleplay@asknebula.com with the email linked to your purchase, and we’ll review your case as soon as possible.\n\nWarm regards, Nebula Team 🔮",
+      "at": "2025-11-16 17:49:22",
+      "repliedAt": "2025-11-16 17:53:27",
+      "version": "4.43.00",
+      "thumbsUp": 6
+    },
+    {
+      "reviewId": "0c1178db-f11c-4186-97d7-8265d66a7680",
+      "score": 5,
+      "content": "The Nebula app is an inspiring and very interesting app with lots of interesting subjects such as - starseed report palmistry scanning and analysing l am enjoying this app very much thanks for sharing your wisdom with me 😊❤️💙💜",
+      "reply": "Hi! 🌟 Thank you for your beautiful review! We’re so happy to hear you’re enjoying our service and exploring all the different readings and features. Your kind words truly mean a lot to us. If you ever have ideas or feedback, we’re always happy to listen at support-googleplay@asknebula.com.\n\nRespectfully,\nNebula Team 🔮",
+      "at": "2025-11-10 13:32:54",
+      "repliedAt": "2025-11-10 13:52:51",
+      "version": "4.43.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "2ccdc899-c7ae-4464-91cf-c49317d59259",
+      "score": 1,
+      "content": "אני שמדברת אנגלית קלה, קשה לי להסתדר באפליקציה",
+      "reply": "Hi,\n\nThank you for your feedback.\nWe are sorry to hear you had difficulty using the app. Our team is always working on improving translations to make Nebula easier for users worldwide.\nIf you would like help changing the app language, we kindly ask you to reach out to support-googleplay@asknebula.com.\n\nKind regards,\nNebula Team 🔮",
+      "at": "2025-10-30 13:58:44",
+      "repliedAt": "2025-10-30 14:28:28",
+      "version": "4.40.00",
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "293b916c-3f5a-4ab0-8040-51ab884130cc",
+      "score": 5,
+      "content": "אני חושבת שהתשלום עבר לי יותר מידי פעמים תוכלו לחזור אליי",
+      "reply": "Hi there! Thank you for reaching out and sharing your concern — we truly appreciate your honesty. Please don’t hesitate to contact us directly at support-googleplay@asknebula.com, and our team will take a closer look at your account and make sure everything is in order. Warm regards, The Nebula Team\n",
+      "at": "2025-10-23 01:19:34",
+      "repliedAt": "2025-10-23 01:38:52",
+      "version": "4.39.00",
+      "thumbsUp": 3
+    },
+    {
+      "reviewId": "ed71b6fa-a500-4d9b-ba72-dbed9210a978",
+      "score": 1,
+      "content": "I signed up and got good service till it stopped, wanted to cancel my subscription but the app just not lead you to a cancelation!",
+      "reply": "Hey there, valued customer! Appreciate your input. We apologize that the payment issues with our service left you unsatisfied. Reach out to us at support-googleplay@asknebula.com so that we can reach out to the payment system and assist you in resolving the issue. We will do everything to aid you in resolving the issue quickly. Regards, NebulaTeam",
+      "at": "2025-08-08 20:16:54",
+      "repliedAt": "2025-08-08 20:24:06",
+      "version": null,
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "638f89cd-9f24-4183-8df1-efae75ab5fe1",
+      "score": 1,
+      "content": "ביטלתי כל תשלום עתידי ומחקתי את האפליקציה ובכל זאת חוייבתי על 39$ שלא אישרתי!!!! גניבה לאור יום.",
+      "reply": "Hi there, [Name]! Thank you for your time. We are sorry that the problems with our service did not meet your expectations. Contact us at support-googleplay@asknebula.com so that we can access the system and help with fixing the problem. We will do all we can to help you solve the problem in a timely manner. Best wishes, Support Team.",
+      "at": "2025-07-29 19:16:44",
+      "repliedAt": "2025-07-29 19:29:06",
+      "version": null,
+      "thumbsUp": 5
+    },
+    {
+      "reviewId": "90b05d4f-3e54-469a-9f60-70e950acf0e1",
+      "score": 1,
+      "content": "רמאות! לא קיבלתי שום דו\"ח",
+      "reply": "Hi [Name]! Thank you for your feedback. We are truly sorry for the inconvenience caused by the report you didn't receive. Please contact us at nebula.support@nebulahoroscope.com, and we`ll work on delivering a solution tailored to your needs. Respectfully, Nebula team 🔮",
+      "at": "2025-04-16 14:42:04",
+      "repliedAt": "2025-04-16 14:49:40",
+      "version": "4.16.00",
+      "thumbsUp": 9
+    },
+    {
+      "reviewId": "bfe1c9e7-3879-4734-9e64-8f8bd370d3ab",
+      "score": 5,
+      "content": "יפ",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us such a lovely review!\n\nIt is users like you that keep pushing us to deliver the best customer experience, while at the same time making our job enjoyable.\n\nBest wishes, Nebula team",
+      "at": "2025-04-12 14:30:07",
+      "repliedAt": "2025-04-12 14:37:09",
+      "version": "4.15.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "6f7f7bdc-b58b-40bb-aca1-2eb5942a0f92",
+      "score": 1,
+      "content": "רמאות- מכניסים פרטי אשראי למנוי ללא ידיעה. Fraud!!",
+      "reply": "Hi [Name]! Appreciate your input. We apologize that the payment issues with our service left you unsatisfied. Reach out to us at nebula.support@nebulahoroscope.com so that we can reach out to the payment system and assist you in resolving the issue. We will do everything to aid you in resolving the issue quickly. Regards, Support Team.",
+      "at": "2025-04-05 08:21:03",
+      "repliedAt": "2025-04-05 08:25:53",
+      "version": "4.15.00",
+      "thumbsUp": 12
+    },
+    {
+      "reviewId": "51f7e87f-8627-43a2-a4d5-cdbe398a4224",
+      "score": 5,
+      "content": "מדהים תודה",
+      "reply": "Dear User, hello there!\n\nThank you for your feedback, you put a big smile on our faces! If you`ll need additional help, ask us on nebula.support@nebulahoroscope.com! Our team is hard at work trying to continuously improve our app and it’s always rewarding to hear kind words. We love that you love us!\n\nBest wishes, Nebula team",
+      "at": "2025-03-26 00:29:58",
+      "repliedAt": "2025-03-26 00:35:18",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "744c1231-9ad2-4f11-931e-7e20807f6325",
+      "score": 1,
+      "content": "Stay away from this app, it's a scam, they charge you astronomical amounts for services you never purchased and refuse to give you a refund and refuse to cancel your subscription. They invent all kinds of fictional charges. crooks",
+      "reply": "Hello [Name],\nWe’re sorry to hear about your experience. We understand how frustrating unexpected charges can be and want to assist you.\nPlease contact nebula.support@nebulahoroscope.com, and we’ll review your case.\nYour feedback is important, and we appreciate the chance to improve.\nBest,\nNebula Team 🔮",
+      "at": "2025-03-22 06:24:18",
+      "repliedAt": "2025-03-22 06:27:45",
+      "version": null,
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "1e4bfb6c-c988-4c62-82e1-35d2140938dd",
+      "score": 1,
+      "content": "שילמתי ולא קיבלתינאת הדוח..רמאות",
+      "reply": "Dear [Name], hello there!\n\nThank you for taking the time to leave us a review! We are very sorry for the confusion. However, we would like to know more about what happened so we can make things right. You can tell us more details about the issue at nebula.support@nebulahoroscope.com.\n\nBest wishes, Nebula team",
+      "at": "2024-11-25 10:28:11",
+      "repliedAt": "2024-11-25 10:40:35",
+      "version": "4.8.58",
+      "thumbsUp": 12
+    },
+    {
+      "reviewId": "a4e7a8df-0264-4a9c-9e65-d2d5d6ad1b80",
+      "score": 1,
+      "content": "Steal your money. Even if you want to buy once they make it a WEEKLY! subscription.. Do not fall for that this all app is just a scam and youll never get your money back.",
+      "reply": "Hello, thank you for your feedback. We are very sorry to hear that you encountered this situation. We understand that this may have caused you some inconvenience. We would like to help sort out the issue. Please contact us at nebula.support@nebulahoroscope.com so we can resolve the issue. Best regards, Nebula Team",
+      "at": "2024-07-20 15:32:11",
+      "repliedAt": "2024-07-20 15:39:39",
+      "version": null,
+      "thumbsUp": 7
+    },
+    {
+      "reviewId": "7d613e13-2c4d-47f0-8945-096b38f7e194",
+      "score": 5,
+      "content": "👍🏽👍🏽👍🏽👍🏽👍🏽😊😊😊",
+      "reply": "Hello dear user!\nYour supportive remarks give us certainty that we are on the right track.\nIf you need some help feel free to contact our support service at nebula.support@nebulahoroscope.com, so we could help you to solve any problem.\nKindest regards, Nebula team 🔮",
+      "at": "2024-07-18 21:45:15",
+      "repliedAt": "2024-07-18 22:12:54",
+      "version": "4.8.46",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "e3e418ba-6024-41cc-8826-5d8c2647cc30",
+      "score": 1,
+      "content": "מרגיש נוכלות",
+      "reply": "Hello there! I am grateful for the hard work you have done. We apologize that our performance did not meet your expectations because of payment problems. Contact us at nebula.support@nebulahoroscope.com so we can access the payment system and find a solution to this problem. We will strive to assist you in resolving the problem quickly.",
+      "at": "2024-02-13 19:53:09",
+      "repliedAt": "2024-02-13 20:53:19",
+      "version": "4.8.24",
+      "thumbsUp": 12
+    },
+    {
+      "reviewId": "699fe85f-9e0d-4539-a98b-47da154e15d6",
+      "score": 1,
+      "content": "לפני שניתנת מפה אסטרולוגית וכירולוגית שואלים לפני מה תחום העניין העיקרי שלי ועוד חידונים. בדיחה ורמאות מגוחכת.",
+      "reply": "Dear User, hello there!\n\nWe monitor the quality of our product, and the content is written by real people - astrologers. Also, update the app to the latest version so you have all the information updated and you get high-quality content. You can tell us more about your problem at nebula.support@nebulahoroscope.com.\n\nBest wishes, Nebula team",
+      "at": "2023-12-18 02:32:23",
+      "repliedAt": "2023-12-18 06:31:22",
+      "version": null,
+      "thumbsUp": 8
+    }
+  ]
+}

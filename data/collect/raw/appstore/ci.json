@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "ci",
+  "fetched_at": "2026-09-19T23:50:00+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "13716275785",
+      "rating": 5,
+      "title": "Belle performance",
+      "text": "Merci",
+      "date": "2026-02-05T17:00:10Z",
+      "is_edited": false,
+      "reply": "Thank you for your kind words! We're thrilled to hear that Nebula is performing beautifully for you. Your support means the world to us as we continue this journey together. Warm regards, Nebula Team 🔮",
+      "reply_date": "2026-03-04T15:28:31Z"
+    },
+    {
+      "id": "13312206956",
+      "rating": 4,
+      "title": "Interesting",
+      "text": "True or not it was interesting 😂",
+      "date": "2025-10-25T13:22:43Z",
+      "is_edited": false,
+      "reply": "Hi [Name]! \n\nThank you for your fun and honest feedback. We’re glad to hear you found the experience interesting 💜 \nWe hope Nebula continues to bring you new insights and moments of curiosity. If you ever need support, reach us at support-appstore@asknebula.com. \n\nBest regards, Nebula Team 🔮",
+      "reply_date": "2025-10-26T18:40:44Z"
+    }
+  ]
+}

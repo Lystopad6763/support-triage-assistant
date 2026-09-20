@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "mz",
+  "fetched_at": "2026-09-20T00:09:51+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "4993722516",
+      "rating": 5,
+      "title": "THE COOLEST AP EVER!!",
+      "text": "The app is very cool! Everything makes sense about me and my life!!! I hoped this app would be in my phone one day! ITS THE COOLEST APP EVERRR!!! ✨✨",
+      "date": "2019-10-21T17:38:16Z",
+      "is_edited": false,
+      "reply": "Lila, thank you! We're so glad you that you like our app\n💖",
+      "reply_date": "2019-10-23T10:04:58Z"
+    },
+    {
+      "id": "13761143234",
+      "rating": 5,
+      "title": "Leitura da palma da mão",
+      "text": "Adorei a leitura porém acho que faltou um pouco mais de profunfundodades nos sentimentos das lindas",
+      "date": "2026-02-18T02:57:36Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for sharing your feedback. We’re glad to hear you enjoyed the reading, and we appreciate your thoughtful note about wanting more depth in the feelings of the women described. Your perspective is valuable, and feedback like this helps us improve the experience to make it even more meaningful and detailed. If you’d like to share more specifics about what kind of depth or emotional detail you’d love to see, please reach out at support-appstore@asknebula.com — your input guides us in refining the app further. Best regards, Nebula Team🔮",
+      "reply_date": "2026-03-05T04:50:09Z"
+    }
+  ]
+}

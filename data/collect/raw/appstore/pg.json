@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "pg",
+  "fetched_at": "2026-09-20T00:12:15+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "6817758638",
+      "rating": 4,
+      "title": "Can’t ask a question to astrologers",
+      "text": "I can’t seem to ask a question to the astrologers, it keeps saying there is an error and to try again later???",
+      "date": "2021-01-01T12:47:33Z",
+      "is_edited": false,
+      "reply": "Dear User, hello! Thanks for your time to leave a review. We are sorry for any confusion. You can tell us more about your problem and we will do our best to fix it. Please contact us at support@nebulahoroscope.com Kind regards, support team.",
+      "reply_date": "2022-07-30T08:16:36Z"
+    },
+    {
+      "id": "13987505806",
+      "rating": 5,
+      "title": "I like this",
+      "text": "This is very insightful and helpful to my future relationship.",
+      "date": "2026-04-23T05:35:49Z",
+      "is_edited": false,
+      "reply": "Hi there,\n\nThank you for your heartwarming review⭐ It’s really nice to hear that the insights felt helpful and meaningful for your future relationship. Feedback like this truly encourages our team and shows us what resonates most.\n\nIf you ever want to share more thoughts or ideas, feel free to contact us at support-appstore@asknebula.com.\n\nLet your own light guide you,\nNebula",
+      "reply_date": "2026-04-24T16:39:24Z"
+    }
+  ]
+}

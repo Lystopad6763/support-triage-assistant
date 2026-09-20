@@ -1,0 +1,90 @@
+{
+  "store": "googleplay",
+  "lang": "fa",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:39+00:00",
+  "count": 8,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "c17b8b0b-4007-49e7-93ce-0eb08be86321",
+      "score": 4,
+      "content": "خیلی خوب",
+      "reply": "Your kindness means the world to us 💜 So glad Nebula felt good to use. With gratitude, Nebula Team 🔮",
+      "at": "2026-08-14 02:52:28",
+      "repliedAt": "2026-08-14 02:54:21",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "0366e0b2-953f-4318-a2c7-1c4cc8b81904",
+      "score": 1,
+      "content": "بدترین برنامه ای که دیده بودم",
+      "reply": "Thank you for sharing your thoughts. We want to ensure every user has a seamless experience with Nebula, and we would like to help you with your account details directly. Please reach out to us at support-googleplay@asknebula.com so we can provide the support you need. Warm regards, Nebula Team 🔮",
+      "at": "2026-01-24 01:59:18",
+      "repliedAt": "2026-01-24 02:00:29",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "373249ff-534a-4f7d-9182-022634d5231d",
+      "score": 5,
+      "content": "انقدر دیر نطرخواهی میشه که تقریبابادمون رفته چی بود و چی شد",
+      "reply": "Dear User, hello there! Thank you for taking the time to leave us such a lovely review! It is users like you that keep pushing us to deliver the best customer experience, while at the same time making our job enjoyable. Best wishes, Nebula team",
+      "at": "2024-09-28 10:52:23",
+      "repliedAt": "2024-09-28 10:58:21",
+      "version": null,
+      "thumbsUp": 2
+    },
+    {
+      "reviewId": "9ab88895-af89-41e2-b969-975bd582a6a3",
+      "score": 5,
+      "content": "good",
+      "reply": "Dear [Name], hello there!\n\nThank you so much for your positive feedback! 🌟 We’re thrilled to hear that you had a great experience with Nebula.\n\nIf you have any other questions or need further assistance in the future, please feel free to contact us at nebula.support@nebulahoroscope.com.\n\nWarm regards,\n\nNebula Team🔮️",
+      "at": "2024-05-17 21:51:53",
+      "repliedAt": "2024-05-17 22:04:56",
+      "version": null,
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "2347e0dc-d730-4c2b-9e80-0f935cfa264b",
+      "score": 4,
+      "content": "جالب",
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review and for your kind words!\n\nBest wishes, Nebula team\n",
+      "at": "2021-09-14 01:39:34",
+      "repliedAt": "2021-09-14 12:19:48",
+      "version": null,
+      "thumbsUp": 1
+    },
+    {
+      "reviewId": "50e830bc-8d81-4f23-9984-ec7f82db11ef",
+      "score": 2,
+      "content": "عالی",
+      "reply": "Hello! We are sorry to hear that our app didn’t meet your expectations. If you receive a payment notification, it means that you have activated automatic renewal. We provide subscription information on our sales page, payment screen, and Terms of Services. Please contact us at support.nebula@gen.tech, we will do our best to help you with this issue",
+      "at": "2021-08-05 22:44:29",
+      "repliedAt": "2021-08-06 16:25:35",
+      "version": "4.4.1",
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "fbc39d0e-f9b1-4ca8-8e86-75890679e9d2",
+      "score": 5,
+      "content": "عالی🤩👻🤩👻 بعضی هاش دروغ",
+      "reply": "Dear [Name] , hello there!\n\nThank you for taking the time to leave us such a lovely review!\nIt is users like you that keep pushing us to deliver the best customer experience, while at the same time making our job enjoyable.\n\nBest wishes, Nebula team\n",
+      "at": "2021-06-01 07:36:52",
+      "repliedAt": "2021-06-02 21:17:13",
+      "version": null,
+      "thumbsUp": 4
+    },
+    {
+      "reviewId": "c68023fe-f0ba-4320-b7df-7d656377f8bf",
+      "score": 3,
+      "content": "نمی دونم خوبه یا نه ولی فکر کنم خوب باش😓",
+      "reply": "",
+      "at": "2020-12-29 21:50:00",
+      "repliedAt": "None",
+      "version": null,
+      "thumbsUp": 3
+    }
+  ]
+}

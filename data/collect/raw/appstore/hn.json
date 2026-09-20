@@ -1,0 +1,69 @@
+{
+  "store": "appstore",
+  "country": "hn",
+  "fetched_at": "2026-09-20T00:02:53+00:00",
+  "count": 6,
+  "with_reply": 5,
+  "reviews": [
+    {
+      "id": "13555126139",
+      "rating": 5,
+      "title": "Amo mucho nebula",
+      "text": "De definitivamente, es una de las mejores experiencias que he tenido a haber bajado esta aplicación\nEstoy tan agradecida con esta aplicación por dármelo la oportunidad de conocer un poco mi futuro. Muchas gracias por haber hecho esta aplicación.",
+      "date": "2025-12-26T00:32:26Z",
+      "is_edited": false,
+      "reply": "Hi there! Thank you so much for sharing your heartfelt impressions — we truly appreciate hearing from you. 💜 It’s wonderful to know the experience brought you joy and a sense of discovery. Our aim is always to create something that feels inspiring and supportive, and your words reassure us that this connection is being made. We’re grateful you took the time to let us know, as it motivates us to keep refining and enriching the journey for everyone. If you’d like, please reach out directly at support-trustpilot@asknebula.com so our team can stay connected and assist you further if needed. Warm regards, The Nebula Team",
+      "reply_date": "2026-03-15T16:15:52Z"
+    },
+    {
+      "id": "5931643235",
+      "rating": 5,
+      "title": "Buena",
+      "text": "Es muy buena la aplicación ya que puedes ver con quien te vas a casar pero si no te gusta lo que indica tu mano tu misma puedes darle un giro a tu vida amando a otro hombre y  cuando te vuelve a tomar la mano tus líneas de la mano an cambiado  por que ya estás amando a otro hombre",
+      "date": "2020-05-11T13:31:12Z",
+      "is_edited": false,
+      "reply": "",
+      "reply_date": null
+    },
+    {
+      "id": "13299977865",
+      "rating": 1,
+      "title": "Scam",
+      "text": "Beware of sudden charges in your card, I was charged $45 without my consent and I never paid any subscription; I made sure of it. I had to deal with it directly with my bank.",
+      "date": "2025-10-22T15:32:08Z",
+      "is_edited": false,
+      "reply": "Hi,\n\nThank you for sharing your feedback.\nWe’re very sorry to hear about the unexpected charge and understand how concerning this must be. \nWe take billing issues seriously and want to help resolve this as quickly as possible.\n\nPlease contact us directly at support-appstore@asknebula.com\nwith your account details so our team can review your case and assist with any unauthorized charges.\n\nWith care and clarity,\nNebula Team 💜",
+      "reply_date": "2025-10-24T00:53:17Z"
+    },
+    {
+      "id": "12506454913",
+      "rating": 4,
+      "title": "Good",
+      "text": "Good daily horoscopes, available content and readers",
+      "date": "2025-04-05T12:30:56Z",
+      "is_edited": false,
+      "reply": "Hello there, [Name],\n\nThank you for taking the time to leave us a review! It`s very important for us as it helps us to improve in order to provide you with more high-quality service!\nYour input is invaluable in helping us refine and improve the service. Thank you for being part of the process!\n\nIf you have any questions, you can always contact our support service at nebula.support@nebulahoroscope.com. Our agents always are ready to assist you with care and efficiency.\n\nKindest regards, Nebula team 🔮",
+      "reply_date": "2025-04-06T22:37:55Z"
+    },
+    {
+      "id": "12060243697",
+      "rating": 4,
+      "title": "Daniel",
+      "text": "The readings are very precise and have very professional mediums. Would definetely recommend this app.",
+      "date": "2024-12-13T23:49:43Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\n\nWe thank you for your feedback and want you to know that we appreciate it very much. It is very special to receive such feedback. It reminds us again and again that our work is needed and appreciated and provides the energy to keep working on our app for you - our users!\n\nBest wishes, Nebula team",
+      "reply_date": "2024-12-15T16:36:42Z"
+    },
+    {
+      "id": "11295056877",
+      "rating": 2,
+      "title": "Podría ser mejor",
+      "text": "Me gustaría que si te dan una oferta de una prueba gratis de 3 días, sea la opción predeterminada. No cobrarte 50 dólares sin reembolso por un error. Me parece de mal gusto que también para tener el acceso mínimo a varias informaciones tengas que pagar para poder verla, para eso mejor pónganle el precio a la app en Apple Store o Google Play, no la vendan como algo gratis porque para todo se ocupa pagar.",
+      "date": "2024-05-22T15:41:08Z",
+      "is_edited": false,
+      "reply": "Dear Customer, hello there!\nThanks for your feedback! This situation is due to the fact that you didn’t select the desired subscription on the sales screen. After tapping the “Continue” button, you have paid for the default subscription. If you need additional help, please contact us at nebula.support@nebulahoroscope.com.\nBest wishes, Nebula team",
+      "reply_date": "2024-05-23T22:12:15Z"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "store": "appstore",
+  "country": "cn",
+  "fetched_at": "2026-09-19T23:50:33+00:00",
+  "count": 12,
+  "with_reply": 11,
+  "reviews": [
+    {
+      "id": "14478096849",
+      "rating": 5,
+      "title": "很棒的感觉",
+      "text": "非常准确",
+      "date": "2026-08-27T13:03:52Z",
+      "is_edited": false,
+      "reply": "Thank you so much for the kind words ✨ It truly means a lot to our team. Warmly, Nebula Team 🔮",
+      "reply_date": "2026-08-28T17:13:12Z"
+    },
+    {
+      "id": "14464849730",
+      "rating": 4,
+      "title": "有点意思",
+      "text": "一部分测算结果和之前朋友看的盘差不多，还在探索中，付费模式有点拼夕夕了，一环又一环的。",
+      "date": "2026-08-24T02:46:42Z",
+      "is_edited": false,
+      "reply": "Thank you for sharing this — it means more than you know 💜 We’re glad Nebula has been interesting to explore, and we’ll keep holding care around the experience. Warmly, Nebula Team 🔮",
+      "reply_date": "2026-08-25T07:16:40Z"
+    },
+    {
+      "id": "14564594345",
+      "rating": 4,
+      "title": "挺神奇的，还得是国外的软件哈",
+      "text": "可以试试",
+      "date": "2026-09-18T14:56:53Z",
+      "is_edited": false,
+      "reply": "",
+      "reply_date": null
+    },
+    {
+      "id": "14127118037",
+      "rating": 5,
+      "title": "Helpful",
+      "text": "real persons sincere talks soothing and magic words",
+      "date": "2026-05-31T12:39:54Z",
+      "is_edited": false,
+      "reply": "We're truly touched by your words ✨ It means a lot to know Nebula can feel so sincere and soothing. Holding space for your journey, Nebula 🔮",
+      "reply_date": "2026-06-01T17:16:39Z"
+    },
+    {
+      "id": "14252277944",
+      "rating": 1,
+      "title": "骗子软件",
+      "text": "上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了 ，I was misled by the interface into an accidental subscription, losing 363 RMB. Apple refused a refund, and your response was just \"we'll look into it\" with no real action. If you can collect the payment, why not refund it? Please stop the runaround and solve this issue.",
+      "date": "2026-07-02T04:42:21Z",
+      "is_edited": false,
+      "reply": "Hi again,\n\nThank you for taking the time to share your experience with us!\n\nWe're truly sorry to hear how frustrating this situation has been. We understand how upsetting it is when a purchase doesn't happen as expected and you feel your concerns haven't been properly resolved 💫 Please note that all subscriptions on our platform are initiated and managed by users, but we never want anyone to feel left without support or clear answers.\n\nIf your case is still unresolved, we'd sincerely appreciate the opportunity to review it again. Please contact us at support-appstore@asknebula.com, and our team will take another careful look at the details to provide the best possible assistance.\n\nHolding space for your journey,\nNebula",
+      "reply_date": "2026-07-03T11:42:13Z"
+    },
+    {
+      "id": "6560440017",
+      "rating": 1,
+      "title": "Widget does not work properly",
+      "text": "There has been 3 updates since 2 weeks ago and the developer has yet fixed the issue of their widgets and slow app start up.",
+      "date": "2020-10-22T01:48:25Z",
+      "is_edited": false,
+      "reply": "Hello, thanks for contacting us.  Please try to delete widget and install it again, it may help to resolve the issue.  Your understanding is highly appreciated.",
+      "reply_date": "2020-10-23T07:31:39Z"
+    },
+    {
+      "id": "14534900516",
+      "rating": 1,
+      "title": "盗刷",
+      "text": "盗刷我的卡",
+      "date": "2026-09-10T23:08:57Z",
+      "is_edited": false,
+      "reply": "Hello,\n\nWe’re sorry you saw a card charge you don’t recognize. We understand how serious and concerning that feels.\n\nPlease contact us at support-appstore@asknebula.com with your account email and payment details so we can review the charge and do our best to help.\n\nGuiding you toward clarity,\nNebula",
+      "reply_date": "2026-09-12T07:44:30Z"
+    },
+    {
+      "id": "10965776988",
+      "rating": 5,
+      "title": "很喜欢",
+      "text": "非常有感觉的一款app，如果可以添加每日幸运色 幸运物件 幸运水晶 之类的 个人觉得 会更好玩一些",
+      "date": "2024-02-22T04:45:41Z",
+      "is_edited": false,
+      "reply": "Hello there!\r\n\r\nThank you for taking the time to leave us such a lovely review!\r\n\r\nIt is users like you that keep pushing us to deliver the best customer experience, while at the same time making our job enjoyable.\r\n\r\nBest wishes, Nebula team",
+      "reply_date": "2024-02-23T19:49:57Z"
+    },
+    {
+      "id": "12105836815",
+      "rating": 3,
+      "title": "进不去",
+      "text": "第一次可以，但下回进的时候就一直卡在那里",
+      "date": "2024-12-26T00:47:58Z",
+      "is_edited": false,
+      "reply": "Dear customer, hello there!\n\nThank you for taking the time to leave us feedback.\n\nWe’re sorry to hear that you’ve encountered this issue. Please contact us at nebula.support@nebulahoroscope.com, and we’ll do our best to assist you.\n\nBest regards,\nThe Nebula Team 🔮",
+      "reply_date": "2024-12-27T10:35:15Z"
+    },
+    {
+      "id": "12916577773",
+      "rating": 1,
+      "title": "打不开",
+      "text": "为什么会打不开",
+      "date": "2025-07-21T01:17:45Z",
+      "is_edited": false,
+      "reply": "Hi there User,\n\nThanks for your feedback, and we're really sorry to hear the app isn’t opening for you — that must be frustrating.\n\nPlease try reinstalling the app as this often resolves loading issues. If the problem continues, don’t hesitate to contact us at support-appstore@asknebula.com with details about your device and any error messages — we’ll be glad to help.\n\nWarm regards,\n\nNebula Team 🔮",
+      "reply_date": "2025-07-22T23:57:30Z"
+    },
+    {
+      "id": "5422308833",
+      "rating": 3,
+      "title": "To developer",
+      "text": "Sorry,wrongly pressed & purchased just yesterday. How shoud i get refund.Please help.🙏",
+      "date": "2020-01-19T08:58:14Z",
+      "is_edited": false,
+      "reply": "Unfortunately we can't initiate a refund on our end. Please follow the steps, described in this guide: \nhttps://support.apple.com/en-us/HT202039 \n",
+      "reply_date": "2020-01-20T08:34:39Z"
+    },
+    {
+      "id": "14490127445",
+      "rating": 1,
+      "title": "骗子软件（邮件沟通后）",
+      "text": "4点的时候被他们软件的订阅页面误导，4点05就申通退款了，苹果拒绝了，联系了这个软件的负责人，他们推给苹果，这笔钱又不是给苹果的，苹果就是一个“桥梁”，他们不想退都不敢直接说，就说只能苹果才能退款，而且我们他们的退费条例里说，如果是欧洲居民，邮件申请他们可以直接退，然后我们这边邮件各种沟通都不给退，不知道是不是歧视。而且就算服了一年的订阅，里面的一些功能还是要收费。真的很不推荐。最后！他们的订阅页面真的很容易被误导！！！估计就是靠这招骗钱的。也别信他们说可以联系他们邮件沟通什么的，就是一直踢皮球。",
+      "date": "2026-08-30T14:30:54Z",
+      "is_edited": false,
+      "reply": "Hi,\n\nThank you for taking the time to share your experience — we truly appreciate your feedback.\n\nWe’re sorry to hear this felt frustrating, and that’s definitely not the experience we want for our users.\nWe’d really like to look into this and help — please contact us at support-appstore@asknebula.com so we can assist you directly.\n\nWith gratitude, \nNebula",
+      "reply_date": "2026-08-31T18:42:01Z"
+    }
+  ]
+}

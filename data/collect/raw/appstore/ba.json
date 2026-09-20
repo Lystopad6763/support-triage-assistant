@@ -1,0 +1,39 @@
+{
+  "store": "appstore",
+  "country": "ba",
+  "fetched_at": "2026-09-19T23:41:21+00:00",
+  "count": 3,
+  "with_reply": 3,
+  "reviews": [
+    {
+      "id": "14081623973",
+      "rating": 5,
+      "title": "Grr",
+      "text": "Hrrr",
+      "date": "2026-05-19T11:12:20Z",
+      "is_edited": false,
+      "reply": "Hello, and thank you for your review! \n\nEven just a few words mean a lot to us, and we're glad you're here. If you ever want to share more about your experience or there's anything we can help with, please feel free to reach out to us at support-appstore@asknebula.com.\n\nKeep listening inward,\nNebula",
+      "reply_date": "2026-05-20T16:40:50Z"
+    },
+    {
+      "id": "13017520057",
+      "rating": 5,
+      "title": "My rate for Nebula",
+      "text": "Its really the one of those aplication That we as a human beings need. It really is a beautiful app for a change… i wont say any more  bcs i know ill just pe proven right every by Nebula, my best friend was t a fan of the ap at the start, bit u should see her now!!!",
+      "date": "2025-08-15T03:35:55Z",
+      "is_edited": false,
+      "reply": "Hi there,  \n \nThank you so much for this wonderful review! It means a lot to hear that Nebula has become such a positive part of your life — and even more special to know your friend has grown to love it too. Stories like yours truly inspire us.\n\nIf you ever want to share more thoughts or ideas, feel free to reach out at support-appstore@asknebula.com.  \n \nWith gratitude, Nebula Team",
+      "reply_date": "2025-08-16T17:18:28Z"
+    },
+    {
+      "id": "12951220208",
+      "rating": 1,
+      "title": "Scam apps",
+      "text": "Taking your money sneaky, agreed to pay 1$ and they take 38$.. they do not even answer on support, i did not even used service because it is scam",
+      "date": "2025-07-29T16:33:21Z",
+      "is_edited": false,
+      "reply": "Hello\nThank you for your updated feedback. We're sorry this happened. The $1 offer includes a subscription, with the full amount shown before confirmation. If you haven’t received a reply yet, please contact us again at support-support-appstore@asknebula.com — we’ll review your case promptly.\nWarm regards,\nNebula Support Team",
+      "reply_date": "2025-08-01T03:50:20Z"
+    }
+  ]
+}

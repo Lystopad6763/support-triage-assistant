@@ -1,0 +1,549 @@
+{
+  "source": "zendesk_help_center",
+  "host": "24hours.support-nebula.com",
+  "locale": "en-us",
+  "fetched_at": "2026-09-20T00:05:50",
+  "counts": {
+    "categories": 6,
+    "sections": 6,
+    "articles": 51
+  },
+  "categories": [
+    {
+      "name": "About Nebula",
+      "articles": 7
+    },
+    {
+      "name": "Getting Started",
+      "articles": 4
+    },
+    {
+      "name": "How to Use",
+      "articles": 13
+    },
+    {
+      "name": "Account Management",
+      "articles": 13
+    },
+    {
+      "name": "Subscriptions & Billing",
+      "articles": 3
+    },
+    {
+      "name": "Tech Assistance",
+      "articles": 11
+    }
+  ],
+  "articles": [
+    {
+      "id": 28870571060497,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "Cooperation with Nebula",
+      "body": "• I want to work as a psychic on the Nebula platform\n\nWe have a large team of over 400 psychics working with us. If you’re interested in joining as a psychic, please contact our dedicated department at astrologers@nebulahoroscope.com to discuss your application and get all the necessary details. They will reach out once the recruitment process begins.\n• I want to cooperate with the Nebula platform\n\nIf you are interested in cooperation with Nebula in areas like CEO collaboration, marketing offers, publishing ads, or similar opportunities, please reach out via the \"Submit Request\" feature in our Help Center.\n \n\nSubmit a request\n \nYour inquiry will be forwarded to the relevant department for review. If your proposal aligns with our goals or we need additional details, we will get back to you promptly.",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28870571060497-Cooperation-with-Nebula",
+      "updated_at": "2026-06-28T12:19:58Z",
+      "label_names": []
+    },
+    {
+      "id": 28871657982865,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "How can I learn more about Nebula?",
+      "body": "1. AskNebula Website\n2. Nebula App\n3. Social Media\n4. Need more help?\n \nIf you're curious to dive deeper into what Nebula has to offer, you're in the right place. We've compiled a list of resources where you can learn more about our services, mission, and the tools we provide. \n \n\n1. AskNebula Website\n\nThe Nebula website is your starting point. Here, you'll find detailed information about our services, including psychic readings, astrology guidance, and spiritual practices.\n \n2. Nebula App\nDownload the Nebula app to experience our services firsthand. The app offers personalized psychic readings, astrology insights, and spiritual guidance. It's available for both iOS and Android, so you can take us with you wherever you go.\n\n•\niOS: Link for download\n\n•\nAndroid: Link for download \n \n\n3. Social Media\nFollow us on social media to stay up-to-date with our latest offerings, updates, and community stories. It’s also a space where we share relationship advice, astrological forecasts, and engage directly with our audience.\n\n•\nInstagram: https://www.instagram.com/nebulahoroscope\n\n•\nFacebook: https://www.facebook.com/people/Nebula-Horoscope-Astrology/100063971358465\n\n•\nTikTok - https://www.tiktok.com/@nebulahoroscope\n\n•\nTwitter - https://twitter.com/nebulahoroscope\n\n•\nYouTube - https://www.youtube.com/@nebulahoroscope\n\n \n4. Need more help?\nFor personalized assistance, our customer support team is available to answer any questions you may have about Nebula. Whether you need help with the app or more information about our services, we’re here to support you.\nContact us: support@nebulahoroscope.com. Or simply click the button below to reach out.\n \n\nSubmit a request\n \nBy exploring these resources, you'll gain a deeper understanding of Nebula and how we can guide you in finding more happiness and fulfillment in your relationships. Feel free to reach out if you have any questions — we're always happy to help!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28871657982865-How-can-I-learn-more-about-Nebula",
+      "updated_at": "2026-09-14T01:36:35Z",
+      "label_names": []
+    },
+    {
+      "id": 28870609716497,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "How old do I have to be to use Nebula?",
+      "body": "To use Nebula, you must be at least 18 years old, regardless of your country or location. This age requirement applies to all Nebula services and platforms and is set in accordance with applicable legal and regulatory requirements. If you are under 18, you are not permitted to create an account or use Nebula.\n \nNeed More Help? \nIf you have questions about age requirements or would like to share feedback, feel free to contact our Support Team.We’re always happy to help and appreciate your suggestions. \n \nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28870609716497-How-old-do-I-have-to-be-to-use-Nebula",
+      "updated_at": "2026-09-16T19:53:40Z",
+      "label_names": []
+    },
+    {
+      "id": 28871823758865,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "Our core values and beliefs",
+      "body": "We believe that everyone deserves happiness in their relationships.\nOur mission — to make people happier by improving their love relationships. Inspired by the universe and guided by spiritual practices, we dedicate ourselves to helping people connect on a deeper level.\nConstant improvement drives us — whether in the readings we offer or the support we provide, we evolve every day to better help our users find happiness in their relationships.\n \nHave any questions? \nPlease feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28871823758865-Our-core-values-and-beliefs",
+      "updated_at": "2026-08-15T00:33:34Z",
+      "label_names": []
+    },
+    {
+      "id": 28871622557841,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "Our users experience with the Nebula app",
+      "body": "When it comes to navigating relationships and seeking spiritual guidance, we understand that the journey can require time, dedication, and introspection. It’s essential to stay motivated and open-minded as you seek clarity and connection.\nThe Nebula app offers a notification system to keep you engaged, reminding you of key insights and spiritual practices. Our team is here to support you every step of the way, providing personalized recommendations, insightful readings, and a listening ear when you need it most.\nWe are honored to be part of so many personal transformation stories. We understand that improving relationships and finding happiness can take time, and it can be challenging to maintain that momentum. But you’re not alone — our community and resources are here to guide and uplift you.\n \nWe are pleased to share some of the feedback from our users who have embarked on their relationship journeys with Nebula. Their stories highlight the growth, understanding, and happiness they’ve gained along the way:\n \n \n★★★★★\nSeptember 9, 2024\nExcellent and Accurate\nThe reading I had was spot on, explained to me what was currently happening in my life, and told me things only I knew.\n \n★★★★★\nAugust 15, 2024\nThis psychic is absolutely phenomenal. She took the time to actually understand not only the questions I was asking but the position I was in, and that made all the difference in the world when it came to her responding to my concerns. This was an amazing experience that I have learned from that I will digest, and I will respond within my life, as I have been advised.\n \n★★★★★\nJanuary 30, 2025\nI’m thrilled to have discovered this app! It has made me feel less isolated with my thoughts.\n \n★★★★★\nMarch 28, 2024\nI was facing a tough decision, but the advice I received was incredibly helpful. I now feel much better.\n \n★★★★☆\nMay 18, 2025\nReally amazing app and the information is pretty solid, way better than others apps I used in the past. Highly recommend!! Keep on going y'all and thank you again for everything.\n \n \nHave any questions? \nPlease feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28871622557841-Our-users-experience-with-the-Nebula-app",
+      "updated_at": "2026-08-04T10:48:38Z",
+      "label_names": []
+    },
+    {
+      "id": 28871801954321,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "What’s Nebula?",
+      "body": "Nebula is a leading spiritual guidance platform, offering personalized insights to help users gain clarity in their lives and relationships. Launched by OBRIO in April 2019, Nebula quickly gained prominence, becoming the top astrology app in the USA by the summer of 2020 and achieving global leadership by the summer of 2021.\nOver the past 5 years, Nebula has recognized that the key to personal well-being often lies in the quality of one’s relationships and understanding of oneself. By focusing on spiritual guidance, Nebula helps users navigate life decisions through personalized insights tailored to their unique needs.\nNebula stands out as a guide to clarity in life and relationships, providing users with the tools to improve self-awareness, understand their values, potential, and purpose, and strengthen their relationships by offering deeper insights into themselves and others.\nToday, Nebula is one of the most popular spiritual guidance platforms globally. According to Sensor Tower, Nebula became the most downloaded astrology app in the USA during the summer of 2020 and reached worldwide leadership by 2021. Available for free on iOS and Android, Nebula has been downloaded more than 60 million times, with over 1 million daily users.\nMany times, Nebula became №1 lifestyle app by the number of daily downloads in the USA, UK, Canada, and France. We were ahead of even such a giant as Tinder. \nNebula is about:\n\n• Personalization — every reading, report, and piece of advice is tailored to the individual, ensuring that users receive insights that are relevant and specific to their circumstances.\n\n• Clarity — users come to Nebula seeking clarity, and that’s what we provide. We help our users gain a clearer understanding of themselves, their relationships, and their life decisions.\n\n• Spiritual Insights — our platform brings together a wide array of spiritual practices — astrology, psychic readings, tarot, numerology, and more — so that users can explore their inner world and receive meaningful guidance.\n\nAsk Nebula. Get Clarity.\n \nHave any questions? \nPlease feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28871801954321-What-s-Nebula",
+      "updated_at": "2026-09-17T14:26:11Z",
+      "label_names": []
+    },
+    {
+      "id": 28870997526801,
+      "category": "About Nebula",
+      "section": "Who we are",
+      "title": "Which features are included?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n \n1. Nebula App\nWith Nebula app premium subscription, you can:\n\n• Enjoy the app without any Ads.\n\n• Receive exclusive horoscopes, astrology readings, and advanced forecasts for days, weeks, and months ahead, offering you deep and personalized guidance to help you make informed decisions that can positively impact your life.\n\n• Enhance your romantic and social connections.\n\n• Find the answers about relationships using our \"Compatibility\" premium feature.\n\n• Receive the answers from our psychics that are always ready to provide the support and guidance you seek, when you need, as well as our professional Customer Support team.\n\nNebula premium subscription can be ordered right away from inside the application.\nAfter downloading the app and after accessing the personal account on the main page in the Nebula application, you will receive the pop-up menu about premium access.\nAlso, you can open this popup from inside \"Horoscope\" tab tapping on \"Unlock forever\" button and from the \"Settings\" menu at \"Unlock All Features\" section.\nPlease note that the \"Yearly\" subscription is preselected, so to order a 3-day trial user should select it.\nAfter tapping on the \"Continue\" button, the user will be redirected to AppStore or PlayMarket check out where the user can see all information about selected subscription, and its price.\n\n2. AskNebula Website\n\nOur website premium subscription provides:\n\n• Chats with professional psychics: the primary feature is access to one-on-one chats with our skilled and certified psychics. After subscribing or accepting the trial plan, chat credits will be added to your account for use.\n\n• Personalized readings: users can receive in-depth readings tailored to their astrological data, offering insights into their personality, future, and more.\n\n• Personal horoscopes: access to daily, weekly, monthly, and yearly horoscopes customized to your zodiac sign and other astrological factors.\n\n• Astrological articles: enjoy a library of interesting and educational articles written by our expert advisors, covering a wide range of astrology-related topics.\n\nAdditionally, we are constantly improving and adding new features, so stay tuned for updates — there are many exciting additions coming soon!\n \n3. Need more help?\nIf you have any questions, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28870997526801-Which-features-are-included",
+      "updated_at": "2026-09-05T16:30:47Z",
+      "label_names": []
+    },
+    {
+      "id": 28899540308753,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How can I connect my AskNebula account to my account in the Nebula app?",
+      "body": "1. Log in to AskNebula\n2. Download the Nebula App\n3. Connect your account\n    3.1 Already have a Nebula App account?\n4. Need more help?\n\nTo connect your AskNebula account to your Nebula app, follow these steps:\n1. Log in to AskNebula:\n\n•\nFirst, log in to your personal account on AskNebula.com.\n\n•\nUse the credentials from the welcome email titled: \"Get/Download your readings ✨\" — or a similar subject that may include the name of your specific reading, such as Palmistry, Starseed, or Compatibility Reading etc.\n \n\n2. Download the Nebula App:\n\n• After logging in, go to the \"Psychics\" tab on the AskNebula website and scroll down until you see the menu offering 100 free credits after downloading the Nebula app.\n\n•\nClick on the appropriate link to download the app from the App Store or Google Play.\n \n\n3. Connect your account:\n\n• Once you've downloaded the Nebula app, open it and tap the \"Get Started\" button.\n\n•\nYour AskNebula account will automatically connect to the Nebula app, and you’ll be redirected to the \"Chatroom\" tab.\n \n\n    3.1 Already have a Nebula App account?\nIf you've previously downloaded the Nebula app and already have an account, you'll be presented with two options:\n\n• Keep your old Nebula account\n\n• Keep only the new AskNebula account - your old Nebula app account will be deleted, and your chat history will be merged into the new AskNebula account.\n\nThis process ensures seamless synchronization between your AskNebula and Nebula app accounts!\n\n \n4. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899540308753-How-can-I-connect-my-AskNebula-account-to-my-account-in-the-Nebula-app",
+      "updated_at": "2026-08-13T13:31:24Z",
+      "label_names": []
+    },
+    {
+      "id": 28899577970833,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How can I connect my Nebula app's account to my account on AskNebula?",
+      "body": "If you already have an account on the Nebula app for iOS or Android, you can easily use the same login details on the AskNebula website. Simply follow these steps:\n\n•\nVisit the AskNebula login page: https://asknebula.com/app/login\n\n• Enter your Login and Password.\n\n•\nClick the \"Log In\" button.\n\n \n\nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899577970833-How-can-I-connect-my-Nebula-app-s-account-to-my-account-on-AskNebula",
+      "updated_at": "2026-07-25T19:47:57Z",
+      "label_names": []
+    },
+    {
+      "id": 47030956792337,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How can I restore my account?",
+      "body": "If your Nebula account has been deleted and you’d like to restore it, this article will explain what recovery options may be available depending on how you used Nebula.\nPlease choose the option that matches your case below.\n\n• If you used the Nebula app on iOS or Android\n\n• If you used AskNebula Web\n\n• If you still can’t restore your account\n\n \nIf you used the Nebula app on iOS or Android\nIf you used Nebula through the mobile app, you can restore your previous account directly in the app within 28 days after deleting it.\nTo restore your account:\n\n• Open the Nebula app.\n\n•\nTap Log in.\n\n👇 If you see the Create an account screen first, tap Log in under Already a member.\n\n         3. Choose the same sign-in method you used for your previous account:\n\n• Continue with Apple\n\n• Continue with Facebook\n\n• Continue with Google\n\n• Continue with Email\n\n         4. If you used email and password, enter the email address and password connected to your deleted account.\n         After that, you should see a confirmation window asking if you want to restore your account. Tap Restore previous account to confirm.\n       5. If you previously used Google, Facebook, or Apple, choose the same login method.\nIn this case, your account should be restored automatically, and you may not see an additional confirmation window. \nOnce your account is restored, you’ll be able to continue using Nebula.\nPlease make sure you use the same sign-in method or email address that was connected to your deleted account.\n \nIf you used AskNebula Web\nIf your deleted account was connected to AskNebula Web, unfortunately, it cannot be restored after deletion.\nWe understand this may be disappointing, especially if you were hoping to get access back. However, once this type of account has been deleted, it is no longer available for recovery.\nIf you’d like to continue using Nebula, please create a new account. You’ll be able to start fresh and use the service again!\n \nIf you still can’t restore your account\nIf you followed the steps above but still can’t access your account, please contact our Support Team.\nWhen contacting us, please include:\n\n• the email address linked to your Nebula account;\n\n• the sign-in method you used, if you remember it;\n\n• a short description of what happens when you try to log in, with screenshots or a screen recording if possible.\n\nOur Support Team will check your case and let you know what options are available.\n \nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/47030956792337-How-can-I-restore-my-account",
+      "updated_at": "2026-08-25T09:55:46Z",
+      "label_names": []
+    },
+    {
+      "id": 28899300884113,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How can I transfer my Nebula subscription or account from iOS to Android and vice versa?",
+      "body": "Unfortunately, there is no way to transfer the subscription plan and your account between iOS and Android platforms.\n \nHowever, you can request assistance from our technical support team.\nUse the \"Help and Support\" option within the Nebula app. To access this:\n\n• Go to the \"Horoscope\" tab.\n\n• Click on the settings gear icon in the top right corner.\n\n• Tap on the \"Help and Support\" button to submit a request.\nContacting us through the app will provide us with information about your device, which can help with the process. We will provide you with a link to activate your premium access on the new device. \nIf you have unused credits on your old device, please provide a screenshot of your in-app balance or a screenshot of the payment for these credits.\nBy following these steps, we can assist you with transferring your subscription effectively.\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team directly from the Help Center, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899300884113-How-can-I-transfer-my-Nebula-subscription-or-account-from-iOS-to-Android-and-vice-versa",
+      "updated_at": "2026-07-09T01:35:54Z",
+      "label_names": []
+    },
+    {
+      "id": 28900034911377,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to access my report or reading?",
+      "body": "After purchasing your report or reading, you should receive an email with access details within 30 minutes. The email will be sent to the email address you used during checkout. Look for a message with the subject line: \"Get your readings ✨\" — or a similar subject that may include the name of your specific reading, such as Palmistry, Starseed, or Compatibility Reading etc.\nTo view your reading, make sure you have the AskNebula mobile app installed. Your reading is only available inside the Readings tab in the app.\nClick the “Get my reading” button (or similar) in the email. This will redirect you to the Readings tab in the Nebula app, where you can access your purchased reading.\n🔹 If you haven’t downloaded the Nebula app yet:\nClicking the “Get my reading” button will take you to the App Store or Google Play to install the app.\nOnce the installation is complete, return to the email and tap the button again — you’ll be logged in automatically and redirected to the Readings tab, where your purchased content will be available.\n🔹If you already have the Nebula app installed:\nСlicking the “Get my reading” button will log you into your account and redirect you to the Readings tab, where all your purchased readings will appear.\n\nFor the best experience, please open the email on your mobile phone and click the button directly — this ensures a smooth transition into the app.\n\nIf you haven’t received the email after 30 minutes, be sure to check your spam or junk folder, and confirm that you entered the correct email address during purchase.\n \n\nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n \n\nSubmit a request\n \n\nEnjoy chatting with your psychics and utilizing your credits effectively!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900034911377-How-to-access-my-report-or-reading",
+      "updated_at": "2026-09-11T22:48:54Z",
+      "label_names": []
+    },
+    {
+      "id": 28899953905937,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to change information in the profile?",
+      "body": "1. Editing Your Profile on AskNebula Website\n2. Editing Your Profile in the Nebula App\n3. Need more help?\n \nNeed to update your name, birth details, or other personal information? You can easily edit your profile either on the AskNebula website or in the Nebula mobile app.\n \n1. Editing Your Profile on AskNebula Website\n\n•\nGo to AskNebula.com and log in to your account\n\n• On the main page, open \"Settings\" in the top right corner.\n\n3. Select “Personal Information”\n4. From there, you can update your profile details (nickname, birth date, etc.)\nChanges will be saved automatically after you make your edits.\n \n2. Editing Your Profile in the Nebula App\n\n• Open the Nebula app\n\n• Tap the gear icon in the top right corner to access Settings\n\n3. Click on the “My Profile” section\n4. Select the field you want to edit\n5. Enter the correct information and save your changes\n \n3. Need more help?\nIf you run into any issues while editing your profile, feel free to contact our Support Team — we're happy to help!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899953905937-How-to-change-information-in-the-profile",
+      "updated_at": "2026-06-29T21:33:56Z",
+      "label_names": []
+    },
+    {
+      "id": 28899811054737,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to remove personal data or delete the account?",
+      "body": "1. AskNebula Website Account Deletion\n2. Nebula App Account Deletion\n3. Need more help?\n \n1. AskNebula Website Account Deletion\nIn order to remove your personal data on AskNebula website, please follow these steps:\n1.  Log in to your account.\n\n2.  Tap the \"Settings\" gear icon at the top.\n4.  In the \"Manage personal data\" tab, located in the \"Legal & Privacy\" section, you can delete all personal information and your account.\n       \n5.  Once you've completed these steps, you'll receive an email confirming the account deletion process. Click the \"Confirm deactivation\" button in this email to finalize the deletion.\n \nIf you're accessing AskNebula via desktop, follow the same steps as above.\n📸 Refer to the screenshots below for a step-by-step visual guide on how to complete the process.\nOnce you've completed these steps, you'll receive an email confirming the account deletion process. Click the \"Confirm deactivation\" button in this email to finalize the deletion.\n⚠️ Please note:\nOnce your AskNebula Website account deletion is confirmed, this process cannot be reversed, and the deleted account cannot be restored.\n \n2. Nebula App Account Deletion\nIn order to remove your personal data on Nebula app, please follow these steps:\n1.  Open the Nebula app.\n2.  Tap the Settings icon in the top right corner.\n\n3.  Under the General tab, tap Account details.\n4.  Select Delete account.\n5. Confirm your choice by tapping Delete again.\n⚠️ Please note:\nYour profile and chat data may be retained for up to 28 days before being permanently deleted.\nIf you change your mind during this time, you may be able to restore your account. Please follow the steps in this article: How can I restore my account?\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899811054737-How-to-remove-personal-data-or-delete-the-account",
+      "updated_at": "2026-09-14T12:10:36Z",
+      "label_names": []
+    },
+    {
+      "id": 28899948358801,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to reset password?",
+      "body": "1. AskNebula website\n    1.1 During login process\n    1.2 Through the “Settings” section\n2. Nebula App\n3. Need more help?\n \n1. AskNebula Website\nThere are two ways our users can manage their passwords.\n1.1 During login process:\n•\nGo to AskNebula login page and click the \"Forgot password?\" button. Then enter your account's email address, after you will receive an email with reset link on this email address.\n\n   \n• Find this email in your inbox and click on the \"Reset my password\" button in it. You will be redirected to AskNebula website to put your new password. \n• You will be redirected to the page where you can create your new password.\n•\nClick \"Save\" once done, and then \"Log in\" button to access your account with new password.\n\n     1.2 Through the “Settings” section on AskNebula:\n• On the main page, go to \"Settings\".\n    \n• Then push the \"Personal information\" button.\n• On the \"Personal information\" page, click the \"Edit\" button in front of the \"Password\" setting. Then you should enter your current password; after that, you will be able to set your new password.\n   \n \n2. Nebula App\n• Firstly, tap the \"Log in\" button on the starting page under \"Nebula member?\", and you will be redirected to the login page.\n\n• If you do not have access through your Apple/Google/Facebook account, you should first log in to these accounts on your device.\n\n• If you used Email and Password to log in, click the \"Continue with Email\" button.\n\n• Then in the \"Log in\" menu, click the \"Forgot Password?\" button\n• On the next page, enter the email used for logging in. An email with the password reset link will be sent.\n• Find this email in your inbox and tap the \"Reset my password\" button.\n• You will be redirected to the page where you can create your new password.\n•\nClick \"Save\" once done, and then the \"Log in\" button to access your account with your new password.\n \n3. Need more help?\nIf you don't receive the email, please check your spam folder. If you still can't find it, you may have unsubscribed from our promotional emails, which could prevent delivery.\nIn that case, please contact our support and we will assist you! \nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899948358801-How-to-reset-password",
+      "updated_at": "2026-08-22T14:41:30Z",
+      "label_names": []
+    },
+    {
+      "id": 36833080725777,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to start receiving horoscope for a different zodiac sign?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n\nTo start receiving horoscopes for a different zodiac sign, please make sure your birth details (date, time, and place of birth) are accurate in your profile settings.\n \n1. Nebula App\nTo update your birth details:\n1. Open the Nebula app\n2. Tap the gear icon in the top right corner to open Settings\n3. Select \"My Profile\" \n \n4. Ensure the following fields are correctly filled in and edit if needed:\n\n• Date of Birth\n\n• Time of Birth\n\n• Place of Birth\n\n• Gender\n\n• Relationship Status\n\n \n2. AskNebula Website\nTo update your birth details:\n1. Click the ⚙️ Settings icon in the top right corner\n3. Open the Personal Information section\n4. Make sure your Date, Time, and Place of Birth are filled in correctly, and tap “Edit” if any updates are needed.\n \n3. Need more help?\nIf you’re still receiving horoscopes for a zodiac sign that doesn’t match your data, please contact our support team so we can assist you further.\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36833080725777-How-to-start-receiving-horoscope-for-a-different-zodiac-sign",
+      "updated_at": "2026-08-31T09:24:29Z",
+      "label_names": []
+    },
+    {
+      "id": 28899743878673,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "How to unsubscribe from mailing list?",
+      "body": "If you no longer wish to receive newsletters or special offers from Nebula, you can easily unsubscribe from all our letters inside the email. This process works just like other companies’ newsletters and updates worldwide.\nTo unsubscribe, simply click the \"Click here to unsubscribe\" button located at the bottom of the email. Once you've clicked it, you will be successfully unsubscribed.\n\nNeed more help?\n\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899743878673-How-to-unsubscribe-from-mailing-list",
+      "updated_at": "2026-08-18T05:42:02Z",
+      "label_names": []
+    },
+    {
+      "id": 28899709030417,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "Why is my AskNebula subscription not visible and can not be canceled on my phone?",
+      "body": "The reason you can't find your AskNebula website subscription in your phone's settings or manage it through the Play Store or App Store is that this type of subscription is exclusively for the AskNebula website. It operates through web browsers like Google Chrome, Safari, etc., and is not connected to any mobile app store systems.\nSince it's not an app-based subscription, it won't appear in your mobile device's subscription management settings (such as in Play Market or App Store). Instead, it’s tied to your account on the AskNebula website.\n \nTo cancel your AskNebula website subscription, you will need to follow the instructions provided in this article: \n• How to cancel a subscription?\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899709030417-Why-is-my-AskNebula-subscription-not-visible-and-can-not-be-canceled-on-my-phone",
+      "updated_at": "2026-09-19T11:40:48Z",
+      "label_names": []
+    },
+    {
+      "id": 28899740398481,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "Why is the subscription made via Apple ID/ Play Store not visible on the AskNebula website?",
+      "body": "If your subscription is not visible on the AskNebula website, it is likely because AskNebula web subscriptions cannot be managed through the App Store or Play Store. Website subscriptions are separate from mobile app subscriptions and are not displayed on your phone.\nIf you didn’t pay through Apple or Google, then your subscription might be for the AskNebula web service. Please refer to the articles below for more clarity:\n\n• How to cancel subscription?\n\n• Which features are included?\n\n• How to receive a refund?\n\nIf it's not related to the website, you might have a subscription for the Nebula app. Since this is classified as an in-app purchase and not a subscription, it doesn’t appear in your subscription list. \n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899740398481-Why-is-the-subscription-made-via-Apple-ID-Play-Store-not-visible-on-the-AskNebula-website",
+      "updated_at": "2026-08-30T11:08:45Z",
+      "label_names": []
+    },
+    {
+      "id": 36833329045905,
+      "category": "Account Management",
+      "section": "Account Management",
+      "title": "Will I have access to chats and readings when my subscription expires?",
+      "body": "Yes, you will still be able to access your past chats and readings even after your subscription ends.\nYour previous chat history remains visible even if you do not have credits in your account. However, in some cases, the latest response from a psychic may appear blurred if your balance does not meet the minimum requirement to continue or restart the chat.\nTo view a blurred message, you may need to top up your balance by purchasing one of the available credit packages. The required balance may depend on the platform you use and/or the chat conditions shown in the app or website.\nPlease note that viewing a blurred message does not charge your credits by itself. Credits are only used if you continue the conversation or send a new message to the psychic.\nYou can learn more in the following article: Why is the message blurred? Why should I pay to see the answer in a chat?\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36833329045905-Will-I-have-access-to-chats-and-readings-when-my-subscription-expires",
+      "updated_at": "2026-08-29T15:32:30Z",
+      "label_names": []
+    },
+    {
+      "id": 28897885573777,
+      "category": "Getting Started",
+      "section": "Getting Started",
+      "title": "Can the Nebula be used on a computer?",
+      "body": "Yes, if you're unable to use your phone, you can still explore astrology and all the insights Nebula provides through our web platform!\nHowever, please note that our AskNebula website and the Nebula app are not connected. This means you’ll need to set up separate subscriptions for the web and app versions to access premium features on both platforms.\nPlease follow the link here, log into your web account and start using your plan on a desktop computer.\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28897885573777-Can-the-Nebula-be-used-on-a-computer",
+      "updated_at": "2026-09-12T23:27:43Z",
+      "label_names": []
+    },
+    {
+      "id": 28897960530577,
+      "category": "Getting Started",
+      "section": "Getting Started",
+      "title": "How to install/uninstall the Nebula app?",
+      "body": "To install the Nebula app, please go to the App Store or Play Market, depending on the device used, and type \"Nebula astrology\" in the search bar. Or you can simply use these links: \n\n• Nebula for Apple\n\n•\nNebula for Android\n \n\nTo uninstall the app, please follow these guides:\n\n•\nGuide for Apple\n\n• Guide for Android\n\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28897960530577-How-to-install-uninstall-the-Nebula-app",
+      "updated_at": "2026-09-04T04:02:37Z",
+      "label_names": []
+    },
+    {
+      "id": 28897971343505,
+      "category": "Getting Started",
+      "section": "Getting Started",
+      "title": "How to log into Nebula app?",
+      "body": "1. Download the App\n2. Create an Account\n3. Already Have an Account?\n4. How to Log Out\n5. Need more help?\n \nWelcome to the Nebula Family! ✨\nFollow these simple steps to start using the app to its full potential:\n \n1. Download the App\nGet Nebula from the App Store of Play Market on your mobile device.\n \n2. Create an Account\n• Open the app and tap \"Get Started\".\n\n• Complete a short onboarding quiz to personalize your experience.\n\n•\nAfter the quiz, sign up using Apple, Google, Facebook, or your email.\n \n\n3. Already Have an Account?\n• Tap \"Log In\" on the home screen.\n• Select your login method: Apple, Google, Facebook, or Email.\n•\nIf using email, just enter your email and password.\n \n4. How to Log Out\n\n• Go to the Horoscope tab.\n\n• Tap the settings gear icon in the top right corner.\n\n•\nScroll down and click \"Sign out\".\n\n \n\n5. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28897971343505-How-to-log-into-Nebula-app",
+      "updated_at": "2026-09-08T12:25:36Z",
+      "label_names": []
+    },
+    {
+      "id": 28898042580241,
+      "category": "Getting Started",
+      "section": "Getting Started",
+      "title": "Requirements to install the Nebula app",
+      "body": "When it comes to compatibility, the Nebula app requires iOS 15.0 or later for iPhone and iPod touch devices. For Mac, you'll need macOS 12.0 or later and a Mac with an Apple M1 chip or later. For Android devices, the app is compatible with Android 7.0 and up.\nIf your device isn’t compatible, you can still access Nebula through the web version. Simply log into your account on a computer and explore all the features available.\n \nNeed more help?\nIf you have any questions, please feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898042580241-Requirements-to-install-the-Nebula-app",
+      "updated_at": "2026-09-13T01:29:32Z",
+      "label_names": []
+    },
+    {
+      "id": 36833495755921,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "Can I get a discount to buy a credits to chat with psychics?",
+      "body": "Our users often receive special offers and discounts on credits via email or while using the Nebula app or AskNebula website.\n\n📩 To make sure you don’t miss out, keep an eye on the email linked to your Nebula account and stay tuned while browsing the app or website — your next offer could be just around the corner!\n\n \n\nNeed more help?\n\nIf you have any questions, please feel free to reach out to our support team through the \"Contact Us\" option in the Nebula app settings or submit a request by clicking the button below. Our support agents will be happy to assist you!\n \n\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36833495755921-Can-I-get-a-discount-to-buy-a-credits-to-chat-with-psychics",
+      "updated_at": "2026-08-28T16:49:51Z",
+      "label_names": []
+    },
+    {
+      "id": 28898240129297,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How can I add and remove friends on Nebula?",
+      "body": "To add or remove a friend on Nebula app, please follow these steps:\n• Adding Friends\n\n• Open the Nebula App\n\n•\nNavigate to Friends Section — tap on the \"Plus\" sign located at the top of the screen.\n\n3. Fill in the required details, including your friend's name and any other relevant information.\n4. Your friend will then appear on your friends list at the top. You can select their profile to check their astrology information, horoscopes, and birth charts.\n \n• Removing Friends\n\n1. Choose the friend you want to remore from the list at the top.\n2. Tap the \"Birth Chart\" under your friend's name.\n3. Tap on the thee dots button at the top of the screen and click on \"Remove\" to delete the friend from your list.\nOnce you've done this, the friend will be successfully removed from your list.\n \n\nNeed more help?\n\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898240129297-How-can-I-add-and-remove-friends-on-Nebula",
+      "updated_at": "2026-09-05T03:46:12Z",
+      "label_names": []
+    },
+    {
+      "id": 28898955150609,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How much does it cost to chat with psychics?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n \nPsychics on both the Nebula app and the AskNebula website have individual pricing based on their experience, expertise, and rating. You can easily check the cost per minute before starting a chat.\n \n1. Nebula App\nTo view the price per minute in the app:\n1. Go to the “Psychics” tab\n2. Use categories to find your preferred psychic\n3. The price per minute is displayed at the bottom of each psychic's photo\n4. You can also view it:\n• On the psychic's profile page\n• Directly in the chat window, at the bottom\nEach psychic has a unique “Credits per minute” rate, ensuring that pricing reflects their certification level, experience, and specialty.\n \n2. AskNebula Website\nTo check prices on AskNebula.com:\n1. Log in and go to the “Psychics” tab\n2. Use categories to find your preferred psychic\n3. The price per minute is listed beneath each psychic's name\n4. You’ll also see the rate:\n• On their profile page\n \n• In the chat window, before you begin chatting\nAs on the app, pricing on the website varies based on each psychic's qualifications and expertise.\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898955150609-How-much-does-it-cost-to-chat-with-psychics",
+      "updated_at": "2026-08-09T18:20:09Z",
+      "label_names": []
+    },
+    {
+      "id": 40398608330001,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How to delete a message in a chat?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\nAt Nebula, we value your comfort and privacy. You have control over your chat history — from deleting a single message to archiving or removing an entire conversation.\n\n1. Nebula App\n\nIf you’ve sent a message you no longer wish to keep, you can easily remove it.\nTo delete a message:\n\n• Open your chat with a Nebula psychic.\n\n• Find the message you want to delete.\n\n• Press and hold on the message until you see the delete option. \n\n• Confirm deletion.\n\n    \n✅ The message will be deleted for both you and the psychic.\n⚠️ You can only delete your own messages, not the psychic’s.\n \nNeed a break from a conversation or want to remove it completely? Follow this guide to learn how to delete and archive chats: How to delete chats? \n \n2. AskNebula Website\nIf you’ve sent a message you no longer wish to keep, you can easily remove it.\nTo delete a message:\n\n• Open your chat with a Nebula psychic.\n\n• Find the message you want to delete.\n\n• Press and hold on the message until you see the delete option. \n\n•\nConfirm deletion.\n\n  \n\n✅ The message will be deleted for both you and the psychic.\n⚠️ You can only delete your own messages, not the psychic’s.\n \nNeed a break from a conversation or want to remove it completely? Follow this guide to learn how to delete and archive chats: How to delete chats? \n \n3. Need more help?\nIf you have any questions, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/40398608330001-How-to-delete-a-message-in-a-chat",
+      "updated_at": "2026-06-22T02:23:52Z",
+      "label_names": []
+    },
+    {
+      "id": 36833456181649,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How to get free points, credits or minutes?",
+      "body": "From time to time, our users receive exclusive offers that include free minutes or credits.\n✨ Keep an eye on your email inbox, and don’t forget to check for offers while using the Nebula app or visiting the AskNebula website — you might find something special waiting for you!\n \nNeed more help?\nIf you have any questions, please feel free to reach out to our support team through the \"Contact Us\" option in the Nebula app settings or submit a request by clicking the button below. Our support agents will be happy to assist you!\n \nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36833456181649-How-to-get-free-points-credits-or-minutes",
+      "updated_at": "2026-08-24T10:31:06Z",
+      "label_names": []
+    },
+    {
+      "id": 28898273909649,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How to set up notifications about a psychic's activity?",
+      "body": "1. AskNebula Website\n2. Nebula App\n3. Need more help?\n \nTo set up notifications about a psychic's activity, follow these steps based on the platform you’re using:\n \n1. AskNebula Website\n1. Log in to AskNebula.com and navigate to the \"Chatroom\" tab to see all your chats.\n2. Click on the chat with the psychic you wish to set alerts for.\n3. Tap the \"🔔 Alert\" button and choose your preferred option for notifications\n     \n4. You will receive a \"Success\" notification if the alert is set up correctly.\n \n2. Nebula App\n1. Open the app and navigate to the \"Psychics\" tab where all advisors are listed.\n\n2. Choose the psychic for whom you want to set up notifications.\n3. In the top right corner, tap on the 🔔 sign to access notification settings for that psychic.\n \n4. Adjust the settings according to your preferences.\n\nThis will ensure you are notified about the psychic's activity according to your selected preferences!\n \nPlease note: the🔔 Alert feature is only available when the psychic is currently offline.\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898273909649-How-to-set-up-notifications-about-a-psychic-s-activity",
+      "updated_at": "2026-06-12T18:17:18Z",
+      "label_names": []
+    },
+    {
+      "id": 36800929642385,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "How to use free minutes?",
+      "body": "1. How do free minutes work?\n2. How to use them?\n3. Need more help?\n \n1. How do free minutes work?\nFree minutes are a great way to start your journey with Nebula! Here’s how they work:\n\n• Free minutes can only be used once per psychic.\n\n• If you have unused minutes, you can spend them with any online psychic you haven’t chatted with yet.\n\n•\nBusy or offline psychics are not eligible — only those marked as online in the catalog.\n\n \n\n2. How to use them?\n\n• Open the psychic catalog.\n\n• Choose any available online psychic you haven't contacted before.\n\n• Start a chat — your free minutes will be applied automatically.\n\nEnjoy your reading! \n \n3. Need more help?\nIf you have any questions, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36800929642385-How-to-use-free-minutes",
+      "updated_at": "2026-09-18T13:41:00Z",
+      "label_names": []
+    },
+    {
+      "id": 36800803666577,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "I can’t send my question in chat. Why?",
+      "body": "1. Check Your Credits Balance\n2. Check the Message Length\n3. Need more help?\n\n \n\nIf you're having trouble sending a message to a psychic, here are two things to check:\n\n1. Check Your Credits Balance\n\nMake sure you have enough credits to contact the psychic. Each psychic has their own rate, so you'll need enough credits to match their price.\n \n\n2. Check the Message Length\n\nYour message must be under 2,000 characters.\nIf your question is too long, try breaking it into smaller parts and sending them one at a time.\n \n\n3. Need more help?\n\nIf you’ve checked both and still can’t send a message, feel free to contact our support team for help.\n \n\nSubmit a request\n\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36800803666577-I-can-t-send-my-question-in-chat-Why",
+      "updated_at": "2026-08-06T06:00:46Z",
+      "label_names": []
+    },
+    {
+      "id": 28898312929809,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "My credits in Nebula are running out very fast",
+      "body": "Here are the reasons why your minutes in Nebula might be running out quickly:\n \nIndividual pricing per minute:\n\n•\nEach psychic has their own cost per minute, which varies based on their skills and experience. Some may charge more due to their extensive expertise.\n\n•\nYou can view the price at the bottom of the psychic’s photo, on their profile page, and in the chat.\n\nFor more information, please refer to the following article: How much does it cost to chat with psychics?\n \nAuto refill function:\n•\nIf you have the Auto refill option activated, it may automatically charge you during chats. For more details, refer to the article on the Auto refill feature.\n\nChat duration:\n•\nProlonged conversations can lead to quicker depletion of your balance, especially if the advisor's rate is higher.\n \nNeed more help?\nIf you believe your credits are running out too quickly or notice unusual usage, feel free to reach out for personalized assistance. We will investigate and ensure that your issue is resolved as quickly as possible.\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898312929809-My-credits-in-Nebula-are-running-out-very-fast",
+      "updated_at": "2026-07-25T07:00:41Z",
+      "label_names": []
+    },
+    {
+      "id": 28899179430801,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "No response/no answer from psychic or I am not satisfied with the quality of the reading",
+      "body": "1. Check the Chat Type\n2. Contact our support team through the Nebula app\n3. Contact our support team directly from Help Center\n4. Provide details to expedite the process\n \nIf you haven’t received a response from your advisor or are unhappy with the quality of the reading, we’re here to help. Please follow the steps below depending on the type of chat you had:\n \n1. Check the Chat Type\nMessenger (Offline Text Message)\nIf you sent a message while the psychic was busy or offline, they may take up to 48 hours to respond — although most replies come sooner.\n🕒 Please be patient — our psychics prioritize live sessions, but will respond to offline messages as soon as they’re available.\n \nLive Chat\nIf you’re in a live chat and experience issues such as:\n\n• Psychic is not answering\n\n• Poor or unclear quality of the reading\n\nPlease report the issue using the “Contact Us” option on our app or by submitting a request directly from the Help Center.\n \n2. Contact our support team through the Nebula app\n1. Go to the \"Settings\" menu on the \"Horoscope\" tab.\n2. Click on the \"Help and Support\" button and submit a request with your issue. (Using the app to contact us provides info about your device, helping us investigate.)\n \n3. Contact our support team directly from Help Center\nYou can also contact us directly from the Help Center by clicking the button below — we’ll be happy to assist you!\n\nSubmit a request\n \n\n4. Provide the following details to expedite the process:\n\nWhen submitting your request, please include the following details:\n\n• A brief description of the issue (and a screenshot, if possible)\n\n• Your name (check in your profile under Personal Information)\n\n• Your date of birth (format: YYYY-MM-DD)\n\n• The name of the psychic you were chatting with\n\n• The date and time of your chat (including your time zone)\n\nOur Support Team will carefully review your case and work to resolve it as quickly as possible. Your satisfaction is important to us!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28899179430801-No-response-no-answer-from-psychic-or-I-am-not-satisfied-with-the-quality-of-the-reading",
+      "updated_at": "2026-08-30T01:34:24Z",
+      "label_names": []
+    },
+    {
+      "id": 28898431162513,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "Where can I find my chat/answer?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n \nDepending on whether you're using the Nebula app or the AskNebula website, here's how you can access your chat history and answers from psychics:\n \n1. Nebula App\n• Access your chat history by going to the \"Chatroom\" tab in the app.\n2. AskNebula Website\n\n•\nNavigate to the \"Chatroom\" tab to view your recent chat history, including a \"Favorites\" section.\n\n• To see chats in the \"Favorites\" section, make sure to mark the psychic as a favorite on their profile page.\n\n \n\nYou can also set up notifications about a psychic’s activity. For more details, please refer to the following article:\n\n• How to set up notifications about a psychic's activity?\n\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898431162513-Where-can-I-find-my-chat-answer",
+      "updated_at": "2026-07-06T01:43:04Z",
+      "label_names": []
+    },
+    {
+      "id": 28898358479889,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "Where can I see my current credits balance?",
+      "body": "Nebula App\nYou can check your credits balance in:\n• The \"Chatroom\" tab (top right)\n• The \"Psychics\" tab (top right)\n• The Settings\n\n \nAskNebula Website\n• After logging in, you can find your remaining credits on the Profile tab.\n \nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request \nEnjoy chatting with your psychics and utilizing your credits effectively!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28898358479889-Where-can-I-see-my-current-credits-balance",
+      "updated_at": "2026-06-18T13:07:56Z",
+      "label_names": []
+    },
+    {
+      "id": 36833668975505,
+      "category": "How to Use",
+      "section": "How to Use",
+      "title": "Why is the message blurred? Why should I pay to see the answer in a chat?",
+      "body": "1. Will I Be Charged?\n2. Why Do I Need Credits Then?\n3. How Can I Add Credits?\n4. Need more help?\n \nSometimes when you open a chat with one of our psychics, you might notice that their response appears blurred. In some cases, a blurred preview may also appear in your chat list.\nThis can happen when your balance does not meet the minimum requirement needed to view the response or continue the chat.\nDon’t worry - you are not charged just to unlock or view a blurred message! \n1. Will I Be Charged?\nNo. You won’t be charged just to view a blurred psychic response.\nUnlocking the message is free, and no credits are deducted from your account simply for removing the blur.\nHowever, your balance still needs to meet a minimum requirement before the message can become visible.\n\n2. Why Do I Need Credits Then?\n\nCredits are needed as a balance eligibility check. This confirms that your balance is enough to continue or restart the chat if you choose to do so.\nThe exact minimum balance requirement may vary depending on the platform you use and the specific chat. If your balance does not meet the requirement, you’ll be prompted to top up before the message can become visible.\nThis is only a viewing requirement:\n\n• No credits are used just for unlocking the message.\n\n• You are charged only if you continue the conversation, send a new chat message, or send an offline message to the psychic.\n\n3. How Can I Add Credits?\n\nYou have two easy options:\n1. Click the \"SEE THE MESSAGE\" button. You’ll be directed to top up your balance. Once completed, the blur will disappear and you can read the message - no charge applied.\n2. Or simply buy a credit package directly through the app or website. As long as your balance meets the minimum requirement, the blurred message will become instantly visible - again, with no deduction unless you take action.\n \n4. Need more help?\nIf you topped up your balance and the message is still blurred, please contact our support team. We’re here to help and will resolve it as quickly as possible!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/36833668975505-Why-is-the-message-blurred-Why-should-I-pay-to-see-the-answer-in-a-chat",
+      "updated_at": "2026-09-04T10:24:38Z",
+      "label_names": []
+    },
+    {
+      "id": 28900762266641,
+      "category": "Subscriptions & Billing",
+      "section": "Subcriptions & Billing",
+      "title": "How can I restore my subscription?",
+      "body": "To restore your subscription on a mobile device:\n\n• Ensure that you're signed in to the same Apple ID or Google account in the App Store or Play Store that you used when purchasing your subscription.\n\n• Open the Nebula app, then go to \"Settings\".\n\n      3. Find the \"Unlock All Features\" button.\n4. On the Sales screen, locate and tap the \"Restore\" button. This should restore your subscription.\nIf the Restore button isn't visible, it may mean there’s no active subscription associated with your email address. \n \n📌You can also follow these Guides from Apple and Android.\n \n\nNeed more help?\n\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900762266641-How-can-I-restore-my-subscription",
+      "updated_at": "2026-09-15T02:11:05Z",
+      "label_names": []
+    },
+    {
+      "id": 28900802305297,
+      "category": "Subscriptions & Billing",
+      "section": "Subcriptions & Billing",
+      "title": "How to cancel subscription?",
+      "body": "1. For Asknebula.com website\n2. For App Store subscription\n3. For web subscription via iOS device\n4. For Google Play subscription\n5. For web subscription via Android device\n6. Need more help?\n \n1. For the Asknebula.com website\n👇 Please refer to the guide below:\n1. Log in to your account on AskNebula.com. \n2. On the main page, tap on the \"Profile\" icon, go to \"Settings\", \n3. Find the \"Manage Subscription\" section and tap it.\n4. Click \"Cancel Subscription\". \n5. On the pop-up page click \"Cancel subscription\". \n6. On the next pop-up page click \"Cancel subscription\" to confirm cancellation.\n\nThat's it — you will see a confirmation on your screen:\n \n2. For App Store subscription\n👇 Please refer to the guide below:\n1.  On your iPhone or iPad, tap on the \"Settings\" app, tap on your name (Apple ID) at the top of the Settings menu.\n\n2.  Then, tap on \"Subscriptions\".\n\n3.  From the list of your active subscriptions, find and tap on the Nebula subscription.\n\n4.  If you don't see the \"Cancel Subscription\" option, it means the subscription has already been canceled and won't renew.\nFor a more comprehensive guide or if you encounter any issues, you can refer to Apple's official support page on managing subscriptions: Apple Subscription Management.\n \n3. For web subscription via iOS device\n👇 Please refer to the guide below:\n\n1. Open the Nebula app.\n2. Tap the gear icon in the top right corner to open Settings.\n     \n\n2. Click on “Cancel Subscription”.\n     \n\n3. You’ll be taken directly to the “Plans” section on AskNebula.com, where you have to click \"Cancel Subscription\". \n4. On the pop-up page click \"Cancel subscription\". \n5. On the next pop-up page click \"Cancel subscription\" to confirm cancellation.\n\nThat's it — you will see a confirmation on your screen:\n \n4. For Google Play subscription\n👇 Please refer to the guide below:\n1. Tap on the Google Play Store app to open it.\n2. Make sure you're logged into the Google Account associated with your Nebula subscription.\n3. Tap on your profile icon in the top-right corner of the screen.\n4. Select \"Payments & subscriptions\".\n\n5. Then tap on \"Subscriptions\".\n\n6. From the list of active subscriptions, find and tap on the Nebula subscription.\n \n\n7.  Tap on \"Cancel subscription\" and follow the on-screen instructions to complete the cancelation process.\nFor a more detailed guide, you can refer to Google Play's official support page on managing subscriptions: Google Play Subscription Management.\n \n5. For web subscription using an Android device\n1. Open the Nebula app.\n2. Tap the gear icon in the top right corner to open Settings.\n3 Click on “Cancel Subscription”.\n     \n\n4 You’ll be taken directly to the “Plans” section on AskNebula.com, where you have to click \"Cancel Subscription\". \n5. On the pop-up page click \"Cancel subscription\". \n6. On the next pop-up page click \"Cancel subscription\" to confirm cancellation.\n\nThat's it — you will see a confirmation on your screen:\n \n6. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you! \nSubmit a request\nWhen contacting support, please provide the following to help us locate your account:\n\n•  A screenshot of your payment.\n\n• The last 4 digits of your card and BIN (first 6 digits).\n\n• Your country of residence.\n\n• The email used during registration.\n\nThis will help us address your request as quickly as possible.",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900802305297-How-to-cancel-subscription",
+      "updated_at": "2026-09-19T22:17:02Z",
+      "label_names": []
+    },
+    {
+      "id": 28900716097297,
+      "category": "Subscriptions & Billing",
+      "section": "Subcriptions & Billing",
+      "title": "What payment methods are used to pay?",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n \nWe accept the following payment methods:\n \n1. Nebula App\n\n• Credit and Debit cards\n\n• Apple Pay\n\n•\nGoogle Pay\n \n\n2. AskNebula website\n\n• Credit and Debit cards\n\n• Google pay\n\n• Apple Pay\n\nThese options provide increased security throughout our platforms, ensuring a safe payment experience for our users.\n \n3. Need more help?\nIf you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900716097297-What-payment-methods-are-used-to-pay",
+      "updated_at": "2026-09-19T23:57:19Z",
+      "label_names": []
+    },
+    {
+      "id": 28901320551953,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "How to change the language?",
+      "body": "1. AskNebula website\n2. Nebula App\n    2.1 Guide for iOS devices\n    2.2 Guide for Android devices\n3. Need more help?\n \n1.  AskNebula website\nOur AskNebula.com website and services, such as chatting with professional advisors, are only available in English. However, you can easily use an automatic translator feature on Google Chrome to translate all content on the website.\nHow to translate the website:\n\n• Open Google Chrome.\n\n• Enable the automatic translator for the website content.\n\nHere’s a screenshot guide for enabling this feature. If your preferred browser doesn't support this function, you can check for available extensions that allow translation.\nIf you don’t understand English, simply inform the psychic during the chat. Our system has a built-in translator that enables advisors to provide readings in your preferred language.\n \n2. Nebula App\nTo change the language of the Nebula app, you need to manage the language settings through your phone's system settings. Here's how:\nAvailable languages:\n\n• Spanish\n\n• English\n\n• Portuguese\n\n• French\n\n• German\n\n•\nItalian\n \n\n     2.1 Guide for iOS devices:\n\n• Open the \"Settings\" menu on your iPhone.\n\n• Go to the \"General\" tab.\n\n• Tap \"Language & Region\".\n\n•\nTo change the language, move your preferred language (e.g., English) to the top of the list under Preferred Languages.\n \n\n     2.2 Guide for Android devices:\n\n• Open the \"Settings\" menu.\n\n• Tap \"System\", then \"Languages & input\".\n\n• Tap \"Languages\".\n\n• Tap \"Add a language\", and choose the language you want.\n\n•\nDrag your preferred language to the top of the list.\n \n\nIf changing these settings doesn’t help, try updating or reinstalling the app.\n\nYou can also check out the following articles for more help:\n\n• How to update the app to its latest version?\n\n• How to install/uninstall the Nebula app?\n\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901320551953-How-to-change-the-language",
+      "updated_at": "2026-09-16T13:16:55Z",
+      "label_names": []
+    },
+    {
+      "id": 28901395830673,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "How to update the app to its latest version?",
+      "body": "1. IOS\n2. Android\n3. Need more help?\n \nPlease select your platform below to find step-by-step instructions to update your Nebula app to its latest version:\n \n1. IOS\n\n• Open the App Store\n\n• Tap \"Apps\" in the bottom menu\n\n• Tap the account icon in the top right corner\n\n• Search for Nebula Astrology\n\n• Tap \"Update\" if available\n\n👉 Or simply tap HERE from your iOS device and hit Update next to Nebula.\n \n2. Android\n\n• Open the Play Store\n\n• Tap the account icon in the top right corner\n\n• Select \"Manage apps & device\"\n\n• Go to the \"Updates\" tab\n\n• Wait for updates to load\n\n• Tap \"Update\" next to the Nebula app\n\n👉 Or tap HERE from your Android device and press Update next to Nebula.\n \n3. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901395830673-How-to-update-the-app-to-its-latest-version",
+      "updated_at": "2026-09-16T05:28:03Z",
+      "label_names": []
+    },
+    {
+      "id": 28901074285713,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "I am facing issues with Nebula, it is not working correctly",
+      "body": "1. Nebula App\n2. AskNebula Website\n3. Need more help?\n \nIf you're facing issues with the Nebula app not working correctly, here are a few things you can try:\n \n1. Nebula App\n\n• Make sure your app is updated to the latest version.\n\n• Close and reopen the app.\n\n• Restart your phone.\n\n•\nCheck your internet connection.\n \n\n2. AskNebula Website\n\n• Refresh the page.\n\n• Restart your browser.\n\n• Try another browser or incognito mode; if that works, clear your browser’s cache.\n\n•\nRestart your computer.\n \n\n3. Need more help?\nIf none of these steps work, don’t worry. You can reach out to our support team through the \"Contact Us\" option in the Nebula app settings or submit a request by clicking the button below.\n \n\nSubmit a request\n \n\nPlease provide a description of the problem, screenshots (if possible), steps you took, and your birth details. Our team will start investigating your case immediately to help resolve the issue.",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901074285713-I-am-facing-issues-with-Nebula-it-is-not-working-correctly",
+      "updated_at": "2026-07-03T00:48:50Z",
+      "label_names": []
+    },
+    {
+      "id": 28900840466961,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "I can not open my reading",
+      "body": "How to Access Your Reading\nNeed more help?\n \nIf you’re having trouble opening your reading purchased through social media (such as Instagram, Facebook, or TikTok), don’t worry — here’s how to fix it:\n \nHow to Access Your Reading\nAfter purchasing your report or reading, you should receive an email with access details within 30 minutes. The email will be sent to the email address you used during checkout. Look for a message with the subject line: \"Get your readings ✨\" — or a similar subject that may include the name of your specific reading, such as Palmistry, Starseed, or Compatibility Reading etc.\n💡 Don’t forget to check your Spam, Promotions, or Junk folders just in case.\nTo view your reading, make sure you have the AskNebula mobile app installed. Your reading is only available inside the Readings tab in the app.\nClick the “Get my reading” button (or similar) in the email. This will redirect you to the Readings tab in the Nebula app, where you can access your purchased reading.\n🔹 If you haven’t downloaded the Nebula app yet:\nClicking the “Get my reading” button will take you to the App Store or Google Play to install the app.\nOnce the installation is complete, return to the email and tap the button again — you’ll be logged in automatically and redirected to the Readings tab, where your purchased content will be available.\n🔹If you already have the Nebula app installed:\nСlicking the “Get my reading” button will log you into your account and redirect you to the Readings tab, where all your purchased readings will appear.\n\nFor the best experience, please open the email on your mobile phone and click the button directly — this ensures a smooth transition into the app.\n\nIf you haven’t received the email after 30 minutes, be sure to check your spam or junk folder, and confirm that you entered the correct email address during purchase.\n\n \nNeed more help?\nIf you're having trouble opening your reading, please reach out to us for help, and we will be happy to assist you!\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900840466961-I-can-not-open-my-reading",
+      "updated_at": "2026-09-08T04:07:08Z",
+      "label_names": []
+    },
+    {
+      "id": 28901150216337,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "I encountered an error while trying to purchase credits",
+      "body": "1. What to Do First\n2. How to Contact Support\n3. Common Reasons for Payment Errors\n4. Need more help?\n \nIf you're seeing an error while trying to purchase credits on the Nebula app, don’t worry — it’s usually easy to resolve.\nUse the steps below to troubleshoot and get back on track.\n \n1. What to Do First\n\n•\nTake a Screenshot of the Error\n\nIf you receive an error like \"An error processing your order\", take a screenshot or write down the exact message. This helps our support team quickly identify the cause.\n \n\n•\nDouble-Check Your Payment Info\n\nMake sure your card number, CVV, and expiry date are correct. Also, confirm that your card is valid and has sufficient funds.\n\n \n2. How to Contact Support\nTo report the issue:\n1. Open the Nebula app\n2. Tap the gear icon in the top-right corner to access Settings\n3. Select \"Help and Support\".\nPlease include the following information:\n\n• A description of the issue\n\n• A screenshot of the error message\n\n• (If applicable) The cardholder name, last 4 digits of the card, or PayPal email used for the transaction\n\n \n3. Common Reasons for Payment Errors\nHere are the most frequent reasons why a credit purchase may fail in the Nebula app:\n\n•\nYour debit card doesn’t support online payments\nSome debit cards are restricted from making online purchases. Please contact your bank to confirm, or try using a different payment method (such as a credit card or PayPal).\n\n•\nInsufficient funds\nMake sure your card or PayPal account has enough funds to cover the transaction.\n\n•\nIncorrect card details\nDouble-check that you’ve entered the correct card number, expiration date, and CVV code.\n\n•\nExpired card\nIf your card has expired, use a valid card with an active expiration date.\n\n•\nCard limit exceeded\nYour card may have a daily or transaction limit. Contact your bank to check and, if needed, increase the limit.\n\n•\nBank communication or security issues\nSome banks apply additional fraud protection or require extra verification. If a transaction is declined without a clear reason, contact your bank to ensure there are no restrictions or blocks in place for online payments.\n\n⚠️ Please note: After multiple failed attempts, our system may temporarily block further purchases for security reasons. If this happens, don’t hesitate to contact our Support Team — we’re here to help you resolve the issue quickly.\n \n4. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901150216337-I-encountered-an-error-while-trying-to-purchase-credits",
+      "updated_at": "2026-09-13T22:41:29Z",
+      "label_names": []
+    },
+    {
+      "id": 28901216899857,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "I have purchased credits, but the balance was not topped up",
+      "body": "1. Contact our support team directly from the Help Center\n2. Contact our support team through the Nebula app\n3. Contact our support team through the AskNebula Website\n4. Provide details to expedite the process\n\n \n\nThis issue is very rare and usually related to a specific account or technical error. If it happens to you, don’t worry — our Support Team will handle it promptly.\n\n \n\n1. Contact our support team directly from Help Center\n\nYou can also contact us directly from the Help Center by clicking the button below — we’ll be happy to assist you!\n\nSubmit a request\n\n \n\n2. Contact our support team through the Nebula app\n\nPlease reach out to us via the “Contact us” option in the Nebula app:\n\n1. Tap the gear icon in the top right corner to open Settings.\n\n2. Select “Help and Support” and submit your request.\n\nUsing this method helps us automatically receive technical information about your device and account, which speeds up the resolution process.\n\n \n\n3. Contact our support team through the AskNebula Website\n\n• Click on the icon with your name in the top right corner of the screen.\n\n• From the drop-down menu, select \"Contact us\".\n\n• You’ll be connected to our Virtual Assistant, Celeste, who will guide you through your request.\n\n• If Celeste isn’t able to resolve your issue, she’ll connect you to a Support Agent for further assistance.\n\n \n\n4. Provide the following details to expedite the process:\n\n• A brief description of the issue\n\n• Screenshots of any transactions or changes in your credits balance\n\n• A note on what actions you performed just before the issue occurred (especially if something seemed unusual)\n\nOnce we receive your message, we’ll investigate thoroughly. If there was an issue on our end, we’ll:\n\n• Credit any missing amounts\n\n• Possibly offer a bonus as an apology for the inconvenience\n\nWe’re committed to helping you get back to enjoying Nebula without disruption. 💫",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901216899857-I-have-purchased-credits-but-the-balance-was-not-topped-up",
+      "updated_at": "2026-09-02T16:36:46Z",
+      "label_names": []
+    },
+    {
+      "id": 28901285302673,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "I have tech issues during communication with a psychic",
+      "body": "1. Contact our support team directly from the Help Center\n2. Contact our support team through the Nebula app\n3. Contact our support team through the AskNebula Website\n4. Provide details to expedite the process\n \nIf you're facing connection issues or other technical problems during a live chat with a psychic on the Nebula app, our support team is here to help!\nThese issues are rare and typically occur during system or database updates. During this time, you might see a \"Something went wrong\" error, or experience interruptions in live chats.\n \n1. Contact our support team directly from Help Center\nPlease feel free to contact our support team by clicking the button below, and we will be happy to assist you!\n \n\nSubmit a request\n \n2. Contact our support team through the Nebula app\n• Go to the \"Settings\" menu.\n• Click on the \"Help and Support\" button and submit a request with your issue. (Using the app to contact us provides info about your device, helping us investigate.)\n\n3. Contact our support team through the AskNebula Website\n\n• Click on the icon with your name in the top right corner of the screen.\n\n• From the drop-down menu, select \"Contact us\".\n\n• You’ll be connected to our Virtual Assistant, Celeste, who will guide you through your request.\n\n• If Celeste isn’t able to resolve your issue, she’ll connect you to a Support Agent for further assistance.\n\n \n4. Provide the following details to expedite the process:\n\n• Description of the issue (attach a screenshot if possible).\n\n• Your name (found in the \"Horoscope\" tab).\n\n• Your date of birth (use the format YYYY-MM-DD).\n\n• The name of the psychic you were chatting with.\n\n• The date and time of the chat, including your time zone.\n\nIf any credits were lost due to connection problems, our support team will compensate them. Your satisfaction is our priority!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901285302673-I-have-tech-issues-during-communication-with-a-psychic",
+      "updated_at": "2026-08-17T02:12:13Z",
+      "label_names": []
+    },
+    {
+      "id": 28901281229713,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "My profile information is wrong (Zodiac sign/Ascendant Sign/Natal Chart/etc)",
+      "body": "1. Verify your profile information\n    1.1 Nebula App\n    1.2 AskNebula Website\n2. Ensure accurate details\n3. Understand the sign transition\n4. Need more help?\n \nAccurate astrological insights depend on the correct representation of your zodiac and ascendant signs. If you find them incorrect, follow this guide to address the issue:\n \n1. Verify your profile information:\n\n     1.1 Nebula App\n\n• Tap the settings gear icon\n• Select \"My Profile\"\n• Tap the arrow next to the incorrect detail and update it\n\n     1.2 AskNebula Website\n\n• Click the settings gear icon located on the main page\n•\nGo to \"Personal Information\" and update your details\n\n  \n \n\n2. Ensure accurate details:\nRe-enter the following information:\n\n• Date of Birth: (day, month, and year).\n\n• Place of Birth: (specific city and country).\n\n• Time of Birth: (exact time, down to the minute, if possible).\n\nYou can try refreshing your profile by temporarily changing some details, saving them, and then entering the correct information again. This can sometimes fix display issues.\n \n3. Understand the sign transition:\n\n• Zodiac transitions are not always at midnight. The time the Sun moves from one sign to another can vary based on your location. For instance, the Sun may transition into Virgo at 6:02 AM in New York but at 3:02 AM in Los Angeles.\n\n• Leap years and location can also shift transition dates, making the exact time and place of your birth essential for accuracy.\n\nBy ensuring you provide the exact birth time and location, the app will calculate your signs and chart correctly.\n \n4. Need more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\nSubmit a request\nEnjoy your journey with Nebula! ✨",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901281229713-My-profile-information-is-wrong-Zodiac-sign-Ascendant-Sign-Natal-Chart-etc",
+      "updated_at": "2026-06-18T11:41:27Z",
+      "label_names": []
+    },
+    {
+      "id": 28900868231441,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "My report or reading is wrong",
+      "body": "If you received an incorrect report after ordering from social networks, we are here to help.\nIn case you accidentally entered the wrong information during the quiz, your report may be incorrect. Please feel free to contact our support team, and we will be happy to assist you!\n \n\nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28900868231441-My-report-or-reading-is-wrong",
+      "updated_at": "2026-07-24T11:56:43Z",
+      "label_names": []
+    },
+    {
+      "id": 28901045413393,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "Where is my reading ordered on Social networks (Facebook, Instagram)?",
+      "body": "After purchasing your report or reading, you should receive an email with access details within 30 minutes. The email will be sent to the email address you used during checkout. Look for a message with the subject line: \"Get your readings ✨\" — or a similar subject that may include the name of your specific reading, such as Palmistry, Starseed, or Compatibility Reading etc.\nTo view your reading, make sure you have the AskNebula mobile app installed. Your reading is only available inside the Readings tab in the app.\nClick the “Get my reading” button (or similar) in the email. This will redirect you to the Readings tab in the Nebula app, where you can access your purchased reading.\n🔹 If you haven’t downloaded the Nebula app yet:\nClicking the “Get my reading” button will take you to the App Store or Google Play to install the app.\nOnce the installation is complete, return to the email and tap the button again — you’ll be logged in automatically and redirected to the Readings tab, where your purchased content will be available.\n🔹If you already have the Nebula app installed:\nСlicking the “Get my reading” button will log you into your account and redirect you to the Readings tab, where all your purchased readings will appear.\n\nFor the best experience, please open the email on your mobile phone and click the button directly — this ensures a smooth transition into the app.\n\nIf you haven’t received the email after 30 minutes, be sure to check your spam or junk folder, and confirm that you entered the correct email address during purchase.\n \n\nNeed more help?\nIf these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!\n \nSubmit a request",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901045413393-Where-is-my-reading-ordered-on-Social-networks-Facebook-Instagram",
+      "updated_at": "2026-08-06T05:58:46Z",
+      "label_names": []
+    },
+    {
+      "id": 28901224006801,
+      "category": "Tech Assistance",
+      "section": "Tech Assistance",
+      "title": "Why am I getting an error message when logging into my Nebula account?",
+      "body": "If you're getting an error message when logging into your Nebula account, it could be due to one of the following common issues:\n \n1. \"Invalid email or password\" error:\n\n• Double-check your email and password. Ensure Caps Lock isn't on and you're using the correct keyboard language.\n\n•\nIf you still can't log in, try resetting your password. Follow this guide: How to reset the password?\n \n\n2. \"Something went wrong\" or \"Unexpected error\" messages:\n\n• These errors may occur due to system issues or updates.\n\n•\nPlease contact our support team through the \"Submit Request\" option in the app or by clicking the button below, and we will investigate and resolve the issue for you.\n \n\nSubmit a request\n \n\nOur team is here to assist and ensure your login process is smooth!",
+      "url": "https://24hours.support-nebula.com/hc/en-us/articles/28901224006801-Why-am-I-getting-an-error-message-when-logging-into-my-Nebula-account",
+      "updated_at": "2026-09-08T06:01:37Z",
+      "label_names": []
+    }
+  ]
+}

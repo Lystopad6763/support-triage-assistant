@@ -1,0 +1,30 @@
+{
+  "store": "googleplay",
+  "lang": "mk",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:21:47+00:00",
+  "count": 2,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "f7e5cf14-eb2b-40e8-8f28-8f0c2711c312",
+      "score": 5,
+      "content": "5 ⭐",
+      "reply": "Hi [Name]! Thank you for the perfect score! We are honored to be part of your spiritual journey and are so glad you love the app. We are always here for you, so if you ever need help or guidance, drop us a line at support-googleplay@asknebula.com.\nWith gratitude,\nNebula 🔮",
+      "at": "2026-04-18 16:44:19",
+      "repliedAt": "2026-04-18 16:53:44",
+      "version": "4.64.00",
+      "thumbsUp": 0
+    },
+    {
+      "reviewId": "baa3eebd-3837-427a-bce4-72f105222487",
+      "score": 5,
+      "content": "Perfect",
+      "reply": "Dear User, hello there!\nWe thank you for your feedback and want you to know that we appreciate it very much. It is very special to receive such feedback. It reminds us again and again that our work is needed and appreciated and provides the energy to keep working on our app for you - our users!\nBest wishes, Nebula team",
+      "at": "2023-05-11 11:34:43",
+      "repliedAt": "2023-05-29 17:18:41",
+      "version": "4.7.77",
+      "thumbsUp": 0
+    }
+  ]
+}

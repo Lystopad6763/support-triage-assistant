@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "lr",
+  "fetched_at": "2026-09-20T00:07:36+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "12458974320",
+      "rating": 5,
+      "title": "Very good",
+      "text": "Very good",
+      "date": "2025-03-24T14:42:35Z",
+      "is_edited": false,
+      "reply": "Dear User,\n\nThank you for your feedback! We're happy to hear you had a great experience. If you ever have any questions or need assistance, feel free to reach out to us at nebula.support@nebulahoroscope.com.\n\nBest,\nThe Nebula Team 🌟",
+      "reply_date": "2025-03-26T19:42:27Z"
+    }
+  ]
+}

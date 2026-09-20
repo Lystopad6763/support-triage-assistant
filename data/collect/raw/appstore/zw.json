@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "zw",
+  "fetched_at": "2026-09-20T00:29:18+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "13771812943",
+      "rating": 5,
+      "title": "Palms",
+      "text": "What a breath taking moment of exploration you provided. Keep it up.",
+      "date": "2026-02-21T03:14:17Z",
+      "is_edited": false,
+      "reply": "Hi [Name], Thank you for sharing your feedback. We’re so glad to hear that your experience felt like a breathtaking moment of exploration. It’s wonderful to know the session gave you insight and inspiration, and your encouragement to “keep it up” means a lot to us. If you ever have questions or need assistance, please don’t hesitate to reach out at support-appstore@asknebula.com — our team will be happy to help. Warm wishes, Nebula Team🔮",
+      "reply_date": "2026-03-05T02:49:26Z"
+    },
+    {
+      "id": "10967884274",
+      "rating": 1,
+      "title": "Subscription cancellation a fraud",
+      "text": "Very annoyed  to be charged for a subscription I was not aware I had. I cancelled the app subscription only to get charged a $15 charge on my account for a web subscription I never used or knew about (it’s higher than normal subscription). What a fraud!",
+      "date": "2024-02-22T18:07:05Z",
+      "is_edited": false,
+      "reply": "Hello dear user! We sincerely apologize for the inconvenience and confusion you've experienced. Your satisfaction is of utmost importance to us, and we are committed to resolving this issue promptly.To assist you further, please contact our support team at [nebula.support@nebulahoroscope.com]. Best regards, Nebula Team",
+      "reply_date": "2024-02-24T15:24:55Z"
+    }
+  ]
+}

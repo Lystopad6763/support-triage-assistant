@@ -1,0 +1,49 @@
+{
+  "store": "appstore",
+  "country": "bo",
+  "fetched_at": "2026-09-19T23:42:01+00:00",
+  "count": 4,
+  "with_reply": 4,
+  "reviews": [
+    {
+      "id": "13993043080",
+      "rating": 5,
+      "title": "Impactada",
+      "text": "Está hermoso, ojalá sea cierto por qué estoy pasando por un proceso de separación tan duro que ojalá sea verdad el nuevo que está destinado",
+      "date": "2026-04-24T20:10:20Z",
+      "is_edited": false,
+      "reply": "Hi there! \n\nThank you for your heartfelt review — we’re glad it resonated with you. We truly hope it brings you clarity during this difficult time. If you’d like to share more, feel free to reach us at support-appstore@asknebula.com.\n\nWith gratitude, Nebula ✨",
+      "reply_date": "2026-04-26T00:19:07Z"
+    },
+    {
+      "id": "6169107875",
+      "rating": 5,
+      "title": "Like",
+      "text": "I like it just I would love to have it complete but I can’t afort it so I have to watch vids",
+      "date": "2020-07-07T18:06:22Z",
+      "is_edited": false,
+      "reply": "Hello! Thank you for your review! We have a big team of astrologers and developers working on this app daily, and their work has to be paid. That is why Nebula has a paid subscription option. However, our app also offers a lot of completely free highly-personalized content.",
+      "reply_date": "2020-07-30T13:38:59Z"
+    },
+    {
+      "id": "10557893537",
+      "rating": 1,
+      "title": "They have been stealing my money.",
+      "text": "I deleted everything, but still for two months they stole 40$ per month.",
+      "date": "2023-11-06T23:56:59Z",
+      "is_edited": false,
+      "reply": "Hello, [Name]! We highly value the time you've dedicated. We apologize sincerely for the inconvenience caused by the challenges faced during the payment transaction. To address this, please contact us at http://help.answers-365.com, enabling us to promptly access the payment system and extend the necessary assistance. Wishing you a good day! 🔮",
+      "reply_date": "2023-11-08T11:40:26Z"
+    },
+    {
+      "id": "7788714410",
+      "rating": 1,
+      "title": "I HATE IT",
+      "text": "THEY ARE ALWAYS SPAMMING ME AND NOTHING IS REAL IN THE HOROSCOPE",
+      "date": "2021-09-09T19:37:25Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\n\nThank you so much for your feedback! We apologize for this experience. We would need to speak with you to better understand the problem you encountered. Please contact us at support@nebulahoroscope.com so we can help resolve this issue.\n\nBest wishes, Nebula team\n",
+      "reply_date": "2021-09-14T11:02:53Z"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "kg",
+  "fetched_at": "2026-09-20T00:07:00+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "12542021969",
+      "rating": 5,
+      "title": "Problem Solved",
+      "text": "Thanks for your team and your support!🙏",
+      "date": "2025-04-14T12:00:52Z",
+      "is_edited": false,
+      "reply": "Dear [Name], Hello!\n\nThank you for updating your review! We're truly grateful for your kind words and support. It means a lot to our team to know that our efforts made a positive difference in your experience.\n\nIf you ever have any questions or need further assistance, please don’t hesitate to reach out to us at nebula.support@nebulahoroscope.com — we’re always here for you.\n\nSending positive vibes your way, The Nebula Team 🔮",
+      "reply_date": "2025-04-15T20:23:13Z"
+    }
+  ]
+}

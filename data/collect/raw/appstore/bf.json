@@ -1,0 +1,19 @@
+{
+  "store": "appstore",
+  "country": "bf",
+  "fetched_at": "2026-09-19T23:41:41+00:00",
+  "count": 1,
+  "with_reply": 1,
+  "reviews": [
+    {
+      "id": "14429068557",
+      "rating": 5,
+      "title": "Croquis",
+      "text": "Close",
+      "date": "2026-08-15T02:23:40Z",
+      "is_edited": false,
+      "reply": "Your review made our day 💜 It means a lot to know Nebula left a bright impression. Holding space for your journey, Nebula 🔮",
+      "reply_date": "2026-08-16T18:51:27Z"
+    }
+  ]
+}

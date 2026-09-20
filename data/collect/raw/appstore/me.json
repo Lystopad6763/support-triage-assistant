@@ -1,0 +1,39 @@
+{
+  "store": "appstore",
+  "country": "me",
+  "fetched_at": "2026-09-20T00:08:15+00:00",
+  "count": 3,
+  "with_reply": 3,
+  "reviews": [
+    {
+      "id": "10746332552",
+      "rating": 1,
+      "title": "Took my money",
+      "text": "This app charged me full price for free trial, even thou i cancelled it immediately, money still gone .",
+      "date": "2023-12-26T10:45:19Z",
+      "is_edited": false,
+      "reply": "Hello [Name]!We apologize for the inconvenience. Please contact our support team at nebula.support@nebulahoroscope.com with your account details, and we'll investigate and resolve the issue promptly. Your satisfaction is important to us, and we appreciate your patience as we address this matter. Thank you for bringing it to our attention.",
+      "reply_date": "2023-12-28T15:25:16Z"
+    },
+    {
+      "id": "10669261953",
+      "rating": 1,
+      "title": "Thieves",
+      "text": "Do not buy anything and maybe do not download this at all. I was offered for 3 day trial, but they immediately charged me the price after it.",
+      "date": "2023-12-08T06:26:16Z",
+      "is_edited": false,
+      "reply": "Hello! We apologize for any inconvenience you've experienced. This is not the experience we intend to provide. To investigate your situation and assist you promptly, please contact our support team at nebula.support@nebulahoroscope.com. Your feedback is important to us, and we appreciate your understanding. Best regards, Nebula Team🔮",
+      "reply_date": "2023-12-09T16:50:09Z"
+    },
+    {
+      "id": "10500975576",
+      "rating": 1,
+      "title": "Do not get tricked",
+      "text": "Awfully deceived by this app from the moment I entered their website. Two clicks in and 50$ were withdrawn from my account! Big No!",
+      "date": "2023-10-21T22:07:35Z",
+      "is_edited": true,
+      "reply": "Nebula welcomes you, dear user! Thank you for your comment!\n\nIt is sad to hear about your negative user experience with our services. We are sorry for the payment troubles that happened.\n\nWe kindly ask you to provide us with more information about your problem at http://help.answers-365.com, so our support agents could provide you with the solution of the problem much faster. Kindest regards, Nebula team 🔮\n",
+      "reply_date": "2023-10-16T09:25:46Z"
+    }
+  ]
+}

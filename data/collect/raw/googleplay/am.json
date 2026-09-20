@@ -1,0 +1,20 @@
+{
+  "store": "googleplay",
+  "lang": "am",
+  "country": "us",
+  "fetched_at": "2026-09-19T23:20:29+00:00",
+  "count": 1,
+  "sampled_with_filter": null,
+  "reviews": [
+    {
+      "reviewId": "efcf82f0-e589-4fc5-8d80-148eaa6c6464",
+      "score": 5,
+      "content": "Good",
+      "reply": "Hi [Name],\n\nThank you for taking the time to share your thoughts! We’re thrilled your experience was good, yet we always strive for it to be exceptional.💖️ We’d be grateful if you could share ideas on how we can make it even better at support-googleplay@asknebula.com.\n\nWishing you many bright and insightful moments ahead,\nNebula Team 🔮",
+      "at": "2025-11-08 14:37:22",
+      "repliedAt": "2025-11-08 14:43:05",
+      "version": "4.42.00",
+      "thumbsUp": 1
+    }
+  ]
+}

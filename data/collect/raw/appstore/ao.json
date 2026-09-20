@@ -1,0 +1,29 @@
+{
+  "store": "appstore",
+  "country": "ao",
+  "fetched_at": "2026-09-19T23:38:42+00:00",
+  "count": 2,
+  "with_reply": 2,
+  "reviews": [
+    {
+      "id": "6178324872",
+      "rating": 5,
+      "title": "Incrível de mais",
+      "text": "Não a o que criticar",
+      "date": "2020-07-09T21:36:11Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review.\n\nBest wishes, Nebula team",
+      "reply_date": "2022-08-20T10:27:57Z"
+    },
+    {
+      "id": "9308384174",
+      "rating": 1,
+      "title": "Not impressed",
+      "text": "I have try the up, however , the credits go way faster than it’s stipulated , they say you can send as many question as you can in 2 min for 30 credits but it ain’t like that. The advisories will keep you talk and ask you question to keep you on the mensagem and will rare reply on that 2 min frame , will not answer all you questions and sometimes will ask you the same question more than once. Disappointed. And there is no where in the app that you can reach costumer service.",
+      "date": "2022-11-20T06:22:00Z",
+      "is_edited": false,
+      "reply": "Dear User, hello there!\n\nThank you for taking the time to leave us a review! We are really sorry to hear that you had a negative experience with Nebula. However, we would like to know more about what happened so we can make things right. You can tell us more detail about the issue at http://help.answers-365.com, we want to hear all about your concerns and address them most properly.\n\nBest wishes, Nebula team",
+      "reply_date": "2022-11-21T12:31:34Z"
+    }
+  ]
+}
