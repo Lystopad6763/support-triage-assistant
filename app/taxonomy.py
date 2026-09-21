@@ -49,11 +49,11 @@ class Category(str, Enum):
     """What the ticket is about. Exactly one is primary."""
 
     # --- billing family: the overwhelming majority of volume -------------
-    REFUND_REQUEST = "refund_request"
+    # Three questions, not five: was the charge agreed to, can it be stopped,
+    # and is the refund itself the problem.
+    SUBSCRIPTION_TRAP = "subscription_trap"
     CANCELLATION_FAILED = "cancellation_failed"
-    TRIAL_CONVERTED = "trial_converted"
-    UNAUTHORIZED_CHARGE = "unauthorized_charge"
-    PRICING_UNCLEAR = "pricing_unclear"
+    REFUND_REQUEST = "refund_request"
 
     # --- the service itself ----------------------------------------------
     SERVICE_NOT_DELIVERED = "service_not_delivered"
@@ -63,7 +63,6 @@ class Category(str, Enum):
     APP_TECHNICAL = "app_technical"
 
     # --- everything else --------------------------------------------------
-    DATA_PRIVACY = "data_privacy"
     OTHER = "other"
 
     # REMOVED, and the reason is the finding rather than the removal:
@@ -96,6 +95,24 @@ class Category(str, Enum):
     # answers, always attached to "the psychics are fake AI" inside a billing
     # complaint. That is an accusation carried by a billing ticket, which is
     # what the FLAGS paragraph above already covers.
+    #
+    # MERGED on 2026-09-21: trial_converted, unauthorized_charge and
+    # pricing_unclear became subscription_trap. They were three names for one
+    # story - a subscription the writer did not knowingly agree to - separated
+    # by whether the writer admitted to a first small payment, denied the charge
+    # outright, or blamed the disclosure. Measured on golden2 across the three
+    # leading models: F1 0.60 / 0.63 / 0.60 on unauthorized_charge, recall
+    # 0.50 / 0.67 / 0.33 on pricing_unclear. Three of the fifteen consensus
+    # flags sat on this boundary and so did three of the labels corrected by
+    # hand the same day. The split earned nothing in routing either: all three
+    # default to ask_purchase_rail, because refunds are routed by where the
+    # purchase was made and none of the three says.
+    #
+    # data_privacy went on the same day, for the advisor_conduct reason: 4
+    # usable rows in the whole 43,941-row corpus, and 3 of the 4 flagged by
+    # model consensus, one of them 20 of 20 against us. A deletion request is
+    # now `other` with escalate_to_human, which is what a statutory clock
+    # actually needs.
     #
     # What does NOT go with it is the routing. A ticket genuinely about an
     # advisor's conduct still has to reach the separate Report a Safety Concern
@@ -169,21 +186,31 @@ CATEGORY_GUIDE: dict[Category, dict[str, str]] = {
                       "as unauthorised - they want it reversed.",
         "example": "MI SONO RITROVATA CON 49 EURO IN MENO SUL CONTO ... ORA "
                    "CHIEDO IL RIMBORSO. COME FACCIO?",
-        "not": "If they say they never authorised the charge at all, that is "
-               "unauthorized_charge - a dispute, not a request.",
+        "not": "If the charge itself should not have happened, that is "
+               "subscription_trap - the refund is then the demand, not the "
+               "cause.",
         "note": "The single largest category, and the one whose next step "
                 "depends on a fact the ticket usually omits: the store.",
     },
-    Category.TRIAL_CONVERTED: {
-        "count": "74 of 313 in the window, 272 in the corpus",
-        "definition": "A trial or introductory offer silently became a paid "
-                      "subscription. Usually 1 dollar or 1 euro becoming 30-50.",
+    Category.SUBSCRIPTION_TRAP: {
+        "count": "141 of 313 in the window, 433 in the corpus (the three "
+                 "merged probes, deduplicated)",
+        "definition": "A subscription the writer did not knowingly agree to. "
+                      "Covers all three ways it happens: a trial or a small "
+                      "starting payment that silently became a recurring "
+                      "charge, a charge the writer denies agreeing to at all, "
+                      "and a price or term that was not visible before paying.",
         "example": "I thought I was downloading an app with 1.00 trial ... now "
                    "they are trying to take 45.00 from my account.",
-        "not": "If the complaint is that the price was never displayed at all, "
-               "that is pricing_unclear.",
-        "note": "Second largest. The 1-dollar-to-49-dollar pattern is the "
-                "single most repeated story in the corpus.",
+        "not": "If the writer tried to stop it and could not, the mechanism is "
+               "what is broken: cancellation_failed. If the charge is not in "
+               "dispute and only the refund is stuck, that is refund_request.",
+        "note": "The largest category by a distance, and formerly three: "
+                "trial_converted, unauthorized_charge and pricing_unclear. "
+                "Separating them asked the classifier to decide whether the "
+                "writer admitted to the first payment, which is a question "
+                "about the writer, not about the ticket - and it changed no "
+                "routing, because all three end at ask_purchase_rail.",
     },
     Category.CANCELLATION_FAILED: {
         "count": "34 of 313 in the window, 114 in the corpus",
@@ -192,31 +219,10 @@ CATEGORY_GUIDE: dict[Category, dict[str, str]] = {
         "example": "I have cancelled the subscription so many times and it "
                    "keeps charging me.",
         "not": "Wanting money back for a charge already taken is "
-               "refund_request; this is about the mechanism not working.",
+               "refund_request, and a charge that should never have happened "
+               "is subscription_trap; this is about the MECHANISM not working.",
         "note": "Where the cancellation must happen depends on the store, same "
                 "as refunds (pol-16).",
-    },
-    Category.UNAUTHORIZED_CHARGE: {
-        "count": "55 of 313 in the window, 128 in the corpus",
-        "definition": "Denies ever authorising the charge. Often a card used "
-                      "without the account holder's knowledge.",
-        "example": "I never agreed to even sign up. I don't even remember "
-                   "downloading this app to be honest.",
-        "not": "A trial they did agree to which then renewed is "
-               "trial_converted, however unfair it felt.",
-        "note": "The knowledge base has NO article answering this. It is a "
-                "dispute, which is why the automation gate stops it.",
-    },
-    Category.PRICING_UNCLEAR: {
-        "count": "12 of 313 in the window, 33 in the corpus",
-        "definition": "The cost or the terms were not visible before paying. A "
-                      "transparency complaint, not a billing error.",
-        "example": "This app uses deceptive tactics to trap users into "
-                   "expensive subscriptions without clear consent.",
-        "not": "If money was taken after a trial they did accept, that is "
-               "trial_converted.",
-        "note": "Often arrives worded as a legal accusation, which is a flag, "
-                "not a category.",
     },
     Category.SERVICE_NOT_DELIVERED: {
         "count": "7 of 313 in the window, 30 in the corpus",
@@ -252,25 +258,16 @@ CATEGORY_GUIDE: dict[Category, dict[str, str]] = {
                 "report a crash. Kept as a category for that reason, and the "
                 "dataset reaches outside the freshness window to fill it.",
     },
-    Category.DATA_PRIVACY: {
-        "count": "1 of 313 in the window, 4 in the corpus",
-        "definition": "Asks for personal data or the account to be deleted, or "
-                      "raises how data is handled.",
-        "example": "Delete my account with you.",
-        "not": "Anger about data handling with no deletion request and no "
-               "privacy question is classified by whatever else the ticket is "
-               "about.",
-        "note": "Kept despite the tiny count because it carries a legal "
-                "deadline no other category does. Will be reported as a count, "
-                "never as a percentage.",
-    },
     Category.OTHER: {
         "count": "93 of 313 rows match no probe",
         "definition": "A real ticket that fits none of the above. This is also "
                       "where a complaint about a specific advisor's conduct or "
                       "authenticity belongs, and where acute distress belongs: "
                       "neither has its own category, and both are carried by "
-                      "the next_step route_to_safety_report.",
+                      "the next_step route_to_safety_report. A request to "
+                      "delete personal data or an account lands here too, with "
+                      "escalate_to_human, because it carries a statutory clock "
+                      "and no other category names it.",
         "example": "",
         "not": "",
         "note": "Not a dumping ground for low confidence - that is what the "
@@ -306,15 +303,12 @@ PRIORITY_GUIDE: dict[Priority, str] = {
 # reports when it does, because a defensible default is what makes a wrong
 # routing visible rather than merely surprising.
 DEFAULT_NEXT_STEP: dict[Category, NextStep] = {
-    Category.REFUND_REQUEST: NextStep.ASK_PURCHASE_RAIL,
+    Category.SUBSCRIPTION_TRAP: NextStep.ASK_PURCHASE_RAIL,
     Category.CANCELLATION_FAILED: NextStep.GUIDE_CANCELLATION,
-    Category.TRIAL_CONVERTED: NextStep.ASK_PURCHASE_RAIL,
-    Category.UNAUTHORIZED_CHARGE: NextStep.ESCALATE_TO_HUMAN,
-    Category.PRICING_UNCLEAR: NextStep.SEND_KB_ARTICLE,
+    Category.REFUND_REQUEST: NextStep.ASK_PURCHASE_RAIL,
     Category.SERVICE_NOT_DELIVERED: NextStep.REQUEST_EVIDENCE,
     Category.CONTENT_QUALITY: NextStep.SEND_KB_ARTICLE,
     Category.APP_TECHNICAL: NextStep.SEND_KB_ARTICLE,
-    Category.DATA_PRIVACY: NextStep.ESCALATE_TO_HUMAN,
     Category.OTHER: NextStep.ESCALATE_TO_HUMAN,
 }
 
@@ -326,12 +320,13 @@ DEFAULT_NEXT_STEP: dict[Category, NextStep] = {
 # is applied differently by every reader, and the evaluation then measures the
 # readers instead of the model.
 LABELLING_RULES = [
-    "A charge for a DIFFERENT AMOUNT than the one presented is pricing_unclear, "
-    "not unauthorized_charge. unauthorized_charge requires that the writer "
-    "denies authorising the transaction at all - not that they dispute what it "
-    "turned out to cost. A trial presented at one price that bills another, a "
-    "currency conversion that lands higher, an annual plan charged where a "
-    "trial was offered: all of those are transparency failures.",
+    "Within the billing family the question is never HOW the charge arose. A "
+    "trial that renewed, a charge the writer denies entirely, a price that was "
+    "never shown: all three are subscription_trap. The question that decides "
+    "the category is what has to be fixed. If the writer tried to stop it and "
+    "could not, fix the mechanism: cancellation_failed. If only the refund is "
+    "stuck, fix the refund: refund_request. Otherwise the charge itself should "
+    "not have happened: subscription_trap.",
 
     "Priority 1 needs the aggravating fact to be STATED, not inferred. A "
     "charge that might recur, a subscription that is probably still live, a "

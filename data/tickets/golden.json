@@ -28,15 +28,14 @@
       "reply_latency_sec": 163710
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
-        "cancellation_failed",
-        "pricing_unclear"
+        "cancellation_failed"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "Paid 5 dollars for a report without realising it started a trial, was charged 45, has already cancelled and asks for the money back; the ticket never says where the purchase was made.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Paid 5 dollars for a report without realising it started a trial, was charged 45, has already cancelled and asks for the money back; the ticket never says where the purchase was made.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -76,7 +75,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "1",
@@ -119,13 +118,13 @@
       "reply_latency_sec": 975
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "Says the app was never used once, no payment confirmation was requested and no SMS arrived, so the charge is not a renewal of anything agreed to.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Says the app was never used once, no payment confirmation was requested and no SMS arrived, so the charge is not a renewal of anything agreed to.",
       "confidence": 0.75,
       "kb_covered": false,
       "kb_articles": []
@@ -160,14 +159,14 @@
       "reply_latency_sec": 3216
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
         "cancellation_failed"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "A further 14.99 followed the 1-dollar payment with no indication at checkout that it would be taken; support has been asked for that sum back and for a permanent cancellation, and the outcome is pending.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. A further 14.99 followed the 1-dollar payment with no indication at checkout that it would be taken; support has been asked for that sum back and for a permanent cancellation, and the outcome is pending.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -256,14 +255,13 @@
       "reply_latency_sec": 2846
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "cancellation_failed",
-        "unauthorized_charge"
+        "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "ask_purchase_rail",
-      "rationale": "A small purchase turned into 133.60 billed monthly with no plan taken out; the charges recur and the writer asks for them to stop.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A small purchase turned into 133.60 billed monthly with no plan taken out; the charges recur and the writer asks for them to stop.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -357,14 +355,14 @@
       "reply_latency_sec": 113178
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
         "cancellation_failed"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "1 euro requested, then 40 taken on a later charge, and the account info shows no active subscription to cancel.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 euro requested, then 40 taken on a later charge, and the account info shows no active subscription to cancel.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -402,13 +400,13 @@
       "reply_latency_sec": 1172395
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "1 euro spent deliberately to test, then 150 debited without further use, and support does not answer email at all - so repeating an instruction would go nowhere.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 euro spent deliberately to test, then 150 debited without further use, and support does not answer email at all - so repeating an instruction would go nowhere.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -448,7 +446,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -490,13 +488,13 @@
       "reply_latency_sec": 10643
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "Denies ever approving any subscription charge and has already tried once to stop it; no amount and no store are named, so the rail has to be established first.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Denies ever approving any subscription charge and has already tried once to stop it; no amount and no store are named, so the rail has to be established first.",
       "confidence": 0.55,
       "kb_covered": false,
       "kb_articles": []
@@ -540,15 +538,14 @@
       "reply_latency_sec": 687
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed",
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "process_refund",
-      "rationale": "The promised 24-hour trial reminder never arrived and the card was charged for a monthly plan; the writer names the Google account as where the subscription lives, so the rail is known.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. The promised 24-hour trial reminder never arrived and the card was charged for a monthly plan; the writer names the Google account as where the subscription lives, so the rail is known.",
       "confidence": 0.55,
       "kb_covered": true,
       "kb_articles": [
@@ -586,11 +583,11 @@
       "reply_latency_sec": 160043
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [],
       "priority": "3",
       "next_step": "acknowledge_and_close",
-      "rationale": "Product feedback addressed to the developers about a free download that cannot be used without paying; no charge is disputed and nothing is asked to be reversed.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. Product feedback addressed to the developers about a free download that cannot be used without paying; no charge is disputed and nothing is asked to be reversed.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -641,14 +638,14 @@
       "reply_latency_sec": 249
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
         "service_not_delivered"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-20: was refund_request. The cause is stated - a free trial that charges a subscription fee on registration - and our own rule puts the cause first and the demand in secondary. The refusal and the second payment rail are why it still escalates.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. AUDIT 2026-09-20: was refund_request. The cause is stated - a free trial that charges a subscription fee on registration - and our own rule puts the cause first and the demand in secondary. The refusal and the second payment rail are why it still escalates.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -691,15 +688,14 @@
       "reply_latency_sec": 120
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed",
-        "data_privacy",
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Money debited without consent, no way to unsubscribe or to remove the stored card, and an explicit threat to report them to the relevant authority.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Money debited without consent, no way to unsubscribe or to remove the stored card, and an explicit threat to report them to the relevant authority.",
       "confidence": 0.7,
       "kb_covered": false,
       "kb_articles": []
@@ -711,7 +707,7 @@
     "text_sha256": "490b7b04b60db20fbfa80ee1084233a08003d72cadb0c972f61056f966b4b8a6",
     "chars": 549,
     "selection": {
-      "cell": "pricing_unclear",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -745,14 +741,13 @@
       "reply_latency_sec": 2026587
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "unauthorized_charge",
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "1 dollar paid to try it, then 42.99 debited: the fact pattern is a converted trial whatever the writer calls it. Legal assistance is named, and the support bot has not replied.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 dollar paid to try it, then 42.99 debited: the fact pattern is a converted trial whatever the writer calls it. Legal assistance is named, and the support bot has not replied.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -767,7 +762,7 @@
     "text_sha256": "18e797a16e4fbadcce6ec794642e0daaa2e449e3f40bd1da89c391becd6ad9b7",
     "chars": 487,
     "selection": {
-      "cell": "pricing_unclear",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -801,14 +796,13 @@
       "reply_latency_sec": 169964
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "trial_converted",
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "A three-day free trial shown at 5.99 became a 48.99 annual charge within seconds, before the download finished, so nothing renewed - it was mis-presented. Apple and Nebula have both already refused.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. A three-day free trial shown at 5.99 became a 48.99 annual charge within seconds, before the download finished, so nothing renewed - it was mis-presented. Apple and Nebula have both already refused.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -851,13 +845,13 @@
       "reply_latency_sec": 330
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Says they never received or had anything to do with the app and the charges keep coming, so money is still moving and they cannot stop it.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Says they never received or had anything to do with the app and the charges keep coming, so money is still moving and they cannot stop it.",
       "confidence": 0.7,
       "kb_covered": false,
       "kb_articles": []
@@ -903,7 +897,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "service_not_delivered",
         "refund_request"
       ],
@@ -957,14 +951,13 @@
       "reply_latency_sec": 583
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "content_quality",
-        "pricing_unclear"
+        "content_quality"
       ],
       "priority": "2",
       "next_step": "guide_cancellation",
-      "rationale": "AUDIT 2026-09-21: was cancellation_failed, which the rules make conditional - 'all of that assumes there IS a subscription the writer knows about. Someone who ... has no subscription in the store has nothing to cancel: that is unauthorized_charge, or trial_converted if a small starting payment is named'. Nothing shows in Google Play and $1 is named. PRIORITY 2026-09-21b: was 3 on the argument 'only the dollar moved', which is an argument about the AMOUNT - and priority 3 does not key on the amount. The rule is 'a ticket the writer or support has ALREADY resolved is priority 3, however large the sum was'. Nothing here is resolved: the writer sent a cancellation request and is waiting, and asks outright 'how can I be sure I won't be charged again?'. One charge landed with a demand to reverse it is priority 2. 18 of 18 runs across 10 models said 2 - the only unanimous flag on golden.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. AUDIT 2026-09-21: was cancellation_failed, which the rules make conditional - 'all of that assumes there IS a subscription the writer knows about. Someone who ... has no subscription in the store has nothing to cancel: that is unauthorized_charge, or trial_converted if a small starting payment is named'. Nothing shows in Google Play and $1 is named. PRIORITY 2026-09-21b: was 3 on the argument 'only the dollar moved', which is an argument about the AMOUNT - and priority 3 does not key on the amount. The rule is 'a ticket the writer or support has ALREADY resolved is priority 3, however large the sum was'. Nothing here is resolved: the writer sent a cancellation request and is waiting, and asks outright 'how can I be sure I won't be charged again?'. One charge landed with a demand to reverse it is priority 2. 18 of 18 runs across 10 models said 2 - the only unanimous flag on golden.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1015,14 +1008,13 @@
       "reply_latency_sec": 125539
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "pricing_unclear",
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "1 dollar became 49, the remaining 32-dollar balance was burnt by a six-minute chat at roughly 5 per minute, and a receipt was refused outright when asked for. SECONDARY 2026-09-21: advisor_conduct dropped with the category itself - the accusation that the psychics are not real is carried by a billing ticket, and the category was never the primary label on any row in any set.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 dollar became 49, the remaining 32-dollar balance was burnt by a six-minute chat at roughly 5 per minute, and a receipt was refused outright when asked for. SECONDARY 2026-09-21: advisor_conduct dropped with the category itself - the accusation that the psychics are not real is carried by a billing ticket, and the category was never the primary label on any row in any set.",
       "confidence": 0.55,
       "kb_covered": true,
       "kb_articles": [
@@ -1073,7 +1065,7 @@
       "reply_latency_sec": 5691802
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed",
         "content_quality",
@@ -1081,7 +1073,7 @@
       ],
       "priority": "2",
       "next_step": "process_refund",
-      "rationale": "The 1-dollar package became a 39-dollar month; nothing appeared under iCloud subscriptions and it could only be cancelled on the website, which names the rail Nebula can refund itself.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. The 1-dollar package became a 39-dollar month; nothing appeared under iCloud subscriptions and it could only be cancelled on the website, which names the rail Nebula can refund itself.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1176,7 +1168,7 @@
       "reply_latency_sec": 112696
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "service_not_delivered",
         "refund_request",
@@ -1184,7 +1176,7 @@
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "An extra 425,000 VND taken without consent is not a renewal of the 20,000 paid for a reading, which the crash never delivered; a refund and cancellation are demanded today.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. An extra 425,000 VND taken without consent is not a renewal of the 20,000 paid for a reading, which the crash never delivered; a refund and cancellation are demanded today.",
       "confidence": 0.65,
       "kb_covered": false,
       "kb_articles": []
@@ -1244,7 +1236,7 @@
     "text_sha256": "4c531ec83450f145aad879923758df77caedda8d10c21a269725237d65565380",
     "chars": 280,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -1276,14 +1268,14 @@
       "reply_latency_sec": 6445
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
         "cancellation_failed"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-20: was refund_request. The card was charged automatically after a trial the writer did not find useful - that is the converted-trial pattern, and the refund is the demand, not the cause. Support has not answered the address they were sent to.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. AUDIT 2026-09-20: was refund_request. The card was charged automatically after a trial the writer did not find useful - that is the converted-trial pattern, and the refund is the demand, not the cause. Support has not answered the address they were sent to.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1298,7 +1290,7 @@
     "text_sha256": "e8ada6fdf14a91d3573f51efbd2b5691bafa4f52f098658c1c4f73d2ddf8a24a",
     "chars": 168,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -1330,13 +1322,13 @@
       "reply_latency_sec": 11330
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "Debited without ever having a consultation or using the three free minutes, and asks how to get a refund; no store is named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Debited without ever having a consultation or using the three free minutes, and asks how to get a refund; no store is named.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1351,7 +1343,7 @@
     "text_sha256": "64984bf214f1fa651b57ad7793929f41850cbcc664e415b0225be0966b47d99c",
     "chars": 1587,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1386,14 +1378,13 @@
       "reply_latency_sec": 7223787
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "trial_converted",
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-21: was unauthorized_charge, which the rules reserve for 'a charge with no prior purchase at all' - an accepted $1 quiz charge is a prior purchase. The models say trial_converted and that is not right either: the writer's complaint is 'I was not informed clearly that an $77.3 charge would be made', and trial_converted excludes exactly that - 'if the complaint is that the price was never displayed at all, that is pricing_unclear'.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. AUDIT 2026-09-21: was unauthorized_charge, which the rules reserve for 'a charge with no prior purchase at all' - an accepted $1 quiz charge is a prior purchase. The models say trial_converted and that is not right either: the writer's complaint is 'I was not informed clearly that an $77.3 charge would be made', and trial_converted excludes exactly that - 'if the complaint is that the price was never displayed at all, that is pricing_unclear'.",
       "confidence": 0.7,
       "kb_covered": false,
       "kb_articles": []
@@ -1405,7 +1396,7 @@
     "text_sha256": "ff8d4f1547e131624c320f9d94cbc689d7091e6f92e1c5794fd59a33ebd9be1e",
     "chars": 176,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted"
@@ -1452,7 +1443,7 @@
     "text_sha256": "8dd1915220d332b1d46d23bef4513ffe2b5bc7ec97991972f65a473be06ea07c",
     "chars": 584,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -1486,14 +1477,13 @@
       "reply_latency_sec": 129761
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-21: was unauthorized_charge. The writer 'decided to try the free trial' and was auto-charged $49.99 seven days later - the canonical conversion, and R1 applies verbatim: a charge that followed a small starting payment is trial_converted even when the writer calls it a scam. Priority stays 1: three charges, the last one recent, and nothing says the billing stopped.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. AUDIT 2026-09-21: was unauthorized_charge. The writer 'decided to try the free trial' and was auto-charged $49.99 seven days later - the canonical conversion, and R1 applies verbatim: a charge that followed a small starting payment is trial_converted even when the writer calls it a scam. Priority stays 1: three charges, the last one recent, and nothing says the billing stopped.",
       "confidence": 0.6,
       "kb_covered": false,
       "kb_articles": []
@@ -1505,7 +1495,7 @@
     "text_sha256": "80634745dd6937929c73738f578553a6e4849cca1ad1b41b0362406bd74320f7",
     "chars": 647,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1538,13 +1528,11 @@
       "reply_latency_sec": 132264
     },
     "label": {
-      "category": "trial_converted",
-      "secondary_categories": [
-        "unauthorized_charge"
-      ],
+      "category": "subscription_trap",
+      "secondary_categories": [],
       "priority": "3",
       "next_step": "acknowledge_and_close",
-      "rationale": "Three months of charges followed a 1-dollar trial, but support refunded them quickly once contacted; what remains is an accusation about the pattern, not an open case.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Three months of charges followed a 1-dollar trial, but support refunded them quickly once contacted; what remains is an accusation about the pattern, not an open case.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1559,7 +1547,7 @@
     "text_sha256": "19486a3e35f50e4c9cc9aa4df9d36f01afeb855945bb380f3e477cbb92786782",
     "chars": 327,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1592,14 +1580,13 @@
       "reply_latency_sec": 137337
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "1 euro for a sketch, then 42.99 on the card with no further use of the app - the converted-trial pattern - and a refund is requested. No store is named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 euro for a sketch, then 42.99 on the card with no further use of the app - the converted-trial pattern - and a refund is requested. No store is named.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1614,7 +1601,7 @@
     "text_sha256": "54cb23074dcd44bb459883ae7dd963c82665f851c733a3c4fa7593baca7544f5",
     "chars": 338,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1643,14 +1630,13 @@
       "reply_latency_sec": 99930
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "service_not_delivered",
-        "unauthorized_charge"
+        "service_not_delivered"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Paid 1 pound for quiz results that never arrived, was subscribed unknowingly, and the 50-pound attempt was blocked by the bank as fraudulent - which puts an institution in the case.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Paid 1 pound for quiz results that never arrived, was subscribed unknowingly, and the 50-pound attempt was blocked by the bank as fraudulent - which puts an institution in the case.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1665,7 +1651,7 @@
     "text_sha256": "c0aa81b128f145c2683fda892658db520449105a5a449f0085c1500b3f163a1f",
     "chars": 187,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge"
@@ -1711,7 +1697,7 @@
     "text_sha256": "08e2ab6865fa1283f91c755b81f5d847601909250374bb5fcaa3a3b9b4051669",
     "chars": 402,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1744,14 +1730,13 @@
       "reply_latency_sec": 154834
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "1 dollar for an advertisement followed seven days later by 51 automatically - the converted-trial pattern - with a demand for a full refund and no store named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 dollar for an advertisement followed seven days later by 51 automatically - the converted-trial pattern - with a demand for a full refund and no store named.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1802,7 +1787,7 @@
       "category": "cancellation_failed",
       "secondary_categories": [
         "refund_request",
-        "trial_converted"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -1900,14 +1885,11 @@
       "reply_latency_sec": 883
     },
     "label": {
-      "category": "trial_converted",
-      "secondary_categories": [
-        "data_privacy",
-        "unauthorized_charge"
-      ],
+      "category": "subscription_trap",
+      "secondary_categories": [],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "50 dollars keeps being taken after a single 1-dollar question, the stored debit card cannot be removed, and the bank is being asked to cancel the card.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 50 dollars keeps being taken after a single 1-dollar question, the stored debit card cannot be removed, and the bank is being asked to cancel the card.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1953,7 +1935,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -2050,14 +2032,13 @@
       "reply_latency_sec": 625
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "1 dollar on 17 October became 43.99 on 30 October with no subscription applied for, and the question is how to get it back. No store is named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 dollar on 17 October became 43.99 on 30 October with no subscription applied for, and the question is how to get it back. No store is named.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -2104,14 +2085,13 @@
       "reply_latency_sec": 115301
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "process_refund",
-      "rationale": "A free trial ended as an annual plan that was never intended; Apple declined the request because it went through a third party, which names the rail Nebula can refund itself.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A free trial ended as an annual plan that was never intended; Apple declined the request because it went through a third party, which names the rail Nebula can refund itself.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -2211,13 +2191,11 @@
       "reply_latency_sec": 111784
     },
     "label": {
-      "category": "trial_converted",
-      "secondary_categories": [
-        "pricing_unclear"
-      ],
+      "category": "subscription_trap",
+      "secondary_categories": [],
       "priority": "3",
       "next_step": "acknowledge_and_close",
-      "rationale": "A 1-dollar Soulmate offer carried a 49.99 renewal that was not made obvious, but support has already refunded it in full and confirmed the cancellation.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A 1-dollar Soulmate offer carried a 49.99 renewal that was not made obvious, but support has already refunded it in full and confirmed the cancellation.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -2263,7 +2241,7 @@
     "label": {
       "category": "refund_request",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -2356,14 +2334,13 @@
       "reply_latency_sec": 880
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "Charged 13.67 reais and then nearly 80 after a conversion into dollars, which is not the amount that was presented; a refund is demanded.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. Charged 13.67 reais and then nearly 80 after a conversion into dollars, which is not the amount that was presented; a refund is demanded.",
       "confidence": 0.55,
       "kb_covered": true,
       "kb_articles": [
@@ -2401,13 +2378,13 @@
       "reply_latency_sec": 919
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
         "content_quality"
       ],
       "priority": "3",
       "next_step": "send_kb_article",
-      "rationale": "Paying a subscription and still being charged for individual sections is the complaint; no charge is disputed and what a subscription includes is documented.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. Paying a subscription and still being charged for individual sections is the complaint; no charge is disputed and what a subscription includes is documented.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -2445,13 +2422,13 @@
       "reply_latency_sec": 121
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-21: was cancellation_failed. The subscription appears neither in the Play Store nor in the account and no starting payment is named, so there is nothing to cancel - the same conditional clause that sent gp:90556d05-623 the other way, because there a dollar WAS named and here none is.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. AUDIT 2026-09-21: was cancellation_failed. The subscription appears neither in the Play Store nor in the account and no starting payment is named, so there is nothing to cancel - the same conditional clause that sent gp:90556d05-623 the other way, because there a dollar WAS named and here none is.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -2489,13 +2466,13 @@
       "reply_latency_sec": 4949600
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Over 50 dollars taken every month with no active subscription and no use of the app for months, so nothing is being renewed.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Over 50 dollars taken every month with no active subscription and no use of the app for months, so nothing is being renewed.",
       "confidence": 0.7,
       "kb_covered": false,
       "kb_articles": []

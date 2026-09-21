@@ -328,6 +328,11 @@ PROBES: dict[str, re.Pattern] = {
 KB_ANSWERS: dict[str, list[str]] = {
     "refund_request": ["pol-04", "pol-14", "pol-18"],
     "cancellation_failed": ["hc-28900802305297", "pol-16"],
+    # The union of what trial_converted and pricing_unclear used to cite, since
+    # subscription_trap is the union of the two. unauthorized_charge cited
+    # nothing, deliberately - the knowledge base has no article for a charge the
+    # writer denies, which is why the automation gate stops those.
+    "subscription_trap": ["pol-05", "faq-09", "hc-28898955150609"],
     "trial_converted": ["pol-05", "faq-09"],
     "pricing_unclear": ["hc-28898955150609", "faq-09"],
     "service_not_delivered": ["hc-28901216899857", "hc-28901045413393"],

@@ -36,7 +36,7 @@
     "label": {
       "category": "refund_request",
       "secondary_categories": [
-        "trial_converted"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
@@ -78,13 +78,13 @@
       "reply_latency_sec": 104871
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed"
       ],
       "priority": "3",
       "next_step": "acknowledge_and_close",
-      "rationale": "The trial auto-converted and was debited, but the writer found the in-app cancellation by translating the English, then also stopped the PayPal auto-payment - the case is closed by their own hand and the post is advice for others.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. The trial auto-converted and was debited, but the writer found the in-app cancellation by translating the English, then also stopped the PayPal auto-payment - the case is closed by their own hand and the post is advice for others.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -129,7 +129,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -224,7 +224,7 @@
     "label": {
       "category": "refund_request",
       "secondary_categories": [
-        "pricing_unclear"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
@@ -269,7 +269,7 @@
     "label": {
       "category": "refund_request",
       "secondary_categories": [
-        "pricing_unclear"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
@@ -368,14 +368,13 @@
       "reply_latency_sec": 131
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "1 EUR became an automatic 46 EUR payment a week later - a converted trial whatever the writer calls authorisation - and a payment dispute has already been opened.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. 1 EUR became an automatic 46 EUR payment a week later - a converted trial whatever the writer calls authorisation - and a payment dispute has already been opened.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -416,7 +415,7 @@
       "category": "cancellation_failed",
       "secondary_categories": [
         "refund_request",
-        "trial_converted"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -464,15 +463,14 @@
       "reply_latency_sec": 872
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
-        "service_not_delivered",
-        "trial_converted"
+        "service_not_delivered"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "$0.50 bought a soulmate drawing that never arrived, the account and app were deleted, and $78 (over 2,000 lira) was then taken from the credit card - a charge landing after deletion, with the police named if it is not returned.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. $0.50 bought a soulmate drawing that never arrived, the account and app were deleted, and $78 (over 2,000 lira) was then taken from the credit card - a charge landing after deletion, with the police named if it is not returned.",
       "confidence": 0.55,
       "kb_covered": false,
       "kb_articles": []
@@ -516,7 +514,7 @@
       "category": "service_not_delivered",
       "secondary_categories": [
         "refund_request",
-        "pricing_unclear"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "request_evidence",
@@ -569,7 +567,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "1",
@@ -664,15 +662,14 @@
       "reply_latency_sec": 122936
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed",
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "A three-day free trial produced a 60+ charge and a term that runs for a YEAR, which R1 assigns to trial_converted: a charge that followed a trial is trial_converted however the writer names it. Priority 1 on stated facts - the yearly subscription is live, the writer cancelled and was charged anyway, and support answered that it cannot find a subscription to cancel, so the charges are not stopped and the documented route has already failed. CORRECTED 2026-09-21: was cancellation_failed. The failed cancellation is real and stays as a secondary, but it is what happened after the charge, not what caused it. Wrong in all three runs of gpt-5-mini, which chose trial_converted every time.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A three-day free trial produced a 60+ charge and a term that runs for a YEAR, which R1 assigns to trial_converted: a charge that followed a trial is trial_converted however the writer names it. Priority 1 on stated facts - the yearly subscription is live, the writer cancelled and was charged anyway, and support answered that it cannot find a subscription to cancel, so the charges are not stopped and the documented route has already failed. CORRECTED 2026-09-21: was cancellation_failed. The failed cancellation is real and stays as a secondary, but it is what happened after the charge, not what caused it. Wrong in all three runs of gpt-5-mini, which chose trial_converted every time.",
       "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
@@ -718,13 +715,13 @@
       "reply_latency_sec": -1139874
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Two 39$ charges against an account whose only purchase was one 9$ chat, so neither is a renewal of anything agreed, and the writer deleted the account to make the charging stop after three weeks of silence from support.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Two 39$ charges against an account whose only purchase was one 9$ chat, so neither is a renewal of anything agreed, and the writer deleted the account to make the charging stop after three weeks of silence from support.",
       "confidence": 0.75,
       "kb_covered": false,
       "kb_articles": []
@@ -736,7 +733,7 @@
     "text_sha256": "3e9ebeb0fd75e90174f99ab465fc0eacd48228d369fcaf04b48c9b61367381b2",
     "chars": 487,
     "selection": {
-      "cell": "pricing_unclear",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -771,15 +768,13 @@
       "reply_latency_sec": 857
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "A 1 dollar sketch payment they did make was followed by 29.99 for a subscription, which is a converted trial however the writer words it; one bounded charge to reverse and no store named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A 1 dollar sketch payment they did make was followed by 29.99 for a subscription, which is a converted trial however the writer words it; one bounded charge to reverse and no store named.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -794,7 +789,7 @@
     "text_sha256": "7cb5dae42a10a52e67a8d3ef8ecc27bcff1ebf904c3e295fdb731317003ebe3e",
     "chars": 464,
     "selection": {
-      "cell": "pricing_unclear",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -827,15 +822,13 @@
       "reply_latency_sec": 626
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "pricing_unclear",
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "Agreed to 1$ from an advert and was then charged 14$, so the money came from the offer they accepted; one charge to reverse, the app is already uninstalled, and no purchase rail is named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Agreed to 1$ from an advert and was then charged 14$, so the money came from the offer they accepted; one charge to reverse, the app is already uninstalled, and no purchase rail is named.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1039,7 +1032,7 @@
       "reply_latency_sec": 8664
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
         "cancellation_failed",
         "service_not_delivered",
@@ -1047,7 +1040,7 @@
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "A $1 palmistry offer became a $26 two-week subscription, the cancellation link could not be found and customer service resolved nothing, so the recurring charge is still running.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A $1 palmistry offer became a $26 two-week subscription, the cancellation link could not be found and customer service resolved nothing, so the recurring charge is still running.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1096,9 +1089,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge",
-        "trial_converted",
-        "data_privacy"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -1270,7 +1261,7 @@
     "text_sha256": "a6ba892145aa37f01c1ff4a60e5dd2633a96c16afd372838fa5d9f122353b081",
     "chars": 272,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted"
@@ -1302,7 +1293,7 @@
       "secondary_categories": [
         "cancellation_failed",
         "refund_request",
-        "trial_converted"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "guide_cancellation",
@@ -1321,7 +1312,7 @@
     "text_sha256": "d90a44cef8c88057fdd8016fe7f202169c07f3349fa89b203f5747b33d5defab",
     "chars": 824,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1354,15 +1345,13 @@
       "reply_latency_sec": 134852
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "A one-time $1 payment from an Instagram ad was followed a week later by $65 AUD: the fact pattern is a converted trial despite the wording, one bounded charge to reverse and no store named.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A one-time $1 payment from an Instagram ad was followed a week later by $65 AUD: the fact pattern is a converted trial despite the wording, one bounded charge to reverse and no store named.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -1377,7 +1366,7 @@
     "text_sha256": "b0f04c35f2f4d72e324a6a20d778d29dab025b0177eeccca3ec0f30df021c09f",
     "chars": 338,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -1409,14 +1398,13 @@
       "reply_latency_sec": 336
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "$1 paid for a one-time three-minute reading then an exorbitant debit after the app was deleted - the 1-dollar-to-subscription pattern - with one charge to reverse and no purchase rail stated.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. $1 paid for a one-time three-minute reading then an exorbitant debit after the app was deleted - the 1-dollar-to-subscription pattern - with one charge to reverse and no purchase rail stated.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -1431,7 +1419,7 @@
     "text_sha256": "148fd7afb5d97e1e8f88d1ed0b53d7d376691ba828edef7a08e2af44d11ee55e",
     "chars": 335,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted"
@@ -1461,7 +1449,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "2",
@@ -1481,7 +1469,7 @@
     "text_sha256": "16200960233f4eccd6c7c9235321a32fc6925c4defb5c5dc2e784f27abc13077",
     "chars": 793,
     "selection": {
-      "cell": "trial_converted",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "trial_converted",
@@ -1515,14 +1503,13 @@
       "reply_latency_sec": 127695
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "pricing_unclear"
+        "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-21: next_step was ask_purchase_rail. The documented route was already followed and failed: the app was deleted and the charge landed again, which is the first escalation trigger verbatim. 11 of 12 runs.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. AUDIT 2026-09-21: next_step was ask_purchase_rail. The documented route was already followed and failed: the app was deleted and the charge landed again, which is the first escalation trigger verbatim. 11 of 12 runs.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1537,7 +1524,7 @@
     "text_sha256": "daa28b3ea060d8def3fcbbcfeb47f08528f4ed4b7c6ddbf285a6905749654c35",
     "chars": 854,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge"
@@ -1564,8 +1551,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "pricing_unclear",
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
@@ -1584,7 +1570,7 @@
     "text_sha256": "e9805698d9a3c11fdf002e9550f1c6c9ca1f75e2792d324c5f3bc4f3ad30dcf4",
     "chars": 170,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1614,13 +1600,13 @@
       "reply_latency_sec": 2055
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Two different amounts, $43 and $71, taken three days apart is not the renewal cycle of anything agreed to, and nothing indicates the billing has stopped.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. Two different amounts, $43 and $71, taken three days apart is not the renewal cycle of anything agreed to, and nothing indicates the billing has stopped.",
       "confidence": 0.7,
       "kb_covered": false,
       "kb_articles": []
@@ -1632,7 +1618,7 @@
     "text_sha256": "862a2e416b7b44e1157e1d61bfada16e249510844a48ee410917cbbe3c0d0860",
     "chars": 272,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1662,13 +1648,13 @@
       "reply_latency_sec": 915
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "USD 20.99 taken for four consecutive months while repeated checks show no subscription in the app, so there is no agreed subscription for the charges to be renewing and no visible way to stop the fifth.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. USD 20.99 taken for four consecutive months while repeated checks show no subscription in the app, so there is no agreed subscription for the charges to be renewing and no visible way to stop the fifth.",
       "confidence": 0.65,
       "kb_covered": false,
       "kb_articles": []
@@ -1680,7 +1666,7 @@
     "text_sha256": "723ace22de90330e57d49d6b593e2d81f4fdfd768d394155618fb00811b3f188",
     "chars": 384,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1710,14 +1696,13 @@
       "reply_latency_sec": 524
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "refund_request",
-        "unauthorized_charge"
+        "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "$5 paid for a survey reading became $67 debited a week later, the textbook converted-trial pattern, and the card is blocked with a bank dispute already open.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. $5 paid for a survey reading became $67 debited a week later, the textbook converted-trial pattern, and the card is blocked with a bank dispute already open.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -1732,7 +1717,7 @@
     "text_sha256": "c119162d13f8b6370dec9bb8d9abe30566a607c44ccfe19ef5f8664f071e1dc8",
     "chars": 852,
     "selection": {
-      "cell": "unauthorized_charge",
+      "cell": "subscription_trap",
       "in_window": true,
       "probes": [
         "unauthorized_charge",
@@ -1762,15 +1747,14 @@
       "reply_latency_sec": 113267
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
-        "cancellation_failed",
-        "data_privacy"
+        "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "AUDIT 2026-09-21: was refund_request. The dictionary excludes that explicitly - 'if they say they never authorised the charge at all, that is unauthorized_charge' - and the ticket says 'charged without clearly realizing or authorizing these payments' and 'the unauthorized charges'. Neither limb of refund_request applies: a cause IS identified, and this is the first request rather than a refused one. 10 of 12 runs.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. AUDIT 2026-09-21: was refund_request. The dictionary excludes that explicitly - 'if they say they never authorised the charge at all, that is unauthorized_charge' - and the ticket says 'charged without clearly realizing or authorizing these payments' and 'the unauthorized charges'. Neither limb of refund_request applies: a cause IS identified, and this is the first request rather than a refused one. 10 of 12 runs.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1917,8 +1901,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
-        "pricing_unclear"
+        "subscription_trap"
       ],
       "priority": "1",
       "next_step": "guide_cancellation",
@@ -1967,7 +1950,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "1",
@@ -2068,7 +2051,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "1",
@@ -2167,13 +2150,13 @@
       "reply_latency_sec": 125526
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "2",
       "next_step": "ask_purchase_rail",
-      "rationale": "AUDIT 2026-09-21: next_step was escalate_to_human, and not one escalation trigger is present - one bounded charge of 49.99, support never contacted, no third party, no stated vulnerability. 'Do NOT escalate when the ticket is one bounded charge, nothing has been tried yet.' No store is named, so the missing thing is the purchase rail. 9 of 12.",
+      "rationale": "MERGED 2026-09-21: was unauthorized_charge. AUDIT 2026-09-21: next_step was escalate_to_human, and not one escalation trigger is present - one bounded charge of 49.99, support never contacted, no third party, no stated vulnerability. 'Do NOT escalate when the ticket is one bounded charge, nothing has been tried yet.' No store is named, so the missing thing is the purchase rail. 9 of 12.",
       "confidence": 0.6,
       "kb_covered": false,
       "kb_articles": []
@@ -2219,7 +2202,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "3",
       "next_step": "acknowledge_and_close",
@@ -2267,14 +2250,13 @@
       "reply_latency_sec": 105289
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "unauthorized_charge",
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "Paid only for a one-off sketch and was then billed a subscription - the same small-purchase-then-subscription sequence the calibration treats as a converted trial - and the emailed refund request went unanswered.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. Paid only for a one-off sketch and was then billed a subscription - the same small-purchase-then-subscription sequence the calibration treats as a converted trial - and the emailed refund request went unanswered.",
       "confidence": 0.55,
       "kb_covered": true,
       "kb_articles": [
@@ -2326,7 +2308,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "trial_converted",
+        "subscription_trap",
         "refund_request"
       ],
       "priority": "2",
@@ -2369,14 +2351,13 @@
       "reply_latency_sec": 100543
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "pricing_unclear",
         "content_quality"
       ],
       "priority": "3",
       "next_step": "send_kb_article",
-      "rationale": "The first payment silently creates a subscription with a direct-debit mandate, which is R1: a subscription that follows a small starting payment is trial_converted. Priority stays 3 - the ticket is a warning written for other readers, phrased generically ('wenn man ... etwas bezahlt'), with no amount, no date and no request, so nothing is stated as moving for this writer. send_kb_article stays because pol-05 and faq-09 answer the conversion allegation directly, which acknowledge_and_close would not. CORRECTED 2026-09-21: was pricing_unclear, which is how the charge happened rather than what happened.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. The first payment silently creates a subscription with a direct-debit mandate, which is R1: a subscription that follows a small starting payment is trial_converted. Priority stays 3 - the ticket is a warning written for other readers, phrased generically ('wenn man ... etwas bezahlt'), with no amount, no date and no request, so nothing is stated as moving for this writer. send_kb_article stays because pol-05 and faq-09 answer the conversion allegation directly, which acknowledge_and_close would not. CORRECTED 2026-09-21: was pricing_unclear, which is how the charge happened rather than what happened.",
       "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
@@ -2416,7 +2397,7 @@
     "label": {
       "category": "cancellation_failed",
       "secondary_categories": [
-        "unauthorized_charge"
+        "subscription_trap"
       ],
       "priority": "2",
       "next_step": "guide_cancellation",
@@ -2502,14 +2483,13 @@
       "reply_latency_sec": 4563814
     },
     "label": {
-      "category": "trial_converted",
+      "category": "subscription_trap",
       "secondary_categories": [
-        "cancellation_failed",
-        "unauthorized_charge"
+        "cancellation_failed"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "A USD 0.50 birth chart reading became a monthly subscription already charged twice, and Nebula was told once already and billed again, so the collections are still running.",
+      "rationale": "MERGED 2026-09-21: was trial_converted. A USD 0.50 birth chart reading became a monthly subscription already charged twice, and Nebula was told once already and billed again, so the collections are still running.",
       "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
@@ -2524,7 +2504,7 @@
     "text_sha256": "af88efe7f486a6edba50e95ae0344f20db0934053ad156e1cdd68ab21a0dbf32",
     "chars": 388,
     "selection": {
-      "cell": "supplement:pricing_unclear",
+      "cell": "supplement:subscription_trap",
       "in_window": false,
       "probes": [
         "refund_request",
@@ -2546,7 +2526,7 @@
         "non_latin_script": false
       },
       "addressed_to_company": false,
-      "added_for": "pricing_unclear"
+      "added_for": "subscription_trap"
     },
     "provenance": {
       "store": "appstore",
@@ -2558,13 +2538,13 @@
       "reply_latency_sec": 142675
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "A free download with a monthly or yearly subscription buried in the fine print, then a charge with no warning. No starting payment is named, so R1 does not apply and this stays a transparency complaint. Priority 2: one charge landed and the refund was refused by support - refused by the store as well would be the priority 1 trigger, and the ticket does not say that. escalate_to_human because support has already answered and its answer was no.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. A free download with a monthly or yearly subscription buried in the fine print, then a charge with no warning. No starting payment is named, so R1 does not apply and this stays a transparency complaint. Priority 2: one charge landed and the refund was refused by support - refused by the store as well would be the priority 1 trigger, and the ticket does not say that. escalate_to_human because support has already answered and its answer was no.",
       "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
@@ -2579,7 +2559,7 @@
     "text_sha256": "8492778cdee88705624b250928670c814bb3bb42fb9d59d63a060759eb063ec6",
     "chars": 705,
     "selection": {
-      "cell": "supplement:pricing_unclear",
+      "cell": "supplement:subscription_trap",
       "in_window": false,
       "probes": [
         "refund_request",
@@ -2601,7 +2581,7 @@
         "non_latin_script": false
       },
       "addressed_to_company": false,
-      "added_for": "pricing_unclear"
+      "added_for": "subscription_trap"
     },
     "provenance": {
       "store": "appstore",
@@ -2613,14 +2593,14 @@
       "reply_latency_sec": 222408
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [
         "refund_request",
         "content_quality"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "Wanted a pet-recommendation report, was charged 29.99 EUR for a psychic guide through pop-ups and a confusing layout - the terms of what was being bought were not visible before paying. Support offered credits or 50% and refused a full refund, so the documented route has been followed and failed. One bounded charge, so priority 2.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. Wanted a pet-recommendation report, was charged 29.99 EUR for a psychic guide through pop-ups and a confusing layout - the terms of what was being bought were not visible before paying. Support offered credits or 50% and refused a full refund, so the documented route has been followed and failed. One bounded charge, so priority 2.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -2635,7 +2615,7 @@
     "text_sha256": "d801674d610703ca06d29ceff29fb774aa297b38c10ac8eb4272c2c21189443d",
     "chars": 1158,
     "selection": {
-      "cell": "supplement:pricing_unclear",
+      "cell": "supplement:subscription_trap",
       "in_window": true,
       "probes": [
         "refund_request",
@@ -2657,7 +2637,7 @@
         "non_latin_script": false
       },
       "addressed_to_company": false,
-      "added_for": "pricing_unclear"
+      "added_for": "subscription_trap"
     },
     "provenance": {
       "store": "appstore",
@@ -2669,11 +2649,11 @@
       "reply_latency_sec": 109586
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "subscription_trap",
       "secondary_categories": [],
       "priority": "3",
       "next_step": "send_kb_article",
-      "rationale": "Recurring charges hidden behind advertising that implies a very small amount. Written generically about 'users' with no amount, no date and no request, so nothing is stated as moving for this writer and priority is 3. faq-09 and the pricing article answer the allegation directly, which acknowledge_and_close would not.",
+      "rationale": "MERGED 2026-09-21: was pricing_unclear. Recurring charges hidden behind advertising that implies a very small amount. Written generically about 'users' with no amount, no date and no request, so nothing is stated as moving for this writer and priority is 3. faq-09 and the pricing article answer the allegation directly, which acknowledge_and_close would not.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -2720,7 +2700,7 @@
     "label": {
       "category": "content_quality",
       "secondary_categories": [
-        "pricing_unclear",
+        "subscription_trap",
         "cancellation_failed",
         "refund_request"
       ],
@@ -3049,6 +3029,1792 @@
       "confidence": 0.65,
       "kb_covered": false,
       "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-r01",
+    "text": "Hello, on 3 September your colleague confirmed by email that my 49.99 would be refunded within 5 to 10 working days. It is now the 28th and nothing has arrived. My bank confirms no incoming payment from you. I am not disputing the charge any more, we agreed it was wrong - I just need the refund that was promised. Reference from your email is RF-88214.",
+    "text_sha256": "44bc754230c91a27a1f7fac7b4249db95dfb19ecd8c95a4882fd5e9692dc3dff",
+    "chars": 353,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The charge is no longer in dispute, both sides agreed it was wrong. What is stuck is the refund itself, which is the second situation that makes refund_request primary. Priority 2: one bounded sum, no repetition, no third party. escalate_to_human because a written promise was not kept - the documented route has already been followed.",
+      "confidence": 0.9,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r02",
+    "text": "I have now been refused a refund twice: Apple declined it because the purchase was made on your website, and your support team declined it because they say Apple handles refunds. Each of you is pointing at the other. The amount is 79.98 for two months I did not use. I would like someone to actually take responsibility for this.",
+    "text_sha256": "39b51c8d064908186f13ba13e0d0a9c722e5e75e79179166f97a7aa9ab6c4122",
+    "chars": 329,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "1",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. Refused by the store AND by support, which the priority rule names explicitly as a priority 1 fact. The category is refund_request because nothing about the original charge is in dispute - the deadlock over who refunds it IS the ticket. escalate_to_human: both documented routes have been tried and both failed.",
+      "confidence": 0.9,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r03",
+    "text": "Please refund the 45 you took from my card. I do not want to use this any more and I would like my money back. Nothing else to add really, I just want it returned. Thank you.",
+    "text_sha256": "1f8cdd6fbb44b56c4620f31289735afdf15d61dd3719df026a760033a0908393",
+    "chars": 174,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "ask_purchase_rail",
+      "rationale": "SYNTHETIC 2026-09-21. The first of the two situations: the writer wants money back and says nothing at all about how the charge came about. No trial, no cancellation attempt, no denial. ask_purchase_rail because the refund cannot be routed without knowing the store, and the ticket does not say - which is exactly why that step is the modal value rather than a fallback.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r04",
+    "text": "Your agent offered me 50% of the 39.99 back as a goodwill gesture. I declined because I was charged for a full month I never used, so half is not a resolution. I have replied three times asking for the full amount and each reply comes back as the same template about our refund policy. Can a human read this please.",
+    "text_sha256": "5c488f0e43b5caca39c42c64bde2d2b0c0f71a97454e428b17abffb9425e208c",
+    "chars": 315,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The dispute is entirely about the size of the refund, not about the charge. Support has answered and answered with a template, which is the 'answered with a bot' escalation trigger in substance. Priority 2: bounded sum, nothing repeating, no third party named.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r05",
+    "text": "You processed my refund to the card ending 4417, which was closed by my bank in July. The money has bounced back to you. I have told your support this twice and both times they replied that the refund was completed on their side. It was not completed on mine. I can give you current details if you tell me where to send them securely.",
+    "text_sha256": "4b55b890d87f6b5f5b50a18e17eb828df6328955b95cf8b049088957e23d7374",
+    "chars": 334,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The refund was issued and did not land, and support keeps asserting it did. A payment has to be traced, which no article and no self-service route can do. Priority 2 - one bounded amount, and the writer is cooperative, not escalating to anyone.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r06",
+    "text": "I asked for my 29.99 back and you credited my account with 30 dollars of reading credits instead. I do not want credits, I want the money returned to my card. I will not be using the app again so the credits are worthless to me. Please reverse the credit and refund properly.",
+    "text_sha256": "41e52f45d2a2122fa57542d00eb9d684235a686049eca6ab25236aa9496f561f",
+    "chars": 275,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The refund was answered with something that is not a refund. The charge itself is not contested, and no other category describes 'the remedy offered is the wrong remedy'. Priority 2, and a person has to reverse a credit - there is no self-service route for that.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r07",
+    "text": "I have to file my dispute with the bank by tomorrow or I lose the right to. I have written to you four times about the 51.98 and every reply is from an automated assistant that does not answer the question. Tell me before tomorrow whether you will refund it, otherwise the bank decides for both of us.",
+    "text_sha256": "cee245f810a3d7cd8fc679cbca1893b465e8dae682ee4506ca0d40707489e2f4",
+    "chars": 301,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "1",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. A third party is named with a deadline, and the writer states that support answered only with a bot - two priority 1 facts, both written in the text rather than inferred from urgency. escalate_to_human, and this is the case where routing to an article would cost the company the chargeback.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-r08",
+    "text": "Ignore my earlier message - I found the refund. It had gone to my old PayPal balance rather than the card, which is why I could not see it on my statement. Everything is settled. Thank you for the quick reply yesterday, and sorry for the noise.",
+    "text_sha256": "b11bbc9306f9f54d959c41437dc5a4b9f9cb00f05bc63814c222df677ed66743",
+    "chars": 244,
+    "selection": {
+      "cell": "synthetic:refund_request",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "refund_request",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "refund_request",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "acknowledge_and_close",
+      "rationale": "SYNTHETIC 2026-09-21. Already resolved by the writer, which the rule makes priority 3 and acknowledge_and_close however large the sum was. The category is still refund_request because the refund is what the ticket is about; it simply is not stuck any more. This is the row that tests whether a model reads the resolution or reacts to the word refund.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c01",
+    "text": "My rising sign is showing as Libra but every other chart I have ever had, including my astrologer's, gives Scorpio. I have checked the birth date, time and city in my profile three times and they are all correct. Could you look at how the ascendant is being calculated? I am not asking for money back, I just want the chart to be right.",
+    "text_sha256": "5f5bcce58539145c49b4229ba6dc156dc1f31a59ce485462f833fcb69683d6b3",
+    "chars": 336,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. Correct input, wrong output, and the writer has already ruled out the obvious cause. The sign being wrong is named in the definition. Nothing is moving and nothing is blocked, so priority 3, and the chart article is the sourced answer.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c02",
+    "text": "The daily horoscope this morning told me to avoid making decisions about money, and the weekly one for the same period says this is an excellent week to commit financially. Both are on the same screen. Which one am I supposed to believe? It is hard to take any of it seriously when it contradicts itself in two places.",
+    "text_sha256": "1d2ee3fb5335223bbe48efc03b16d51869c17dc8354eaa4ddd39126f9758b6fa",
+    "chars": 318,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The content contradicts other content from the same product, which the definition covers. No purchase is disputed, nothing is blocked. The honest answer here is the entertainment-purposes policy, which is why send_kb_article rather than escalation.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c03",
+    "text": "My friend and I both bought the soulmate reading and compared them last night. They are word for word identical apart from the names and one sentence about our birth months. We have different birth years, different cities and different signs. That is not a personalised reading, that is a template with a find and replace.",
+    "text_sha256": "c9ccab03ff433a38942cb50e45db54e8626223e09835e0ae939beb09515db2e5",
+    "chars": 322,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. Generic content, demonstrated rather than asserted - two readings compared side by side. The definition names generic explicitly. No money in motion and nothing blocked, so priority 3.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c04",
+    "text": "The compatibility report I ordered is about someone born in 1987. My partner was born in 1991 and that is the date I entered - it is still showing correctly in the app under his profile. So the report has been generated against the wrong person entirely. Can it be regenerated?",
+    "text_sha256": "a4a80ea05cd9905f83cc178b2cd9e3f942c00a276940b874bb86fc43a8f6c17a",
+    "chars": 277,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The report was built on data other than what was entered, and the app still shows the correct data, so this is the product getting it wrong rather than a typo. Priority 3: a regeneration is asked for, not money, and nothing is blocked.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c05",
+    "text": "I paid for the full birth chart report expecting the kind of detail your sample page shows. What arrived is 41 pages, of which maybe four are about me - the rest is general descriptions of what each planet means, copied from what looks like a textbook. I would have been happy with six pages that were actually about my chart.",
+    "text_sha256": "78be17de23f9691cd419b294d88a0515e5883db7c8b6a19008e3050ad1f7db41",
+    "chars": 326,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The complaint is the substance of what was delivered, not that it failed to arrive - the report came. Generic padding is the definition's own word. No refund is demanded and nothing is blocked, so priority 3.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c06",
+    "text": "Your transit calendar has Jupiter entering Gemini in May 2025. It entered Gemini in May 2024 and left in June 2025. I have checked against two ephemerides. Every monthly forecast built on that date is therefore wrong for the whole year. Please have someone check the transit tables.",
+    "text_sha256": "66ca854e1d8c1a2b595ec54e4a1cbbdee982fb5c3514bab731c684b9a5235505",
+    "chars": 282,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. A checkable factual error in the astrological data, reported with sources. The definition covers a reading that contradicts other sources. Nothing is blocked and no money is disputed, so priority 3 - and none of the escalation triggers is a fact in this text.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c07",
+    "text": "I paid 24.99 for the career report. It arrived analysing a Taurus sun, and I am a Gemini sun - the app itself displays Gemini on my profile. I asked for it to be redone or refunded and support replied that reports are final once generated. I am not going to pay again for the correct version of something I already paid for.",
+    "text_sha256": "195308b8d5884fbf92815b552f571718ae09b45d9bac91979a6eb7f7239959f8",
+    "chars": 324,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [
+        "refund_request"
+      ],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The report is wrong on the app's own data, which is content_quality, and the refund refusal is what happened next rather than the cause. Priority 2: money at stake and bounded. Support has already answered and its answer was no, so the documented route has failed.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-c08",
+    "text": "Bonjour, j'ai pris l'abonnement pour les lectures détaillées mais tout ce que je reçois pourrait s'appliquer à n'importe qui : « une période de changement s'annonce », « quelqu'un pense à vous ». Aucune date, aucun élément précis, jamais rien qui se rapporte à ma carte. Je ne demande pas de remboursement, je voudrais juste savoir si c'est censé être ainsi.",
+    "text_sha256": "34f71ba0ac68331cccf31ea2eca9e75b7866c90290a11b27aa1b61a83c23d6e0",
+    "chars": 358,
+    "selection": {
+      "cell": "synthetic:content_quality",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "fr",
+      "synthetic": true,
+      "added_for": "content_quality",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": true,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. Generic content, with two quoted examples, and an explicit question rather than a demand. The writer says outright that no refund is wanted. Priority 3 - nothing is moving, nothing is blocked - and the entertainment-purposes policy is the honest answer.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t01",
+    "text": "Since the update on Tuesday the app closes itself about two seconds after the splash screen. Every single time, on an iPhone 14 with iOS 18.6. I have reinstalled it twice and restarted the phone. I am on the annual plan so I am paying for something I currently cannot open at all.",
+    "text_sha256": "3e984f152933dc89776674271132583ce50f21b46df655e8e570857114ad19d5",
+    "chars": 280,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The application will not run, which is the definition, and the writer is locked out of something already paid for - the priority rule names that beside a bounded sum, so priority 2. Nothing about billing is disputed.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t02",
+    "text": "The compatibility screen is blank. Not an error message, just white with the header visible and nothing under it. Every other section loads normally. I have tried on wifi and on mobile data and it is the same. Android 14, Pixel 7a if that helps.",
+    "text_sha256": "3949accca298772e08c8d24312c02e6539a6f74a6f4dc254c8856014b4e11318",
+    "chars": 245,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. A blank screen is named in the definition. One feature is broken and the rest of the app works, no money is mentioned and nothing paid for is withheld, so priority 3.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t03",
+    "text": "The whole interface has switched itself to Portuguese. My phone is in English, my account settings say English, and I have never selected Portuguese. It happened after I opened a link from one of your emails. I can still use the app, I just cannot read most of it now.",
+    "text_sha256": "ca2a52382a9dec7a04e21da0e739dd256d589b3ef2e6297962902876d3dc586b",
+    "chars": 268,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. A wrong interface language is named in the definition. The app functions, nothing is blocked in the billing sense and no money is mentioned, so priority 3.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t04",
+    "text": "The notification for my daily horoscope arrives at 3 in the morning and wakes me up. In settings it is set to 8am and saving it does nothing - it reverts to 03:00 the next time I look. I have toggled it off and on again about six times now.",
+    "text_sha256": "be3779deb7b125b68fa7528fd9c45472b3bee91b73340b6cc7a63463c07c6346",
+    "chars": 240,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. A setting will not persist: the application misbehaving rather than the content being wrong. Annoying, not urgent - nothing is blocked and no money is at stake, so priority 3.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t05",
+    "text": "Scrolling in the chat with an advisor jumps back to the top every few seconds, so I lose my place in the conversation and cannot read what was said earlier. It only happens in the chat, the rest of the app scrolls fine. Makes the paid minutes quite stressful.",
+    "text_sha256": "407836cd4d8bde5ec4b947808481cc5fe68ac1ff15ac40eb917891d48b12c676",
+    "chars": 259,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. A rendering fault in one screen. The paid minutes are mentioned as context, not as a dispute - no charge is questioned and no refund is asked for, so priority 3.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t06",
+    "text": "Приложение вылетает каждый раз, когда я открываю раздел с натальной картой. Остальное работает. У меня оплачена подписка на год, а именно карта мне и нужна была. Телефон Samsung, Android 13, переустанавливала два раза. Помогите пожалуйста разобраться.",
+    "text_sha256": "56a98520ac00c28a37383bf2eb055f8c58a445b3375ee9714366fcda030c8cbe",
+    "chars": 251,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "cyrillic",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": true,
+        "non_latin_script": true
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The app crashes on one screen and that screen is the reason the writer subscribed, so they are locked out of what they paid for - priority 2 on the same clause as being locked out. Russian, calm, and no billing dispute at all.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s01",
+    "text": "I ordered the soulmate sketch on the 14th and paid 19.99. The confirmation email said 48 hours. It is now the 22nd and nothing has arrived, not in my inbox and not in spam, and there is nothing in the app under my orders either. Could you check whether it was ever generated?",
+    "text_sha256": "7300ee752f8ec40d5f8e7aee3c014862008489ccdb4299482e5d24e648a55ccc",
+    "chars": 275,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "request_evidence",
+      "rationale": "SYNTHETIC 2026-09-21. Paid for, promised within a window, and nothing arrived. Receiving nothing is the definition. Priority 2 for a bounded sum and an undelivered item. request_evidence because the order has to be located before anything else can happen and the ticket gives a date but no order number.",
+      "confidence": 0.85,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s02",
+    "text": "I topped up 40 credits before a reading and the balance never changed. The payment shows on my card as pending, then settled the next day, but the app has shown 0 credits the whole time. I have logged out and back in. I would rather have the credits than a refund if that is easier.",
+    "text_sha256": "1106b6cde543f72d5fe6c9c75e8496c31de938268cf14d2780adef52eac95126",
+    "chars": 282,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [
+        "refund_request"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "request_evidence",
+      "rationale": "SYNTHETIC 2026-09-21. Credits never added to the balance, which the definition names. The writer prefers delivery over a refund, so this is not a refund dispute. Priority 2, and the top-up has to be traced, which is what request_evidence collects.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s03",
+    "text": "I paid 12.99 for a written answer from an advisor within 24 hours. Four days later there is still no answer. I have messaged support twice and the second reply said the advisor is no longer active on the platform and suggested I ask a different one - which would mean paying again. I have already paid for this answer.",
+    "text_sha256": "df54db4dff5fba3da4209a59419fafe502387025ed080a04d624d3136aa75724",
+    "chars": 318,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. Paid for and never delivered, and the remedy offered was to pay a second time. Support has already answered and its answer closed the route, which is the documented route failing. Priority 2: bounded sum, nothing repeating.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s04",
+    "text": "The PDF link in my delivery email opens a page saying this report has expired. I only paid for it on Sunday and I downloaded nothing, so it cannot have expired from use. Can you send the file directly or reset the link? Order confirmation is in the same email if you need the number.",
+    "text_sha256": "6f7f95998dc17b8604a28eb5632de8e47b6e8a99b01df630c64357d9bcff9338",
+    "chars": 283,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "request_evidence",
+      "rationale": "SYNTHETIC 2026-09-21. The item was produced but cannot be obtained, which is still not receiving it. Priority 2 for a paid item withheld. request_evidence because the order reference sits in an email the writer has and has not quoted.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s05",
+    "text": "My 3 free minutes with an advisor were counted down while nobody answered. The timer started the moment I opened the chat, ran for three minutes with no reply at all, and then the app asked me to buy more time to continue. So the free trial was spent on waiting. That cannot be how it is meant to work.",
+    "text_sha256": "ddab9739d377fdc955904f14d4638fd19a731dd7b1117e9ddf34998f42f4812e",
+    "chars": 302,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [
+        "trial_converted"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. The thing paid for - advisor time - was consumed without being delivered. It is not content_quality because no reading was given to be bad. Priority 2, and a person has to look at the session timing, which no article covers.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-o01",
+    "text": "I cannot get into my account any more. The login says my email is not recognised, and the password reset email never arrives - I have checked spam and tried a second time an hour later. My subscription is definitely active because I can see this month's payment on my statement. I do not want a refund, I need access back.",
+    "text_sha256": "1b5ab264a249b08f5138e633cf393a0ed6b4288a08c58902b13abd6fd87c0548",
+    "chars": 322,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [
+        "refund_request",
+        "account_access"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": true,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. A login problem is the subject of the ticket, and account_access is not a category - measured at one matching row in the whole 43,941-row corpus, because people email support about this rather than reviewing it. Nothing else fits, so `other`. Priority 2: the writer is locked out, which the rule names. A person has to find which email the subscription sits under.",
+      "confidence": 0.8,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o02",
+    "text": "Under the GDPR I am asking you to erase all personal data you hold about me - birth date, birth time, birth place, the chat transcripts and the payment records. I have no complaint and I am not asking for money back. Please confirm in writing within thirty days what has been erased and what you are keeping.",
+    "text_sha256": "b594775355d90ae4923405ba19c2a3aa8877ddb67255132e4aef9e2d3b31a29e",
+    "chars": 308,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [
+        "refund_request",
+        "data_privacy"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": true,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "1",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. A deletion request with a statutory clock. data_privacy was removed as a category on 2026-09-21 after 3 of its 4 corpus rows turned out to be mislabelled billing tickets, so this now lands in `other` and is carried by the action instead. Priority 1 because a legal deadline is stated; escalate_to_human because no article can confirm an erasure.",
+      "confidence": 0.8,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o03",
+    "text": "My bank issued me a new card after a fraud alert on a different merchant, so the one you have will stop working before my renewal. I want to keep the subscription - where do I update the card details? Nothing has gone wrong on your side, I just do not want it to lapse.",
+    "text_sha256": "df514be8176fc29bb9bfa4e2bf0c28a7f6af34cb0d938c7cf8d50768683cb9f7",
+    "chars": 269,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": true,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. Pure administration: the writer wants to keep paying and disputes nothing. It carries a card, a renewal, a subscription and the word fraud, which is every billing trigger at once and none of the substance. No category describes 'how do I update my details', so `other`. Priority 3 - nothing is moving against the writer and nothing is blocked.",
+      "confidence": 0.75,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o04",
+    "text": "I think I have two accounts. I subscribed on the website with my work address and paid there, then installed the app later and it created a new account on my personal address with no subscription and no history. The payment is definitely on my card. Which one is the paid account, and can they be merged?",
+    "text_sha256": "befdb1be41b50c99ce69c1365dfe3cc3e564171e5d173926c6d0ece72addd85f",
+    "chars": 304,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. Two accounts, not a billing fault - the money arrived and the subscription exists, it is simply attached to the other profile. The sentence 'charged but no subscription showing' appears in dozens of real trap tickets and means something entirely different here. `other`, priority 2 because the writer cannot reach what they pay for.",
+      "confidence": 0.75,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o05",
+    "text": "I need a proper invoice for the 49.99 on 12 August with your company name, address and VAT number, because I am claiming it through my employer. The email receipt is not enough for our accounts department. The charge is correct and I am happy with the service.",
+    "text_sha256": "928df7ff8c047221df1d13a7697fda284282b004e9b43a13d3deee031b498fa5",
+    "chars": 260,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. An amount, a date and the word charge, with the charge explicitly agreed to and the service praised. An accounting request that no category names, so `other`. Priority 3: nothing is moving against the writer. A person has to issue the document; no article is an invoice.",
+      "confidence": 0.7,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o06",
+    "text": "Just wanted to say thank you. I started using this after my divorce when I needed something to hold onto and the daily readings gave me a bit of structure when I had none. I know it is only entertainment. It helped anyway. Keep going.",
+    "text_sha256": "592f1bc2bc148fc0545f207aa1c4a647fd8c97180be5cc2cca3363724d6c45b5",
+    "chars": 234,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "acknowledge_and_close",
+      "rationale": "SYNTHETIC 2026-09-21. Praise with nothing asked and nothing reported. A reply still goes out, which is what acknowledge_and_close means - there is no do-nothing step. Priority 3. The divorce is mentioned as past context, not as a stated vulnerability requiring action, which is the judgement this row exists to test.",
+      "confidence": 0.8,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-o07",
+    "text": "Suggestion rather than a complaint: the birth time field only accepts 5 minute steps, so anyone who knows their exact minute has to round. For a rising sign that can move the whole chart. Would it be possible to allow the exact minute? Everything else about the app is good.",
+    "text_sha256": "004ccdc8ac3439572ee1b8e8b6ac02e7a6284d67b713f599ebdf24488b3c348d",
+    "chars": 274,
+    "selection": {
+      "cell": "synthetic:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "other",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. A product suggestion with a reason. Nothing is broken, nothing is wrong with any chart the app produced from what it was given, and no money is involved - so no category fits and no article answers it. Priority 3.",
+      "confidence": 0.7,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "syn-t11",
+    "text": "Dark mode is broken on the reading screen - white text on a white background, so the whole page is blank until I switch the phone back to light mode. Everywhere else in the app it is fine. iOS 18, iPhone SE.",
+    "text_sha256": "88154c958bdcdb1f07119793c75459bb4d78c635f9cd7ceb4a927dd3921c7298",
+    "chars": 207,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The application renders its own content unreadable in one theme. A display fault, not the content being wrong - the same text is fine in light mode. No money and nothing blocked outright, so priority 3.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-t12",
+    "text": "Merhaba, uygulamaya giriş yapıyorum ama profilim her seferinde sıfırlanıyor: doğum tarihi, saat ve şehir boş görünüyor ve baştan girmem gerekiyor. Günde üç dört kez oluyor. Yıllık abonelik aldım ve bu şekilde kullanmak imkansız.",
+    "text_sha256": "f1928a127dc23dcb96975589834728a93e110d82c731db2e5958696516393059",
+    "chars": 228,
+    "selection": {
+      "cell": "synthetic:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "tr",
+      "synthetic": true,
+      "added_for": "app_technical",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": true,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "send_kb_article",
+      "rationale": "SYNTHETIC 2026-09-21. The profile resets several times a day, so the paid subscription is effectively unusable - locked out of what was bought, which the rule puts at priority 2. Turkish, and the fault is in the application storing data, not in the chart it produces.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s09",
+    "text": "I bought the tarot spread as a gift for my partner on the 11th and chose delivery by email to his address. He never received anything and the app shows the order as complete on my side. Could you check which address it actually went to before I ask him to look again?",
+    "text_sha256": "6b2bddc9d6693f7fad6a4af6ed2bb35a27c17b56fe20871350147d5cdbfa5b2b",
+    "chars": 267,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [
+        "service_not_delivered"
+      ],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "request_evidence",
+      "rationale": "SYNTHETIC 2026-09-21. Paid for, marked delivered by the app, and never received by the recipient. Receiving nothing is the definition. Priority 2 for a bounded paid item; the address it was sent to is the fact that decides it, which is what request_evidence collects.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s10",
+    "text": "Я оплатила розширений розбір натальної карти 9 числа, 27 євро. У застосунку замовлення позначене як виконане, але файлу немає ні в застосунку, ні на пошті. Писала в підтримку двічі, відповів бот і надіслав інструкцію, як завантажити звіт - за тією інструкцією звіту теж немає.",
+    "text_sha256": "e99c06ea5292e21c8b670be80ae5c5030555b8715b2a559ac651f27967c2e036",
+    "chars": 276,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "cyrillic",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": false,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": true,
+        "non_latin_script": true
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "SYNTHETIC 2026-09-21. Paid, marked complete, nothing delivered, and support answered with a bot whose instructions do not match reality - the bot reply is an escalation trigger stated in the text. Ukrainian. Priority 2: bounded sum, paid item withheld.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
+    }
+  },
+  {
+    "ticket_id": "syn-s11",
+    "text": "The year subscription includes one full report per quarter according to the plan page. I am nine months in and have received one, in the first week. I have asked in the app twice and nothing has appeared. Could you check what is supposed to be issued and when?",
+    "text_sha256": "8e1aacabb8d94cda3ec27ca580c0cf79a69ec2403d43bb4912f72b691f6e7e60",
+    "chars": 260,
+    "selection": {
+      "cell": "synthetic:service_not_delivered",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "n/a - written, not sampled",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "synthetic": true,
+      "added_for": "service_not_delivered",
+      "addressed_to_company": true,
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      }
+    },
+    "provenance": {
+      "store": "synthetic",
+      "locale": null,
+      "score": null,
+      "date": "2026-09-21",
+      "title": null,
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "service_not_delivered",
+      "secondary_categories": [],
+      "priority": "2",
+      "next_step": "request_evidence",
+      "rationale": "SYNTHETIC 2026-09-21. Part of what the subscription promises has not been delivered - two of three reports are missing. It is not content_quality because nothing arrived to be poor. Priority 2: paid for, not delivered. What was actually issued has to be established first.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901216899857",
+        "hc-28901045413393"
+      ]
     }
   }
 ]

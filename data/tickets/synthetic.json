@@ -248,5 +248,272 @@
       "max_confidence": 0.8,
       "note": "Never signed up, yet cancelled a subscription and was charged twice. The honest answer has low confidence; a confident one has quietly chosen which half to believe."
     }
+  },
+  {
+    "ticket_id": "syn-16-data-deletion",
+    "text": "Under Article 17 of the GDPR I am requesting erasure of all personal data you hold about me: my birth date and birth time, my birth place, the chat transcripts with your advisors and my payment records. I have no open complaint and I do not want a refund. Please confirm in writing within thirty days which data has been erased and which you are retaining, and on what legal basis. My registered email is the one I am writing from.",
+    "expect": {
+      "next_step": [
+        "escalate_to_human"
+      ],
+      "priority": [
+        "1",
+        "2"
+      ],
+      "must_not_next_step": [
+        "acknowledge_and_close",
+        "send_kb_article",
+        "ask_purchase_rail",
+        "process_refund",
+        "guide_cancellation"
+      ]
+    },
+    "why": "data_privacy stopped being a category on 2026-09-21: 4 usable rows in the whole 43,941-row corpus and 3 of the 4 flagged by model consensus, one unanimously. The request still arrives and still carries a thirty-day statutory clock. This case checks that removing the category did not remove the ROUTING with it - the ticket has to reach a person, and no article answers it."
+  },
+  {
+    "ticket_id": "syn-17-data-access",
+    "text": "I would like a copy of everything you hold on me, including the full text of my conversations with your psychics and any profiling you have derived from my answers. This is a subject access request. Nothing is wrong with my billing and I am not cancelling - I just want the data. Please tell me the format and how long it will take.",
+    "expect": {
+      "next_step": [
+        "escalate_to_human"
+      ],
+      "priority": [
+        "2",
+        "1"
+      ],
+      "must_not_next_step": [
+        "acknowledge_and_close",
+        "ask_purchase_rail",
+        "process_refund",
+        "guide_cancellation"
+      ]
+    },
+    "why": "The other half of the privacy gap: access rather than erasure. It says explicitly that the billing is fine, so a model that routes it into the billing family has read the word 'conversations' and stopped there."
+  },
+  {
+    "ticket_id": "syn-18-account-locked",
+    "text": "I cannot get into my account any more. The app says my email is not recognised, and when I ask for a password reset no email arrives, I have checked spam. I have a paid subscription and I can see it on my card statement, so the account exists. I am not asking for money back, I just need to get back in. Can you check what email address the subscription is under?",
+    "expect": {
+      "next_step": [
+        "escalate_to_human",
+        "request_evidence",
+        "send_kb_article"
+      ],
+      "priority": [
+        "2",
+        "3"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "acknowledge_and_close",
+        "ask_purchase_rail"
+      ]
+    },
+    "why": "account_access was removed as a category after measuring ONE matching row in the whole corpus: nobody writes a store review to say they cannot log in, they email support, and that channel is not in this data. The ticket mentions a subscription and a card statement, which is the bait - it is not a billing dispute, and the writer says so."
+  },
+  {
+    "ticket_id": "syn-19-change-card",
+    "text": "My bank replaced my card after a fraud alert, so the one on file will stop working before my next renewal. I want to keep the subscription - please tell me where to update the payment details, or send me a link. Nothing has gone wrong and I am not disputing anything, I just do not want the service to lapse.",
+    "expect": {
+      "next_step": [
+        "send_kb_article",
+        "escalate_to_human",
+        "request_evidence"
+      ],
+      "priority": [
+        "3",
+        "2"
+      ],
+      "must_not_priority": [
+        "1"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "acknowledge_and_close",
+        "guide_cancellation"
+      ]
+    },
+    "why": "Pure administration and the friendliest ticket in the set: the writer wants to KEEP paying. It carries a card, a subscription, a renewal and the word fraud, which is every billing trigger at once, and disputes nothing. If a model routes this to guide_cancellation it has cancelled a paying customer."
+  },
+  {
+    "ticket_id": "syn-20-invoice-request",
+    "text": "I need a proper invoice for the 49.99 charged on 12 August, with your company name, address and VAT number on it, because I am claiming it back through my employer. The email receipt you sent is not enough for our accounts department. The charge itself is correct and I am happy with the service.",
+    "expect": {
+      "next_step": [
+        "escalate_to_human",
+        "request_evidence",
+        "send_kb_article"
+      ],
+      "priority": [
+        "3",
+        "2"
+      ],
+      "must_not_priority": [
+        "1"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "guide_cancellation",
+        "acknowledge_and_close"
+      ]
+    },
+    "why": "An amount, a date and the word charge, with the charge explicitly agreed to. Tests whether the billing family is triggered by vocabulary or by a dispute. A refund here would give money back to a satisfied customer who asked for paperwork."
+  },
+  {
+    "ticket_id": "syn-21-correct-birth-data",
+    "text": "I put my birth time in as 7:15 in the morning but it was actually 7:15 in the evening, and I cannot find anywhere in the app to change it. Every chart I have is built on the wrong time so all of it is useless to me. Can you correct it on your side and regenerate the readings I have already paid for?",
+    "expect": {
+      "next_step": [
+        "send_kb_article",
+        "escalate_to_human",
+        "request_evidence"
+      ],
+      "priority": [
+        "3",
+        "2"
+      ],
+      "must_not_priority": [
+        "1"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "ask_purchase_rail",
+        "acknowledge_and_close"
+      ]
+    },
+    "why": "The chart is wrong because the INPUT was wrong, not the product, and the writer says so. The boundary against content_quality, which is for a chart the app got wrong from correct data."
+  },
+  {
+    "ticket_id": "syn-22-duplicate-account",
+    "text": "I think I have two accounts. I signed up through the website with my work email and paid there, then later installed the app and it made me a new account with my personal email, which shows no subscription and no history. The charge on my card clearly went through. Which account is the paid one, and can you merge them so I stop losing my readings?",
+    "expect": {
+      "next_step": [
+        "request_evidence",
+        "escalate_to_human"
+      ],
+      "priority": [
+        "2",
+        "3"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "acknowledge_and_close",
+        "guide_cancellation"
+      ]
+    },
+    "why": "The commonest support-only confusion there is, and it is indistinguishable at a glance from 'I am charged but have no subscription' - the sentence that appears in dozens of real tickets and means something entirely different. A model that reads it as a trap will cancel the paid account."
+  },
+  {
+    "ticket_id": "syn-23-promo-code",
+    "text": "My sister bought me a gift subscription for my birthday and sent me the code, but when I enter it the app says the code is invalid or already used. She has the receipt and has not used it herself. I have not paid anything and there is no charge on my card - the money came from her. How do we sort this out?",
+    "expect": {
+      "next_step": [
+        "request_evidence",
+        "send_kb_article",
+        "escalate_to_human"
+      ],
+      "priority": [
+        "3",
+        "2"
+      ],
+      "must_not_priority": [
+        "1"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "ask_purchase_rail",
+        "acknowledge_and_close"
+      ]
+    },
+    "why": "Something paid for has not arrived, but the person who paid is not the person writing, and the writer says outright that there is no charge on their card. ask_purchase_rail is the wrong question to ask the recipient of a gift."
+  },
+  {
+    "ticket_id": "syn-24-chargeback-filed",
+    "text": "My bank has already reversed the 49.99 as a disputed transaction, the money is back with me and the case reference is DC-4471902. I am writing because you emailed saying my account is now in arrears and will be suspended. I do not want to pay it again. What happens now?",
+    "expect": {
+      "priority": [
+        "1"
+      ],
+      "next_step": [
+        "escalate_to_human"
+      ],
+      "must_not_next_step": [
+        "process_refund",
+        "acknowledge_and_close",
+        "ask_purchase_rail",
+        "guide_cancellation"
+      ]
+    },
+    "why": "A third party is not merely threatened, it has already acted - which the priority rule names as a stated fact, and which the corpus only ever contains as a threat. The trap is process_refund: the money has already been returned once, and refunding it again pays the same charge twice."
+  },
+  {
+    "ticket_id": "syn-25-bereavement",
+    "text": "My mother passed away on the 3rd. She had a subscription with you that is still charging her account, and I am the executor of her estate. I need the subscription stopped and the account closed, and I would rather not have to work through an app myself at the moment. I can send the death certificate if you need it.",
+    "expect": {
+      "priority": [
+        "1"
+      ],
+      "next_step": [
+        "escalate_to_human",
+        "route_to_safety_report"
+      ],
+      "must_not_next_step": [
+        "acknowledge_and_close",
+        "send_kb_article",
+        "guide_cancellation",
+        "ask_purchase_rail",
+        "process_refund"
+      ]
+    },
+    "why": "The heaviest ticket a real support inbox gets and one a public review never carries. Charges are still running and a vulnerability is stated, so priority 1 is on facts rather than on tone. guide_cancellation is technically the correct mechanism and is the wrong answer: the writer has asked not to be sent to self-service, and a person has to do this one."
+  },
+  {
+    "ticket_id": "syn-26-aggressive-non-english",
+    "text": "Ви злодії і брехуни, щоб вам усім повилазило. Зняли з моєї картки 49.99 євро 14 серпня, я нічого не замовляв і не підписувався. Поверніть гроші, інакше я рознесу вас по всіх мережах, які знайду. Більше ніяких листів від вас я читати не буду, просто поверніть мої гроші.",
+    "expect": {
+      "priority": [
+        "2"
+      ],
+      "must_not_priority": [
+        "1"
+      ],
+      "must_not_next_step": [
+        "acknowledge_and_close",
+        "process_refund"
+      ],
+      "evidence_in_text": true
+    },
+    "why": "The assignment names aggressive tone as an edge case and the only aggressive case here was English. Measured on golden2: the aggression lexicon fires on 19 of 82 rows and the aggressive slice scores 6 points below the plain one, so tone already costs accuracy. This checks it does not also cost calibration - one charge, no repetition, no third party, no vulnerability, so priority 2 however loud the ticket is. The threat of publicity is not the third-party trigger; a bank or a regulator would be."
+  },
+  {
+    "ticket_id": "syn-27-three-topics-one-language",
+    "text": "Three things, sorry. First, the 1 dollar palm reading turned into a 39 dollar monthly charge that I never agreed to. Second, the app crashes on the compatibility screen every single time, on a new iPhone, so I cannot use what I am paying for. Third, the advisor I spoke to on Tuesday was rude and cut the session off when I questioned the reading. I would like the 39 back and I would like someone to look at the crash.",
+    "expect": {
+      "schema_valid": true,
+      "min_secondary": 2,
+      "evidence_in_text": true,
+      "must_not_next_step": [
+        "acknowledge_and_close"
+      ]
+    },
+    "why": "The existing mixed-topic case switches language mid-sentence as well, so the two effects cannot be told apart. This one holds the language constant and carries three causes from three different families - billing, technical and advisor conduct - which after the merge means the primary must be chosen by 'what has to be fixed for the charges to stop' and the other two must appear in secondary_categories rather than being dropped."
+  },
+  {
+    "ticket_id": "syn-28-non-latin-only",
+    "text": "안녕하세요. 광고를 보고 1달러를 결제해서 손금 리포트를 받으려고 했는데, 리포트는 오지 않고 8일 뒤에 카드에서 49달러가 자동으로 결제되었습니다. 앱 안에서도, 구글 플레이 계정에서도 구독 내역을 찾을 수 없습니다. 결제를 취소하고 49달러를 환불해 주세요. 어떻게 해야 하는지 알려주시면 감사하겠습니다.",
+    "expect": {
+      "schema_valid": true,
+      "evidence_in_text": true,
+      "next_step": [
+        "ask_purchase_rail",
+        "escalate_to_human",
+        "guide_cancellation"
+      ],
+      "priority": [
+        "2",
+        "1"
+      ]
+    },
+    "why": "The assignment names non-English input. The real sets hold 6 non-Latin rows but synthetic held none, and the check that actually bites here is evidence_in_text: the model has to quote the ticket in its own script rather than paraphrase the evidence into English, which is the failure mode a Latin-script test cannot catch. The ticket itself is an ordinary subscription_trap, which is the point - the difficulty is the script, not the content."
   }
 ]

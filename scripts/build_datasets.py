@@ -58,11 +58,11 @@ OUT_DIR = os.path.join(ROOT, "data", "tickets")
 # A cell is a question the evaluation must be able to answer. An empty cell is
 # reported, never silently redistributed.
 THEME_CELLS: dict[str, int] = {
+    # subscription_trap absorbs the three billing probes it replaced, so it
+    # takes their slots: 5 + 5 + 2 = 12.
     "refund_request": 6,
-    "trial_converted": 5,
-    "unauthorized_charge": 5,
+    "subscription_trap": 12,
     "cancellation_failed": 5,
-    "pricing_unclear": 2,
     "service_not_delivered": 2,
     # 4, not 3: the slot freed when advisor_conduct stopped being a category on
     # 2026-09-21 goes here. It goes to content_quality rather than back into the
@@ -73,12 +73,15 @@ THEME_CELLS: dict[str, int] = {
     # corpus holds 16 of them against an allocation of 3.
     "content_quality": 4,
     "app_technical": 3,           # "bugs" in the assignment's own wording
-    "data_privacy": 1,
 }
 # Rows no probe recognises. They are not noise: they are the 34% of the pool
 # whose subject the sampler cannot name, which makes them the honest test of
 # whether a classifier reaches for `other` or invents a category.
-UNKNOWN_CELL = 4
+# 5, not 4: the slot freed when data_privacy stopped being a category on
+# 2026-09-21 comes here. `other` is now the only home for a deletion request, a
+# login problem, acute distress or a complaint about an advisor, and the unknown
+# cell is the only cell that finds rows whose subject no probe can name.
+UNKNOWN_CELL = 5
 NON_LATIN_CELL = 4        # one or two per script, capped by what exists
 LATIN_NON_ENGLISH_CELL = 6
 
@@ -108,7 +111,7 @@ assert PLANNED == SET_SIZE, (
 # Themes scarce enough in the window that the supplement is allowed to reach
 # outside it. Anything not listed here is window-only.
 SUPPLEMENT_ALLOWED = frozenset({
-    "data_privacy", "app_technical", "content_quality",
+    "app_technical", "content_quality",
 })
 
 LATIN_ORDER = ["es", "pt", "fr", "it", "de", "tr", "nl", "pl"]
