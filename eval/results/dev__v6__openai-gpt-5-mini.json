@@ -1,0 +1,2151 @@
+{
+  "summary": {
+    "set": "dev",
+    "prompt_version": "v6",
+    "model": "openai/gpt-5-mini",
+    "started_at": "2026-09-20T21:28:37+00:00",
+    "prompt_sha256": "8375b260f302099c",
+    "seed": null,
+    "temperature": 0.0,
+    "tickets": 50,
+    "scored": 50,
+    "hard_failures": 0,
+    "category_accuracy": 0.78,
+    "priority_accuracy": 0.8,
+    "next_step_accuracy": 0.7,
+    "all_three_accuracy": 0.54,
+    "secondary_jaccard": 0.48733333333333334,
+    "evidence_verbatim_rate": 0.94,
+    "repaired": 0,
+    "cost_usd": 0.046032,
+    "cost_per_ticket": 0.0009206399999999999,
+    "cost_per_10k": 9.206399999999999,
+    "confidence_when_right": 0.8884615384615384,
+    "confidence_when_wrong": 0.8181818181818182,
+    "macro_f1": 0.7176587301587302,
+    "macro_precision": 0.7270833333333333,
+    "macro_recall": 0.7456501831501832,
+    "macro_f1_core": 0.6149206349206349,
+    "macro_precision_core": 0.6633333333333333,
+    "macro_recall_core": 0.593040293040293,
+    "core_classes": 5,
+    "escalation": {
+      "tp": 22,
+      "fp": 4,
+      "fn": 7,
+      "precision": 0.8461538461538461,
+      "recall": 0.7586206896551724
+    }
+  },
+  "rows": [
+    {
+      "ticket_id": "as:14252277944",
+      "text": "上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了 ，I was misled by the interface into an accidental subscription, losing 363 RMB. Apple refused a refund, and your response was just \"we'll look into it\" with no real action. If you can collect the payment, why not refund it? Please stop the runaround and solve this issue.",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "trial_converted"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: was pricing_unclear, which requires that the terms were not visible - but the ticket says the three-day free trial WAS displayed, so that exclusion does not fit. Apple refused the refund and support answered 'we'll look into it' with no action: that is the second situation in which refund_request is primary - the refund itself is what is stuck. Twelve runs of two models all say trial_converted; they are closer than the old label and still not the rule.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28898955150609",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "route_to_apple",
+        "evidence": "上面显示是三天免费试用，结果一下载就扣了363",
+        "rationale": "User says a displayed 3-day free trial immediately charged 363 RMB (trial converted); money has already been taken so this is a standard billing reversal case (priority 2).",
+        "confidence": 0.85
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 5155,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14133480377",
+      "text": "トライアルから自動的にサブスク課金に移行されて引き落としされました。\nサブスク解除はアプリ内でしかできないようです。\n英語を訳しながらやっと解除できました。解除後はメールがきましたが、信用できなかったので、いろいろ調べたらPayPalでの自動決済のキャンセルをすれば引き落としされないようだったので、PayPalの方でも解除しました。\n他に困っている方の参考になればと思います🙏",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "rationale": "The trial auto-converted and was debited, but the writer found the in-app cancellation by translating the English, then also stopped the PayPal auto-payment - the case is closed by their own hand and the post is advice for others.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "acknowledge_and_close",
+        "evidence": "トライアルから自動的にサブスク課金に移行されて引き落としされました。",
+        "rationale": "User reports a trial automatically converted into a paid subscription and was charged (trial_converted); they resolved cancellation themselves so this is a single charge (priority 2).",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4765,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14312098923",
+      "text": "برنامج سيء يقوم بالخصم من حسابي ولم اطلب الاشتراك ،قمت بحذف البرنامج ومازال يخصم ،حاولت إلغاءه بكل الطرق ومازال الخصم مستمر\n\nThere is no way to cancel auto refill ,and it’s discontinued from my card",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Deductions are still running after the app was deleted and after cancellation was attempted 'by every method', and the auto-refill has no visible cancel route - money is moving and the documented route already failed.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "قمت بحذف البرنامج ومازال يخصم ،حاولت إلغاءه بكل الطرق ومازال الخصم مستمر",
+        "rationale": "User reports they deleted the app and tried to cancel by multiple methods but charges continue, indicating an ongoing recurring charge they cannot stop, so cancellation_failed and priority 1 for escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4468,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:d531010e-e31",
+      "text": "1달러 결재하면 스케치된 그림을 메일로 보내주는줄 알고 결재했더니 앱다운시 29.99달러 가 같이 결재되었어. 스케치그림은 찾아볼수도 없고 메일을 여니 또 스케치를 위한 초기질문 루트만 나오네요. 취소하려고 몇시간을 찾아헤메도 자기네들이 말하는 루트대로의 취소활불 탭은 어디에도 없어요. 이건 사기라고 밖에 생각 안들어요 도대체 어디로 들어가야 취소 환불을 받을수 있을까요?",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "service_not_delivered"
+        ],
+        "priority": "1",
+        "next_step": "ask_purchase_rail",
+        "rationale": "$1 for a soulmate sketch came with a simultaneous $29.99 charge, the sketch never arrived, and hours of searching found no cancel/refund tab - the explicit question is where to cancel and be refunded, and no store is named.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "취소하려고 몇시간을 찾아헤메도 자기네들이 말하는 루트대로의 취소활불 탭은 어디에도 없어요.",
+        "rationale": "User reports being charged after a $1 sketch purchase and explicitly says they searched for hours but could not find the cancellation/refund route, indicating a cancellation mechanism failure and ongoing charge risk.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5937,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:fc04bcca-56d",
+      "text": "lo resumiré...Son unos ladrones, te roban. Te dicen \"Es gratis\" para luego quitarte el dinero, son un asco. NO LA DESCARGUEN, NO LO HAGAN!!! Son una estafa. Exijo un reembolso de tal crimen y robo!!!",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "Told the app was free and then charged, the writer states one demand - a refund - with no amount, no recurring charge and no store named, so the rail must be asked before money can move.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-04",
+          "pol-14",
+          "pol-18"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "Te dicen \"Es gratis\" para luego quitarte el dinero",
+        "rationale": "User says the app was presented as free but later took money, indicating a trial or intro offer converted to a paid charge; they demand a refund. Priority 2 because a charge is reported but no ongoing recurring billing or escalation is stated.",
+        "confidence": 0.8
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 3547,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:f21ba9eb-0b2",
+      "text": "sou mais uma que caiu nesta propaganda enganosa...vendo a reposta deles aqui e n estao se importando este app tem que ser banido. como play store ainda aceita isso. quero meu dinheiro de volta paguei no cartão de crédito cobrança absurda e abusiva. parem de dar retorno em inglês pq ninguém obrigado a entender o idioma de vcs não. Quero RETORNO",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "Wants the credit-card charge returned after deceptive advertising; the Play Store is mentioned only as the host that allows the app, not as the purchase rail, and no amount is given, so the case is not clear enough to refund directly.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-04",
+          "pol-14",
+          "pol-18"
+        ]
+      },
+      "actual": {
+        "category": "pricing_unclear",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "sou mais uma que caiu nesta propaganda enganosa...vendo a reposta deles aqui e n estao se importando este app tem que ser banido.",
+        "rationale": "User says they fell for a misleading advertisement (pricing/terms not clear) and requests a refund; one charge has occurred so priority is 2 and we need purchase details to proceed.",
+        "confidence": 0.6
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.6,
+      "latency_ms": 8905,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14011743614",
+      "text": "Surtout n essayez pas la période d essai ces voleurs vous débite alors même que vous vous êtes désabonnés! J ai demandé mon remboursement de 42.99 euros il se cache derrière la\nplateforme paypal! Jamais o grand jamais ne leur faites confiances des crapules",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "Debited 42.99 EUR after already unsubscribing, and the refund request was deflected onto PayPal - they followed the documented route and were charged anyway, leaving one bounded charge to reverse.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "vous débite alors même que vous vous êtes désabonnés!",
+        "rationale": "The user says they unsubscribed but were still charged, indicating a cancellation failed and they request a €42.99 refund, so this is a cancellation_failed case at priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4109,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:72e76b58-33a",
+      "text": "Attenzione a questa app, si nasconde dietro un pagamento di 1€ un abbonamento, che nessuno ha autorizzato, dopo una settimana arriva una notifica di un pagamento automatico di 46 €, ho appena aperto una controversia, voglio il rimborso immediato, questa cosa non è legale!!!!!!!!",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "1 EUR became an automatic 46 EUR payment a week later - a converted trial whatever the writer calls authorisation - and a payment dispute has already been opened.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "si nasconde dietro un pagamento di 1€ un abbonamento, che nessuno ha autorizzato, dopo una settimana arriva una notifica di un pagamento automatico di 46 €",
+        "rationale": "User reports a 1€ trial turning into an automatic €46 charge (trial converted) and states they have opened a dispute, so escalation is required; money has been taken and a third party dispute is already in progress.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4483,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:1cf837ac-86a",
+      "text": "Mir wurde andauernd Geld abgebucht. Hab jedoch nur das kostenlose Abo bestellt. Und sofort gekündigt als ich gemerkt habe das das blödsinn ist. Ich möchte mein Gelb zurück! Und sollte mir noch einmal ein Betrag abgebucht werden. Wird das rechtliche Konsequenzen haben!",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "trial_converted"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Ordered only the free subscription and cancelled immediately, yet amounts are debited continually, and legal consequences are named for the next one - money still moving plus stated legal exposure.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "Hab jedoch nur das kostenlose Abo bestellt. Und sofort gekündigt als ich gemerkt habe das das blödsinn ist. Mir wurde andauernd Geld abgebucht.",
+        "rationale": "User says they cancelled immediately but were repeatedly charged, indicating a failed cancellation and ongoing charges — requires urgent human escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": false,
+      "confidence": 0.9,
+      "latency_ms": 6045,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:8f7008e4-4ca",
+      "text": "dolandırıcıdir Bir yerde reklamını görüp girdim 0.50 dolar karsilihinda ad soyad doğum tarihi gibi bilgileri girdim ruh eşi cizimini görmek için. ama 8 gün sonunda herhangi bir şey vermedi. sonrasında uygulamada hesabı silip uygulamayı kaldırdım. ama bugün gordumku benim bilgim dışında 78 dplae [2 bin küsür lira] para çekilmiş kredi kartımdan. parayı iade edin yoksa polise şikayette bulunacağım.",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request",
+          "service_not_delivered",
+          "trial_converted"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "$0.50 bought a soulmate drawing that never arrived, the account and app were deleted, and $78 (over 2,000 lira) was then taken from the credit card - a charge landing after deletion, with the police named if it is not returned.",
+        "confidence": 0.55,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request",
+          "service_not_delivered"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "ama bugün gordumku benim bilgim dışında 78 dplae [2 bin küsür lira] para çekilmiş kredi kartımdan.",
+        "rationale": "User reports a 78 charge was taken from their credit card without their knowledge (unauthorized charge) and also says the paid service (0.50 purchase) was never delivered; single charge already landed so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.6666666666666666,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5437,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:f509687c-69e",
+      "text": "Not as described originally. Not for me and everything is an extra charge. I should have just paid the minimum, not the recommended. I would like a refund as I did not receive my palm reading.",
+      "expected": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "request_evidence",
+        "rationale": "Paid for a palm reading that never arrived and asks for that money back, so the missing deliverable is what support must verify first.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28901216899857",
+          "hc-28901045413393"
+        ]
+      },
+      "actual": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I would like a refund as I did not receive my palm reading.",
+        "rationale": "User requests a refund because they say the paid service (palm reading) was not delivered, indicating service_not_delivered; this is a single-charge refund request so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5266,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:1a5f3a36-2e5",
+      "text": "This app appears to be ok, however I only authorized a trial charge of 7.99 I've been charge 2x 35.99 in the past 2 weeks. The method shown to cancel are not working in my play store account. There is no way to reach anyone to get all of my money back",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: was trial_converted. An authorised 7.99 trial became two 35.99 charges in two weeks AND 'the method shown to cancel are not working in my play store account'. Same tie-break as gp:11b675dc-7bc: what has to be fixed for the charges to stop is the cancellation. 10 of 12 runs.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I only authorized a trial charge of 7.99 I've been charge 2x 35.99 in the past 2 weeks.",
+        "rationale": "User reports a trial they authorized converted into two full charges and says Play Store cancellation methods are not working, indicating recurring charges they cannot stop and needing human escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 7062,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:b04894fd-bff",
+      "text": "This app is truly incredible. So far everythit that I have read has been spot on. I love that when I want to speak to a physic they are readily available. Thank you Nebula for really showing me much needed things about myself. I cannot wait to read and learn more!!!",
+      "expected": {
+        "category": "other",
+        "secondary_categories": [],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "rationale": "Unqualified praise with no request in it; a thank-you reply is owed and no work is queued.",
+        "confidence": 0.85,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "other",
+        "secondary_categories": [],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "evidence": "This app is truly incredible.",
+        "rationale": "The message is positive praise with no complaint or billing/account issue, so it doesn't fit any specific support categories and should be closed with acknowledgement.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 3422,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:12136193056",
+      "text": "Cus honey they WILL scam you! I’m not stupid nor am I blind! They offered a three day free trial in which at the end of it would be a payment plan per MONTH. I wasn’t introduced in paying consistently for this app so I was going to do a free trial and then cancel. Mind you when you use other apps you can cancel at ANY TIME before free trial ends. I cancel the very next day because I didn’t quite understand what exactly the benefits of this free trial were it was all regular stuff that an app should have without having to pay for it. You could find all that information ANYWHERE. Now here’s the kicker. I cancel my subscription the next day and notice that my trial isn’t ending in three days but in a YEAR and I was charged 60+$ for WHAT! I know what I was approving and it was NOT THAT. Many other people have unfortunately had the same experience and I wish I read the reviews first. I tried contending for my money back but they tried to play me and say they can’t find a subscription to cancel and kept using fancy words to divert from the issue. The psychics on there are fake too cus I asked them about this boy who played me in my face all while having a gf I didn’t give them that information all I asked was did he like me and would we get back together what’s our compatibility and they all just gave me answers that a s$tup1d gullible teenager would want to hear while in reality this boy is a cheater and only used me for temporary desires. And for “real” psychics why are there so many of them?!? Being a psychic shouldn’t be that easy for just anyoneee to do.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed",
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "A three-day free trial produced a 60+ charge and a term that runs for a YEAR, which R1 assigns to trial_converted: a charge that followed a trial is trial_converted however the writer names it. Priority 1 on stated facts - the yearly subscription is live, the writer cancelled and was charged anyway, and support answered that it cannot find a subscription to cancel, so the charges are not stopped and the documented route has already failed. CORRECTED 2026-09-21: was cancellation_failed. The failed cancellation is real and stays as a secondary, but it is what happened after the charge, not what caused it. Wrong in all three runs of gpt-5-mini, which chose trial_converted every time.",
+        "confidence": 0.75,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "trial_converted",
+          "advisor_conduct"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I cancel my subscription the next day and notice that my trial isn’t ending in three days but in a YEAR and I was charged 60+$ for WHAT!",
+        "rationale": "User says they cancelled but were still charged and support couldn't find the subscription to cancel, indicating a failed cancellation that needs human escalation; money has been taken and the user cannot stop it, so priority 1.",
+        "confidence": 0.85
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.2,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 6218,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:11918006893",
+      "text": "Hello I would like this to be fixed since I didn’t buy anything from the app and I had to delete my account to stop the being funded 39$ they took 39$ twice from my account and I didn’t buy anything except one 9$ chat I need to be refunded ASAP\nHi\nI did contact the support team and waited for a week now it’s been 3 weeks still got no response",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Two 39$ charges against an account whose only purchase was one 9$ chat, so neither is a renewal of anything agreed, and the writer deleted the account to make the charging stop after three weeks of silence from support.",
+        "confidence": 0.75,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I had to delete my account to stop the being funded 39$ they took 39$ twice from my account",
+        "rationale": "User says they deleted their account to stop charges but were still charged twice and support was already contacted with no response, so this is a cancellation failure needing human escalation.",
+        "confidence": 0.85
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 4983,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:14528ce0-b72",
+      "text": "Dear Nebula Support Team, I am requesting an immediate refund of the unexpected $29.99 charge made to my creditcard. I only intended to make $1 payment for the sketch/drawing service. I did not intend to purchase or authorize any additional subscription or service costing $29.99 was surprised to see this additional charge on my payment method. I consider this charge unauthorized and misleading, as I did not knowingly agree to pay an additional $29.99 Please: Refund the full $29.99 !",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge",
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "A 1 dollar sketch payment they did make was followed by 29.99 for a subscription, which is a converted trial however the writer words it; one bounded charge to reverse and no store named.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I only intended to make $1 payment for the sketch/drawing service. I did not intend to purchase or authorize any additional subscription or service costing $29.99",
+        "rationale": "User says they only intended a $1 sketch payment but was charged $29.99 (a small payment converting to a larger charge), so this matches trial_converted; it's a single charge request so priority 2.",
+        "confidence": 0.85
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.6666666666666666,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 5250,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:08385e3d-45b",
+      "text": "i was charged for 14$ when i agreed for 1$ only as part of an advertisment. ​I believe this application uses deceptive advertising practices to trigger unauthorized payments. I have already uninstalled the application and am now reporting it to you to prevent further fraudulent activity against other users. ​I request a full refund for this unauthorized transaction and a review of this app’s compliance with your developer policies. ​Thank you for your assistan",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "pricing_unclear",
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "Agreed to 1$ from an advert and was then charged 14$, so the money came from the offer they accepted; one charge to reverse, the app is already uninstalled, and no purchase rail is named.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "i was charged for 14$ when i agreed for 1$ only as part of an advertisment.",
+        "rationale": "User reports a $1 promotional agreement that became a $14 charge, indicating a trial converted to a paid subscription; one charge already occurred so priority is 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.6666666666666666,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4766,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:329c4dbd-da9",
+      "text": "I am finding it too hard for me to cancel my subscription. I'm 70 years old and not very good with technology. So I would appreciate it if you could cancel my subscription to Nebula for me. I can't afford it. I thought that I was getting a sketch of my soul mate, which I never received. I received a reading instead. I'm not happy with the reading because it would tell me something, and in the next minute, it would tell me the opposite.",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "service_not_delivered",
+          "content_quality"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "A 70-year-old who states they cannot afford the subscription has already found the self-serve cancellation too hard and asks Nebula to do it, and the soulmate sketch they paid for was never delivered.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "service_not_delivered",
+          "content_quality"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I am finding it too hard for me to cancel my subscription. I'm 70 years old and not very good with technology. So I would appreciate it if you could cancel my subscription to Nebula for me.",
+        "rationale": "User explicitly says they cannot cancel and asks support to cancel (cancellation_failed) and reports age/vulnerability and inability to afford the subscription, so this is priority 1.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.6666666666666666,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5407,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:fa462cf6-83a",
+      "text": "Paid $5 or whatever for palmistry. Which was ok..cool. But then I chose to buy 80 credits for the 9.99. Never received credits. I contacted support and one me that some were used already and I had 35. I asked if he could tell me what was the credits used on because all I did was pay the 5 for the palmistry and spoke to one advisor for three minutes . I never got a reply. I did though received a email saying my issue was resolved and it wasn't. I would like a refund. Even if its just $9.99",
+      "expected": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: next_step was request_evidence. Two escalation triggers are stated outright - support was contacted and never replied, and an email claimed the issue was resolved when it was not. Evidence is not what is missing here; an answer is. 12 of 12 runs.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28901216899857",
+          "hc-28901045413393"
+        ]
+      },
+      "actual": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "Never received credits.",
+        "rationale": "User paid for 80 credits ($9.99) but reports they were never received and support did not resolve the issue, so this is a service_not_delivered case needing human escalation; it's a single bounded charge so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4156,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:9ffcf41c-33c",
+      "text": "on part of 1 of reading my star sign was correct the 2 pages star sign reading was INCORRECT star sign a joke I want to cancel immediately! !!",
+      "expected": {
+        "category": "content_quality",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "3",
+        "next_step": "guide_cancellation",
+        "rationale": "The two-page star sign reading was wrong where page one was right, and the cancellation is a demand with no charge disputed and no failed attempt described.",
+        "confidence": 0.5,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900868231441",
+          "faq-13",
+          "pol-11"
+        ]
+      },
+      "actual": {
+        "category": "content_quality",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "3",
+        "next_step": "guide_cancellation",
+        "evidence": "on part of 1 of reading my star sign was correct the 2 pages star sign reading was INCORRECT star sign a joke I want to cancel immediately! !!",
+        "rationale": "User reports the delivered reading was incorrect/generic (content quality) and asks to cancel; no billing or inability-to-cancel details are given, so priority is low.",
+        "confidence": 0.8
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 5344,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:5dcf0661-216",
+      "text": "I was interested in palmistry for $1 as advertised on their some ad. The links they sent me in the email with the report did not work and I somehow managed to get charged for a 2 week subscription for $26. I was unable to find the cancellation link and when I complained to customer service they've done nothing to resolve my issue. I am not interested in their so-called advisors which are nonsense. Had I known this palmistry reading came from nebula I never would have got involved.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed",
+          "service_not_delivered",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "A $1 palmistry offer became a $26 two-week subscription, the cancellation link could not be found and customer service resolved nothing, so the recurring charge is still running.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed",
+          "service_not_delivered",
+          "advisor_conduct"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "somehow managed to get charged for a 2 week subscription for $26.",
+        "rationale": "User reports a $1 palmistry offer that resulted in a $26 subscription (trial converted) and says they contacted support without resolution, so this needs human escalation; priority 2 because it's a bounded charge needing reversal.",
+        "confidence": 0.85
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.75,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 5968,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:12190236921",
+      "text": "Nebula auto renewed after deleting account. Check on IPhone if I was subscribed before deleting app to cancel subscription. Nothing there. Deleted app. Then get charged 39 euros for subscription. Then can’t log in to nebula to to cancel subscription. Have tried through the bot now… after being posed the same questions countless times. Still can’t log in to check if subscription is actually cancelled. while they supply generic content. It was more information than any kind of reading when I did the trial initially. That’s why I tried to u subscribe and delete. Basically a scam playing off people’s emotions and will to want and do better. Don’t download. UPDATE: keeps saying nickname for review is taken… maybe because it’s an honest review",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge",
+          "trial_converted",
+          "data_privacy"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-20: was unauthorized_charge, which the taxonomy reserves for a charge with no prior purchase - this ticket says 'auto renewed' and mentions the initial trial, so a purchase existed. What it cannot do is stop it: nothing showed in the phone's subscriptions, the login fails and the bot loops. That is cannot-complete-cancellation.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "app_technical"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "Nebula auto renewed after deleting account.",
+        "rationale": "User reports app was deleted and auto-renewed, and they cannot log in or cancel despite trying the bot, indicating cancellation mechanisms failed and charges may continue, so this requires human escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 6718,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:7100042476",
+      "text": "I just updated the app and I’m quite disappointed. Not sure if they’re trying to force new users to upgrade to the lifetime plan but it’s horrible now. There's an ad/commercial pop-up every time I use a feature. Sometimes I have to close the app completely because it keeps glitching and the loading image freezes on my screen. I’m using an iPhone 11 Pro Max with the newest software so it’s not like I’m using an outdated phone. Please fix these bugs or go back to limiting ads ran on the app, it’s no longer user-friendly!",
+      "expected": {
+        "category": "app_technical",
+        "secondary_categories": [],
+        "priority": "3",
+        "next_step": "send_kb_article",
+        "rationale": "After an update the app shows a pop-up on every feature, glitches and freezes on the loading image on current iPhone software; no money is mentioned and nothing is blocked.",
+        "confidence": 0.75,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28901074285713",
+          "hc-28901320551953"
+        ]
+      },
+      "actual": {
+        "category": "app_technical",
+        "secondary_categories": [
+          "pricing_unclear"
+        ],
+        "priority": "3",
+        "next_step": "escalate_to_human",
+        "evidence": "Sometimes I have to close the app completely because it keeps glitching and the loading image freezes on my screen.",
+        "rationale": "User describes app glitches, freezing and disruptive ads after an update (an app technical bug), with no money or subscription issue stated so this is priority 3.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5890,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:12339183335",
+      "text": "The app had a technical glitch and just to be on the safe side I checked my account. I messaged straightaway stating that the extra attempts were not showing, and it was not to purchase any credits in that amount. Instead of refunding, they added the credits, whilst admitting there was a technical glitch and now the support agent is awol. \nTotal scam and need to get the money back, now conveniently they’re not replying. Total joke and scam.\nUpdate: they are saying they will not refund. Despite the fact I followed the info online - submitted the evidence and they admitted a technical error. I want my refund - I do not want the credits.\nLast Update: After stating it was theft, and stating it was their error - and also looking up and getting the legal and bank routes of attempting to reimburse the loss - they confirmed they will refund the money. Despite it being online - as a consumer we are protected by consumer rights especially on unfair practices when the issue is a technical fault. Depending on the country you are in. Lots of info online about it. \nBut it seems I’ve given this app too many chances. Not sure why I’m still trying. That was unnecessarily difficult and stressful.",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "app_technical"
+        ],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "rationale": "Credits were charged during an admitted technical glitch and, after the writer cited consumer law and bank routes, Nebula confirmed it will refund, so the money question is already settled.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-04",
+          "pol-14",
+          "pol-18"
+        ]
+      },
+      "actual": {
+        "category": "app_technical",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "they admitted there was a technical glitch",
+        "rationale": "User reports a technical glitch that caused credits to be added and requests a refund; money has been taken and needs reversal but charges are not described as ongoing.",
+        "confidence": 0.8
+      },
+      "category_ok": false,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": false,
+      "confidence": 0.8,
+      "latency_ms": 6593,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:1ab36f69-034",
+      "text": "It's a trap. It's impossible to cancel the subscription. The link on the website is broken, the app freezes when you try to unsubscribe. They will charge you 39 per month. It's time to sue them. PS The email you're giving in your answer is not the same stated on your website",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "app_technical"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "The website unsubscribe link is broken and the app freezes on the cancellation attempt while 39 per month keeps being charged, and the writer names suing; repeating the route that just failed is not an answer.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "app_technical"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "It's impossible to cancel the subscription.",
+        "rationale": "User reports they cannot cancel (broken website link and app freezes) and warns ongoing monthly charges, so this is a cancellation failure requiring human escalation and high priority.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 3844,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:fc7472ac-1c1",
+      "text": "This is the waste of time paying $1 for the trial for not getting a free skitch and it turned out to be a scam. I am not paying $50 for the subscription. I need to cancel and get my $1 back. Why waste the money while you get charged and have a psychic read your astrology.",
+      "expected": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "cancellation_failed",
+          "refund_request",
+          "trial_converted"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "rationale": "A dollar was paid for a sketch and the sketch never arrived, which the definition names in those words. next_step stays guide_cancellation rather than the category default request_evidence, on a per-ticket fact: the 50 has NOT been taken yet and the writer asks to cancel before it lands, so asking for evidence first lets the charge through. Priority 2 - something paid for was not delivered, and the sum is bounded. CORRECTED 2026-09-21: was cancellation_failed; the cancellation request is real and stays secondary, but nothing about the cancellation mechanism is reported as broken.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28901216899857",
+          "hc-28901045413393"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "paying $1 for the trial for not getting a free skitch and it turned out to be a scam.",
+        "rationale": "User reports a $1 trial that led to a paid subscription and requests cancellation and a refund, indicating a trial->paid conversion; this is a bounded billing issue so priority 2.",
+        "confidence": 0.85
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 5437,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:13354574554",
+      "text": "I am writing a review as a charge of $65 AUD that was deducted from my account without my authorisation or consent. I made a one-time payment of $1 to review a service on your platform on instagram. However, a week later, I noticed an unexpected charge of $65 AUD on my statement.\n\nI did not receive any prior notification or confirmation regarding this additional amount, nor did I authorise any recurring subscription or further transactions. I'm concerned that this may be an unauthorised transaction, and I request that you refund the full amount of $65 AUD back to my account immediately.\n\nFurthermore, I would like to clarify that I did not intentionally subscribe to any recurring payment plan or membership with Nebulas. \n\nI would appreciate a prompt response regarding the actions you'll take to resolve this issue.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge",
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "A one-time $1 payment from an Instagram ad was followed a week later by $65 AUD: the fact pattern is a converted trial despite the wording, one bounded charge to reverse and no store named.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I made a one-time payment of $1 to review a service on your platform on instagram. However, a week later, I noticed an unexpected charge of $65 AUD on my statement.",
+        "rationale": "User reports a $1 initial payment followed by a larger $65 AUD charge a week later, indicating a trial or introductory payment converted to a paid charge; one charge has already landed so this is Priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4484,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:955a8abf-f27",
+      "text": "I haven't interacted with this app except to pay $1:00 for a one time 3mins reading after which I deleted the app because I didn't like it and now I have been debited with no subscription on. Kindly refund as I did not subscribe for the usage of your app and sadly but you still went ahead to charge me exorbitantly. Kindly refund please.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "$1 paid for a one-time three-minute reading then an exorbitant debit after the app was deleted - the 1-dollar-to-subscription pattern - with one charge to reverse and no purchase rail stated.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I haven't interacted with this app except to pay $1:00 for a one time 3mins reading after which I deleted the app because I didn't like it and now I have been debited with no subscription on.",
+        "rationale": "User reports a $1 one-time reading followed by a later debit despite no subscription, indicating a trial/intro purchase converted to a paid charge; it's an unresolved single charge so priority 2 and we need the purchase rail.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5281,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:11b675dc-7bc",
+      "text": "Customer service is a joke. DO NOT spend the 1 dollar to try the app because when you go to cancel your subscription its not there to cancel. then you get charged the 45 fee just to find out your accounts been canceled all together. I have kindly asked for a resolution from their \"customer service\" and have had only negative replies.",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: was trial_converted. Both causes are present - a $1 trial that became $45, and a subscription that 'is not there to cancel'. The tie-break is ours: 'the primary one is the one that has to be fixed for the charges to stop', and that is the cancellation. 10 of 12 runs.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "when you go to cancel your subscription its not there to cancel. then you get charged the 45 fee",
+        "rationale": "User reports they could not find/complete cancellation and were then charged $45 despite attempting to cancel, and prior support attempts failed — this is a cancellation failure requiring human escalation; it's a single charged incident so priority 2.",
+        "confidence": 0.86
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.86,
+      "latency_ms": 5327,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14551516138",
+      "text": "I initially signed up for Nebula through an advertisement for approximately $1. However, I was later charged additional amounts that I did not expect ($49.99) and was not clearly aware I had agreed to.\n\nI stopped using the service and deleted the app, but I was still charged again even though I was no longer using Nebula.\n\nI did not intend to authorize these recurring charges, and I am requesting a full refund for all unexpected charges.\n\nI have already contacted Nebula Support by email regarding this issue and provided my account information. Please check my email and process my refund request as soon as possible.\n\nI am currently giving the app 1 star because of the unclear billing experience. I will update this review depending on how Nebula handles and resolves my refund request.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: next_step was ask_purchase_rail. The documented route was already followed and failed: the app was deleted and the charge landed again, which is the first escalation trigger verbatim. 11 of 12 runs.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I initially signed up for Nebula through an advertisement for approximately $1. However, I was later charged additional amounts that I did not expect ($49.99) and was not clearly aware I had agreed to.",
+        "rationale": "The user describes a low-cost signup (~$1) that later charged $49.99 (trial converting to a paid subscription) and reports continuing charges after deleting the app; they also say they've already contacted support, so this is an ongoing recurring-charge issue requiring human escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 6250,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:13613859375",
+      "text": "I got this app from Instagram i hadn't even downloaded it and it was just interesting to me at the time. Still, I ended up downloading it to see what my birth chart said and everything I had to download the app and give an email so like I said I was interested so I downloaded the app there was nothing that was telling me I had to pay 50$!! To get my info. Next thing i know my account it being charged 50$ a month and yes a month i went back to the app and it brought up the add thing and i had never seen it till them so I'm confused why I'm being charged when i never agreed to my account being used, I've tired multiple times to download it and sign into my old account and it just keeps bring up the add like i never had and and like its not already charging it. I want to cancel my account, that's it. I would give it a a zero but it won't let me…",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "pricing_unclear",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: next_step was guide_cancellation. The charge is stated as $50 every month - 'the charges are still happening, not one charge to reverse' - and the writer cannot sign back in to try the route we would be guiding them through. Guidance they cannot execute is not an answer.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "Next thing i know my account it being charged 50$ a month",
+        "rationale": "User reports recurring $50/month charges and says they repeatedly cannot sign into the app or cancel the account, so cancellation failed and charges are ongoing; urgent human escalation is required.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 6297,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:d4eafab3-834",
+      "text": "got charged twice in 3 days for $43 and $71 without my consent. absolutely unacceptable conduct. i expect a refund as thjs is a total violatiom of the original agreement.",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Two different amounts, $43 and $71, taken three days apart is not the renewal cycle of anything agreed to, and nothing indicates the billing has stopped.",
+        "confidence": 0.7,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "got charged twice in 3 days for $43 and $71 without my consent.",
+        "rationale": "User reports charges they say were made without consent (unauthorized charges); money has already been taken so this is a priority 2 billing dispute and we need the purchase rail to proceed.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4405,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:6b654831-ab0",
+      "text": "This apps is totally scam, charge my card for amount of USD. 20,99. I already check for many times that i don't have any subscription in this apps. Now when I realized it, i already charged for 4 months! This is unacceptable and unauthorized payment, i want fully refund!!",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "USD 20.99 taken for four consecutive months while repeated checks show no subscription in the app, so there is no agreed subscription for the charges to be renewing and no visible way to stop the fifth.",
+        "confidence": 0.65,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "Now when I realized it, i already charged for 4 months!",
+        "rationale": "User reports repeated charges over four months while stating they have no subscription, indicating a recurring charge they cannot stop—requires human escalation and urgent handling.",
+        "confidence": 0.9
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5531,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:d42a2c2c-c6d",
+      "text": "They stole my money. I only paid $5 the first time, and it was fine, just to read some survey results they were doing, and I thought, well, $5 isn't bad. Then, a week later, they debited another $67 from my account without my authorization. This is outrageous; it's theft. I need my money back. I also had to block my card, and now I have to wait to resolve the dispute with the bank.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "$5 paid for a survey reading became $67 debited a week later, the textbook converted-trial pattern, and the card is blocked with a bank dispute already open.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I only paid $5 the first time, and it was fine, just to read some survey results they were doing, and I thought, well, $5 isn't bad. Then, a week later, they debited another $67 from my account without my authorization.",
+        "rationale": "User reports a small $5 initial payment followed a week later by a $67 debit (trial -> larger charge) and has involved their bank in a dispute, so this is a trial conversion that needs human escalation and high priority.",
+        "confidence": 0.82
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.82,
+      "latency_ms": 6422,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14492078493",
+      "text": "Hello,\n\nI would like to formally request a refund for the charges made to my bank account.\n\nI was charged without clearly realizing or authorizing these payments, and the amount charged was much higher than I expected. I was shocked when I discovered the transactions.\n\nI have already deleted my account and stopped using your service. However, I am very concerned that my bank account may continue to be charged.\n\nPlease investigate this matter immediately, cancel any future recurring payments or subscriptions associated with my account/card, and process a full refund for the unauthorized charges.\n\nPlease also provide written confirmation that there will be no further charges from your company.\n\nIf this issue cannot be resolved, I will proceed with disputing the transactions with my bank.\n\nThank you, and I look forward to your prompt response.",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed",
+          "data_privacy"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: was refund_request. The dictionary excludes that explicitly - 'if they say they never authorised the charge at all, that is unauthorized_charge' - and the ticket says 'charged without clearly realizing or authorizing these payments' and 'the unauthorized charges'. Neither limb of refund_request applies: a cause IS identified, and this is the first request rather than a refused one. 10 of 12 runs.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-04",
+          "pol-14",
+          "pol-18"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "Please investigate this matter immediately, cancel any future recurring payments or subscriptions associated with my account/card, and process a full refund for the unauthorized charges.",
+        "rationale": "User reports they deleted their account but is concerned charges may continue and explicitly asks us to cancel any future recurring payments/subscriptions, indicating a cancellation could not be completed and must be stopped.",
+        "confidence": 0.8
+      },
+      "category_ok": false,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.25,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 5327,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:5bcde7fc-cf4",
+      "text": "disgusting. No complete anything of what I originally signed up for. And I can't find how to cancel subscription as nothing that it says should be in the app to click on is there. I want out of this scam",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "service_not_delivered"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "rationale": "The in-app controls the instructions describe are not present, so the subscription cannot be ended; no charge is reported as taken and no refund is asked for.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "evidence": "I can't find how to cancel subscription as nothing that it says should be in the app to click on is there.",
+        "rationale": "User states they cannot find or complete cancellation in the app, so the root cause is a failed cancellation; they ask to be removed from the service which implies a refund request secondary; no ongoing recurring charges or other escalation triggers are mentioned, so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 10312,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:597f7476-722",
+      "text": "orbio.. Maybe reread this. I did cancel. One of your support people said it was canceled. And I wasn't charged. well I just sent proof. edited: DO NOT SUBSCRIBE TO NEBULA. MY BANK FLAGGED THEM. GOOGLE DOES NOT SUPPORT THEM SO YOU CAN'T CANCEL THROUGH GOOGLE. THAN THEY SEND YOU A WEBSITE PAGE THAT SAYS NO PAGE FOUND. Finally after posting here they gave Me a support link. They SeNT ME 3 EMAILS SAYING IT WAS CANCELED. WELL I GOT CHARGE FOR A FULL MONTH TODAY AFTER I CANCELED 5 DAYS AGO.",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Cancelled five days ago with three confirmation emails from support and was still billed a full month today, the bank has flagged the merchant, and the support link sent led to a page not found, so repeating the cancellation instruction is what already failed.",
+        "confidence": 0.8,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "WELL I GOT CHARGE FOR A FULL MONTH TODAY AFTER I CANCELED 5 DAYS AGO.",
+        "rationale": "User says they canceled (and were told cancellation succeeded) but were still charged five days later, and multiple cancellation routes failed—requires human escalation and urgent attention.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4733,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:ea35c182-8ba",
+      "text": "Predetory 'Free Trial' no way to cancel! hunt ed thru this entire app and cannot find ANYWHERE to cancel, so being charged for a subscription i do NOT want!! you guys need to make it very clear and eady for people to cancel their subscription etc, because at present, its extremely dodgy to not have this option anywhere and almost constitutes THEFT plain and simple!",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "guide_cancellation",
+        "rationale": "Being billed for a subscription following a free trial with no cancel control found anywhere in the app, so the charge is recurring and unstoppable; they have searched only the app and not the purchase rail, so the route still needs to be given.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "cannot find ANYWHERE to cancel, so being charged for a subscription i do NOT want!!",
+        "rationale": "User reports they cannot find anywhere to cancel and is being charged for a subscription they do not want, indicating ongoing charges that cannot be stopped.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5375,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:773442e1-d66",
+      "text": "Nebula, I made a one time purchase to see what my soulmate would look like and instead you guys are billing me for an annual fee? Please cancel that request which keeps getting bounced but I have so far endured three sets of bank reversal charges and I cannot find a method of cancelling you or it!!! Grrrrr!!!",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "A one-time soulmate-sketch purchase turned into annual billing that keeps bouncing, costing three separate sets of bank reversal charges, and the writer asks Nebula itself to cancel because no cancellation method can be found.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I cannot find a method of cancelling you or it!!!",
+        "rationale": "User reports they cannot find or complete cancellation and has endured multiple recurring bank reversal charges, so the root problem is cancellation failure and ongoing charges (priority 1).",
+        "confidence": 0.86
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.86,
+      "latency_ms": 4422,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:1f2146f8-5fb",
+      "text": "I want to cancel subscription not interested in the ocult not even for entertainment I can't cancel why is it so ha t d to cancel your site please cancel my subscription I don't want it",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "rationale": "Repeats twice that they want the subscription cancelled and cannot work out how; no charge, amount or refund demand is mentioned, so the missing thing is the cancellation route.",
+        "confidence": 0.8,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "evidence": "I can't cancel why is it so ha t d to cancel your site please cancel my subscription I don't want it",
+        "rationale": "User states they cannot cancel their subscription and asks support to cancel it, indicating a cancellation mechanism failure; priority 2 because a charge is implied but not stated as ongoing.",
+        "confidence": 0.92
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.92,
+      "latency_ms": 5875,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:af7bdde4-21a",
+      "text": "I actually wrote a very nice positive review. I was fair, detailed and sincere. I would not to take that back!!!! this is a scam they will charge you a choice amount at the begging anywhere from like a dollar to something like 19.99. fine. then they charge you that plus almost 50 dollars again and again!!!! no matter if you uninstall it or delete it. im writing here in hopes to get my money back!!! I did not go over the trial time! I canceled before it ended and still begging changed!! help",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Cancelled before the trial ended and was still charged, and the near-50 charge repeats \"again and again\" after uninstalling, so the charges are recurring and unstoppable by the writer.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "then they charge you that plus almost 50 dollars again and again!!!! no matter if you uninstall it or delete it.",
+        "rationale": "User says they cancelled before the trial ended and that recurring charges continue even after uninstall/delete, so this is a cancellation failure with ongoing charges requiring escalation.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4015,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:76d080ff-04f",
+      "text": "I followed their so called subscription cancellation instructions only to be charged $61.00 give me my money back, scammers",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "Followed the published cancellation instructions and was charged $61.00 anyway - one charge to reverse, and repeating the instruction that just failed is not an answer.",
+        "confidence": 0.75,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "I followed their so called subscription cancellation instructions only to be charged $61.00",
+        "rationale": "The user says they followed cancellation instructions but were still charged $61, indicating a cancellation failed; they request a refund so human escalation is needed to investigate and reverse the charge.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4062,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14543848514",
+      "text": "The app just paid my credit card 49.99 usd without authorization. I didnt register the auto credit. How did you guy cheat your clients??????? I request a refund immediately",
+      "expected": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "AUDIT 2026-09-21: next_step was escalate_to_human, and not one escalation trigger is present - one bounded charge of 49.99, support never contacted, no third party, no stated vulnerability. 'Do NOT escalate when the ticket is one bounded charge, nothing has been tried yet.' No store is named, so the missing thing is the purchase rail. 9 of 12.",
+        "confidence": 0.6,
+        "kb_covered": false,
+        "kb_articles": []
+      },
+      "actual": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "The app just paid my credit card 49.99 usd without authorization. I didnt register the auto credit.",
+        "rationale": "User explicitly denies authorizing the charge, indicating an unauthorized_charge; a charge has already occurred but no ongoing recurring claim is stated, so priority is 2.",
+        "confidence": 0.87
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.87,
+      "latency_ms": 3906,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:764df98a-261",
+      "text": "DON'T HAVE A CANCELLATION OPTION! Do not subscribe. Out of curiosity I tried the e days free trial then I had no option to cancel. They set up a daily payment of £0.94. After all my attempts to cancel I contacted my bank and explained everything so they blocked the future payments and refund me for what already been paid meanwhile till I was trying to cancel.",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "rationale": "No cancellation option after the free trial and a daily GBP 0.94 debit, but the bank has already blocked future payments and refunded what was taken, so nothing is moving and nothing is asked of Nebula.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "After all my attempts to cancel I contacted my bank and explained everything so they blocked the future payments and refund me for what already been paid meanwhile till I was trying to cancel.",
+        "rationale": "User states they could not find/cancel the subscription and involved their bank to stop payments, which indicates a cancellation failure and a third-party (bank) is already involved so it requires human escalation; priority 1.",
+        "confidence": 0.92
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.92,
+      "latency_ms": 5594,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14304708630",
+      "text": "I was charged for something I didn’t subscribe to and when I wrote an email to get refunded, no one got back to me. I only requested and paid for the sketch. I looked up on FAQs that will I be charged monthly for only requesting a sketch and the answer I got was that I’m not automatically subscribed to anything but I was charged for the subscription. I would like my refund as soon as possible.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "unauthorized_charge",
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "Paid only for a one-off sketch and was then billed a subscription - the same small-purchase-then-subscription sequence the calibration treats as a converted trial - and the emailed refund request went unanswered.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I only requested and paid for the sketch. I looked up on FAQs that will I be charged monthly for only requesting a sketch and the answer I got was that I’m not automatically subscribed to anything but I was charged for the subscription.",
+        "rationale": "User paid for a one-off sketch and reports being charged for a subscription despite FAQ saying no auto-subscribe, indicating a trial/one-off converted into a subscription; it's a single charge needing refund so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4109,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:dcce2851-e69",
+      "text": "need a refund I never wanted to keep this app. I canceled it on the last day of trial and was still charged $54 please fix this",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "trial_converted",
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "Cancelled on the last day of the trial and was charged $54 regardless: the documented route was followed and failed, leaving one bounded charge to reverse.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "I canceled it on the last day of trial and was still charged $54",
+        "rationale": "User states they cancelled on the last day of the trial but were still charged, indicating a cancellation failure; a refund is requested so this needs human escalation.",
+        "confidence": 0.85
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.5,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 3827,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14161665940",
+      "text": "Achtung Abzocke! Bitte aufpassen, wenn man bei dieser unseriösen Firma etwas bezahlt! Es wird mit der ersten Zahlung ungewollt / ungefragt ein Abo mit einer Einzugsermächtigung eingerichtet! So kann die Firma mindestens einen Jahresbeitrag rechtssicher abbuchen. Achtet darauf, dass keine Verknüpfung mit eurer Zahlungsquelle ausgelöst wird!!!! \nZudem ist die Art der „Dienstleistung“ mehr als fraglich, unseriös und maximal beliebig interpretierbar.",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "pricing_unclear",
+          "content_quality"
+        ],
+        "priority": "3",
+        "next_step": "send_kb_article",
+        "rationale": "The first payment silently creates a subscription with a direct-debit mandate, which is R1: a subscription that follows a small starting payment is trial_converted. Priority stays 3 - the ticket is a warning written for other readers, phrased generically ('wenn man ... etwas bezahlt'), with no amount, no date and no request, so nothing is stated as moving for this writer. send_kb_article stays because pol-05 and faq-09 answer the conversion allegation directly, which acknowledge_and_close would not. CORRECTED 2026-09-21: was pricing_unclear, which is how the charge happened rather than what happened.",
+        "confidence": 0.75,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "Es wird mit der ersten Zahlung ungewollt / ungefragt ein Abo mit einer Einzugsermächtigung eingerichtet!",
+        "rationale": "User reports a subscription was set up without their consent (unauthorized charge); they seek money back but did not state the purchase platform. Priority 2 because money is at stake but no ongoing charges or escalation are reported.",
+        "confidence": 0.8
+      },
+      "category_ok": false,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 4187,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:c0c4abb2-9cc",
+      "text": "ich habe da im Netz zu nichts zugestimmt und jetzt finde ich keinen Weg die App zu kündigen! ich möchte nicht, dass die für die App bei mir abbuchen!",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "rationale": "No charge has landed yet - the writer wants to stop a future debit and cannot find any way to cancel, so the cancellation route is the answer they are missing.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "evidence": "finde keinen Weg die App zu kündigen!",
+        "rationale": "User states they cannot find a way to cancel the app, indicating a cancellation flow failure; they also deny having agreed to anything so may claim an unauthorized charge.",
+        "confidence": 0.85
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": true,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": false,
+      "confidence": 0.85,
+      "latency_ms": 4296,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:7983368e-950",
+      "text": "I would give zero stars if I could. Like so many others have said, it is nearly impossible to cancel!! It doesn't show as an app in Google. I do not want this app. Please cancel it. My next step will be to lodge a complaint with PayPal if I am charged again.",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "The subscription does not appear in Google Play so it cannot be stopped and will charge again, and PayPal is named as the next dispute channel.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "it is nearly impossible to cancel!!",
+        "rationale": "User reports they cannot cancel the subscription and asks support to cancel it, so primary issue is cancellation failure; money is at stake but no charge or escalation yet, so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5265,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:13635950628",
+      "text": "I bought a birth chart reading for USD 0.50 and have been charged twice for a monthly subscription despite informing you that I didn’t sign up for a subscription. Please cancel all collections!",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "A USD 0.50 birth chart reading became a monthly subscription already charged twice, and Nebula was told once already and billed again, so the collections are still running.",
+        "confidence": 0.75,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "I bought a birth chart reading for USD 0.50 and have been charged twice for a monthly subscription",
+        "rationale": "A low-cost reading (USD 0.50) was followed by monthly subscription charges, indicating a trial/intro converted to a subscription; priority 2 because charges have already occurred and need reversal/cancellation but no escalation triggers are present.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4577,
+      "repaired": false
+    }
+  ],
+  "failures": [],
+  "per_class": {
+    "app_technical": {
+      "support": 1,
+      "predicted": 2,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666
+    },
+    "cancellation_failed": {
+      "support": 21,
+      "predicted": 24,
+      "precision": 0.8333333333333334,
+      "recall": 0.9523809523809523,
+      "f1": 0.888888888888889
+    },
+    "content_quality": {
+      "support": 1,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "other": {
+      "support": 1,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "pricing_unclear": {
+      "support": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "refund_request": {
+      "support": 4,
+      "predicted": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "service_not_delivered": {
+      "support": 3,
+      "predicted": 2,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    "trial_converted": {
+      "support": 13,
+      "predicted": 15,
+      "precision": 0.7333333333333333,
+      "recall": 0.8461538461538461,
+      "f1": 0.7857142857142856
+    },
+    "unauthorized_charge": {
+      "support": 6,
+      "predicted": 4,
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1": 0.6
+    },
+    "_macro_f1": 0.7176587301587302,
+    "_macro_precision": 0.7270833333333333,
+    "_macro_recall": 0.7456501831501832,
+    "_macro_f1_core": 0.6149206349206349,
+    "_macro_precision_core": 0.6633333333333333,
+    "_macro_recall_core": 0.593040293040293,
+    "_core_classes": 5
+  },
+  "buckets": {
+    "language": {
+      "english": {
+        "n": 38,
+        "category": 0.8157894736842105,
+        "all_three": 0.5789473684210527
+      },
+      "non-english latin": {
+        "n": 8,
+        "category": 0.625,
+        "all_three": 0.5
+      },
+      "non-latin script": {
+        "n": 4,
+        "category": 0.75,
+        "all_three": 0.25
+      }
+    },
+    "tone": {
+      "aggressive": {
+        "n": 16,
+        "category": 0.625,
+        "all_three": 0.4375
+      },
+      "plain": {
+        "n": 34,
+        "category": 0.8529411764705882,
+        "all_three": 0.5882352941176471
+      }
+    },
+    "topics": {
+      "multi-topic": {
+        "n": 21,
+        "category": 0.7142857142857143,
+        "all_three": 0.5238095238095238
+      },
+      "single topic": {
+        "n": 29,
+        "category": 0.8275862068965517,
+        "all_three": 0.5517241379310345
+      }
+    },
+    "kb": {
+      "kb has an answer": {
+        "n": 44,
+        "category": 0.7954545454545454,
+        "all_three": 0.5681818181818182
+      },
+      "not in the kb": {
+        "n": 6,
+        "category": 0.6666666666666666,
+        "all_three": 0.3333333333333333
+      }
+    }
+  },
+  "confusion": [
+    {
+      "expected": "unauthorized_charge",
+      "actual": "cancellation_failed",
+      "count": 3
+    },
+    {
+      "expected": "refund_request",
+      "actual": "trial_converted",
+      "count": 2
+    },
+    {
+      "expected": "refund_request",
+      "actual": "pricing_unclear",
+      "count": 1
+    },
+    {
+      "expected": "cancellation_failed",
+      "actual": "trial_converted",
+      "count": 1
+    },
+    {
+      "expected": "trial_converted",
+      "actual": "cancellation_failed",
+      "count": 1
+    },
+    {
+      "expected": "refund_request",
+      "actual": "app_technical",
+      "count": 1
+    },
+    {
+      "expected": "service_not_delivered",
+      "actual": "trial_converted",
+      "count": 1
+    },
+    {
+      "expected": "trial_converted",
+      "actual": "unauthorized_charge",
+      "count": 1
+    }
+  ]
+}

@@ -36,18 +36,16 @@
     "label": {
       "category": "refund_request",
       "secondary_categories": [
-        "trial_converted",
-        "pricing_unclear"
+        "trial_converted"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "363 RMB was taken at download against a displayed three-day free trial, Apple has already refused the refund and Nebula's only reply was 'we'll look into it', so the documented route is exhausted and one charge remains to reverse.",
-      "confidence": 0.55,
+      "rationale": "AUDIT 2026-09-21: was pricing_unclear, which requires that the terms were not visible - but the ticket says the three-day free trial WAS displayed, so that exclusion does not fit. Apple refused the refund and support answered 'we'll look into it' with no action: that is the second situation in which refund_request is primary - the refund itself is what is stuck. Twelve runs of two models all say trial_converted; they are closer than the old label and still not the rule.",
+      "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
-        "pol-04",
-        "pol-14",
-        "pol-18"
+        "hc-28898955150609",
+        "faq-09"
       ]
     }
   },
@@ -569,14 +567,14 @@
       "reply_latency_sec": 20722
     },
     "label": {
-      "category": "trial_converted",
+      "category": "cancellation_failed",
       "secondary_categories": [
-        "cancellation_failed",
+        "trial_converted",
         "refund_request"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "A 7.99 trial they did authorise became two 35.99 charges in two weeks, and the cancellation method shown in their Play Store account does not work, so the charging has not stopped.",
+      "rationale": "AUDIT 2026-09-21: was trial_converted. An authorised 7.99 trial became two 35.99 charges in two weeks AND 'the method shown to cancel are not working in my play store account'. Same tie-break as gp:11b675dc-7bc: what has to be fixed for the charges to stop is the cancellation. 10 of 12 runs.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -666,21 +664,20 @@
       "reply_latency_sec": 122936
     },
     "label": {
-      "category": "cancellation_failed",
+      "category": "trial_converted",
       "secondary_categories": [
-        "trial_converted",
+        "cancellation_failed",
         "refund_request",
-        "advisor_conduct",
         "pricing_unclear"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Cancelled the day after starting the free trial and was charged 60+ anyway, and support said it could find no subscription to cancel, so the yearly term they never agreed to is still live and unstoppable.",
-      "confidence": 0.55,
+      "rationale": "A three-day free trial produced a 60+ charge and a term that runs for a YEAR, which R1 assigns to trial_converted: a charge that followed a trial is trial_converted however the writer names it. Priority 1 on stated facts - the yearly subscription is live, the writer cancelled and was charged anyway, and support answered that it cannot find a subscription to cancel, so the charges are not stopped and the documented route has already failed. CORRECTED 2026-09-21: was cancellation_failed. The failed cancellation is real and stays as a secondary, but it is what happened after the charge, not what caused it. Wrong in all three runs of gpt-5-mini, which chose trial_converted every time.",
+      "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
-        "hc-28900802305297",
-        "pol-16"
+        "pol-05",
+        "faq-09"
       ]
     }
   },
@@ -940,8 +937,8 @@
         "refund_request"
       ],
       "priority": "2",
-      "next_step": "request_evidence",
-      "rationale": "Bought 80 credits for 9.99 and never received them, support claimed some were already spent without saying on what and then closed the ticket unanswered.",
+      "next_step": "escalate_to_human",
+      "rationale": "AUDIT 2026-09-21: next_step was request_evidence. Two escalation triggers are stated outright - support was contacted and never replied, and an email claimed the issue was resolved when it was not. Evidence is not what is missing here; an answer is. 12 of 12 runs.",
       "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
@@ -1097,19 +1094,21 @@
       "reply_latency_sec": 119766
     },
     "label": {
-      "category": "unauthorized_charge",
+      "category": "cancellation_failed",
       "secondary_categories": [
-        "cancellation_failed",
-        "data_privacy",
+        "unauthorized_charge",
         "trial_converted",
-        "content_quality"
+        "data_privacy"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "39 euros was taken after the account and app were deleted and with nothing showing in the phone's subscriptions, and the writer still cannot log in to stop it.",
-      "confidence": 0.6,
-      "kb_covered": false,
-      "kb_articles": []
+      "rationale": "AUDIT 2026-09-20: was unauthorized_charge, which the taxonomy reserves for a charge with no prior purchase - this ticket says 'auto renewed' and mentions the initial trial, so a purchase existed. What it cannot do is stop it: nothing showed in the phone's subscriptions, the login fails and the bot loops. That is cannot-complete-cancellation.",
+      "confidence": 0.65,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900802305297",
+        "pol-16"
+      ]
     }
   },
   {
@@ -1299,19 +1298,20 @@
       "reply_latency_sec": 1152
     },
     "label": {
-      "category": "cancellation_failed",
+      "category": "service_not_delivered",
       "secondary_categories": [
+        "cancellation_failed",
         "refund_request",
-        "service_not_delivered"
+        "trial_converted"
       ],
       "priority": "2",
       "next_step": "guide_cancellation",
-      "rationale": "The $50 has not been taken yet and the writer's request is to cancel before it lands plus get the $1 back, so the cancellation route is the action.",
-      "confidence": 0.6,
+      "rationale": "A dollar was paid for a sketch and the sketch never arrived, which the definition names in those words. next_step stays guide_cancellation rather than the category default request_evidence, on a per-ticket fact: the 50 has NOT been taken yet and the writer asks to cancel before it lands, so asking for evidence first lets the charge through. Priority 2 - something paid for was not delivered, and the sum is bounded. CORRECTED 2026-09-21: was cancellation_failed; the cancellation request is real and stays secondary, but nothing about the cancellation mechanism is reported as broken.",
+      "confidence": 0.7,
       "kb_covered": true,
       "kb_articles": [
-        "hc-28900802305297",
-        "pol-16"
+        "hc-28901216899857",
+        "hc-28901045413393"
       ]
     }
   },
@@ -1459,14 +1459,14 @@
       "reply_latency_sec": 102
     },
     "label": {
-      "category": "trial_converted",
+      "category": "cancellation_failed",
       "secondary_categories": [
-        "cancellation_failed",
+        "trial_converted",
         "refund_request"
       ],
       "priority": "2",
       "next_step": "escalate_to_human",
-      "rationale": "The $1 trial became a $45 charge with no subscription visible to cancel, and customer service has already answered with only refusals, so the charge is bounded but support has failed them.",
+      "rationale": "AUDIT 2026-09-21: was trial_converted. Both causes are present - a $1 trial that became $45, and a subscription that 'is not there to cancel'. The tie-break is ours: 'the primary one is the one that has to be fixed for the charges to stop', and that is the cancellation. 10 of 12 runs.",
       "confidence": 0.65,
       "kb_covered": true,
       "kb_articles": [
@@ -1521,8 +1521,8 @@
         "pricing_unclear"
       ],
       "priority": "1",
-      "next_step": "ask_purchase_rail",
-      "rationale": "A roughly $1 ad sign-up became $49.99 and was charged again after the app was deleted, so the billing is still recurring and unstopped; the refund needs a rail the ticket never names.",
+      "next_step": "escalate_to_human",
+      "rationale": "AUDIT 2026-09-21: next_step was ask_purchase_rail. The documented route was already followed and failed: the app was deleted and the charge landed again, which is the first escalation trigger verbatim. 11 of 12 runs.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -1568,8 +1568,8 @@
         "unauthorized_charge"
       ],
       "priority": "1",
-      "next_step": "guide_cancellation",
-      "rationale": "A $50 charge is repeating every month and the writer's single stated demand is to cancel, but they cannot sign back into the old account and only get the signup ad again, so the recurring charge is unstoppable from their side.",
+      "next_step": "escalate_to_human",
+      "rationale": "AUDIT 2026-09-21: next_step was guide_cancellation. The charge is stated as $50 every month - 'the charges are still happening, not one charge to reverse' - and the writer cannot sign back in to try the route we would be guiding them through. Guidance they cannot execute is not an answer.",
       "confidence": 0.55,
       "kb_covered": true,
       "kb_articles": [
@@ -1762,15 +1762,15 @@
       "reply_latency_sec": 113267
     },
     "label": {
-      "category": "refund_request",
+      "category": "unauthorized_charge",
       "secondary_categories": [
-        "unauthorized_charge",
+        "refund_request",
         "cancellation_failed",
         "data_privacy"
       ],
       "priority": "1",
       "next_step": "escalate_to_human",
-      "rationale": "Asks for a full refund and written confirmation that recurring billing has stopped after already deleting the account, and states they will dispute with their bank if it is not resolved.",
+      "rationale": "AUDIT 2026-09-21: was refund_request. The dictionary excludes that explicitly - 'if they say they never authorised the charge at all, that is unauthorized_charge' - and the ticket says 'charged without clearly realizing or authorizing these payments' and 'the unauthorized charges'. Neither limb of refund_request applies: a cause IS identified, and this is the first request rather than a refused one. 10 of 12 runs.",
       "confidence": 0.6,
       "kb_covered": true,
       "kb_articles": [
@@ -2172,8 +2172,8 @@
         "refund_request"
       ],
       "priority": "2",
-      "next_step": "escalate_to_human",
-      "rationale": "49.99 USD taken with no prior payment or trial described and auto-renewal denied outright, so the charge renews nothing the writer agreed to; a single bounded amount to reverse.",
+      "next_step": "ask_purchase_rail",
+      "rationale": "AUDIT 2026-09-21: next_step was escalate_to_human, and not one escalation trigger is present - one bounded charge of 49.99, support never contacted, no third party, no stated vulnerability. 'Do NOT escalate when the ticket is one bounded charge, nothing has been tried yet.' No store is named, so the missing thing is the purchase rail. 9 of 12.",
       "confidence": 0.6,
       "kb_covered": false,
       "kb_articles": []
@@ -2351,11 +2351,11 @@
       "probes": [],
       "kb_coverage_guess": "unknown",
       "kb_articles_guess": [],
-      "language": "en_or_unknown",
+      "language": "de",
       "flags": {
         "aggressive": true,
         "multi_topic": false,
-        "non_english": false,
+        "non_english": true,
         "non_latin_script": false
       }
     },
@@ -2369,18 +2369,18 @@
       "reply_latency_sec": 100543
     },
     "label": {
-      "category": "pricing_unclear",
+      "category": "trial_converted",
       "secondary_categories": [
-        "trial_converted",
+        "pricing_unclear",
         "content_quality"
       ],
       "priority": "3",
       "next_step": "send_kb_article",
-      "rationale": "A warning to other readers that the first payment silently sets up a subscription with a direct-debit mandate - a transparency complaint with no amount, no date and no request, so no money is moving.",
-      "confidence": 0.7,
+      "rationale": "The first payment silently creates a subscription with a direct-debit mandate, which is R1: a subscription that follows a small starting payment is trial_converted. Priority stays 3 - the ticket is a warning written for other readers, phrased generically ('wenn man ... etwas bezahlt'), with no amount, no date and no request, so nothing is stated as moving for this writer. send_kb_article stays because pol-05 and faq-09 answer the conversion allegation directly, which acknowledge_and_close would not. CORRECTED 2026-09-21: was pricing_unclear, which is how the charge happened rather than what happened.",
+      "confidence": 0.75,
       "kb_covered": true,
       "kb_articles": [
-        "hc-28898955150609",
+        "pol-05",
         "faq-09"
       ]
     }
@@ -2516,6 +2516,539 @@
         "pol-05",
         "faq-09"
       ]
+    }
+  },
+  {
+    "ticket_id": "as:12557958662",
+    "text": "This app is a complete scam. They lure you in with a “free” download and don’t make it clear that there’s a hidden monthly or even yearly subscription buried in the fine print. Before I knew it, I was charged without warning, and to make things worse, they refuse to issue any refunds. Do NOT download this app — it’s deceptive and dishonest. Apple should really remove it from the store.",
+    "text_sha256": "af88efe7f486a6edba50e95ae0344f20db0934053ad156e1cdd68ab21a0dbf32",
+    "chars": 388,
+    "selection": {
+      "cell": "supplement:pricing_unclear",
+      "in_window": false,
+      "probes": [
+        "refund_request",
+        "pricing_unclear"
+      ],
+      "kb_coverage_guess": "covered",
+      "kb_articles_guess": [
+        "faq-09",
+        "hc-28898955150609",
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": true,
+        "multi_topic": true,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": false,
+      "added_for": "pricing_unclear"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/de",
+      "score": 1,
+      "date": "2025-04-18",
+      "title": "Total Scam! Avoid at All Costs!",
+      "official_reply": "Hello [Name]! Thank you for feedback. We're truly sorry to hear about your experience. We aim to be transparent with all our users, and subscription details are provided before any charges. If you feel something went wrong or need help, please reach out to us at nebula.support@nebulahoroscope.com — we’ll do our best to assist. Best, Nebula Team 🔮",
+      "reply_latency_sec": 142675
+    },
+    "label": {
+      "category": "pricing_unclear",
+      "secondary_categories": [
+        "refund_request"
+      ],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "A free download with a monthly or yearly subscription buried in the fine print, then a charge with no warning. No starting payment is named, so R1 does not apply and this stays a transparency complaint. Priority 2: one charge landed and the refund was refused by support - refused by the store as well would be the priority 1 trigger, and the ticket does not say that. escalate_to_human because support has already answered and its answer was no.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28898955150609",
+        "faq-09"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:13145453244",
+    "text": "I only wanted a simple “your recommended pet” report based on my lifestyle, which feels like a misrepresentation of what they actually offer. Due to constant pop-ups and a confusing layout, I was charged €29.99 for an unwanted psychic guide.\n\nI contacted support immediately, but they refused to issue a full refund — only offering credits, 50% back, or other psychic/tarot services, which is completely useless to me as I have zero interest or belief in such things.\n\nThis company feels deliberately misleading, preying on mistakes with hidden upsells and making it extremely difficult to get a proper refund. I will be pursuing a chargeback through PayPal.\n\nHope this app gets banned from the App Store.",
+    "text_sha256": "8492778cdee88705624b250928670c814bb3bb42fb9d59d63a060759eb063ec6",
+    "chars": 705,
+    "selection": {
+      "cell": "supplement:pricing_unclear",
+      "in_window": false,
+      "probes": [
+        "refund_request",
+        "pricing_unclear"
+      ],
+      "kb_coverage_guess": "covered",
+      "kb_articles_guess": [
+        "faq-09",
+        "hc-28898955150609",
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": true,
+        "multi_topic": true,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": false,
+      "added_for": "pricing_unclear"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/gb",
+      "score": 1,
+      "date": "2025-09-16",
+      "title": "Misleading and Dishonest Service – Refused Refund",
+      "official_reply": "Hello [Name],\n\nThank you for sharing your experience 🙏. We’re truly sorry to hear that your interaction with the app and our services caused frustration. We completely understand your concerns regarding charges and the difficulty in resolving the issue.\n\nWhile we see that you’ve already reached out to support, we encourage you to contact us again at support-appstore@asknebula.com. Our team will gladly review your case personally and do everything possible to help 💜. Your feedback also helps us improve our processes and communication.\n\nWarm regards, Nebula Team 🔮",
+      "reply_latency_sec": 222408
+    },
+    "label": {
+      "category": "pricing_unclear",
+      "secondary_categories": [
+        "refund_request",
+        "content_quality"
+      ],
+      "priority": "2",
+      "next_step": "escalate_to_human",
+      "rationale": "Wanted a pet-recommendation report, was charged 29.99 EUR for a psychic guide through pop-ups and a confusing layout - the terms of what was being bought were not visible before paying. Support offered credits or 50% and refused a full refund, so the documented route has been followed and failed. One bounded charge, so priority 2.",
+      "confidence": 0.7,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28898955150609",
+        "faq-09"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:14074225177",
+    "text": "Recurring charges hidden behind ads.\n\nExtremely misleading and unacceptable billing practices.\n\nThe advertising makes users believe they are paying a very small amount, while in reality they are being enrolled into expensive recurring monthly charges without fully realizing it. Before you understand what is happening, substantial amounts of money can be taken from your account over time.\n\nUnless you constantly monitor your card transactions, it is very easy not to notice the recurring charges immediately. There are no meaningful warnings that make the long-term financial commitment truly clear from a normal consumer perspective.\n\nWhen customers eventually realize what has happened and ask for their money back, the company simply hides behind refund policies and subscription terms instead of acknowledging how misleading the entire payment flow feels.\n\nBased on my experience, this does not feel like an honest or transparent subscription model. It feels intentionally designed to confuse users into ongoing payments they never clearly intended to authorize.\n\nBe extremely careful before clicking on advertisements or entering your payment details.",
+    "text_sha256": "d801674d610703ca06d29ceff29fb774aa297b38c10ac8eb4272c2c21189443d",
+    "chars": 1158,
+    "selection": {
+      "cell": "supplement:pricing_unclear",
+      "in_window": true,
+      "probes": [
+        "refund_request",
+        "pricing_unclear"
+      ],
+      "kb_coverage_guess": "covered",
+      "kb_articles_guess": [
+        "faq-09",
+        "hc-28898955150609",
+        "pol-04",
+        "pol-14",
+        "pol-18"
+      ],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": true,
+        "multi_topic": true,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": false,
+      "added_for": "pricing_unclear"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/gr",
+      "score": 4,
+      "date": "2026-05-17",
+      "title": "Looks cheap - ends up paying hundreds",
+      "official_reply": "Hello [Name],\n\nThank you for sharing your experience. We’re truly sorry to hear that the billing process felt unclear and frustrating to you. Transparency and trust are very important to us, and we’d appreciate the chance to review your case personally and provide clarification or support. Please contact us at support-appstore@asknebula.com 💜\n\nWith gratitude, Nebula",
+      "reply_latency_sec": 109586
+    },
+    "label": {
+      "category": "pricing_unclear",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "Recurring charges hidden behind advertising that implies a very small amount. Written generically about 'users' with no amount, no date and no request, so nothing is stated as moving for this writer and priority is 3. faq-09 and the pricing article answer the allegation directly, which acknowledge_and_close would not.",
+      "confidence": 0.7,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28898955150609",
+        "faq-09"
+      ]
+    }
+  },
+  {
+    "ticket_id": "gp:d581a68c-5b1",
+    "text": "absolutely shockingly bad app. It really is just an app that gives you access to psychics, who charge around $140.00 for a reading. It provides some severely limited info on astrology and that's really it!! It was advertised as an app that focuses on past lives, but this is misleading..I've been charge over £90 and then £49 for what?? A whole lot of nothing. Im currently trying to cancel, before im charged again. The very WORST app I have ever had. Don't waste your money!!",
+    "text_sha256": "1075cb2eed62698f5848731660fd3e48f37b2d561cbb6a88c08dd26162447092",
+    "chars": 477,
+    "selection": {
+      "cell": "supplement:content_quality",
+      "in_window": true,
+      "probes": [
+        "pricing_unclear"
+      ],
+      "kb_coverage_guess": "covered",
+      "kb_articles_guess": [
+        "faq-09",
+        "hc-28898955150609"
+      ],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": true,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": false,
+      "added_for": "content_quality"
+    },
+    "provenance": {
+      "store": "googleplay",
+      "locale": "en/us",
+      "score": 1,
+      "date": "2026-03-01",
+      "title": null,
+      "official_reply": "We’re really sorry this has been your experience. That’s definitely not what we aimed for. We want to ensure clarity regarding your account details. Please reach out to us at support-googleplay@asknebula.com so we can review the details together. Warm regards, Nebula Team 🔮",
+      "reply_latency_sec": 103
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [
+        "pricing_unclear",
+        "cancellation_failed",
+        "refund_request"
+      ],
+      "priority": "1",
+      "next_step": "escalate_to_human",
+      "rationale": "Advertised as an app about past lives, delivers severely limited astrology and access to psychics at around 140 a reading - the content is the complaint. Priority 1 on a stated fact, not on the tone: 90 and 49 have already gone and the writer says they are trying to cancel BEFORE being charged again, so the charges are still repeating. That same fact is an escalation trigger.",
+      "confidence": 0.6,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:5667229725",
+    "text": "So apparently my star sign is not ares...I’ve been ares my whole life and only on your app does it give me something completely different this is no accurate and to be paying for it when it’s clearly wrong also it asks for you time of birth as it’s important but not option to be born in am or pm so there for how can you get an accurate reading anyone that pays for this is mad",
+    "text_sha256": "a17b9cf7168f4eee7ca8963b24b814e1e9fbb36c991b1ba1380ff76a2f55e53e",
+    "chars": 378,
+    "selection": {
+      "cell": "supplement:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "content_quality"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/gb",
+      "score": 1,
+      "date": "2020-03-16",
+      "title": "Rubbish",
+      "official_reply": "Please give us a little more information about the issue, we'll look into it. \nOur email is nebula@gen.tech",
+      "reply_latency_sec": 265118
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [
+        "app_technical"
+      ],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "The app assigns a star sign the writer has never had, and offers no AM/PM choice for the birth time that it says is essential - the chart is wrong and cannot be made right through the interface. No money is stated as moving and nothing is blocked.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:5966073491",
+    "text": "hello, I was inside the application and put all my information and in the end, my parent is wrong. my ascendant on various maps is cancer, but it was like twins. I don't know now, which one is correct, but as I've done several, it has already given cancer many times. how do i change this?",
+    "text_sha256": "c132ea4d8e0b0c888f4f9cb506b2dca94cdb693ff838f333754e34c6ce891589",
+    "chars": 289,
+    "selection": {
+      "cell": "supplement:content_quality",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "content_quality"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/br",
+      "score": 3,
+      "date": "2020-05-19",
+      "title": "wrong ascendant.",
+      "official_reply": null,
+      "reply_latency_sec": null
+    },
+    "label": {
+      "category": "content_quality",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "The ascendant the app produces disagrees with every other chart the writer has had, and they ask how to change it. The chart being wrong is the category; nothing is bought, broken or blocked.",
+      "confidence": 0.7,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28900868231441",
+        "faq-13",
+        "pol-11"
+      ]
+    }
+  },
+  {
+    "ticket_id": "gp:526c6366-b2c",
+    "text": "when I attempt to open it keeps saying failed. it won't open. it still won't open. very disappointed. I'm canceling my paymeny",
+    "text_sha256": "10459564c470306a63df3dcd03804390028b6b768e2483b4551dcca951ff692b",
+    "chars": 126,
+    "selection": {
+      "cell": "supplement:app_technical",
+      "in_window": false,
+      "probes": [
+        "app_technical"
+      ],
+      "kb_coverage_guess": "covered",
+      "kb_articles_guess": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": false,
+      "added_for": "app_technical"
+    },
+    "provenance": {
+      "store": "googleplay",
+      "locale": "en/us",
+      "score": 1,
+      "date": "2025-06-02",
+      "title": null,
+      "official_reply": "Dear [Name], hello there!Thank you for sharing your experience with us. We're sorry to hear you're having issues with our service. Please reach out to us at nebula.support@nebulahoroscope.com with more details  your input will help us look into the issue and resolve it promptly.Best wishes,Nebula team 🔮",
+      "reply_latency_sec": 21728
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [
+        "cancellation_failed"
+      ],
+      "priority": "2",
+      "next_step": "send_kb_article",
+      "rationale": "The app will not open at all - 'keeps saying failed' - and the writer is paying, which is why they now want to stop the payment. Priority 2 because they are locked out of something already paid for, which the priority rule names beside a bounded sum.",
+      "confidence": 0.7,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:7007116489",
+    "text": "Great app. As well very accurate, but after 2 weeks of using it my widgets started lagging and didnt show anything. Please fix that but great app recommend it.",
+    "text_sha256": "2f819d16925481c57fd1d85ed9a26a31a1ecf98e21772e99f460fc4671de20cb",
+    "chars": 159,
+    "selection": {
+      "cell": "supplement:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "app_technical"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/hr",
+      "score": 4,
+      "date": "2021-02-17",
+      "title": "Good App",
+      "official_reply": "Hi! Thank you for your comment, it is very important for us. If you face any issues with the app please contact us at  support.nebula@gen.tec and we will do our best to assist you. ",
+      "reply_latency_sec": 121364
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "The widgets lag and display nothing after two weeks of use. A malfunction in the application, with no money and no blocking anywhere in the ticket - the writer is still recommending the app.",
+      "confidence": 0.8,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:7848442874",
+    "text": "I got this app because it looked fun. But right when I first got on it I put in my birthday. And do you know what happened when I put on my birthday. It didn’t let me put on my birthday which is [BirthDate], and when I put it on the dates, It changed it to like a year later a month later and like 20 days before my actual birthday. I think this is a bug. Please fix it if it is one.",
+    "text_sha256": "e0a136af9b74941ed06e8cf85ae3b31a7550d23c218c85ad76f2c6770a8a9cff",
+    "chars": 383,
+    "selection": {
+      "cell": "supplement:app_technical",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "app_technical"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/us",
+      "score": 3,
+      "date": "2021-09-26",
+      "title": "I wasn’t even able to enter 😟",
+      "official_reply": "Greetings, [Name], unfortunately, we need to follow the legal requirements of your country.\r\n\r\n\r\nWe have the following age restrictions for different countries:\r\n- 16 years for the EU\r\n- 13 years for USA / Canada\r\n- 15 years for Australia\r\n- for all other countries -13 years\r\n\r\nIf we can any other way we can, please, contact our support team: support@nebulahoroscope.com",
+      "reply_latency_sec": 235425
+    },
+    "label": {
+      "category": "app_technical",
+      "secondary_categories": [],
+      "priority": "3",
+      "next_step": "send_kb_article",
+      "rationale": "The date field rewrites the birthday that was typed into it, moving it by a year, a month and twenty days. The application misbehaving, not the chart being wrong: the input control is what fails. Nothing paid for, nothing blocked.",
+      "confidence": 0.75,
+      "kb_covered": true,
+      "kb_articles": [
+        "hc-28901074285713",
+        "hc-28901320551953"
+      ]
+    }
+  },
+  {
+    "ticket_id": "as:5460188179",
+    "text": "I download the live wallpaper but it doesn't appear anywhere in my phone (not in photos/files). Can you tell me where can i find my purchased live wallpaper ?",
+    "text_sha256": "4005185c8129c15137542ca6cc393f7c647000c4466ee1638b624019db921976",
+    "chars": 158,
+    "selection": {
+      "cell": "supplement:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "other"
+    },
+    "provenance": {
+      "store": "appstore",
+      "locale": "-/my",
+      "score": 3,
+      "date": "2020-01-28",
+      "title": "Live wallpaper",
+      "official_reply": "It should appear in your Photos, please give it another try. \nIf you still can't find it, please send us some screenshots or a video to nebula@gen.tech",
+      "reply_latency_sec": 30154
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [
+        "service_not_delivered"
+      ],
+      "priority": "3",
+      "next_step": "escalate_to_human",
+      "rationale": "Asks where a purchased live wallpaper can be found on the phone - a how-to question, not a claim that it never arrived, which is why it is not service_not_delivered. No category covers 'how do I find what I bought', and the knowledge base has no article for it, so a person has to answer. Nothing is moving and nothing is blocked.",
+      "confidence": 0.6,
+      "kb_covered": false,
+      "kb_articles": []
+    }
+  },
+  {
+    "ticket_id": "gp:0b57e266-ec2",
+    "text": "so far I can't help but think about the things that I have read and I would have to say that so far it has been straightforward and right on the head and iam definitely needs to see my health and I would like to see what I need to do to get my life back on track because last year was a great big deal that I almost lost my life because of my heart fell your I was sent home to die and if I did not go off and find a new heart doctor I would be dead right now but I'm back to the point I can'",
+    "text_sha256": "8de2ab51a22ba0c4ae67e3e7410deb812e11919e2552f860ef702e7d76dd09c8",
+    "chars": 492,
+    "selection": {
+      "cell": "supplement:other",
+      "in_window": false,
+      "probes": [],
+      "kb_coverage_guess": "unknown",
+      "kb_articles_guess": [],
+      "language": "en_or_unknown",
+      "flags": {
+        "aggressive": false,
+        "multi_topic": false,
+        "non_english": false,
+        "non_latin_script": false
+      },
+      "addressed_to_company": true,
+      "added_for": "other"
+    },
+    "provenance": {
+      "store": "googleplay",
+      "locale": "en/us",
+      "score": 4,
+      "date": "2025-06-02",
+      "title": null,
+      "official_reply": "Hi [Name]! Thank you for sharing your story and feedback. We're glad some insights resonated with you. If you’d like personalized guidance or support to help get your life back on track, please reach out directly to us at nebula.support@nebulahoroscope.com. We're here to help you every step of the way! Best wishes from the Nebula Team.",
+      "reply_latency_sec": 775197
+    },
+    "label": {
+      "category": "other",
+      "secondary_categories": [],
+      "priority": "1",
+      "next_step": "escalate_to_human",
+      "rationale": "Four stars and no complaint at all: the writer says the readings have been accurate and asks for guidance. What decides this ticket is one stated fact - 'I almost lost my life because of my heart, I was sent home to die' - and a health disclosure is named in the priority 1 list and in the escalation triggers. Nothing is bought, broken or disputed, so no category fits and it is `other`. This row exists to test whether a model finds a vulnerability buried inside praise.",
+      "confidence": 0.65,
+      "kb_covered": false,
+      "kb_articles": []
     }
   }
 ]

@@ -8,3 +8,6 @@ data/corpus.jsonl
 .env
 .cache/
 .tiktoken_cache/
+
+# Excel lock files, created while a workbook is open
+~$*

@@ -58,7 +58,6 @@ class Category(str, Enum):
     # --- the service itself ----------------------------------------------
     SERVICE_NOT_DELIVERED = "service_not_delivered"
     CONTENT_QUALITY = "content_quality"
-    ADVISOR_CONDUCT = "advisor_conduct"
 
     # --- technical ---------------------------------------------------------
     APP_TECHNICAL = "app_technical"
@@ -76,6 +75,35 @@ class Category(str, Enum):
     # is dead weight in an evaluation. "Support was already contacted and did
     # not reply" survives as a FLAG on the label: it changes the tone and the
     # next step, never the subject.
+    #
+    # advisor_conduct went the same way on 2026-09-21, and the evidence is
+    # stronger than for either of those two. It was kept for one reason - the
+    # assignment names complaints about experts as one of its four themes - and
+    # a category kept for a reason outside the data is exactly the thing this
+    # comment block exists to catch. What the data says:
+    #   - the probe fires on 0 of the 989 ticket-shaped rows in the whole
+    #     43,941-row corpus, and on 0 of the 313 inside the freshness window;
+    #   - a hand search for advisor-behaviour language - rude, never replied,
+    #     not real, AI bot, next to psychic / advisor / astrologer - returned 11
+    #     rows, and ALL ELEVEN are billing tickets that mention psychics in
+    #     passing: a cancellation that does not work, a dollar that became
+    #     forty-five, credits that were never added. Under "the primary cause is
+    #     the one that has to be fixed for the charges to stop", not one of them
+    #     is about an advisor;
+    #   - it was never the primary label on any of the 182 labelled rows, and
+    #     across 1,000 benchmark calls no model chose it as primary even once.
+    # It survived only as a secondary tag: 2 labelled rows and 12 of 1,000 model
+    # answers, always attached to "the psychics are fake AI" inside a billing
+    # complaint. That is an accusation carried by a billing ticket, which is
+    # what the FLAGS paragraph above already covers.
+    #
+    # What does NOT go with it is the routing. A ticket genuinely about an
+    # advisor's conduct still has to reach the separate Report a Safety Concern
+    # intake (pol-08), and it still does: the category becomes `other` and the
+    # action stays ROUTE_TO_SAFETY_REPORT. That pairing is not a guess - it is
+    # how syn-01-crisis-explicit is already labelled, and v7 and v8 both pass
+    # it. The routing lived in the next_step all along; the category was
+    # duplicating it.
 
 
 class Priority(str, Enum):
@@ -116,6 +144,9 @@ class NextStep(str, Enum):
     GUIDE_CANCELLATION = "guide_cancellation"
     SEND_KB_ARTICLE = "send_kb_article"
     REQUEST_EVIDENCE = "request_evidence"
+    # Nebula runs a separate Report a Safety Concern intake (pol-08). This is
+    # the only step that leaves the support queue entirely, and it is reached
+    # from `other` - advisor_conduct used to own it and no longer exists.
     ROUTE_TO_SAFETY_REPORT = "route_to_safety_report"
     ESCALATE_TO_HUMAN = "escalate_to_human"
     ACKNOWLEDGE_AND_CLOSE = "acknowledge_and_close"
@@ -221,19 +252,6 @@ CATEGORY_GUIDE: dict[Category, dict[str, str]] = {
                 "report a crash. Kept as a category for that reason, and the "
                 "dataset reaches outside the freshness window to fill it.",
     },
-    Category.ADVISOR_CONDUCT: {
-        "count": "2 of 313 in the window, 3 in the corpus",
-        "definition": "The behaviour or authenticity of a specific advisor: "
-                      "rude, unresponsive, or suspected not to be a real person.",
-        "example": "none of the psychics are real and just provide general "
-                   "reading or mostly ai generated response",
-        "not": "A complaint about the CONTENT of what an advisor said is "
-               "content_quality; this is about who they are and how they acted.",
-        "note": "The only category whose next step is a DIFFERENT intake: "
-                "Nebula runs a separate Report a Safety Concern channel "
-                "(pol-08). The sourced answer to the authenticity accusation is "
-                "pol-20, and pol-11 is the uncomfortable half of it.",
-    },
     Category.DATA_PRIVACY: {
         "count": "1 of 313 in the window, 4 in the corpus",
         "definition": "Asks for personal data or the account to be deleted, or "
@@ -248,7 +266,11 @@ CATEGORY_GUIDE: dict[Category, dict[str, str]] = {
     },
     Category.OTHER: {
         "count": "93 of 313 rows match no probe",
-        "definition": "A real ticket that fits none of the above.",
+        "definition": "A real ticket that fits none of the above. This is also "
+                      "where a complaint about a specific advisor's conduct or "
+                      "authenticity belongs, and where acute distress belongs: "
+                      "neither has its own category, and both are carried by "
+                      "the next_step route_to_safety_report.",
         "example": "",
         "not": "",
         "note": "Not a dumping ground for low confidence - that is what the "
@@ -291,7 +313,6 @@ DEFAULT_NEXT_STEP: dict[Category, NextStep] = {
     Category.PRICING_UNCLEAR: NextStep.SEND_KB_ARTICLE,
     Category.SERVICE_NOT_DELIVERED: NextStep.REQUEST_EVIDENCE,
     Category.CONTENT_QUALITY: NextStep.SEND_KB_ARTICLE,
-    Category.ADVISOR_CONDUCT: NextStep.ROUTE_TO_SAFETY_REPORT,
     Category.APP_TECHNICAL: NextStep.SEND_KB_ARTICLE,
     Category.DATA_PRIVACY: NextStep.ESCALATE_TO_HUMAN,
     Category.OTHER: NextStep.ESCALATE_TO_HUMAN,

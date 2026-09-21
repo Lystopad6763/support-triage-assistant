@@ -64,9 +64,15 @@ THEME_CELLS: dict[str, int] = {
     "cancellation_failed": 5,
     "pricing_unclear": 2,
     "service_not_delivered": 2,
-    "content_quality": 3,
+    # 4, not 3: the slot freed when advisor_conduct stopped being a category on
+    # 2026-09-21 goes here. It goes to content_quality rather than back into the
+    # billing cells because the billing cells are the ones that do NOT survive
+    # labelling - six refund_request slots produced one refund_request label,
+    # since the probe fires on the demand and the rule assigns the cause - while
+    # content_quality rows keep their category once a human reads them, and the
+    # corpus holds 16 of them against an allocation of 3.
+    "content_quality": 4,
     "app_technical": 3,           # "bugs" in the assignment's own wording
-    "advisor_conduct": 1,         # "complaints about experts": 3 exist in total
     "data_privacy": 1,
 }
 # Rows no probe recognises. They are not noise: they are the 34% of the pool
@@ -102,7 +108,7 @@ assert PLANNED == SET_SIZE, (
 # Themes scarce enough in the window that the supplement is allowed to reach
 # outside it. Anything not listed here is window-only.
 SUPPLEMENT_ALLOWED = frozenset({
-    "advisor_conduct", "data_privacy", "app_technical", "content_quality",
+    "data_privacy", "app_technical", "content_quality",
 })
 
 LATIN_ORDER = ["es", "pt", "fr", "it", "de", "tr", "nl", "pl"]

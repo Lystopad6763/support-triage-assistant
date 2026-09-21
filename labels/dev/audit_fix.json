@@ -1,0 +1,25 @@
+{
+  "as:12190236921": {
+    "category": "cancellation_failed",
+    "secondary_categories": [
+      "unauthorized_charge",
+      "trial_converted",
+      "data_privacy"
+    ],
+    "priority": "1",
+    "next_step": "escalate_to_human",
+    "rationale": "AUDIT 2026-09-20: was unauthorized_charge, which the taxonomy reserves for a charge with no prior purchase - this ticket says 'auto renewed' and mentions the initial trial, so a purchase existed. What it cannot do is stop it: nothing showed in the phone's subscriptions, the login fails and the bot loops. That is cannot-complete-cancellation.",
+    "confidence": 0.65
+  },
+  "as:14252277944": {
+    "category": "pricing_unclear",
+    "secondary_categories": [
+      "refund_request",
+      "trial_converted"
+    ],
+    "priority": "2",
+    "next_step": "escalate_to_human",
+    "rationale": "AUDIT 2026-09-20: was refund_request, which is the fallback for when no cause is identifiable. A three-day free trial was displayed and 363 RMB was taken at download, before any trial elapsed - the terms were not honoured. as:13315148261 has the same fact pattern and is labelled pricing_unclear, so this one follows it. Apple and Nebula have both already refused.",
+    "confidence": 0.6
+  }
+}

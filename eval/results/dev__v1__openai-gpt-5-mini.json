@@ -1,0 +1,310 @@
+{
+  "summary": {
+    "set": "dev",
+    "prompt_version": "v1",
+    "model": "openai/gpt-5-mini",
+    "started_at": null,
+    "prompt_sha256": null,
+    "seed": null,
+    "temperature": 0.0,
+    "tickets": 5,
+    "scored": 5,
+    "hard_failures": 0,
+    "category_accuracy": 0.6,
+    "priority_accuracy": 0.6,
+    "next_step_accuracy": 0.2,
+    "all_three_accuracy": 0.0,
+    "secondary_jaccard": 0.6666666666666667,
+    "evidence_verbatim_rate": 1.0,
+    "repaired": 0,
+    "cost_usd": 0.005505,
+    "cost_per_ticket": 0.001101,
+    "cost_per_10k": 11.01,
+    "confidence_when_right": 0.8333333333333334,
+    "confidence_when_wrong": 0.875,
+    "macro_f1": 0.611111111111111,
+    "macro_f1_core": 0.0,
+    "core_classes": 0,
+    "escalation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "rows": [
+    {
+      "ticket_id": "as:14252277944",
+      "text": "上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了 ，I was misled by the interface into an accidental subscription, losing 363 RMB. Apple refused a refund, and your response was just \"we'll look into it\" with no real action. If you can collect the payment, why not refund it? Please stop the runaround and solve this issue.",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "trial_converted"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "rationale": "AUDIT 2026-09-21: was pricing_unclear, which requires that the terms were not visible - but the ticket says the three-day free trial WAS displayed, so that exclusion does not fit. Apple refused the refund and support answered 'we'll look into it' with no action: that is the second situation in which refund_request is primary - the refund itself is what is stuck. Twelve runs of two models all say trial_converted; they are closer than the old label and still not the rule.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28898955150609",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "上面显示是三天免费试用，结果一下载就扣了363",
+        "rationale": "User says the app showed a three-day free trial but was immediately charged 363 RMB (trial converted to a paid charge) and Apple refused a refund, so this is a billing conversion issue with money at stake; request purchase/receipt details to determine payment rail and possible refund path. ",
+        "confidence": 0.9
+      },
+      "category_ok": false,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 0.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 4858,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14133480377",
+      "text": "トライアルから自動的にサブスク課金に移行されて引き落としされました。\nサブスク解除はアプリ内でしかできないようです。\n英語を訳しながらやっと解除できました。解除後はメールがきましたが、信用できなかったので、いろいろ調べたらPayPalでの自動決済のキャンセルをすれば引き落としされないようだったので、PayPalの方でも解除しました。\n他に困っている方の参考になればと思います🙏",
+      "expected": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "rationale": "The trial auto-converted and was debited, but the writer found the in-app cancellation by translating the English, then also stopped the PayPal auto-payment - the case is closed by their own hand and the post is advice for others.",
+        "confidence": 0.65,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-05",
+          "faq-09"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "send_kb_article",
+        "evidence": "トライアルから自動的にサブスク課金に移行されて引き落としされました。",
+        "rationale": "User reports a trial that automatically converted into a paid subscription and resulted in a charge (trial_converted) and also describes difficulty cancelling the subscription in-app (cancellation_failed), which is a bounded billing harm so priority 2.",
+        "confidence": 0.9
+      },
+      "category_ok": true,
+      "priority_ok": false,
+      "next_step_ok": false,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.9,
+      "latency_ms": 5171,
+      "repaired": false
+    },
+    {
+      "ticket_id": "as:14312098923",
+      "text": "برنامج سيء يقوم بالخصم من حسابي ولم اطلب الاشتراك ،قمت بحذف البرنامج ومازال يخصم ،حاولت إلغاءه بكل الطرق ومازال الخصم مستمر\n\nThere is no way to cancel auto refill ,and it’s discontinued from my card",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "rationale": "Deductions are still running after the app was deleted and after cancellation was attempted 'by every method', and the auto-refill has no visible cancel route - money is moving and the documented route already failed.",
+        "confidence": 0.55,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "ask_purchase_rail",
+        "evidence": "قمت بحذف البرنامج ومازال يخصم ،حاولت إلغاءه بكل الطرق ومازال الخصم مستمر",
+        "rationale": "The user says they deleted the app and have tried to cancel but charges continue, indicating they cannot stop a recurring charge (cancellation_failed) and also claims they didn't request the subscription (unauthorized_charge); this is an ongoing billing issue so priority 1.",
+        "confidence": 0.8
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 6218,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:d531010e-e31",
+      "text": "1달러 결재하면 스케치된 그림을 메일로 보내주는줄 알고 결재했더니 앱다운시 29.99달러 가 같이 결재되었어. 스케치그림은 찾아볼수도 없고 메일을 여니 또 스케치를 위한 초기질문 루트만 나오네요. 취소하려고 몇시간을 찾아헤메도 자기네들이 말하는 루트대로의 취소활불 탭은 어디에도 없어요. 이건 사기라고 밖에 생각 안들어요 도대체 어디로 들어가야 취소 환불을 받을수 있을까요?",
+      "expected": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "service_not_delivered"
+        ],
+        "priority": "1",
+        "next_step": "ask_purchase_rail",
+        "rationale": "$1 for a soulmate sketch came with a simultaneous $29.99 charge, the sketch never arrived, and hours of searching found no cancel/refund tab - the explicit question is where to cancel and be refunded, and no store is named.",
+        "confidence": 0.6,
+        "kb_covered": true,
+        "kb_articles": [
+          "hc-28900802305297",
+          "pol-16"
+        ]
+      },
+      "actual": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "cancellation_failed",
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "1달러 결재하면 스케치된 그림을 메일로 보내주는줄 알고 결재했더니 앱다운시 29.99달러 가 같이 결재되었어.",
+        "rationale": "User says a $1 payment unexpectedly resulted in a $29.99 charge (trial converted to full price) and also reports they cannot find the cancellation/refund option, so urgent billing help is needed; bounded money at stake = priority 2.",
+        "confidence": 0.85
+      },
+      "category_ok": false,
+      "priority_ok": false,
+      "next_step_ok": true,
+      "secondary_jaccard": 0.3333333333333333,
+      "evidence_verbatim": true,
+      "confidence": 0.85,
+      "latency_ms": 4780,
+      "repaired": false
+    },
+    {
+      "ticket_id": "gp:fc04bcca-56d",
+      "text": "lo resumiré...Son unos ladrones, te roban. Te dicen \"Es gratis\" para luego quitarte el dinero, son un asco. NO LA DESCARGUEN, NO LO HAGAN!!! Son una estafa. Exijo un reembolso de tal crimen y robo!!!",
+      "expected": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "rationale": "Told the app was free and then charged, the writer states one demand - a refund - with no amount, no recurring charge and no store named, so the rail must be asked before money can move.",
+        "confidence": 0.7,
+        "kb_covered": true,
+        "kb_articles": [
+          "pol-04",
+          "pol-14",
+          "pol-18"
+        ]
+      },
+      "actual": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "pricing_unclear"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "Exijo un reembolso de tal crimen y robo!!!",
+        "rationale": "User explicitly demands a refund and alleges they were misled by 'Es gratis' which indicates unclear pricing; money was taken so this is a refund request with medium priority.",
+        "confidence": 0.8
+      },
+      "category_ok": true,
+      "priority_ok": true,
+      "next_step_ok": false,
+      "secondary_jaccard": 1.0,
+      "evidence_verbatim": true,
+      "confidence": 0.8,
+      "latency_ms": 3422,
+      "repaired": false
+    }
+  ],
+  "failures": [],
+  "per_class": {
+    "cancellation_failed": {
+      "support": 2,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "refund_request": {
+      "support": 2,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "trial_converted": {
+      "support": 1,
+      "predicted": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5
+    },
+    "_macro_f1": 0.611111111111111,
+    "_macro_f1_core": 0.0,
+    "_core_classes": 0
+  },
+  "buckets": {
+    "language": {
+      "non-english latin": {
+        "n": 1,
+        "category": 1.0,
+        "all_three": 0.0
+      },
+      "non-latin script": {
+        "n": 4,
+        "category": 0.5,
+        "all_three": 0.0
+      }
+    },
+    "tone": {
+      "aggressive": {
+        "n": 1,
+        "category": 1.0,
+        "all_three": 0.0
+      },
+      "plain": {
+        "n": 4,
+        "category": 0.5,
+        "all_three": 0.0
+      }
+    },
+    "topics": {
+      "single topic": {
+        "n": 5,
+        "category": 0.6,
+        "all_three": 0.0
+      }
+    },
+    "kb": {
+      "kb has an answer": {
+        "n": 5,
+        "category": 0.6,
+        "all_three": 0.0
+      }
+    }
+  },
+  "confusion": [
+    {
+      "expected": "refund_request",
+      "actual": "trial_converted",
+      "count": 1
+    },
+    {
+      "expected": "cancellation_failed",
+      "actual": "trial_converted",
+      "count": 1
+    }
+  ]
+}

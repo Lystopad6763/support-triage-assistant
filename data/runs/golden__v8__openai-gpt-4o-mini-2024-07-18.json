@@ -1,0 +1,1470 @@
+{
+  "set": "golden",
+  "prompt_version": "v8",
+  "model": "openai/gpt-4o-mini-2024-07-18",
+  "tickets": 50,
+  "cost_usd": 0.011329649999999998,
+  "pinned_endpoint": [
+    "openai"
+  ],
+  "results": [
+    {
+      "ticket_id": "as:14338757395",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "我本來不打算在 App 裡購買任何 300 點或類似的東西，但我無緣無故被扣了 45 美元",
+        "rationale": "The user indicates they did not intend to purchase anything and were charged after a trial started, which fits the trial_converted category. They also express a desire for a refund, which is a secondary concern. The cancellation issue is noted but is not the primary cause of the charge.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\",\"cancellation_failed\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"我本來不打算在 App 裡購買任何 300 點或類似的東西，但我無緣無故被扣了 45 美元\",\"rationale\":\"The user indicates they did not intend to purchase anything and were charged after a trial started, which fits the trial_converted category. They also express a desire for a refund, which is a secondary concern. The cancellation issue is noted but is not the primary cause of the charge.\",\"confidence\":0.9}",
+      "latency_ms": 3734,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2201,
+      "output_tokens": 134,
+      "cached_input_tokens": 2176,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00024735,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14273196771",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "サブスク解約成功、期間中はアプリ使える",
+        "rationale": "The user attempted to cancel their subscription but was charged anyway, indicating a failure in the cancellation process, and they express intent to report to the police, showing vulnerability.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"サブスク解約成功、期間中はアプリ使える\",\"rationale\":\"The user attempted to cancel their subscription but was charged anyway, indicating a failure in the cancellation process, and they express intent to report to the police, showing vulnerability.\",\"confidence\":0.9}",
+      "latency_ms": 2938,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2115,
+      "output_tokens": 88,
+      "cached_input_tokens": 2048,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021645,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:bf31982c-d4d",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "мне списали средства без моего согласия...",
+        "rationale": "The writer denies authorizing the charge and expresses intent to take further action, indicating a vulnerability regarding the unauthorized charge.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"мне списали средства без моего согласия...\",\"rationale\":\"The writer denies authorizing the charge and expresses intent to take further action, indicating a vulnerability regarding the unauthorized charge.\",\"confidence\":1.0}",
+      "latency_ms": 2641,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2040,
+      "output_tokens": 74,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002064,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:bd3f0d61-144",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "تم خصم مبلغ 1 دولار مني، ثم تم خصم 14.99 دولار إضافية ولم يكن واضحًا لي عند الدفع أن هذا المبلغ الإضافي سيُخصم.",
+        "rationale": "The ticket indicates that a trial or introductory offer converted into a paid subscription without clear prior notice, which is classified as trial_converted. Additionally, the user is requesting a refund for the charge, which is a secondary concern. The priority is set to 2 as it involves a charge that needs to be reversed.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\",\"cancellation_failed\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"تم خصم مبلغ 1 دولار مني، ثم تم خصم 14.99 دولار إضافية ولم يكن واضحًا لي عند الدفع أن هذا المبلغ الإضافي سيُخصم.\",\"rationale\":\"The ticket indicates that a trial or introductory offer converted into a paid subscription without clear prior notice, which is classified as trial_converted. Additionally, the user is requesting a refund for the charge, which is a secondary concern. The priority is set to 2 as it involves a charge that needs to be reversed.\",\"confidence\":0.9}",
+      "latency_ms": 3438,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2083,
+      "output_tokens": 143,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00025425,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:ef85c1c4-989",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "no funciona sólo aparece el logo muy bonito y no pasa nada",
+        "rationale": "The user states that the app does not work and they did not receive the service they paid for, which qualifies as service_not_delivered. The request for a refund indicates a secondary demand.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"service_not_delivered\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"no funciona sólo aparece el logo muy bonito y no pasa nada\",\"rationale\":\"The user states that the app does not work and they did not receive the service they paid for, which qualifies as service_not_delivered. The request for a refund indicates a secondary demand.\",\"confidence\":0.9}",
+      "latency_ms": 2813,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2078,
+      "output_tokens": 89,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002211,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:797c2e50-e37",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "evidence": "estão me cobrando 133,60 sem eu ter feito nenhum tipo.de plano",
+        "rationale": "A usuária menciona que fez uma pequena compra e agora está sendo cobrada um valor maior sem ter feito um plano, indicando que uma conversão de trial ocorreu.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"guide_cancellation\",\"evidence\":\"estão me cobrando 133,60 sem eu ter feito nenhum tipo.de plano\",\"rationale\":\"A usuária menciona que fez uma pequena compra e agora está sendo cobrada um valor maior sem ter feito um plano, indicando que uma conversão de trial ocorreu.\",\"confidence\":0.9}",
+      "latency_ms": 2983,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2031,
+      "output_tokens": 89,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021405,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:b186f161-98c",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "on m'a prélevé 39 euros mais j'ai déjà désabonner",
+        "rationale": "The user states they were charged after unsubscribing, indicating a cancellation failure. Priority is 2 because it involves a single charge to reverse.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"on m'a prélevé 39 euros mais j'ai déjà désabonner\",\"rationale\":\"The user states they were charged after unsubscribing, indicating a cancellation failure. Priority is 2 because it involves a single charge to reverse.\",\"confidence\":0.9}",
+      "latency_ms": 2327,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2009,
+      "output_tokens": 83,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020715,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14537367690",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "Richiesto pagamento di 1€ e poi mi trovo 40€ in meno per un addebito successivo mai autorizzato",
+        "rationale": "The ticket indicates that a small initial payment of 1€ was followed by a larger charge of 40€, suggesting a trial converted to a paid subscription.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"Richiesto pagamento di 1€ e poi mi trovo 40€ in meno per un addebito successivo mai autorizzato\",\"rationale\":\"The ticket indicates that a small initial payment of 1€ was followed by a larger charge of 40€, suggesting a trial converted to a paid subscription.\",\"confidence\":0.9}",
+      "latency_ms": 2311,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2025,
+      "output_tokens": 98,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021855,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13766345904",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "Danach wurden mir jedoch noch 150€ abgebucht, ohne dass ich die App weiter benutzt hätte.",
+        "rationale": "Der Nutzer hat einen kleinen Betrag für einen Test ausgegeben, der dann in eine größere Abbuchung umgewandelt wurde, was auf eine Umwandlung eines Tests in ein kostenpflichtiges Abonnement hinweist.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"Danach wurden mir jedoch noch 150€ abgebucht, ohne dass ich die App weiter benutzt hätte.\",\"rationale\":\"Der Nutzer hat einen kleinen Betrag für einen Test ausgegeben, der dann in eine größere Abbuchung umgewandelt wurde, was auf eine Umwandlung eines Tests in ein kostenpflichtiges Abonnement hinweist.\",\"confidence\":0.9}",
+      "latency_ms": 2343,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2028,
+      "output_tokens": 103,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.000222,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:23f05069-025",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "aboneliğimi iptal edip uygulamayı sildim ama bugün yine abonelik olmadığı halde kartımdan para çekilmiş",
+        "rationale": "The user states they canceled their subscription and deleted the app but were still charged, indicating a failure in the cancellation process. Additionally, the urgency is highlighted by the fact that money has been taken again after cancellation.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"aboneliğimi iptal edip uygulamayı sildim ama bugün yine abonelik olmadığı halde kartımdan para çekilmiş\",\"rationale\":\"The user states they canceled their subscription and deleted the app but were still charged, indicating a failure in the cancellation process. Additionally, the urgency is highlighted by the fact that money has been taken again after cancellation.\",\"confidence\":1.0}",
+      "latency_ms": 2405,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2025,
+      "output_tokens": 109,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00022515,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:d8ae97b0-7a9",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "I never approved any subscription charges for this app.",
+        "rationale": "The writer denies ever authorizing the charge, indicating an unauthorized charge, and expresses frustration about the situation, which warrants escalation.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I never approved any subscription charges for this app.\",\"rationale\":\"The writer denies ever authorizing the charge, indicating an unauthorized charge, and expresses frustration about the situation, which warrants escalation.\",\"confidence\":0.9}",
+      "latency_ms": 1780,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2002,
+      "output_tokens": 75,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002013,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:d16e1bc8-19b",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "guide_cancellation",
+        "evidence": "I wish I had read the reviews before installing the app,esp the negative feedback,which turns out to be true. Stated that it would send an email 24 hours to remind you of your trial. However I didnt get an email and next thing I know,my cc was charged for a monthly subscription and now Im frantically trying to find the cancel button, but they dont have it on their app.",
+        "rationale": "The user is unable to find the cancellation option in the app and is requesting a refund, indicating a failure to cancel the subscription.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"guide_cancellation\",\"evidence\":\"I wish I had read the reviews before installing the app,esp the negative feedback,which turns out to be true. Stated that it would send an email 24 hours to remind you of your trial. However I didnt get an email and next thing I know,my cc was charged for a monthly subscription and now Im frantically trying to find the cancel button, but they dont have it on their app.\",\"rationale\":\"The user is unable to find the cancellation option in the app and is requesting a refund, indicating a failure to cancel the subscription.\",\"confidence\":0.9}",
+      "latency_ms": 2687,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2082,
+      "output_tokens": 145,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002553,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13385806227",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "pricing_unclear",
+        "secondary_categories": [],
+        "priority": "3",
+        "next_step": "send_kb_article",
+        "evidence": "Making the app free makes it seem like there is a lite/free version upon download.",
+        "rationale": "The ticket expresses a concern about the pricing structure and perceived false advertisement, which falls under unclear pricing.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"pricing_unclear\",\"secondary_categories\":[],\"priority\":\"3\",\"next_step\":\"send_kb_article\",\"evidence\":\"Making the app free makes it seem like there is a lite/free version upon download.\",\"rationale\":\"The ticket expresses a concern about the pricing structure and perceived false advertisement, which falls under unclear pricing.\",\"confidence\":0.9}",
+      "latency_ms": 2047,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2025,
+      "output_tokens": 72,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020295,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:104349bb-267",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "charges a subscription fee",
+        "rationale": "The ticket indicates that a free trial converted into a paid subscription without proper consent, which fits the trial_converted category. The writer also requests a refund, which is secondary.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"charges a subscription fee\",\"rationale\":\"The ticket indicates that a free trial converted into a paid subscription without proper consent, which fits the trial_converted category. The writer also requests a refund, which is secondary.\",\"confidence\":0.9}",
+      "latency_ms": 1969,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2051,
+      "output_tokens": 77,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020985,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:82f84670-2b9",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "Me debitaron un dinero sin mi consentimiento.",
+        "rationale": "The writer denies authorizing the charge and expresses intent to escalate the issue legally, indicating vulnerability.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"Me debitaron un dinero sin mi consentimiento.\",\"rationale\":\"The writer denies authorizing the charge and expresses intent to escalate the issue legally, indicating vulnerability.\",\"confidence\":1.0}",
+      "latency_ms": 1952,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2019,
+      "output_tokens": 69,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020025,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13730278321",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I did not authorise this purchase nor did I sign up for a subscription.",
+        "rationale": "The writer denies authorizing the charge and mentions potential legal action, indicating vulnerability and urgency.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I did not authorise this purchase nor did I sign up for a subscription.\",\"rationale\":\"The writer denies authorizing the charge and mentions potential legal action, indicating vulnerability and urgency.\",\"confidence\":1.0}",
+      "latency_ms": 2015,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2092,
+      "output_tokens": 74,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002142,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13315148261",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "charged £48.99 for an annual plan within seconds — before the app even finished downloading.",
+        "rationale": "The ticket indicates that a trial offer converted into a paid subscription without proper warning or consent, leading to an unexpected charge.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"charged £48.99 for an annual plan within seconds — before the app even finished downloading.\",\"rationale\":\"The ticket indicates that a trial offer converted into a paid subscription without proper warning or consent, leading to an unexpected charge.\",\"confidence\":0.9}",
+      "latency_ms": 1983,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2079,
+      "output_tokens": 80,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021585,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:89bdbbb4-ff3",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "why are you charging me for nothing I never received or had anything to do with your App but yet you keep on charging me money",
+        "rationale": "The writer denies ever authorizing the charge and states they have had nothing to do with the app, indicating an unauthorized charge. Additionally, the urgency of stopping the withdrawals suggests vulnerability.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"why are you charging me for nothing I never received or had anything to do with your App but yet you keep on charging me money\",\"rationale\":\"The writer denies ever authorizing the charge and states they have had nothing to do with the app, indicating an unauthorized charge. Additionally, the urgency of stopping the withdrawals suggests vulnerability.\",\"confidence\":0.9}",
+      "latency_ms": 1984,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2012,
+      "output_tokens": 103,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002196,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:afc80fcc-7be",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "trial_converted"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "chaque mois la somme de 39€ est prélevée, alors que je n'arrête pas de faire des mails pour demander l'annulation de cet abonnement que je ne désir pas",
+        "rationale": "The user has attempted to cancel their subscription multiple times but continues to be charged, indicating a failure in the cancellation process. Additionally, the user expresses distress over the situation, which raises the priority level.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\",\"trial_converted\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"chaque mois la somme de 39€ est prélevée, alors que je n'arrête pas de faire des mails pour demander l'annulation de cet abonnement que je ne désir pas\",\"rationale\":\"The user has attempted to cancel their subscription multiple times but continues to be charged, indicating a failure in the cancellation process. Additionally, the user expresses distress over the situation, which raises the priority level.\",\"confidence\":0.9}",
+      "latency_ms": 2218,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2086,
+      "output_tokens": 123,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002427,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:90556d05-623",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "I paid $1.00 for some info... I never made an account so, how can I be sure I won't be charged again? I didn't agree to a subscription.",
+        "rationale": "The ticket indicates that a small payment was made for information, which suggests a trial conversion, and the user is requesting a refund due to dissatisfaction and concern about future charges.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"I paid $1.00 for some info... I never made an account so, how can I be sure I won't be charged again? I didn't agree to a subscription.\",\"rationale\":\"The ticket indicates that a small payment was made for information, which suggests a trial conversion, and the user is requesting a refund due to dissatisfaction and concern about future charges.\",\"confidence\":0.9}",
+      "latency_ms": 2062,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2085,
+      "output_tokens": 106,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00023235,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14220433116",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "cancellation_failed",
+          "content_quality",
+          "advisor_conduct"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "they will show u 1 dollar charge. after that without your concern will deduct 49 dollar",
+        "rationale": "The ticket indicates that a trial or introductory offer converted into a paid subscription without proper consent, which is the basis for the trial_converted category. Priority is set to 2 as it involves a charge that the user wants reversed. Confidence: 0.9.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\",\"cancellation_failed\",\"content_quality\",\"advisor_conduct\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"they will show u 1 dollar charge. after that without your concern will deduct 49 dollar\",\"rationale\":\"The ticket indicates that a trial or introductory offer converted into a paid subscription without proper consent, which is the basis for the trial_converted category. Priority is set to 2 as it involves a charge that the user wants reversed. Confidence: 0.9.\" ,\"confidence\":0.9}",
+      "latency_ms": 2312,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2224,
+      "output_tokens": 122,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002628,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13597633287",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "content_quality"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "my card's charged $39 via nebula for 1 month subscription, which i didn't freaking need or want.",
+        "rationale": "The writer indicates that they were charged after selecting a $1 package, which suggests a trial converted to a paid subscription.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\",\"content_quality\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"my card's charged $39 via nebula for 1 month subscription, which i didn't freaking need or want.\",\"rationale\":\"The writer indicates that they were charged after selecting a $1 package, which suggests a trial converted to a paid subscription.\",\"confidence\":0.9}",
+      "latency_ms": 2062,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2183,
+      "output_tokens": 87,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00023565,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13607579600",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "app_technical",
+        "secondary_categories": [],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "It would exit without loading.",
+        "rationale": "The ticket states that the app is crashing and not loading, indicating a technical issue that needs to be addressed by a human.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"app_technical\",\"secondary_categories\":[],\"priority\":\"2\",\"next_step\":\"escalate_to_human\",\"evidence\":\"It would exit without loading.\",\"rationale\":\"The ticket states that the app is crashing and not loading, indicating a technical issue that needs to be addressed by a human.\",\"confidence\":0.9}",
+      "latency_ms": 1875,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2028,
+      "output_tokens": 68,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.000201,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14463152512",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "service_not_delivered",
+        "secondary_categories": [
+          "unauthorized_charge",
+          "refund_request",
+          "cancellation_failed"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I was charged 20,000 VND for a reading service, but the app crashed right after payment and gave me ZERO results or content. On top of that, it automatically deducted an extra 425,000 VND from my Visa card without my consent.",
+        "rationale": "The ticket states that the app crashed after payment and no content was delivered, indicating a service not delivered issue, while also mentioning an unauthorized charge, which raises urgency due to the lack of support access.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"service_not_delivered\",\"secondary_categories\":[\"unauthorized_charge\",\"refund_request\",\"cancellation_failed\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I was charged 20,000 VND for a reading service, but the app crashed right after payment and gave me ZERO results or content. On top of that, it automatically deducted an extra 425,000 VND from my Visa card without my consent.\",\"rationale\":\"The ticket states that the app crashed after payment and no content was delivered, indicating a service not delivered issue, while also mentioning an unauthorized charge, which raises urgency due to the lack of support access.\",\"confidence\":0.9}",
+      "latency_ms": 2327,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2050,
+      "output_tokens": 142,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002487,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:10775738782",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "content_quality",
+        "secondary_categories": [],
+        "priority": "3",
+        "next_step": "acknowledge_and_close",
+        "evidence": "it said my moon sign was cancer too that’s incorrect im a Gemini moon",
+        "rationale": "The ticket describes an issue with the accuracy of the zodiac chart provided by the app, which falls under content quality.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"content_quality\",\"secondary_categories\":[],\"priority\":\"3\",\"next_step\":\"acknowledge_and_close\",\"evidence\":\"it said my moon sign was cancer too that’s incorrect im a Gemini moon\",\"rationale\":\"The ticket describes an issue with the accuracy of the zodiac chart provided by the app, which falls under content quality.\",\"confidence\":0.9}",
+      "latency_ms": 1875,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2063,
+      "output_tokens": 74,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020985,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:55cfe709-0af",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "refund_request",
+        "secondary_categories": [
+          "cancellation_failed"
+        ],
+        "priority": "2",
+        "next_step": "escalate_to_human",
+        "evidence": "I wrote to the email you asked me to, but so far no response has been received.",
+        "rationale": "The writer is requesting a refund for a charge and has already contacted support without receiving a response, indicating a need for escalation.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"refund_request\",\"secondary_categories\":[\"cancellation_failed\"],\"priority\":\"2\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I wrote to the email you asked me to, but so far no response has been received.\",\"rationale\":\"The writer is requesting a refund for a charge and has already contacted support without receiving a response, indicating a need for escalation.\",\"confidence\":0.9}",
+      "latency_ms": 2047,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2038,
+      "output_tokens": 84,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002121,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:bf7ca7c9-f1e",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "i got debited even without using my 3mins free trial consultation.",
+        "rationale": "The ticket indicates that a charge occurred after a free trial was expected, which fits the trial_converted category. The writer is requesting a refund for this charge, making it a priority 2 issue as it involves a single charge to reverse.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"i got debited even without using my 3mins free trial consultation.\",\"rationale\":\"The ticket indicates that a charge occurred after a free trial was expected, which fits the trial_converted category. The writer is requesting a refund for this charge, making it a priority 2 issue as it involves a single charge to reverse.\",\"confidence\":0.9}",
+      "latency_ms": 2218,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2008,
+      "output_tokens": 100,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002172,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13540954035",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request",
+          "pricing_unclear",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I was directed to another page that advertised subscription services. However, without my permission and without the usual Face ID verification that Apple Pay normally requires, an $77.3 charge was processed through my Apple Pay account.",
+        "rationale": "The ticket indicates that a trial or introductory offer silently converted into a paid subscription without proper authorization or clear pricing, and the writer expresses a need for the money back due to financial constraints, indicating vulnerability.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\",\"pricing_unclear\",\"unauthorized_charge\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I was directed to another page that advertised subscription services. However, without my permission and without the usual Face ID verification that Apple Pay normally requires, an $77.3 charge was processed through my Apple Pay account.\",\"rationale\":\"The ticket indicates that a trial or introductory offer silently converted into a paid subscription without proper authorization or clear pricing, and the writer expresses a need for the money back due to financial constraints, indicating vulnerability.\",\"confidence\":0.9}",
+      "latency_ms": 2500,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2294,
+      "output_tokens": 131,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002787,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:1fd14cb2-984",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "guide_cancellation",
+        "evidence": "I want to cancel this before I get charged any more money",
+        "rationale": "The writer is unable to cancel the trial and is concerned about being charged, indicating a cancellation failure and urgency.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"guide_cancellation\",\"evidence\":\"I want to cancel this before I get charged any more money\",\"rationale\":\"The writer is unable to cancel the trial and is concerned about being charged, indicating a cancellation failure and urgency.\",\"confidence\":0.9}",
+      "latency_ms": 1844,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2010,
+      "output_tokens": 72,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002007,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14369349630",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "my account was charged $1.00 and $29.99... my account was automatically charged $49.99",
+        "rationale": "The ticket indicates that a trial or introductory offer silently became a paid subscription with charges following the initial payment.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"my account was charged $1.00 and $29.99... my account was automatically charged $49.99\",\"rationale\":\"The ticket indicates that a trial or introductory offer silently became a paid subscription with charges following the initial payment.\",\"confidence\":0.9}",
+      "latency_ms": 1812,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2110,
+      "output_tokens": 82,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002217,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14450344254",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "I was curious and signed up for a $1 trial, but this app immediately captured my credit card details and started charging me repeatedly without my authorization.",
+        "rationale": "The user signed up for a $1 trial that led to unauthorized charges, indicating a trial conversion issue.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"I was curious and signed up for a $1 trial, but this app immediately captured my credit card details and started charging me repeatedly without my authorization.\",\"rationale\":\"The user signed up for a $1 trial that led to unauthorized charges, indicating a trial conversion issue.\",\"confidence\":0.9}",
+      "latency_ms": 2092,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2208,
+      "output_tokens": 88,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.000384,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14000315965",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "€42.99 was charged to my card without my authorization by the Nebula application.",
+        "rationale": "The writer denies ever authorizing the charge of €42.99, indicating it is an unauthorized charge. Priority is 2 because it involves a single charge to reverse.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"€42.99 was charged to my card without my authorization by the Nebula application.\",\"rationale\":\"The writer denies ever authorizing the charge of €42.99, indicating it is an unauthorized charge. Priority is 2 because it involves a single charge to reverse.\",\"confidence\":0.9}",
+      "latency_ms": 2281,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2038,
+      "output_tokens": 89,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002151,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14056071581",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "they just tried to take £50 out of my account but thankfully my bank flagged it as fraudulent and blocked the payment from going through",
+        "rationale": "The user was charged £1 for a quiz result and was then signed up for a subscription without their knowledge, leading to a blocked £50 charge, indicating a serious issue with unauthorized billing.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"unauthorized_charge\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"they just tried to take £50 out of my account but thankfully my bank flagged it as fraudulent and blocked the payment from going through\",\"rationale\":\"The user was charged £1 for a quiz result and was then signed up for a subscription without their knowledge, leading to a blocked £50 charge, indicating a serious issue with unauthorized billing.\",\"confidence\":0.9}",
+      "latency_ms": 2062,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2045,
+      "output_tokens": 106,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00022635,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:2835ec28-9d3",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request",
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I cancelled and unsuscribed from your app even go as far as to delete the app... yet I am being charged still.",
+        "rationale": "The user states they cancelled and deleted the app but are still being charged, indicating a failure in the cancellation process, and they also claim the charge was unauthorized, which shows urgency and vulnerability.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\",\"unauthorized_charge\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I cancelled and unsuscribed from your app even go as far as to delete the app... yet I am being charged still.\",\"rationale\":\"The user states they cancelled and deleted the app but are still being charged, indicating a failure in the cancellation process, and they also claim the charge was unauthorized, which shows urgency and vulnerability.\",\"confidence\":0.9}",
+      "latency_ms": 2031,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2014,
+      "output_tokens": 107,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002223,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14550479655",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "I did not use or subscribe to any additional packages from your company.",
+        "rationale": "The writer denies ever authorizing the charge for the $51 deduction, indicating it was unauthorized.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"I did not use or subscribe to any additional packages from your company.\",\"rationale\":\"The writer denies ever authorizing the charge for the $51 deduction, indicating it was unauthorized.\",\"confidence\":0.9}",
+      "latency_ms": 1672,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2053,
+      "output_tokens": 70,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020595,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:3e7e2275-b5e",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "charged for months until I recently found out even though I thought I had ended my subscription last year",
+        "rationale": "The writer indicates they were charged after believing they had cancelled their subscription, which suggests a trial converted to a paid subscription without clear indication of the subscription status.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"charged for months until I recently found out even though I thought I had ended my subscription last year\",\"rationale\":\"The writer indicates they were charged after believing they had cancelled their subscription, which suggests a trial converted to a paid subscription without clear indication of the subscription status.\",\"confidence\":0.9}",
+      "latency_ms": 1875,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2069,
+      "output_tokens": 88,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021915,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:e18e8473-db4",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "guide_cancellation",
+        "evidence": "I can't find out how to cancel it.",
+        "rationale": "The writer cannot find a way to cancel their subscription, indicating a cancellation failure, and expresses urgency in needing help.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"guide_cancellation\",\"evidence\":\"I can't find out how to cancel it.\",\"rationale\":\"The writer cannot find a way to cancel their subscription, indicating a cancellation failure, and expresses urgency in needing help.\",\"confidence\":0.9}",
+      "latency_ms": 1750,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2027,
+      "output_tokens": 69,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00020145,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:1e7e13aa-1c9",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "unauthorized_charge"
+        ],
+        "priority": "1",
+        "next_step": "route_to_safety_report",
+        "evidence": "it keeps charging $50 without my permission",
+        "rationale": "The writer indicates that they were charged $50 after initially paying $1 for a question, which suggests a trial converted to a paid subscription without consent, and they express a need to notify the bank about the unauthorized charges, indicating vulnerability.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"unauthorized_charge\"],\"priority\":\"1\",\"next_step\":\"route_to_safety_report\",\"evidence\":\"it keeps charging $50 without my permission\",\"rationale\":\"The writer indicates that they were charged $50 after initially paying $1 for a question, which suggests a trial converted to a paid subscription without consent, and they express a need to notify the bank about the unauthorized charges, indicating vulnerability.\",\"confidence\":0.9}",
+      "latency_ms": 2342,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2078,
+      "output_tokens": 96,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002253,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:acae8516-ecf",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "no unsubscribe way",
+        "rationale": "The writer denies authorizing the charge and states that this is the second time it has happened, indicating a recurring issue without consent.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"no unsubscribe way\",\"rationale\":\"The writer denies authorizing the charge and states that this is the second time it has happened, indicating a recurring issue without consent.\",\"confidence\":0.9}",
+      "latency_ms": 2266,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2006,
+      "output_tokens": 70,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0001989,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13277034138",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I canceled the same day on the app and the webpage wouldn’t let me sign in anymore so I thought I actually canceled it.",
+        "rationale": "The user attempted to cancel their subscription but was unable to do so due to technical issues and was charged despite believing they had canceled, indicating a failure in the cancellation process.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I canceled the same day on the app and the webpage wouldn’t let me sign in anymore so I thought I actually canceled it.\",\"rationale\":\"The user attempted to cancel their subscription but was unable to do so due to technical issues and was charged despite believing they had canceled, indicating a failure in the cancellation process.\",\"confidence\":0.9}",
+      "latency_ms": 2420,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2138,
+      "output_tokens": 100,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002367,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:8e3810f3-e94",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "I was charged 43.99$ when I had not even applied for any subscriptions!!!!",
+        "rationale": "The ticket indicates that a small initial payment of 1$ was followed by a larger charge of 43.99$, suggesting a trial converted to a paid subscription.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"I was charged 43.99$ when I had not even applied for any subscriptions!!!!\",\"rationale\":\"The ticket indicates that a small initial payment of 1$ was followed by a larger charge of 43.99$, suggesting a trial converted to a paid subscription.\",\"confidence\":0.9}",
+      "latency_ms": 2515,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2046,
+      "output_tokens": 89,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002163,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14322764387",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "I was only trying to start the free trial to test the app, and I don’t know how I ended up being charged for an annual subscription.",
+        "rationale": "The user intended to start a free trial but was charged for an annual subscription, indicating a trial conversion issue.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"I was only trying to start the free trial to test the app, and I don’t know how I ended up being charged for an annual subscription.\",\"rationale\":\"The user intended to start a free trial but was charged for an annual subscription, indicating a trial conversion issue.\",\"confidence\":0.9}",
+      "latency_ms": 1875,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2059,
+      "output_tokens": 89,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021825,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:a9836e23-588",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "guide_cancellation",
+        "evidence": "I cannot find anywhere how to cancel. It is no where to be found in my subscription list so I physically cannot cancel.",
+        "rationale": "The writer cannot find or complete cancellation and has been charged repeatedly, stating they cannot afford to lose the money.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"guide_cancellation\",\"evidence\":\"I cannot find anywhere how to cancel. It is no where to be found in my subscription list so I physically cannot cancel.\",\"rationale\":\"The writer cannot find or complete cancellation and has been charged repeatedly, stating they cannot afford to lose the money.\",\"confidence\":1.0}",
+      "latency_ms": 1875,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2028,
+      "output_tokens": 84,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002106,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:14518204004",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "我發現扣款後立即取消自動付款並聯絡客服。值得說明的是，客服最後同意將 US$49.99 全額退回，也確認取消後續訂閱，這部分的處理速度值得肯定。",
+        "rationale": "The user was charged $49.99 after initially agreeing to a $1 service, indicating a trial conversion to a paid subscription.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"我發現扣款後立即取消自動付款並聯絡客服。值得說明的是，客服最後同意將 US$49.99 全額退回，也確認取消後續訂閱，這部分的處理速度值得肯定。\",\"rationale\":\"The user was charged $49.99 after initially agreeing to a $1 service, indicating a trial conversion to a paid subscription.\",\"confidence\":0.9}",
+      "latency_ms": 2391,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2533,
+      "output_tokens": 117,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00030615,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13254291446",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "my 73 year old husband who has Alzheimer’s got hold of my phone and apparently paid for a subscription for this service!",
+        "rationale": "The writer denies authorizing the charge due to their husband's condition, and they express vulnerability regarding their fixed income and inability to purchase medication, which raises the priority to 1.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"my 73 year old husband who has Alzheimer’s got hold of my phone and apparently paid for a subscription for this service!\",\"rationale\":\"The writer denies authorizing the charge due to their husband's condition, and they express vulnerability regarding their fixed income and inability to purchase medication, which raises the priority to 1.\",\"confidence\":0.9}",
+      "latency_ms": 2233,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2309,
+      "output_tokens": 101,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00026295,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:eede1f7d-7fe",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "cancellation_failed",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I canceled my subscription and never use it and it keeps trying to charge me.",
+        "rationale": "The writer states they canceled their subscription but are still being charged, indicating a failure in the cancellation process, and they are upset about ongoing charges.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"cancellation_failed\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I canceled my subscription and never use it and it keeps trying to charge me.\",\"rationale\":\"The writer states they canceled their subscription but are still being charged, indicating a failure in the cancellation process, and they are upset about ongoing charges.\",\"confidence\":1.0}",
+      "latency_ms": 2109,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2000,
+      "output_tokens": 85,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.000207,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:44d651fb-41a",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "process_refund",
+        "evidence": "cobraram 13,67 reais e depois convertido em dólares foi debitado quase 80 conto do meu cartão",
+        "rationale": "The ticket indicates that a small initial charge was converted into a larger amount in dollars, suggesting a trial conversion.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"trial_converted\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"2\",\"next_step\":\"process_refund\",\"evidence\":\"cobraram 13,67 reais e depois convertido em dólares foi debitado quase 80 conto do meu cartão\",\"rationale\":\"The ticket indicates that a small initial charge was converted into a larger amount in dollars, suggesting a trial conversion.\",\"confidence\":0.9}",
+      "latency_ms": 2062,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2020,
+      "output_tokens": 83,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002088,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:267d293f-a16",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "pricing_unclear",
+        "secondary_categories": [
+          "content_quality"
+        ],
+        "priority": "3",
+        "next_step": "send_kb_article",
+        "evidence": "the ongoing costs didn't seemed justified. If I'm paying a subscription for an app I expect to get all sections and functionality.",
+        "rationale": "The ticket expresses dissatisfaction with the pricing structure and expectations regarding subscription content, indicating a transparency complaint rather than a billing error.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"pricing_unclear\",\"secondary_categories\":[\"content_quality\"],\"priority\":\"3\",\"next_step\":\"send_kb_article\",\"evidence\":\"the ongoing costs didn't seemed justified. If I'm paying a subscription for an app I expect to get all sections and functionality.\",\"rationale\":\"The ticket expresses dissatisfaction with the pricing structure and expectations regarding subscription content, indicating a transparency complaint rather than a billing error.\",\"confidence\":0.9}",
+      "latency_ms": 2327,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2067,
+      "output_tokens": 86,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00021765,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "gp:d8080fd8-fc2",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "data_privacy"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "me llega un mensaje que no pudieron hacer el cobro de 148 mil pesos cuando eso jamás se usó",
+        "rationale": "The writer denies ever authorizing the charge and expresses urgency in disconnecting the account due to an unauthorized charge, indicating vulnerability with the mention of a significant amount.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"data_privacy\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"me llega un mensaje que no pudieron hacer el cobro de 148 mil pesos cuando eso jamás se usó\",\"rationale\":\"The writer denies ever authorizing the charge and expresses urgency in disconnecting the account due to an unauthorized charge, indicating vulnerability with the mention of a significant amount.\",\"confidence\":0.9}",
+      "latency_ms": 2234,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2045,
+      "output_tokens": 96,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00022035,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    },
+    {
+      "ticket_id": "as:13611286141",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "triage": {
+        "category": "unauthorized_charge",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "1",
+        "next_step": "escalate_to_human",
+        "evidence": "I do NOT have any active subscriptions nor have I used the app in MONTHS.",
+        "rationale": "The writer denies ever authorizing the charge and states they have not used the app in months, indicating a potential unauthorized charge. The ongoing monthly charges also suggest urgency.",
+        "confidence": 1.0
+      },
+      "error": null,
+      "raw": "{\"category\":\"unauthorized_charge\",\"secondary_categories\":[\"refund_request\"],\"priority\":\"1\",\"next_step\":\"escalate_to_human\",\"evidence\":\"I do NOT have any active subscriptions nor have I used the app in MONTHS.\",\"rationale\":\"The writer denies ever authorizing the charge and states they have not used the app in months, indicating a potential unauthorized charge. The ongoing monthly charges also suggest urgency.\",\"confidence\":1.0}",
+      "latency_ms": 2077,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 2008,
+      "output_tokens": 90,
+      "cached_input_tokens": 1920,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0002112,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "",
+      "provider": "OpenAI"
+    }
+  ],
+  "prompt_sha256": null,
+  "architecture": "single"
+}

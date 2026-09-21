@@ -1,0 +1,2877 @@
+{
+  "v8|qwen/qwen3-max": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "qwen/qwen3-max",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7682926829268293,
+      "priority_accuracy": 0.8414634146341463,
+      "next_step_accuracy": 0.6463414634146342,
+      "all_three_accuracy": 0.4634146341463415,
+      "secondary_jaccard": 0.5365853658536585,
+      "evidence_verbatim_rate": 0.9024390243902439,
+      "repaired": 0,
+      "cost_usd": 0.08756591999999998,
+      "cost_per_ticket": 0.0010678770731707315,
+      "cost_per_10k": 10.678770731707315,
+      "confidence_when_right": 0.9511111111111118,
+      "confidence_when_wrong": 0.9484210526315787,
+      "macro_f1": 0.6647419247419247,
+      "macro_precision": 0.7627380952380952,
+      "macro_recall": 0.6761904761904762,
+      "macro_f1_core": 0.6647419247419247,
+      "macro_precision_core": 0.7627380952380952,
+      "macro_recall_core": 0.6761904761904762,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 25,
+        "fp": 2,
+        "fn": 17,
+        "precision": 0.9259259259259259,
+        "recall": 0.5952380952380952
+      },
+      "latency_p50": 4469,
+      "latency_p95": 6375,
+      "latency_max": 7405,
+      "input_tokens": 1840.719512195122,
+      "output_tokens": 149.1829268292683,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1521.9512195121952,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 2
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Alibaba": 82
+      },
+      "pinned_endpoint": [
+        "alibaba"
+      ],
+      "by_language": {
+        "english": 0.734375,
+        "non-english latin": 0.8333333333333334,
+        "non-latin script": 1.0
+      },
+      "run_file": "data\\runs\\golden2__v8__qwen-qwen3-max.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:25:45"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "qwen/qwen3-max",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7682926829268293,
+      "priority_accuracy": 0.8414634146341463,
+      "next_step_accuracy": 0.6585365853658537,
+      "all_three_accuracy": 0.4634146341463415,
+      "secondary_jaccard": 0.5345528455284553,
+      "evidence_verbatim_rate": 0.9146341463414634,
+      "repaired": 0,
+      "cost_usd": 0.08313224400000001,
+      "cost_per_ticket": 0.0010138078536585367,
+      "cost_per_10k": 10.138078536585367,
+      "confidence_when_right": 0.9519047619047626,
+      "confidence_when_wrong": 0.9484210526315787,
+      "macro_f1": 0.6647419247419247,
+      "macro_precision": 0.7627380952380952,
+      "macro_recall": 0.6761904761904762,
+      "macro_f1_core": 0.6647419247419247,
+      "macro_precision_core": 0.7627380952380952,
+      "macro_recall_core": 0.6761904761904762,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 26,
+        "fp": 2,
+        "fn": 16,
+        "precision": 0.9285714285714286,
+        "recall": 0.6190476190476191
+      },
+      "latency_p50": 4359,
+      "latency_p95": 5657,
+      "latency_max": 6125,
+      "input_tokens": 1840.719512195122,
+      "output_tokens": 149.8048780487805,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1612.4878048780488,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 2
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Alibaba": 82
+      },
+      "pinned_endpoint": [
+        "alibaba"
+      ],
+      "by_language": {
+        "english": 0.734375,
+        "non-english latin": 0.8333333333333334,
+        "non-latin script": 1.0
+      },
+      "run_file": "data\\runs\\golden2__v8__qwen-qwen3-max__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:26:49"
+    }
+  ],
+  "v8|openai/gpt-5-nano": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-5-nano",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6585365853658537,
+      "priority_accuracy": 0.7439024390243902,
+      "next_step_accuracy": 0.32926829268292684,
+      "all_three_accuracy": 0.15853658536585366,
+      "secondary_jaccard": 0.4471544715447155,
+      "evidence_verbatim_rate": 0.9512195121951219,
+      "repaired": 0,
+      "cost_usd": 0.09777168999999997,
+      "cost_per_ticket": 0.001192337682926829,
+      "cost_per_10k": 11.923376829268289,
+      "confidence_when_right": 0.6755555555555555,
+      "confidence_when_wrong": 0.6757142857142856,
+      "macro_f1": 0.6177867746288799,
+      "macro_precision": 0.7081862745098039,
+      "macro_recall": 0.6285714285714287,
+      "macro_f1_core": 0.6177867746288799,
+      "macro_precision_core": 0.7081862745098039,
+      "macro_recall_core": 0.6285714285714287,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 15,
+        "fp": 6,
+        "fn": 27,
+        "precision": 0.7142857142857143,
+        "recall": 0.35714285714285715
+      },
+      "latency_p50": 23500,
+      "latency_p95": 40500,
+      "latency_max": 52500,
+      "input_tokens": 2043.9634146341464,
+      "output_tokens": 2907.2804878048782,
+      "reasoning_tokens": 2769.170731707317,
+      "cached_input_tokens": 1617.1707317073171,
+      "confusion": [
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "refund_request",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "service_not_delivered",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.640625,
+        "non-english latin": 0.6666666666666666,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-5-nano.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:32:52"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-5-nano",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6341463414634146,
+      "priority_accuracy": 0.7195121951219512,
+      "next_step_accuracy": 0.4634146341463415,
+      "all_three_accuracy": 0.25609756097560976,
+      "secondary_jaccard": 0.3861788617886179,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 0.08680712999999998,
+      "cost_per_ticket": 0.0010586235365853656,
+      "cost_per_10k": 10.586235365853657,
+      "confidence_when_right": 0.6811538461538459,
+      "confidence_when_wrong": 0.6693333333333334,
+      "macro_f1": 0.579911754911755,
+      "macro_precision": 0.6539473684210527,
+      "macro_recall": 0.5857142857142856,
+      "macro_f1_core": 0.579911754911755,
+      "macro_precision_core": 0.6539473684210527,
+      "macro_recall_core": 0.5857142857142856,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 19,
+        "fp": 4,
+        "fn": 23,
+        "precision": 0.8260869565217391,
+        "recall": 0.4523809523809524
+      },
+      "latency_p50": 21500,
+      "latency_p95": 33984,
+      "latency_max": 42079,
+      "input_tokens": 2043.9634146341464,
+      "output_tokens": 2575.8048780487807,
+      "reasoning_tokens": 2442.1463414634145,
+      "cached_input_tokens": 1642.1463414634147,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 5
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "service_not_delivered",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.65625,
+        "non-english latin": 0.5,
+        "non-latin script": 0.6666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-5-nano__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:38:20"
+    }
+  ],
+  "v8|openai/gpt-5-mini": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-5-mini",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7804878048780488,
+      "priority_accuracy": 0.8414634146341463,
+      "next_step_accuracy": 0.5975609756097561,
+      "all_three_accuracy": 0.4024390243902439,
+      "secondary_jaccard": 0.5365853658536585,
+      "evidence_verbatim_rate": 1.0,
+      "repaired": 0,
+      "cost_usd": 0.17840325000000004,
+      "cost_per_ticket": 0.002175649390243903,
+      "cost_per_10k": 21.756493902439033,
+      "confidence_when_right": 0.8943749999999996,
+      "confidence_when_wrong": 0.8766666666666667,
+      "macro_f1": 0.7218319664831292,
+      "macro_precision": 0.8151731601731601,
+      "macro_recall": 0.7107142857142857,
+      "macro_f1_core": 0.7218319664831292,
+      "macro_precision_core": 0.8151731601731601,
+      "macro_recall_core": 0.7107142857142857,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 28,
+        "fp": 4,
+        "fn": 14,
+        "precision": 0.875,
+        "recall": 0.6666666666666666
+      },
+      "latency_p50": 13954,
+      "latency_p95": 25077,
+      "latency_max": 31140,
+      "input_tokens": 2043.9634146341464,
+      "output_tokens": 1029.0121951219512,
+      "reasoning_tokens": 882.7317073170732,
+      "cached_input_tokens": 1748.2926829268292,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.75,
+        "non-english latin": 0.9166666666666666,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-5-mini.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:41:42"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-5-mini",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7682926829268293,
+      "priority_accuracy": 0.8414634146341463,
+      "next_step_accuracy": 0.6219512195121951,
+      "all_three_accuracy": 0.43902439024390244,
+      "secondary_jaccard": 0.5264227642276422,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 0.17453125000000005,
+      "cost_per_ticket": 0.002128429878048781,
+      "cost_per_10k": 21.28429878048781,
+      "confidence_when_right": 0.8957142857142855,
+      "confidence_when_wrong": 0.8689473684210527,
+      "macro_f1": 0.7126858304297328,
+      "macro_precision": 0.7922222222222223,
+      "macro_recall": 0.7059523809523809,
+      "macro_f1_core": 0.7126858304297328,
+      "macro_precision_core": 0.7922222222222223,
+      "macro_recall_core": 0.7059523809523809,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 31,
+        "fp": 8,
+        "fn": 11,
+        "precision": 0.7948717948717948,
+        "recall": 0.7380952380952381
+      },
+      "latency_p50": 15327,
+      "latency_p95": 23765,
+      "latency_max": 27452,
+      "input_tokens": 2043.9634146341464,
+      "output_tokens": 1023.8414634146342,
+      "reasoning_tokens": 872.5853658536586,
+      "cached_input_tokens": 1912.1951219512196,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.734375,
+        "non-english latin": 0.9166666666666666,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-5-mini__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:45:23"
+    }
+  ],
+  "v8|openai/gpt-4.1-mini": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4.1-mini",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7073170731707317,
+      "priority_accuracy": 0.8292682926829268,
+      "next_step_accuracy": 0.573170731707317,
+      "all_three_accuracy": 0.36585365853658536,
+      "secondary_jaccard": 0.47195121951219515,
+      "evidence_verbatim_rate": 0.926829268292683,
+      "repaired": 0,
+      "cost_usd": 0.0463972,
+      "cost_per_ticket": 0.000565819512195122,
+      "cost_per_10k": 5.65819512195122,
+      "confidence_when_right": 0.9500000000000005,
+      "confidence_when_wrong": 0.9354166666666662,
+      "macro_f1": 0.6182126696832579,
+      "macro_precision": 0.628095238095238,
+      "macro_recall": 0.6499999999999999,
+      "macro_f1_core": 0.6182126696832579,
+      "macro_precision_core": 0.628095238095238,
+      "macro_recall_core": 0.6499999999999999,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 34,
+        "fp": 11,
+        "fn": 8,
+        "precision": 0.7555555555555555,
+        "recall": 0.8095238095238095
+      },
+      "latency_p50": 2609,
+      "latency_p95": 3875,
+      "latency_max": 5218,
+      "input_tokens": 2045.9634146341464,
+      "output_tokens": 128.97560975609755,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1529.7560975609756,
+      "confusion": [
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.71875,
+        "non-english latin": 0.5833333333333334,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4.1-mini.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:46:02"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4.1-mini",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7073170731707317,
+      "priority_accuracy": 0.8170731707317073,
+      "next_step_accuracy": 0.5975609756097561,
+      "all_three_accuracy": 0.3902439024390244,
+      "secondary_jaccard": 0.4790650406504065,
+      "evidence_verbatim_rate": 0.926829268292683,
+      "repaired": 0,
+      "cost_usd": 0.0463492,
+      "cost_per_ticket": 0.0005652341463414634,
+      "cost_per_10k": 5.6523414634146345,
+      "confidence_when_right": 0.9491379310344833,
+      "confidence_when_wrong": 0.933333333333333,
+      "macro_f1": 0.6220019212487452,
+      "macro_precision": 0.6372549019607844,
+      "macro_recall": 0.6476190476190476,
+      "macro_f1_core": 0.6220019212487452,
+      "macro_precision_core": 0.6372549019607844,
+      "macro_recall_core": 0.6476190476190476,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 32,
+        "fp": 9,
+        "fn": 10,
+        "precision": 0.7804878048780488,
+        "recall": 0.7619047619047619
+      },
+      "latency_p50": 2625,
+      "latency_p95": 3454,
+      "latency_max": 4108,
+      "input_tokens": 2045.9634146341464,
+      "output_tokens": 126.5609756097561,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1518.8292682926829,
+      "confusion": [
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.703125,
+        "non-english latin": 0.6666666666666666,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4.1-mini__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:46:40"
+    }
+  ],
+  "v8|openai/gpt-4.1-nano": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4.1-nano",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.4024390243902439,
+      "priority_accuracy": 0.7195121951219512,
+      "next_step_accuracy": 0.34146341463414637,
+      "all_three_accuracy": 0.14634146341463414,
+      "secondary_jaccard": 0.3475609756097561,
+      "evidence_verbatim_rate": 0.975609756097561,
+      "repaired": 0,
+      "cost_usd": 0.011029299999999999,
+      "cost_per_ticket": 0.00013450365853658535,
+      "cost_per_10k": 1.3450365853658535,
+      "confidence_when_right": 0.8909090909090905,
+      "confidence_when_wrong": 0.895918367346938,
+      "macro_f1": 0.4379988140514456,
+      "macro_precision": 0.5446492233256939,
+      "macro_recall": 0.4904761904761904,
+      "macro_f1_core": 0.4379988140514456,
+      "macro_precision_core": 0.5446492233256939,
+      "macro_recall_core": 0.4904761904761904,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 30,
+        "precision": 0.9230769230769231,
+        "recall": 0.2857142857142857
+      },
+      "latency_p50": 2280,
+      "latency_p95": 3780,
+      "latency_max": 8078,
+      "input_tokens": 2045.9634146341464,
+      "output_tokens": 95.20731707317073,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1442.341463414634,
+      "confusion": [
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 12
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 6
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "refund_request",
+          "count": 5
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 5
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "refund_request",
+          "count": 4
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 3
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.4375,
+        "non-english latin": 0.3333333333333333,
+        "non-latin script": 0.16666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4.1-nano.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:47:16"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4.1-nano",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.4268292682926829,
+      "priority_accuracy": 0.7195121951219512,
+      "next_step_accuracy": 0.3170731707317073,
+      "all_three_accuracy": 0.12195121951219512,
+      "secondary_jaccard": 0.3475609756097561,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 0.010886099999999998,
+      "cost_per_ticket": 0.0001327573170731707,
+      "cost_per_10k": 1.327573170731707,
+      "confidence_when_right": 0.8885714285714282,
+      "confidence_when_wrong": 0.8914893617021269,
+      "macro_f1": 0.47078934137757666,
+      "macro_precision": 0.5294264069264069,
+      "macro_recall": 0.5214285714285715,
+      "macro_f1_core": 0.47078934137757666,
+      "macro_precision_core": 0.5294264069264069,
+      "macro_recall_core": 0.5214285714285715,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 31,
+        "precision": 1.0,
+        "recall": 0.2619047619047619
+      },
+      "latency_p50": 2375,
+      "latency_p95": 8077,
+      "latency_max": 12734,
+      "input_tokens": 2045.9634146341464,
+      "output_tokens": 90.54878048780488,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1440.780487804878,
+      "confusion": [
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 13
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "refund_request",
+          "count": 5
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 5
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 4
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "refund_request",
+          "count": 3
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.453125,
+        "non-english latin": 0.3333333333333333,
+        "non-latin script": 0.3333333333333333
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4.1-nano__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:48:00"
+    }
+  ],
+  "v8|openai/gpt-4o-mini-2024-07-18": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7195121951219512,
+      "priority_accuracy": 0.7317073170731707,
+      "next_step_accuracy": 0.34146341463414637,
+      "all_three_accuracy": 0.15853658536585366,
+      "secondary_jaccard": 0.48882113821138207,
+      "evidence_verbatim_rate": 0.9634146341463414,
+      "repaired": 0,
+      "cost_usd": 0.01888875,
+      "cost_per_ticket": 0.00023035060975609754,
+      "cost_per_10k": 2.3035060975609754,
+      "confidence_when_right": 0.9237288135593213,
+      "confidence_when_wrong": 0.9217391304347824,
+      "macro_f1": 0.6370297633712267,
+      "macro_precision": 0.6586904761904762,
+      "macro_recall": 0.6571428571428571,
+      "macro_f1_core": 0.6370297633712267,
+      "macro_precision_core": 0.6586904761904762,
+      "macro_recall_core": 0.6571428571428571,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 24,
+        "fp": 12,
+        "fn": 18,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714
+      },
+      "latency_p50": 2594,
+      "latency_p95": 5266,
+      "latency_max": 5563,
+      "input_tokens": 2049.9634146341464,
+      "output_tokens": 88.01219512195122,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1732.6829268292684,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "content_quality",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.65625,
+        "non-english latin": 0.9166666666666666,
+        "non-latin script": 1.0
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4o-mini-2024-07-18.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:48:39"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7073170731707317,
+      "priority_accuracy": 0.7195121951219512,
+      "next_step_accuracy": 0.35365853658536583,
+      "all_three_accuracy": 0.17073170731707318,
+      "secondary_jaccard": 0.49390243902439024,
+      "evidence_verbatim_rate": 0.9634146341463414,
+      "repaired": 0,
+      "cost_usd": 0.017845350000000003,
+      "cost_per_ticket": 0.00021762621951219516,
+      "cost_per_10k": 2.1762621951219514,
+      "confidence_when_right": 0.9206896551724131,
+      "confidence_when_wrong": 0.9208333333333331,
+      "macro_f1": 0.624302490643954,
+      "macro_precision": 0.6536904761904763,
+      "macro_recall": 0.6404761904761905,
+      "macro_f1_core": 0.624302490643954,
+      "macro_precision_core": 0.6536904761904763,
+      "macro_recall_core": 0.6404761904761905,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 24,
+        "fp": 12,
+        "fn": 18,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714
+      },
+      "latency_p50": 2437,
+      "latency_p95": 3187,
+      "latency_max": 4015,
+      "input_tokens": 2049.9634146341464,
+      "output_tokens": 88.07317073170732,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1902.8292682926829,
+      "confusion": [
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 4
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 2
+        },
+        {
+          "expected": "content_quality",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "OpenAI": 82
+      },
+      "pinned_endpoint": [
+        "openai"
+      ],
+      "by_language": {
+        "english": 0.640625,
+        "non-english latin": 0.9166666666666666,
+        "non-latin script": 1.0
+      },
+      "run_file": "data\\runs\\golden2__v8__openai-gpt-4o-mini-2024-07-18__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:49:16"
+    }
+  ],
+  "v8|anthropic/claude-haiku-4.5": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "anthropic/claude-haiku-4.5",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6951219512195121,
+      "priority_accuracy": 0.7926829268292683,
+      "next_step_accuracy": 0.6585365853658537,
+      "all_three_accuracy": 0.3902439024390244,
+      "secondary_jaccard": 0.5288617886178861,
+      "evidence_verbatim_rate": 0.9634146341463414,
+      "repaired": 0,
+      "cost_usd": 0.267486,
+      "cost_per_ticket": 0.0032620243902439024,
+      "cost_per_10k": 32.62024390243902,
+      "confidence_when_right": 0.8901754385964918,
+      "confidence_when_wrong": 0.8444000000000002,
+      "macro_f1": 0.6289756220790703,
+      "macro_precision": 0.663515406162465,
+      "macro_recall": 0.6309523809523809,
+      "macro_f1_core": 0.6289756220790703,
+      "macro_precision_core": 0.663515406162465,
+      "macro_recall_core": 0.6309523809523809,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 38,
+        "fp": 18,
+        "fn": 4,
+        "precision": 0.6785714285714286,
+        "recall": 0.9047619047619048
+      },
+      "latency_p50": 2844,
+      "latency_p95": 4859,
+      "latency_max": 6265,
+      "input_tokens": 2565.621951219512,
+      "output_tokens": 139.28048780487805,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Anthropic": 82
+      },
+      "pinned_endpoint": [
+        "anthropic"
+      ],
+      "by_language": {
+        "english": 0.703125,
+        "non-english latin": 0.75,
+        "non-latin script": 0.5
+      },
+      "run_file": "data\\runs\\golden2__v8__anthropic-claude-haiku-4.5.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:49:58"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "anthropic/claude-haiku-4.5",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6829268292682927,
+      "priority_accuracy": 0.8048780487804879,
+      "next_step_accuracy": 0.6707317073170732,
+      "all_three_accuracy": 0.3902439024390244,
+      "secondary_jaccard": 0.5166666666666666,
+      "evidence_verbatim_rate": 0.9634146341463414,
+      "repaired": 0,
+      "cost_usd": 0.26785600000000004,
+      "cost_per_ticket": 0.0032665365853658543,
+      "cost_per_10k": 32.66536585365854,
+      "confidence_when_right": 0.8939285714285721,
+      "confidence_when_wrong": 0.8461538461538463,
+      "macro_f1": 0.6065946696981179,
+      "macro_precision": 0.6551820728291317,
+      "macro_recall": 0.6142857142857143,
+      "macro_f1_core": 0.6065946696981179,
+      "macro_precision_core": 0.6551820728291317,
+      "macro_recall_core": 0.6142857142857143,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 38,
+        "fp": 17,
+        "fn": 4,
+        "precision": 0.6909090909090909,
+        "recall": 0.9047619047619048
+      },
+      "latency_p50": 2797,
+      "latency_p95": 3782,
+      "latency_max": 4406,
+      "input_tokens": 2565.621951219512,
+      "output_tokens": 140.1829268292683,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Anthropic": 82
+      },
+      "pinned_endpoint": [
+        "anthropic"
+      ],
+      "by_language": {
+        "english": 0.6875,
+        "non-english latin": 0.75,
+        "non-latin script": 0.5
+      },
+      "run_file": "data\\runs\\golden2__v8__anthropic-claude-haiku-4.5__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:50:39"
+    }
+  ],
+  "v8|anthropic/claude-sonnet-5": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "anthropic/claude-sonnet-5",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7804878048780488,
+      "priority_accuracy": 0.9024390243902439,
+      "next_step_accuracy": 0.6585365853658537,
+      "all_three_accuracy": 0.5121951219512195,
+      "secondary_jaccard": 0.6239837398373983,
+      "evidence_verbatim_rate": 0.975609756097561,
+      "repaired": 0,
+      "cost_usd": 1.009464,
+      "cost_per_ticket": 0.012310536585365853,
+      "cost_per_10k": 123.10536585365854,
+      "confidence_when_right": 0.7693750000000001,
+      "confidence_when_wrong": 0.702777777777778,
+      "macro_f1": 0.6976364733334652,
+      "macro_precision": 0.8001669898728722,
+      "macro_recall": 0.6916666666666667,
+      "macro_f1_core": 0.6976364733334652,
+      "macro_precision_core": 0.8001669898728722,
+      "macro_recall_core": 0.6916666666666667,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 25,
+        "fp": 2,
+        "fn": 17,
+        "precision": 0.9259259259259259,
+        "recall": 0.5952380952380952
+      },
+      "latency_p50": 7672,
+      "latency_p95": 15092,
+      "latency_max": 26109,
+      "input_tokens": 3436.487804878049,
+      "output_tokens": 543.7560975609756,
+      "reasoning_tokens": 397.5243902439024,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 4
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Anthropic": 82
+      },
+      "pinned_endpoint": [
+        "anthropic"
+      ],
+      "by_language": {
+        "english": 0.796875,
+        "non-english latin": 0.6666666666666666,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__anthropic-claude-sonnet-5.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:52:46"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "anthropic/claude-sonnet-5",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7317073170731707,
+      "priority_accuracy": 0.8780487804878049,
+      "next_step_accuracy": 0.6829268292682927,
+      "all_three_accuracy": 0.4634146341463415,
+      "secondary_jaccard": 0.5873983739837397,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 1.0135739999999998,
+      "cost_per_ticket": 0.012360658536585363,
+      "cost_per_10k": 123.60658536585363,
+      "confidence_when_right": 0.7655,
+      "confidence_when_wrong": 0.7140909090909092,
+      "macro_f1": 0.6624592074592075,
+      "macro_precision": 0.7507608695652174,
+      "macro_recall": 0.6607142857142857,
+      "macro_f1_core": 0.6624592074592075,
+      "macro_precision_core": 0.7507608695652174,
+      "macro_recall_core": 0.6607142857142857,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 29,
+        "fp": 1,
+        "fn": 13,
+        "precision": 0.9666666666666667,
+        "recall": 0.6904761904761905
+      },
+      "latency_p50": 7875,
+      "latency_p95": 14952,
+      "latency_max": 25733,
+      "input_tokens": 3436.487804878049,
+      "output_tokens": 548.7682926829268,
+      "reasoning_tokens": 400.9024390243902,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 4
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "service_not_delivered",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Anthropic": 82
+      },
+      "pinned_endpoint": [
+        "anthropic"
+      ],
+      "by_language": {
+        "english": 0.75,
+        "non-english latin": 0.5833333333333334,
+        "non-latin script": 0.8333333333333334
+      },
+      "run_file": "data\\runs\\golden2__v8__anthropic-claude-sonnet-5__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:54:51"
+    }
+  ],
+  "v8|google/gemini-2.5-flash-lite": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "google/gemini-2.5-flash-lite",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6951219512195121,
+      "priority_accuracy": 0.7926829268292683,
+      "next_step_accuracy": 0.6219512195121951,
+      "all_three_accuracy": 0.36585365853658536,
+      "secondary_jaccard": 0.3469512195121951,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 0.011566309999999996,
+      "cost_per_ticket": 0.0001410525609756097,
+      "cost_per_10k": 1.410525609756097,
+      "confidence_when_right": 0.9017543859649115,
+      "confidence_when_wrong": 0.8999999999999999,
+      "macro_f1": 0.6379880517428655,
+      "macro_precision": 0.6793506493506494,
+      "macro_recall": 0.65,
+      "macro_f1_core": 0.6379880517428655,
+      "macro_precision_core": 0.6793506493506494,
+      "macro_recall_core": 0.65,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 26,
+        "fp": 5,
+        "fn": 16,
+        "precision": 0.8387096774193549,
+        "recall": 0.6190476190476191
+      },
+      "latency_p50": 2108,
+      "latency_p95": 2890,
+      "latency_max": 3327,
+      "input_tokens": 1897.9512195121952,
+      "output_tokens": 180.52439024390245,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1343.9146341463415,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Google AI Studio": 82
+      },
+      "pinned_endpoint": [
+        "google-ai-studio"
+      ],
+      "by_language": {
+        "english": 0.6875,
+        "non-english latin": 0.75,
+        "non-latin script": 0.6666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__google-gemini-2.5-flash-lite.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:55:22"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "google/gemini-2.5-flash-lite",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.6951219512195121,
+      "priority_accuracy": 0.7926829268292683,
+      "next_step_accuracy": 0.6219512195121951,
+      "all_three_accuracy": 0.36585365853658536,
+      "secondary_jaccard": 0.3469512195121951,
+      "evidence_verbatim_rate": 0.9878048780487805,
+      "repaired": 0,
+      "cost_usd": 0.008775139999999997,
+      "cost_per_ticket": 0.00010701390243902436,
+      "cost_per_10k": 1.0701390243902436,
+      "confidence_when_right": 0.9017543859649115,
+      "confidence_when_wrong": 0.8999999999999999,
+      "macro_f1": 0.6379880517428655,
+      "macro_precision": 0.6793506493506494,
+      "macro_recall": 0.65,
+      "macro_f1_core": 0.6379880517428655,
+      "macro_precision_core": 0.6793506493506494,
+      "macro_recall_core": 0.65,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 26,
+        "fp": 5,
+        "fn": 16,
+        "precision": 0.8387096774193549,
+        "recall": 0.6190476190476191
+      },
+      "latency_p50": 1953,
+      "latency_p95": 2656,
+      "latency_max": 3125,
+      "input_tokens": 1897.9512195121952,
+      "output_tokens": 180.52439024390245,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 1722.121951219512,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 3
+        },
+        {
+          "expected": "refund_request",
+          "actual": "unauthorized_charge",
+          "count": 3
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "unauthorized_charge",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "trial_converted",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "refund_request",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "cancellation_failed",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "pricing_unclear",
+          "actual": "unauthorized_charge",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "content_quality",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "data_privacy",
+          "count": 1
+        },
+        {
+          "expected": "other",
+          "actual": "pricing_unclear",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Google AI Studio": 82
+      },
+      "pinned_endpoint": [
+        "google-ai-studio"
+      ],
+      "by_language": {
+        "english": 0.6875,
+        "non-english latin": 0.75,
+        "non-latin script": 0.6666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__google-gemini-2.5-flash-lite__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:55:51"
+    }
+  ],
+  "v8|google/gemini-3.1-flash-lite": [
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "google/gemini-3.1-flash-lite",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7682926829268293,
+      "priority_accuracy": 0.7560975609756098,
+      "next_step_accuracy": 0.6341463414634146,
+      "all_three_accuracy": 0.35365853658536583,
+      "secondary_jaccard": 0.567479674796748,
+      "evidence_verbatim_rate": 0.975609756097561,
+      "repaired": 0,
+      "cost_usd": 0.05500750000000001,
+      "cost_per_ticket": 0.0006708231707317074,
+      "cost_per_10k": 6.708231707317074,
+      "confidence_when_right": 0.9706349206349204,
+      "confidence_when_wrong": 0.9605263157894735,
+      "macro_f1": 0.6766257040450588,
+      "macro_precision": 0.7180284951509208,
+      "macro_recall": 0.6880952380952381,
+      "macro_f1_core": 0.6766257040450588,
+      "macro_precision_core": 0.7180284951509208,
+      "macro_recall_core": 0.6880952380952381,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 34,
+        "fp": 7,
+        "fn": 8,
+        "precision": 0.8292682926829268,
+        "recall": 0.8095238095238095
+      },
+      "latency_p50": 2031,
+      "latency_p95": 2436,
+      "latency_max": 2484,
+      "input_tokens": 1897.9512195121952,
+      "output_tokens": 130.890243902439,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 4
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "refund_request",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Google AI Studio": 82
+      },
+      "pinned_endpoint": [
+        "google-ai-studio"
+      ],
+      "by_language": {
+        "english": 0.796875,
+        "non-english latin": 0.6666666666666666,
+        "non-latin script": 0.6666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__google-gemini-3.1-flash-lite.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:56:19"
+    },
+    {
+      "set": "golden2",
+      "prompt_version": "v8",
+      "model": "google/gemini-3.1-flash-lite",
+      "started_at": null,
+      "prompt_sha256": "72d0983abfdec900",
+      "seed": null,
+      "temperature": null,
+      "tickets": 82,
+      "scored": 82,
+      "hard_failures": 0,
+      "category_accuracy": 0.7682926829268293,
+      "priority_accuracy": 0.7560975609756098,
+      "next_step_accuracy": 0.6341463414634146,
+      "all_three_accuracy": 0.35365853658536583,
+      "secondary_jaccard": 0.567479674796748,
+      "evidence_verbatim_rate": 0.975609756097561,
+      "repaired": 0,
+      "cost_usd": 0.05500750000000001,
+      "cost_per_ticket": 0.0006708231707317074,
+      "cost_per_10k": 6.708231707317074,
+      "confidence_when_right": 0.9706349206349204,
+      "confidence_when_wrong": 0.9605263157894735,
+      "macro_f1": 0.6766257040450588,
+      "macro_precision": 0.7180284951509208,
+      "macro_recall": 0.6880952380952381,
+      "macro_f1_core": 0.6766257040450588,
+      "macro_precision_core": 0.7180284951509208,
+      "macro_recall_core": 0.6880952380952381,
+      "core_classes": 10,
+      "escalation": {
+        "tp": 34,
+        "fp": 7,
+        "fn": 8,
+        "precision": 0.8292682926829268,
+        "recall": 0.8095238095238095
+      },
+      "latency_p50": 1969,
+      "latency_p95": 2407,
+      "latency_max": 2532,
+      "input_tokens": 1897.9512195121952,
+      "output_tokens": 130.890243902439,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "confusion": [
+        {
+          "expected": "pricing_unclear",
+          "actual": "trial_converted",
+          "count": 4
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "cancellation_failed",
+          "count": 3
+        },
+        {
+          "expected": "content_quality",
+          "actual": "app_technical",
+          "count": 2
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "cancellation_failed",
+          "count": 2
+        },
+        {
+          "expected": "other",
+          "actual": "content_quality",
+          "count": 2
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "unauthorized_charge",
+          "actual": "service_not_delivered",
+          "count": 1
+        },
+        {
+          "expected": "trial_converted",
+          "actual": "pricing_unclear",
+          "count": 1
+        },
+        {
+          "expected": "refund_request",
+          "actual": "cancellation_failed",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "app_technical",
+          "count": 1
+        },
+        {
+          "expected": "data_privacy",
+          "actual": "other",
+          "count": 1
+        }
+      ],
+      "providers": {
+        "Google AI Studio": 82
+      },
+      "pinned_endpoint": [
+        "google-ai-studio"
+      ],
+      "by_language": {
+        "english": 0.796875,
+        "non-english latin": 0.6666666666666666,
+        "non-latin script": 0.6666666666666666
+      },
+      "run_file": "data\\runs\\golden2__v8__google-gemini-3.1-flash-lite__2.json",
+      "settings": {
+        "reasoning_effort": null,
+        "temperature": 0.0
+      },
+      "measured_at": "2026-09-21T17:56:47"
+    }
+  ]
+}

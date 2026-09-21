@@ -1,0 +1,44 @@
+{
+  "set": "dev",
+  "started_at": "2026-09-21T08:24:59+00:00",
+  "prompt_version": "v1",
+  "architecture": "single",
+  "model": "openai/gpt-5-mini",
+  "temperature": 0.0,
+  "response_format": "json_schema",
+  "seed": null,
+  "cache_hits": 0,
+  "prompt_sha256": "5e18b601088ca236",
+  "max_output_tokens": null,
+  "tickets": 1,
+  "cost_usd": 0.00103,
+  "results": [
+    {
+      "ticket_id": "as:14252277944",
+      "model": "openai/gpt-5-mini",
+      "triage": {
+        "category": "trial_converted",
+        "secondary_categories": [
+          "refund_request"
+        ],
+        "priority": "2",
+        "next_step": "ask_purchase_rail",
+        "evidence": "上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了",
+        "rationale": "User says the app showed a 3-day free trial but was immediately charged 363 RMB and Apple refused a refund, indicating an unexpected trial conversion and a request for money back; this involves a taken payment so priority is 2.",
+        "confidence": 0.9
+      },
+      "error": null,
+      "raw": "{\n  \"category\": \"trial_converted\",\n  \"secondary_categories\": [\n    \"refund_request\"\n  ],\n  \"priority\": \"2\",\n  \"next_step\": \"ask_purchase_rail\",\n  \"evidence\": \"上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了\",\n  \"rationale\": \"User says the app showed a 3-day free trial but was immediately charged 363 RMB and Apple refused a refund, indicating an unexpected trial conversion and a request for money back; this involves a taken payment so priority is 2.\",\n  \"confidence\": 0.9\n}",
+      "latency_ms": 4768,
+      "attempts": 1,
+      "repaired": false,
+      "input_tokens": 1137,
+      "output_tokens": 373,
+      "cost_usd": 0.00103025,
+      "finish_reason": "stop",
+      "cache_hit": false,
+      "params_dropped": "temperature",
+      "provider": "OpenAI"
+    }
+  ]
+}

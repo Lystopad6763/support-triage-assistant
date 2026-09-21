@@ -173,5 +173,30 @@
   "leakage": {
     "shared_ids": 0,
     "shared_text": 0
+  },
+  "golden2": {
+    "built_at": "2026-09-21",
+    "tickets": 82,
+    "base": "golden (50 rows, unchanged)",
+    "added": 32,
+    "why": "macro F1 averages over classes; golden gave it four classes with one row each and three with none, so the headline moved eleven points on a single ticket. These rows raise ten of the eleven categories to three or more.",
+    "selection": "target probe fires AND every competing probe is silent, then read and labelled by hand against the precedence rules - the opposite of the cell-by-probe sampling that drifted (only 10 of 36 theme rows in golden kept their cell's category).",
+    "out_of_window": 29,
+    "not_addressed_to_company": 3,
+    "per_category_after": {
+      "trial_converted": 21,
+      "cancellation_failed": 12,
+      "unauthorized_charge": 7,
+      "service_not_delivered": 7,
+      "content_quality": 7,
+      "pricing_unclear": 6,
+      "app_technical": 6,
+      "refund_request": 6,
+      "other": 6,
+      "data_privacy": 4
+    },
+    "cannot_be_filled": {
+      "advisor_conduct": "the probe fires on 0 of the 989 ticket-shaped rows in the whole 43,941-row corpus; a hand search found 11 rows naming psychics and every one is a billing ticket. Covered only by synthetic.json."
+    }
   }
 }

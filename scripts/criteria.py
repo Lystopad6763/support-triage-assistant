@@ -225,7 +225,16 @@ def guess_language(text: str) -> str:
     scores = {code: _distinct_hits(pattern, text)
               for code, pattern in LATIN_LANGS.items()}
     best, hits = max(scores.items(), key=lambda item: item[1])
-    return best if hits >= 3 and hits > english else "en_or_unknown"
+    # The floor of three guards against one stray word deciding a language:
+    # "no" and "en" appear in English sentences. It must not outrank ZERO
+    # English evidence, which is what it did - a Spanish ticket scoring 2 on
+    # Spanish and 0 on English came back "en_or_unknown", and `non_english` is
+    # computed as language != "en_or_unknown", so the row was filed as English
+    # and dropped out of the non-English bucket. Measured: one row in dev
+    # (German), one in golden (Portuguese).
+    if hits > english and (hits >= 3 or english == 0):
+        return best
+    return "en_or_unknown"
 
 
 # --- B1, B5: sampling probes -- NOT labels ----------------------------------
@@ -278,6 +287,11 @@ PROBES: dict[str, re.Pattern] = {
         r"(generic|copy ?paste|same (answer|reading|response)|"
         r"(reading|chart|horoscope|sign|ascendant) (is|was) (wrong|incorrect)|"
         r"inaccurate|nonsense|made up)", re.I),
+    # Kept although advisor_conduct is no longer a category: these probes
+    # describe the CORPUS, not the label set, and this one is how a ticket that
+    # needs the safety intake gets in front of a labeller at all. It fires on 0
+    # of the 989 ticket-shaped rows, which is the measurement that removed the
+    # category - deleting the probe would delete the evidence with it.
     "advisor_conduct": re.compile(
         r"((advisor|psychic|expert|reader).{0,40}(rude|never (replied|answered)|"
         r"ignored|bot|ai[- ]generated|fake|not (a )?real)|"
