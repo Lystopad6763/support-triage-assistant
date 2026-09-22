@@ -10,7 +10,7 @@ export const CATEGORY_UA = {
   charge_not_recognised: 'платіж не розпізнано',
   price_not_expected: 'сума більша за очікувану',
   cancel_not_possible: 'не вдається скасувати',
-  nothing_delivered: 'оплачене не надійшло',
+  nothing_delivered: 'заплатив, але не отримав',
   app_defect: 'технічна несправність',
   other: 'інше',
 }
