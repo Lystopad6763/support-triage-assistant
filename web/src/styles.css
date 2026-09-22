@@ -383,3 +383,102 @@ footer {
   .row-left { justify-content: space-between; }
   .primary { width: 100%; }
 }
+
+/* ---------- task switcher ---------- */
+/* Two assignments on one page. The strip is sticky because the switch is the
+   one control that has to stay reachable while a long answer is being read. */
+.tasks {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  background: rgba(25, 24, 51, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.tasks .brand { margin-bottom: 0; font-size: 17px; }
+.tabs { display: flex; gap: 6px; }
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 7px 13px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--dim);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+.tab:hover { background: var(--panel); color: var(--text); }
+.tab strong { font-size: 13px; font-weight: 600; }
+.tab span { font-size: 11px; color: var(--dimmer); }
+.tab.on {
+  background: var(--panel-2);
+  border-color: var(--panel-3);
+  color: var(--text);
+}
+.tab.on span { color: var(--dim); }
+
+/* ---------- the three labels ---------- */
+/* The product of task 1, so they are the largest thing on the screen and the
+   machine-readable value sits under the human wording rather than instead of
+   it: the agent reads the phrase, the integration reads the code. */
+.labels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 15px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.label-key {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+.label-value { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.label code { font-size: 11px; color: var(--dim); }
+.label.pri .label-value { font-size: 24px; }
+.label.pri.P1 { border-color: var(--stop); }
+.label.pri.P1 .label-value { color: var(--stop); }
+.label.pri.P2 { border-color: var(--gold); }
+.label.pri.P2 .label-value { color: var(--gold); }
+.label.pri.P3 .label-value { color: var(--ok); }
+
+.facts, .flags { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.facts code, .flags code { color: var(--accent); font-size: 12px; }
+.flags { font-size: 13px; color: var(--dim); }
+
+blockquote {
+  margin: 0 0 10px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+}
+/* A span the model did not actually copy. Marked rather than hidden: the whole
+   point of showing the quote is that it can be checked against the ticket. */
+blockquote.bad { border-left-color: var(--stop); }
+
+@media (max-width: 620px) {
+  .labels { grid-template-columns: 1fr; }
+  .tasks { flex-direction: column; align-items: stretch; gap: 10px; }
+}

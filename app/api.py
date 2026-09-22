@@ -41,7 +41,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from app import assist, config
+from app import assist, config, llm, taxonomy
 
 ROOT = Path(__file__).resolve().parent.parent
 # The built React app. It is committed rather than built at deploy time, so the
@@ -57,6 +57,7 @@ DAILY_BUDGET_USD = 5.00
 app = FastAPI(title="Nebula agent assist", docs_url=None, redoc_url=None)
 
 _engine: assist.Engine | None = None
+_settings: config.Settings | None = None
 _seen: dict[str, deque] = defaultdict(deque)
 _spent: dict[str, float] = defaultdict(float)
 
@@ -73,8 +74,9 @@ def warm() -> None:
     visitor - usually the first one, often the one being shown the demo - waits
     for it on top of everything else.
     """
-    global _engine
+    global _engine, _settings
     _engine = assist.Engine(config.load())
+    _settings = config.load()
 
 
 def allowed(client: str) -> bool:
@@ -186,6 +188,84 @@ def draft(ask: Ask, request: Request) -> JSONResponse:
             "localise_ms": result.localise_ms,
             "total_ms": result.total_ms,
             "cost_usd": round(result.cost_usd, 6),
+        },
+    })
+
+
+@app.post("/classify")
+def classify(ask: Ask, request: Request) -> JSONResponse:
+    """Task 1 through the same page: one ticket in, three labels out.
+
+    It shares the budget and the rate limit with /draft rather than having its
+    own, because both spend from the same balance and a demo that runs out on
+    one endpoint while the other keeps going is a confusing thing to watch.
+
+    The answer carries its own audit next to it: whether the quoted span is
+    really in the ticket, whether the priority follows from the fact list the
+    model itself wrote, whether the next step is one the table allows for the
+    category. Those three are checked here, deterministically, and they are the
+    same checks eval/run.py counts over the whole set - so what the page shows
+    for one ticket is the same measurement the report quotes for 157.
+    """
+    today = date.today().isoformat()
+    if _spent[today] >= DAILY_BUDGET_USD:
+        return JSONResponse(status_code=429, content={
+            "error": "budget",
+            "message": "Денний бюджет демонстрації вичерпано. "
+                       "Спробуйте завтра."})
+
+    client = request.client.host if request.client else "unknown"
+    if not allowed(client):
+        return JSONResponse(status_code=429, content={
+            "error": "rate",
+            "message": "Забагато запитів поспіль. Зачекайте кілька секунд."})
+
+    assert _settings is not None
+    text = ask.ticket.strip()
+    prompt = config.PROMPTS[config.CLASSIFIER_PROMPT]
+    result = llm.classify({"ticket_id": "web", "text": text}, _settings,
+                          model=config.CLASSIFIER_MODEL, prompt=prompt)
+    _spent[today] += result.cost_usd
+
+    t = result.triage
+    if t is None:
+        return JSONResponse(status_code=502, content={
+            "error": "model",
+            "message": result.error or "Модель не повернула відповідь."})
+
+    evidence = (t.evidence or "").strip()
+    flags = taxonomy.review_flags(t, text)
+    return JSONResponse(content={
+        "category": t.category.value,
+        "secondary_categories": [c.value for c in (t.secondary_categories or [])],
+        "priority": t.priority.value,
+        "priority_facts": [getattr(f, "value", f)
+                           for f in (t.priority_facts or [])],
+        "next_step": t.next_step.value,
+        "evidence": evidence,
+        # None when the model returned no span at all, so "did not quote" and
+        # "quoted something that is not there" stay different answers.
+        "evidence_verbatim": (None if not evidence else
+                              " ".join(evidence.split())
+                              in " ".join(text.split())),
+        "rationale": t.rationale,
+        "confidence": t.confidence,
+        # Deliberately not driven by `confidence` - see taxonomy.REVIEW_RULES.
+        "review": {
+            "needed": bool(flags),
+            "flags": [{"code": code, "why": why} for code, why in flags],
+        },
+        "meta": {
+            "model": config.CLASSIFIER_MODEL,
+            "prompt": f"classify/{prompt.version}",
+            "latency_ms": result.latency_ms,
+            "cost_usd": round(result.cost_usd, 6),
+            # Both are failure handling caught in the act: attempts > 1 means a
+            # retry happened, repaired means the first answer did not parse and
+            # the repair call fixed it.
+            "attempts": result.attempts,
+            "repaired": result.repaired,
+            "params_dropped": result.params_dropped,
         },
     })
 

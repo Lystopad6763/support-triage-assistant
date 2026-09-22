@@ -6,6 +6,24 @@ import Citation from './components/Citation.jsx'
 import Sources from './components/Sources.jsx'
 import Meta from './components/Meta.jsx'
 import { EXAMPLES, MAX_CHARS, VISIBLE } from './examples.js'
+import Classify from './Classify.jsx'
+
+/**
+ * Two assignments, one page, one switch.
+ *
+ * They are separate products and deliberately look it: Task 1 routes a ticket
+ * and answers with three labels, Task 2 drafts replies for an agent. What they
+ * share is the server, the budget and the rate limit - so a person clicking
+ * between them is spending from one balance, which is the only arrangement
+ * where "the demo ran out of money" happens once rather than twice.
+ *
+ * Which tab opens first: the classifier, because it is Task 1 and because it
+ * is the cheaper call to spend a first-time visitor's curiosity on.
+ */
+const TABS = [
+  ['classify', 'Таск 1', 'класифікатор звернень'],
+  ['assist', 'Таск 2', 'помічник агента'],
+]
 
 /**
  * The agent pastes a ticket and reads three drafts. That is the whole product,
@@ -21,7 +39,7 @@ import { EXAMPLES, MAX_CHARS, VISIBLE } from './examples.js'
  * reaching for the mouse, and every draft has its own copy button rather than
  * one selection the agent has to make by hand.
  */
-export default function App() {
+function Assist() {
   const [ticket, setTicket] = useState('')
   const [result, setResult] = useState(null)
   const [error, setError] = useState(null)
@@ -80,11 +98,6 @@ export default function App() {
 
   return (
     <div className="page">
-      <div className="brand">
-        <i className="brand-dot" />
-        nebula <span>· помічник агента підтримки</span>
-      </div>
-
       <header>
         <h1>Звернення на вході, три чернетки на виході</h1>
         <p className="lede">
@@ -198,5 +211,30 @@ export default function App() {
         )}
       </footer>
     </div>
+  )
+}
+
+export default function App() {
+  const [tab, setTab] = useState('classify')
+  return (
+    <>
+      <nav className="tasks">
+        <div className="brand">
+          <i className="brand-dot" />
+          nebula <span>· підтримка</span>
+        </div>
+        <div className="tabs">
+          {TABS.map(([id, title, note]) => (
+            <button key={id}
+                    className={tab === id ? 'tab on' : 'tab'}
+                    onClick={() => setTab(id)}>
+              <strong>{title}</strong>
+              <span>{note}</span>
+            </button>
+          ))}
+        </div>
+      </nav>
+      {tab === 'classify' ? <Classify /> : <Assist />}
+    </>
   )
 }
