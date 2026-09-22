@@ -390,7 +390,14 @@ class Engine:
         return out
 
     def localise(self, out: Result) -> None:
-        """The three replies again, in the language the customer wrote in.
+        """The three replies again, in the language the customer is ANSWERED in.
+
+        Note which language that is. The first version of this method passed
+        the DETECTED language, which is wrong wherever ANSWER_INSTEAD applies:
+        a Russian ticket was reported as answered in Ukrainian and translated
+        into Russian, so the page said one thing and the text said another.
+        The substitution has to reach the call that actually produces the text,
+        not only the field that describes it.
 
         A failure here leaves `localised` empty rather than raising: the agent
         still has three checked English replies, which is worse than having
@@ -398,7 +405,8 @@ class Engine:
         """
         o = out.output
         assert o is not None
-        body = (f"Customer's language: {o.language}\n\n"
+        target = out.reply_language or o.language
+        body = (f"Customer's language: {target}\n\n"
                 + "\n\n".join(f"[{tone}]\n{getattr(o, tone)}"
                                 for tone in TONES))
         prompt = config.PromptConfig(
