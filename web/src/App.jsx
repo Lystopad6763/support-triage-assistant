@@ -181,7 +181,7 @@ export default function App() {
             ))}
           </section>
 
-          <Sources sources={result.sources} />
+          <Sources sources={result.sources} ms={result.meta.retrieval_ms} />
           <Meta meta={result.meta} similarity={result.similarity} />
         </main>
       )}
