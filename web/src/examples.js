@@ -1,14 +1,20 @@
-// Real tickets, straight out of benchmark/tickets.csv - the same 430 the
-// retrieval grid was scored on. Nothing here was written for the demo, which is
-// the point: a demo whose examples were composed for it proves only that they
-// were composed for it.
+// Twelve real tickets, and every one of them is a ticket the retriever finds
+// the right document for. They come out of the same 430 the retrieval grid was
+// scored on (benchmark/tickets.csv); the rank each one got in the winning cell
+// - article + dense + text-embedding-3-small - is in the comment above it.
 //
-// Twelve, chosen to break in different places. Nine languages against a
-// knowledge base that exists only in English. Both stores, including one whose
-// text names the other - the case where the store prefix would send retrieval
-// to the wrong cancellation rail. A trial that converted, a charge with no
-// subscription behind it, a service never delivered, and one complaint that is
-// really about the price of a free app.
+// Chosen to break in different places rather than to look good. Complaints
+// about the psychics and astrologers themselves, not only about money: a reader
+// who went silent while the credits burned, an astrologer screen that glitches,
+// a forecast that contradicts the actual transit. An account suspended for age.
+// A request to delete card data, which is a privacy obligation and not a
+// billing one. Seven languages against a knowledge base that exists only in
+// English, which is the condition the whole module is built around.
+//
+// Not a random sample, and not a hit rate: these were picked BECAUSE retrieval
+// succeeds on them, so a demo button does not fail in front of someone. The
+// honest numbers are in docs/ASSISTANT.md - recall@1 0.623, recall@5 0.950 over
+// 422 queries.
 //
 // The first four show by default; the rest are behind "Більше", because a wall
 // of twelve chips is a wall, not a choice.
@@ -17,63 +23,75 @@ export const VISIBLE = 4
 
 export const EXAMPLES = [
   {
-    id: "gp:953b362d-75b",
-    label: "Англійська · двічі списали",
-    text: "charged, my card 2 times and I didn't do anything with your site. 48 on April 30 and 58 on April 1st. I want my money back",
+    id: "gp:7e8f319c-459",
+    label: "Психік не відповів, кредити згоріли",
+    // en_or_unknown / nothing_delivered · еталонний документ на позиції 2
+    text: "every time the psychic would go to answer me it would go busy and I never got an answer and the time would run out I even bought some extra credits and it never got transferred in very disappointed and I want my money back",
   },
   {
-    id: "as:7628936087",
-    label: "Іспанська · випадкова підписка",
-    text: "apreté sin querer para hacer una suscripción y ahora no la puedo cancelar me cobraron $49.49 dólares quiero mi dinero de vuelta",
+    id: "as:7469353964",
+    label: "Перехід до астролога глючить",
+    // en_or_unknown / app_defect · еталонний документ на позиції 1
+    text: "Astrologers Error I really love the app and the design. I also love how you can learn more about yourself and your signs. The only I problem is that when I try to go to a “astrologer” it glitches out. It keep saying “something went wrong, try again.” And I have to end up force closing the app because it get stuck there. Please fix this.",
   },
   {
-    id: "gp:6915993b-f13",
-    label: "Німецька · не вдалося скасувати пробний",
-    text: "Ich bin äußerst unzufrieden mit der App, alles hängt und ich konnte mein Test-Abo nicht kündigen... Ich möchte ein refund",
+    id: "gp:82d224b2-190",
+    label: "Прогноз суперечить реальному транзиту",
+    // en_or_unknown / app_defect · еталонний документ на позиції 1
+    text: "The app and daily predictions are somewhat good, but the weekly and monthly ones are extremely wrong, they say a planet is transiting x house, when the reality it's the complete opposite! I'm an astrologer, I know! Please fix these errors, as it changes the whole prediction",
   },
   {
-    id: "as:13425069663",
-    label: "Португальська · не отримав послугу",
-    text: "Ele não entregou o serviço que eu paguei, quero o dinheiro de volta! O aplicativo trava o tempo todo, nao tem nenhum conteúdo relevante.",
+    id: "as:7839095010",
+    label: "Акаунт заблоковано за віком",
+    // en_or_unknown / other · еталонний документ на позиції 2
+    text: "Pelase take off the age restriction thing. I absolutely loved this app untill you suspended my account for being “too young” i dont understand why this app has an age restriction, Its an astrology app, could you pelase get rid of it, i really want to use it but i cant because i was born in [BirthDate] and you need to be born in [BirthDate] to use it but i cant because if i change my birth year to that, then my readings wont be right. :(",
   },
   {
-    id: "gp:ec01520a-736",
-    label: "Іспанська · $1 обернулись на $40",
-    text: "Pague por la prueba 1$ y NUNCA autorize a que me cobren 40$ pasado unos días, hasta había desinstalado la app DEVUELVAN MI DINERO",
+    id: "gp:49399c13-8f7",
+    label: "Іспанська · прибрати дані картки",
+    // es / other · еталонний документ на позиції 1
+    text: "por favor !! quiten mis datos de tarjeta !! no me hagan ningun rebajo más !!! por favor, quiten la suscripción !!! pague, y nada fue lo que esperaba, ya desinstale esa app... porfavor gracias",
   },
   {
-    id: "as:11690424562",
-    label: "Турецька · 25 ₺ обернулись на 1054 ₺",
-    text: "25 türk lirası yazıyordu ama benden 1054,64 çekilmiş geri iade istiyorum. Türkçe dil desteği olmadığı için anlaşamıyoruz bir türlü.",
+    id: "gp:b3528ce5-5cc",
+    label: "Іспанська · не зберігається дата народження",
+    // es / app_defect · еталонний документ на позиції 1
+    text: "quiero decir que arreglen el tema de la fecha de nacimiento porque yo quiero entrar pero no aparece mi fecha y estaría bueno que lo arreglen..",
   },
   {
-    id: "gp:933d17fa-9b3",
-    label: "Португальська · магазин один, текст про інший",
-    text: "Me roubaram 207 reais! Eu não utilizei nenhum serviço. Apenas cheguei no Nebula por curiosidade. Quero meu dinheiro de volta",
+    id: "gp:d6e6182c-c69",
+    label: "Іспанська · застосунок лише англійською",
+    // es / app_defect · еталонний документ на позиції 1
+    text: "Esta buena la app pero necesito que este en español porque si no tengo que usar mucho el traductor y no entiendo lo que dice",
   },
   {
-    id: "as:9410499825",
-    label: "Французька · не вдається скасувати",
-    text: "Une bonne appli cependant impossible d’annuler mon abonnement j’ai été prélevé 59€ c’est beaucoup trop . Je veux annuler",
+    id: "gp:530e156f-6dc",
+    label: "Французька · не вдається відписатись",
+    // fr / cancel_not_possible · еталонний документ на позиції 1
+    text: "je veux me désabonner et c'est impossible on me prend 39€ depuis juin c'est abusé Comment peut-on faire pour être remboursé",
   },
   {
-    id: "gp:a85982ee-f2b",
-    label: "Арабська · списання без підписки",
-    text: "لقد تم سحب مبلغ من البطاقة لدي ولا اعرف لماذا لم اشترك الا مرة واحدة الرجاء إرجاع المبلغ كان المبلغ ٤٥ دينار أردني لا أعرف لماذا",
+    id: "gp:9888b65c-3d2",
+    label: "Турецька · 1200 TL після скасування",
+    // tr / charge_not_recognised · еталонний документ на позиції 1
+    text: "Deneme süresi bitmeden üyelik iptali yapmama rağmen 1200 TL hesabımdan para çekilmiş.Bu kabul edilemez.Acil olarak para çekmeyi sonlandırın ve paramı iade edin.Yoksa hukuki haklarımı kullanacağım.",
   },
   {
-    id: "as:13564172721",
-    label: "Корейська · просить повернення",
-    text: "웹에서 결제해놓고 무조건 앱 다운로드해야 결과 볼 수 있고... 귀찮고 어디까지 가나 싶어서 깔아봤는데 결과 나오려면 10분 걸린다길래 각 보여서 그냥 지웁니다. 환불이나 해주든가. 결과도 내놓고 돈이나 받아먹든가.",
+    id: "gp:4c3c5636-634",
+    label: "Корейська · $1 обернувся підпискою",
+    // hangul / price_not_expected · еталонний документ на позиції 1
+    text: "아니, 재미삼아 1달러 결제하고 나갔는데 그날 바로 구독료나가고 1주일 뒤에는 배로 결제되었네요. 어떻게 이럴수 있습니까? 구독취소는 왜 안되게 해놓은겁니까? 구독동의도 하지않았는데 구독되게 해놓고 자동결제하는건 사기 아닌가요? 플레이스토어에서 구독 왜 취소 안되나요? 구독목록은 왜 안뜨게 해놓으신거죠? 그래놓고 영어설명에는 구독되어있으니 취소방법 올려놓으셨던데 사기 아닌가요? 저 해외불법청구로 카드사에 신고해놨습니다. 저 정말로 화가나네요. 법적대응 찾을것이니 후속조치 바랍니다. 그리고 답변 한국말로 적으세요. 왜 영어로 답변 답니까? 팔아먹을때는 한국어고, 고지내용, 환급정책은 다 영어네요? 것도 한국어로 다 다세요. 그리고 답변 이거 AI죠? 메일 주소도 통일되어있지 않던데요? 이거 파봐야겠네. 대응이 성의없어서 신고하겠습니다.",
   },
   {
-    id: "gp:5ad4f47a-8c6",
-    label: "Тайська · автосписання без попередження",
-    text: "ยังไม่ทราบว่าทำไมถึงมีการตัดเงินไปแบบอัตโนมัติ แบบไม่แจ้งล่วงหน้าทั้งที่ยังไม่สมัครใช้บริการอะไร เสียเวลาไปทำบัตรเดบิตใหม่อีกแล้ว",
+    id: "gp:627a8093-bdb",
+    label: "Італійська · підписка, якої не замовляли",
+    // it / charge_not_recognised · еталонний документ на позиції 1
+    text: "mi e appena apparso un abbonamento di 49,90 non richiesto da me e non so come posso annullarlo....già provato fare la segnalazione....comunque i soldi non ci sono e non ci saranno in quella carta quindi avrei bisogno cortesemente di ritirare la richiesta di pagamento si questo abbonamento che non l'ho richiesto",
   },
   {
-    id: "gp:0d3c530a-79a",
-    label: "Англійська · «безкоштовний» застосунок",
-    text: "I cant see anything I want without paying and it was so called a free app I just wanna see the results like is it so hard to ask",
+    id: "as:5355417868",
+    label: "Довічна покупка не відновлюється",
+    // en_or_unknown / nothing_delivered · еталонний документ на позиції 1
+    text: "Cannot restore purchase The app seems to be error then I reinstalled it and cannot restore the life-time purchase $119.99 (it said “try again later”). I already paid on Dec 10, 2019 and the bill was sent to my email. Please check immediately!!!",
   },
 ]
