@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { EXAMPLES, MAX_CHARS, VISIBLE } from './examples.js'
+import { MAX_CHARS } from './examples.js'
+import { CLASSIFY_EXAMPLES, VISIBLE_EXAMPLES } from './classifyExamples.js'
 import { CATEGORY_UA, STEP_UA, FACT_UA, PRIORITY_NOTE } from './labels.js'
 import Sheet from './components/Sheet.jsx'
 
@@ -131,15 +132,15 @@ export default function Classify() {
           {!result && !busy && (
             <div className="examples">
               <span className="examples-label">Тікети з відгуків у сторах:</span>
-              {(allExamples ? EXAMPLES : EXAMPLES.slice(0, VISIBLE)).map(e => (
+              {(allExamples ? CLASSIFY_EXAMPLES : CLASSIFY_EXAMPLES.slice(0, VISIBLE_EXAMPLES)).map(e => (
                 <button key={e.id} className="chip" title={e.text}
                         onClick={() => useExample(e.text)}>
                   {e.label}
                 </button>
               ))}
-              {!allExamples && EXAMPLES.length > VISIBLE && (
+              {!allExamples && CLASSIFY_EXAMPLES.length > VISIBLE_EXAMPLES && (
                 <button className="chip more" onClick={() => setAllExamples(true)}>
-                  Більше ({EXAMPLES.length - VISIBLE})
+                  Більше ({CLASSIFY_EXAMPLES.length - VISIBLE_EXAMPLES})
                 </button>
               )}
             </div>
