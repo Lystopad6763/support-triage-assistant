@@ -192,6 +192,42 @@ def draft(ask: Ask, request: Request) -> JSONResponse:
     })
 
 
+@app.get("/taxonomy")
+def vocabulary() -> dict:
+    """The label vocabulary, for the cheat sheet beside the classifier.
+
+    Served rather than written into the page, because app/taxonomy.py is the
+    single place the vocabulary is spelled out and a second copy in JSX would
+    drift from it the first time a definition was sharpened. Free: no model is
+    called, so it needs neither the budget nor the rate limit.
+
+    The definitions go out in English, which is the language the model is given
+    them in. A translated cheat sheet would describe the rules; this one IS the
+    rules, word for word, and that difference is the whole point of showing it
+    next to an answer the reader is trying to check.
+    """
+    hard = {f.value for f in taxonomy.HARD_FACTS}
+    return {
+        # Declaration order is the test order and the sheet must preserve it:
+        # several tickets satisfy two tests at once and the first one wins.
+        "categories": [{
+            "code": c.value,
+            "share": taxonomy.CATEGORY_GUIDE[c]["share"],
+            "test": taxonomy.CATEGORY_GUIDE[c]["test"],
+            "not": taxonomy.CATEGORY_GUIDE[c]["not"],
+            "steps": [s.value for s in taxonomy.ALLOWED[c]],
+        } for c in taxonomy.Category],
+        "facts": [{"code": code, "definition": text,
+                   "hard": code in hard}
+                  for code, text in taxonomy.PRIORITY_FACTS],
+        "priority_rule": taxonomy.PRIORITY_RULE,
+        "steps": [{"code": s.value, "guide": taxonomy.STEP_GUIDE[s]}
+                  for s in taxonomy.NextStep],
+        "review_rules": [{"code": code, "why": why}
+                         for code, why in taxonomy.REVIEW_RULES],
+    }
+
+
 @app.post("/classify")
 def classify(ask: Ask, request: Request) -> JSONResponse:
     """Task 1 through the same page: one ticket in, three labels out.

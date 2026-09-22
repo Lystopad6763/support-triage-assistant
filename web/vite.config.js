@@ -13,6 +13,7 @@ export default defineConfig({
     proxy: {
       '/draft': 'http://127.0.0.1:8000',
       '/classify': 'http://127.0.0.1:8000',
+      '/taxonomy': 'http://127.0.0.1:8000',
       '/health': 'http://127.0.0.1:8000',
     },
   },
