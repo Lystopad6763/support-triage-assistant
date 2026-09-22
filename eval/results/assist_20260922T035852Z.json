@@ -1,0 +1,1203 @@
+{
+  "run": "20260922T035852Z",
+  "model": "google/gemini-3.1-flash-lite",
+  "prompt": "assist/v3",
+  "drafts": [
+    {
+      "id": "as:5689448332",
+      "lang": "en_or_unknown",
+      "category": "price_not_expected",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2032,
+      "generation_ms": 3170,
+      "cost_usd": 0.001371,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3230,
+      "output_tokens": 374,
+      "retrieved": [
+        "pol-04",
+        "pol-16",
+        "hc-28900802305297",
+        "hc-28900762266641",
+        "pol-15"
+      ],
+      "summary": "The customer was charged after a free trial ended, believing that uninstalling the app would cancel their subscription. They are requesting a refund and threatening further action.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "Deleting the app does not cancel your subscription, trial or introductory offer.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.017,
+        "formal~concise": 0.041,
+        "empathetic~concise": 0.03
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 471,
+        "empathetic": 486,
+        "concise": 316
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 5,
+        "concise": 3
+      },
+      "formal": "Hello, Please be advised that deleting the application does not cancel a subscription or a free trial, as stated in our policy. To prevent future charges, you must follow the cancellation process specific to your platform. If you subscribed via the App Store, you must request a refund directly through Apple. If you subscribed via Google Play or our website, please contact our support team with your payment details to discuss your request. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you were charged because the subscription remained active after you uninstalled the app. Deleting the app does not stop a trial or subscription from renewing, which is why the charge occurred. To stop future payments, please ensure you cancel through your device settings or our website. If you purchased through the App Store, please contact Apple for a refund, or reach out to us directly if you used Google Play or our website. We are here to help with the next steps.",
+      "concise": "Deleting the app does not cancel your subscription, so you must manually cancel it through your app store or our website settings to avoid further charges. If you purchased via the App Store, please request a refund through Apple. For other payment methods, please contact our support team with your payment details."
+    },
+    {
+      "id": "gp:db0a0b86-227",
+      "lang": "es",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2051,
+      "generation_ms": 3236,
+      "cost_usd": 0.001822,
+      "localise_ms": 2416,
+      "localise_cost_usd": 0.000564,
+      "input_tokens": 2941,
+      "output_tokens": 348,
+      "retrieved": [
+        "pol-13",
+        "pol-15",
+        "hc-28901216899857",
+        "hc-28900868231441",
+        "hc-28901150216337"
+      ],
+      "summary": "The customer reports two separate charges of 29.90€ within a few days. They are requesting a refund for the duplicate charges.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28901216899857",
+      "citation_quote": "Once we receive your message, we’ll investigate thoroughly.",
+      "citation_ok": true,
+      "language": "Spanish",
+      "localised": {
+        "formal": "Estimado cliente, gracias por ponerse en contacto con nosotros en relación con los cargos en su cuenta. Por favor, proporcione capturas de pantalla de las transacciones y una breve descripción del problema para que podamos investigar este asunto a fondo. De acuerdo con nuestra política, revisaremos los detalles proporcionados para determinar la resolución adecuada. Por favor, contacte a nuestro equipo de soporte a través de la sección de Ayuda y Soporte en la aplicación para enviar estos detalles. Saludos cordiales, Nebula Support.",
+        "empathetic": "Lamento mucho saber que se le han cobrado 29.90€ dos veces en un periodo de tiempo tan corto. Para ayudarnos a investigar esto, por favor envíenos capturas de pantalla de ambas transacciones a través de la sección de Ayuda y Soporte en la configuración de su aplicación. Una vez que tengamos esa información, nuestro equipo investigará el problema a fondo. Entonces podremos determinar los siguientes pasos para su cuenta.",
+        "concise": "Por favor, envíe capturas de pantalla de ambos cargos de 29.90€ a través de la sección de Ayuda y Soporte en la configuración de su aplicación para que podamos investigar. Una vez que recibamos esta información, revisaremos las transacciones a fondo. Estamos aquí para ayudarle a resolver este problema."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.02,
+        "formal~concise": 0.032,
+        "empathetic~concise": 0.067
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 444,
+        "empathetic": 370,
+        "concise": 253
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, thank you for reaching out regarding the charges on your account. Please provide screenshots of the transactions and a brief description of the issue so that we may investigate this matter thoroughly. According to our policy, we will review the details provided to determine the appropriate resolution. Please contact our support team through the Help and Support section in the app to submit these details. Kind regards, Nebula Support.",
+      "empathetic": "I am sorry to hear that you have been charged 29.90€ twice in such a short period of time. To help us look into this, please send us screenshots of both transactions through the Help and Support section in your app settings. Once we have that information, our team will investigate the issue thoroughly. We will then be able to determine the next steps for your account.",
+      "concise": "Please send screenshots of both 29.90€ charges through the Help and Support section in your app settings so we can investigate. Once we receive this information, we will review the transactions thoroughly. We are here to help resolve this issue for you."
+    },
+    {
+      "id": "gp:0b5e5d1c-943",
+      "lang": "en_or_unknown",
+      "category": "cancel_not_possible",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2005,
+      "generation_ms": 3186,
+      "cost_usd": 0.001508,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3478,
+      "output_tokens": 424,
+      "retrieved": [
+        "hc-28900802305297",
+        "pol-04",
+        "hc-28899709030417",
+        "hc-28899740398481",
+        "hc-28900762266641"
+      ],
+      "summary": "The customer is requesting a refund for a $9 charge after failing to cancel a free trial. They are unable to locate the subscription in the Google Play Store and are seeking assistance with the cancellation process.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial through the Google Play Store or directly via our website, please contact the Support center.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.009,
+        "formal~concise": 0.016,
+        "empathetic~concise": 0.042
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 579,
+        "empathetic": 482,
+        "concise": 322
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 5,
+        "concise": 3
+      },
+      "formal": "Hello, thank you for reaching out to us. According to our policy, if you subscribed through the Google Play Store or directly via our website, you must contact the support center to request a refund. Please note that deleting the app does not cancel your subscription, as stated in our policy document pol-04. To assist you further, please provide a screenshot of your payment, the last four digits of your card, your country of residence, and the email address used during registration. We will review your request once this information is provided. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear that you have been charged $9 and are having trouble managing your subscription. Since you cannot see the subscription in your Google Play account, it is possible that it was purchased directly through our website. Please send us a screenshot of your payment, the last four digits of your card, your country of residence, and your registration email so we can locate your account. We will then be able to assist you with your request. Kind regards, Nebula Support",
+      "concise": "Please provide a screenshot of your payment, the last four digits of your card, your country of residence, and your registration email so we can locate your account. If you subscribed via our website or Google Play, you must contact our support team to request a refund. Deleting the app does not cancel your subscription."
+    },
+    {
+      "id": "as:5966073491",
+      "lang": "en_or_unknown",
+      "category": "app_defect",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2008,
+      "generation_ms": 3240,
+      "cost_usd": 0.001369,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3018,
+      "output_tokens": 409,
+      "retrieved": [
+        "hc-28901281229713",
+        "hc-36833080725777",
+        "hc-28900868231441",
+        "faq-13",
+        "hc-28899953905937"
+      ],
+      "summary": "The customer reports their ascendant sign is displayed incorrectly in the app. They want to know how to update their profile information to ensure their birth details are correct.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28901281229713",
+      "citation_quote": "If you find them incorrect, follow this guide to address the issue:",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.013,
+        "formal~concise": 0.029,
+        "empathetic~concise": 0.02
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 594,
+        "empathetic": 495,
+        "concise": 317
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, To update your profile information, please navigate to the settings gear icon within the Nebula app. Select the My Profile section where you can edit your birth date, time, and place. Accurate astrological insights depend on the correct representation of your zodiac and ascendant signs, so please ensure these details are entered precisely. You may also try refreshing your profile by temporarily changing some details, saving them, and then re-entering the correct information. If the issue persists, please contact our support team for further assistance. Kind regards, Nebula Support",
+      "empathetic": "It sounds like your ascendant sign is not appearing as you expected, which can be confusing when you are trying to get accurate insights. You can update your birth details by tapping the gear icon in the app and selecting My Profile to edit your information. Please make sure your date, time, and place of birth are entered exactly, as these factors determine your sign. If you still see the wrong information after updating your details, please reach out to us again so we can help you further.",
+      "concise": "You can update your birth details by tapping the gear icon in the app and selecting My Profile. Please ensure your date, time, and place of birth are entered accurately, as these factors determine your signs. If the information remains incorrect after updating, please contact our support team for further assistance."
+    },
+    {
+      "id": "as:11129418719",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2083,
+      "generation_ms": 3004,
+      "cost_usd": 0.001205,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 2574,
+      "output_tokens": 374,
+      "retrieved": [
+        "pol-04",
+        "pol-15",
+        "pol-13",
+        "pol-18",
+        "hc-28899740398481"
+      ],
+      "summary": "The customer is requesting a refund of 49.99 for an unauthorized subscription charge. The refund process depends on the platform used for the initial purchase.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.229,
+        "formal~concise": 0.01,
+        "empathetic~concise": 0.012
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 531,
+        "empathetic": 396,
+        "concise": 295
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, thank you for reaching out regarding the charge of 49.99 on your account. Please be advised that refund routing depends on where the subscription was purchased. If you subscribed via the Apple App Store, you must submit your request directly through Apple Support. If the purchase was made through Google Play or our website, please provide us with your transaction details so we may assist you further. We follow the policies outlined in our terms regarding subscription management and billing. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear about the unexpected charge of 49.99 on your account. Because we do not process payments made through the App Store, you will need to contact Apple directly to request a refund for that purchase. If you subscribed through Google Play or our website, please let us know so we can look into this for you. Please reach out to the appropriate support channel to begin your request.",
+      "concise": "Please contact Apple Support directly to request a refund if your subscription was made via the App Store. If you purchased through Google Play or our website, please provide your transaction details to our team. Refund routing is determined by the platform where the subscription was initiated."
+    },
+    {
+      "id": "as:14386529222",
+      "lang": "de",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 2062,
+      "generation_ms": 3224,
+      "cost_usd": 0.002575,
+      "localise_ms": 2863,
+      "localise_cost_usd": 0.000755,
+      "input_tokens": 4456,
+      "output_tokens": 467,
+      "retrieved": [
+        "hc-28900802305297",
+        "hc-28901150216337",
+        "hc-28901216899857",
+        "pol-18",
+        "hc-28899740398481"
+      ],
+      "summary": "The customer is disputing two charges of 42.99 EUR each, totaling 85.98 EUR, which occurred after they claim to have cancelled their subscription on May 10, 2026. They are requesting an explanation and a full refund, threatening legal action and a bank dispute if not resolved.",
+      "grounded": true,
+      "needs_human": true,
+      "needs_human_reason": "The customer is threatening legal action and a bank dispute.",
+      "citation_doc_id": "pol-18",
+      "citation_quote": "To the extent permitted by applicable law, all purchases are non-refundable and non-exchangeable unless stated otherwise or required by law.",
+      "citation_ok": true,
+      "language": "German",
+      "localised": {
+        "formal": "Sehr geehrte Damen und Herren, vielen Dank, dass Sie uns bezüglich der Abbuchungen auf Ihrem Konto kontaktiert haben. Gemäß unseren Richtlinien sind alle Käufe nicht erstattungsfähig, sofern gesetzlich nichts anderes vorgeschrieben ist, wie in unserer Rückerstattungsrichtlinie (pol-18) dargelegt. Um Sie bei dieser Untersuchung zu unterstützen, senden Sie uns bitte einen Screenshot Ihrer Zahlung, die letzten 4 Ziffern Ihrer Karte, Ihr Wohnsitzland und die bei der Registrierung verwendete E-Mail-Adresse. Sobald wir diese Details erhalten haben, wird unser Team Ihren Kontostatus und den Stornierungsverlauf überprüfen. Wir werden diese Angelegenheit gründlich untersuchen und Ihnen so schnell wie möglich ein Update zukommen lassen.",
+        "empathetic": "Es tut mir leid zu hören, dass nach der Kündigung Ihres Abonnements unerwartete Abbuchungen in Höhe von 42.99 EUR auf Ihrem Konto aufgetreten sind. Ich verstehe, wie beunruhigend es ist, Zahlungen für einen Dienst zu sehen, von dem Sie dachten, er sei bereits beendet. Um uns bei der Untersuchung zu helfen, senden Sie uns bitte einen Screenshot Ihrer Zahlung, die letzten 4 Ziffern Ihrer Karte, Ihr Wohnsitzland und die für Ihr Konto verwendete E-Mail-Adresse. Wir werden Ihre Kontodaten überprüfen und uns mit einer Erklärung bei Ihnen melden.",
+        "concise": "Bitte senden Sie uns einen Screenshot Ihrer Zahlung, die letzten 4 Ziffern Ihrer Karte, Ihr Wohnsitzland und Ihre Registrierungs-E-Mail, damit wir diese Abbuchungen untersuchen können. Gemäß unserer Richtlinie sind alle Käufe grundsätzlich nicht erstattungsfähig, sofern dies nicht gesetzlich vorgeschrieben ist. Wir werden Ihren Kontostatus überprüfen, sobald uns diese Details vorliegen."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.009,
+        "formal~concise": 0.196,
+        "empathetic~concise": 0.013
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": false,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 586,
+        "empathetic": 479,
+        "concise": 314
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Thank you for contacting us regarding the charges on your account. According to our policy, all purchases are non-refundable unless otherwise required by law, as stated in our Refund Policy (pol-18). To assist you with this investigation, please provide a screenshot of your payment, the last 4 digits of your card, your country of residence, and the email used during registration. Once we receive these details, our team will review your account status and the cancellation history. We will investigate this matter thoroughly and provide you with an update as soon as possible.",
+      "empathetic": "I am sorry to hear about the unexpected charges of 42.99 EUR that appeared on your account after you cancelled your subscription. I understand how concerning it is to see payments for a service you believe was already stopped. To help us look into this, please send us a screenshot of your payment, the last 4 digits of your card, your country of residence, and the email address used for your account. We will review your account details and get back to you with an explanation.",
+      "concise": "Please provide your payment screenshot, the last 4 digits of your card, your country of residence, and your registration email so we can investigate these charges. Per our policy, all purchases are generally non-refundable unless required by law. We will review your account status once these details are provided."
+    },
+    {
+      "id": "gp:530e156f-6dc",
+      "lang": "fr",
+      "category": "cancel_not_possible",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1461,
+      "generation_ms": 2854,
+      "cost_usd": 0.002162,
+      "localise_ms": 2364,
+      "localise_cost_usd": 0.000677,
+      "input_tokens": 3405,
+      "output_tokens": 422,
+      "retrieved": [
+        "pol-04",
+        "hc-28900802305297",
+        "pol-15",
+        "hc-28900762266641",
+        "pol-18"
+      ],
+      "summary": "The customer wants to cancel their subscription and is requesting a refund for charges of 39€ occurring since June. The platform of purchase is not specified, so the agent needs to guide them on how to cancel based on their specific store and explain the refund process.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple.",
+      "citation_ok": true,
+      "language": "French",
+      "localised": {
+        "formal": "Bonjour, pour annuler votre abonnement, veuillez suivre les étapes correspondant à votre plateforme telles qu'indiquées dans notre article du centre d'aide hc-28900802305297. Si vous avez souscrit votre abonnement via l'App Store d'Apple, veuillez noter que les demandes de remboursement doivent être traitées directement par Apple conformément à notre politique pol-04. Si vous avez souscrit via Google Play ou notre site web, veuillez contacter directement notre équipe d'assistance pour discuter de votre demande. Veuillez fournir vos détails de paiement et les informations de votre compte afin que nous puissions vous aider davantage. Cordialement, le support Nebula",
+        "empathetic": "Il semble que vous rencontriez des difficultés pour annuler votre abonnement et que vous soyez préoccupé par les frais sur votre compte. Pour arrêter les futurs paiements, veuillez suivre les étapes d'annulation correspondant à votre plateforme dans notre guide d'aide. Si vous avez acheté votre abonnement via Apple, vous devrez demander un remboursement directement via leur page d'assistance. Pour les achats via Google Play ou notre site web, veuillez nous contacter avec vos détails de paiement afin que nous puissions examiner cela pour vous.",
+        "concise": "Veuillez suivre les instructions d'annulation correspondant à votre plateforme dans notre article du centre d'aide hc-28900802305297. Si vous avez acheté via Apple, veuillez contacter le support Apple pour les demandes de remboursement. Pour les autres plateformes, veuillez contacter notre équipe d'assistance avec vos détails de paiement pour obtenir de l'aide."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.014,
+        "formal~concise": 0.263,
+        "empathetic~concise": 0.018
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 541,
+        "empathetic": 472,
+        "concise": 297
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, To cancel your subscription, please follow the steps for your specific platform as outlined in our help center article hc-28900802305297. If you purchased your subscription through the Apple App Store, please note that refund requests must be handled directly by Apple as per our policy pol-04. If you subscribed via Google Play or our website, please contact our support team directly to discuss your request. Please provide your payment details and account information so that we may assist you further. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you have been having trouble cancelling your subscription and are concerned about the charges on your account. To stop future payments, please follow the cancellation steps for your specific platform in our help guide. If you bought your subscription through Apple, you will need to request a refund directly through their support page. For Google Play or website purchases, please reach out to us with your payment details so we can look into this for you.",
+      "concise": "Please follow the cancellation instructions for your specific platform in our help center article hc-28900802305297. If you purchased via Apple, please contact Apple support for refund requests. For other platforms, please contact our support team with your payment details for further assistance."
+    },
+    {
+      "id": "gp:bad38dca-8ba",
+      "lang": "fr",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1636,
+      "generation_ms": 2789,
+      "cost_usd": 0.002118,
+      "localise_ms": 2343,
+      "localise_cost_usd": 0.000717,
+      "input_tokens": 3221,
+      "output_tokens": 396,
+      "retrieved": [
+        "pol-04",
+        "hc-28900802305297",
+        "pol-13",
+        "hc-28899740398481",
+        "hc-28900762266641"
+      ],
+      "summary": "The customer reports unauthorized monthly charges of 29.25 EUR and requests a refund for August and September. They are asking for confirmation that a refund will be issued.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple.",
+      "citation_ok": true,
+      "language": "French",
+      "localised": {
+        "formal": "Bonjour, Nous vous remercions de nous avoir contactés concernant les frais sur votre compte. Conformément à notre politique, le traitement des remboursements dépend du lieu où l'abonnement a été souscrit. Si votre abonnement a été effectué via l'App Store, les demandes de remboursement doivent être traitées directement par Apple. Si vous avez souscrit via le Google Play Store ou notre site web, veuillez contacter notre équipe d'assistance avec vos détails de paiement pour procéder à votre demande. Veuillez noter que la suppression de l'application n'annule pas un abonnement, comme indiqué dans nos conditions de service. Cordialement, Nebula Support",
+        "empathetic": "Il est préoccupant d'apprendre que vous avez été facturé pour un abonnement que vous ne reconnaissez pas. Pour résoudre ce problème, veuillez vérifier la source de votre abonnement, car Apple gère directement tous les remboursements pour les achats effectués sur l'App Store. Si vous avez acheté via Google Play ou notre site web, veuillez nous envoyer une capture d'écran de votre paiement ainsi que l'adresse e-mail utilisée pour l'inscription afin que nous puissions examiner cela pour vous. Nous serons alors en mesure de vous aider avec les prochaines étapes concernant votre compte.",
+        "concise": "Veuillez vérifier la source de votre abonnement, car Apple gère directement tous les remboursements pour les achats effectués sur l'App Store. Si vous avez acheté via Google Play ou notre site web, contactez notre équipe d'assistance avec une capture d'écran de votre paiement et votre adresse e-mail d'inscription. La suppression de l'application n'annule pas un abonnement, veuillez donc vous assurer de suivre le processus d'annulation propre à votre plateforme."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.032,
+        "formal~concise": 0.05,
+        "empathetic~concise": 0.019
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 542,
+        "empathetic": 457,
+        "concise": 372
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Thank you for reaching out regarding the charges on your account. According to our policy, refund routing depends on where the subscription was purchased. If your subscription was made via the App Store, refund requests must be handled directly by Apple. If you subscribed through the Google Play Store or our website, please contact our support team with your payment details to proceed with your request. Please note that deleting the app does not cancel a subscription, as outlined in our service terms. Kind regards, Nebula Support",
+      "empathetic": "It is concerning to hear that you have been charged for a subscription you do not recognize. To resolve this, please check your subscription source, as Apple handles all refunds for App Store purchases directly. If you purchased through Google Play or our website, please send us a screenshot of your payment and the email used for registration so we can look into this for you. We will then be able to assist you with the next steps regarding your account.",
+      "concise": "Please check your subscription source, as Apple handles all refunds for App Store purchases directly. If you purchased through Google Play or our website, contact our support team with a screenshot of your payment and your registration email. Deleting the app does not cancel a subscription, so please ensure you follow the cancellation process for your specific platform."
+    },
+    {
+      "id": "as:12281002089",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1548,
+      "generation_ms": 2659,
+      "cost_usd": 0.002078,
+      "localise_ms": 2236,
+      "localise_cost_usd": 0.000643,
+      "input_tokens": 3337,
+      "output_tokens": 400,
+      "retrieved": [
+        "pol-04",
+        "hc-28900802305297",
+        "pol-18",
+        "pol-15",
+        "hc-28899743878673"
+      ],
+      "summary": "The customer is requesting to cancel their subscription and receive a refund of 39€. They have previously sent emails and are frustrated by the recent charge.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple.",
+      "citation_ok": true,
+      "language": "Spanish",
+      "localised": {
+        "formal": "Estimado/a cliente, entiendo que desea cancelar su suscripción y solicitar un reembolso de 39€. Tenga en cuenta que eliminar la aplicación no cancela su suscripción, tal como se indica en nuestra política. Para cancelar, debe seguir el proceso específico de su plataforma, como los ajustes de App Store o Google Play Store. Si realizó la compra a través de App Store, contacte directamente con Apple para las solicitudes de reembolso, ya que ellos gestionan dichas transacciones. Para otras plataformas, por favor proporcione sus datos de pago e información de cuenta a nuestro equipo de soporte para que podamos asistirle. Saludos cordiales, Nebula Support",
+        "empathetic": "Lamento mucho la frustración causada por el cargo de 39€ y las dificultades que ha tenido para cancelar su suscripción. Eliminar la aplicación no detiene su suscripción, por lo que debe asegurarse de cancelarla a través de los ajustes de su dispositivo o de nuestro sitio web. Si compró su suscripción a través de App Store, contacte directamente con Apple para solicitar su reembolso. Si utilizó otro método, por favor envíenos sus datos de pago y dirección de correo electrónico para que podamos revisar su caso.",
+        "concise": "Para cancelar su suscripción, siga los pasos de cancelación de su plataforma específica en los ajustes de su dispositivo o en nuestro sitio web. Eliminar la aplicación no cancela su suscripción. Contacte directamente con Apple para reembolsos de App Store o facilítenos sus datos de pago para otros métodos de compra."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.063,
+        "formal~concise": 0.142,
+        "empathetic~concise": 0.03
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 581,
+        "empathetic": 490,
+        "concise": 307
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, I understand you wish to cancel your subscription and request a refund of 39€. Please note that deleting the app does not cancel your subscription, as stated in our policy. To cancel, you must follow the process for your specific platform, such as the App Store or Google Play Store settings. If you purchased via the App Store, please contact Apple directly for refund requests, as they handle those transactions. For other platforms, please provide your payment details and account information to our support team so we may assist you further. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear about the frustration caused by the 39€ charge and the difficulty you have had with cancelling your subscription. Deleting the app does not stop your subscription, so you must ensure you cancel it through your device settings or our website. If you bought your subscription through the App Store, please reach out to Apple directly to request your refund. If you used another method, please send us your payment details and email address so we can look into this for you.",
+      "concise": "To cancel your subscription, please follow the cancellation steps for your specific platform in your device settings or on our website. Deleting the app does not cancel your subscription. Please contact Apple directly for App Store refunds or provide us with your payment details for other purchase methods."
+    },
+    {
+      "id": "as:12432196856",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1558,
+      "generation_ms": 2467,
+      "cost_usd": 0.001111,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 2424,
+      "output_tokens": 336,
+      "retrieved": [
+        "pol-15",
+        "pol-04",
+        "pol-13",
+        "pol-18",
+        "pol-12"
+      ],
+      "summary": "The customer is threatening a chargeback after being charged seven months after unsubscribing. They are requesting an immediate refund.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-15",
+      "citation_quote": "If you wish to request a refund, we strongly encourage you to contact us first before initiating a chargeback with your payment provider.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.101,
+        "formal~concise": 0.109,
+        "empathetic~concise": 0.166
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 420,
+        "empathetic": 329,
+        "concise": 261
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 3,
+        "concise": 3
+      },
+      "formal": "Hello, I understand you are concerned about a recent charge following your cancellation. Please be advised that initiating a chargeback may result in the immediate termination of your account as outlined in our policy. If you wish to request a refund, we encourage you to contact us directly so we may review your case. Please note that refund processing times are at least 15 business days. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear that you were charged seven months after you unsubscribed. Initiating a chargeback through your bank can lead to your account being permanently terminated, so please contact us here first to discuss this. We will review your request and if a refund is issued, it will take at least 15 business days to process.",
+      "concise": "Please contact us directly regarding your refund request instead of initiating a chargeback, as a chargeback may result in the termination of your account. Refunds take at least 15 business days to process once approved. We will review your account details now."
+    },
+    {
+      "id": "gp:7d7f7ad3-e68",
+      "lang": "en_or_unknown",
+      "category": "cancel_not_possible",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1060,
+      "generation_ms": 2778,
+      "cost_usd": 0.00159,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3449,
+      "output_tokens": 484,
+      "retrieved": [
+        "hc-28900802305297",
+        "hc-28899709030417",
+        "hc-28900762266641",
+        "hc-28897960530577",
+        "hc-28899740398481"
+      ],
+      "summary": "The customer wants to cancel their subscription to stop unauthorized charges on their Cash App. They need instructions on how to cancel their subscription based on the platform they used to sign up.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28900802305297",
+      "citation_quote": "If these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.026,
+        "formal~concise": 0.052,
+        "empathetic~concise": 0.013
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 744,
+        "empathetic": 561,
+        "concise": 372
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 5,
+        "concise": 3
+      },
+      "formal": "Hello, To cancel your subscription, you must follow the steps specific to the platform where you originally purchased it. If you subscribed via the AskNebula website, please log in to your account, navigate to Settings, select Manage Subscription, and click Cancel Subscription. If you subscribed through the Apple App Store or Google Play Store, you must manage and cancel the subscription directly within your device's subscription settings. Please note that deleting the application does not cancel your subscription. If you continue to experience issues, please provide your payment screenshot, the last four digits of your card, your BIN, your country, and your registration email so we may assist you further. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you are having a difficult time with unexpected charges appearing on your Cash App account. To stop these charges, you need to cancel your active subscription through the platform you used to sign up. You can manage your subscription by following the steps for the AskNebula website, the Apple App Store, or the Google Play Store. Please remember that uninstalling the app will not stop the subscription from renewing. If you are still unable to cancel, please send us your payment details and registration email so we can look into this for you.",
+      "concise": "To stop these charges, you must cancel your subscription through the platform where it was purchased. Please follow the cancellation steps for the AskNebula website, the Apple App Store, or the Google Play Store. If you need further assistance, please provide your payment screenshot, the last four digits of your card, your BIN, your country, and your registration email."
+    },
+    {
+      "id": "gp:00a73c05-36d",
+      "lang": "en_or_unknown",
+      "category": "nothing_delivered",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 966,
+      "generation_ms": 2372,
+      "cost_usd": 0.001298,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3303,
+      "output_tokens": 314,
+      "retrieved": [
+        "hc-28899179430801",
+        "hc-28901285302673",
+        "hc-36833329045905",
+        "hc-28898273909649",
+        "hc-28899743878673"
+      ],
+      "summary": "The customer is frustrated with receiving unwanted psychic content and is unable to unsubscribe from the mailing list. They are requesting assistance with unsubscribing.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28899743878673",
+      "citation_quote": "To unsubscribe, simply click the \"Click here to unsubscribe\" button located at the bottom of the email.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.009,
+        "formal~concise": 0.218,
+        "empathetic~concise": 0.084
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 371,
+        "empathetic": 292,
+        "concise": 207
+      },
+      "sentences": {
+        "formal": 4,
+        "empathetic": 3,
+        "concise": 2
+      },
+      "formal": "Hello, To stop receiving newsletters or special offers from Nebula, please locate the \"Click here to unsubscribe\" button at the bottom of any email you have received. Clicking this link will remove you from our mailing list. If you continue to experience difficulties with this process, please contact our support team for further assistance. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you are receiving unwanted emails and are having trouble opting out. You can unsubscribe from our mailing list by clicking the \"Click here to unsubscribe\" button found at the bottom of any of our emails. If you need further help with this, please reach out to our support team.",
+      "concise": "You can unsubscribe from our mailing list by clicking the \"Click here to unsubscribe\" button located at the bottom of any email. If this does not work, please contact our support team for further assistance."
+    },
+    {
+      "id": "as:12947200698",
+      "lang": "pt",
+      "category": "cancel_not_possible",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1261,
+      "generation_ms": 2216,
+      "cost_usd": 0.002026,
+      "localise_ms": 2307,
+      "localise_cost_usd": 0.000659,
+      "input_tokens": 3170,
+      "output_tokens": 382,
+      "retrieved": [
+        "pol-15",
+        "hc-28900868231441",
+        "hc-28899179430801",
+        "hc-28901285302673",
+        "pol-18"
+      ],
+      "summary": "The customer is unhappy with a report received in English and is unable to cancel their subscription. They are requesting a refund for charges made to their credit card.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-18",
+      "citation_quote": "App Store purchases and trials are refunded by Apple, via the Apple support page.",
+      "citation_ok": true,
+      "language": "Portuguese",
+      "localised": {
+        "formal": "Olá, lamento saber da sua experiência com o relatório e das dificuldades que encontrou no processo de cancelamento. Tenha em atenção que, de acordo com a nossa política, as compras na App Store devem ser reembolsadas pela Apple através da sua página de suporte. Para compras no Google Play, por favor contacte a nossa equipa de suporte diretamente através do Centro de Ajuda ou das definições da aplicação. Analisaremos o seu caso assim que nos fornecer os detalhes necessários, tais como o seu nome, data de nascimento e uma descrição do problema. Com os melhores cumprimentos, Suporte Nebula",
+        "empathetic": "Lamento que o relatório que recebeu estivesse em inglês e que tenha tido tantas dificuldades a tentar cancelar a sua subscrição. Para solicitar um reembolso de uma compra na App Store, por favor visite a página de suporte da Apple, uma vez que eles gerem essas transações. Se comprou através do Google Play, por favor contacte a nossa equipa de suporte através da aplicação ou do nosso Centro de Ajuda para que possamos ajudá-lo. Estamos aqui para o ajudar a resolver isto o mais rapidamente possível.",
+        "concise": "Por favor, solicite o seu reembolso através da página de suporte da Apple se comprou via App Store, ou contacte a nossa equipa de suporte diretamente se utilizou o Google Play. Não nos é possível processar reembolsos de transações da App Store. Por favor, forneça os detalhes da sua conta à nossa equipa de suporte para que possamos investigar o seu relatório e as questões relacionadas com o cancelamento."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.066,
+        "formal~concise": 0.03,
+        "empathetic~concise": 0.025
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 521,
+        "empathetic": 446,
+        "concise": 343
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, I am sorry to hear about your experience with the report and the difficulties you have encountered with the cancellation process. Please note that according to our policy, App Store purchases must be refunded by Apple via their support page. For Google Play purchases, please contact our support team directly through the Help Center or the app settings. We will review your case once you provide the necessary details, such as your name, date of birth, and a description of the issue. Kind regards, Nebula Support",
+      "empathetic": "I am sorry that the report you received was in English and that you have had such a difficult time trying to cancel your subscription. To request a refund for an App Store purchase, please visit the Apple support page, as they manage those transactions. If you purchased through Google Play, please reach out to our support team through the app or our Help Center so we can assist you. We are here to help you resolve this as quickly as possible.",
+      "concise": "Please request your refund through the Apple support page if you purchased via the App Store, or contact our support team directly if you used Google Play. We are unable to process refunds for App Store transactions ourselves. Please provide your account details to our support team so we can investigate your report and cancellation concerns."
+    },
+    {
+      "id": "as:10528024200",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1215,
+      "generation_ms": 2841,
+      "cost_usd": 0.001461,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3348,
+      "output_tokens": 415,
+      "retrieved": [
+        "pol-15",
+        "pol-04",
+        "hc-28901216899857",
+        "pol-13",
+        "hc-28900802305297"
+      ],
+      "summary": "The customer is disputing an unexpected subscription charge and requesting a refund. They are unsure how the subscription was initiated and need instructions on how to cancel it to prevent further charges.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "To avoid being charged, you must cancel your subscription before the end of your trial or current billing cycle.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.013,
+        "formal~concise": 0.03,
+        "empathetic~concise": 0.019
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 546,
+        "empathetic": 546,
+        "concise": 386
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Please be advised that Nebula subscriptions require manual cancellation to prevent future charges, as deleting the application does not cancel a subscription. According to our policy, if you subscribed via the App Store, you must manage your refund request directly through Apple. If you subscribed through the Google Play Store or our website, please contact our support team with your payment details so we may investigate your account. We will review your request once you provide the necessary information. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you have been charged for a subscription you did not intend to start, and I understand how concerning that is. To stop any further charges, you must follow the cancellation process specific to the platform where you signed up, as deleting the app does not cancel your subscription. If you purchased through the App Store, please contact Apple directly for your refund request. If you used Google Play or our website, please send us a screenshot of the payment and the last four digits of your card so we can look into this for you.",
+      "concise": "To stop future charges, you must manually cancel your subscription through the platform where you signed up, as deleting the app does not cancel it. Please contact Apple directly for App Store refunds, or reach out to our support team with your payment details if you subscribed via Google Play or our website. We will investigate your account once you provide your payment information."
+    },
+    {
+      "id": "as:12983614867",
+      "lang": "es",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1226,
+      "generation_ms": 2496,
+      "cost_usd": 0.001754,
+      "localise_ms": 1793,
+      "localise_cost_usd": 0.000508,
+      "input_tokens": 3073,
+      "output_tokens": 318,
+      "retrieved": [
+        "pol-15",
+        "pol-13",
+        "pol-05",
+        "hc-28901150216337",
+        "hc-36833668975505"
+      ],
+      "summary": "The customer is reporting unauthorized charges and is requesting that they stop. They are accusing the company of fraud.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-05",
+      "citation_quote": "It is cancelled by deactivating auto-refill in account settings; remaining Units stay usable.",
+      "citation_ok": true,
+      "language": "Spanish",
+      "localised": {
+        "formal": "Estimado/a cliente, gracias por ponerse en contacto con nosotros en relación con los cargos en su cuenta. De acuerdo con nuestra política, la recarga automática es una función que aumenta su saldo automáticamente hasta que se desactiva manualmente en la configuración de su cuenta. Por favor, diríjase a la configuración de su cuenta dentro de la aplicación para asegurarse de que esta función esté desactivada y así evitar futuros cargos automáticos. Si tiene más preguntas o necesita ayuda con su cuenta, háganoslo saber. Saludos cordiales, Soporte de Nebula",
+        "empathetic": "Entiendo que le preocupan los cargos inesperados que aparecen en su cuenta. Para detener estos pagos automáticos, por favor vaya a la configuración de su cuenta en la aplicación y desactive la función de recarga automática. Esto garantizará que no se produzcan más recargas. Si necesita ayuda para encontrar esta configuración, háganoslo saber.",
+        "concise": "Para detener los cargos automáticos, desactive la función de recarga automática en la configuración de su cuenta. Esto evitará que su saldo se recargue automáticamente. Póngase en contacto con nosotros si necesita más ayuda."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.069,
+        "formal~concise": 0.031,
+        "empathetic~concise": 0.03
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 493,
+        "empathetic": 320,
+        "concise": 211
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, thank you for reaching out to us regarding the charges on your account. According to our policy, auto-refill is a feature that automatically tops up your balance until it is manually deactivated in your account settings. Please navigate to your account settings within the application to ensure that this feature is disabled to prevent further automatic charges. If you have any further questions or require assistance with your account, please let us know. Kind regards, Nebula Support",
+      "empathetic": "I understand that you are concerned about unexpected charges appearing on your account. To stop these automatic payments, please go to your account settings in the app and deactivate the auto-refill feature. This will ensure that no further top-ups occur. If you need any help finding these settings, please let us know.",
+      "concise": "To stop automatic charges, please deactivate the auto-refill feature in your account settings. This will prevent your balance from being topped up automatically. Please contact us if you need further assistance."
+    },
+    {
+      "id": "as:7659356467",
+      "lang": "es",
+      "category": "price_not_expected",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1243,
+      "generation_ms": 2962,
+      "cost_usd": 0.002064,
+      "localise_ms": 2014,
+      "localise_cost_usd": 0.000621,
+      "input_tokens": 3431,
+      "output_tokens": 389,
+      "retrieved": [
+        "hc-28901150216337",
+        "pol-04",
+        "hc-36833668975505",
+        "hc-28900868231441",
+        "hc-28901216899857"
+      ],
+      "summary": "The customer is reporting an unauthorized charge of $1,299 MXN after interacting with a prize wheel feature in the app. They are requesting a refund and expressing significant frustration.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28901216899857",
+      "citation_quote": "Once we receive your message, we’ll investigate thoroughly.",
+      "citation_ok": true,
+      "language": "Spanish",
+      "localised": {
+        "formal": "Estimado/a usuario/a, lamento saber sobre el cargo inesperado que encontró después de usar la función de la rueda de premios. Para solucionar esto, por favor contacte a nuestro equipo de soporte directamente a través de la aplicación Nebula tocando el icono de engranaje en la esquina superior derecha y seleccionando Ayuda y soporte. Incluya una descripción del problema y una captura de pantalla de la transacción para que podamos investigar esto a fondo. De acuerdo con nuestro proceso, revisaremos los detalles y le asistiremos con los siguientes pasos. Saludos cordiales, Soporte de Nebula",
+        "empathetic": "Lamento mucho saber que se le cobraron $1,299 MXN después de interactuar con la rueda de premios en nuestra aplicación. Entiendo lo molesto que es ver un cargo inesperado cuando esperaba un premio. Por favor, comuníquese con nuestro equipo de soporte a través de la sección de Ayuda y soporte en la configuración de su aplicación para que podamos investigar qué sucedió. Una vez que proporcione una descripción y una captura de pantalla de la transacción, nuestro equipo podrá revisar esto por usted.",
+        "concise": "Por favor, contacte a nuestro equipo de soporte a través de la sección de Ayuda y soporte en la configuración de su aplicación para informar sobre este cargo. Incluya una descripción del problema y una captura de pantalla de la transacción para que podamos investigar. Revisaremos los detalles y le asistiremos más una vez que se reciba la solicitud."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.01,
+        "formal~concise": 0.028,
+        "empathetic~concise": 0.033
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 508,
+        "empathetic": 445,
+        "concise": 286
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, I am sorry to hear about the unexpected charge you encountered after using the prize wheel feature. To address this, please contact our support team directly through the Nebula app by tapping the gear icon in the top-right corner and selecting Help and Support. Please include a description of the issue and a screenshot of the transaction so that we may investigate this thoroughly. According to our process, we will review the details and assist you with the next steps. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear that you were charged $1,299 MXN after interacting with the prize wheel in our app. I understand how upsetting it is to see an unexpected charge when you were expecting a prize. Please reach out to our support team through the Help and Support section in your app settings so we can investigate what happened. Once you provide a description and a screenshot of the transaction, our team will be able to look into this for you.",
+      "concise": "Please contact our support team through the Help and Support section in your app settings to report this charge. Include a description of the issue and a screenshot of the transaction so we can investigate. We will review the details and assist you further once the request is received."
+    },
+    {
+      "id": "gp:39b329a6-5bb",
+      "lang": "en_or_unknown",
+      "category": "price_not_expected",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1263,
+      "generation_ms": 2928,
+      "cost_usd": 0.001377,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 2996,
+      "output_tokens": 418,
+      "retrieved": [
+        "pol-04",
+        "hc-28900802305297",
+        "pol-16",
+        "pol-15",
+        "pol-13"
+      ],
+      "summary": "The customer is reporting an unexpected charge of over $60 after cancelling a $2.99 trial and is requesting a refund. The agent needs to determine the platform of purchase to guide the customer on refund requests and verify their subscription status.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "If you subscribed or started a free trial via the App Store, refund requests are handled directly by Apple.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.012,
+        "formal~concise": 0.019,
+        "empathetic~concise": 0.043
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 529,
+        "empathetic": 488,
+        "concise": 294
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Thank you for reaching out to us regarding the charge on your account. According to our policy, refund routing depends on where the subscription was originally purchased. If you subscribed via the Apple App Store, you must request a refund directly through Apple. If you subscribed through Google Play or our website, please provide your payment screenshot, the last four digits of your card, your country of residence, and the email used during registration so that we may assist you further. Kind regards, Nebula Support",
+      "empathetic": "It sounds like you were surprised by a charge of over $60 after you had already cancelled your trial. To help you with your refund request, I first need to know which platform you used to sign up. If you purchased through the App Store, please contact Apple directly as they handle those requests. If you used Google Play or our website, please send us your payment screenshot, the last four digits of your card, your country, and your registration email so we can look into this for you.",
+      "concise": "Please let me know if you subscribed via the App Store, Google Play, or our website. If you used the App Store, you must request a refund directly from Apple. For other platforms, please provide a payment screenshot, your registration email, your country, and the last four digits of your card."
+    },
+    {
+      "id": "gp:7bcd1d11-efc",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1132,
+      "generation_ms": 2952,
+      "cost_usd": 0.001483,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3437,
+      "output_tokens": 415,
+      "retrieved": [
+        "hc-28900802305297",
+        "hc-28899740398481",
+        "hc-28899709030417",
+        "hc-28900762266641",
+        "hc-28899743878673"
+      ],
+      "summary": "The customer denies signing up for a subscription and reports multiple charges. They are requesting cancellation and are concerned about a fee displayed when attempting to cancel.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28900802305297",
+      "citation_quote": "If these instructions don’t work for you or you encounter any issues, please feel free to contact our support team, and we will be happy to assist you!",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.303,
+        "formal~concise": 0.099,
+        "empathetic~concise": 0.019
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 512,
+        "empathetic": 445,
+        "concise": 296
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Thank you for reaching out regarding your account charges. To assist you in locating your account and investigating these charges, please provide a screenshot of your payment, the last 4 digits of your card, the BIN (first 6 digits), your country of residence, and the email address used during registration. These details are required by our support team as outlined in our help documentation. Once you provide this information, we will be able to review your account status. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear about the unexpected charges you have seen on your account. To help us look into this and stop any further billing, please send us a screenshot of your payment, the last 4 digits of your card, the BIN (first 6 digits), your country of residence, and the email address you used to register. We will use these details to locate your account and assist you further. Please provide this information so we can address this for you.",
+      "concise": "Please provide a screenshot of your payment, the last 4 digits of your card, the BIN (first 6 digits), your country of residence, and the email used during registration. We need these details to locate your account and investigate the charges. Once provided, we will assist you with your request."
+    },
+    {
+      "id": "gp:c4dcf522-165",
+      "lang": "pt",
+      "category": "price_not_expected",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1001,
+      "generation_ms": 2492,
+      "cost_usd": 0.001947,
+      "localise_ms": 1884,
+      "localise_cost_usd": 0.000602,
+      "input_tokens": 2897,
+      "output_tokens": 413,
+      "retrieved": [
+        "faq-10",
+        "pol-13",
+        "hc-28899179430801",
+        "hc-28900840466961",
+        "pol-15"
+      ],
+      "summary": "The customer is disputing an unexpected charge of 29.99€ after purchasing a 5€ reading. They are requesting a full refund and expressed dissatisfaction with a previous offer of a 50% partial refund.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "hc-28899179430801",
+      "citation_quote": "Please report the issue using the “Contact Us” option on our app or by submitting a request directly from the Help Center.",
+      "citation_ok": true,
+      "language": "Portuguese",
+      "localised": {
+        "formal": "Olá, obrigado por entrar em contato a respeito da divergência em suas cobranças. Observe que nossa Equipe de Suporte analisa todas as questões de faturamento para resolvê-las o mais rápido possível, conforme descrito em nossa documentação de ajuda. Para prosseguir com sua solicitação, envie uma consulta formal através da seção de Ajuda e Suporte do seu aplicativo ou via nossa Central de Ajuda. Inclua seu nome, data de nascimento, a data e hora da transação e uma descrição do problema. Investigaremos o assunto posteriormente. Atenciosamente, Suporte Nebula",
+        "empathetic": "Sinto muito saber que você foi cobrado 29.99€ quando esperava apenas um pagamento de 5€. É importante que analisemos essa cobrança inesperada para você imediatamente. Entre em contato com nossa equipe de suporte pelo aplicativo ou pela nossa Central de Ajuda para que possamos revisar os detalhes da sua conta. Assim que você fornecer seu nome, data de nascimento e os detalhes da transação, nossa equipe investigará isso para você. Atenciosamente, Suporte Nebula",
+        "concise": "Envie uma solicitação através da seção de Ajuda e Suporte do seu aplicativo ou da nossa Central de Ajuda para relatar esta cobrança. Inclua seu nome, data de nascimento e os detalhes da transação para que nossa equipe possa investigar. Analisaremos seu caso o mais rápido possível."
+      },
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.008,
+        "formal~concise": 0.056,
+        "empathetic~concise": 0.015
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 537,
+        "empathetic": 408,
+        "concise": 254
+      },
+      "sentences": {
+        "formal": 6,
+        "empathetic": 5,
+        "concise": 3
+      },
+      "formal": "Hello, thank you for reaching out regarding the discrepancy in your charges. Please note that our Support Team reviews all billing concerns to resolve them as quickly as possible, as outlined in our help documentation. To proceed with your request, please submit a formal inquiry through the Help and Support section of your app or via our Help Center. Please include your name, date of birth, the date and time of the transaction, and a description of the issue. We will then investigate the matter further. Kind regards, Nebula Support",
+      "empathetic": "I am sorry to hear that you were charged 29.99€ when you only expected a 5€ payment. It is important that we look into this unexpected charge for you right away. Please contact our support team through the app or our Help Center so we can review your account details. Once you provide your name, date of birth, and the transaction details, our team will investigate this for you. Kind regards, Nebula Support",
+      "concise": "Please submit a request through the Help and Support section of your app or our Help Center to report this charge. Include your name, date of birth, and the transaction details so our team can investigate. We will review your case as quickly as possible."
+    },
+    {
+      "id": "as:11991417841",
+      "lang": "en_or_unknown",
+      "category": "charge_not_recognised",
+      "expects_none": false,
+      "error": "",
+      "retrieval_ms": 1106,
+      "generation_ms": 2409,
+      "cost_usd": 0.001411,
+      "localise_ms": 0,
+      "localise_cost_usd": 0.0,
+      "input_tokens": 3263,
+      "output_tokens": 396,
+      "retrieved": [
+        "hc-28899740398481",
+        "hc-36833329045905",
+        "pol-04",
+        "pol-13",
+        "hc-28900802305297"
+      ],
+      "summary": "The customer reports an unexpected charge of 39 USD despite not having an active subscription visible in their account. They also state they have deleted their account but are still being charged.",
+      "grounded": true,
+      "needs_human": false,
+      "needs_human_reason": "",
+      "citation_doc_id": "pol-04",
+      "citation_quote": "Deleting the app does not cancel your subscription, trial or introductory offer.",
+      "citation_ok": true,
+      "language": "English",
+      "localised": {},
+      "banned": [],
+      "similarity": {
+        "formal~empathetic": 0.018,
+        "formal~concise": 0.018,
+        "empathetic~concise": 0.017
+      },
+      "shape": {
+        "concise_le_3_sentences": true,
+        "concise_has_no_greeting": true,
+        "concise_has_no_signoff": true,
+        "formal_has_greeting": true,
+        "formal_has_signoff": true,
+        "empathetic_no_greeting_first": true,
+        "empathetic_no_filler": true
+      },
+      "lengths": {
+        "formal": 600,
+        "empathetic": 425,
+        "concise": 299
+      },
+      "sentences": {
+        "formal": 5,
+        "empathetic": 4,
+        "concise": 3
+      },
+      "formal": "Hello, Please be advised that deleting the application does not cancel a subscription, as stated in our policy. To stop future charges, you must follow the specific cancellation process for the platform where the subscription was initiated. If you subscribed via the App Store, you must manage your cancellation directly through Apple. If you believe you were charged in error, please provide a screenshot of the payment, the last four digits of your card, your country of residence, and the email address used during registration so that we may investigate this further. Kind regards, Nebula Support",
+      "empathetic": "It is concerning to see a charge of 39 USD when you do not believe you have an active subscription. Please know that deleting the app does not stop a subscription, which is why charges may have continued. To help us look into this, please send us a screenshot of the payment, the last four digits of your card, your country of residence, and the email address you used to register. We will then be able to assist you further.",
+      "concise": "Deleting the app does not cancel your subscription, which is why you may still be charged. Please provide a screenshot of the payment, the last four digits of your card, your country of residence, and your registration email so we can investigate. We will assist you once these details are provided."
+    }
+  ]
+}

@@ -90,6 +90,8 @@ def one(row: dict, engine: assist.Engine) -> dict:
         "retrieval_ms": result.retrieval_ms,
         "generation_ms": result.generation_ms,
         "cost_usd": round(result.cost_usd, 6),
+        "localise_ms": result.localise_ms,
+        "localise_cost_usd": round(result.localise_cost_usd, 6),
         "input_tokens": result.input_tokens,
         "output_tokens": result.output_tokens,
         "retrieved": [s.doc_id for s in result.sources],
@@ -104,6 +106,8 @@ def one(row: dict, engine: assist.Engine) -> dict:
         "citation_doc_id": o.citation_doc_id,
         "citation_quote": o.citation_quote,
         "citation_ok": result.citation_ok,
+        "language": o.language,
+        "localised": result.localised,
         "banned": result.banned,
         "similarity": result.similarity,
         "shape": shape(o),
@@ -159,9 +163,14 @@ def report(got: list[dict], model: str) -> None:
     print(f"\n{n}/{len(got)} returned an object, {model}")
     print(f"  cost per ticket: ${statistics.mean(g['cost_usd'] for g in ok):.5f}"
           f"   -> 10k/month ${statistics.mean(g['cost_usd'] for g in ok) * 10000:.2f}")
-    print(f"  latency p50: {statistics.median(g['retrieval_ms'] + g['generation_ms'] for g in ok):.0f} ms"
+    print(f"  latency p50: "
+          f"{statistics.median(g['retrieval_ms'] + g['generation_ms'] + g['localise_ms'] for g in ok):.0f} ms"
           f"  (retrieval {statistics.median(g['retrieval_ms'] for g in ok):.0f}"
-          f" + generation {statistics.median(g['generation_ms'] for g in ok):.0f})")
+          f" + generation {statistics.median(g['generation_ms'] for g in ok):.0f}"
+          f" + localise {statistics.median(g['localise_ms'] for g in ok):.0f})")
+    loc = [g for g in ok if g.get("localised")]
+    print(f"  non-English, localised into the customer's language: "
+          f"{len(loc)}/{n}")
 
     print(f"\n  citation verified in the named document: "
           f"{sum(g['citation_ok'] for g in ok)}/{n}")

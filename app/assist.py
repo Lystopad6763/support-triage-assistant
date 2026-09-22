@@ -48,7 +48,18 @@ from app.embed import embed
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS = ROOT / "prompts" / "assist"
-VERSION = "v2"
+VERSION = "v3"
+LOCALISE_PROMPT = ROOT / "prompts" / "localise" / "v1.md"
+# Tickets arrive in twelve languages and the knowledge base is English, so the
+# drafting call reasons in English over English documents. Putting the reply
+# into the customer's language is then a SEPARATE call with nothing to decide.
+#
+# One call doing both was the obvious saving and is the documented trap: a
+# model asked to reason in one language and speak another tends to do the
+# second badly, or to quietly stop doing it. Splitting costs about $0.0004 and
+# under two seconds, and it keeps the checked English text as the thing the
+# guards actually ran on.
+ENGLISH = {"english", "en", "en-us", "en-gb", ""}
 
 VARIANT = "article"
 ENCODER = "openai/text-embedding-3-small"
@@ -172,7 +183,30 @@ BANNED: list[tuple[str, re.Pattern, str]] = [
 ]
 
 
+class Localised(BaseModel):
+    formal: str
+    empathetic: str
+    concise: str
+
+
+LOCALISE_SCHEMA = {
+    "name": "localised_replies",
+    "strict": True,
+    "schema": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["formal", "empathetic", "concise"],
+        "properties": {
+            "formal": {"type": "string"},
+            "empathetic": {"type": "string"},
+            "concise": {"type": "string"},
+        },
+    },
+}
+
+
 class Output(BaseModel):
+    language: str
     summary: str
     grounded: bool
     citation_doc_id: str
@@ -190,10 +224,11 @@ SCHEMA = {
     "schema": {
         "type": "object",
         "additionalProperties": False,
-        "required": ["summary", "grounded", "citation_doc_id",
+        "required": ["language", "summary", "grounded", "citation_doc_id",
                      "citation_quote", "formal", "empathetic", "concise",
                      "needs_human", "needs_human_reason"],
         "properties": {
+            "language": {"type": "string"},
             "summary": {"type": "string"},
             "grounded": {"type": "boolean"},
             "citation_doc_id": {"type": "string"},
@@ -231,6 +266,11 @@ class Result:
     sources: list[Source] = field(default_factory=list)
     citation_ok: bool = False
     citation_url: str = ""
+    # The same three replies in the customer's language. Empty when they wrote
+    # in English, which is 222 of the 430 tickets.
+    localised: dict = field(default_factory=dict)
+    localise_ms: int = 0
+    localise_cost_usd: float = 0.0
     banned: list[str] = field(default_factory=list)
     similarity: dict[str, float] = field(default_factory=dict)
     error: str = ""
@@ -243,11 +283,12 @@ class Result:
 
     @property
     def cost_usd(self) -> float:
-        return self.embed_cost_usd + self.generation_cost_usd
+        return (self.embed_cost_usd + self.generation_cost_usd
+                + self.localise_cost_usd)
 
     @property
     def total_ms(self) -> int:
-        return self.retrieval_ms + self.generation_ms
+        return self.retrieval_ms + self.generation_ms + self.localise_ms
 
 
 class Engine:
@@ -265,6 +306,7 @@ class Engine:
         self.index = retrieve.Index.load(VARIANT)
         self.vectors = retrieve.Vectors.load(VARIANT, ENCODER, self.index)
         self.system = (PROMPTS / f"{version}.md").read_text(encoding="utf-8")
+        self.localise_system = LOCALISE_PROMPT.read_text(encoding="utf-8")
         self.by_doc = {c["doc_id"]: c for c in self.index.chunks}
 
     def find(self, ticket: str) -> tuple[list[Source], float]:
@@ -308,7 +350,38 @@ class Engine:
         out.output_tokens = record.output_tokens
         if out.output is not None:
             self.check(out)
+            if out.output.language.strip().lower() not in ENGLISH:
+                self.localise(out)
         return out
+
+    def localise(self, out: Result) -> None:
+        """The three replies again, in the language the customer wrote in.
+
+        A failure here leaves `localised` empty rather than raising: the agent
+        still has three checked English replies, which is worse than having
+        both and far better than having nothing.
+        """
+        o = out.output
+        assert o is not None
+        body = (f"Customer's language: {o.language}\n\n"
+                + "\n\n".join(f"[{tone}]\n{getattr(o, tone)}"
+                                for tone in TONES))
+        prompt = config.PromptConfig(
+            version="localise/v1", model=self.model, temperature=0.2,
+            response_format="json_schema",
+            text_override=self.localise_system,
+            tested_on="benchmark/tickets.csv",
+            change_reason="split-task localisation of the drafted replies")
+        record = llm.Result(ticket_id="", model=self.model)
+        started = time.monotonic()
+        got = llm.run([{"role": "system", "content": self.localise_system},
+                       {"role": "user", "content": body}],
+                      record, prompt, self.settings,
+                      schema=LOCALISE_SCHEMA, model_cls=Localised)
+        out.localise_ms = int((time.monotonic() - started) * 1000)
+        out.localise_cost_usd = getattr(record, "cost_usd", 0.0)
+        if got is not None:
+            out.localised = {tone: getattr(got, tone) for tone in TONES}
 
     def check(self, out: Result) -> None:
         """Everything that can be verified without a human, verified."""
