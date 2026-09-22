@@ -156,7 +156,12 @@ export default function App() {
             <h2>
               Варіанти відповіді
               {result.language && result.language.toLowerCase() !== 'english' && (
-                <span className="lang-note">мова клієнта: {result.language}</span>
+                <span className="lang-note">
+                  {result.detected_language &&
+                   result.detected_language !== result.language
+                    ? `клієнт пише: ${result.detected_language} · відповідь: ${result.language}`
+                    : `мова клієнта: ${result.language}`}
+                </span>
               )}
             </h2>
             {result.replies.map(r => (

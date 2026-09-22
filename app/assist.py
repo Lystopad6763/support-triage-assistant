@@ -61,6 +61,26 @@ LOCALISE_PROMPT = ROOT / "prompts" / "localise" / "v1.md"
 # guards actually ran on.
 ENGLISH = {"english", "en", "en-us", "en-gb", ""}
 
+# Russian in, Ukrainian out. This is a company decision, not a detection
+# problem: the model reads the language correctly and is then told to answer in
+# another one. It lives here rather than only in the prompt because a rule that
+# exists only as a sentence in a prompt is a rule the model may round off on a
+# tired day, and this one is not ours to round off.
+#
+# The detected language is still reported, so the agent sees what was read and
+# what was answered, and never has to wonder which happened.
+ANSWER_INSTEAD = {
+    "russian": "Ukrainian",
+    "ru": "Ukrainian",
+    "russian (ru)": "Ukrainian",
+    "русский": "Ukrainian",
+}
+
+
+def reply_language(detected: str) -> str:
+    """Which language the customer is answered in, given what they wrote in."""
+    return ANSWER_INSTEAD.get(detected.strip().lower(), detected.strip())
+
 VARIANT = "article"
 ENCODER = "openai/text-embedding-3-small"
 MODEL = "google/gemini-3.1-flash-lite"
@@ -269,6 +289,10 @@ class Result:
     # The same three replies in the customer's language. Empty when they wrote
     # in English, which is 222 of the 430 tickets.
     localised: dict = field(default_factory=dict)
+    # What the customer wrote in, and what they are answered in. Equal except
+    # where ANSWER_INSTEAD applies.
+    detected_language: str = ""
+    reply_language: str = ""
     localise_ms: int = 0
     localise_cost_usd: float = 0.0
     banned: list[str] = field(default_factory=list)
@@ -350,7 +374,9 @@ class Engine:
         out.output_tokens = record.output_tokens
         if out.output is not None:
             self.check(out)
-            if out.output.language.strip().lower() not in ENGLISH:
+            out.detected_language = out.output.language.strip()
+            out.reply_language = reply_language(out.detected_language)
+            if out.reply_language.lower() not in ENGLISH:
                 self.localise(out)
         return out
 

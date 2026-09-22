@@ -28,4 +28,12 @@ export const EXAMPLES = [
     label: 'Англійська · застосунок не відкривається',
     text: 'I haven\'t used this app in a while and I tried going into the app. It would exit without loading. It just started doing this issue for me and it still won\'t load. Please help to fix this issue for me so I can use this app without it doing this same issue',
   },
+  {
+    // Answered in Ukrainian, not in the language it was written in.
+    // A company decision, enforced in app/assist.py rather than left
+    // to the model, and shown here so the rule is visible and not
+    // just asserted in a document nobody opens.
+    label: 'Російська · відповідь буде українською',
+    text: 'Я подписалась на 3 дня бесплатного использования приложения, после чего в тот же день отменила подписку, т.к. приложение выдало некорректные данные в расчете моей карты натальной. Сегодня у меня списали 19 долларов. Верните мои деньги.',
+  },
 ]

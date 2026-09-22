@@ -134,7 +134,11 @@ def draft(ask: Ask, request: Request) -> JSONResponse:
 
     o = result.output
     return JSONResponse(content={
-        "language": o.language,
+        # What they are answered in, which is what the page labels the drafts
+        # with. Russian tickets are answered in Ukrainian, so the two differ
+        # there and the page says so rather than quietly substituting.
+        "language": result.reply_language,
+        "detected_language": result.detected_language,
         "summary": o.summary,
         "grounded": o.grounded,
         "needs_human": o.needs_human,
