@@ -48,48 +48,9 @@ from app import kb                                    # noqa: E402
 TICKETS = ROOT / "data" / "tickets" / "tickets.csv"
 OUT = Path(__file__).resolve().parent / "tickets.csv"
 
-# Which documents could plausibly answer a ticket of this category. NOT the
-# gold: the gold is per ticket and a human sets it. This is the shortlist that
-# makes setting it fast, and it is written from having read all 73 documents.
-BY_CATEGORY: dict[str, list[str]] = {
-    "charge_not_recognised": [
-        "pol-13",              # the small verification charge, refunded in 10 days
-        "pol-04",              # who handles the refund - Apple or us
-        "pol-05",              # balance units, per-minute charging, auto-refill
-        "pol-16",              # where to cancel, by rail
-        "hc-28900802305297",   # how to cancel
-        "pol-14",              # a confirmed refund takes 15 business days
-    ],
-    "price_not_expected": [
-        "faq-09",              # how the payment system works
-        "hc-28898955150609",   # how much it costs to chat
-        "pol-05",
-        "hc-28898312929809",   # my credits run out very fast
-        "hc-36833668975505",   # why is the message blurred
-    ],
-    "cancel_not_possible": [
-        "hc-28900802305297",
-        "pol-16",
-        "hc-28899709030417",   # web subscription not visible on the phone
-        "hc-28899740398481",   # store subscription not visible on the website
-    ],
-    "app_defect": [
-        "hc-28901074285713",   # Nebula is not working correctly
-        "hc-28901224006801",   # error when logging in
-        "hc-28901395830673",   # how to update the app
-        "hc-28900840466961",   # I can not open my reading
-        "hc-28901285302673",   # tech issues during a chat
-        "hc-36800803666577",   # I cannot send my question in chat
-    ],
-    "nothing_delivered": [
-        "hc-28900034911377",   # how to access my report or reading
-        "hc-28901216899857",   # paid for credits, balance not topped up
-        "hc-28901045413393",   # reading ordered on social networks
-        "faq-14",              # compatibility report, up to an hour, check spam
-        "hc-28899179430801",   # no answer from the psychic
-    ],
-    "other": [],
-}
+# The shortlist per category lives in app/kb.py, with the knowledge base it
+# describes, so that there is one table and not two to keep in step.
+BY_CATEGORY = kb.ANSWERS
 
 # Next steps that say, in the engineer's own labelling, that this ticket is not
 # something the knowledge base can close. They are kept on purpose: the

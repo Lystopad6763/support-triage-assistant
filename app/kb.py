@@ -19,9 +19,9 @@ WHAT DELIBERATELY DOES NOT REACH THE MODEL
                        no citation at all.
 
 IDS ARE THE ONES ALREADY IN USE
-    hc-<zendesk id>, faq-NN, pol-NN - the same strings scripts/criteria.py maps
-    themes onto in KB_ANSWERS. Renaming them here would silently unhook that
-    table, so verify() asserts every id it names still exists.
+    hc-<zendesk id>, faq-NN, pol-NN - the strings ANSWERS below maps categories
+    onto, and the ones every citation names. Renaming them here would silently
+    unhook that table, so verify() asserts every id it names still exists.
 """
 from __future__ import annotations
 
@@ -118,6 +118,80 @@ EXCLUDED: dict[str, str] = {
     # question in opposite directions means the assistant can cite either one,
     # so the one without a source goes.
     "faq-06": "contradicts pol-11 (Terms) on advisor screening, unsourced",
+}
+
+
+# --- which documents could answer a ticket of which kind ----------------------
+#
+# Keyed by the taxonomy the 417 tickets are actually labelled with. The
+# previous table, scripts/criteria.py:KB_ANSWERS, is keyed by a taxonomy that
+# no longer exists - refund_request, subscription_trap, content_quality - and
+# is left there only because the paused selection code still reads it.
+#
+# This is NOT a gold set. It is the shortlist that makes setting a gold fast,
+# and it is deliberately generous: "could answer", not "does answer". Which
+# document actually answers a given ticket is a per-ticket judgement.
+#
+# The mapping from the old keys was mechanical:
+#     refund_request + unauthorized_charge          -> charge_not_recognised
+#     subscription_trap/trial_converted/pricing_unclear -> price_not_expected
+#     cancellation_failed                           -> cancel_not_possible
+#     service_not_delivered                         -> nothing_delivered
+#     app_technical                                 -> app_defect
+#     advisor_conduct + data_privacy                -> other
+#     content_quality                               -> gone as a category; its
+#         documents live under `other`, because a complaint about a reading now
+#         lands wherever its demand does.
+ANSWERS: dict[str, list[str]] = {
+    "charge_not_recognised": [
+        "pol-13",              # the small verification charge, back in 10 days
+        "pol-04",              # who decides the refund - Apple or us
+        "pol-14",              # a confirmed refund takes 15 business days
+        "pol-18",              # withdrawal rights, 14 days EEA/UK, 7 Brazil
+        "pol-05",              # balance units, per-minute charging, auto-refill
+        "pol-16",              # where to cancel, by rail
+        "hc-28900802305297",   # how to cancel
+    ],
+    "price_not_expected": [
+        "faq-09",              # how the payment system works
+        "hc-28898955150609",   # how much it costs to chat
+        "pol-05",
+        "hc-28898312929809",   # my credits run out very fast
+        "hc-36833668975505",   # why is the message blurred
+        "pol-18",              # the withdrawal clock starts at the free trial
+    ],
+    "cancel_not_possible": [
+        "hc-28900802305297",
+        "pol-16",
+        "hc-28899709030417",   # web subscription not visible on the phone
+        "hc-28899740398481",   # store subscription not visible on the website
+        "pol-04",
+    ],
+    "nothing_delivered": [
+        "hc-28900034911377",   # how to access my report or reading
+        "hc-28901216899857",   # paid for credits, balance not topped up
+        "hc-28901045413393",   # reading ordered on social networks
+        "faq-14",              # compatibility report: up to an hour, check spam
+        "hc-28899179430801",   # no answer from the psychic
+        "pol-19",              # advisor availability and how long a chat runs
+    ],
+    "app_defect": [
+        "hc-28901074285713",   # Nebula is not working correctly
+        "hc-28901224006801",   # error when logging in
+        "hc-28901395830673",   # how to update the app
+        "hc-28900840466961",   # I can not open my reading
+        "hc-28901285302673",   # tech issues during a chat
+        "hc-36800803666577",   # I cannot send my question in chat
+    ],
+    "other": [
+        "pol-08",              # reporting a safety concern is a separate intake
+        "pol-20",              # readings are human-led
+        "pol-09",              # no fear-based messaging
+        "pol-11",              # entertainment only, no warranty of qualification
+        "hc-28900868231441",   # my report or reading is wrong
+        "faq-13",              # how the zodiac sign was calculated
+        "hc-28899811054737",   # remove personal data or delete the account
+    ],
 }
 
 
@@ -364,21 +438,22 @@ def verify(docs: list[Doc] | None = None) -> list[Doc]:
     if len(docs) != 84:
         raise SystemExit(f"expected 84 documents, loaded {len(docs)}")
 
-    import sys
-    sys.path.insert(0, str(ROOT))
-    from scripts.criteria import KB_ANSWERS          # noqa: E402
-
-    cited = {a for articles in KB_ANSWERS.values() for a in articles}
+    # ANSWERS lives here rather than in scripts/, so the knowledge base does not
+    # depend on the ticket-selection code. It did once, and when scripts/ was
+    # briefly gone from the working tree, kb.verify() failed with an import
+    # error that said nothing about the real cause.
+    cited = {a for articles in ANSWERS.values() for a in articles}
     missing = sorted(cited - set(ids))
     if missing:
-        raise SystemExit("KB_ANSWERS cites documents that do not load: "
+        raise SystemExit("ANSWERS cites documents that do not load: "
                          + ", ".join(missing))
 
     # Excluding a document that the coverage table names as the answer to a
-    # theme would make that theme answerable on paper and unanswerable in fact.
+    # category would make that category answerable on paper and unanswerable in
+    # fact.
     muted = sorted(cited & set(EXCLUDED))
     if muted:
-        raise SystemExit("EXCLUDED removes documents KB_ANSWERS relies on: "
+        raise SystemExit("EXCLUDED removes documents ANSWERS relies on: "
                          + ", ".join(muted))
     unknown = sorted(set(EXCLUDED) - set(ids))
     if unknown:
