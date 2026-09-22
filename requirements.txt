@@ -1,8 +1,12 @@
-# Four packages. Pinned, because a run file records which model produced its
+# Seven packages. Pinned, because a run file records which model produced its
 # numbers and the library that produced them should be just as recoverable.
 httpx==0.28.1               # the OpenRouter call; the OpenAI SDK adds nothing here
 pydantic==2.13.0            # the output contract, which is also the JSON Schema sent
 pydantic-settings==2.15.0   # Settings from defaults in code + the key from .env
+
+numpy==2.4.6                # the retrieval scan: 131 vectors is a matmul, not a database
+fastapi==0.120.3            # the web form the assignment asks for
+uvicorn[standard]==0.38.0   # and the server that runs it
 
 # Data collection only. Kept because the corpus is reproducible from the raw
 # dumps, and a pipeline you cannot re-run is not provenance.
