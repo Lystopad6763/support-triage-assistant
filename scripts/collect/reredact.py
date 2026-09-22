@@ -16,7 +16,7 @@ WHY THIS EXISTS
     silently did nothing is visible as such.
 
 Usage:
-    python data/collect/scripts/reredact.py [--dry-run]
+    python scripts/collect/reredact.py [--dry-run]
 """
 from __future__ import annotations
 

@@ -25,7 +25,7 @@ a range because the RSS feed intermittently returns an empty page for a
 populated storefront (see RETRY_EMPTY).
 
 Usage:
-    python data/collect/scripts/probe_coverage.py [appstore|gplay|both]
+    python scripts/collect/probe_coverage.py [appstore|gplay|both]
 """
 from __future__ import annotations
 

@@ -22,7 +22,7 @@ safe for statistics.
 Output: raw/googleplay/{lang}.json
 
 Usage:
-    python data/collect/scripts/scrape_all_gplay.py [cap] [--since] [--force]
+    python scripts/collect/scrape_all_gplay.py [cap] [--since] [--force]
 """
 from __future__ import annotations
 

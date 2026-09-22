@@ -36,7 +36,7 @@ NOT REDACTED, DELIBERATELY
 Output: raw/helpcenter/{locale}.json
 
 Usage:
-    python data/collect/scripts/scrape_helpcenter.py [--locale en-us]
+    python scripts/collect/scrape_helpcenter.py [--locale en-us]
 """
 from __future__ import annotations
 
@@ -82,6 +82,81 @@ def to_text(body: str) -> str:
     return BLANK_RUN.sub("\n\n", text).strip()
 
 
+# Zendesk gives every heading in the editor a stable anchor id, and the article
+# links to its own sections through them. They are the publisher's OWN section
+# boundaries - 31 of the 51 articles carry 73 of them - which makes them better
+# than any structure a regex could infer from the flattened text, and they are
+# addressable: <article url>#h_01KTY8... opens the reader ON the section rather
+# than at the top of a six-rail article.
+HEADING = re.compile(r"<h([1-6])[^>]*>(.*?)</h\1>", re.S | re.I)
+ANCHOR = re.compile(r"\sid=\"(h_[^\"]+)\"", re.I)
+
+
+def to_sections(body: str) -> list[dict]:
+    """Split one article at every heading, keeping the path to it.
+
+    The course rule is "1 chunk = 1 logical section (heading + content), cut by
+    structure rather than by token count, keeping headings, lists and tables".
+    These articles are three levels deep - 17 h2, 65 h3, 55 h4 across the 46
+    indexed ones - so splitting only on h2 would leave "1.1 During login
+    process" buried inside a chunk about something else.
+
+    Each section carries its BREADCRUMB rather than its own heading alone:
+    "How to reset password? > 1. AskNebula website > 1.1 During login process".
+    A sub-heading on its own is unrecognisable both to a reader and to an
+    encoder - that path is the "keep the headings" half of the rule.
+
+    The anchor is the heading's own id when it has one and the nearest ancestor
+    heading's otherwise, so every section stays addressable even where the
+    editor gave the sub-heading no id. An anchor with no heading text is a
+    second link target for the heading that follows, not a section: those are
+    kept as aliases so a citation that used one still resolves.
+    """
+    marks = list(HEADING.finditer(body or ""))
+    if not marks:
+        return []
+
+    out: list[dict] = []
+    intro = to_text((body or "")[:marks[0].start()])
+    if intro:
+        out.append({"anchor": "", "aliases": [], "heading": "", "text": intro})
+
+    path: dict[int, str] = {}
+    anchors: dict[int, str] = {}
+    pending: list[str] = []
+    for index, mark in enumerate(marks):
+        level = int(mark.group(1))
+        found = ANCHOR.search(mark.group(0))
+        anchor = found.group(1) if found else ""
+        heading = to_text(mark.group(2))
+
+        path = {k: v for k, v in path.items() if k < level}
+        anchors = {k: v for k, v in anchors.items() if k < level}
+        path[level] = heading
+        if anchor:
+            anchors[level] = anchor
+
+        end = marks[index + 1].start() if index + 1 < len(marks) else len(body)
+        text = to_text(body[mark.end():end])
+        if not text:
+            if anchor:
+                pending.append(anchor)
+            continue
+
+        nearest = ""
+        for depth in sorted(anchors, reverse=True):
+            nearest = anchors[depth]
+            break
+        out.append({
+            "anchor": nearest,
+            "aliases": pending,
+            "heading": " > ".join(path[k] for k in sorted(path) if path[k]),
+            "text": text,
+        })
+        pending = []
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--locale", default="en-us",
@@ -106,6 +181,13 @@ def main() -> None:
             "section": section.get("name"),
             "title": article.get("title"),
             "body": to_text(article.get("body")),
+            "sections": to_sections(article.get("body")),
+            # Kept so that a change of mind about structure costs a re-parse
+            # rather than a re-scrape. The 2026-09-21 edit to "How to cancel
+            # subscription?" changed only markup - the extracted text was
+            # identical to the character - and without the source there is no
+            # way to tell that apart from a real edit after the fact.
+            "body_html": article.get("body") or "",
             "url": article.get("html_url"),
             "updated_at": article.get("updated_at"),
             "label_names": article.get("label_names") or [],

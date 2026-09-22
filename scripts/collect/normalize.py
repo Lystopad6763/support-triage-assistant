@@ -56,7 +56,7 @@ REDACTED BEFORE THIS STAGE
     and identify nobody alone. See the Redaction section of common.py.
 
 Usage:
-    python data/collect/scripts/normalize.py [--since YYYY-MM-DD]
+    python scripts/collect/normalize.py [--since YYYY-MM-DD]
 """
 from __future__ import annotations
 

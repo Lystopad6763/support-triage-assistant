@@ -7,9 +7,13 @@ import os
 import re
 import urllib.request
 
-# data/collect/, resolved from this file so the working directory never matters.
-COLLECT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA = os.path.dirname(COLLECT)
+# The code lives in scripts/collect/ and the data it writes lives in
+# data/collect/ - separate trees on purpose, so that "what is code" and "what
+# was collected" are never the same directory. Both are resolved from this
+# file, so the working directory never matters.
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA = os.path.join(ROOT, "data")
+COLLECT = os.path.join(DATA, "collect")
 RAW_APPSTORE = os.path.join(COLLECT, "raw", "appstore")
 RAW_GOOGLEPLAY = os.path.join(COLLECT, "raw", "googleplay")
 CORPUS = os.path.join(DATA, "corpus.jsonl")

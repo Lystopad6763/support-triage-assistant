@@ -47,7 +47,7 @@ comes from probe_coverage.py.
 Output: raw/appstore/{country}.json
 
 Usage:
-    python data/collect/scripts/scrape_appstore.py [cap] [--since] [--force]
+    python scripts/collect/scrape_appstore.py [cap] [--since] [--force]
 """
 from __future__ import annotations
 
