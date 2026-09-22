@@ -499,17 +499,11 @@ blockquote.bad { border-left-color: var(--stop); }
 
 .sheet { font-size: 13px; }
 .sheet-head h2 {
-  margin: 0 0 6px;
+  margin: 0 0 14px;
   font-size: 15px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--dim);
-}
-.sheet-head p {
-  margin: 0 0 20px;
-  color: var(--dimmer);
-  font-size: 12px;
-  line-height: 1.55;
 }
 
 .sheet section { margin-bottom: 22px; }

@@ -43,8 +43,6 @@ export default function Sheet({ result }) {
     <aside className="sheet">
       <div className="sheet-head">
         <h2>Словник</h2>
-        <p>Що означає кожна мітка і коли вона ставиться. Наведіть — побачите
-           формулювання, яке отримує модель.</p>
       </div>
 
       <section>
