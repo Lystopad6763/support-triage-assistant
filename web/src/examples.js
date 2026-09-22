@@ -13,8 +13,8 @@
 //
 // Not a random sample, and not a hit rate: these were picked BECAUSE retrieval
 // succeeds on them, so a demo button does not fail in front of someone. The
-// honest numbers are in docs/ASSISTANT.md - recall@1 0.623, recall@5 0.950 over
-// 422 queries.
+// honest numbers are in eval/results/retrieval_20260922T030229Z.json -
+// recall@1 0.623, recall@5 0.950 over 422 queries.
 //
 // The first four show by default; the rest are behind "Більше", because a wall
 // of twelve chips is a wall, not a choice.

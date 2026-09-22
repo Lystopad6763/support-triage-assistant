@@ -2,9 +2,9 @@
  * How each code is read aloud in Ukrainian, and nothing else.
  *
  * The rules - what each label means, when it is assigned, which steps a
- * category allows - live in app/taxonomy.py and are written out in
- * docs/TRIAGE.md. This file only names things on screen, so that the answer
- * does not read as machine identifiers.
+ * category allows - live in app/taxonomy.py, with the share of the corpus and
+ * the deciding test beside each value. This file only names things on screen,
+ * so that the answer does not read as machine identifiers.
  */
 export const CATEGORY_UA = {
   charge_not_recognised: 'платіж не розпізнано',

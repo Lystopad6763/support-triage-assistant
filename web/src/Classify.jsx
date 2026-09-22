@@ -13,9 +13,9 @@ import { CATEGORY_UA, STEP_UA, FACT_UA, PRIORITY_NOTE } from './labels.js'
  *
  * The vocabulary is NOT on this page. It was, in a column on the right, and it
  * made the answer harder to read rather than easier: twenty-two definitions
- * beside three labels is a reference competing with the thing it explains. It
- * lives in docs/TRIAGE.md now, where it can be read without an answer in the
- * way.
+ * beside three labels is a reference competing with the thing it explains.
+ * app/taxonomy.py holds it, with the share, the test and the allowed steps for
+ * every value.
  *
  * The review strip is NOT a confidence threshold. `confidence` averaged 0.86
  * when the answer was right and 0.87 when it was wrong, so it is printed as a
@@ -240,8 +240,8 @@ export default function Classify() {
           <p className="note">
             Впевненість показана, але ні на що не впливає: на нашому наборі вона
             дорівнювала 0,86 коли модель мала рацію і 0,87 коли помилялась.
-            Маршрутизацію вирішують п'ять перевірок, а не це число — вони
-            описані в <code>docs/TRIAGE.md</code>.
+            Маршрутизацію вирішують п'ять перевірок, а не це число —
+            <code>taxonomy.REVIEW_RULES</code>.
           </p>
         </main>
       )}
