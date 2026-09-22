@@ -41,7 +41,7 @@ cp .env.example .env          # один ключ: OPENROUTER_API_KEY
 python scripts/collect/scrape_helpcenter.py    # перезібрати базу знань
 python scripts/build_kb.py                     # порізати, зембедити, записати індекс
 python scripts/build_kb.py --dry-run           # розміри й ціна, без викликів API
-python benchmark/select.py                     # відібрати тікети для бенчмарку
+python benchmark/pick.py                     # відібрати тікети для бенчмарку
 ```
 
 ## Будова
