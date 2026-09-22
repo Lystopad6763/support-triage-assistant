@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Banners from './components/Banners.jsx'
+import Crisis from './components/Crisis.jsx'
 import Reply from './components/Reply.jsx'
 import Citation from './components/Citation.jsx'
 import Sources from './components/Sources.jsx'
@@ -153,7 +154,9 @@ export default function App() {
 
       {error && <div className="banner error"><strong>{error}</strong></div>}
 
-      {result && (
+      {result?.halted === 'crisis' && <Crisis data={result} />}
+
+      {result && !result.halted && (
         <main className="result">
           <Banners result={result} />
 

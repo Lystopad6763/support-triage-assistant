@@ -127,6 +127,18 @@ def draft(ask: Ask, request: Request) -> JSONResponse:
     result = _engine.draft(ask.ticket.strip())
     _spent[today] += result.cost_usd
 
+    # Crisis stops everything before a model is asked anything, so this returns
+    # a different shape entirely: no summary, no citation, no drafts. The page
+    # is expected to render the hotlines and nothing else.
+    b = result.boundary
+    if b is not None and b.halts:
+        return JSONResponse(content={
+            "halted": "crisis",
+            "matched": b.matched.get("crisis", []),
+            "resources": b.resources,
+            "resources_url": b.resources_url,
+        })
+
     if result.output is None:
         return JSONResponse(status_code=502, content={
             "error": "model",
@@ -144,6 +156,12 @@ def draft(ask: Ask, request: Request) -> JSONResponse:
         "needs_human": o.needs_human,
         "needs_human_reason": o.needs_human_reason,
         "banned": result.banned,
+        # The deterministic pre-pass, reported next to the model's own
+        # needs_human so the agent can see which noticed. Either is enough.
+        "boundaries": {
+            "flags": b.flags if b else [],
+            "matched": b.matched if b else {},
+        },
         "citation": {
             "doc_id": o.citation_doc_id,
             "quote": o.citation_quote,

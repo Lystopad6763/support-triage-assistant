@@ -43,7 +43,7 @@ from pathlib import Path
 import numpy as np
 from pydantic import BaseModel
 
-from app import config, llm, retrieve
+from app import boundaries, config, llm, retrieve
 from app.embed import embed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -293,6 +293,9 @@ class Result:
     # where ANSWER_INSTEAD applies.
     detected_language: str = ""
     reply_language: str = ""
+    # What the deterministic pre-pass found before any of this ran. On crisis
+    # it is the reason there are no drafts at all.
+    boundary: boundaries.Boundary | None = None
     localise_ms: int = 0
     localise_cost_usd: float = 0.0
     banned: list[str] = field(default_factory=list)
@@ -347,8 +350,18 @@ class Engine:
                 + "\n\n---\n\n".join(blocks)
                 + "\n\n=== TICKET ===\n\n" + ticket)
 
-    def draft(self, ticket: str) -> Result:
+    def draft(self, ticket: str, country: str = "") -> Result:
         out = Result(ticket=ticket, output=None)
+
+        # Before retrieval and before the model. On crisis this returns with no
+        # drafts written - the tool has nothing useful to offer someone in that
+        # state, and three tone variants would be an insult dressed as help.
+        # It is also the one branch that costs nothing, which is a happy
+        # coincidence and not the reason.
+        out.boundary = boundaries.check(ticket, country)
+        if out.boundary.halts:
+            return out
+
         started = time.monotonic()
         out.sources, out.embed_cost_usd = self.find(ticket)
         out.retrieval_ms = int((time.monotonic() - started) * 1000)
@@ -446,9 +459,9 @@ _engine: Engine | None = None
 
 
 def draft(ticket: str, settings=None, model: str = MODEL,
-          version: str = VERSION) -> Result:
+          version: str = VERSION, country: str = "") -> Result:
     global _engine
     if (_engine is None or _engine.model != model
             or _engine.version != version):
         _engine = Engine(settings, model, version)
-    return _engine.draft(ticket)
+    return _engine.draft(ticket, country)
