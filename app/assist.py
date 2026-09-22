@@ -270,20 +270,10 @@ def flat(text: str) -> str:
 
 
 @dataclass
-class Source:
-    doc_id: str
-    title: str
-    url: str
-    url_is_page: bool
-    text: str
-    rank: int
-
-
-@dataclass
 class Result:
     ticket: str
     output: Output | None
-    sources: list[Source] = field(default_factory=list)
+    sources: list[retrieve.Hit] = field(default_factory=list)
     citation_ok: bool = False
     citation_url: str = ""
     # The same three replies in the customer's language. Empty when they wrote
@@ -336,15 +326,21 @@ class Engine:
         self.localise_system = LOCALISE_PROMPT.read_text(encoding="utf-8")
         self.by_doc = {c["doc_id"]: c for c in self.index.chunks}
 
-    def find(self, ticket: str) -> tuple[list[Source], float]:
+    def find(self, ticket: str) -> tuple[list[retrieve.Hit], float]:
+        """The measured winner, run once: dense over the article index.
+
+        retrieve.Hit is returned as it comes. An earlier version copied it into
+        a local Source dataclass that was the same thing with the chunk id and
+        the score dropped - a second name for one type, and a field-by-field
+        rebuild to arrive at it.
+        """
         result = embed([ticket], ENCODER, self.settings)
         vector = np.asarray(result.vectors[0], dtype=np.float32)
         hits = retrieve.search(ticket, self.index, "dense", top=TOP_K,
                                vectors=self.vectors, query_vector=vector)
-        return [Source(h.doc_id, h.title, h.url, h.url_is_page, h.text, h.rank)
-                for h in hits], result.cost_usd
+        return hits, result.cost_usd
 
-    def render(self, ticket: str, sources: list[Source]) -> str:
+    def render(self, ticket: str, sources: list[retrieve.Hit]) -> str:
         blocks = [f"[{s.doc_id}] {s.title}\n{s.text}" for s in sources]
         return ("KNOWLEDGE BASE - the only facts you have\n\n"
                 + "\n\n---\n\n".join(blocks)

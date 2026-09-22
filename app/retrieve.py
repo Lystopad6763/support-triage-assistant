@@ -28,9 +28,10 @@ WHY RRF AND NOT AN AVERAGE OF SCORES
 
 WHAT THIS MODULE DOES NOT DO
     It returns chunks, not documents. Rolling a section hit up to its article
-    belongs to whatever is scoring, because the two chunkings have to be
-    compared at document level and a retriever that silently deduplicated would
-    hide the difference it is being measured on.
+    belongs to whatever is scoring: the two chunkings have to be compared at
+    document level, and a retriever that silently deduplicated would hide the
+    difference it is being measured on. eval/retrieval.py does it, and counts
+    the chunks each document cost on the way.
 """
 from __future__ import annotations
 
@@ -239,17 +240,3 @@ def search(query: str, index: Index, method: str, top: int = 5,
         return hits(rrf([lexical, semantic], top), index)
 
     raise ValueError(f"unknown method {method!r}")
-
-
-def documents(found: list[Hit]) -> list[str]:
-    """Chunk hits rolled up to documents, first appearance winning.
-
-    Article and section have to be compared at document level or they are not
-    comparable at all: a section index can spend three of its five slots inside
-    one article and still have found exactly one document.
-    """
-    seen: list[str] = []
-    for hit in found:
-        if hit.doc_id not in seen:
-            seen.append(hit.doc_id)
-    return seen

@@ -38,12 +38,6 @@ from dataclasses import dataclass, field
 
 from app import kb
 
-# App Store gives a country storefront; Google Play gives a language layer, so
-# a gp: ticket has no country and gets the worldwide list. That is a real limit
-# of the data and not a shortcut.
-STORE_HAS_COUNTRY = {"appstore"}
-
-
 def terms(*words: str) -> re.Pattern:
     """Whole-word alternation, for scripts that separate words with spaces."""
     return re.compile(r"(?<!\w)(" + "|".join(words) + r")(?!\w)", re.I)
@@ -209,6 +203,12 @@ class Boundary:
 
 
 def resources_for(country: str = "") -> tuple[list[str], str]:
+    """Hotlines for a country, falling back to the worldwide list.
+
+    App Store gives a country storefront and Google Play gives a language
+    layer, so roughly half of all tickets have no country to look up. That is a
+    limit of the data, not a shortcut, and the fallback is what it produces.
+    """
     payload = kb.crisis_resources()
     by_country = payload["by_country"]
     lines = by_country.get(country.lower()) or by_country["worldwide"]
