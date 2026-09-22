@@ -1,0 +1,43 @@
+# Deployment for the reviewer-facing demo.
+#
+# One machine, always on. auto_stop_machines would save about two dollars a
+# month and cost a cold start on the first request - which is the one request
+# that matters here: somebody opens the link once, and a blank five seconds
+# reads as broken. After the review, auto_stop_machines = "stop" with
+# min_machines_running = 0 scales it to zero.
+#
+# No [mounts] section, and that is the point: the index and the vectors live in
+# the image, the cache is ephemeral, and nothing is written that has to survive
+# a restart. A volume would be the only line item that bills while idle.
+app = "obrio-support-triage"
+primary_region = "fra"
+
+# Measured, not guessed: the image was built and run locally, and the process
+# sits at 50 MiB with the index loaded. 256 MB is five times that, and swap is
+# the cheap insurance against the one request that is larger than every request
+# measured so far.
+swap_size_mb = 256
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  # /health needs no key and touches no provider: it reports whether the index
+  # loaded and how much of today's budget is gone. A check that spent money
+  # every thirty seconds would drain the ceiling the app exists to protect.
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "15s"
+    method = "GET"
+    path = "/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

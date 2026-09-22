@@ -1,0 +1,38 @@
+# Everything that produced the numbers but is not needed to answer a request.
+# Without this the build context is about 95 MB and the upload becomes the slow
+# part of every deploy.
+#
+# Note what is NOT here: data/collect/raw/{helpcenter,faq,policies}. Those three
+# are the knowledge base itself, and the Dockerfile copies them. Excluding their
+# parent would make those COPY lines fail, so the two heavy siblings are named
+# one by one instead.
+.git
+.venv
+__pycache__
+*.pyc
+*.pyo
+
+# secrets - the key reaches the server as a fly secret, never inside an image
+.env
+.cache
+.tiktoken_cache
+
+node_modules
+web/node_modules
+web/src
+
+data/corpus.jsonl
+data/collect/raw/appstore
+data/collect/raw/googleplay
+data/collect/coverage_appstore.json
+data/collect/coverage_gplay.json
+data/kb/query_vectors
+data/runs
+data/sets
+data/tickets
+
+benchmark
+docs
+eval
+scripts
+README.md
