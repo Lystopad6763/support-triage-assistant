@@ -26,7 +26,17 @@ TWO RULES THAT OVERRIDE PROPORTION
     2. Few-shot must show every category at least once, `other` included.
        Nine rows of `other` against 417 round to half a slot, so the draw is
        corrected by one swap with dev, and the manifest records it.
-    3. Language presence.  The sort key is the label triple, so language is
+    3. Step coverage.  Proportion is exactly wrong here: with 25 slots, a step
+       holding 1.0-1.4% of the corpus rounds to zero, so the three rarest steps
+       got no example at all -- including the one carrying the only hard rule in
+       the schema (escalate_to_authority_case forces P1) and the one that IS the
+       human-in-the-loop deliverable.  A value the prompt must produce and never
+       shows is decided by prose alone, and with one row each in dev a mistake
+       would not even surface until golden.  So every step with 3+ rows in the
+       corpus gets one few-shot example, taken from the most crowded step.  The
+       swap is against DEV ONLY, never golden, so the frozen set stays
+       byte-identical and can be frozen before this rule is even settled.
+    4. Language presence.  The sort key is the label triple, so language is
        balanced only as a side effect -- and the first run left golden without a
        single Arabic ticket while few-shot had no French one.  Every language
        with 3+ rows must appear in golden, every language with 10+ rows must
@@ -118,6 +128,52 @@ def fix_category_coverage(assigned):
     return swaps
 
 
+def fix_step_coverage(assigned, rows):
+    """Rule 3: a few-shot example for every step, swapping against dev only.
+
+    Guarded so it cannot undo the other two rules: the row given away is never
+    the only one of its category in few-shot, and never the only one of a
+    language that has ten or more rows in the corpus.
+    """
+    swaps = []
+    pop = collections.Counter(r["наступний крок"] for r in rows)
+    lang_pop = collections.Counter(r["мова"] for r in rows)
+    for step in sorted(pop, key=lambda s: (pop[s], s)):        # rarest first
+        if pop[step] < 3:
+            continue
+        few_steps = collections.Counter(r["наступний крок"]
+                                        for r in assigned["fewshot"])
+        if few_steps[step]:
+            continue
+        cats = collections.Counter(r["категорія"] for r in assigned["fewshot"])
+        langs = collections.Counter(r["мова"] for r in assigned["fewshot"])
+        donor_step = few_steps.most_common(1)[0][0]
+        out = None
+        for r in assigned["fewshot"]:
+            if r["наступний крок"] != donor_step:
+                continue
+            if cats[r["категорія"]] <= 1:                      # keeps rule 1
+                continue
+            if lang_pop[r["мова"]] >= 10 and langs[r["мова"]] <= 1:
+                continue                                       # keeps rule 4
+            out = r
+            break
+        into = next((r for r in assigned["dev"]
+                     if r["наступний крок"] == step), None)
+        if out is None or into is None:
+            swaps.append({"step": step, "result": "no safe partner in dev"})
+            continue
+        assigned["fewshot"].remove(out)
+        assigned["dev"].remove(into)
+        assigned["fewshot"].append(into)
+        assigned["dev"].append(out)
+        swaps.append({"step_gained": step, "into_fewshot": into["id"],
+                      "out_to_dev": out["id"], "step_given_up": donor_step,
+                      "category_in": into["категорія"],
+                      "category_out": out["категорія"]})
+    return swaps
+
+
 def fix_language_presence(assigned, rows):
     """Rule 3: label-neutral swaps so no file is blind to a whole language."""
     trades = []
@@ -133,8 +189,11 @@ def fix_language_presence(assigned, rows):
                       and any(r["мова"] == lang for r in assigned[n])]
             if not donors:
                 continue
-            donor = max(donors, key=lambda n: sum(
-                1 for r in assigned[n] if r["мова"] == lang))
+            # dev first, always: golden is the frozen set, and a rule that can
+            # reach into it makes the freeze depend on every other rule's order
+            donor = ("dev" if "dev" in donors
+                     else max(donors, key=lambda n: sum(
+                         1 for r in assigned[n] if r["мова"] == lang)))
             incoming = next(r for r in assigned[donor] if r["мова"] == lang)
             triple = tuple(incoming[k] for k in LABELS)
             match = next((r for r in assigned[target]
@@ -186,6 +245,7 @@ def main():
 
     assigned = deal(units)
     swaps = fix_category_coverage(assigned)
+    steps = fix_step_coverage(assigned, rows)
     trades = fix_language_presence(assigned, rows)
 
     for name in assigned:
@@ -215,6 +275,7 @@ def main():
         "quotas": QUOTAS,
         "twins_kept_together": [list(p) for p in TWINS],
         "fewshot_coverage_swaps": swaps,
+        "fewshot_step_coverage_swaps": steps,
         "language_presence_trades": trades,
         "composition": {name: {d: composition(rs, f) for d, f in dims.items()}
                         for name, rs in assigned.items()},
@@ -243,6 +304,13 @@ def main():
     for s in swaps:
         print("\nswap для покриття категорій: %s -> fewshot (%s), %s -> dev"
               % (s["into_fewshot"], s["category_gained"], s["out_to_dev"]))
+    for s in steps:
+        if "into_fewshot" not in s:
+            print("\nкрок %s: %s" % (s["step"], s["result"]))
+            continue
+        print("\nswap за кроком: %s -> fewshot (%s), назад %s (%s); golden не "
+              "торкались" % (s["into_fewshot"], s["step_gained"],
+                             s["out_to_dev"], s["step_given_up"]))
     for t in trades:
         if "in" not in t:
             print("\nмова %s у %s: %s" % (t["language"], t["target"],

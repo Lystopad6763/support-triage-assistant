@@ -238,6 +238,23 @@
     "нотатка": "Приштина позначена сербським містом"
   },
   {
+    "id": "as:7007116489",
+    "партія": "1",
+    "дата": "2021-02-17",
+    "зірки": "4",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Good App",
+    "оригінал": "Great app. As well very accurate, but after 2 weeks of using it my widgets started lagging and didnt show anything. Please fix that but great app recommend it.",
+    "українською": "Чудовий застосунок. Також дуже точний, але після 2 тижнів користування мої віджети почали гальмувати і нічого не показували. Будь ласка, виправте це, але застосунок чудовий, рекомендую.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "ВІДГУК: great app recommend it - партія 1"
+  },
+  {
     "id": "as:8098580596",
     "партія": "1",
     "дата": "2021-12-05",
@@ -374,23 +391,6 @@
     "нотатка": "me quisieron cobrar - спроба, гроші не зняті"
   },
   {
-    "id": "gp:2c19c10a-02c",
-    "партія": "1",
-    "дата": "2022-02-28",
-    "зірки": "4",
-    "магазин": "googleplay",
-    "мова": "pt",
-    "заголовок": "",
-    "оригінал": "Depois de data e horário de nascimento, aparece \"local de nascimento\" e eu escrevo o local, porém não consigo salvar, não sei o que tem, mas não consigo, conseguem resolver isso por favor? Me indicaram o app e acredito que seja maravilhoso mesmo, porém não consigo acessar ele, como expliquei acima.",
-    "українською": "Після дати й часу народження з'являється «місце народження», і я пишу місце, але не можу зберегти, не знаю в чому річ, але не виходить. Можете це вирішити, будь ласка? Мені порадили цей застосунок, і я вірю, що він справді чудовий, але я не можу в нього зайти, як пояснила вище.",
-    "розмітка": {
-      "категорія": "app_defect",
-      "пріоритет": "P3",
-      "наступний крок": "bug_report"
-    },
-    "нотатка": "не зберігається місце народження"
-  },
-  {
     "id": "gp:48493c4d-eea",
     "партія": "1",
     "дата": "2025-09-17",
@@ -406,23 +406,6 @@
       "наступний крок": "refund_and_cancel"
     },
     "нотатка": "просить також чеки за два списання - дати й суми названі"
-  },
-  {
-    "id": "gp:56a035fc-047",
-    "партія": "1",
-    "дата": "2025-12-24",
-    "зірки": "1",
-    "магазин": "googleplay",
-    "мова": "en_or_unknown",
-    "заголовок": "",
-    "оригінал": "Where do I cancel? How can you can charge per minute if you are sending an offline message? Same rate as if they're online? Rip off? Not to mention the the expensive package",
-    "українською": "Де мені скасувати? Як ви можете списувати похвилинно, якщо ви надсилаєте офлайн-повідомлення? За тим самим тарифом, ніби вони онлайн? Обдирання? Не кажучи вже про дорогий пакет.",
-    "розмітка": {
-      "категорія": "cancel_not_possible",
-      "пріоритет": "P3",
-      "наступний крок": "explain_charge"
-    },
-    "нотатка": "питає, чому тарифікують хвилини за офлайн-повідомлення"
   },
   {
     "id": "gp:588c4a69-185",
@@ -1275,23 +1258,6 @@
     "нотатка": "картка вважає це шахрайством; підписки не видно ні в застосунку, ні в App Store"
   },
   {
-    "id": "as:13231515887",
-    "партія": "4",
-    "дата": "2025-10-06",
-    "зірки": "1",
-    "магазин": "appstore",
-    "мова": "de",
-    "заголовок": "Achtung BETRUG",
-    "оригінал": "Einmal auf die 1€ Probeabo geklickt und bis jetzt pro Monat 39€ vom Bankkonto abgebucht. Ich habe es leider erst nach drei Monaten bemerkt. \n\nHiermit teile ich Ihnen mit, dass ich mich durch die Gestaltung Ihres Angebots getäuscht fühle. Das vermeintliche Probeabo stellte sich im Nachhinein als kostenpflichtiger Vertrag heraus, ohne dass dies bei Vertragsabschluss klar und deutlich erkennbar war.\n\nDa ich davon ausging, ein unverbindliches und kostenloses Probeabo abzuschließen, erkläre ich hiermit den Widerruf bzw. die Anfechtung des Vertrages wegen arglistiger Täuschung gemäß § 870 ABGB (bzw. § 119 ff. BGB, nach deutschem Recht).\n\nIch fordere Sie daher auf, den Vertrag umgehend aufzulösen und keine weiteren Zahlungen einzufordern oder Abbuchungen vorzunehmen. Es sind drei Abbuchung zu je 39€ erfolgt, ich ersuche um unverzügliche Rückerstattung des Betrags.\n\nBitte bestätigen Sie mir schriftlich die Auflösung des Vertrages und die Löschung meiner Daten!!!\n\n[Name]",
-    "українською": "Один раз натиснув на пробну підписку за 1€ — і досі щомісяця з банківського рахунку списують 39€. На жаль, я помітив це лише через три місяці. Цим повідомляю вам, що почуваюсь обманутим через оформлення вашої пропозиції. Уявний пробний період виявився заднім числом платним договором, при тому що це не було ясно й чітко видно при укладенні договору. Оскільки я виходив з того, що укладаю необов'язковий і безкоштовний пробний період, я цим заявляю про відкликання, тобто оспорювання договору через зумисне введення в обман згідно з § 870 ABGB (відповідно § 119 і далі BGB за німецьким правом). Тому вимагаю від вас негайно розірвати договір і не вимагати подальших платежів та не здійснювати списань. Відбулося три списання по 39€, прошу негайно повернути суму. Будь ласка, підтвердьте мені письмово розірвання договору і видалення моїх даних!!! [Ім'я]",
-    "розмітка": {
-      "категорія": "price_not_expected",
-      "пріоритет": "P1",
-      "наступний крок": "escalate_to_authority_case"
-    },
-    "нотатка": "заявлено відкликання договору за § 870 ABGB - правова дія вчинена в самому тексті; вимагає письмового підтвердження і видалення даних; ВІДГУК: заголовок Achtung BETRUG"
-  },
-  {
     "id": "as:13473009084",
     "партія": "4",
     "дата": "2025-12-04",
@@ -1751,23 +1717,6 @@
     "нотатка": "ЦІННЕ: інструкція каже звернутись за 8 днів до кінця 7-денного пробного - виконати неможливо; замість 0$ списали 1$; ВІДГУК: іронічний реєстр викриття"
   },
   {
-    "id": "gp:49399c13-8f7",
-    "партія": "4",
-    "дата": "2025-06-02",
-    "зірки": "1",
-    "магазин": "googleplay",
-    "мова": "es",
-    "заголовок": "",
-    "оригінал": "por favor !! quiten mis datos de tarjeta !! no me hagan ningun rebajo más !!! por favor, quiten la suscripción !!! pague, y nada fue lo que esperaba, ya desinstale esa app... porfavor gracias",
-    "українською": "будь ласка!! приберіть дані моєї картки!! не робіть з мене більше жодних списань!!! будь ласка, приберіть підписку!!! я заплатила, і нічого не було так, як я очікувала, я вже видалила цей застосунок... будь ласка, дякую.",
-    "розмітка": {
-      "категорія": "other",
-      "пріоритет": "P2",
-      "наступний крок": "route_to_human_review"
-    },
-    "нотатка": "головне прохання - видалити дані картки; це зобов'язання щодо персональних даних, не білінгова операція"
-  },
-  {
     "id": "gp:530e156f-6dc",
     "партія": "4",
     "дата": "2025-11-21",
@@ -1834,6 +1783,23 @@
       "наступний крок": "refund_and_cancel"
     },
     "нотатка": "ВІДГУК: Ich bin äußerst unzufrieden mit der App"
+  },
+  {
+    "id": "gp:6e6b2f03-db0",
+    "партія": "4",
+    "дата": "2026-05-02",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I received a fraud alert from my bank stating that Nebule charged me €49.99 without my authorization, even though I haven't paid for a subscription. Please stop charging my bank card! Otherwise, I will file a complaint.",
+    "українською": "Я отримала попередження про шахрайство від свого банку про те, що Nebula списала з мене 49,99€ без мого дозволу, при тому що я не платила за підписку. Будь ласка, припиніть списувати з моєї банківської картки! Інакше я подам скаргу.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "банк уже підняв сповіщення про шахрайство"
   },
   {
     "id": "gp:7bd07dcc-b85",
@@ -2618,6 +2584,23 @@
     "нотатка": "тиждень оплачено, а застосунок каже, що не оплачено - треба відновити доступ"
   },
   {
+    "id": "gp:a9836e23-588",
+    "партія": "4т",
+    "дата": "2025-11-30",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I have been charged £49.99 two months in a row as I cannot find anywhere how to cancel. It is no where to be found in my subscription list so I physically cannot cancel. It is money I cant afford to lose! I want a refund and it cancelling!",
+    "українською": "З мене два місяці підряд стягнули по 49,99 фунта, бо я ніде не можу знайти, як скасувати. Цього немає в переліку моїх підписок, тож я фізично не можу скасувати. Це гроші, втрату яких я не можу собі дозволити! Хочу повернення коштів і скасування!",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "£49,99 два місяці поспіль, не може собі дозволити"
+  },
+  {
     "id": "gp:bceaf4ac-614",
     "партія": "4т",
     "дата": "2026-09-07",
@@ -2633,6 +2616,23 @@
       "наступний крок": "refund_and_cancel"
     },
     "нотатка": "ДВІЙНИК gp:14528ce0-b72"
+  },
+  {
+    "id": "gp:c0c5de5b-921",
+    "партія": "4т",
+    "дата": "2025-08-04",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I cannot delete my subscription and have no been charged. I send a message from the web page to ask to cancel and it hasn't been done , I can't cancel through the website. this is very stressful. I would like a refund as I have no used the app.",
+    "українською": "Я не можу видалити свою підписку, і з мене стягнули кошти. Я надіслала повідомлення з вебсторінки з проханням скасувати — цього не зробили, а через сайт скасувати не виходить. Це дуже виснажує. Хотіла б повернення коштів, бо застосунком я не користувалася.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "межа ТИШІ: запит через сайт не виконано - йдеться про дію, не про відповідь"
   },
   {
     "id": "gp:e24258a9-c6a",

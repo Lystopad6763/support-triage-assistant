@@ -25,12 +25,38 @@
       "category_given_up": "charge_not_recognised"
     }
   ],
+  "fewshot_step_coverage_swaps": [
+    {
+      "step_gained": "route_to_human_review",
+      "into_fewshot": "gp:49399c13-8f7",
+      "out_to_dev": "gp:a9836e23-588",
+      "step_given_up": "refund_and_cancel",
+      "category_in": "other",
+      "category_out": "cancel_not_possible"
+    },
+    {
+      "step_gained": "explain_charge",
+      "into_fewshot": "gp:56a035fc-047",
+      "out_to_dev": "gp:c0c5de5b-921",
+      "step_given_up": "refund_and_cancel",
+      "category_in": "cancel_not_possible",
+      "category_out": "cancel_not_possible"
+    },
+    {
+      "step_gained": "escalate_to_authority_case",
+      "into_fewshot": "as:13231515887",
+      "out_to_dev": "gp:6e6b2f03-db0",
+      "step_given_up": "refund_and_cancel",
+      "category_in": "price_not_expected",
+      "category_out": "charge_not_recognised"
+    }
+  ],
   "language_presence_trades": [
     {
       "target": "fewshot",
       "language": "pt",
-      "from": "golden",
-      "in": "gp:5ca5ff8d-2e8",
+      "from": "dev",
+      "in": "gp:2c19c10a-02c",
       "out": "as:7007116489",
       "label_triple": "app_defect / P3 / bug_report",
       "priority_moved": false
@@ -39,68 +65,71 @@
   "composition": {
     "fewshot": {
       "категорія": {
-        "charge_not_recognised": 9,
-        "price_not_expected": 7,
-        "cancel_not_possible": 4,
+        "charge_not_recognised": 8,
+        "price_not_expected": 8,
+        "cancel_not_possible": 3,
         "app_defect": 2,
         "nothing_delivered": 2,
-        "other": 1
+        "other": 2
       },
       "пріоритет": {
         "P3": 15,
-        "P2": 7,
-        "P1": 3
+        "P2": 8,
+        "P1": 2
       },
       "наступний крок": {
-        "refund_and_cancel": 18,
+        "refund_and_cancel": 15,
         "bug_report": 3,
         "cancel_only": 3,
-        "redeliver": 1
+        "escalate_to_authority_case": 1,
+        "explain_charge": 1,
+        "redeliver": 1,
+        "route_to_human_review": 1
       },
       "мова": {
-        "en_or_unknown": 14,
-        "es": 5,
+        "en_or_unknown": 12,
+        "es": 6,
+        "de": 2,
         "fr": 2,
-        "de": 1,
         "hangul": 1,
         "pt": 1,
         "tr": 1
       },
       "магазин": {
-        "googleplay": 15,
-        "appstore": 10
+        "googleplay": 14,
+        "appstore": 11
       }
     },
     "dev": {
       "категорія": {
-        "charge_not_recognised": 67,
-        "price_not_expected": 41,
-        "cancel_not_possible": 26,
+        "charge_not_recognised": 68,
+        "price_not_expected": 40,
+        "cancel_not_possible": 27,
         "app_defect": 12,
         "nothing_delivered": 8,
-        "other": 3
+        "other": 2
       },
       "пріоритет": {
         "P3": 92,
-        "P2": 41,
-        "P1": 24
+        "P2": 40,
+        "P1": 25
       },
       "наступний крок": {
-        "refund_and_cancel": 115,
+        "refund_and_cancel": 118,
         "cancel_only": 20,
         "bug_report": 12,
-        "explain_charge": 3,
         "redeliver": 3,
-        "escalate_to_authority_case": 2,
-        "route_to_human_review": 2
+        "explain_charge": 2,
+        "escalate_to_authority_case": 1,
+        "route_to_human_review": 1
       },
       "мова": {
-        "en_or_unknown": 81,
-        "es": 33,
-        "pt": 13,
+        "en_or_unknown": 84,
+        "es": 32,
         "fr": 12,
-        "de": 6,
+        "pt": 12,
         "tr": 6,
+        "de": 5,
         "arabic": 2,
         "it": 2,
         "cyrillic": 1,
@@ -135,9 +164,9 @@
         "route_to_human_review": 2
       },
       "мова": {
-        "en_or_unknown": 127,
+        "en_or_unknown": 126,
         "es": 50,
-        "pt": 21,
+        "pt": 22,
         "fr": 13,
         "de": 6,
         "tr": 6,
@@ -149,8 +178,8 @@
         "thai": 1
       },
       "магазин": {
-        "googleplay": 135,
-        "appstore": 100
+        "googleplay": 136,
+        "appstore": 99
       }
     }
   },
