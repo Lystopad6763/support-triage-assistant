@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { MAX_CHARS } from './examples.js'
 import { CLASSIFY_EXAMPLES, VISIBLE_EXAMPLES } from './classifyExamples.js'
 import { CATEGORY_UA, STEP_UA, FACT_UA, PRIORITY_NOTE } from './labels.js'
-import Sheet from './components/Sheet.jsx'
 
 /**
  * Task 1 on the same page as Task 2: one ticket in, three labels out.
@@ -12,10 +11,11 @@ import Sheet from './components/Sheet.jsx'
  * can be trusted - the words the model quoted, the facts it enumerated before
  * it chose a priority, and whether either of those contradicts the answer.
  *
- * The sheet on the right is the vocabulary the model was given, rendered from
- * the same file the prompt renders from. With an answer on screen it marks the
- * test that fired, the fact that set the priority and the row of the table that
- * allowed the step - so the label can be checked instead of believed.
+ * The vocabulary is NOT on this page. It was, in a column on the right, and it
+ * made the answer harder to read rather than easier: twenty-two definitions
+ * beside three labels is a reference competing with the thing it explains. It
+ * lives in docs/TRIAGE.md now, where it can be read without an answer in the
+ * way.
  *
  * The review strip is NOT a confidence threshold. `confidence` averaged 0.86
  * when the answer was right and 0.87 when it was wrong, so it is printed as a
@@ -86,7 +86,7 @@ export default function Classify() {
   const over = ticket.length > MAX_CHARS
 
   return (
-    <div className="page wide">
+    <div className="page">
       <header>
         <h1>Звернення на вході, три мітки на виході</h1>
         <p className="lede">
@@ -97,159 +97,154 @@ export default function Classify() {
         </p>
       </header>
 
-      <div className="split">
-        <div className="col">
-          <form onSubmit={submit}>
-            <div className="composer">
-              <textarea
-                ref={box}
-                value={ticket}
-                onChange={e => setTicket(e.target.value)}
-                onKeyDown={onKeyDown}
-                placeholder="Вставте сюди звернення клієнта…"
-                spellCheck={false}
-              />
-              <div className="row">
-                <div className="row-left">
-                  <span className={over ? 'count over' : 'count'}>
-                    {ticket.length.toLocaleString('uk')} / {MAX_CHARS.toLocaleString('uk')}
-                  </span>
-                  <span className="kbd-hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></span>
-                  {ticket && (
-                    <button type="button" className="ghost" onClick={clear}>
-                      Очистити
-                    </button>
-                  )}
-                </div>
-                <button type="submit" className="primary"
-                        disabled={busy || !ticket.trim() || over}>
-                  {busy ? 'Класифікую…' : 'Класифікувати'}
-                </button>
-              </div>
-            </div>
-          </form>
-
-          {!result && !busy && (
-            <div className="examples">
-              <span className="examples-label">Тікети з відгуків у сторах:</span>
-              {(allExamples ? CLASSIFY_EXAMPLES : CLASSIFY_EXAMPLES.slice(0, VISIBLE_EXAMPLES)).map(e => (
-                <button key={e.id} className="chip" title={e.text}
-                        onClick={() => useExample(e.text)}>
-                  {e.label}
-                </button>
-              ))}
-              {!allExamples && CLASSIFY_EXAMPLES.length > VISIBLE_EXAMPLES && (
-                <button className="chip more" onClick={() => setAllExamples(true)}>
-                  Більше ({CLASSIFY_EXAMPLES.length - VISIBLE_EXAMPLES})
+      <form onSubmit={submit}>
+        <div className="composer">
+          <textarea
+            ref={box}
+            value={ticket}
+            onChange={e => setTicket(e.target.value)}
+            onKeyDown={onKeyDown}
+            placeholder="Вставте сюди звернення клієнта…"
+            spellCheck={false}
+          />
+          <div className="row">
+            <div className="row-left">
+              <span className={over ? 'count over' : 'count'}>
+                {ticket.length.toLocaleString('uk')} / {MAX_CHARS.toLocaleString('uk')}
+              </span>
+              <span className="kbd-hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></span>
+              {ticket && (
+                <button type="button" className="ghost" onClick={clear}>
+                  Очистити
                 </button>
               )}
             </div>
-          )}
+            <button type="submit" className="primary"
+                    disabled={busy || !ticket.trim() || over}>
+              {busy ? 'Класифікую…' : 'Класифікувати'}
+            </button>
+          </div>
+        </div>
+      </form>
 
-          {busy && (
-            <div className="working"><span className="spinner" /> Класифікую…</div>
-          )}
-
-          {error && <div className="banner error"><strong>{error}</strong></div>}
-
-          {result && (
-            <main className="result">
-              {result.review?.needed && (
-                <div className="banner warn">
-                  <strong>На розгляд людини</strong>
-                  <ul className="flags">
-                    {result.review.flags.map(f => (
-                      <li key={f.code}><code>{f.code}</code> — {f.why}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              <section className="labels">
-                <div className="label">
-                  <span className="label-key">категорія</span>
-                  <span className="label-value">
-                    {CATEGORY_UA[result.category] || result.category}
-                  </span>
-                  <code>{result.category}</code>
-                </div>
-                <div className={`label pri ${result.priority}`}>
-                  <span className="label-key">пріоритет</span>
-                  <span className="label-value">{result.priority}</span>
-                  <code>{PRIORITY_NOTE[result.priority]}</code>
-                </div>
-                <div className="label">
-                  <span className="label-key">наступний крок</span>
-                  <span className="label-value">
-                    {STEP_UA[result.next_step] || result.next_step}
-                  </span>
-                  <code>{result.next_step}</code>
-                </div>
-              </section>
-
-              <section className="card">
-                <h2>Чому такий пріоритет</h2>
-                {result.priority_facts.length === 0 ? (
-                  <p className="note">
-                    Жодного факту терміновості не названо — а це нормальна
-                    відповідь для 58% звернень, не збій. Порожній перелік
-                    означає P3.
-                  </p>
-                ) : (
-                  <ul className="facts">
-                    {result.priority_facts.map(f => (
-                      <li key={f}><code>{f}</code> {FACT_UA[f] || ''}</li>
-                    ))}
-                  </ul>
-                )}
-                {result.secondary_categories.length > 0 && (
-                  <p className="note">
-                    Звернення торкається також:{' '}
-                    {result.secondary_categories
-                      .map(c => CATEGORY_UA[c] || c).join(', ')}.
-                    Це підказка людині, а не друга відповідь.
-                  </p>
-                )}
-              </section>
-
-              <section className="card">
-                <h2>
-                  Підстава
-                  {result.evidence_verbatim === false && (
-                    <span className="lang-note">цитати немає в тексті</span>
-                  )}
-                </h2>
-                {result.evidence
-                  ? <blockquote className={result.evidence_verbatim === false ? 'bad' : ''}>
-                      {result.evidence}
-                    </blockquote>
-                  : <p className="note">Модель не навела цитати.</p>}
-                <p className="note">{result.rationale}</p>
-              </section>
-
-              <div className="meta">
-                <span>модель {result.meta.model}</span>
-                <span className="dim">промпт {result.meta.prompt}</span>
-                <span className="dim">{result.meta.latency_ms} мс</span>
-                <span className="dim">${result.meta.cost_usd.toFixed(6)}</span>
-                <span className="dim">впевненість {result.confidence}</span>
-                {result.meta.repaired && <span className="dim">JSON полагоджено</span>}
-                {result.meta.attempts > 1 && (
-                  <span className="dim">спроб {result.meta.attempts}</span>
-                )}
-              </div>
-              <p className="note">
-                Впевненість показана, але ні на що не впливає: на нашому наборі
-                вона дорівнювала 0,86 коли модель мала рацію і 0,87 коли
-                помилялась. Маршрутизацію вирішують п'ять перевірок праворуч, а
-                не це число.
-              </p>
-            </main>
+      {!result && !busy && (
+        <div className="examples">
+          <span className="examples-label">Тікети з відгуків у сторах:</span>
+          {(allExamples
+            ? CLASSIFY_EXAMPLES
+            : CLASSIFY_EXAMPLES.slice(0, VISIBLE_EXAMPLES)).map(e => (
+            <button key={e.id} className="chip" title={e.text}
+                    onClick={() => useExample(e.text)}>
+              {e.label}
+            </button>
+          ))}
+          {!allExamples && CLASSIFY_EXAMPLES.length > VISIBLE_EXAMPLES && (
+            <button className="chip more" onClick={() => setAllExamples(true)}>
+              Більше ({CLASSIFY_EXAMPLES.length - VISIBLE_EXAMPLES})
+            </button>
           )}
         </div>
+      )}
 
-        <Sheet result={result} />
-      </div>
+      {busy && (
+        <div className="working"><span className="spinner" /> Класифікую…</div>
+      )}
+
+      {error && <div className="banner error"><strong>{error}</strong></div>}
+
+      {result && (
+        <main className="result">
+          {result.review?.needed && (
+            <div className="banner warn">
+              <strong>На розгляд людини</strong>
+              <ul className="flags">
+                {result.review.flags.map(f => (
+                  <li key={f.code}><code>{f.code}</code> — {f.why}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <section className="labels">
+            <div className="label">
+              <span className="label-key">категорія</span>
+              <span className="label-value">
+                {CATEGORY_UA[result.category] || result.category}
+              </span>
+              <code>{result.category}</code>
+            </div>
+            <div className={`label pri ${result.priority}`}>
+              <span className="label-key">пріоритет</span>
+              <span className="label-value">{result.priority}</span>
+              <code>{PRIORITY_NOTE[result.priority]}</code>
+            </div>
+            <div className="label">
+              <span className="label-key">наступний крок</span>
+              <span className="label-value">
+                {STEP_UA[result.next_step] || result.next_step}
+              </span>
+              <code>{result.next_step}</code>
+            </div>
+          </section>
+
+          <section className="card">
+            <h2>Чому такий пріоритет</h2>
+            {result.priority_facts.length === 0 ? (
+              <p className="note">
+                Жодного факту терміновості не названо — а це нормальна відповідь
+                для 58% звернень, не збій. Порожній перелік означає P3.
+              </p>
+            ) : (
+              <ul className="facts">
+                {result.priority_facts.map(f => (
+                  <li key={f}><code>{f}</code> {FACT_UA[f] || ''}</li>
+                ))}
+              </ul>
+            )}
+            {result.secondary_categories.length > 0 && (
+              <p className="note">
+                Звернення торкається також:{' '}
+                {result.secondary_categories
+                  .map(c => CATEGORY_UA[c] || c).join(', ')}.
+                Це підказка людині, а не друга відповідь.
+              </p>
+            )}
+          </section>
+
+          <section className="card">
+            <h2>
+              Підстава
+              {result.evidence_verbatim === false && (
+                <span className="lang-note">цитати немає в тексті</span>
+              )}
+            </h2>
+            {result.evidence
+              ? <blockquote className={result.evidence_verbatim === false ? 'bad' : ''}>
+                  {result.evidence}
+                </blockquote>
+              : <p className="note">Модель не навела цитати.</p>}
+            <p className="note">{result.rationale}</p>
+          </section>
+
+          <div className="meta">
+            <span>модель {result.meta.model}</span>
+            <span className="dim">промпт {result.meta.prompt}</span>
+            <span className="dim">{result.meta.latency_ms} мс</span>
+            <span className="dim">${result.meta.cost_usd.toFixed(6)}</span>
+            <span className="dim">впевненість {result.confidence}</span>
+            {result.meta.repaired && <span className="dim">JSON полагоджено</span>}
+            {result.meta.attempts > 1 && (
+              <span className="dim">спроб {result.meta.attempts}</span>
+            )}
+          </div>
+          <p className="note">
+            Впевненість показана, але ні на що не впливає: на нашому наборі вона
+            дорівнювала 0,86 коли модель мала рацію і 0,87 коли помилялась.
+            Маршрутизацію вирішують п'ять перевірок, а не це число — вони
+            описані в <code>docs/TRIAGE.md</code>.
+          </p>
+        </main>
+      )}
     </div>
   )
 }
