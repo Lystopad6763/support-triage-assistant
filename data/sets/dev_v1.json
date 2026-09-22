@@ -1,0 +1,2671 @@
+[
+  {
+    "id": "as:14144882371",
+    "партія": "0",
+    "дата": "2026-06-05",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "How do I delete the app on my iPhone ?",
+    "оригінал": "Scam with unknown charges on a daily basis!  Want my money back please!\n\n\nI thought I had cancelled my Nebula account but I guess I just got it off my screen and now I’m getting charged for it even after I have told them I’m 2 different texts that I have to cancel, but all they did was inactivate it so they are still charging me despite my communications with them!  I don’t know how to delete my Nebula account cause it is not active anymore.  Please help fix this issue please.  😡",
+    "українською": "Обман із невідомими списаннями щодня! Хочу свої гроші назад, будь ласка! Я думала, що скасувала свій акаунт Nebula, але, схоже, я просто забрала його з екрана, і тепер з мене стягують кошти — навіть після того, як я двома різними повідомленнями сказала їм, що мені потрібно скасувати. Усе, що вони зробили, — це деактивували його, тож вони й далі стягують з мене гроші, попри моє листування з ними! Я не знаю, як видалити свій акаунт Nebula, бо він уже не активний. Будь ласка, допоможіть це виправити, будь ласка. 😡",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:7c505c7d-711",
+    "партія": "0",
+    "дата": "2026-05-16",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "a child downloaded and said it was colorful. but I don't want or need it. how do I stop this app from charging me? it sucks. they're making it so difficult. can you please cancel this dumb expensive deceiveing ad and please.",
+    "українською": "Дитина завантажила і сказала, що воно яскраве. Але мені це не потрібно і я цього не хочу. Як зупинити списання за цей застосунок? Він поганий. Вони роблять це настільки складним. Можете, будь ласка, скасувати цю дурну дорогу рекламу, яка вводить в оману, будь ласка.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "дитина завантажила, грошей не просить - лише зупинити"
+  },
+  {
+    "id": "as:10554353137",
+    "партія": "1",
+    "дата": "2023-11-05",
+    "зірки": "2",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Plz help",
+    "оригінал": "I like the app just fine but I unsubscribed from this app three months ago and I am being charged $20 every month even though I’ve unsubscribed. When I go into my iCloud account under purchases or subscriptions it’s not there. Therefore Apple is not able to refund me my money and I’ve done everything on my end to make it stop but it will not stop charging me and I don’t know what to do. At this point I’ve spent $60 that I didn’t want to spend, and no way to solve the issue apparently. If someone from the neb team could please help me resolve this issue, it would be very much appreciated.",
+    "українською": "Застосунок мені цілком подобається, але я відписалась від нього три місяці тому, і з мене все одно списують 20 доларів щомісяця, попри те що я відписалась. Коли я заходжу в свій акаунт iCloud у покупки чи підписки — його там немає. Тому Apple не може повернути мені гроші, і я зробила все зі свого боку, щоб це припинити, але воно не припиняє списувати, і я не знаю, що робити. На цей момент я витратила 60 доларів, яких не хотіла витрачати, і, схоже, жодного способу вирішити це немає. Якщо хтось із команди Nebula міг би, будь ласка, допомогти мені це владнати, я була б дуже вдячна.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "Apple не може повернути - підписки немає в iCloud, тому тільки OBRIO"
+  },
+  {
+    "id": "as:11177670159",
+    "партія": "1",
+    "дата": "2024-04-19",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Request for Refund of Accidental Premium Subscription Charge",
+    "оригінал": "Dear Nebula Support Team,\n\nI hope this message finds you well. I am writing to request a refund for an accidental purchase of a premium subscription to your app. As a student, I misinterpreted the payment terms and was surprised to see my account billed $90 today, which I understand is the annual subscription fee. I was under the impression that the billing would occur weekly at approximately $2 per week.\n\nThis subscription was purchased just a few minutes ago, and I have not utilized any premium features since the charge. I would greatly appreciate if you could assist by cancelling my subscription and processing a full refund.\n\nPlease let me know if you need any further information from my side to facilitate the refund. I look forward to your prompt response to resolve this issue.\n\nThank you very much for your understanding and help.\n\nBest regards",
+    "українською": "Шановна команда підтримки Nebula, сподіваюсь, цей лист застане вас у доброму здоров'ї. Звертаюсь із проханням повернути кошти за випадкову покупку преміум-підписки на ваш застосунок. Як студент, я неправильно зрозумів умови оплати і був здивований, побачивши сьогодні списання 90$, що, як я розумію, є річною вартістю підписки. Я був під враженням, що оплата стягуватиметься щотижня приблизно по 2$ на тиждень. Цю підписку було придбано буквально кілька хвилин тому, і я не користувався жодними преміум-функціями після списання. Я був би дуже вдячний, якби ви могли допомогти, скасувавши мою підписку і обробивши повне повернення. Будь ласка, дайте знати, якщо вам потрібна додаткова інформація з мого боку, щоб пришвидшити повернення. Чекаю на вашу швидку відповідь для вирішення цього питання. Дуже дякую за ваше розуміння і допомогу. З найкращими побажаннями.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "$90 рік замість ~$2/тиждень, куплено хвилини тому"
+  },
+  {
+    "id": "as:12139432437",
+    "партія": "1",
+    "дата": "2025-01-03",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Unauthorised Payment",
+    "оригінал": "I would like to inform you that I have been charged false amount of money. I’m very thorough with processing payment. It supposed to be charged $1 USD then I have to dispute unauthorised payment of $49+ AUD. I am wondering if this app is actually SCAM. \nPlease explain and give my money back!!!!",
+    "українською": "Хочу повідомити, що з мене списали неправильну суму. Я дуже уважно ставлюсь до платежів. Мало бути списано 1 долар США, а тепер мені доводиться оскаржувати несанкціонований платіж на 49+ австралійських доларів. Мені цікаво, чи цей застосунок справді ШАХРАЙСТВО. Будь ласка, поясніть і поверніть мої гроші!!!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "чарджбек уже відкрито"
+  },
+  {
+    "id": "as:12492349671",
+    "партія": "1",
+    "дата": "2025-04-01",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Refund me",
+    "оригінал": "I have been charge $150 on my credit card, without using the app, the same day that I opened it as a trial. Please refund me immediately!",
+    "українською": "З моєї кредитної картки списали 150$, хоча я не користувався застосунком, того самого дня, коли я відкрив його як пробний. Будь ласка, негайно поверніть мені кошти!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "as:12503933031",
+    "партія": "1",
+    "дата": "2025-04-04",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "fr",
+    "заголовок": "Prélèvements exorbitants",
+    "оригінал": "J’ai téléchargé UNE FOIS l’application par curiosité et je l’ai vite supprimée car après l’essai gratuit oui si vous oubliez de vous désabonner ils vous prélèvent 39€/ mois ce qui est énorme surtout quand on y va jamais !!\nJ’ai supprimé l’application y’a un mois pensant être tranquille et aujourd’hui BOUM un autre prélèvement de 39€ via Apple pay encore !\nLe truc c’est que là je suis dans une galère pas possible et c’est tout ce qu’il me restait sur mon compte pour payer mon forfait de téléphone et faire 3 courses pour manger !! \n\nJe demande un remboursement au plus vite au moins pour les deux derniers prélèvements car c’est inadmissible qu’on ne puisse pas arrêter quand on le veut ! \nJe VEUX qu’on me rembourse les derniers prélèvements au plus vite + je veux l’assurance que je n’en aurai plus aucun autre !!!\n\nC’est hallucinant qu’on ne puisse pas arrêter ça de nous même \n\nMerci d’avance !\n\nAllez 2 mois plus tard je remets le MÊME AVIS !!!! \n\nNE PAYEZ JAMAIS JAMAIS RIEN ICI !! \nJ’ai encore 39€ qui ont été prélevés sur mon compte aujourd’hui à l’instant !! Ils n’arrêtent pas de le faire ! J’en peux plus !\nJe viens d’être payée et c’était mon budget pour faire des courses et maintenant comment je vais faire ??? Je vais pas manger !!!!\nJ’ai désinstallé l’Application y’a des mois de ça je ne l’ai utilisée qu’une seule fois la première fois par curiosité les montants m’ayant considérablement refroidi j’ai enlevé l’application direct et pourtant les prélèvements continuent comment je fais ??? Vous n’avez rien fait pour moi il y’a des mois de ça c’est une HONTE !!! \nJe demande le REMBOURSEMENT COMPLET DE TOUT LES PRÉLÈVEMENTS que vous avez fait sur mon compte ! \nIl est hors de question que je meure de faim pour rien à cause d’une application à la **** \nJe suis si en colère ! \nJe vais vous faire de la pub partout !\nSi le problème est pas réglé IMMÉDIATEMENT je raconte ça partout et je vous descend au plus bas ! \nC’est honteux vraiment !\n\n04/04/2025",
+    "українською": "Я завантажила застосунок ОДИН РАЗ з цікавості і швидко його видалила, бо після безкоштовного пробного періоду — так, якщо ви забудете відписатись, вони знімають з вас 39€/місяць, що є величезною сумою, особливо коли ти туди взагалі не заходиш!! Я видалила застосунок місяць тому, думаючи, що я в безпеці, і сьогодні БУМ — ще одне списання 39€ знову через Apple Pay! Річ у тім, що зараз я в неймовірній скруті, і це було все, що лишалось на рахунку, щоб заплатити за телефон і купити трохи їжі!! Я прошу повернення якнайшвидше, принаймні за два останні списання, бо це неприпустимо, що неможливо зупинити це, коли хочеш! Я ХОЧУ, щоб мені повернули останні списання якнайшвидше + хочу гарантію, що більше жодних не буде!!! Це неймовірно, що неможливо зупинити це самостійно. Дякую заздалегідь! Ну от, через 2 місяці публікую ТОЙ САМИЙ ВІДГУК!!!! НІКОЛИ НІЧОГО ТУТ НЕ ПЛАТІТЬ!! У мене сьогодні щойно знову списали 39€ з рахунку!! Вони не припиняють це робити! Я більше не можу! Мені щойно виплатили зарплату, і це був мій бюджет на продукти, а тепер що мені робити??? Я не буду їсти!!!! Я видалила застосунок багато місяців тому, користувалась ним лише один раз уперше з цікавості, суми мене неабияк відлякали, я одразу видалила застосунок, і все одно списання тривають — що мені робити??? Ви нічого для мене не зробили тоді, багато місяців тому, це ГАНЬБА!!! Я вимагаю ПОВНОГО ПОВЕРНЕННЯ ВСІХ СПИСАНЬ, які ви зробили з мого рахунку! Не може бути й мови, щоб я померла з голоду ні за що через застосунок. Я така зла! Я розповім про вас усюди! Якщо проблему не вирішать НЕГАЙНО, я розкажу це всюди і опущу вас на саме дно! Це справді ганебно! 04.04.2025",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "пробний прийнято, скасування не було: видалила застосунок, не акаунт - тому 2, а не 1; hardship: все, що лишалось на телефон і їжу; ВІДГУК: NE PAYEZ JAMAIS RIEN ICI"
+  },
+  {
+    "id": "as:12669241957",
+    "партія": "1",
+    "дата": "2025-05-18",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cobros excesivos",
+    "оригінал": "Desde que revisé la app el día que la descargue comprobé que no estaba la suscripción activada, es más no aparece en mis suscripciones activas, aún así me han cobrado 39,90 por una semana. Nunca la usé por que está todo en inglés.\nQuiero que me devuelvan el dinero!!!",
+    "українською": "Відколи я переглянула застосунок у день, коли його завантажила, я переконалась, що підписка не активована, ба більше — її немає в моїх активних підписках, і все одно з мене списали 39,90 за тиждень. Я ніколи ним не користувалась, бо там усе англійською. Я хочу, щоб мені повернули гроші!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "as:12988941657",
+    "партія": "1",
+    "дата": "2025-08-07",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Unpermitted charges",
+    "оригінал": "I have been deducted my money yet I only used the trial and now the app has no option to unsubscribe.Please fix it  so frustrated",
+    "українською": "З мене зняли гроші, хоча я користувався лише пробним періодом, а тепер у застосунку немає опції відписатись. Будь ласка, виправте це, дуже дратує.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "списали за пробний"
+  },
+  {
+    "id": "as:13605550166",
+    "партія": "1",
+    "дата": "2026-01-07",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "pt",
+    "заголовок": "Cobranças indevidas",
+    "оригінал": "Venho, por meio deste, registrar reclamação formal acerca de cobranças recorrentes indevidas realizadas em minha fatura.\n\nAo realizar o cadastro/utilização do aplicativo, foi solicitado apenas um pagamento inicial no valor de US$ 1,00, o qual autorizei exclusivamente para fins de teste/verificação. Em nenhum momento autorizei, contratei ou fui informado de forma clara sobre cobranças recorrentes ou valores superiores aos mencionados inicialmente.\n\nApesar disso, venho sendo surpreendido com lançamentos recorrentes de valores significativamente maiores, referentes a serviços que não solicitei, não utilizei e com os quais não concordo.\n\nDiante do exposto, exijo:\n\t1.\tCancelamento imediato de qualquer assinatura ou cobrança recorrente vinculada à minha conta;\n\t2.\tEstorno integral de todos os valores cobrados indevidamente, desde o primeiro lançamento não autorizado;\n\t3.\tConfirmação formal, por escrito, de que nenhuma nova cobrança será efetuada.\n\nRessalto que a prática configura cobrança indevida, conforme previsto no Código de Defesa do Consumidor (art. 39 e art. 42), o que me assegura o direito à restituição dos valores pagos.\n\nAguardo solução imediata. Caso não haja retorno ou resolução em prazo razoável, tomarei as medidas cabíveis junto aos órgãos de defesa do consumidor e demais instâncias competentes.",
+    "українською": "Цим подаю офіційну скаргу щодо неправомірних регулярних списань у моєму рахунку. Під час реєстрації/використання застосунку було запитано лише початковий платіж у розмірі 1,00 долара США, який я дозволив виключно для цілей тестування/перевірки. Я в жодний момент не давав дозволу, не укладав договору і не був чітко поінформований про регулярні списання чи суми, більші за початково зазначені. Попри це, мене несподівано спіткали регулярні списання значно більших сум за послуги, яких я не замовляв, не використовував і з якими не погоджуюсь. З огляду на викладене, вимагаю: 1. Негайного скасування будь-якої підписки чи регулярного списання, пов'язаного з моїм рахунком; 2. Повного повернення всіх неправомірно списаних сум, починаючи з першого несанкціонованого списання; 3. Офіційного письмового підтвердження, що жодних нових списань не буде. Наголошую, що така практика становить неправомірне стягнення відповідно до Кодексу захисту прав споживачів (ст. 39 і ст. 42), що забезпечує мені право на повернення сплачених коштів. Чекаю негайного вирішення. У разі відсутності відповіді чи вирішення в розумний строк вживу належних заходів через органи захисту прав споживачів та інші компетентні інстанції.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "escalate_to_authority_case"
+    },
+    "нотатка": "офіційна претензія з посиланням на CDC ст.39 і 42"
+  },
+  {
+    "id": "as:13607579600",
+    "партія": "1",
+    "дата": "2026-01-08",
+    "зірки": "4",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "App Having Trouble Loading",
+    "оригінал": "I haven't used this app in a while and I tried going into the app. It would exit without loading. It just started doing this issue for me and it still won't load. Please help to fix this issue for me so I can use this app without it doing this same issue",
+    "українською": "Я давно не користувався цим застосунком і спробував у нього зайти. Він вилітає, не завантажившись. Це щойно почало так робити і досі не завантажується. Будь ласка, допоможіть виправити цю проблему, щоб я міг користуватись застосунком без того самого збою.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "вилітає без завантаження"
+  },
+  {
+    "id": "as:14252277944",
+    "партія": "1",
+    "дата": "2026-07-02",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "han",
+    "заголовок": "骗子软件",
+    "оригінал": "上面显示是三天免费试用，结果一下载就扣了363，退款也被拒绝了 ，I was misled by the interface into an accidental subscription, losing 363 RMB. Apple refused a refund, and your response was just \"we'll look into it\" with no real action. If you can collect the payment, why not refund it? Please stop the runaround and solve this issue.",
+    "українською": "Зверху було написано три дні безкоштовного пробного періоду, а щойно я завантажив — списали 363, і в поверненні теж відмовили. Мене ввів в оману інтерфейс, і я випадково оформив підписку, втративши 363 юані. Apple відмовила в поверненні, а ваша відповідь була просто «ми розберемось» без жодних реальних дій. Якщо ви можете забрати платіж, чому не можете його повернути? Будь ласка, припиніть цю тяганину і вирішіть це питання.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "Apple відмовила; їхня відповідь була we'll look into it без дії"
+  },
+  {
+    "id": "as:14322764387",
+    "партія": "1",
+    "дата": "2026-07-19",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Accidental annual subscription",
+    "оригінал": "Hi, I was only trying to start the free trial to test the app, and I don’t know how I ended up being charged for an annual subscription. I never intended to purchase the yearly plan. I don't need it. Could you please help me understand what happened and assist me with a refund? I contacted apple but the request was diclined as it went through third party. I would really appreciate your help. Thank you.",
+    "українською": "Вітаю, я лише намагався запустити безкоштовний пробний період, щоб протестувати застосунок, і не знаю, як у підсумку з мене списали за річну підписку. Я не мав наміру купувати річний план. Він мені не потрібен. Чи могли б ви, будь ласка, допомогти мені зрозуміти, що сталось, і посприяти з поверненням коштів? Я звертався в Apple, але запит відхилили, бо платіж пройшов через третю сторону. Я був би дуже вдячний за вашу допомогу. Дякую.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "Apple відмовила бо third party"
+  },
+  {
+    "id": "as:6986478942",
+    "партія": "1",
+    "дата": "2021-02-12",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Dear nebul",
+    "оригінал": "I cant get ur email but Prishtina is not a serbian city is a Kosova city please fix that other wise i will no be using ur app",
+    "українською": "Я не можу знайти вашу пошту, але Приштина — це не сербське місто, це місто Косова, будь ласка, виправте це, інакше я не буду користуватись вашим застосунком.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "Приштина позначена сербським містом"
+  },
+  {
+    "id": "as:8098580596",
+    "партія": "1",
+    "дата": "2021-12-05",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Bug needs to be fixed",
+    "оригінал": "My birthday is in [BirthDate] and if I go anywhere from [BirthDate] and up it goes to [BirthDate] so when I do my birthday it shows [BirthDate]. Please fix this because it worked once then I found out my birthdate time was wrong so I went to fix it and sense then it goes to 2008. So now I have a different moon sign and sun sign. (I’m not really good at all this stuff so if I said something wrong sorry) please fix this",
+    "українською": "Мій день народження [BirthDate], і якщо я йду будь-куди від [BirthDate] і вище, воно переходить на [BirthDate], тож коли я ставлю свій день народження, воно показує [BirthDate]. Будь ласка, виправте це, бо воно спрацювало один раз, а потім я виявив, що час мого народження був неправильний, тож я пішов це виправити, і відтоді воно переходить на 2008. Тепер у мене інший місячний знак і сонячний знак. (Я не дуже добре на цьому розуміюсь, тож вибачте, якщо сказав щось не так.) Будь ласка, виправте це.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "той самий баг дати народження"
+  },
+  {
+    "id": "gp:00ba66b2-f3e",
+    "партія": "1",
+    "дата": "2026-03-20",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "it",
+    "заголовок": "",
+    "оригінал": "MI SONO RITROVATA CON 49 EURO IN MENO SUL CONTO ... SENZA SAPERE PERCHE. NON È SPECIFICATO CHE SI ATTIVA L'ABBONAMENTO ORA CHIEDO IL RIMBORSO. COME FACCIO?",
+    "українською": "Я виявила, що на рахунку на 49 євро менше... не знаючи чому. Ніде не вказано, що активується підписка. Тепер я прошу повернення. Як мені це зробити?",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "не було вказано, що активується підписка"
+  },
+  {
+    "id": "gp:0b5e5d1c-943",
+    "партія": "1",
+    "дата": "2023-09-15",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I tried to cancel my free trial but you guys make it impossible to do so, I'm in South Africa so that $9 amounts to R190 which is alot of money. Please refund my money as I did message on the app how to cancel my trial and no one helped me.  On Google Play there isn't subscription or payments that show for Nebula so I think that's very unethical. Please refund me my money back. I'm very unhappy as you guys make it impossible for people to cancle their free trial.",
+    "українською": "Я намагалась скасувати свій безкоштовний пробний період, але ви робите це неможливим. Я в Південній Африці, тож ці 9$ — це 190 рандів, а це багато грошей. Будь ласка, поверніть мої гроші, бо я писала в застосунку, як скасувати пробний період, і ніхто не допоміг. У Google Play немає жодної підписки чи платежів, які показувались би для Nebula, тож я вважаю це вкрай неетичним. Будь ласка, поверніть мені мої гроші. Я дуже незадоволена, бо ви робите неможливим для людей скасувати свій безкоштовний пробний період.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "межа тиші: no one helped me"
+  },
+  {
+    "id": "gp:139c393f-3cd",
+    "партія": "1",
+    "дата": "2024-08-07",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Could I please get my subscription cancelled? I don't know how since there is nowhere on the app for the cancellation option. I uninstalled the app almost 2 years ago, and I'm still charged. Please, I don't mind what you've taken, but please stop taking it from now on. It's almost $50 AUS money. Thank you.",
+    "українською": "Чи міг би я, будь ласка, скасувати свою підписку? Я не знаю як, бо в застосунку ніде немає опції скасування. Я видалив застосунок майже 2 роки тому, і з мене досі списують. Будь ласка, я не проти того, що ви вже забрали, але, будь ласка, припиніть забирати відтепер. Це майже 50 австралійських доларів. Дякую.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "чистий приклад: прямо каже, що грошей не хоче - лише припинити списання"
+  },
+  {
+    "id": "gp:1504d565-5fe",
+    "партія": "1",
+    "дата": "2026-04-20",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Please ,I need my $42.99 back Why did you automatically deduct such amount from my card without my notice ? Please ,kindly refund it back as soon as possible . Thanks",
+    "українською": "Будь ласка, мені потрібні мої 42,99$ назад. Чому ви автоматично списали таку суму з моєї картки без мого відома? Будь ласка, будьте ласкаві повернути її якнайшвидше. Дякую.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:18b09e98-d5f",
+    "партія": "1",
+    "дата": "2026-02-05",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Exijo a devolução do pagamento indevido no meu cartão de crédito. Foi devolvido e estão cobrando novamente. Vai ser preciso contatar toda semana pra cancelarem de vez???",
+    "українською": "Вимагаю повернення неправомірного платежу на моїй кредитній картці. Його повернули, і тепер списують знову. Що, треба буде звертатись щотижня, щоб ви нарешті скасували??",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "уже повертали і списали знову"
+  },
+  {
+    "id": "gp:18d1c785-e94",
+    "партія": "1",
+    "дата": "2024-10-04",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Ya no estoy ocupando la aplicación, por favor ya no me cobren más, me cobraron hace poco el dinero, necesito que me la devuelvan, gracias 😊",
+    "українською": "Я вже не користуюсь застосунком, будь ласка, більше не списуйте з мене, нещодавно з мене зняли гроші, мені потрібно, щоб ви їх повернули, дякую 😊",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:1b4b7c70-fcb",
+    "партія": "1",
+    "дата": "2024-08-20",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Cancelé la suscripción hace más de 5 días y HOY me quisieron cobrar $41.000. Exijo respuestas porque su sistema es espantosamente confuso. Definitivamente necesito que me solucionen este problema.",
+    "українською": "Я скасувала підписку понад 5 днів тому, а СЬОГОДНІ з мене хотіли списати 41 000$. Я вимагаю відповідей, бо ваша система жахливо заплутана. Мені однозначно потрібно, щоб ви вирішили цю проблему.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "me quisieron cobrar - спроба, гроші не зняті"
+  },
+  {
+    "id": "gp:2c19c10a-02c",
+    "партія": "1",
+    "дата": "2022-02-28",
+    "зірки": "4",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "Depois de data e horário de nascimento, aparece \"local de nascimento\" e eu escrevo o local, porém não consigo salvar, não sei o que tem, mas não consigo, conseguem resolver isso por favor? Me indicaram o app e acredito que seja maravilhoso mesmo, porém não consigo acessar ele, como expliquei acima.",
+    "українською": "Після дати й часу народження з'являється «місце народження», і я пишу місце, але не можу зберегти, не знаю в чому річ, але не виходить. Можете це вирішити, будь ласка? Мені порадили цей застосунок, і я вірю, що він справді чудовий, але я не можу в нього зайти, як пояснила вище.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "не зберігається місце народження"
+  },
+  {
+    "id": "gp:48493c4d-eea",
+    "партія": "1",
+    "дата": "2025-09-17",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "you made 2 unauthorised charges from me , you not even providing me with receipts for those 2 unauthorised charges. this is scamming, I want my money back, please, from both unauthorised charges by you 17th August 2025 amount €29.25. 16th September 2025 amount €39 how can you scamming people like this?",
+    "українською": "ви зробили з мене 2 несанкціоновані списання, і навіть не надали мені чеків за ці 2 несанкціоновані списання. це шахрайство, я хочу свої гроші назад, будь ласка, за обидва несанкціоновані списання з вашого боку: 17 серпня 2025 на суму €29,25 і 16 вересня 2025 на суму €39. як ви можете так обманювати людей?",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "просить також чеки за два списання - дати й суми названі"
+  },
+  {
+    "id": "gp:56a035fc-047",
+    "партія": "1",
+    "дата": "2025-12-24",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Where do I cancel? How can you can charge per minute if you are sending an offline message? Same rate as if they're online? Rip off? Not to mention the the expensive package",
+    "українською": "Де мені скасувати? Як ви можете списувати похвилинно, якщо ви надсилаєте офлайн-повідомлення? За тим самим тарифом, ніби вони онлайн? Обдирання? Не кажучи вже про дорогий пакет.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "explain_charge"
+    },
+    "нотатка": "питає, чому тарифікують хвилини за офлайн-повідомлення"
+  },
+  {
+    "id": "gp:588c4a69-185",
+    "партія": "1",
+    "дата": "2025-12-01",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I downloaded this app and didn't even subscribe. I tried to cancel but it still keeps deducting money from my account. I would like my money back please. I am unemployed 😭",
+    "українською": "Я завантажила цей застосунок і навіть не підписувалась. Я намагалась скасувати, але він усе одно продовжує знімати гроші з мого рахунку. Я хотіла б отримати свої гроші назад, будь ласка. Я безробітна 😭",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "I am unemployed - мій патерн hardship цього не ловить"
+  },
+  {
+    "id": "gp:6982ab67-2d8",
+    "партія": "1",
+    "дата": "2023-05-16",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I uploaded the app, unsubscribed and cancelled the same day ... within the hour (well before the end of the 3day free trial) and was still charged €34.99. Taking money from a credit card when it has been cancelled and not authorised, is concerning. Please contact me to refund me this charge and confirm no further charges will be taken. Thank you (I have sent an email as requested)",
+    "українською": "Я завантажила застосунок, відписалась і скасувала того ж дня... протягом години (задовго до кінця 3-денного безкоштовного пробного періоду), і з мене все одно списали €34,99. Знімати гроші з кредитної картки, коли підписку скасовано і дозволу не давали, — це насторожує. Будь ласка, зв'яжіться зі мною, щоб повернути це списання, і підтвердьте, що подальших списань не буде. Дякую (я надіслала листа, як ви просили).",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "скасувала протягом години, списали 34,99"
+  },
+  {
+    "id": "gp:74629d00-2a9",
+    "партія": "1",
+    "дата": "2025-05-07",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I would like to cancel my subscription and I don't have any idea how. this information is already known. I don't need it and I can't afford it. please help me to cancel.",
+    "українською": "Я хотіла б скасувати підписку і не маю жодного уявлення як. Ця інформація вже відома. Вона мені не потрібна, і я не можу собі її дозволити. Будь ласка, допоможіть мені скасувати.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P1",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "can't afford it"
+  },
+  {
+    "id": "gp:76ce3375-5c2",
+    "партія": "1",
+    "дата": "2026-05-15",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "me descuenta dinero de mi tarjeta sin autorización. como solicito un reembolso?? por qué permiten este tipo de aplicaciones que estafan. donde se puede denunciar este tipo de robos??",
+    "українською": "з моєї картки знімають гроші без дозволу. як мені запросити повернення?? чому ви дозволяєте такі застосунки, які шахраюють. куди можна поскаржитись на такі крадіжки??",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "питає, куди скаржитись на такі застосунки"
+  },
+  {
+    "id": "gp:773442e1-d66",
+    "партія": "1",
+    "дата": "2026-05-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Nebula, I made a one time purchase to see what my soulmate would look like and instead you guys are billing me for an annual fee? Please cancel that request which keeps getting bounced but I have so far endured three sets of bank reversal charges and I cannot find a method of cancelling you or it!!! Grrrrr!!!",
+    "українською": "Nebula, я зробив разову покупку, щоб побачити, як виглядає моя споріднена душа, а ви натомість виставляєте мені річну плату? Будь ласка, скасуйте цей запит, який постійно відхиляється, але я вже витерпів три набори банківських комісій за повернення платежу, і не можу знайти способу скасувати ні вас, ні це!!! Грррр!!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "три поспіль відкати банку"
+  },
+  {
+    "id": "gp:7a0a15a2-04f",
+    "партія": "1",
+    "дата": "2022-08-28",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "So it started out alright the lady I spoke to was lovely. But I quickly ran out of credits and had to pay extra for credits on top of the subscription, speaking of subscription. I can't bloody find it anywhere which means I can't end it. So they continue to take my money with no way out. Do not recommend! Please fix this Nebula and refund my money or I will report the app.",
+    "українською": "Спочатку все було нормально, пані, з якою я спілкувалась, була мила. Але в мене швидко закінчились кредити, і довелось доплачувати за кредити понад підписку — до речі, про підписку. Я її ніде не можу знайти, а отже, не можу її припинити. Тож вони продовжують забирати мої гроші без жодного виходу. Не рекомендую! Будь ласка, виправте це, Nebula, і поверніть мої гроші, інакше я поскаржусь на застосунок.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "I will report the app - погроза без названого органу, тому не escalated_out; P2 дають триваючі списання; ВІДГУК: Do not recommend!"
+  },
+  {
+    "id": "gp:7b4c445b-6e7",
+    "партія": "1",
+    "дата": "2025-10-30",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "too short of a time. how do I unroll or unregister ? where do I go, or how do I stop this site from charging me ? I've already uninstalled the app...will that stop me from being charged ?",
+    "українською": "Надто короткий термін. Як мені скасувати реєстрацію чи відписатись? Куди мені йти, або як зупинити цей сайт від списання з мене? Я вже видалив застосунок... чи зупинить це списання з мене?",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:9b299d95-c20",
+    "партія": "1",
+    "дата": "2025-09-12",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I had installed the app some months ago and they charged 1dollar for a reading which was deducted from my account but when the service wasn't provided, I deleted the app but then I was still charged 19dollars for something I know nothing about. this isn't fair. I need a refund of the 19dollars. how do I go about it since I had deleted the app?",
+    "українською": "Я встановив застосунок кілька місяців тому, і вони списали 1 долар за читання, який зняли з мого рахунку, але коли послугу не надали, я видалив застосунок, а потім з мене все одно списали 19 доларів за щось, про що я нічого не знаю. Це несправедливо. Мені потрібне повернення 19 доларів. Як мені це зробити, якщо я вже видалив застосунок?",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "послугу за $1 не надали, потім ще $19 - недоставка тут вторинна"
+  },
+  {
+    "id": "gp:ca5733e1-343",
+    "партія": "1",
+    "дата": "2026-09-05",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "When can you resolve this issue? Because of this error, I was forced to cancel my card and have suffered damages. I expect this to be fixed immediately before I take this matter to the relevant authorities",
+    "українською": "Коли ви зможете вирішити цю проблему? Через цю помилку я був змушений заблокувати картку і зазнав збитків. Я очікую, що це буде виправлено негайно, перш ніж я передам справу до відповідних органів.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "НЕЯСНО: текст не каже, у чому був error; мусила закрити картку; погрожує органам"
+  },
+  {
+    "id": "gp:dcce2851-e69",
+    "партія": "1",
+    "дата": "2026-03-12",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "need a refund I never wanted to keep this app. I canceled it on the last day of trial and was still charged $54 please fix this",
+    "українською": "мені потрібне повернення, я ніколи не хотів залишати цей застосунок. Я скасував його в останній день пробного періоду, і з мене все одно списали 54 долари, будь ласка, виправте це.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "скасувала останнього дня пробного"
+  },
+  {
+    "id": "gp:f1d68076-170",
+    "партія": "1",
+    "дата": "2024-05-27",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "That's a total scam! They tricked me into signing up and subscribing. Don't do it. They charged my credit card $49.99 three times. Can you please cancel it and refund me right away?",
+    "українською": "Це чисте шахрайство! Вони обманом змусили мене зареєструватись і оформити підписку. Не робіть цього. Вони списали з моєї кредитки 49,99 доларів тричі. Можете, будь ласка, скасувати це і негайно повернути мені гроші?",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Don't do it - партія 1"
+  },
+  {
+    "id": "as:11949362926",
+    "партія": "2",
+    "дата": "2024-11-14",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "FREE TRIAL IS A SCAM",
+    "оригінал": "I tried the 3 day free trial and cancelled my subscription after 5 minutes and I saw a notification that it is charging me 2,590 for a year subscription!!! i did not even subscribed for that!! GIVE ME BACK MY MONEY!!!! IT WAS MY HARD WORK EARNED MONEY!!!!",
+    "українською": "Я спробувала 3-денний безкоштовний пробний період і скасувала підписку через 5 хвилин, і побачила сповіщення, що з мене списують 2590 за річну підписку!!! я навіть на це не підписувалась!! ПОВЕРНІТЬ МОЇ ГРОШІ!!!! ЦЕ БУЛИ МОЇ ЗАРОБЛЕНІ ТЯЖКОЮ ПРАЦЕЮ ГРОШІ!!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок FREE TRIAL IS A SCAM; сума звичайна в USD-еквіваленті, тому не large_amount; інших фактів немає"
+  },
+  {
+    "id": "as:12600791224",
+    "партія": "2",
+    "дата": "2025-04-29",
+    "зірки": "4",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Refund please!",
+    "оригінал": "Hello, I actually do like your app but I wanted to try a free trial and I dont know if my phone glitched but it charged me for the year. I requested a refund thru apple and they will not release it. Please do the right thing and give me a refund, I really want to try your app but will not if I get scammed like this. Please help.",
+    "українською": "Вітаю, мені справді подобається ваш застосунок, але я хотіла спробувати безкоштовний пробний період, і не знаю, чи глюкнув мій телефон, але з мене списали за рік. Я запросила повернення через Apple, і вони його не надають. Будь ласка, вчиніть правильно і поверніть мені кошти, я дуже хочу спробувати ваш застосунок, але не буду, якщо мене так обдурять. Будь ласка, допоможіть.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "Apple відмовила повертати"
+  },
+  {
+    "id": "as:13425069663",
+    "партія": "2",
+    "дата": "2025-11-21",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "pt",
+    "заголовок": "O pior aplicativo que já usei na minha vida",
+    "оригінал": "Ele não entregou o serviço que eu paguei, quero o dinheiro de volta! O aplicativo trava o tempo todo, nao tem nenhum conteúdo relevante.",
+    "українською": "Він не надав послуги, за яку я заплатила, хочу гроші назад! Застосунок весь час зависає, у ньому немає жодного релевантного контенту.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок O pior aplicativo que já usei na minha vida"
+  },
+  {
+    "id": "as:5966073491",
+    "партія": "2",
+    "дата": "2020-05-19",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "wrong ascendant.",
+    "оригінал": "hello, I was inside the application and put all my information and in the end, my parent is wrong. my ascendant on various maps is cancer, but it was like twins. I don't know now, which one is correct, but as I've done several, it has already given cancer many times. how do i change this?",
+    "українською": "вітаю, я була в застосунку і ввела всю свою інформацію, і в підсумку мій асцендент неправильний. Мій асцендент на різних картах — Рак, а тут вийшли Близнюки. Я не знаю тепер, який правильний, але оскільки я робила кілька разів, Рак виходив уже багато разів. Як мені це змінити?",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "асцендент показано неправильно"
+  },
+  {
+    "id": "as:7100042476",
+    "партія": "2",
+    "дата": "2021-03-14",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Terrible update with constant ads",
+    "оригінал": "I just updated the app and I’m quite disappointed. Not sure if they’re trying to force new users to upgrade to the lifetime plan but it’s horrible now. There's an ad/commercial pop-up every time I use a feature. Sometimes I have to close the app completely because it keeps glitching and the loading image freezes on my screen. I’m using an iPhone 11 Pro Max with the newest software so it’s not like I’m using an outdated phone. Please fix these bugs or go back to limiting ads ran on the app, it’s no longer user-friendly!",
+    "українською": "Я щойно оновив застосунок і доволі розчарований. Не знаю, чи вони намагаються змусити нових користувачів перейти на довічний план, але зараз це жахливо. Реклама вискакує щоразу, коли я користуюсь функцією. Іноді мені доводиться повністю закривати застосунок, бо він постійно глючить і картинка завантаження зависає на екрані. Я на iPhone 11 Pro Max з найновішою прошивкою, тож це не те щоб я користувався застарілим телефоном. Будь ласка, виправте ці баги або поверніться до обмеження реклами в застосунку, це вже не зручно для користувача!",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "ВІДГУК: заголовок Terrible update with constant ads"
+  },
+  {
+    "id": "as:7473868563",
+    "партія": "2",
+    "дата": "2021-06-17",
+    "зірки": "4",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Bug in app",
+    "оригінал": "The app is overall amazing. However, in the past 2 weeks, I am not able to open my conversations I’ve had with astrologers. I just got an alert that I had an answer to my question but the app gave me an error message saying “data couldn’t be read because it is missing”. I did not see any way to contact in the app. I paid for the question, but I cannot see the response. I thought about deleting and reinstalling the app, but I’m not sure if my info and past activities will transfer. Please help....",
+    "українською": "Загалом застосунок чудовий. Однак останні 2 тижні я не можу відкрити свої розмови з астрологами. Мені щойно прийшло сповіщення, що є відповідь на моє питання, але застосунок видав помилку: «дані не вдалося прочитати, бо їх бракує». Я не побачив жодного способу зв'язатись усередині застосунку. Я заплатив за питання, але не можу побачити відповідь. Я думав видалити і перевстановити застосунок, але не впевнений, чи перенесуться мої дані й минула активність. Будь ласка, допоможіть....",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "redeliver"
+    },
+    "нотатка": "заплатив за питання, відповідь не відкривається: data couldn't be read; ВІДГУК: The app is overall amazing"
+  },
+  {
+    "id": "gp:002a0d74-13d",
+    "партія": "2",
+    "дата": "2025-08-16",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "por error mi hijo le dio click en suscripción, yo no quiero esta suscripción, solicito su cancelacion y la devolución del dinero.",
+    "українською": "помилково мій син натиснув на підписку, я не хочу цієї підписки, прошу її скасувати і повернути гроші.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "син натиснув підписку помилково"
+  },
+  {
+    "id": "gp:5fa2d6fd-a34",
+    "партія": "2",
+    "дата": "2024-08-03",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I'm so furious as Nebula charged me 39 euros for a membership I haven't signed up to. As I definitely wouldn't pay that much money for Astrology services. Nebula, I want my money back right now, I haven't used your premium services at all, only your free daily horoscopes!",
+    "українською": "Я в люті, бо Nebula списала з мене 39 євро за членство, на яке я не підписувалась. Бо я точно не платила б такі гроші за астрологічні послуги. Nebula, я хочу свої гроші назад просто зараз, я взагалі не користувалась вашими преміум-послугами, лише вашими безкоштовними щоденними гороскопами!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:7e8f319c-459",
+    "партія": "2",
+    "дата": "2026-03-13",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "every time the psychic would go to answer me it would go busy and I never got an answer and the time would run out I even bought some extra credits and it never got transferred in very disappointed and I want my money back",
+    "українською": "щоразу, коли екстрасенс збирався мені відповісти, ставало «зайнято», і я так і не отримала відповіді, а час спливав. Я навіть купила додаткові кредити, і вони так і не перейшли. Дуже розчарована, і я хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "екстрасенс не відповів, час вийшов, докуплені кредити не зарахувались"
+  },
+  {
+    "id": "gp:b060380d-be8",
+    "партія": "2",
+    "дата": "2021-07-30",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Apenas acabo de instalar la aplicación y ya tengo un error. Cuando colocó mi fecha de nacimiento que es el 20/03 me pone como mi signo Aries, cuando debe ser Piscis, y no entiendo por qué, en la misma aplicación sale que el signo de Piscis se da a los/las que nacieron el 20 de marzo, y Aries en 21 de marzo, y a mi me pone Aries cuando soy de Piscis. Por favor ayudenme a cambiar eso, me frustra muchísimo :(",
+    "українською": "Я щойно встановила застосунок, і в мене вже помилка. Коли я вводжу свою дату народження — 20/03 — воно ставить мені знак Овен, хоча має бути Риби, і я не розумію чому. У тому самому застосунку написано, що знак Риби дається тим, хто народився 20 березня, а Овен — 21 березня, а мені ставить Овна, хоча я Риби. Будь ласка, допоможіть мені це змінити, мене це дуже дратує :(",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "20.03 показує Овна, хоча власний текст застосунку каже Риби"
+  },
+  {
+    "id": "gp:b638d64e-fa7",
+    "партія": "2",
+    "дата": "2025-06-11",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "the app 12 euros worth of credits for one reading cause the messages didn't come from the readers side. Only later when I restarted the app I saw she messaged me back but now I have 2 euros left and can't view the answers. I want my money back and I want my reading.",
+    "українською": "застосунок з'їв кредитів на 12 євро за одне читання, бо повідомлення не приходили з боку читача. Лише пізніше, коли я перезапустила застосунок, я побачила, що вона мені відповіла, але тепер у мене лишилось 2 євро і я не можу переглянути відповіді. Я хочу свої гроші назад і хочу своє читання.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "redeliver"
+    },
+    "нотатка": "12 євро кредитів згоріли, бо повідомлення читача не доходили"
+  },
+  {
+    "id": "gp:cd600b52-193",
+    "партія": "2",
+    "дата": "2024-02-19",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Scam, please help me cancel the subscription, the credit card keeps pay to nebula, but I didn't receive anything from this App or even find my own account. I really hate it!!!",
+    "українською": "Шахрайство, будь ласка, допоможіть мені скасувати підписку, з кредитної картки й далі йдуть платежі на Nebula, але я нічого не отримав від цього застосунку і навіть не можу знайти свій акаунт. Я справді це ненавиджу!!!",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "ВІДГУК: Scam + I really hate it"
+  },
+  {
+    "id": "gp:ebebbf88-507",
+    "партія": "2",
+    "дата": "2023-08-02",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I Attempted to use this again After being recommended But I did the trial and even though I tried to cancel it, some error came up and Now I was charged $8.95 for One Week?? What the hell is that!! How do I get a refund? I don't even like this app. Been 3 years and I don't think it's improved much from what I was told..",
+    "українською": "Я спробувала скористатись цим знову після рекомендації, але я взяла пробний період, і хоч я намагалась його скасувати, виникла якась помилка, і тепер з мене списали 8,95$ за Один Тиждень?? Що це в біса таке!! Як мені отримати повернення? Мені навіть не подобається цей застосунок. Минуло 3 роки, і я не думаю, що він сильно покращився порівняно з тим, що мені казали..",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: I don't even like this app + порівняння з тим, що було 3 роки тому"
+  },
+  {
+    "id": "as:14312098923",
+    "партія": "3",
+    "дата": "2026-07-16",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "arabic",
+    "заголовок": "احتيال",
+    "оригінал": "برنامج سيء يقوم بالخصم من حسابي ولم اطلب الاشتراك ،قمت بحذف البرنامج ومازال يخصم ،حاولت إلغاءه بكل الطرق ومازال الخصم مستمر\n\nThere is no way to cancel auto refill ,and it’s discontinued from my card",
+    "українською": "Погана програма, вона списує з мого рахунку, а я не оформлював підписку. Я видалив програму, і вона досі списує. Я намагався скасувати всіма способами, і списання продовжується. / Немає жодного способу скасувати автопоповнення, і воно списується з моєї картки.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок احتيال; видалила застосунок, списання тривають"
+  },
+  {
+    "id": "gp:15478b32-52e",
+    "партія": "3",
+    "дата": "2023-12-17",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Everything is locked unless you pay for it. And don't tell me there's lots of free things. There's not. Edit. Thanks for telling me that can you tell me at least ten things that I can access whenever I want without ads or paying for it?",
+    "українською": "Усе заблоковано, якщо не заплатиш. І не кажіть мені, що там багато безкоштовного. Немає. Доповнення. Дякую, що сказали мені це — можете назвати хоч десять речей, до яких я маю доступ будь-коли без реклами й без оплати?",
+    "розмітка": {
+      "категорія": "other",
+      "пріоритет": "P3",
+      "наступний крок": "explain_charge"
+    },
+    "нотатка": "те саме - пейволл без оплати; ВІДГУК: Edit. + відповідь розробнику"
+  },
+  {
+    "id": "gp:2c9af292-022",
+    "партія": "3",
+    "дата": "2025-04-04",
+    "зірки": "3",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I WANT to like it. but I've had it for 15 minutes and now all of a sudden can't connect to the internet, even though there isn't a single internet issue. no matter what I do, I can't get past the internet issue the app THINKS there is.",
+    "українською": "Я ХОЧУ, щоб він мені сподобався. Але він у мене 15 хвилин, і тепер раптово не може під'єднатись до інтернету, хоча з інтернетом жодної проблеми немає. Що б я не робила, я не можу пройти проблему з інтернетом, яка застосунку лише ЗДАЄТЬСЯ.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "застосунок вважає, що немає інтернету"
+  },
+  {
+    "id": "gp:2e139a14-c50",
+    "партія": "3",
+    "дата": "2024-02-28",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "ME ROBARON. hice una compra de un dólar, es decir 900 pesos que más impuestos se hacían 1400. Después De Esa Compra se acredito otra más de 28 mil pesos que yo no hice, ya contacte con la tarjeta y con la empresa pero necesito buscar ayudar en todos lados. POR FAVOR DEVUELVANME LA PLATA, LA NECESITO",
+    "українською": "МЕНЕ ОБІКРАЛИ. Я зробила покупку на один долар, тобто 900 песо, що з податками вийшло 1400. Після тієї покупки списали ще одну, на 28 тисяч песо, якої я не робила. Я вже зв'язалась із банком картки і з компанією, але мені треба шукати допомоги всюди. БУДЬ ЛАСКА, ПОВЕРНІТЬ МЕНІ ГРОШІ, МЕНІ ВОНИ ПОТРІБНІ.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "покупка на 1 дол., потім 28 тис. песо; уже звернулась до банку і компанії"
+  },
+  {
+    "id": "gp:3709c26f-4f6",
+    "партія": "3",
+    "дата": "2023-10-29",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Era buena y me encantaba, antes de que agregaran a Cetus y a Orion en el calendario y se me desfazara el signo. Yo soy de Piscis, siempre lo fui y siempre lo voy a ser, pero ahora me dice que soy de Aries solo por estos dos nuevos signos que arruinaron las fechas y el balance del sistema tradicional. Por favor que el cambio de fechas solo aplique para los que nacieron DESPUES de su adicion a los signos del zodiaco. Los nacidos como piscis no podemos amanecer de Aries de un dia para el otro.",
+    "українською": "Він був хороший і мені дуже подобався — доки ви не додали в календар Кита і Оріона, і мій знак не зсунувся. Я Риби, завжди була і завжди буду, а тепер мені пише, що я Овен, лише через ці два нові знаки, які зруйнували дати й баланс традиційної системи. Будь ласка, зробіть так, щоб зміна дат застосовувалась лише до тих, хто народився ПІСЛЯ їхнього додавання до знаків зодіаку. Ті, хто народився Рибами, не можуть прокинутись Овнами з одного дня на другий.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "додали Кита й Оріон - знак зсунувся; просить застосувати нові дати лише до нових користувачів"
+  },
+  {
+    "id": "gp:83ce12d3-9f5",
+    "партія": "3",
+    "дата": "2025-05-25",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "Arnaque complète, je demande d'ailleurs le remboursement de la, somme dépenser puisque je n'ai eu accès à rien de ce que j'ai demandé.... Tout est en anglais et rien ne ressemblait à ma, demande très mauvaise expérience",
+    "українською": "Повне шахрайство, до того ж я прошу повернення витраченої суми, бо я не отримала доступу ні до чого з того, що просила.... Усе англійською, і нічого не було схоже на мій запит. Дуже поганий досвід.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Arnaque complète + très mauvaise expérience"
+  },
+  {
+    "id": "gp:8b9dc776-d5f",
+    "партія": "3",
+    "дата": "2023-03-16",
+    "зірки": "3",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I love how I got to put \"non-binary\" as my gender cause I can't tell if I want to be a girl, or boy. Now on to the main topic It gives me random stuff that I have to \"buy\" and it wants to know where I live? What's up with that??",
+    "українською": "Мені дуже подобається, що я змогла вказати «небінарна» як свою стать, бо я не можу зрозуміти, хочу я бути дівчиною чи хлопцем. Тепер до головного: він дає мені випадкові речі, які я маю «купити», і хоче знати, де я живу? Що це таке??",
+    "розмітка": {
+      "категорія": "other",
+      "пріоритет": "P3",
+      "наступний крок": "route_to_human_review"
+    },
+    "нотатка": "питання про приватність: навіщо застосунку місце проживання; ВІДГУК: похвала на початку"
+  },
+  {
+    "id": "gp:8c36f296-3ab",
+    "партія": "3",
+    "дата": "2024-03-22",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I invited my friend to install this app and she signed up her account with my invitation link and I am not getting this compatibility check with my partner. I don't know whats wrong and why am I not getting it?",
+    "українською": "Я запросила подругу встановити цей застосунок, і вона зареєструвала акаунт за моїм посиланням-запрошенням, а я не отримую цієї перевірки сумісності з партнером. Я не знаю, що не так і чому я цього не отримую.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "запрошення подруги не відкрило перевірку сумісності"
+  },
+  {
+    "id": "gp:e2b966fc-342",
+    "партія": "3",
+    "дата": "2025-12-13",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "fui enganada! eu só baixei esse aplicativo p receber algo gratuito que foi oferecido na propaganda. Infelizmente acabei de descobrir na minha fatura um pagamento. Quero o dinheiro de volta! nunca usei esse aplicativo.",
+    "українською": "мене обманули! я завантажила цей застосунок лише щоб отримати щось безкоштовне, що пропонували в рекламі. На жаль, я щойно виявила у своєму рахунку платіж. Хочу гроші назад! Я ніколи не користувалась цим застосунком.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "прийшла за безкоштовною пропозицією з реклами"
+  },
+  {
+    "id": "gp:eaff5c82-d51",
+    "партія": "3",
+    "дата": "2021-11-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "No me dejaba ver mi compatibilidad con otros signos por mas que veia y veia anuncios,si me pueden ayudar o les paso lo mismos pero arreglaron el ploblema,por favor ayudenme",
+    "українською": "Воно не давало мені побачити мою сумісність з іншими знаками, хоч скільки я дивилась і дивилась рекламу. Якщо можете мені допомогти, або якщо в когось було те саме, але проблему виправили — будь ласка, допоможіть мені.",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "сумісність не відкрилась попри перегляд реклами"
+  },
+  {
+    "id": "as:10167730430",
+    "партія": "4",
+    "дата": "2023-07-22",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cancelar suscripción",
+    "оригінал": "Cancelé mi suscripción antes de que me cobraran y me llegó igual el descuento. Quiero saber de donde cancelo la suscripción urgente por favor",
+    "українською": "Я скасувала свою підписку до того, як з мене списали, і списання все одно прийшло. Хочу знати, звідки скасувати підписку, терміново, будь ласка.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "скасувала до списання"
+  },
+  {
+    "id": "as:11129418719",
+    "партія": "4",
+    "дата": "2024-04-06",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Unasked payment",
+    "оригінал": "I used the app for a day and a 49.99 charge was made without my consent or knowledge. Please refund my money. The app was installed with this account. Thanks in advance for not letting me take any legal actions",
+    "українською": "Я користувалась застосунком один день, і було зроблено списання 49,99 без моєї згоди чи відома. Будь ласка, поверніть мої гроші. Застосунок був встановлений з цього акаунта. Дякую заздалегідь за те, що не змусите мене вживати жодних правових заходів.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "Thanks in advance for not letting me take any legal actions"
+  },
+  {
+    "id": "as:11252240652",
+    "партія": "4",
+    "дата": "2024-05-10",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Lost money",
+    "оригінал": "I didn't subscribe to it and I get charged with 30 euro. I deleted everything and they still charged it. This is abuse. I want my money back!",
+    "українською": "Я на це не підписувалась, і з мене списали 30 євро. Я все видалила, і вони все одно списали. Це зловживання. Я хочу свої гроші назад!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: they + This is abuse"
+  },
+  {
+    "id": "as:11586927114",
+    "партія": "4",
+    "дата": "2024-08-08",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "tr",
+    "заголовок": "Ücret",
+    "оригінал": "Uygulamadan tek seferlik 0,99$ tutarında hizmet satın almama rağmen bir hafta sonra onayın dışında kartımdan 29$ ödeme alındı. Bu uygulamanın düzeltilmesini talep ediyorum",
+    "українською": "Попри те що я придбав у застосунку одноразову послугу на 0,99$, через тиждень без мого підтвердження з моєї картки взяли 29$. Вимагаю, щоб цей застосунок виправили.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "разова покупка 0,99, за тиждень 29"
+  },
+  {
+    "id": "as:11696375522",
+    "партія": "4",
+    "дата": "2024-09-06",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "tr",
+    "заголовок": "İzinsiz para çekimi yapılıyor",
+    "оригінал": "Uygulama 0,99 cent olarak bir kez işlem yaptırdım ancak tekrar haberim ve iznim olmadan her ay 29,90 usd para çekiliyor bu işlemler bana ait değildir ve söz konusu iadelerimin acil olarak kartıma yapılmasını talep ediyorum aksi takdirde yasal yollara başvuracağım.",
+    "українською": "Я здійснив у застосунку одну операцію на 0,99 цента, однак знову, без мого відома і дозволу, щомісяця знімають 29,90 USD. Ці операції мені не належать, і я вимагаю негайного повернення зазначених сум на мою картку, інакше звернусь до правових шляхів.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "обіцяє правові кроки"
+  },
+  {
+    "id": "as:11727434936",
+    "партія": "4",
+    "дата": "2024-09-15",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Scammers",
+    "оригінал": "This app automatically charges my card 19,50€ each month even though i never agreed to any subscriptions. Moreover i cant seem to find a way to de-activate the subscriptions since deleting the app doesn’t seem to affect it at all. I want my money back!!!",
+    "українською": "Цей застосунок автоматично списує з моєї картки 19,50€ щомісяця, попри те що я ніколи не погоджувалась на жодні підписки. До того ж я не можу знайти способу деактивувати підписки, бо видалення застосунку, схоже, ніяк на це не впливає. Я хочу свої гроші назад!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Scammers"
+  },
+  {
+    "id": "as:11903411827",
+    "партія": "4",
+    "дата": "2024-11-02",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "it",
+    "заголовок": "Truffa",
+    "оригінал": "Ti fanno fare un quiz e pagare 1$ per vedere il risultato , in realtà ti iscrivono a un piano mensile dal costo di 39$ al mese senza che tu inserisca nessuna password per il tuo account. Me ne sono accorta soltanto quando mi hanno scalato 39$ e ho cancellato l’account, entrandoci per la prima volta perché non mi ero mai iscritta realmente.",
+    "українською": "Тобі дають пройти опитування і заплатити 1$, щоб побачити результат, а насправді підписують тебе на місячний план вартістю 39$ на місяць, без того щоб ти вводила будь-який пароль до свого акаунта. Я помітила це лише коли з мене зняли 39$, і видалила акаунт, зайшовши в нього вперше — бо я насправді ніколи не реєструвалась.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Truffa + Ti fanno fare - друга особа для читача"
+  },
+  {
+    "id": "as:12468500798",
+    "партія": "4",
+    "дата": "2025-03-26",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Estafa!!",
+    "оригінал": "Pedi por 0,50 € una carta astras que nunca llegó!!! ( oferton!!!) Y a los dos dias me cobraron 29,90 € como si me hubiera subscrito, cosa que nunca hice…. Estafadores!!!! Quiero que me devuelvan mi dinero!!!",
+    "українською": "Я замовила за 0,50 € натальну карту, яка так і не прийшла!!! (велика акція!!!) А через два дні з мене списали 29,90 €, ніби я оформила підписку, чого я ніколи не робила…. Шахраї!!!! Хочу, щоб мені повернули мої гроші!!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "карта за 0,50 не прийшла, через 2 дні 29,90; ВІДГУК: заголовок Estafa!!"
+  },
+  {
+    "id": "as:12660438560",
+    "партія": "4",
+    "дата": "2025-05-15",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Pésima.",
+    "оригінал": "Me cobraron 2 informes que nunca llegaron. Y el idioma mitad español y mitad inglés. Nunca pude leer nada. Quiero me devuelvan mi dinero. Ya lo desinstalo.",
+    "українською": "З мене списали за 2 звіти, які так і не прийшли. І мова — половина іспанською, половина англійською. Я так нічого й не змогла прочитати. Хочу, щоб мені повернули мої гроші. Уже видаляю.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "два звіти не прийшли; ВІДГУК: заголовок Pésima."
+  },
+  {
+    "id": "as:12731385011",
+    "партія": "4",
+    "дата": "2025-06-03",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "I need a refund!",
+    "оригінал": "This is such a scam. It clearly states that you can do a trial for 1$, and yet I’m charged the 1$ and then another 29.99?  WHAT?  Why?  I did not click on anything to facilitate that transaction. This is a scam. Please refund my money.",
+    "українською": "Це справжнє шахрайство. Ясно написано, що можна взяти пробний період за 1$, і все ж з мене списують 1$, а потім ще 29,99? ЩО? Чому? Я не натискала нічого, щоб здійснити цю транзакцію. Це шахрайство. Будь ласка, поверніть мої гроші.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: This is such a scam"
+  },
+  {
+    "id": "as:12749562462",
+    "партія": "4",
+    "дата": "2025-06-08",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Scam",
+    "оригінал": "It's offer for 1USD for reading and 1 week free then subscribe Once I downloaded before any subscription automatically deducted 39USD for a WEEK.. WTH, I want my money back and cancel that subscription that it’s not shown anywhere",
+    "українською": "Це пропозиція за 1 USD за читання і тиждень безкоштовно, а потім підписка. Щойно я завантажив, до будь-якої підписки автоматично списали 39 USD за ТИЖДЕНЬ.. Що це таке, я хочу свої гроші назад і скасувати ту підписку, яка ніде не відображається.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Scam"
+  },
+  {
+    "id": "as:12841470155",
+    "партія": "4",
+    "дата": "2025-07-02",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cobro indebido!",
+    "оригінал": "En el correo que envían de término de prueba (que ni siquiera llega al correo principal, si no que a “promociones”) aparecía que tenía hasta determina fecha y determinada hora para cancelar la prueba,y que para que no se cobrara tenía que cancelar antes de eso, aun así se me cobró horas antes de la hora estupilada Una estafa! Quiero solicitar el reembolso por favor!!",
+    "українською": "У листі, який ви надсилаєте про завершення пробного періоду (і який навіть не приходить на основну пошту, а в «промоакції»), було написано, що в мене є час до певної дати й певної години, щоб скасувати пробний період, і що аби з мене не списали, я маю скасувати до того. І все одно з мене списали за кілька годин ДО вказаного часу. Шахрайство! Хочу подати запит на повернення, будь ласка!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: списали за години ДО вказаного в листі дедлайну, а лист про кінець пробного пішов у Промоакції; ВІДГУК: Una estafa!"
+  },
+  {
+    "id": "as:12882388794",
+    "партія": "4",
+    "дата": "2025-07-12",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "the worst experience",
+    "оригінал": "this doesn’t make any sense.\nI downloaded the Nebula App about a week ago but considering it worthless and overpriced I deleted it. I never signed up for the subscription and it is not reflected on my subscription page anywhere. I was just charged for it and I have no way of requesting a refund or deleting the subscription, since it does not show up on my page. What can I do?\n\nplease Refund ASAP",
+    "українською": "це не має жодного сенсу. Я завантажила застосунок Nebula близько тижня тому, але вважаючи його непотрібним і надто дорогим, видалила. Я ніколи не оформлювала підписки, і вона ніде не відображається на моїй сторінці підписок. З мене щойно за неї списали, і я не маю жодного способу запросити повернення чи видалити підписку, бо вона не з'являється на моїй сторінці. Що мені робити? Будь ласка, поверніть кошти якнайшвидше.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок the worst experience"
+  },
+  {
+    "id": "as:13085337463",
+    "партія": "4",
+    "дата": "2025-09-01",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "pt",
+    "заголовок": "Ladroes",
+    "оригінал": "Boa tarde,\n\nRealizaram a cobrança da mensalidade quando eu não uso a app e apenas a baixei para usufruir do período experimental.\nAgradeço que me devolvam os 39€ cobrados. \n\n[Name]",
+    "українською": "Доброго дня, ви стягнули місячну плату, при тому що я не користуюсь застосунком і завантажила його лише щоб скористатись пробним періодом. Буду вдячна, якщо ви повернете мені стягнуті 39€. [Ім'я]",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Ladroes; у тексті плейсхолдер [Name]"
+  },
+  {
+    "id": "as:13116518405",
+    "партія": "4",
+    "дата": "2025-09-09",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "UNACCEPTABLE",
+    "оригінал": "IVE DELETED AND WITHDREW MY PAYMENT MONTHS AGO AND I AM STILL GETTING CHARGED. CANNOT FIND HOW YOURE GETTING MY MONEY ON ANY PLATFORM- APPLE,EMAIL,SUBSCRIPTIONS… PLEASE STOP",
+    "українською": "Я ВИДАЛИЛА І ВІДКЛИКАЛА СВІЙ ПЛАТІЖ МІСЯЦІ ТОМУ, І З МЕНЕ ВСЕ ОДНО СПИСУЮТЬ. НЕ МОЖУ ЗНАЙТИ, ЯК ВИ БЕРЕТЕ МОЇ ГРОШІ, НІ НА ЯКІЙ ПЛАТФОРМІ — APPLE, ПОШТА, ПІДПИСКИ… БУДЬ ЛАСКА, ПРИПИНІТЬ.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "просить лише PLEASE STOP, грошей не вимагає"
+  },
+  {
+    "id": "as:13126445688",
+    "партія": "4",
+    "дата": "2025-09-11",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Contraté por solo 1 dólar y me cobra 35 dólares todos los meses!",
+    "оригінал": "Yo no acepté la renovación de 35 dólares todos los meses! Preciso que cancelen esos cobros ya que mi tarjeta piensa que es un fraude.\n\nYo no contraté el de 35 dólares! No me aparece en la app la suscripción ni tampoco en Apple Store! No la puedo cancelar!",
+    "українською": "Я не погоджувалась на поновлення по 35 доларів щомісяця! Мені потрібно, щоб ви скасували ці списання, бо мій банк вважає це шахрайством. Я не оформлювала той, що за 35 доларів! У застосунку підписка не відображається, і в Apple Store теж! Я не можу її скасувати!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "картка вважає це шахрайством; підписки не видно ні в застосунку, ні в App Store"
+  },
+  {
+    "id": "as:13231515887",
+    "партія": "4",
+    "дата": "2025-10-06",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "de",
+    "заголовок": "Achtung BETRUG",
+    "оригінал": "Einmal auf die 1€ Probeabo geklickt und bis jetzt pro Monat 39€ vom Bankkonto abgebucht. Ich habe es leider erst nach drei Monaten bemerkt. \n\nHiermit teile ich Ihnen mit, dass ich mich durch die Gestaltung Ihres Angebots getäuscht fühle. Das vermeintliche Probeabo stellte sich im Nachhinein als kostenpflichtiger Vertrag heraus, ohne dass dies bei Vertragsabschluss klar und deutlich erkennbar war.\n\nDa ich davon ausging, ein unverbindliches und kostenloses Probeabo abzuschließen, erkläre ich hiermit den Widerruf bzw. die Anfechtung des Vertrages wegen arglistiger Täuschung gemäß § 870 ABGB (bzw. § 119 ff. BGB, nach deutschem Recht).\n\nIch fordere Sie daher auf, den Vertrag umgehend aufzulösen und keine weiteren Zahlungen einzufordern oder Abbuchungen vorzunehmen. Es sind drei Abbuchung zu je 39€ erfolgt, ich ersuche um unverzügliche Rückerstattung des Betrags.\n\nBitte bestätigen Sie mir schriftlich die Auflösung des Vertrages und die Löschung meiner Daten!!!\n\n[Name]",
+    "українською": "Один раз натиснув на пробну підписку за 1€ — і досі щомісяця з банківського рахунку списують 39€. На жаль, я помітив це лише через три місяці. Цим повідомляю вам, що почуваюсь обманутим через оформлення вашої пропозиції. Уявний пробний період виявився заднім числом платним договором, при тому що це не було ясно й чітко видно при укладенні договору. Оскільки я виходив з того, що укладаю необов'язковий і безкоштовний пробний період, я цим заявляю про відкликання, тобто оспорювання договору через зумисне введення в обман згідно з § 870 ABGB (відповідно § 119 і далі BGB за німецьким правом). Тому вимагаю від вас негайно розірвати договір і не вимагати подальших платежів та не здійснювати списань. Відбулося три списання по 39€, прошу негайно повернути суму. Будь ласка, підтвердьте мені письмово розірвання договору і видалення моїх даних!!! [Ім'я]",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "escalate_to_authority_case"
+    },
+    "нотатка": "заявлено відкликання договору за § 870 ABGB - правова дія вчинена в самому тексті; вимагає письмового підтвердження і видалення даних; ВІДГУК: заголовок Achtung BETRUG"
+  },
+  {
+    "id": "as:13473009084",
+    "партія": "4",
+    "дата": "2025-12-04",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cancelar suscripción",
+    "оригінал": "Quiero cancelar la suscripción y no me deja.\n¿Como puedo hacerlo?\n\nLlevo dos meses que me están \nhaciendo un cargo de 42,99 en mi cuenta y no hay manera de cancelar, no me parece justo",
+    "українською": "Хочу скасувати підписку, і воно не дає. Як це зробити? Уже два місяці з мого рахунку списують 42,99, і немає жодного способу скасувати. Мені це не здається справедливим.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "два місяці по 42,99"
+  },
+  {
+    "id": "as:13590053288",
+    "партія": "4",
+    "дата": "2026-01-03",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cobros adicionales",
+    "оригінал": "Hice un pago para un producto en particular, pero hoy comenzaron a hacer un cobro extra que yo no he aceptado o de algún otro producto que yo haya solicitado, por favor díganme cómo darme de baja, porque no he logrado encontrar la forma",
+    "українською": "Я зробив платіж за конкретний продукт, але сьогодні почали робити додаткове списання, якого я не приймав, чи за якийсь інший продукт, якого я не замовляв. Будь ласка, скажіть мені, як відписатись, бо я не зміг знайти спосіб.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "просить показати, де відписатись"
+  },
+  {
+    "id": "as:13590293344",
+    "партія": "4",
+    "дата": "2026-01-03",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "de",
+    "заголовок": "Sehr schlecht!",
+    "оригінал": "Dies ist ein Betrug. Ich habe lediglich 1 € bezahlt, dennoch wurden mir gestern 43 € von meiner Kreditkarte abgebucht. Ich fordere eine vollständige Rückerstattung. Ich habe die App unmittelbar nach der Zahlung von 1 € gelöscht.",
+    "українською": "Це обман. Я заплатила лише 1 €, і все ж учора з моєї кредитної картки списали 43 €. Вимагаю повного повернення. Я видалила застосунок одразу після платежу в 1 €.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Sehr schlecht! + Dies ist ein Betrug"
+  },
+  {
+    "id": "as:13635950628",
+    "партія": "4",
+    "дата": "2026-01-15",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Unlawful debit",
+    "оригінал": "I bought a birth chart reading for USD 0.50 and have been charged twice for a monthly subscription despite informing you that I didn’t sign up for a subscription. Please cancel all collections!",
+    "українською": "Я купила читання натальної карти за 0,50 USD, і з мене двічі списали за місячну підписку, попри те що я повідомляла вам, що не оформлювала підписки. Будь ласка, скасуйте всі стягнення!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "0,50 за натальну карту, двічі списано місячну підписку"
+  },
+  {
+    "id": "as:13721445448",
+    "партія": "4",
+    "дата": "2026-02-07",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Taking my money",
+    "оригінал": "I tried this for fun with a friend a couple months ago and after I decided to delete everything and I later come to find out that it has been taking $49 from my bank account multiple times to the point where it blocked my card and I can’t make payments I need to make. I have contacted everyone and customer support and I can’t get my money back and I’m not sure if they’ll keep charging me $49 dollars when I don’t even have an account with them. Total Scam!!!!!!",
+    "українською": "Я спробувала це для розваги з подругою кілька місяців тому, а після вирішила все видалити — і згодом виявила, що воно багато разів знімало 49$ з мого банківського рахунку, аж поки не заблокувало мою картку, і я не можу зробити потрібні мені платежі. Я зв'язувалась з усіма і зі службою підтримки, і не можу повернути свої гроші, і не впевнена, чи вони й далі будуть знімати з мене 49 доларів, коли в мене навіть немає в них акаунта. Цілковите шахрайство!!!!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "картку заблоковано, не може платити за потрібне; ВІДГУК: Total Scam!!!!!!"
+  },
+  {
+    "id": "as:14104692411",
+    "партія": "4",
+    "дата": "2026-05-25",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": ".",
+    "оригінал": "Hello, I am not using the Nebula app and I did not subscribe to any membership. I only made a one-time payment for the soulmate drawing service. However, I have now been charged 43 dollars for a subscription. Please investigate this issue.\n\nIf I currently have any active subscription, please cancel it.\n\nI have already canceled my subscription, which was an annual plan. Please refund the subscription fee.",
+    "українською": "Вітаю, я не користуюсь застосунком Nebula і не оформлював жодного членства. Я зробив лише одноразовий платіж за послугу малюнка спорідненої душі. Однак тепер з мене списали 43 долари за підписку. Будь ласка, розберіться в цьому питанні. Якщо в мене зараз є якась активна підписка, будь ласка, скасуйте її. Я вже скасував свою підписку, яка була річним планом. Будь ласка, поверніть плату за підписку.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "разова покупка малюнка, потім 43 долари підпискою"
+  },
+  {
+    "id": "as:14386529222",
+    "партія": "4",
+    "дата": "2026-08-04",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "de",
+    "заголовок": "Was ist das",
+    "оригінал": "Hallo,\n\nich habe zuvor in der Nebula-App einige Testtransaktionen in Höhe von 1 € durchgeführt. Mein Abonnement habe ich jedoch am 10.05.2026 gekündigt. Trotzdem wurden mir am 16.06.2026 42,99 € und am 23.01.2026 erneut 42,99 € von meiner Karte abgebucht.\n\nNach dem 10.05.2026 habe ich keine Verlängerung meines Abonnements vorgenommen, kein neues Abonnement abgeschlossen und keine dieser Zahlungen autorisiert.\n\nIch akzeptiere diese Abbuchungen in Höhe von insgesamt 85,98 € für ein gekündigtes Abonnement nicht. Ich fordere eine Erklärung für diese Belastungen sowie die vollständige Rückerstattung des gesamten Betrags.\n\nAndernfalls werde ich den Vorgang meiner Bank melden, mich an die Verbraucherschutzbehörden wenden und gegebenenfalls rechtliche Schritte einleiten.\n\nAlle Nachweise bezüglich der Kündigung meines Abonnements sowie der getätigten Zahlungen liegen mir vor.\n\nIch erwarte eine schnelle Lösung und Rückerstattung.",
+    "українською": "Вітаю, раніше я здійснив у застосунку Nebula кілька тестових транзакцій на 1 €. Однак свою підписку я скасував 10.05.2026. Незважаючи на це, 16.06.2026 з моєї картки списали 42,99 €, а 23.01.2026 знову 42,99 €. Після 10.05.2026 я не продовжував свою підписку, не оформлював нової підписки і не дозволяв жодного з цих платежів. Я не приймаю цих списань на загальну суму 85,98 € за скасовану підписку. Я вимагаю пояснення цих стягнень, а також повного повернення всієї суми. В іншому разі я повідомлю про це свій банк, звернусь до органів захисту прав споживачів і за потреби вживу правових заходів. Усі докази щодо скасування моєї підписки і здійснених платежів у мене є. Очікую швидкого вирішення і повернення коштів.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "скасував 10.05.2026, два списання по 42,99; банк і захист прав споживачів лише в погрозі, тому не escalate"
+  },
+  {
+    "id": "as:14492078493",
+    "партія": "4",
+    "дата": "2026-08-31",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "look！",
+    "оригінал": "Hello,\n\nI would like to formally request a refund for the charges made to my bank account.\n\nI was charged without clearly realizing or authorizing these payments, and the amount charged was much higher than I expected. I was shocked when I discovered the transactions.\n\nI have already deleted my account and stopped using your service. However, I am very concerned that my bank account may continue to be charged.\n\nPlease investigate this matter immediately, cancel any future recurring payments or subscriptions associated with my account/card, and process a full refund for the unauthorized charges.\n\nPlease also provide written confirmation that there will be no further charges from your company.\n\nIf this issue cannot be resolved, I will proceed with disputing the transactions with my bank.\n\nThank you, and I look forward to your prompt response.",
+    "українською": "Вітаю, я хотів би офіційно запросити повернення коштів за списання з мого банківського рахунку. З мене списали, при тому що я ясно не усвідомлював і не дозволяв ці платежі, і списана сума була значно вищою, ніж я очікував. Я був шокований, коли виявив ці транзакції. Я вже видалив свій акаунт і припинив користуватись вашою послугою. Однак я дуже занепокоєний, що з мого банківського рахунку можуть списувати й далі. Будь ласка, негайно розберіться в цьому питанні, скасуйте будь-які майбутні регулярні платежі чи підписки, пов'язані з моїм акаунтом/карткою, і обробіть повне повернення за несанкціоновані списання. Будь ласка, також надайте письмове підтвердження, що подальших списань від вашої компанії не буде. Якщо це питання не вдасться вирішити, я перейду до оскарження транзакцій через свій банк. Дякую, чекаю на вашу швидку відповідь.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "просить письмове підтвердження, що списань більше не буде"
+  },
+  {
+    "id": "as:5579173328",
+    "партія": "4",
+    "дата": "2020-02-25",
+    "зірки": "3",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Please Help",
+    "оригінал": "Hi, I just downloaded the app but didn’t know it had a fee. Can’t figure out how to unsubscribe and not be charged. Please let me know how to cancel subscription before getting charged as I don’t need this app.\nThere are no Settings in the app which is un fortunate. Please help asap.",
+    "українською": "Вітаю, я щойно завантажила застосунок, але не знала, що в нього є плата. Не можу зрозуміти, як відписатись і щоб з мене не списували. Будь ласка, підкажіть, як скасувати підписку до того, як з мене спишуть, бо цей застосунок мені не потрібен. У застосунку немає налаштувань, що дуже прикро. Будь ласка, допоможіть якнайшвидше.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "хоче встигнути до першого списання"
+  },
+  {
+    "id": "as:6528682268",
+    "партія": "4",
+    "дата": "2020-10-12",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "fr",
+    "заголовок": "Comment résilier ?",
+    "оригінал": "J’ai cliqué par erreur sur l’offre essai gratuit puis 10€ et des bananes par semaine !! Sauf que je n’arrive pas à annuler cette histoire !\nComment faire ?",
+    "українською": "Я помилково натиснула на пропозицію безкоштовного пробного періоду, а потім 10€ з копійками на тиждень!! Тільки от я не можу скасувати цю історію! Що робити?",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "as:7348594960",
+    "партія": "4",
+    "дата": "2021-05-17",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "pt",
+    "заголовок": "CANCELAR COMPRA!!!!",
+    "оригінал": "Como faço para cancelar a compra?????? Eu não pedi, e comprou!!!!!!!\n\nOlha, eu fui roubada! Está dizendo que eu fui reembolsada e não tem esse dinheiro!!! Irei entrar com um processo se vcs não forem honestos suficientes em devolver o dinheiro!!!!!!",
+    "українською": "Як мені скасувати покупку?????? Я не замовляла, а воно купило!!!!!! Слухайте, мене обікрали! Пише, що мені повернули кошти, а цих грошей немає!!! Я подам до суду, якщо ви не будете достатньо чесними, щоб повернути гроші!!!!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "їй написали, що повернення зроблено, а грошей немає; погрожує позовом"
+  },
+  {
+    "id": "as:8137163153",
+    "партія": "4",
+    "дата": "2021-12-16",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Disappointing! Felt scammed with this app!",
+    "оригінал": "It’s clearly stated that it’s 3DAYS FREE TRIAL. So why you guys charged me 184.99aed on this?! I request a refund!!! I’m not expecting this all to happen! Give me back my money!!!",
+    "українською": "Ясно написано, що це 3 ДНІ БЕЗКОШТОВНОГО ПРОБНОГО ПЕРІОДУ. То чому ви списали з мене 184,99 дирхама за це?! Я вимагаю повернення!!! Я не очікувала, що все це станеться! Поверніть мені мої гроші!!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Disappointing! Felt scammed with this app!; сума звичайна в USD-еквіваленті, тому не large_amount; інших фактів немає"
+  },
+  {
+    "id": "as:8888059463",
+    "партія": "4",
+    "дата": "2022-07-18",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "es",
+    "заголовок": "Cobrança indevida",
+    "оригінал": "Paguei 5 dólares para receber informações que o Google já me dava de graça. Além disso posteriormente cobraram 19 dólares no meu cartão! Quero o estorno!!",
+    "українською": "Я заплатив 5 доларів, щоб отримати інформацію, яку Google уже давав мені безкоштовно. До того ж потім списали 19 доларів з моєї картки! Хочу повернення!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: informações que o Google já me dava de graça - оцінка вартості для читача"
+  },
+  {
+    "id": "as:9410499825",
+    "партія": "4",
+    "дата": "2022-12-18",
+    "зірки": "4",
+    "магазин": "appstore",
+    "мова": "fr",
+    "заголовок": "Bonne application",
+    "оригінал": "Une bonne appli cependant impossible d’annuler mon abonnement j’ai été prélevé 59€ c’est beaucoup trop . Je veux annuler",
+    "українською": "Добрий застосунок, однак неможливо скасувати мою підписку. З мене списали 59€, це занадто багато. Я хочу скасувати.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: заголовок Bonne application"
+  },
+  {
+    "id": "gp:0bffd769-090",
+    "партія": "4",
+    "дата": "2025-08-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "BELLE ARNAQUE! J'AI PAYÉ UN ABONNEMENT ALORS QUE JE N'AI RIEN DEMANDÉ ! JE SOUHAITE ÊTRE REMBOURSÉE, AUCUN POSSIBILITÉ SUR L'APPLI🤬🤬🤬🤬",
+    "українською": "ГАРНА АФЕРА! Я ЗАПЛАТИЛА ЗА ПІДПИСКУ, ХОЧА НІЧОГО НЕ ПРОСИЛА! Я ХОЧУ ОТРИМАТИ ПОВЕРНЕННЯ, У ЗАСТОСУНКУ ЖОДНОЇ МОЖЛИВОСТІ🤬🤬🤬🤬",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: BELLE ARNAQUE!"
+  },
+  {
+    "id": "gp:16ec6a51-11f",
+    "партія": "4",
+    "дата": "2025-11-17",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I downloaded the app and deleted it within one hour. I never purchased any subscription, but my account was still charged. I don’t have any subscription on my phone, and I had already uninstalled the app a week ago. Please help me with a refund.🤮",
+    "українською": "Я завантажив застосунок і видалив його протягом години. Я ніколи не купував жодної підписки, але з мого рахунку все одно списали. У мене на телефоні немає жодної підписки, і я вже видалив застосунок тиждень тому. Будь ласка, допоможіть мені з поверненням.🤮",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "видалила за годину"
+  },
+  {
+    "id": "gp:17d51dae-fed",
+    "партія": "4",
+    "дата": "2025-12-26",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "Boa tarde alguém pode me ajudar e golpe ! coloquei o cartao opção 5 reias! automaticamente fizeram 3 comprar uma de 27.00 outrs 167.00 e a outra 267.00 me ajude preciso ter reembolso não sei como posso fazer !",
+    "українською": "Доброго дня, хтось може мені допомогти? Це афера! Я ввела картку, опція 5 реалів! Автоматично зробили 3 покупки: одну на 27,00, іншу на 167,00 і ще одну на 267,00. Допоможіть мені, мені потрібне повернення, я не знаю, як це зробити!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "опція 5 реалів - три покупки 27 / 167 / 267"
+  },
+  {
+    "id": "gp:19fd8d28-540",
+    "партія": "4",
+    "дата": "2025-08-02",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "fiz um pagamento de 1€ e recebi de acordo com o que proposto e fim , passados 1 semana me estão cobrando 39€ por algum tipo de serviço e assinatura que não fiz , quero que devolvam meu dinheiro.",
+    "українською": "я зробив платіж на 1€ і отримав відповідно до того, що пропонувалось, і все. Через тиждень з мене списують 39€ за якийсь тип послуги і підписку, яких я не оформлював. Хочу, щоб ви повернули мої гроші.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "за 1 євро отримав обіцяне, за тиждень 39 євро"
+  },
+  {
+    "id": "gp:23247717-d05",
+    "партія": "4",
+    "дата": "2026-01-26",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "AYUDA: Cuando abrí la aplicación, para eliminar un anuncio, hice click y de repente sin confirmar, se había comprado 300 créditos por 39 dolares, los cuales se han descontado de mi tarjeta. Quise cancelar la suscripción y por ende que me devuelvan el dinero debitado y no encuentro donde hacerlo. Ya hice varias reclamos mandando mensajes y me responde una IA, que no me da soluciones, no me devuelve el dinero. que puedo hacer? hay un correo o chat directo con una persona de la app para esto?",
+    "українською": "ДОПОМОЖІТЬ: Коли я відкрила застосунок, щоб закрити рекламу, я натиснула — і раптом, без жодного підтвердження, було куплено 300 кредитів за 39 доларів, які списали з моєї картки. Я хотіла скасувати підписку і відповідно щоб мені повернули списані гроші — і не знаходжу, де це зробити. Я вже подала кілька звернень через повідомлення, і мені відповідає ШІ, який не дає рішень і не повертає гроші. Що мені робити? Чи є пошта або чат напряму з людиною із застосунку для цього?",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: натиснув, щоб закрити рекламу - купилось 300 кредитів за 39 дол.; БОТ: відповідає ШІ без рішень, просить пошту або чат з людиною"
+  },
+  {
+    "id": "gp:23e2202a-086",
+    "партія": "4",
+    "дата": "2026-03-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "Aplicativo cobra indevidamente e de forma automática. Não é claro sobre cancelamentos. exijo a devolução dos valores cobrados sem minha anuência.",
+    "українською": "Застосунок списує неправомірно і автоматично. Немає ясності щодо скасувань. Вимагаю повернення сум, списаних без моєї згоди.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: застосунок у третій особі для читача"
+  },
+  {
+    "id": "gp:2560955a-7e5",
+    "партія": "4",
+    "дата": "2025-03-20",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I was just charged $45 after I canceled and was told that my card would not be charged. It's like they decided to charge it at random. Again, please stop charging my card! I don't even have an account anymore.",
+    "українською": "З мене щойно списали 45$ після того, як я скасувала, і мені сказали, що з моєї картки не будуть списувати. Складається враження, що вони вирішили списати навмання. Ще раз: будь ласка, припиніть списувати з моєї картки! У мене навіть акаунта більше немає.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "сказали, що з картки не спишуть - списали 45"
+  },
+  {
+    "id": "gp:2d825cbf-de0",
+    "партія": "4",
+    "дата": "2025-05-27",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I have been trying to cancel my trial subscription, but the information they give you to follow, cannot be done. Nebula does not register as a subscription in the Google Play Store. I will be notifying my bank to stop payment on the full subscription payment. Please cancel my subscription now!!",
+    "українською": "Я намагаюсь скасувати свою пробну підписку, але інформацію, яку вони дають для виконання, виконати неможливо. Nebula не значиться як підписка в Google Play Store. Я повідомлю свій банк, щоб зупинити платіж за повну підписку. Будь ласка, скасуйте мою підписку зараз!!",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P1",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "обіцяє повідомити банк; ВІДГУК: the information they give you"
+  },
+  {
+    "id": "gp:3ccf49fc-001",
+    "партія": "4",
+    "дата": "2024-08-31",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "Le temps a louée avec les médium n'est pas bcp à peine tu commence on te demande déjà l'argent j'ai été débité à deux reprises pareil pour l'abonnement je suis pas contente tu payes pour un montant et tu n'arrive pas à avoir des réponses claires et précises je souhaite être remboursé",
+    "українською": "Часу, оплаченого з медіумами, небагато — щойно ти починаєш, у тебе вже просять гроші. З мене списали двічі, так само і за підписку. Я незадоволена: ти платиш суму і не можеш отримати ясних і точних відповідей. Я хочу повернення.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "списано двічі; ВІДГУК: друга особа для читача"
+  },
+  {
+    "id": "gp:41739d3b-52b",
+    "партія": "4",
+    "дата": "2021-07-05",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Fatal, me doy de baja de la prueba de 3 días porque no lo iba a usar tanto y solo quería ver qué me ofrecía y tengo que estar peleándome con estos y con PayPal porque me han cobrado dos veces como si estuviese suscrita, nunca me había pasado con ninguna app y me parece fatal, a la espera de que solucionen la incidencia y me devuelvan mis casi 20 euros.",
+    "українською": "Кепсько. Я відписуюсь від 3-денного пробного періоду, бо не збиралась ним так багато користуватись і лише хотіла подивитись, що він мені пропонує — і тепер мені доводиться битись і з ними, і з PayPal, бо з мене списали двічі, ніби я підписана. Зі мною ніколи такого не було з жодним застосунком, і мені це здається кепським. Чекаю, щоб вони вирішили цей інцидент і повернули мої майже 20 євро.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Fatal, + nunca me había pasado con ninguna app"
+  },
+  {
+    "id": "gp:417b98ee-825",
+    "партія": "4",
+    "дата": "2026-02-05",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Very bad experience...I've deleted my account and uninstalled the app from the phone, even then money is getting deducted for subscription... I need to get my money back... pls help",
+    "українською": "Дуже поганий досвід... Я видалив свій акаунт і видалив застосунок з телефона, і навіть тоді гроші списуються за підписку... Мені потрібно повернути свої гроші... будь ласка, допоможіть.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Very bad experience..."
+  },
+  {
+    "id": "gp:4529bfa9-5d5",
+    "партія": "4",
+    "дата": "2023-01-01",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Me han cobrado $19 desde mi cuenta de lo Paypal y yo no recuerdo haber colocado información de pago al instalarme la app y menos mi cuenta de PayPal. Además nunca puse para pagar la suscripción mensual. Por qué me han cobrado si ni uso la app??? Quiero un reembolso!!!",
+    "українською": "З мене списали 19$ з мого рахунку PayPal, а я не пам'ятаю, щоб вводила платіжну інформацію при встановленні застосунку, а тим паче свій акаунт PayPal. До того ж я ніколи не ставила оплату місячної підписки. Чому з мене списали, якщо я навіть не користуюсь застосунком??? Хочу повернення!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "не пам'ятає, щоб вводила PayPal"
+  },
+  {
+    "id": "gp:47b41933-098",
+    "партія": "4",
+    "дата": "2021-06-19",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "cyrillic",
+    "заголовок": "",
+    "оригінал": "Реклама с инсты) после нехитрых манипуляций приходит письмо на почту, но не с отчетом, а со стоимостью услуг, за ним - второе письмо с меньшей стоимостью, в третьем письме предлагают бесплатно получить 7ми дневный пробный период. Вместо заявленных 0$ списали 1$. Уже неприятно😕. Снизу пояснение - чтобы не списали дальнейшую оплату, свяжитесь за 8 дней до конца then-curent периода. Это возможно при 7ми дневном пробном?🤔 и отчет на почту не пришел)прошу связаться со мной для прояснения ситуации",
+    "українською": "Реклама з інсти) після нехитрих маніпуляцій приходить лист на пошту, але не зі звітом, а з вартістю послуг, за ним — другий лист із меншою вартістю, у третьому листі пропонують безкоштовно отримати 7-денний пробний період. Замість заявлених 0$ списали 1$. Уже неприємно 😕. Знизу пояснення — щоб не списали подальшу оплату, зв'яжіться за 8 днів до кінця поточного періоду. Це можливо при 7-денному пробному? 🤔 І звіт на пошту не прийшов) Прошу зв'язатись зі мною для прояснення ситуації.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "explain_charge"
+    },
+    "нотатка": "ЦІННЕ: інструкція каже звернутись за 8 днів до кінця 7-денного пробного - виконати неможливо; замість 0$ списали 1$; ВІДГУК: іронічний реєстр викриття"
+  },
+  {
+    "id": "gp:49399c13-8f7",
+    "партія": "4",
+    "дата": "2025-06-02",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "por favor !! quiten mis datos de tarjeta !! no me hagan ningun rebajo más !!! por favor, quiten la suscripción !!! pague, y nada fue lo que esperaba, ya desinstale esa app... porfavor gracias",
+    "українською": "будь ласка!! приберіть дані моєї картки!! не робіть з мене більше жодних списань!!! будь ласка, приберіть підписку!!! я заплатила, і нічого не було так, як я очікувала, я вже видалила цей застосунок... будь ласка, дякую.",
+    "розмітка": {
+      "категорія": "other",
+      "пріоритет": "P2",
+      "наступний крок": "route_to_human_review"
+    },
+    "нотатка": "головне прохання - видалити дані картки; це зобов'язання щодо персональних даних, не білінгова операція"
+  },
+  {
+    "id": "gp:530e156f-6dc",
+    "партія": "4",
+    "дата": "2025-11-21",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "je veux me désabonner et c'est impossible on me prend 39€ depuis juin c'est abusé Comment peut-on faire pour être remboursé",
+    "українською": "я хочу відписатись, і це неможливо. З мене беруть 39€ з червня, це вже зловживання. Як можна отримати повернення?",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "39 євро з червня"
+  },
+  {
+    "id": "gp:6588f289-210",
+    "партія": "4",
+    "дата": "2023-09-24",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "J'ai cliqué sur essaie gratuit. Et je me fais chargée 30$ au deux semaines! Je veux être remboursé! De plus j'arrive même pas à annuler l'abonnement, il ne figure pas dans mes abonnements de Google Play.",
+    "українською": "Я натиснула на безкоштовний пробний період. І з мене беруть 30$ кожні два тижні! Я хочу повернення! До того ж я навіть не можу скасувати підписку, вона не значиться в моїх підписках Google Play.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "30$ кожні два тижні; у підписках Google Play немає"
+  },
+  {
+    "id": "gp:68a6db1d-3a5",
+    "партія": "4",
+    "дата": "2026-01-18",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "cai em um belo golpe nisso, me cobraram duas compras de 73,41 e outra de 161,04 pela qual eu quero extorno, pois n autorizei essa cobrança! por favor resolvam meu problema",
+    "українською": "я потрапив на гарну аферу: з мене списали дві покупки — 73,41 і ще одну на 161,04 — за які я хочу повернення, бо я не дозволяв цього списання! Будь ласка, вирішіть мою проблему.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "73,41 і 161,04"
+  },
+  {
+    "id": "gp:6915993b-f13",
+    "партія": "4",
+    "дата": "2022-06-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "de",
+    "заголовок": "",
+    "оригінал": "Ich bin äußerst unzufrieden mit der App, alles hängt und ich konnte mein Test-Abo nicht kündigen... Ich möchte ein refund",
+    "українською": "Я вкрай незадоволений застосунком, усе зависає, і я не зміг скасувати свій пробний період... Я хочу повернення.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Ich bin äußerst unzufrieden mit der App"
+  },
+  {
+    "id": "gp:7bd07dcc-b85",
+    "партія": "4",
+    "дата": "2024-09-26",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "de",
+    "заголовок": "",
+    "оригінал": "Ganz ganz schlimm. Ich war auf den wochenplan und musste das dann zahlen weil ich vergessen hatte das zu beenden Beende ich das und siehe da aufeinmal werden mir 39 Euro abgezogen über Folgelastschrift mit einem Plan den ich NICHT gemacht habe. Ich möchte mein Geld zurück.",
+    "українською": "Дуже-дуже погано. Я була на тижневому плані і мусила за це заплатити, бо забула це припинити. Припиняю — і на тобі, раптом з мене списують 39 євро наступним платежем за планом, якого я НЕ оформлювала. Я хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Ganz ganz schlimm."
+  },
+  {
+    "id": "gp:7eb96811-984",
+    "партія": "4",
+    "дата": "2025-05-10",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "tr",
+    "заголовок": "",
+    "оригінал": "hesabımı silmiş olmama rağmen hesabımdan 29 usd cekilmiş sadece aboneligimin iptal edilmesini ve bir daha hesabımdan para cekilmemesini istiyorum. lutfen abineligimi iptal edin",
+    "українською": "попри те що я видалив свій акаунт, з мого рахунку зняли 29 доларів. Я хочу лише, щоб мою підписку скасували і щоб з мого рахунку більше не знімали грошей. Будь ласка, скасуйте мою підписку.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "просить лише скасувати й більше не знімати"
+  },
+  {
+    "id": "gp:82f84670-2b9",
+    "партія": "4",
+    "дата": "2026-01-29",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Me debitaron un dinero sin mi consentimiento. No hay manera de desuscribirme, ni de eliminar mis datos de tarjeta débito. Necesito que me devuelvan mi dinero o los denunciaré con quién corresponda.",
+    "українською": "З мене списали гроші без моєї згоди. Немає жодного способу відписатись чи видалити дані моєї дебетової картки. Мені потрібно, щоб ви повернули мої гроші, інакше я поскаржусь туди, куди належить.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "списали без згоди, відписатись неможливо; окремо просить видалити дані дебетової картки; погрожує заявою"
+  },
+  {
+    "id": "gp:838e2667-447",
+    "партія": "4",
+    "дата": "2024-08-26",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I didn't sign up for this and I cannot find how to cancel it! I cannot cancel from my bank unless the payment is pending they say, but when I try it doesn't allow me. How do I cancel transaction?",
+    "українською": "Я на це не підписувався і не можу знайти, як це скасувати! Я не можу скасувати через свій банк, поки платіж не в очікуванні, кажуть вони, а коли я пробую — воно не дає. Як мені скасувати транзакцію?",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "банк каже, що може скасувати лише поки платіж у статусі pending"
+  },
+  {
+    "id": "gp:864cfc0a-4d9",
+    "партія": "4",
+    "дата": "2025-11-07",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "have been charge 49.99 for something I don't know what I cancelled the first payment with my bank and blocked nebula from taking any money and the just changed name and took the money again this must be a scam I can't find any way to get my money back or even cancel a subscription that I didn't agree to vey unhappy",
+    "українською": "з мене списали 49,99 за щось, і я не знаю, за що. Я скасувала перший платіж через свій банк і заблокувала Nebula, щоб вони не брали грошей — а вони просто змінили назву і взяли гроші знову. Це, мабуть, шахрайство. Я не можу знайти жодного способу повернути свої гроші чи навіть скасувати підписку, на яку я не погоджувалась. Дуже незадоволена.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: після блокування в банку дескриптор мерчанта змінився і гроші зняли знову; ВІДГУК: this must be a scam"
+  },
+  {
+    "id": "gp:8a354d25-612",
+    "партія": "4",
+    "дата": "2025-06-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "ofereceram um teste gratuito por 1 euro, hoje vou ver a minha conta descontaram me o tal euro mais 29.99€. eu quero o meu dinheiro de volta!",
+    "українською": "запропонували безкоштовний тест за 1 євро, сьогодні дивлюсь свій рахунок — списали те саме євро плюс 29,99€. я хочу свої гроші назад!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "пробний за 1 євро - списали євро і ще 29,99"
+  },
+  {
+    "id": "gp:8b1d332f-c1c",
+    "партія": "4",
+    "дата": "2024-09-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "tr",
+    "заголовок": "",
+    "оригінал": "Web sitesi uzerinden kendi kafalarina gore hesabimdan bilgim olmadan 29.90 dolar cekilmis, iadesini talep ediyorum. Tam bir dolandirici uygulama.",
+    "українською": "Через вебсайт, на власний розсуд, без мого відома з мого рахунку зняли 29,90 доларів, вимагаю повернення. Абсолютно шахрайський застосунок.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Tam bir dolandirici uygulama"
+  },
+  {
+    "id": "gp:8e3810f3-e94",
+    "партія": "4",
+    "дата": "2025-10-30",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I had paid just 1$ for the support 17/10/ 2025 and today on 30/10/2025 I was charged 43.99$ when I had not even applied for any subscriptions!!!! Is this how you treat your users!! How do I get a refund of my money? for I had not consented for the transaction...",
+    "українською": "Я заплатив лише 1$ за підтримку 17.10.2025, а сьогодні, 30.10.2025, з мене списали 43,99$, при тому що я навіть не оформлював жодних підписок!!!! Це так ви ставитесь до своїх користувачів!! Як мені отримати повернення моїх грошей? Бо я не давав згоди на цю транзакцію...",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "17.10 заплатив 1$, 30.10 списано 43,99"
+  },
+  {
+    "id": "gp:93516c08-e82",
+    "партія": "4",
+    "дата": "2024-09-29",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "tr",
+    "заголовок": "",
+    "оригінал": "0.50 cent çekilmesi gerekirken hesabımdan 529 TL para çekildi. Doğum haritası da gönderilmedi dili de Türkçeye çeviremiyorum. Paramı iade edin şikayet edeceğim.",
+    "українською": "Замість того щоб списати 0,50 цента, з мого рахунку зняли 529 турецьких лір. Натальну карту теж не надіслали, і мову я не можу перекласти на турецьку. Поверніть мої гроші, я поскаржусь.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "мало бути 0,50, знято 529 TL; натальну карту не надіслали; мова тегована es, насправді турецька"
+  },
+  {
+    "id": "gp:93dad88b-6d4",
+    "партія": "4",
+    "дата": "2026-05-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "puse los datos de mi tarjeta, pagué 1 USD por una foto que nunca llegó y al mes después me hicieron un cobro por 35.061 CLP el cual nunca autoricé, me imagino que debe ser una suscripción por los comentarios que leí, estoy muy decepcionada con transparencia de esta app, y quiero mi reembolso por ese pago no autorizado 😡",
+    "українською": "я ввела дані своєї картки, заплатила 1 USD за фото, яке так і не прийшло, а через місяць з мене списали 35 061 чилійських песо, яких я ніколи не дозволяла. Припускаю, що це має бути підписка — судячи з відгуків, які я прочитала. Я дуже розчарована прозорістю цього застосунку і хочу свого повернення за цей несанкціонований платіж 😡",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "$1 за фото, яке не прийшло, через місяць 35061 CLP; ВІДГУК: por los comentarios que leí; сума звичайна в USD-еквіваленті, тому не large_amount; інших фактів немає"
+  },
+  {
+    "id": "gp:953b362d-75b",
+    "партія": "4",
+    "дата": "2026-05-04",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "charged, my card 2 times and I didn't do anything with your site. 48 on April 30 and 58 on April 1st. I want my money back",
+    "українською": "списали з моєї картки 2 рази, а я нічого не робила з вашим сайтом. 48 — 30 квітня і 58 — 1 квітня. Я хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "48 і 58 двома датами"
+  },
+  {
+    "id": "gp:96585f8e-40f",
+    "партія": "4",
+    "дата": "2021-08-28",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Es un robo esta aplicación, es una ESTAFA me cobraron 53 dlls por una suscripción que ni siquiera autorize, quiero mi dinero de vuelta 🤬😡",
+    "українською": "Цей застосунок — крадіжка, це ШАХРАЙСТВО. З мене списали 53 долари за підписку, яку я навіть не дозволяла. Хочу свої гроші назад 🤬😡",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Es un robo esta aplicación"
+  },
+  {
+    "id": "gp:a100cdf6-c96",
+    "партія": "4",
+    "дата": "2025-10-02",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "de",
+    "заголовок": "",
+    "оригінал": "Das Reading ist nur auf englisch... Da meine Sprache deutsch ist, hilft mir das Reading nicht. Ich möchte das Abo kündigen. Aber es wird nirgends angezeigt, wie ich es machen kann.",
+    "українською": "Читання лише англійською... Оскільки моя мова німецька, це читання мені не допомагає. Я хочу скасувати підписку. Але ніде не показано, як це зробити.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "причина скасування - читання лише англійською при німецькій мові користувача"
+  },
+  {
+    "id": "gp:afccb60a-7cd",
+    "партія": "4",
+    "дата": "2025-09-26",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I can't get past asking where I was born when it won't recognize any city in Wyoming grr worse app I have ever seen now it keeps telling me my email is invalid. How do I cancel my subscription?",
+    "українською": "Я не можу пройти далі питання, де я народився, бо воно не розпізнає жодного міста у Вайомінгу. Грр, найгірший застосунок, який я бачив. А тепер воно постійно каже, що моя пошта недійсна. Як мені скасувати підписку?",
+    "розмітка": {
+      "категорія": "app_defect",
+      "пріоритет": "P3",
+      "наступний крок": "bug_report"
+    },
+    "нотатка": "не розпізнає жодного міста у Вайомінгу, пошта постійно недійсна; окремо просить скасувати підписку - цей бік запиту крок bug_report не закриває; ВІДГУК: worse app I have ever seen"
+  },
+  {
+    "id": "gp:b186f161-98c",
+    "партія": "4",
+    "дата": "2026-07-23",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "bonjour je viens de me rendre compte qu'on m'a prélevé 39 euros mais j'ai déjà désabonner je comprends pas pourquoi ??? je veux de remboursement je regarde même pas",
+    "українською": "вітаю, я щойно виявила, що з мене списали 39 євро, але я вже відписалась. Я не розумію чому??? Я хочу повернення, я навіть не дивлюсь.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:b70e8be8-b6f",
+    "партія": "4",
+    "дата": "2024-05-09",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Hola! Me he comunicado con soporte ya que al suscribirme a traves de la web tuve descuentos multiples en mi tarjeta, por favor si podrían ayudarme con la devolución de mi dinero y dar de baja la suscripción sería de gran ayuda. Gracias",
+    "українською": "Вітаю! Я зв'язалась із підтримкою, бо при оформленні підписки через сайт у мене були численні списання з картки. Будь ласка, якби ви могли допомогти мені з поверненням грошей і скасуванням підписки, це було б дуже доречно. Дякую.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "чистий ввічливий тікет: множинні списання після підписки через веб"
+  },
+  {
+    "id": "gp:bad38dca-8ba",
+    "партія": "4",
+    "дата": "2024-09-19",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "Cette appli que je n'ai jamais installé me débite tous les mois 29,25 € sans mon autorisation et c'est en payment automatique. Je veux être remboursée pour les mois d'août et septembre et je veux l'assurance qu'ils le feront.",
+    "українською": "Цей застосунок, якого я ніколи не встановлювала, списує з мене щомісяця 29,25 € без мого дозволу, і це автоматичний платіж. Я хочу повернення за серпень і вересень, і я хочу гарантію, що вони це зроблять.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "застосунок ніколи не встановлювала; ВІДГУК: ils у третій особі"
+  },
+  {
+    "id": "gp:bb8e5da6-c0e",
+    "партія": "4",
+    "дата": "2024-01-11",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Pir favor necesito que me reembolsen, esto es un fraude, no recibí chat, el informe es una porquería, suscribí prueba y me cobraron casi $ 40.000. Porfavor devuelvan mi dinero",
+    "українською": "Будь ласка, мені потрібно, щоб ви повернули кошти. Це шахрайство: чату я не отримала, звіт — мотлох, я оформила пробний період, а з мене списали майже 40 000. Будь ласка, поверніть мої гроші.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: el informe es una porquería"
+  },
+  {
+    "id": "gp:bd3f0d61-144",
+    "партія": "4",
+    "дата": "2026-09-12",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "arabic",
+    "заголовок": "",
+    "оригінал": "تم خصم مبلغ 1 دولار مني، ثم تم خصم 14.99 دولار إضافية ولم يكن واضحًا لي عند الدفع أن هذا المبلغ الإضافي سيُخصم. كما واجهت صعوبة في إلغاء الاشتراك. تواصلت مع خدمة العملاء وطلبت استرداد مبلغ 14.99 دولار وإلغاء اشتراكي نهائيًا. بس الحلو فيهم انهم يجاوبون على الايميل بس بشوف يردون فلوسي الي خصمت من غير علمي أو لا!!",
+    "українською": "З мене списали суму 1 долар, потім списали додатково 14,99 долара, і при оплаті мені не було ясно, що ця додаткова сума буде списана. Я також мав труднощі зі скасуванням підписки. Я звернувся до служби підтримки і попросив повернути 14,99 долара і остаточно скасувати мою підписку. Добре в них те, що вони відповідають на пошту — але побачимо, чи повернуть мені гроші, списані без мого відома, чи ні!!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "$1 і ще $14,99, на оплаті це не було ясно; ВІДГУК: третя особа + плюси-мінуси про них"
+  },
+  {
+    "id": "gp:bf7ca7c9-f1e",
+    "партія": "4",
+    "дата": "2025-12-14",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "i downloaded the app but never had any consultation with anyone... i got debited even without using my 3mins free trial consultation. how do i get a refund ASAP please.",
+    "українською": "я завантажила застосунок, але ніколи не мала жодної консультації ні з ким... з мене списали навіть без використання моїх 3 безкоштовних хвилин консультації. Як мені отримати повернення якнайшвидше, будь ласка?",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "списали навіть без використання 3 безкоштовних хвилин"
+  },
+  {
+    "id": "gp:c25b97ff-84c",
+    "партія": "4",
+    "дата": "2024-06-04",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I saw an ad that said you can do a 1$ palm reading so I said ok y not. Well I paid my dollar then a few days later I got hit with a 45$ charge saying I had a subscription . Ummm NO I canceled that as soon as I say it. I never agreed to a subscription I want my money back",
+    "українською": "Я побачив рекламу, де було написано, що можна зробити читання по долоні за 1$, і сказав: ну гаразд, чому ні. Що ж, я заплатив свій долар, а через кілька днів мене вдарило списанням на 45$ із повідомленням, що в мене підписка. Ммм, НІ. Я скасував це, щойно побачив. Я ніколи не погоджувався на підписку. Я хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "реклама обіцяла читання долоні за 1$"
+  },
+  {
+    "id": "gp:c9468136-9b2",
+    "партія": "4",
+    "дата": "2025-07-27",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "es una estafa completamente me quitaron casi 500 pesos sin mi autorizacion no se como cancelar no quiero que me quiten mi dinero no es posibke son una estafa , quiero mi dinero de vuelta",
+    "українською": "це цілковите шахрайство, з мене зняли майже 500 песо без мого дозволу. Не знаю, як скасувати, не хочу, щоб у мене забирали мої гроші. Так не можна, ви шахраї. Хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: es una estafa completamente"
+  },
+  {
+    "id": "gp:cbaa38d5-529",
+    "партія": "4",
+    "дата": "2025-03-07",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Es una estafa. Abone un dolar, no me suscribí a nada y ahora me cobraron por algo que no utilizo Nunca use la app Quiero que me reintegren mi dinero! ESTAFA!!!",
+    "українською": "Це шахрайство. Я заплатила один долар, ні на що не підписувалась, а тепер з мене списали за те, чим я не користуюсь. Я ніколи не користувалась застосунком. Хочу, щоб мені повернули мої гроші! ШАХРАЙСТВО!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Es una estafa. першим реченням"
+  },
+  {
+    "id": "gp:cbcf814a-697",
+    "партія": "4",
+    "дата": "2025-09-19",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "fui cobrada por uma compra que não fiz quero meu dinheiro de volta !!cai nesse Golpe!!! estelionatários me cobraram duas vezes!!! 160+73 ladrões",
+    "українською": "з мене списали за покупку, якої я не робила. Хочу свої гроші назад!! Я потрапила на цю Аферу!!! Махінатори списали з мене двічі!!! 160+73. Злодії.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "двічі: 160+73; ВІДГУК: estelionatários, ladrões"
+  },
+  {
+    "id": "gp:ccbefafe-b23",
+    "партія": "4",
+    "дата": "2025-11-13",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "signed up for a onetime read so I thought then I got charged for a subscription and when I inquired about a refund they also said that it was in plain view but I went back to their site because I didn't remember seeing anything that said that and I couldn't see anything when I went back to the site. they offered other readings but if I had wanted other readings but I do t want that I want my money back.",
+    "українською": "я оформив, як я думав, одноразове читання, а потім з мене списали за підписку. І коли я спитав про повернення, вони теж сказали, що це було на видноті. Але я повернувся на їхній сайт, бо не пам'ятав, щоб бачив щось таке, і коли повернувся на сайт, нічого не побачив. Вони запропонували інші читання — але якби я хотів інших читань… а я цього не хочу, я хочу свої гроші назад.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: підтримка відповіла, що умова була in plain view, а на сайті людина її не знайшла; ВІДГУК: they / their site"
+  },
+  {
+    "id": "gp:d8080fd8-fc2",
+    "партія": "4",
+    "дата": "2026-01-27",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "necesito que me desvinculen la cuenta porque jamás pude usar ese servicio pero ahora me llega un mensaje que no pudieron hacer el cobro de 148 mil pesos cuando eso jamás se usó me van a descontar por favor necesito que hagan la desvinculación ya que por ningún lado me sale ni por la play store ni por mi cuenta pésima app",
+    "українською": "мені потрібно, щоб ви відв'язали акаунт, бо я так і не змогла скористатись цією послугою, а тепер мені приходить повідомлення, що не вдалося списати 148 тисяч песо — при тому, що нічим не користувались. З мене спишуть. Будь ласка, мені потрібно, щоб ви зробили відв'язку, бо ніде не виходить: ні через Play Store, ні через мій акаунт. Жахливий застосунок.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "повідомлення, що не змогли списати 148 тис. песо і спишуть далі; ВІДГУК: pésima app"
+  },
+  {
+    "id": "gp:dd5aab05-382",
+    "партія": "4",
+    "дата": "2026-01-17",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "pt",
+    "заголовок": "",
+    "оригінал": "Cai em um golpe pelo Instagram, site todo em inglês quem não entende o idioma gasta seu dinheiro a toa, me descontaram o valor da foto da alma gêmea mais $161 reais de que ? Quero meu dinheiro de volta, não tive foto nem leitura e só gastei meu dinheiro! Quero meu dinheiro",
+    "українською": "Я потрапила на аферу через Instagram. Сайт увесь англійською — хто не розуміє мови, марно витрачає свої гроші. З мене списали суму за фото спорідненої душі плюс 161 реал — за що? Хочу свої гроші назад: я не отримала ні фото, ні читання, і лише витратила свої гроші! Хочу свої гроші.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ні фото, ні читання; ВІДГУК: quem não entende o idioma gasta seu dinheiro a toa"
+  },
+  {
+    "id": "gp:deeffe03-1b2",
+    "партія": "4",
+    "дата": "2025-06-04",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "tr",
+    "заголовок": "",
+    "оригінал": "Önce sadece doğum haritası için benden 20 TL aldı ve kendi kendine uygulama beni üye yaptı defalarca kez üyeliğimi gmail üzerinden silmeme rağmen benden bu ay 1000 TL üzeri para aldı acilen paramın iadesini talep ediyorum benim bir üyeliğim yok üye olduğum anda gmail üzerinden sildim sonda uygulamada adım bile çıkmıyordu derhal bu işin son bulmasını istiyorum aksi takdir de dava açacağım",
+    "українською": "Спершу взяв з мене лише 20 TL за натальну карту, і застосунок сам зробив мене підписником. Попри те що я багато разів видаляв своє членство через gmail, цього місяця з мене зняли понад 1000 TL. Терміново вимагаю повернення моїх грошей. У мене немає жодного членства — у момент, коли я став підписником, я видалив його через gmail, і потім мого імені в застосунку навіть не було. Я вимагаю, щоб це негайно припинилось, інакше подам до суду.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "застосунок підписав його сам; понад 1000 TL; обіцяє позов"
+  },
+  {
+    "id": "gp:e272faa6-584",
+    "партія": "4",
+    "дата": "2025-09-07",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I have been trying to cancel this subscription for the last 2 months and have been unable to I've tried everything. please can you get in touch and refund my payments",
+    "українською": "Я намагаюсь скасувати цю підписку останні 2 місяці і не можу, я спробувала все. Будь ласка, зв'яжіться зі мною і поверніть мої платежі.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "два місяці спроб"
+  },
+  {
+    "id": "gp:e85fc608-14f",
+    "партія": "4",
+    "дата": "2025-10-09",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "j'ai payé 5€ hier pour avoir les résultats d'un test, je le retrouve sur une appli avec 7 jours d'essai avant le prélèvement de 49€! je veux absolument me désabonner mais n'y arrive pas ! c'est du vol....",
+    "українською": "я заплатила 5€ вчора, щоб отримати результати тесту, і опиняюсь у застосунку з 7 днями пробного періоду перед списанням 49€! Я абсолютно хочу відписатись і не можу! Це крадіжка....",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "хоче встигнути до списання 49 євро; ВІДГУК: c'est du vol...."
+  },
+  {
+    "id": "gp:e8875c1d-a95",
+    "партія": "4",
+    "дата": "2023-07-19",
+    "зірки": "2",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I cancelled this straight away, yet £29.99 has gone onto my phone bill which now means I can't afford to pay my bill, so I will get cut off, how can I reverse these charges?",
+    "українською": "Я скасувала це одразу, і все ж 29,99£ пішли на мій телефонний рахунок, а це тепер означає, що я не можу оплатити свій рахунок, тож мене відключать. Як я можу скасувати ці списання?",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: списання потрапило на рахунок мобільного оператора; через це не зможе оплатити зв'язок"
+  },
+  {
+    "id": "gp:e895425f-6fe",
+    "партія": "4",
+    "дата": "2025-06-06",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Quiero que me reembolsen me están cobrando 39 euros de no sé qué. Reviso y no suscribí pago alguno. Es una estafa yo no he utilizado la app me parece muy truculenta y ni le seguí la pista es terrible ni sé qué me cobran si no he utilizado esta app",
+    "українською": "Хочу, щоб мені повернули кошти. З мене стягують 39 євро невідомо за що. Перевіряю — жодного платежу я не оформлювала. Це шахрайство, я не користувалась застосунком, він здається мені дуже мутним, я навіть не стежила за ним. Це жахливо, я навіть не знаю, за що з мене беруть, якщо я не користувалась цим застосунком.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ВІДГУК: Es una estafa + es terrible"
+  },
+  {
+    "id": "gp:ec01520a-736",
+    "партія": "4",
+    "дата": "2026-01-03",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Pague por la prueba 1$ y NUNCA autorize a que me cobren 40$ pasado unos días, hasta había desinstalado la app DEVUELVAN MI DINERO",
+    "українською": "Я заплатив за пробний період 1$ і НІКОЛИ не дозволяв, щоб з мене списали 40$ через кілька днів. Я навіть застосунок видалив. ПОВЕРНІТЬ МОЇ ГРОШІ.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:f114fe76-d88",
+    "партія": "4",
+    "дата": "2025-05-16",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "es",
+    "заголовок": "",
+    "оригінал": "Me cobraron 700 pesos sin mi autorización, uno quiere aclaración y cancelar la suscripción y lo bloquean para clavarse el dinero. Quiero mi dinero ya .",
+    "українською": "З мене списали 700 песо без мого дозволу. Ти хочеш з'ясувати і скасувати підписку — а тебе блокують, щоб присвоїти гроші. Хочу свої гроші зараз.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ЦІННЕ: каже, що тих, хто просить роз'яснення і скасування, блокують"
+  },
+  {
+    "id": "gp:f7bbecf8-d4a",
+    "партія": "4",
+    "дата": "2023-07-30",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "fr",
+    "заголовок": "",
+    "оригінал": "Je veux me désabonner je ne sais pas comment on m'a débité 14$ et ensuite un autre 49.99$ et je ne sais pas pourquoi!! Je veux etre rembourser!!!",
+    "українською": "Я хочу відписатись і не знаю як. З мене списали 14$, а потім ще 49,99$, і я не знаю чому!! Я хочу повернення!!!",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "14$ і 49,99$"
+  },
+  {
+    "id": "as:10845946773",
+    "партія": "4т",
+    "дата": "2024-01-21",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Deduction",
+    "оригінал": "Good day, I received a charge of $31 I did not make this purchase. I do not have the app! Please can you process a refund urgently. Thank you",
+    "українською": "Доброго дня, мені нарахували списання на 31 долар — я цієї покупки не робила. Застосунку в мене немає! Будь ласка, оформіть повернення коштів терміново. Дякую.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "застосунку взагалі не має"
+  },
+  {
+    "id": "as:12241319234",
+    "партія": "4т",
+    "дата": "2025-01-28",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Mistake",
+    "оригінал": "I just donated for the app. But I didn't get any subscriptions. Despite this, payment was received from my bank account -1800 tl-, please, I want this to be fixed.",
+    "українською": "Я просто зробила донат на застосунок. Але жодної підписки не отримувала. Незважаючи на це, з мого банківського рахунку зняли платіж — 1800 лір. Будь ласка, я хочу, щоб це виправили.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "зробив донат, підписки не отримував, знято 1800 TL"
+  },
+  {
+    "id": "as:12281002089",
+    "партія": "4т",
+    "дата": "2025-02-07",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Darme de baja",
+    "оригінал": "Por favor darme de baja de la aplicación he mandado ya unos cuantos mails y encima me habéis cobrado 39€ darme de baja ya!!!! Y reembolso!!!!!",
+    "українською": "Будь ласка, відпишіть мене від застосунку — я вже надіслала кілька листів, а ви ще й стягнули з мене 39 євро. Відпишіть мене негайно!!!! І поверніть кошти!!!!!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "межа ТИШІ: he mandado ya unos cuantos mails - про відсутність відповіді прямо не каже; мова тегована en, насправді іспанська"
+  },
+  {
+    "id": "as:13299965772",
+    "партія": "4т",
+    "дата": "2025-10-22",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Subscription",
+    "оригінал": "I accidentally download the app and got subscriptions bu i wanna cancel it and there is no way to cancel it . It keep deducting my money from my account 100$ . So disappointed and i want my refund asap..",
+    "українською": "Я випадково завантажила застосунок і отримала підписку, але хочу її скасувати — і немає жодного способу це зробити. З мого рахунку й далі знімають кошти, вже 100 доларів. Дуже розчарована, хочу повернення коштів якнайшвидше.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "способу скасувати немає, знято вже $100"
+  },
+  {
+    "id": "as:13603400375",
+    "партія": "4т",
+    "дата": "2026-01-07",
+    "зірки": "1",
+    "магазин": "appstore",
+    "мова": "en_or_unknown",
+    "заголовок": "Unauthorised Charges",
+    "оригінал": "I have been charged via ApplePay for the initial service and the charged for a subscription that I did not authorise and do not want. Very frustrating. I would like a refund please.",
+    "українською": "З мене стягнули через ApplePay за початкову послугу, а потім ще й за підписку, якої я не підтверджувала і не хочу. Дуже неприємно. Прошу повернути кошти.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:09b12814-afb",
+    "партія": "4т",
+    "дата": "2022-01-27",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I used the 3 day free subscription was charged on first day, canceled subscription and have been charged every week since since I canceled on June 14th and yes this is was 28 weeks but I have just gone through bank statements and seen, would really appreciate my money back as its near $500 you have taken from me, they use all different names weekly and is only thing I've signed up for...",
+    "українською": "Я скористалася трьома днями безкоштовної підписки, кошти стягнули першого ж дня, я скасувала підписку — і з того часу з мене списують щотижня. Скасувала я 14 червня, і так, це вже 28 тижнів, але я лише зараз переглянула банківські виписки й побачила. Дуже хотіла б повернути свої гроші, бо це майже 500, які ви з мене забрали; вони щотижня використовують різні назви, і це єдине, на що я підписувалася...",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P2",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "28 тижнів по списанню, близько $500; ЦІННЕ: щотижня інша назва мерчанта"
+  },
+  {
+    "id": "gp:1355287e-138",
+    "партія": "4т",
+    "дата": "2024-10-31",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I have been charged multiple times don't know what for and need this money refunded and this canceled please give me a phone number immediately to call. I need a refund or I'm calling the bank for fraud!",
+    "українською": "З мене стягнули кошти кілька разів, я не знаю за що, і мені потрібно ці гроші повернути, а це — скасувати. Будь ласка, негайно дайте мені номер телефону, щоб я міг зателефонувати. Мені потрібне повернення коштів, інакше я дзвоню в банк щодо шахрайства!",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P1",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "просить номер телефону; інакше дзвонить у банк щодо шахрайства"
+  },
+  {
+    "id": "gp:14528ce0-b72",
+    "партія": "4т",
+    "дата": "2026-09-16",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Dear Nebula Support Team, I am requesting an immediate refund of the unexpected $29.99 charge made to my creditcard. I only intended to make $1 payment for the sketch/drawing service. I did not intend to purchase or authorize any additional subscription or service costing $29.99 was surprised to see this additional charge on my payment method. I consider this charge unauthorized and misleading, as I did not knowingly agree to pay an additional $29.99 Please: Refund the full $29.99 !",
+    "українською": "Шановна команда підтримки Nebula, прошу негайно повернути несподіване списання 29,99 долара з моєї кредитної картки. Я мала намір заплатити лише 1 долар за послугу малюнка/скетчу. Я не мала наміру купувати чи підтверджувати жодну додаткову підписку або послугу вартістю 29,99 долара і була здивована, побачивши це додаткове списання у своєму способі оплати. Я вважаю це списання неавторизованим і таким, що вводить в оману, бо я свідомо не погоджувалася платити додаткові 29,99. Прошу: повернути всі 29,99!",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ДВІЙНИК gp:bceaf4ac-614 - той самий шаблон листа, інша сума"
+  },
+  {
+    "id": "gp:1b1b12c4-a2d",
+    "партія": "4т",
+    "дата": "2024-06-21",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "CANCEL! How the heck do I cancel this? I was curious about my witch type (and bored) so I paid $1 for the trial. I want to cancel and cannot find the website and can't get past the pay wall in the app. Grrr! I'd should have stayed bored!",
+    "українською": "СКАСУЙТЕ! Як же мені це скасувати? Мені стало цікаво, який я тип чаклунки (і було нудно), тож я заплатила 1 долар за пробний період. Хочу скасувати — і не можу знайти сайт, а в застосунку не можу пройти далі платної стіни. Ох! Краще б я й далі нудилася!",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "не може знайти сайт і не проходить пейволл у застосунку"
+  },
+  {
+    "id": "gp:536f3aba-468",
+    "партія": "4т",
+    "дата": "2025-08-10",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I'm not happy with my subscription I'm wanting to cancel this subscription I didn't know about how to go about canceling this please make note I want it canceled",
+    "українською": "Я незадоволена своєю підпискою, хочу її скасувати, я не знала, як це робиться, — зафіксуйте, будь ласка: я хочу, щоб її скасували.",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": ""
+  },
+  {
+    "id": "gp:8540e191-8e5",
+    "партія": "4т",
+    "дата": "2025-01-22",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I was just charged today for the next week. I had to cancel the subscription but this week is paid for. So I was like well ok I should have all the features now for the week, I went to the app and now it's saying I ain't paid. I want my money back.",
+    "українською": "З мене щойно стягнули оплату за наступний тиждень. Мені довелося скасувати підписку, але цей тиждень оплачено. Я подумала: ну добре, значить усі функції в мене цього тижня є. Зайшла в застосунок — а там написано, що я не платила. Хочу повернення коштів.",
+    "розмітка": {
+      "категорія": "nothing_delivered",
+      "пріоритет": "P3",
+      "наступний крок": "redeliver"
+    },
+    "нотатка": "тиждень оплачено, а застосунок каже, що не оплачено - треба відновити доступ"
+  },
+  {
+    "id": "gp:bceaf4ac-614",
+    "партія": "4т",
+    "дата": "2026-09-07",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Dear Nebula Support Team, I am requesting an immediate refund of the unexpected $14.99 charge made to my account. I only intended to make a $1 payment for the sketch/drawing service. I did not intend to purchase or authorize any additional subscription or service costing $14.99. I was surprised to see this additional charge on my payment method. I consider this charge unauthorized and misleading, as I did not knowingly agree to pay an additional $14.99. Please: Refund the full $14.99 charge",
+    "українською": "Шановна команда підтримки Nebula, прошу негайно повернути несподіване списання 14,99 долара з мого рахунку. Я мала намір заплатити лише 1 долар за послугу малюнка/скетчу. Я не мала наміру купувати чи підтверджувати жодну додаткову підписку або послугу вартістю 14,99 долара. Я була здивована, побачивши це додаткове списання у своєму способі оплати. Я вважаю це списання неавторизованим і таким, що вводить в оману, бо я свідомо не погоджувалася платити додаткові 14,99. Прошу: повернути все списання на 14,99.",
+    "розмітка": {
+      "категорія": "price_not_expected",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": "ДВІЙНИК gp:14528ce0-b72"
+  },
+  {
+    "id": "gp:e24258a9-c6a",
+    "партія": "4т",
+    "дата": "2025-04-05",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "I am being charged $45.00 for a subscription that I don't remember signing up for. I am trying to cancel but it says incorrect user name and password. can you help me",
+    "українською": "З мене стягують 45 доларів за підписку, про оформлення якої я не пам'ятаю. Намагаюся скасувати, але пише «неправильні ім'я користувача або пароль». Можете допомогти?",
+    "розмітка": {
+      "категорія": "cancel_not_possible",
+      "пріоритет": "P3",
+      "наступний крок": "cancel_only"
+    },
+    "нотатка": "скасувати заважає збій входу - incorrect user name and password; сам баг при цьому кроці не доходить до інженерів"
+  },
+  {
+    "id": "gp:e2e4f875-4a7",
+    "партія": "4т",
+    "дата": "2026-01-25",
+    "зірки": "1",
+    "магазин": "googleplay",
+    "мова": "en_or_unknown",
+    "заголовок": "",
+    "оригінал": "Hi, I did not consent to subscribe on this app it was done without my knowledge. I only found out when my account was debited. i would like to request a refund please",
+    "українською": "Вітаю, я не давала згоди на підписку в цьому застосунку — її оформили без мого відома. Я дізналася про це лише тоді, коли з мого рахунку зняли кошти. Прошу повернути гроші, будь ласка.",
+    "розмітка": {
+      "категорія": "charge_not_recognised",
+      "пріоритет": "P3",
+      "наступний крок": "refund_and_cancel"
+    },
+    "нотатка": ""
+  }
+]

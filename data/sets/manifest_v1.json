@@ -1,0 +1,175 @@
+{
+  "source": "data/tickets/tickets.csv",
+  "source_rows": 417,
+  "method": "Webster apportionment over strata sorted by (категорія, наступний крок, пріоритет, lang_bucket); no randomness, byte-identical on re-run",
+  "quotas": {
+    "fewshot": 25,
+    "dev": 157,
+    "golden": 235
+  },
+  "twins_kept_together": [
+    [
+      "as:14334387664",
+      "as:14466218468"
+    ],
+    [
+      "gp:14528ce0-b72",
+      "gp:bceaf4ac-614"
+    ]
+  ],
+  "fewshot_coverage_swaps": [
+    {
+      "into_fewshot": "as:10137043012",
+      "category_gained": "other",
+      "out_to_dev": "as:13590053288",
+      "category_given_up": "charge_not_recognised"
+    }
+  ],
+  "language_presence_trades": [
+    {
+      "target": "fewshot",
+      "language": "pt",
+      "from": "golden",
+      "in": "gp:5ca5ff8d-2e8",
+      "out": "as:7007116489",
+      "label_triple": "app_defect / P3 / bug_report",
+      "priority_moved": false
+    }
+  ],
+  "composition": {
+    "fewshot": {
+      "категорія": {
+        "charge_not_recognised": 9,
+        "price_not_expected": 7,
+        "cancel_not_possible": 4,
+        "app_defect": 2,
+        "nothing_delivered": 2,
+        "other": 1
+      },
+      "пріоритет": {
+        "P3": 15,
+        "P2": 7,
+        "P1": 3
+      },
+      "наступний крок": {
+        "refund_and_cancel": 18,
+        "bug_report": 3,
+        "cancel_only": 3,
+        "redeliver": 1
+      },
+      "мова": {
+        "en_or_unknown": 14,
+        "es": 5,
+        "fr": 2,
+        "de": 1,
+        "hangul": 1,
+        "pt": 1,
+        "tr": 1
+      },
+      "магазин": {
+        "googleplay": 15,
+        "appstore": 10
+      }
+    },
+    "dev": {
+      "категорія": {
+        "charge_not_recognised": 67,
+        "price_not_expected": 41,
+        "cancel_not_possible": 26,
+        "app_defect": 12,
+        "nothing_delivered": 8,
+        "other": 3
+      },
+      "пріоритет": {
+        "P3": 92,
+        "P2": 41,
+        "P1": 24
+      },
+      "наступний крок": {
+        "refund_and_cancel": 115,
+        "cancel_only": 20,
+        "bug_report": 12,
+        "explain_charge": 3,
+        "redeliver": 3,
+        "escalate_to_authority_case": 2,
+        "route_to_human_review": 2
+      },
+      "мова": {
+        "en_or_unknown": 81,
+        "es": 33,
+        "pt": 13,
+        "fr": 12,
+        "de": 6,
+        "tr": 6,
+        "arabic": 2,
+        "it": 2,
+        "cyrillic": 1,
+        "han": 1
+      },
+      "магазин": {
+        "googleplay": 100,
+        "appstore": 57
+      }
+    },
+    "golden": {
+      "категорія": {
+        "charge_not_recognised": 98,
+        "price_not_expected": 62,
+        "cancel_not_possible": 38,
+        "app_defect": 19,
+        "nothing_delivered": 13,
+        "other": 5
+      },
+      "пріоритет": {
+        "P3": 136,
+        "P2": 63,
+        "P1": 36
+      },
+      "наступний крок": {
+        "refund_and_cancel": 173,
+        "cancel_only": 28,
+        "bug_report": 20,
+        "redeliver": 6,
+        "escalate_to_authority_case": 4,
+        "explain_charge": 2,
+        "route_to_human_review": 2
+      },
+      "мова": {
+        "en_or_unknown": 127,
+        "es": 50,
+        "pt": 21,
+        "fr": 13,
+        "de": 6,
+        "tr": 6,
+        "it": 4,
+        "cyrillic": 2,
+        "han": 2,
+        "hangul": 2,
+        "arabic": 1,
+        "thai": 1
+      },
+      "магазин": {
+        "googleplay": 135,
+        "appstore": 100
+      }
+    }
+  },
+  "synthetic": {
+    "file": "data/sets/synthetic_v1.json",
+    "rows": 15,
+    "written": "2026-09-22",
+    "scored_with": "golden_v1.json; 235 + 15 = 250 rows per run",
+    "mandated_by_assignment": [
+      "aggressive tone",
+      "mixed topic",
+      "non-English"
+    ],
+    "edge_cases": [
+      "empty input",
+      "12k-character input",
+      "prompt injection",
+      "review with no request",
+      "already resolved"
+    ]
+  }
+}
