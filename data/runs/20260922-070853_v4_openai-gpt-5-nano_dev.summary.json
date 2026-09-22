@@ -1,0 +1,469 @@
+{
+  "rows": 50,
+  "scored": 50,
+  "failures": 0,
+  "failure_ids": [],
+  "repaired": 0,
+  "fields": {
+    "category": {
+      "macro_f1_core": 0.7555555555555555,
+      "macro_f1_all": 0.6539558669993452,
+      "reportable_classes": [
+        "charge_not_recognised"
+      ],
+      "rare_classes": {
+        "app_defect": {
+          "correct": 5,
+          "support": 5,
+          "predicted": 5
+        },
+        "cancel_not_possible": {
+          "correct": 4,
+          "support": 6,
+          "predicted": 7
+        },
+        "nothing_delivered": {
+          "correct": 3,
+          "support": 4,
+          "predicted": 3
+        },
+        "other": {
+          "correct": 0,
+          "support": 0,
+          "predicted": 2
+        },
+        "price_not_expected": {
+          "correct": 8,
+          "support": 13,
+          "predicted": 10
+        }
+      },
+      "accuracy": 0.74,
+      "majority_baseline": {
+        "label": "charge_not_recognised",
+        "accuracy": 0.44
+      },
+      "per_class": {
+        "app_defect": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5,
+          "predicted": 5
+        },
+        "cancel_not_possible": {
+          "precision": 0.5714285714285714,
+          "recall": 0.6666666666666666,
+          "f1": 0.6153846153846153,
+          "support": 6,
+          "predicted": 7
+        },
+        "charge_not_recognised": {
+          "precision": 0.7391304347826086,
+          "recall": 0.7727272727272727,
+          "f1": 0.7555555555555555,
+          "support": 22,
+          "predicted": 23
+        },
+        "nothing_delivered": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 4,
+          "predicted": 3
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "predicted": 2
+        },
+        "price_not_expected": {
+          "precision": 0.8,
+          "recall": 0.6153846153846154,
+          "f1": 0.6956521739130435,
+          "support": 13,
+          "predicted": 10
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "price_not_expected",
+          "pred": "charge_not_recognised",
+          "n": 5
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "cancel_not_possible",
+          "n": 2
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "price_not_expected",
+          "n": 2
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "other",
+          "n": 1
+        },
+        {
+          "gold": "cancel_not_possible",
+          "pred": "other",
+          "n": 1
+        }
+      ]
+    },
+    "priority": {
+      "macro_f1_core": 0.8333333333333334,
+      "macro_f1_all": 0.5884109916367981,
+      "reportable_classes": [
+        "P3"
+      ],
+      "rare_classes": {
+        "P1": {
+          "correct": 1,
+          "support": 8,
+          "predicted": 1
+        },
+        "P2": {
+          "correct": 11,
+          "support": 11,
+          "predicted": 20
+        }
+      },
+      "accuracy": 0.74,
+      "majority_baseline": {
+        "label": "P3",
+        "accuracy": 0.62
+      },
+      "per_class": {
+        "P1": {
+          "precision": 1.0,
+          "recall": 0.125,
+          "f1": 0.2222222222222222,
+          "support": 8,
+          "predicted": 1
+        },
+        "P2": {
+          "precision": 0.55,
+          "recall": 1.0,
+          "f1": 0.7096774193548387,
+          "support": 11,
+          "predicted": 20
+        },
+        "P3": {
+          "precision": 0.8620689655172413,
+          "recall": 0.8064516129032258,
+          "f1": 0.8333333333333334,
+          "support": 31,
+          "predicted": 29
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "P3",
+          "pred": "P2",
+          "n": 6
+        },
+        {
+          "gold": "P1",
+          "pred": "P3",
+          "n": 4
+        },
+        {
+          "gold": "P1",
+          "pred": "P2",
+          "n": 3
+        }
+      ]
+    },
+    "next_step": {
+      "macro_f1_core": 0.9473684210526316,
+      "macro_f1_all": 0.5979233798782672,
+      "reportable_classes": [
+        "refund_and_cancel"
+      ],
+      "rare_classes": {
+        "bug_report": {
+          "correct": 5,
+          "support": 5,
+          "predicted": 5
+        },
+        "cancel_only": {
+          "correct": 2,
+          "support": 5,
+          "predicted": 2
+        },
+        "escalate_to_authority_case": {
+          "correct": 0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "correct": 1,
+          "support": 1,
+          "predicted": 1
+        },
+        "redeliver": {
+          "correct": 1,
+          "support": 2,
+          "predicted": 1
+        },
+        "route_to_human_review": {
+          "correct": 0,
+          "support": 0,
+          "predicted": 1
+        }
+      },
+      "accuracy": 0.9,
+      "majority_baseline": {
+        "label": "refund_and_cancel",
+        "accuracy": 0.72
+      },
+      "per_class": {
+        "bug_report": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5,
+          "predicted": 5
+        },
+        "cancel_only": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715,
+          "support": 5,
+          "predicted": 2
+        },
+        "escalate_to_authority_case": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "predicted": 1
+        },
+        "redeliver": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "predicted": 1
+        },
+        "refund_and_cancel": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526316,
+          "support": 36,
+          "predicted": 40
+        },
+        "route_to_human_review": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "predicted": 1
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "cancel_only",
+          "pred": "refund_and_cancel",
+          "n": 2
+        },
+        {
+          "gold": "escalate_to_authority_case",
+          "pred": "refund_and_cancel",
+          "n": 1
+        },
+        {
+          "gold": "cancel_only",
+          "pred": "route_to_human_review",
+          "n": 1
+        },
+        {
+          "gold": "redeliver",
+          "pred": "refund_and_cancel",
+          "n": 1
+        }
+      ]
+    }
+  },
+  "headline": 0.8454191033138402,
+  "all_three_exact": 0.52,
+  "table_violations": {
+    "n": 0,
+    "cases": []
+  },
+  "self_contradiction": {
+    "n": 5,
+    "checked": 50,
+    "cases": [
+      {
+        "id": "as:10554353137",
+        "facts": [],
+        "implies": "P3",
+        "said": "P2"
+      },
+      {
+        "id": "as:12749562462",
+        "facts": [
+          "hardship",
+          "still_bleeding",
+          "deadline",
+          "large_amount",
+          "card_exposed"
+        ],
+        "implies": "P1",
+        "said": "P3"
+      },
+      {
+        "id": "gp:17d51dae-fed",
+        "facts": [
+          "card_exposed",
+          "deadline",
+          "still_bleeding",
+          "escalated_out",
+          "hardship",
+          "large_amount",
+          "card_exposed"
+        ],
+        "implies": "P1",
+        "said": "P2"
+      },
+      {
+        "id": "gp:3709c26f-4f6",
+        "facts": [
+          "still_bleeding",
+          "hardship",
+          "still_bleeding"
+        ],
+        "implies": "P1",
+        "said": "P2"
+      },
+      {
+        "id": "gp:76ce3375-5c2",
+        "facts": [
+          "deadline",
+          "escalated_out",
+          "hardship",
+          "still_bleeding",
+          "large_amount",
+          "card_exposed"
+        ],
+        "implies": "P1",
+        "said": "P2"
+      }
+    ]
+  },
+  "escalation": {
+    "found": 0,
+    "gold": 1,
+    "predicted": 0,
+    "missed_ids": [
+      "as:13605550166"
+    ],
+    "extra_ids": []
+  },
+  "failures_by_kind": {},
+  "evidence_invented": {
+    "n": 3,
+    "ids": [
+      "as:12468500798",
+      "as:13605550166",
+      "gp:dd5aab05-382"
+    ],
+    "checked": 50
+  },
+  "by_language": {
+    "cyrillic": {
+      "n": 1,
+      "all_three_exact": 1.0,
+      "category_acc": 1.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "de": {
+      "n": 2,
+      "all_three_exact": 0.5,
+      "category_acc": 1.0,
+      "priority_acc": 0.5,
+      "next_step_acc": 1.0
+    },
+    "en_or_unknown": {
+      "n": 29,
+      "all_three_exact": 0.5517241379310345,
+      "category_acc": 0.6896551724137931,
+      "priority_acc": 0.7931034482758621,
+      "next_step_acc": 0.896551724137931
+    },
+    "es": {
+      "n": 10,
+      "all_three_exact": 0.5,
+      "category_acc": 0.9,
+      "priority_acc": 0.7,
+      "next_step_acc": 0.9
+    },
+    "fr": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "it": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "pt": {
+      "n": 4,
+      "all_three_exact": 0.75,
+      "category_acc": 0.75,
+      "priority_acc": 0.75,
+      "next_step_acc": 0.75
+    },
+    "tr": {
+      "n": 2,
+      "all_three_exact": 0.0,
+      "category_acc": 1.0,
+      "priority_acc": 0.0,
+      "next_step_acc": 1.0
+    }
+  },
+  "by_set": {
+    "dev": {
+      "n": 50,
+      "all_three_exact": 0.52,
+      "category_acc": 0.74,
+      "priority_acc": 0.74,
+      "next_step_acc": 0.9
+    }
+  },
+  "cost": {
+    "total_usd": 0.057504849999999996,
+    "per_ticket_usd": 0.0011500969999999999,
+    "per_10k_usd": 11.500969999999999,
+    "input_tokens": 135873,
+    "output_tokens": 139738,
+    "cached_input_tokens": 115200,
+    "reasoning_tokens": 131904,
+    "cache_hits": 0
+  },
+  "latency_ms": {
+    "p50": 17641,
+    "p95": 27625,
+    "p99": 34952,
+    "max": 34952
+  }
+}

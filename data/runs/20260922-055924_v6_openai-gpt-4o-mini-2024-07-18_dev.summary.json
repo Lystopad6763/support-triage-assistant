@@ -1,0 +1,427 @@
+{
+  "rows": 157,
+  "scored": 157,
+  "failures": 0,
+  "failure_ids": [],
+  "repaired": 0,
+  "fields": {
+    "category": {
+      "macro_f1_core": 0.7556591008036523,
+      "macro_f1_all": 0.7750517726240483,
+      "reportable_classes": [
+        "cancel_not_possible",
+        "charge_not_recognised",
+        "price_not_expected"
+      ],
+      "rare_classes": {
+        "app_defect": {
+          "correct": 11,
+          "support": 12,
+          "predicted": 12
+        },
+        "nothing_delivered": {
+          "correct": 6,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "correct": 2,
+          "support": 2,
+          "predicted": 4
+        }
+      },
+      "accuracy": 0.7770700636942676,
+      "majority_baseline": {
+        "label": "charge_not_recognised",
+        "accuracy": 0.43312101910828027
+      },
+      "per_class": {
+        "app_defect": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12,
+          "predicted": 12
+        },
+        "cancel_not_possible": {
+          "precision": 0.7666666666666667,
+          "recall": 0.8518518518518519,
+          "f1": 0.8070175438596491,
+          "support": 27,
+          "predicted": 30
+        },
+        "charge_not_recognised": {
+          "precision": 0.7702702702702703,
+          "recall": 0.8382352941176471,
+          "f1": 0.8028169014084507,
+          "support": 68,
+          "predicted": 74
+        },
+        "nothing_delivered": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "predicted": 4
+        },
+        "price_not_expected": {
+          "precision": 0.7666666666666667,
+          "recall": 0.575,
+          "f1": 0.6571428571428571,
+          "support": 40,
+          "predicted": 30
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "price_not_expected",
+          "pred": "charge_not_recognised",
+          "n": 14
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "price_not_expected",
+          "n": 6
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "cancel_not_possible",
+          "n": 3
+        },
+        {
+          "gold": "price_not_expected",
+          "pred": "cancel_not_possible",
+          "n": 3
+        },
+        {
+          "gold": "cancel_not_possible",
+          "pred": "charge_not_recognised",
+          "n": 3
+        }
+      ]
+    },
+    "priority": {
+      "macro_f1_core": 0.649830220713073,
+      "macro_f1_all": 0.649830220713073,
+      "reportable_classes": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "rare_classes": {},
+      "accuracy": 0.6624203821656051,
+      "majority_baseline": {
+        "label": "P3",
+        "accuracy": 0.5859872611464968
+      },
+      "per_class": {
+        "P1": {
+          "precision": 0.5227272727272727,
+          "recall": 0.92,
+          "f1": 0.6666666666666666,
+          "support": 25,
+          "predicted": 44
+        },
+        "P2": {
+          "precision": 0.49056603773584906,
+          "recall": 0.65,
+          "f1": 0.5591397849462365,
+          "support": 40,
+          "predicted": 53
+        },
+        "P3": {
+          "precision": 0.9166666666666666,
+          "recall": 0.5978260869565217,
+          "f1": 0.7236842105263157,
+          "support": 92,
+          "predicted": 60
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "P3",
+          "pred": "P2",
+          "n": 26
+        },
+        {
+          "gold": "P3",
+          "pred": "P1",
+          "n": 11
+        },
+        {
+          "gold": "P2",
+          "pred": "P1",
+          "n": 10
+        },
+        {
+          "gold": "P2",
+          "pred": "P3",
+          "n": 4
+        },
+        {
+          "gold": "P1",
+          "pred": "P3",
+          "n": 1
+        }
+      ]
+    },
+    "next_step": {
+      "macro_f1_core": 0.8074999999999999,
+      "macro_f1_all": 0.4545238095238095,
+      "reportable_classes": [
+        "cancel_only",
+        "refund_and_cancel"
+      ],
+      "rare_classes": {
+        "bug_report": {
+          "correct": 11,
+          "support": 12,
+          "predicted": 12
+        },
+        "escalate_to_authority_case": {
+          "correct": 0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "correct": 0,
+          "support": 2,
+          "predicted": 1
+        },
+        "redeliver": {
+          "correct": 1,
+          "support": 3,
+          "predicted": 5
+        },
+        "route_to_human_review": {
+          "correct": 1,
+          "support": 1,
+          "predicted": 4
+        }
+      },
+      "accuracy": 0.8407643312101911,
+      "majority_baseline": {
+        "label": "refund_and_cancel",
+        "accuracy": 0.7515923566878981
+      },
+      "per_class": {
+        "bug_report": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12,
+          "predicted": 12
+        },
+        "cancel_only": {
+          "precision": 0.6071428571428571,
+          "recall": 0.85,
+          "f1": 0.7083333333333333,
+          "support": 20,
+          "predicted": 28
+        },
+        "escalate_to_authority_case": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2,
+          "predicted": 1
+        },
+        "redeliver": {
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "f1": 0.25,
+          "support": 3,
+          "predicted": 5
+        },
+        "refund_and_cancel": {
+          "precision": 0.9532710280373832,
+          "recall": 0.864406779661017,
+          "f1": 0.9066666666666666,
+          "support": 118,
+          "predicted": 107
+        },
+        "route_to_human_review": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "support": 1,
+          "predicted": 4
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "refund_and_cancel",
+          "pred": "cancel_only",
+          "n": 10
+        },
+        {
+          "gold": "refund_and_cancel",
+          "pred": "redeliver",
+          "n": 4
+        },
+        {
+          "gold": "cancel_only",
+          "pred": "refund_and_cancel",
+          "n": 3
+        },
+        {
+          "gold": "refund_and_cancel",
+          "pred": "explain_charge",
+          "n": 1
+        },
+        {
+          "gold": "escalate_to_authority_case",
+          "pred": "refund_and_cancel",
+          "n": 1
+        }
+      ]
+    }
+  },
+  "headline": 0.7376631071722417,
+  "all_three_exact": 0.49044585987261147,
+  "table_violations": {
+    "n": 0,
+    "cases": []
+  },
+  "self_contradiction": {
+    "n": 0,
+    "checked": 157,
+    "cases": []
+  },
+  "escalation": {
+    "found": 0,
+    "gold": 1,
+    "predicted": 0,
+    "missed_ids": [
+      "as:13605550166"
+    ],
+    "extra_ids": []
+  },
+  "failures_by_kind": {},
+  "evidence_invented": {
+    "n": 14,
+    "ids": [
+      "as:12503933031",
+      "gp:48493c4d-eea",
+      "gp:5fa2d6fd-a34",
+      "gp:b060380d-be8",
+      "as:11129418719",
+      "as:11252240652",
+      "as:12468500798",
+      "as:12731385011",
+      "as:13085337463",
+      "as:13126445688"
+    ],
+    "checked": 153
+  },
+  "by_language": {
+    "arabic": {
+      "n": 2,
+      "all_three_exact": 0.5,
+      "category_acc": 1.0,
+      "priority_acc": 0.5,
+      "next_step_acc": 1.0
+    },
+    "cyrillic": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 1.0,
+      "priority_acc": 0.0,
+      "next_step_acc": 0.0
+    },
+    "de": {
+      "n": 5,
+      "all_three_exact": 0.4,
+      "category_acc": 0.8,
+      "priority_acc": 0.6,
+      "next_step_acc": 0.8
+    },
+    "en_or_unknown": {
+      "n": 84,
+      "all_three_exact": 0.5238095238095238,
+      "category_acc": 0.8333333333333334,
+      "priority_acc": 0.6428571428571429,
+      "next_step_acc": 0.8333333333333334
+    },
+    "es": {
+      "n": 32,
+      "all_three_exact": 0.53125,
+      "category_acc": 0.71875,
+      "priority_acc": 0.65625,
+      "next_step_acc": 0.875
+    },
+    "fr": {
+      "n": 12,
+      "all_three_exact": 0.4166666666666667,
+      "category_acc": 0.75,
+      "priority_acc": 0.6666666666666666,
+      "next_step_acc": 0.75
+    },
+    "han": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "it": {
+      "n": 2,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "pt": {
+      "n": 12,
+      "all_three_exact": 0.3333333333333333,
+      "category_acc": 0.75,
+      "priority_acc": 0.6666666666666666,
+      "next_step_acc": 0.8333333333333334
+    },
+    "tr": {
+      "n": 6,
+      "all_three_exact": 0.6666666666666666,
+      "category_acc": 0.6666666666666666,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    }
+  },
+  "by_set": {
+    "dev": {
+      "n": 157,
+      "all_three_exact": 0.49044585987261147,
+      "category_acc": 0.7770700636942676,
+      "priority_acc": 0.6624203821656051,
+      "next_step_acc": 0.8407643312101911
+    }
+  },
+  "cost": {
+    "total_usd": 0.05529975,
+    "per_ticket_usd": 0.00035222770700636945,
+    "per_10k_usd": 3.5222770700636947,
+    "input_tokens": 602449,
+    "output_tokens": 12818,
+    "cached_input_tokens": 570112,
+    "cache_hits": 0
+  },
+  "latency_ms": {
+    "p50": 1905,
+    "p95": 2937,
+    "p99": 3532,
+    "max": 3593
+  }
+}

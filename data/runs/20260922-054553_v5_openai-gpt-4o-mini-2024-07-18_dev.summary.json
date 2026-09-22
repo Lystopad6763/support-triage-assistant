@@ -1,0 +1,433 @@
+{
+  "rows": 157,
+  "scored": 157,
+  "failures": 0,
+  "failure_ids": [],
+  "repaired": 0,
+  "fields": {
+    "category": {
+      "macro_f1_core": 0.7676573473256961,
+      "macro_f1_all": 0.7810508958850703,
+      "reportable_classes": [
+        "cancel_not_possible",
+        "charge_not_recognised",
+        "price_not_expected"
+      ],
+      "rare_classes": {
+        "app_defect": {
+          "correct": 11,
+          "support": 12,
+          "predicted": 12
+        },
+        "nothing_delivered": {
+          "correct": 6,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "correct": 2,
+          "support": 2,
+          "predicted": 4
+        }
+      },
+      "accuracy": 0.7834394904458599,
+      "majority_baseline": {
+        "label": "charge_not_recognised",
+        "accuracy": 0.43312101910828027
+      },
+      "per_class": {
+        "app_defect": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12,
+          "predicted": 12
+        },
+        "cancel_not_possible": {
+          "precision": 0.6944444444444444,
+          "recall": 0.9259259259259259,
+          "f1": 0.7936507936507936,
+          "support": 27,
+          "predicted": 36
+        },
+        "charge_not_recognised": {
+          "precision": 0.8153846153846154,
+          "recall": 0.7794117647058824,
+          "f1": 0.7969924812030074,
+          "support": 68,
+          "predicted": 65
+        },
+        "nothing_delivered": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "predicted": 4
+        },
+        "price_not_expected": {
+          "precision": 0.7878787878787878,
+          "recall": 0.65,
+          "f1": 0.7123287671232875,
+          "support": 40,
+          "predicted": 33
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "price_not_expected",
+          "pred": "charge_not_recognised",
+          "n": 10
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "price_not_expected",
+          "n": 7
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "cancel_not_possible",
+          "n": 6
+        },
+        {
+          "gold": "price_not_expected",
+          "pred": "cancel_not_possible",
+          "n": 4
+        },
+        {
+          "gold": "cancel_not_possible",
+          "pred": "charge_not_recognised",
+          "n": 2
+        }
+      ]
+    },
+    "priority": {
+      "macro_f1_core": 0.6822063081810844,
+      "macro_f1_all": 0.6822063081810844,
+      "reportable_classes": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "rare_classes": {},
+      "accuracy": 0.6751592356687898,
+      "majority_baseline": {
+        "label": "P3",
+        "accuracy": 0.5859872611464968
+      },
+      "per_class": {
+        "P1": {
+          "precision": 0.8076923076923077,
+          "recall": 0.84,
+          "f1": 0.8235294117647058,
+          "support": 25,
+          "predicted": 26
+        },
+        "P2": {
+          "precision": 0.42592592592592593,
+          "recall": 0.575,
+          "f1": 0.4893617021276596,
+          "support": 40,
+          "predicted": 54
+        },
+        "P3": {
+          "precision": 0.8051948051948052,
+          "recall": 0.6739130434782609,
+          "f1": 0.7337278106508877,
+          "support": 92,
+          "predicted": 77
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "P3",
+          "pred": "P2",
+          "n": 27
+        },
+        {
+          "gold": "P2",
+          "pred": "P3",
+          "n": 15
+        },
+        {
+          "gold": "P1",
+          "pred": "P2",
+          "n": 4
+        },
+        {
+          "gold": "P3",
+          "pred": "P1",
+          "n": 3
+        },
+        {
+          "gold": "P2",
+          "pred": "P1",
+          "n": 2
+        }
+      ]
+    },
+    "next_step": {
+      "macro_f1_core": 0.8451542051798298,
+      "macro_f1_all": 0.43825859081249596,
+      "reportable_classes": [
+        "cancel_only",
+        "refund_and_cancel"
+      ],
+      "rare_classes": {
+        "bug_report": {
+          "correct": 10,
+          "support": 12,
+          "predicted": 11
+        },
+        "escalate_to_authority_case": {
+          "correct": 0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "correct": 0,
+          "support": 2,
+          "predicted": 0
+        },
+        "redeliver": {
+          "correct": 1,
+          "support": 3,
+          "predicted": 6
+        },
+        "route_to_human_review": {
+          "correct": 1,
+          "support": 1,
+          "predicted": 6
+        }
+      },
+      "accuracy": 0.8471337579617835,
+      "majority_baseline": {
+        "label": "refund_and_cancel",
+        "accuracy": 0.7515923566878981
+      },
+      "per_class": {
+        "bug_report": {
+          "precision": 0.9090909090909091,
+          "recall": 0.8333333333333334,
+          "f1": 0.8695652173913043,
+          "support": 12,
+          "predicted": 11
+        },
+        "cancel_only": {
+          "precision": 0.6551724137931034,
+          "recall": 0.95,
+          "f1": 0.7755102040816326,
+          "support": 20,
+          "predicted": 29
+        },
+        "escalate_to_authority_case": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2,
+          "predicted": 0
+        },
+        "redeliver": {
+          "precision": 0.16666666666666666,
+          "recall": 0.3333333333333333,
+          "f1": 0.2222222222222222,
+          "support": 3,
+          "predicted": 6
+        },
+        "refund_and_cancel": {
+          "precision": 0.9714285714285714,
+          "recall": 0.864406779661017,
+          "f1": 0.9147982062780269,
+          "support": 118,
+          "predicted": 105
+        },
+        "route_to_human_review": {
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1": 0.2857142857142857,
+          "support": 1,
+          "predicted": 6
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "refund_and_cancel",
+          "pred": "cancel_only",
+          "n": 10
+        },
+        {
+          "gold": "refund_and_cancel",
+          "pred": "redeliver",
+          "n": 5
+        },
+        {
+          "gold": "explain_charge",
+          "pred": "route_to_human_review",
+          "n": 2
+        },
+        {
+          "gold": "bug_report",
+          "pred": "route_to_human_review",
+          "n": 2
+        },
+        {
+          "gold": "escalate_to_authority_case",
+          "pred": "refund_and_cancel",
+          "n": 1
+        }
+      ]
+    }
+  },
+  "headline": 0.7650059535622035,
+  "all_three_exact": 0.45222929936305734,
+  "table_violations": {
+    "n": 2,
+    "cases": [
+      {
+        "id": "gp:47b41933-098",
+        "why": "price_not_expected -> route_to_human_review"
+      },
+      {
+        "id": "gp:afccb60a-7cd",
+        "why": "app_defect -> route_to_human_review"
+      }
+    ]
+  },
+  "self_contradiction": {
+    "n": 0,
+    "checked": 157,
+    "cases": []
+  },
+  "escalation": {
+    "found": 0,
+    "gold": 1,
+    "predicted": 0,
+    "missed_ids": [
+      "as:13605550166"
+    ],
+    "extra_ids": []
+  },
+  "failures_by_kind": {},
+  "evidence_invented": {
+    "n": 7,
+    "ids": [
+      "as:13605550166",
+      "gp:588c4a69-185",
+      "gp:b060380d-be8",
+      "gp:2c9af292-022",
+      "gp:47b41933-098",
+      "gp:6915993b-f13",
+      "as:12281002089"
+    ],
+    "checked": 153
+  },
+  "by_language": {
+    "arabic": {
+      "n": 2,
+      "all_three_exact": 0.5,
+      "category_acc": 1.0,
+      "priority_acc": 0.5,
+      "next_step_acc": 1.0
+    },
+    "cyrillic": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 1.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 0.0
+    },
+    "de": {
+      "n": 5,
+      "all_three_exact": 0.4,
+      "category_acc": 1.0,
+      "priority_acc": 0.6,
+      "next_step_acc": 0.8
+    },
+    "en_or_unknown": {
+      "n": 84,
+      "all_three_exact": 0.47619047619047616,
+      "category_acc": 0.8095238095238095,
+      "priority_acc": 0.6428571428571429,
+      "next_step_acc": 0.8571428571428571
+    },
+    "es": {
+      "n": 32,
+      "all_three_exact": 0.4375,
+      "category_acc": 0.71875,
+      "priority_acc": 0.65625,
+      "next_step_acc": 0.90625
+    },
+    "fr": {
+      "n": 12,
+      "all_three_exact": 0.3333333333333333,
+      "category_acc": 0.6666666666666666,
+      "priority_acc": 0.75,
+      "next_step_acc": 0.6666666666666666
+    },
+    "han": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 1.0,
+      "priority_acc": 0.0,
+      "next_step_acc": 1.0
+    },
+    "it": {
+      "n": 2,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "pt": {
+      "n": 12,
+      "all_three_exact": 0.5,
+      "category_acc": 0.8333333333333334,
+      "priority_acc": 0.8333333333333334,
+      "next_step_acc": 0.75
+    },
+    "tr": {
+      "n": 6,
+      "all_three_exact": 0.6666666666666666,
+      "category_acc": 0.8333333333333334,
+      "priority_acc": 0.8333333333333334,
+      "next_step_acc": 1.0
+    }
+  },
+  "by_set": {
+    "dev": {
+      "n": 157,
+      "all_three_exact": 0.45222929936305734,
+      "category_acc": 0.7834394904458599,
+      "priority_acc": 0.6751592356687898,
+      "next_step_acc": 0.8471337579617835
+    }
+  },
+  "cost": {
+    "total_usd": 0.03969945,
+    "per_ticket_usd": 0.0002528627388535032,
+    "per_10k_usd": 2.528627388535032,
+    "input_tokens": 393011,
+    "output_tokens": 13657,
+    "cached_input_tokens": 365952,
+    "cache_hits": 0
+  },
+  "latency_ms": {
+    "p50": 2000,
+    "p95": 2546,
+    "p99": 2890,
+    "max": 3000
+  }
+}

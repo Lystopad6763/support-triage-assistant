@@ -1,0 +1,539 @@
+{
+  "rows": 157,
+  "scored": 157,
+  "failures": 0,
+  "failure_ids": [],
+  "repaired": 0,
+  "fields": {
+    "category": {
+      "macro_f1_core": 0.7456468598306243,
+      "macro_f1_all": 0.7700456521375344,
+      "reportable_classes": [
+        "cancel_not_possible",
+        "charge_not_recognised",
+        "price_not_expected"
+      ],
+      "rare_classes": {
+        "app_defect": {
+          "correct": 11,
+          "support": 12,
+          "predicted": 12
+        },
+        "nothing_delivered": {
+          "correct": 6,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "correct": 2,
+          "support": 2,
+          "predicted": 4
+        }
+      },
+      "accuracy": 0.7643312101910829,
+      "majority_baseline": {
+        "label": "charge_not_recognised",
+        "accuracy": 0.43312101910828027
+      },
+      "per_class": {
+        "app_defect": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12,
+          "predicted": 12
+        },
+        "cancel_not_possible": {
+          "precision": 0.71875,
+          "recall": 0.8518518518518519,
+          "f1": 0.7796610169491525,
+          "support": 27,
+          "predicted": 32
+        },
+        "charge_not_recognised": {
+          "precision": 0.8,
+          "recall": 0.7647058823529411,
+          "f1": 0.7819548872180452,
+          "support": 68,
+          "predicted": 65
+        },
+        "nothing_delivered": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "support": 8,
+          "predicted": 7
+        },
+        "other": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "predicted": 4
+        },
+        "price_not_expected": {
+          "precision": 0.7027027027027027,
+          "recall": 0.65,
+          "f1": 0.6753246753246753,
+          "support": 40,
+          "predicted": 37
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "price_not_expected",
+          "pred": "charge_not_recognised",
+          "n": 11
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "price_not_expected",
+          "n": 9
+        },
+        {
+          "gold": "charge_not_recognised",
+          "pred": "cancel_not_possible",
+          "n": 5
+        },
+        {
+          "gold": "price_not_expected",
+          "pred": "cancel_not_possible",
+          "n": 3
+        },
+        {
+          "gold": "cancel_not_possible",
+          "pred": "charge_not_recognised",
+          "n": 2
+        }
+      ]
+    },
+    "priority": {
+      "macro_f1_core": 0.5467758667758668,
+      "macro_f1_all": 0.5467758667758668,
+      "reportable_classes": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "rare_classes": {},
+      "accuracy": 0.5923566878980892,
+      "majority_baseline": {
+        "label": "P3",
+        "accuracy": 0.5859872611464968
+      },
+      "per_class": {
+        "P1": {
+          "precision": 0.48,
+          "recall": 0.96,
+          "f1": 0.64,
+          "support": 25,
+          "predicted": 50
+        },
+        "P2": {
+          "precision": 0.3235294117647059,
+          "recall": 0.275,
+          "f1": 0.2972972972972973,
+          "support": 40,
+          "predicted": 34
+        },
+        "P3": {
+          "precision": 0.7945205479452054,
+          "recall": 0.6304347826086957,
+          "f1": 0.703030303030303,
+          "support": 92,
+          "predicted": 73
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "P3",
+          "pred": "P2",
+          "n": 22
+        },
+        {
+          "gold": "P2",
+          "pred": "P3",
+          "n": 15
+        },
+        {
+          "gold": "P2",
+          "pred": "P1",
+          "n": 14
+        },
+        {
+          "gold": "P3",
+          "pred": "P1",
+          "n": 12
+        },
+        {
+          "gold": "P1",
+          "pred": "P2",
+          "n": 1
+        }
+      ]
+    },
+    "next_step": {
+      "macro_f1_core": 0.8646470828233375,
+      "macro_f1_all": 0.4334365814869399,
+      "reportable_classes": [
+        "cancel_only",
+        "refund_and_cancel"
+      ],
+      "rare_classes": {
+        "bug_report": {
+          "correct": 8,
+          "support": 12,
+          "predicted": 9
+        },
+        "escalate_to_authority_case": {
+          "correct": 0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "correct": 0,
+          "support": 2,
+          "predicted": 0
+        },
+        "redeliver": {
+          "correct": 1,
+          "support": 3,
+          "predicted": 2
+        },
+        "route_to_human_review": {
+          "correct": 1,
+          "support": 1,
+          "predicted": 13
+        }
+      },
+      "accuracy": 0.8535031847133758,
+      "majority_baseline": {
+        "label": "refund_and_cancel",
+        "accuracy": 0.7515923566878981
+      },
+      "per_class": {
+        "bug_report": {
+          "precision": 0.8888888888888888,
+          "recall": 0.6666666666666666,
+          "f1": 0.761904761904762,
+          "support": 12,
+          "predicted": 9
+        },
+        "cancel_only": {
+          "precision": 0.7391304347826086,
+          "recall": 0.85,
+          "f1": 0.7906976744186046,
+          "support": 20,
+          "predicted": 23
+        },
+        "escalate_to_authority_case": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "predicted": 0
+        },
+        "explain_charge": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2,
+          "predicted": 0
+        },
+        "redeliver": {
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "support": 3,
+          "predicted": 2
+        },
+        "refund_and_cancel": {
+          "precision": 0.9727272727272728,
+          "recall": 0.9067796610169492,
+          "f1": 0.9385964912280702,
+          "support": 118,
+          "predicted": 110
+        },
+        "route_to_human_review": {
+          "precision": 0.07692307692307693,
+          "recall": 1.0,
+          "f1": 0.14285714285714288,
+          "support": 1,
+          "predicted": 13
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "refund_and_cancel",
+          "pred": "cancel_only",
+          "n": 6
+        },
+        {
+          "gold": "refund_and_cancel",
+          "pred": "route_to_human_review",
+          "n": 4
+        },
+        {
+          "gold": "bug_report",
+          "pred": "route_to_human_review",
+          "n": 4
+        },
+        {
+          "gold": "cancel_only",
+          "pred": "route_to_human_review",
+          "n": 2
+        },
+        {
+          "gold": "explain_charge",
+          "pred": "route_to_human_review",
+          "n": 2
+        }
+      ]
+    }
+  },
+  "headline": 0.7190232698099428,
+  "all_three_exact": 0.3885350318471338,
+  "table_violations": {
+    "n": 9,
+    "cases": [
+      {
+        "id": "as:12988941657",
+        "why": "cancel_not_possible -> route_to_human_review"
+      },
+      {
+        "id": "gp:1b4b7c70-fcb",
+        "why": "cancel_not_possible -> route_to_human_review"
+      },
+      {
+        "id": "as:13425069663",
+        "why": "nothing_delivered -> route_to_human_review"
+      },
+      {
+        "id": "gp:3709c26f-4f6",
+        "why": "app_defect -> route_to_human_review"
+      },
+      {
+        "id": "gp:eaff5c82-d51",
+        "why": "app_defect -> route_to_human_review"
+      },
+      {
+        "id": "gp:47b41933-098",
+        "why": "price_not_expected -> route_to_human_review"
+      },
+      {
+        "id": "gp:838e2667-447",
+        "why": "cancel_not_possible -> route_to_human_review"
+      },
+      {
+        "id": "gp:afccb60a-7cd",
+        "why": "app_defect -> route_to_human_review"
+      },
+      {
+        "id": "gp:dd5aab05-382",
+        "why": "nothing_delivered -> route_to_human_review"
+      }
+    ]
+  },
+  "self_contradiction": {
+    "n": 9,
+    "checked": 157,
+    "cases": [
+      {
+        "id": "gp:139c393f-3cd",
+        "facts": [
+          "still_bleeding",
+          "large_amount"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:18b09e98-d5f",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:773442e1-d66",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:f1d68076-170",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "as:12749562462",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:7bd07dcc-b85",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:953b362d-75b",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:cbaa38d5-529",
+        "facts": [
+          "still_bleeding"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      },
+      {
+        "id": "gp:09b12814-afb",
+        "facts": [
+          "still_bleeding",
+          "large_amount"
+        ],
+        "implies": "P2",
+        "said": "P1"
+      }
+    ]
+  },
+  "escalation": {
+    "found": 0,
+    "gold": 1,
+    "predicted": 0,
+    "missed_ids": [
+      "as:13605550166"
+    ],
+    "extra_ids": []
+  },
+  "failures_by_kind": {},
+  "evidence_invented": {
+    "n": 12,
+    "ids": [
+      "gp:139c393f-3cd",
+      "gp:588c4a69-185",
+      "gp:7b4c445b-6e7",
+      "gp:b060380d-be8",
+      "gp:2c9af292-022",
+      "gp:3709c26f-4f6",
+      "as:12468500798",
+      "as:12731385011",
+      "as:12841470155",
+      "as:13473009084"
+    ],
+    "checked": 153
+  },
+  "by_language": {
+    "arabic": {
+      "n": 2,
+      "all_three_exact": 0.5,
+      "category_acc": 1.0,
+      "priority_acc": 0.5,
+      "next_step_acc": 1.0
+    },
+    "cyrillic": {
+      "n": 1,
+      "all_three_exact": 0.0,
+      "category_acc": 1.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 0.0
+    },
+    "de": {
+      "n": 5,
+      "all_three_exact": 0.8,
+      "category_acc": 1.0,
+      "priority_acc": 0.8,
+      "next_step_acc": 1.0
+    },
+    "en_or_unknown": {
+      "n": 84,
+      "all_three_exact": 0.42857142857142855,
+      "category_acc": 0.7976190476190477,
+      "priority_acc": 0.5714285714285714,
+      "next_step_acc": 0.8452380952380952
+    },
+    "es": {
+      "n": 32,
+      "all_three_exact": 0.21875,
+      "category_acc": 0.6875,
+      "priority_acc": 0.46875,
+      "next_step_acc": 0.84375
+    },
+    "fr": {
+      "n": 12,
+      "all_three_exact": 0.25,
+      "category_acc": 0.5833333333333334,
+      "priority_acc": 0.5833333333333334,
+      "next_step_acc": 0.9166666666666666
+    },
+    "han": {
+      "n": 1,
+      "all_three_exact": 1.0,
+      "category_acc": 1.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "it": {
+      "n": 2,
+      "all_three_exact": 0.0,
+      "category_acc": 0.0,
+      "priority_acc": 1.0,
+      "next_step_acc": 1.0
+    },
+    "pt": {
+      "n": 12,
+      "all_three_exact": 0.4166666666666667,
+      "category_acc": 0.8333333333333334,
+      "priority_acc": 0.75,
+      "next_step_acc": 0.75
+    },
+    "tr": {
+      "n": 6,
+      "all_three_exact": 0.6666666666666666,
+      "category_acc": 0.8333333333333334,
+      "priority_acc": 0.8333333333333334,
+      "next_step_acc": 1.0
+    }
+  },
+  "by_set": {
+    "dev": {
+      "n": 157,
+      "all_three_exact": 0.3885350318471338,
+      "category_acc": 0.7643312101910829,
+      "priority_acc": 0.5923566878980892,
+      "next_step_acc": 0.8535031847133758
+    }
+  },
+  "cost": {
+    "total_usd": 0.038125949999999985,
+    "per_ticket_usd": 0.0002428404458598725,
+    "per_10k_usd": 2.4284044585987252,
+    "input_tokens": 363809,
+    "output_tokens": 13935,
+    "cached_input_tokens": 330752,
+    "cache_hits": 0
+  },
+  "latency_ms": {
+    "p50": 2031,
+    "p95": 3187,
+    "p99": 3500,
+    "max": 3844
+  }
+}

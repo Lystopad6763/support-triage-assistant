@@ -1,5 +1,5 @@
 {
-  "probed_at": "2026-09-21T14:04:56",
+  "probed_at": "2026-09-22T06:27:21",
   "models": {
     "anthropic/claude-haiku-4.5": {
       "endpoints": 8,
