@@ -137,6 +137,11 @@ def main() -> None:
     parser.add_argument("--variant", choices=["article", "section", "both"],
                         default="both")
     parser.add_argument("--models", nargs="*", default=list(DIMENSIONS))
+    parser.add_argument("--index-only", action="store_true",
+                        help="rewrite index.json and keep the vectors, which "
+                             "is safe whenever the change touched payload and "
+                             "not chunk text - the fingerprint covers ids and "
+                             "text, so a metadata fix costs nothing to embed")
     parser.add_argument("--dry-run", action="store_true",
                         help="report sizes and predicted cost, call nothing")
     args = parser.parse_args()
@@ -172,6 +177,22 @@ def main() -> None:
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nwrote data/kb/index.json "
           f"({(OUT / 'index.json').stat().st_size / 1024:.0f} KB)")
+
+    if args.index_only:
+        # Refuses rather than leaving a stale pair behind: if the text really
+        # did change, the vectors no longer describe this index, and every
+        # ranking built on them would be wrong for reasons nothing would log.
+        for variant in variants:
+            want = index["variants"][variant]["fingerprint"]
+            for path in sorted(OUT.glob(f"vectors__{variant}__*.json")):
+                got = json.loads(path.read_text(encoding="utf-8"))["fingerprint"]
+                print(f"  {'ok' if got == want else 'STALE':<5} {path.name}")
+                if got != want:
+                    raise SystemExit(
+                        "chunk text changed, so --index-only cannot be used: "
+                        "re-run without it and pay for the embeddings")
+        print("\nvectors left untouched")
+        return
 
     total_cost = 0.0
     print(f"\n{'variant':<8} {'encoder':<32} {'dims':>5} {'tokens':>7} "

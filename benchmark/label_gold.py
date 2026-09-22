@@ -2,7 +2,7 @@
 
     python benchmark/label_gold.py                 # all of benchmark/tickets.csv
     python benchmark/label_gold.py --limit 20      # stratified smoke run
-    python benchmark/label_gold.py --full-kb       # every document, no shortlist
+    python benchmark/label_gold.py --shortlist     # category pool, measured worse
 
 WHY A DRAFT AND NOT A LABEL
     recall@k is the share of tickets whose CORRECT document came back, so
@@ -21,27 +21,30 @@ WHY A DRAFT AND NOT A LABEL
     What that buys is the difference between "read 73 documents and choose" and
     "agree or correct one proposal with its quote already under it".
 
-WHY NOT THE WHOLE KNOWLEDGE BASE IN EVERY CALL
-    An earlier draft of this script sent all 73 documents - 26.4k tokens - with
-    every ticket, so that nothing could hide behind a category prior. It was
-    twenty times the input for a choice that is really between five and seven
-    documents, and it made the model find a needle in a haystack we had built
-    ourselves.
+WHY THE WHOLE KNOWLEDGE BASE, AFTER ARGUING THE OPPOSITE
+    This script first sent only the five to seven documents of the ticket's
+    category, on the reasoning that 73 documents is a haystack we would be
+    building ourselves. That reasoning was wrong, and the pilot said so: run
+    both ways over the same 20 tickets, the two modes agreed on the first
+    document 8 times out of 20 and on the whole set 4 times.
 
-    The prompt carries the full text of the CANDIDATES for the ticket's category
-    and the TITLE of every document in the base. The prior stays escapable: a
-    ticket answered by something outside its category comes back with that title
-    in `outside`, and those go to a human.
+    The shortlist lost. Six price_not_expected tickets in a row were assigned
+    pol-18, because pol-18 was the only refund document that pool contained; the
+    whole base gave those same tickets pol-04, pol-14 and the cancellation
+    article, one each, correctly. A French ticket reading "Me desabonner" -
+    unsubscribe me - was sent to "How to access my report" because its category
+    was nothing_delivered. On all 430 tickets, the key for a whole category
+    would have collapsed onto one document, and every retriever would then have
+    been scored against it.
 
-    Titles travel WITHOUT their ids, and that is the whole of the fix v2 made.
-    v1 printed the catalogue as "[id] Title", and the model duly answered with
-    ids for documents whose body it had never been shown: five of the seven
-    unverifiable quotes in the first pilot were invented for exactly those
-    documents, in the confident register such a document usually uses. A name it
-    cannot cite is a name it cannot smuggle into the answer.
+    The pools were written by reading the knowledge base, not by reading the
+    tickets, and the category names flattered them: price_not_expected is mostly
+    a trial that converted, not a question about prices.
 
-    --full-kb sends all 73 bodies and drops the catalogue, so the shortlist can
-    be argued against with a measurement instead of a claim.
+    It costs $0.87 instead of $0.44 across 430 tickets. Six times the tokens,
+    twice the money - the provider's prompt cache absorbs the rest - and about
+    300ms more per call. --shortlist keeps the old behaviour so the comparison
+    can be re-run rather than taken on trust.
 
 WHY THE EVIDENCE SPAN
     A document id cannot be checked by looking at it - a wrong one and a right
@@ -49,6 +52,21 @@ WHY THE EVIDENCE SPAN
     checked by string search, and more usefully it lets the engineer confirm a
     row without opening the source at all. Rows whose evidence is not found are
     marked rather than silently kept.
+
+    It is searched for in EVERY named document, not only the first. The four
+    spans the pilot could not place were all real knowledge base text filed
+    under the wrong id: "Deleting the app does not cancel your subscription"
+    lives in pol-04 and pol-16, while the model attributed it to the article
+    named "How to cancel subscription?" - the obvious home of the topic, whose
+    body is actually a numbered click-path. Checking one document called that a
+    fabrication. It was an attribution.
+
+WHY THE KEY IS A SET AND NOT ONE DOCUMENT
+    That same overlap decides the metric. If three documents carry one answer,
+    scoring recall against a single chosen id marks a retriever wrong for
+    returning one of the other two - though the agent reading it would have
+    closed the ticket. So `doc_ids` is every document that carries the answer,
+    most direct first, and a hit is any member of that set inside the top k.
 """
 from __future__ import annotations
 
@@ -81,11 +99,70 @@ WORKERS = 8
 NON_LATIN = {"arabic", "hangul", "han", "cyrillic", "thai"}
 
 
+# The lecture's prompt-metadata block, kept OUT of the .md on purpose: the
+# prompt file is spoken to the model on every call, and a change_reason sitting
+# inside it is an instruction the model will try to follow. It lives here until
+# config.PROMPTS stops being hardcoded to prompts/classify.
+VERSIONS = {
+    "v1": {
+        "created": "2026-09-22", "author": "serhii",
+        "change_reason": "first draft: category pool in full, whole catalogue "
+                         "as [id] Title, confidence field",
+        "previous_version": None,
+        "tested_on": "20 stratified tickets",
+        "result": "7 of 20 evidence spans not in the named document; "
+                  "16 ids named from outside the pool; confidence 'high' 20/20",
+    },
+    "v2": {
+        "created": "2026-09-22", "author": "serhii",
+        "change_reason": "catalogue loses its ids, so a document whose body was "
+                         "never shown cannot be cited; confidence dropped for "
+                         "carrying one value",
+        "previous_version": "v1",
+        "tested_on": "the same 20",
+        "result": "evidence misses 7 -> 4; out-of-pool ids 16 -> 1",
+    },
+    "v3": {
+        "created": "2026-09-22", "author": "serhii",
+        "change_reason": "whole knowledge base instead of the category pool, "
+                         "after the pool lost a head-to-head; key becomes a set "
+                         "because the base states one answer in several places",
+        "previous_version": "v2",
+        "tested_on": "the same 20",
+        "result": "evidence misses 4 -> 0; but keys averaged 3.1 documents, "
+                  "6 of 20 naming four, which lifts the random floor of "
+                  "recall@5 from 6.8% to 25.2%",
+    },
+    "v5": {
+        "created": "2026-09-22", "author": "serhii",
+        "change_reason": "one change only: the reasoning field no longer asks "
+                         "what an agent must tell them, which presupposed "
+                         "there was something to tell and cost v4 every "
+                         "abstention it should have kept",
+        "previous_version": "v4",
+        "tested_on": "the same 20",
+        "result": None,
+    },
+    "v4": {
+        "created": "2026-09-22", "author": "serhii",
+        "change_reason": "reasoning moves to the first schema field so the "
+                         "model works before it commits rather than justifying "
+                         "afterwards; three worked examples replace the prose "
+                         "about when several documents are right",
+        "previous_version": "v3",
+        "tested_on": "the same 20",
+        "result": None,
+    },
+}
+
+
 class Draft(BaseModel):
+    # Field order is generation order under a strict schema, so reasoning first
+    # is the whole of the chain-of-thought here: last, it could only ever be a
+    # justification of a choice already written.
+    reasoning: str
     doc_ids: list[str]
     evidence: str
-    why: str
-    outside: str
 
 
 SCHEMA = {
@@ -94,12 +171,11 @@ SCHEMA = {
     "schema": {
         "type": "object",
         "additionalProperties": False,
-        "required": ["doc_ids", "evidence", "why", "outside"],
+        "required": ["reasoning", "doc_ids", "evidence"],
         "properties": {
+            "reasoning": {"type": "string"},
             "doc_ids": {"type": "array", "items": {"type": "string"}},
             "evidence": {"type": "string"},
-            "why": {"type": "string"},
-            "outside": {"type": "string"},
         },
     },
 }
@@ -110,11 +186,6 @@ SPACE = re.compile(r"\s+")
 def flat(text: str) -> str:
     """Compare spans without punishing the model for re-wrapping a line."""
     return SPACE.sub(" ", text).strip().lower()
-
-
-def catalogue(docs: list) -> str:
-    """Titles with no ids: a document the model cannot name it cannot fake."""
-    return "\n".join(d.title for d in docs)
 
 
 def candidates(ids: list[str], by_id: dict) -> str:
@@ -175,9 +246,10 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0,
                     help="stratified subset; 0 means every ticket")
     ap.add_argument("--model", default=MODEL)
-    ap.add_argument("--prompt", default="v2")
-    ap.add_argument("--full-kb", action="store_true",
-                    help="send every document instead of the category shortlist")
+    ap.add_argument("--prompt", default="v5")
+    ap.add_argument("--shortlist", action="store_true",
+                    help="send only the category pool; measured worse, kept so "
+                         "that finding can be reproduced")
     ap.add_argument("--out", default="gold",
                     help="basename for the csv and json written beside this file")
     args = ap.parse_args()
@@ -194,14 +266,15 @@ def main() -> None:
     rows.sort(key=lambda r: (r["category"], r["id"]))
 
     settings = config.load()
-    every = [d.id for d in docs] if args.full_kb else None
+    every = None if args.shortlist else [d.id for d in docs]
     system = (PROMPTS / f"{args.prompt}.md").read_text(encoding="utf-8")
-    if every is None:
-        system += "\n\n## CATALOGUE\n\n" + catalogue(docs)
+    meta = VERSIONS.get(args.prompt, {})
     prompt = config.PromptConfig(
         version=f"label_gold/{args.prompt}", model=args.model, temperature=0.0,
         response_format="json_schema", text_override=system,
-        change_reason="gold drafting prompt")
+        previous_version=meta.get("previous_version"),
+        tested_on=meta.get("tested_on", "unrecorded"),
+        change_reason=meta.get("change_reason", "unrecorded"))
 
     shape = "every document" if every else "category shortlist"
     print(f"{len(rows)} tickets, {args.model}, prompt {args.prompt}, "
@@ -245,8 +318,7 @@ def write(rows: list[dict], drafts: dict, base: str = "gold") -> None:
             "proposed": proposed,
             "evidence": d.get("evidence", ""),
             "evidence_found": row.get("_evidence_found", ""),
-            "outside": d.get("outside", ""),
-            "why": d.get("why", ""),
+            "reasoning": d.get("reasoning", ""),
             "error": got["error"] or "",
             "note": "",
             "original": row["original"],
@@ -268,10 +340,10 @@ def report(rows: list[dict], drafts: dict, by_id: dict) -> None:
     by_ticket = {r["id"]: r for r in rows}
     unknown: list[tuple] = []
     unfound: list[str] = []
-    outside: list[tuple] = []
     proposed_none: list[str] = []
     disagreed: list[str] = []
     failed: list[str] = []
+    sizes: list[int] = []
 
     for tid, got in drafts.items():
         row = by_ticket[tid]
@@ -281,14 +353,16 @@ def report(rows: list[dict], drafts: dict, by_id: dict) -> None:
         d = got["draft"]
         ids = d["doc_ids"]
         unknown += [(tid, i) for i in ids if i not in set(got["shown"])]
-        if d["outside"]:
-            outside.append((tid, d["outside"]))
         if not ids:
             proposed_none.append(tid)
         else:
-            first = by_id.get(ids[0])
-            found = bool(first and d["evidence"]
-                         and flat(d["evidence"]) in flat(first.body))
+            sizes.append(len(ids))
+            # Searched in every named document, not only the first: the base
+            # says the same thing in several places, and a span filed under the
+            # neighbouring id is an attribution, not a fabrication.
+            span = flat(d["evidence"])
+            found = bool(span and any(
+                span in flat(by_id[i].body) for i in ids if i in by_id))
             row["_evidence_found"] = "yes" if found else "no"
             if not found:
                 unfound.append(tid)
@@ -301,19 +375,18 @@ def report(rows: list[dict], drafts: dict, by_id: dict) -> None:
     latency = sorted(r["latency_ms"] for r in drafts.values())
     print(f"\n{total} drafted, ${spent:.4f}, {tokens:,} input tokens")
     print(f"  median latency: {latency[len(latency) // 2]} ms")
+    counts = {n: sizes.count(n) for n in sorted(set(sizes))}
+    print(f"  documents per key: {counts}   <- all 1s means the set never "
+          "formed")
     print(f"  proposed none: {len(proposed_none)} "
           f"({len(proposed_none) / total:.0%})"
           "   <- near 0% or near 100% means the prompt is broken")
     print(f"  ids it was never shown: {len(unknown)}   <- must be 0")
     print(f"  evidence not found in the document: {len(unfound)}"
           "   <- marked in the csv, not trusted")
-    print(f"  pointed outside the shortlist: {len(outside)}"
-          "   <- a count, not an error: the shortlist is only a prior")
     print(f"  found an answer where the labelling says escalate: "
           f"{len(disagreed)}   <- real disagreements, read these")
     print(f"  calls that never returned: {len(failed)}")
-    for tid, title in outside[:12]:
-        print(f"      outside:      {tid} -> {title[:58]}")
     for tid in disagreed[:10]:
         print(f"      disagreement: {tid}")
 

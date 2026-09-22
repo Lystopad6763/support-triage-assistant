@@ -28,7 +28,8 @@ from __future__ import annotations
 import difflib
 import json
 import re
-from dataclasses import dataclass, asdict
+from collections import Counter
+from dataclasses import dataclass, asdict, replace
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -218,7 +219,26 @@ def load() -> list[Doc]:
                 updated_at=article.get("updated_at", ""),
                 sections=tuple(article.get("sections") or ()),
             ))
-    return docs
+    return page_urls(docs)
+
+
+def page_urls(docs: list[Doc]) -> list[Doc]:
+    """Mark every address that several documents share as a page address.
+
+    url_is_page was decided per document - "this one had no url of its own, so
+    it inherited the page's" - which is right for the FAQ and wrong for the
+    policies. Ten of them carry their own url and it is the same /terms page,
+    so the flag said "this link opens this document" about a page holding ten.
+
+    Whether an address is a page is a fact about the corpus, not about one
+    record, so it is settled here, once everything is loaded. An agent who
+    clicks a citation marked as a page knows to look for the passage; one who
+    clicks a citation marked otherwise expects to land on it.
+    """
+    shared = Counter(d.url for d in docs if d.url)
+    return [replace(doc, url_is_page=True)
+            if shared[doc.url] > 1 and not doc.url_is_page else doc
+            for doc in docs]
 
 
 def indexed(docs: list[Doc] | None = None) -> list[Doc]:

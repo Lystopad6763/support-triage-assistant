@@ -11,3 +11,4 @@ data/corpus.jsonl
 
 # Excel lock files, created while a workbook is open
 ~$*
+data/kb/query_vectors/
