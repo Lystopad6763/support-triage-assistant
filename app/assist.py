@@ -47,13 +47,82 @@ from app import config, llm, retrieve
 from app.embed import embed
 
 ROOT = Path(__file__).resolve().parent.parent
-PROMPT = ROOT / "prompts" / "assist" / "v1.md"
+PROMPTS = ROOT / "prompts" / "assist"
+VERSION = "v2"
 
 VARIANT = "article"
 ENCODER = "openai/text-embedding-3-small"
 MODEL = "google/gemini-3.1-flash-lite"
 TOP_K = 5
 TONES = ("formal", "empathetic", "concise")
+
+# Sentence splitter for the check below. Crude on purpose: it only has to
+# bound the window in which a negation counts, not to parse English.
+SENTENCE = re.compile(r"(?<=[.!?])\s+")
+
+# A reply that says "do NOT request a chargeback" is obeying pol-15, and the
+# first version of this check flagged it as violating pol-15 - three times out
+# of twenty, every one of them a correct warning. It matched the TOPIC, not the
+# CLAIM. A check that lights up on correct behaviour is worse than no check,
+# because within a week nobody reads it.
+#
+# So a match only counts when its own sentence does not negate or discourage
+# it. This is not sentiment analysis; it is the difference between "you can
+# request a chargeback" and "please do not request a chargeback", and that
+# difference is carried by a small closed set of words.
+NEGATION = re.compile(
+    r"\b(not|n't|never|cannot|unable|avoid|refrain|instead of|rather than|"
+    r"do not|does not|will not|won't|unfortunately)\b", re.I)
+# The negation has to be NEAR the thing it negates. Skipping any sentence that
+# contained a negative let "we recommend a chargeback if we have not replied in
+# a week" through: the "not" belongs to the other clause entirely. Sixty
+# characters is about one clause of English.
+NEGATION_WINDOW = 60
+# A reply that repeats a customer's mistaken belief in order to correct it is
+# not asserting it. This is the frame that marks the repetition as reported
+# rather than claimed, and an empathetic reply reaches for it constantly -
+# naming what the person expected is most of what "empathetic" means here.
+REPORTED = re.compile(
+    r"\b(you (believed|thought|expected|assumed|may have (believed|thought|"
+    r"expected|assumed))|it sounds like|many (people|users) (assume|think|"
+    r"believe)|some (people|users) (assume|think|believe)|the assumption)\b",
+    re.I)
+
+
+def violations(text: str) -> list[str]:
+    """Which of the seven prohibitions this text actually commits.
+
+    Used by the assistant on every draft and by eval/guards.py on a fixed list
+    of phrasings that must and must not fire - one implementation, so a guard
+    cannot pass its test and behave differently in production.
+    """
+    found: list[str] = []
+    for part in SENTENCE.split(text):
+        for name, pattern, source in BANNED:
+            match = pattern.search(part)
+            if not match:
+                continue
+            before = part[max(0, match.start() - NEGATION_WINDOW):
+                          match.start()]
+            if NEGATION.search(before) or NEGATION.search(match.group(0)):
+                continue
+            # Looking forward as well was tried and abandoned. It excused the
+            # empathetic shape correctly - "you believed uninstalling the app
+            # would end your trial, but that does not cancel it" - and in the
+            # same move excused a real one, "we recommend a chargeback if we
+            # have not replied in a week", where the negation belongs to
+            # another clause entirely. Both have their negation downstream, so
+            # position cannot separate them.
+            #
+            # What separates them is that one REPORTS a belief in order to
+            # correct it. That is a verb, and a short list of them, and it is
+            # the thing actually being detected.
+            if REPORTED.search(part[:match.start()]):
+                continue
+            label = f"{name} ({source})"
+            if label not in found:
+                found.append(label)
+    return found
 
 # Each pattern is one of the seven prohibitions in the prompt, with the
 # document that makes it a prohibition. They are deliberately narrow: a check
@@ -66,11 +135,29 @@ BANNED: list[tuple[str, re.Pattern, str]] = [
     ("promises credits back",
      re.compile(r"refund[^.]{0,30}\b(credits?|balance|units?)\b", re.I),
      "pol-05"),
+    # SHORT is the violation, not "a number of days". The first version of this
+    # pattern flagged "a confirmed refund takes at least 15 business days" -
+    # which is pol-14's own sentence, so the check was calling the policy a
+    # breach of itself. The number has to be under fifteen, or vague in the way
+    # a hurried promise is vague.
     ("promises a short refund window",
-     re.compile(r"refund[^.]{0,40}\b(\d{1,2}|a few|couple)\s*"
+     re.compile(r"refund[^.]{0,40}\b(a few|couple|[1-9]|1[0-4])\s*"
                 r"(business\s+)?(day|days|hours)\b", re.I), "pol-14"),
+    # Matching the word "chargeback" flagged three correct warnings out of
+    # twenty. Adding negation-awareness left one: "please be advised that
+    # initiating a chargeback may result in the immediate termination of your
+    # account" discourages it without a single negative word, and my frame
+    # accepted "please" as if it were a recommendation.
+    #
+    # pol-15 forbids RECOMMENDING one. So the pattern needs a recommending
+    # frame - a second person modal, an explicit recommendation, or the
+    # sentence opening with the imperative - and "please be advised" is none of
+    # the three.
     ("suggests a chargeback",
-     re.compile(r"\b(chargeback|dispute (it|the charge) with your bank)\b",
+     re.compile(r"(you (can|could|should|may|might)|we (recommend|suggest|"
+                r"advise)|feel free to|consider|^\s*(file|request|initiate|"
+                r"start|open)\b)[^.]{0,40}"
+                r"\b(chargeback|dispute (it|the charge|this) with your bank)\b",
                 re.I), "pol-15"),
     ("says deleting the app cancels",
      re.compile(r"(delete|uninstall|remove)[^.]{0,40}(app)[^.]{0,40}"
@@ -170,12 +257,14 @@ class Engine:
     the 400 KB of vectors at startup and not on the first person's request.
     """
 
-    def __init__(self, settings=None, model: str = MODEL):
+    def __init__(self, settings=None, model: str = MODEL,
+                 version: str = VERSION):
         self.settings = settings or config.load()
         self.model = model
+        self.version = version
         self.index = retrieve.Index.load(VARIANT)
         self.vectors = retrieve.Vectors.load(VARIANT, ENCODER, self.index)
-        self.system = PROMPT.read_text(encoding="utf-8")
+        self.system = (PROMPTS / f"{version}.md").read_text(encoding="utf-8")
         self.by_doc = {c["doc_id"]: c for c in self.index.chunks}
 
     def find(self, ticket: str) -> tuple[list[Source], float]:
@@ -199,7 +288,8 @@ class Engine:
         out.retrieval_ms = int((time.monotonic() - started) * 1000)
 
         prompt = config.PromptConfig(
-            version="assist/v1", model=self.model, temperature=0.3,
+            version=f"assist/{self.version}", model=self.model,
+            temperature=0.3,
             response_format="json_schema",
             text_override=self.system,
             tested_on="benchmark/tickets.csv",
@@ -236,10 +326,11 @@ class Engine:
             and flat(o.citation_quote) in flat(chunk["text"]))
         out.citation_url = chunk["url"] if chunk else ""
 
-        body = " ".join(getattr(o, tone) for tone in TONES)
-        out.banned = [f"{name} ({source})"
-                      for name, pattern, source in BANNED
-                      if pattern.search(body)]
+        out.banned = []
+        for tone in TONES:
+            for label in violations(getattr(o, tone)):
+                if label not in out.banned:
+                    out.banned.append(label)
 
         # Tone variation is the thing most likely to be fake here: one reply
         # rewritten three times reads like three until it is measured. The
@@ -255,8 +346,10 @@ class Engine:
 _engine: Engine | None = None
 
 
-def draft(ticket: str, settings=None, model: str = MODEL) -> Result:
+def draft(ticket: str, settings=None, model: str = MODEL,
+          version: str = VERSION) -> Result:
     global _engine
-    if _engine is None or (settings is not None and _engine.settings is not settings):
-        _engine = Engine(settings, model)
+    if (_engine is None or _engine.model != model
+            or _engine.version != version):
+        _engine = Engine(settings, model, version)
     return _engine.draft(ticket)
