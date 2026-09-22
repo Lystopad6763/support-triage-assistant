@@ -52,6 +52,19 @@ class PromptConfig(BaseModel):
     change_reason: str
     previous_version: str | None = None
     technique: str = ""
+    # The frozen set this version is scored on. Named here so a version cannot
+    # quietly be compared against a different set than the one before it.
+    # Which output contract this version speaks, from app.schemas.CONTRACTS.
+    # Versioned with the prompt because the field ORDER inside the schema decides
+    # what the model has written by the time it commits to a label - so a
+    # contract change is a behaviour change, not a refactor.
+    contract: str = "triage"
+    tested_on: str = "golden_v1 + synthetic_v1 (250 rows)"
+    # The run that produced this version's score, not the score itself. A number
+    # copied in by hand drifts from the run that made it the moment either is
+    # touched; a pointer cannot. eval/run.py writes the summary, the report
+    # joins the two.
+    eval_run: str | None = None
     # Held back on purpose, each one a hypothesis for the next version: a
     # baseline containing all of them cannot show which one paid for itself.
     omitted: tuple[str, ...] = ()
@@ -62,220 +75,329 @@ class PromptConfig(BaseModel):
 
     @property
     def text(self) -> str:
+        """The prompt body, .md preferred over .txt.
+
+        Markdown because the file is read by people in the repository and by
+        GitHub, and because the body already uses headings - the model receives
+        a string either way and the extension never reaches the API. .txt is
+        still accepted so the versions in git history load unchanged.
+
+        Whatever is in the file is SPOKEN TO THE MODEL, every run. Metadata -
+        why the version exists, what it scored, what it holds back - belongs in
+        this object, not in the file: a change_reason inside the prompt is an
+        instruction the model will try to follow.
+        """
         if self.text_override is not None:
             return self.text_override
-        path = PROMPT_DIR / f"{self.version}.txt"
-        if not path.exists():
-            raise FileNotFoundError(f"no prompt text at {path}")
-        return path.read_text(encoding="utf-8")
+        for suffix in (".md", ".txt"):
+            path = PROMPT_DIR / f"{self.version}{suffix}"
+            if path.exists():
+                return path.read_text(encoding="utf-8")
+        raise FileNotFoundError(
+            f"no prompt text at {PROMPT_DIR / self.version}.md or .txt")
 
 
 PROMPTS: dict[str, PromptConfig] = {
+    # v1 -- v8 of the first pass are gone with the taxonomy they classified into
+    # (11 categories, ASK_PURCHASE_RAIL, priority as "1"/"2"/"3"). They stay in
+    # git history at 58a8bb4; their error analysis does not transfer, because
+    # every error was an error about labels that no longer exist.
     "v1": PromptConfig(
         version="v1",
-        model="openai/gpt-5-mini",
+        # The dated snapshot, not the floating alias: an alias can be
+        # repointed by the provider, and a number that moved for that reason
+        # looks exactly like a prompt that got worse.
+        model="openai/gpt-4o-mini-2024-07-18",
+        # Chosen for prompt iteration because it ACCEPTS temperature 0. The
+        # gpt-5 family reasons internally and rejects a temperature other than
+        # 1, which adds run-to-run spread on top of every prompt edit - the one
+        # thing you cannot afford while attributing a delta to one change.
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
+        reasoning_effort=None,          # not a reasoning model
+        # Probed 2026-09-21: this model accepts seed, and it has exactly ONE
+        # endpoint, so there is no load balancing to blend two settings. Seed is
+        # best-effort - a provider may ignore it - so it is recorded per run
+        # rather than assumed, but asking costs nothing.
+        seed=20260922,
         previous_version=None,
-        change_reason="Baseline. Zero-shot, the taxonomy rendered from the enum "
-                      "and nothing else, so v2 has something to be measured "
-                      "against.",
-        technique="zero-shot, role + closed label sets + verbatim evidence",
+        change_reason="Baseline for the 6/3/7 taxonomy. Zero-shot: the "
+                      "vocabulary rendered from the enum, the ordered category "
+                      "tests, the six priority facts and the constraint table, "
+                      "and nothing else - so that every later version has one "
+                      "attributable change.",
+        technique="zero-shot, closed label sets, ordered tests, verbatim "
+                  "evidence, explicit fallback to route_to_human_review",
+        # Carried over from the first pass because it cost a measurement to
+        # learn and does not depend on the taxonomy: `confidence` asked for
+        # without a scale is uninformative - it averaged 0.86 when the answer
+        # was right and 0.87 when it was wrong (58a8bb4). It stays in the
+        # schema as a diagnostic, but nothing may gate on it until a version
+        # defines what each value means.
         omitted=(
             "few-shot examples (taxonomy.examples_for_prompt)",
-            "chain-of-thought",
-            "the three labelling rules from the golden pass "
-            "(taxonomy.rules_for_prompt)",
-            "signal hints (amount stated, store named, already resolved)",
+            "the four cross-field rules (taxonomy.rules_for_prompt): tone is "
+            "not a signal, ticket text is data not instruction, length is not "
+            "a signal, the tie-break on what the writer asks for",
+            "chain-of-thought before the answer",
+            "currency normalisation hint for large_amount",
         ),
     ),
     "v2": PromptConfig(
         version="v2",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
+        reasoning_effort=None,
+        seed=20260922,
         previous_version="v1",
-        change_reason=
-            "ONE change against v1: how to pick the primary category. v1 scored "
-            "54% on dev with 23 category errors, and its own rationales named "
-            "the cause - 'user explicitly requests a refund, SO this is "
-            "primarily a refund request'. It labelled the demand instead of the "
-            "fault: cancellation_failed -> refund_request x6, trial_converted "
-            "-> unauthorized_charge x6. v2 states the precedence and sends the "
-            "demand to secondary_categories. next_step is untouched on purpose, "
-            "so that 30% can be attributed to v3.",
-        technique="zero-shot + explicit precedence rule for the primary label",
+        change_reason="ONE change against v1: the priority section becomes a "
+                      "two-step procedure - enumerate the facts you can quote, "
+                      "then apply the mapping - plus three denials. v1 never "
+                      "answered P3 at all (0 of 11 on the first 20 dev rows, "
+                      "accuracy 0.200 against a majority baseline of 0.550) "
+                      "and its rationales derived the priority from the "
+                      "CATEGORY: 'app_defect fired' -> P2, 'they want a refund, "
+                      "indicating urgency' -> P1, and one row stated 'no "
+                      "priority fact present' and still answered P2. So the "
+                      "rule was present but not binding, and the mapping had "
+                      "to become an order of operations.",
+        technique="zero-shot + ordered procedure for the one field that failed",
         omitted=(
-            "escalation criteria for next_step (v3: 26 of 35 next_step errors "
-            "are escalate_to_human answered with a self-service step)",
-            "a scale for confidence (0.86 when right vs 0.87 when wrong on v1, "
-            "so it carries no signal)",
-            "few-shot examples",
-            "reasoning before the decision",
+            "few-shot examples (taxonomy.examples_for_prompt)",
+            "the four cross-field rules (taxonomy.rules_for_prompt)",
+            "chain-of-thought before the answer",
+            "a priority_facts[] array in the schema - held for v3 on purpose: "
+            "changing the prompt and the output contract together would leave "
+            "nothing to attribute the difference to",
         ),
     ),
     "v3": PromptConfig(
         version="v3",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
+        reasoning_effort=None,
+        seed=20260922,
+        contract="triage_facts",
         previous_version="v2",
-        change_reason=
-            "ONE change against v2: criteria for choosing next_step. v2 scored "
-            "34% on it and produced escalate_to_human 5 times where the labels "
-            "have it 27 times - v1 and v2 list nine actions and give no basis "
-            "for picking one, so the model defaults to the self-service step. "
-            "The triggers are written as facts stated in the text, not "
-            "judgements, because a human reviewer has to be able to check them.",
-        technique="zero-shot + precedence rule + explicit routing criteria",
+        change_reason="ONE change against v2: the output contract. v2 asked for "
+                      "the enumeration in prose and got it - the model wrote "
+                      "'no priority facts' in 75 of 157 dev rows - and then "
+                      "ignored the mapping in 70 of those 75 (93%), answering "
+                      "P1 31 times and P2 39. Priority accuracy 0.223 against "
+                      "a majority baseline of 0.550; applying the mapping to "
+                      "the model's OWN list would have given ~0.516. The cause "
+                      "is field order: structured outputs generate in schema "
+                      "order, so `priority` was written third, before evidence "
+                      "and rationale existed, which makes any chain-of-thought "
+                      "in the prompt post-hoc by construction. v3 inserts "
+                      "priority_facts[] immediately before priority, turning "
+                      "the enumeration into a generated field and the "
+                      "contradiction into a countable defect.",
+        technique="zero-shot + chain-of-thought moved into the output contract",
         omitted=(
-            "a scale for confidence",
-            "few-shot examples",
-            "reasoning before the decision",
+            "few-shot examples (taxonomy.examples_for_prompt) - the lecture's "
+            "classification advice asks for one example per category and "
+            "fewshot_v1.json already holds all six plus all seven steps; it is "
+            "the strongest next move and therefore has to be measured alone",
+            "shortening the priority section now that the enumeration lives in "
+            "the schema (the overloaded-prompt antipattern)",
+            "moving rationale before the labels as well",
         ),
     ),
     "v4": PromptConfig(
         version="v4",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
+        reasoning_effort=None,
+        seed=20260922,
+        contract="triage_facts",
         previous_version="v3",
-        change_reason=
-            "ONE change against v3: priority is decided independently of "
-            "next_step. v3 fixed next_step (34% -> 70%) and cost priority: the "
-            "model called P1 33 times against 24 in the labels, 9 of the 14 "
-            "errors being P2 answered as P1. The escalation triggers it had just "
-            "been given overlap with the P1 signals, so it read 'needs a human' "
-            "as 'urgent'. v4 says they are separate decisions and that P1 needs "
-            "the aggravating fact stated, not inferred from tone.",
-        technique="zero-shot + precedence + routing criteria + decoupled priority",
+        change_reason="TWO edits, in two different fields' sections, kept in one "
+                      "version because the metrics that judge them are "
+                      "disjoint: one moves `priority`, the other moves table "
+                      "violations, so a failure is still attributable. (1) v3 "
+                      "fixed the mapping and the error moved into the "
+                      "enumeration: `still_bleeding` was claimed 40 times on "
+                      "157 dev rows and 22 of those were gold P3, because the "
+                      "model reads the BILLING PERIOD NAME as recurrence - "
+                      "'charged 39.90 for a week', '$8.95 for One Week'. That "
+                      "is the same trap our own regex fell into on the word "
+                      "`monthly` (LABELLING.md section 9), reproduced "
+                      "independently, so the fact needed its own test: two "
+                      "charges with dates or amounts, or an explicit statement "
+                      "that charges continue. The mapping is also restated as "
+                      "three first-match lines, because the middle one - a soft "
+                      "fact alone is P2 - was skipped in all 9 "
+                      "self-contradictions. (2) All 9 table violations were "
+                      "`route_to_human_review` from categories that forbid it, "
+                      "and that was OUR bug: the output section invited the "
+                      "step while the table allows it only with `other`. Now "
+                      "stated: the step and the category travel together.",
+        technique="zero-shot + CoT in the contract + a per-fact test for the "
+                  "one fact that over-fires",
         omitted=(
-            "a scale for confidence (still flat: 0.87 right vs 0.86 wrong on v3)",
-            "few-shot examples",
-            "reasoning before the decision",
-            "KNOWN DEFECT, left for the next version so this one measures one "
-            "thing: v2's precedence list says 'cancelled, unsubscribed or "
-            "DELETED THE APP -> cancellation_failed', but deleting an app "
-            "cancels nothing and our labels call that trial_converted. It is "
-            "behind 3 of the 13 remaining category errors.",
+            "few-shot examples (taxonomy.examples_for_prompt) - still the "
+            "strongest untried move, and still held back so it can be measured "
+            "alone",
+            "shortening the priority section (overloaded-prompt antipattern) - "
+            "v4 made it longer, not shorter, which makes the cut worth "
+            "measuring afterwards",
+            "moving rationale before the labels",
+            "promoting the sharpened still_bleeding wording into taxonomy.py - "
+            "that would change what v1-v3 render and destroy the comparison; "
+            "it moves there when a version is frozen",
         ),
     ),
     "v5": PromptConfig(
         version="v5",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
+        reasoning_effort=None,
+        seed=20260922,
+        contract="triage_facts",
         previous_version="v4",
-        change_reason=
-            "ONE change against v4: the defect v2 introduced. v2 told the model "
-            "that deleting the app counts as a cancellation; it does not stop a "
-            "subscription, and our labels call a charge after a deletion "
-            "trial_converted or unauthorized_charge. On v4 it produced "
-            "unauthorized_charge -> cancellation_failed x4, two of those tickets "
-            "saying literally 'deleted account'. v5 asks what the writer DID.",
-        technique="zero-shot + precedence + routing criteria + decoupled priority",
+        change_reason="SUBTRACTION, and it is a measurement rather than a "
+                      "retreat. v4 carried two edits inside one field, and the "
+                      "evidence says the gain came from the mapping rewrite, "
+                      "not from the still_bleeding test that was supposed to "
+                      "deliver it: claims of that fact went UP 40 -> 63, gold-P3 "
+                      "rows answered P2 went UP 22 -> 30 (27 of them via "
+                      "still_bleeding), while P1 answers fell 50 -> 24, which is "
+                      "the mapping's work. The block listed the exact phrases "
+                      "the model was failing on as forbidden, and the lecture's "
+                      "antipattern list is explicit that a bare prohibition is "
+                      "not a concrete instruction and that negatives work only "
+                      "alongside positives. So it comes out. If priority holds "
+                      "near 0.70 the block was dead weight and the prompt is "
+                      "1,000 characters and ~$0.5/10k cheaper for free; if "
+                      "priority drops, the block was carrying something and has "
+                      "to be rewritten as a positive example instead of a ban. "
+                      "Either outcome settles the attribution v4 left open.",
+        technique="zero-shot + CoT in the contract + mapping as first-match; "
+                  "no per-fact prohibitions",
         omitted=(
-            "a scale for confidence",
-            "few-shot examples",
-            "reasoning before the decision",
+            "few-shot examples (taxonomy.examples_for_prompt) - next, and now "
+            "aimed at a measured target: 10 rows where gold is P2 and the model "
+            "returned P3 with an EMPTY list, i.e. under-firing, which a ban "
+                  "cannot fix and an example can",
+            "moving rationale before the labels",
+            "anything about the 12 invented evidence spans, which no version has "
+            "moved yet",
         ),
     ),
     "v6": PromptConfig(
         version="v6",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
-        previous_version="v5",
-        change_reason=
-            "ONE change against v5, and it is a defect, not a tuning step. The "
-            "rendered taxonomy says cancellation_failed is 'cannot find OR "
-            "complete cancellation, or cancelled and was billed anyway'. The "
-            "precedence block added in v2 said 'took a cancellation ACTION', "
-            "which is narrower and contradicts it, so the prompt held two "
-            "incompatible rules. That is the most likely reason 10 of 50 tickets "
-            "flip between trial_converted and cancellation_failed from run to "
-            "run. v6 states both halves and keeps only the true part of the "
-            "narrowing: a deletion alone is not a cancellation.",
-        technique="zero-shot + precedence + routing criteria + decoupled priority",
+        reasoning_effort=None,
+        seed=20260922,
+        contract="triage_facts",
+        previous_version="v4",
+        change_reason="FEW-SHOT, and it descends from v4, not v5: the repeats "
+                      "run settled that. Three runs of v5 put the headline in "
+                      "0.7636-0.7660 - a range of 0.0024 - while v4 sits at "
+                      "0.775, above the whole band, and on priority 0.700 "
+                      "against 0.6709-0.6827. So v5's subtraction LOST "
+                      "something, and the earlier 'dead weight' reading was "
+                      "drawn from a noise estimate that had been derived from "
+                      "the very difference it was used to dismiss. What the "
+                      "block actually did is the opposite of what it says: "
+                      "false facts on gold-P3 rows did not move (v4 32, v5 "
+                      "30-33, of which still_bleeding 27 vs 26-28), while "
+                      "under-firing did (gold P2 answered P3 with an empty "
+                      "list: v4 10, v5 13-16). A long test naming the fact nine "
+                      "times RAISED claims of it, 54-57 -> 63, and the extra "
+                      "claims happened to land on real P2 rows. The lecture's "
+                      "antipattern with the sign reversed: a prohibition primes "
+                      "rather than suppresses. Both diseases are therefore "
+                      "about the fact list and neither is reachable by prose - "
+                      "32 false claims have stood unmoved through four "
+                      "versions. So: 9 worked examples, rendered from the "
+                      "fewshot set, each showing priority_facts WITH the words "
+                      "that put each fact on the list, and four of the nine "
+                      "showing an empty list on a ticket that looks urgent. "
+                      "Four negatives against five positives because the "
+                      "over-firing side is the bigger one in absolute rows. "
+                      "Cost is the known risk: the block is 3,839 characters, "
+                      "the prompt goes 9,930 -> ~13,800 and ~$2.99 -> ~$4.0 per "
+                      "10k. If it wins, trimming the block is the next "
+                      "measurement and a cheap one; if it does not, few-shot is "
+                      "not the lever here and that is worth reporting too.",
+        technique="few-shot (9 examples, facts shown with their quotes) + CoT in "
+                  "the contract + mapping as first-match + per-fact test",
         omitted=(
-            "a scale for confidence (0.86 right vs 0.87 wrong - still unusable "
-            "as a routing signal, and the fix is a scale, not a reminder)",
-            "few-shot examples",
-            "reasoning before the decision",
+            "hardship has no example - the fewshot set contains no row with it, "
+            "and borrowing one from dev or golden would leak a scored row into "
+            "the prompt. Its definition still arrives via {priorities}",
+            "route_to_human_review has no example either, deliberately: it is "
+            "the step the model over-uses, and v4 just proved that showing a "
+            "label makes it more likely, not less. The one `other` example maps "
+            "to bug_report instead",
+            "trimming the block - that is the next version if this one wins, "
+            "measured alone",
+            "moving rationale before the labels",
+            "anything about the invented evidence spans, still untouched after "
+            "five versions",
         ),
     ),
     "v7": PromptConfig(
         version="v7",
-        model="openai/gpt-5-mini",
+        model="openai/gpt-4o-mini-2024-07-18",
         temperature=0.0,
         max_output_tokens=None,
         response_format="json_schema",
-        reasoning_effort="low",
-        previous_version="v6",
-        change_reason=
-            "ONE change against v6: cancellation_failed needs a subscription the "
-            "writer acknowledges. v6 fixed the prompt's self-contradiction and "
-            "then overshot - two runs averaged 77% on category, the same as v5 "
-            "within noise, while macro F1 fell 0.75 -> 0.67 and next_step 76% -> "
-            "63%. The distribution says why: cancellation_failed was predicted 24 "
-            "times against 21 in the labels and refund_request zero times against "
-            "4. Accuracy held because cancellation_failed is the largest class, "
-            "which is the exact failure macro F1 exists to expose. The tickets it "
-            "broke say 'I didn't buy anything' and 'I don't have any "
-            "subscription in this apps' - nothing to cancel.",
-        technique="zero-shot + precedence + routing criteria + decoupled priority",
+        reasoning_effort=None,
+        seed=20260922,
+        contract="triage_facts",
+        previous_version="v4",
+        change_reason="NEGATIVE EXAMPLES ONLY, and it is a test of one mechanism "
+                      "rather than a hope. v6 put nine examples in and lost "
+                      "0.037 against a measured noise range of 0.0024. The cause "
+                      "was not the missing hardship example - claims of that "
+                      "fact went 10 -> 11, unmoved - it was the examples "
+                      "themselves acting as frequency anchors: one `deadline` "
+                      "example took claims of it from 1 to 31, one "
+                      "`escalated_out` example from 15 to 35. P1 recall rose "
+                      "(23/25 against 20/25) while P1 precision collapsed, 4 "
+                      "false P1 -> 21, and F1(P1) fell 0.816 -> 0.667. So a "
+                      "shown fact becomes an available move, and over-claiming a "
+                      "HARD fact costs far more than over-claiming a soft one. "
+                      "v6 did cure the target disease - still_bleeding claims "
+                      "63 -> 41 - and it took table violations to 0, the first "
+                      "version to do so. v7 keeps only the half that cannot "
+                      "backfire: the four examples with an EMPTY list, with "
+                      "every fact NAME stripped from their reasons, since the "
+                      "name is the prime. They aim at the largest error class in "
+                      "the run, untouched since v2: 32 gold-P3 rows carrying a "
+                      "claimed fact. The block is 1,826 characters against v6's "
+                      "3,839. Predicted, and falsifiable: false facts on gold-P3 "
+                      "rows fall, while `deadline` and `escalated_out` claims "
+                      "stay where v4 left them, at 1 and 15. The risk is the "
+                      "mirror image - four empty lists in a row priming "
+                      "emptiness and costing P2 and P1 recall - so the framing "
+                      "states the real 58/42 split instead of letting four "
+                      "examples imply it.",
+        technique="four negative examples (no fact names shown) + CoT in the "
+                  "contract + mapping as first-match + per-fact test",
         omitted=(
-            "a scale for confidence - still unusable (0.89 right vs 0.82 wrong), "
-            "and syn-15 came back at 0.93 on a ticket that contradicts itself",
-            "the resolved-already rule, which syn-14 fails: a ticket resolved in "
-            "March was escalated",
-            "any crisis instruction: syn-02 was answered as content_quality with "
-            "ask_purchase_rail, and the conclusion is that crisis detection does "
-            "not belong in a prompt at all - it belongs in a deterministic "
-            "pre-pass that cannot be talked out of it",
-            "few-shot examples",
-            "reasoning before the decision",
-        ),
-    ),
-    "v8": PromptConfig(
-        version="v8",
-        model="openai/gpt-5-mini",
-        temperature=0.0,
-        max_output_tokens=None,
-        response_format="json_schema",
-        reasoning_effort="low",
-        previous_version="v7",
-        change_reason=
-            "ONE change against v7: refund_request gets a positive definition. "
-            "Across four runs of v6 and v7 the class was predicted ZERO times "
-            "against 4 rows in dev, and its per-class F1 is 0.00 - a label the "
-            "system cannot produce at all. That is a broken contract, not a "
-            "tuning gap: it accounts for 0.11 of the 0.13 macro-F1-core "
-            "difference against v5 (0.72 vs 0.59). The cause is that v2 defined "
-            "the class only negatively, as the fallback when no cause is "
-            "identifiable, and later versions widened cancellation_failed until "
-            "every ticket had a cause. v8 names the second situation our labels "
-            "actually use: the refund itself is what is stuck, already refused "
-            "or withheld. v7's two gains are untouched - cancellation_failed F1 "
-            "0.83 -> 0.90 and trial_converted 0.77 -> 0.80.",
-        technique="zero-shot + precedence + routing criteria + decoupled priority",
-        omitted=(
-            "a scale for confidence - the two remaining edge-case failures on v7 "
-            "are both confidence, and the fix is a stated scale, not a reminder",
-            "few-shot examples",
-            "reasoning before the decision",
+            "the five positive examples from v6 - they are what did the damage, "
+            "and they are held back rather than deleted: v6 stays re-runnable "
+            "and its annotations are untouched",
+            "hardship still has no example, and v6 showed that costs nothing",
+            "anything about the invented evidence spans, still untouched after "
+            "six versions",
+            "moving rationale before the labels",
         ),
     ),
 }
@@ -448,3 +570,35 @@ class Settings(BaseSettings):
 def load(prompt_version: str | None = None) -> Settings:
     overrides = {"prompt_version": prompt_version} if prompt_version else {}
     return Settings(**overrides)
+
+
+# --- what actually ships ------------------------------------------------------
+# The frozen pair, and it is NOT the pair the prompt was written against. The
+# prompt was tuned on gpt-4o-mini; the benchmark then put that model 9th of 10.
+#
+# Round 2, all 157 dev rows, prompt v4 held identical for every model:
+#
+#   model                  core   all    F1 prio   invented   $/10k   p50
+#   claude-sonnet-5        0.838  0.719  0.710     6          145.16  7608
+#   gpt-5-mini             0.819  0.709  0.757     9           26.35  13172
+#   gemini-3.1-flash-lite  0.803  0.725  0.786     2            8.65  1640
+#   gpt-4o-mini (base)     0.775  0.642  0.700     12           2.99  2172
+#
+# The two headline numbers disagree about the winner - core says sonnet by
+# 0.035, all-classes says gemini by 0.006 - so quality is a tie, and the tie is
+# broken by the axes that are not noisy: gemini leads the PRIORITY field (0.786
+# against 0.710), invents the fewest quotes (2 against 6 and 9), answers fastest
+# of all four including the base, and costs 17x less than sonnet. False facts on
+# gold-P3 rows: 6 of 92 against sonnet's 7 and the base's 32.
+#
+# What is NOT claimed: that gemini is better than sonnet. Per-model spread was
+# not measured (~$7, mostly sonnet), so the honest statement is that they are
+# indistinguishable on quality and gemini wins everything else.
+#
+# Known weaknesses of this pair, carried into the report rather than hidden:
+# next_step is its worst field (0.790, below all three others), and it finds 14
+# of 25 gold P1 where the base found 20. Precision and recall trade cleanly
+# across the whole table - the more conservative the model, the more P1 it
+# misses - and a missed P1 is the most expensive error this system makes.
+CLASSIFIER_PROMPT = "v4"
+CLASSIFIER_MODEL = "google/gemini-3.1-flash-lite"

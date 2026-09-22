@@ -39,7 +39,7 @@ from pydantic import BaseModel, ValidationError
 from app import taxonomy
 from app.cache import Cache, Entry
 from app.config import MODEL_PROVIDERS, PromptConfig, Settings
-from app.schemas import OUTPUT_SCHEMA, Triage
+from app.schemas import CONTRACTS, OUTPUT_SCHEMA, Triage
 
 JSON_OBJECT = re.compile(r"\{.*\}", re.S)
 # Written by scripts/probe_models.py from the OpenRouter catalogue. Absent or
@@ -175,6 +175,11 @@ def render(prompt: PromptConfig) -> str:
         ("priorities", taxonomy.priorities_for_prompt()),
         ("next_steps", taxonomy.next_steps_for_prompt()),
         ("examples", taxonomy.examples_for_prompt()),
+        # A second placeholder rather than a config flag, so that reading
+        # the prompt file tells you which block it pulls. v6 shows all
+        # nine examples; v7 shows only the four with an empty fact list.
+        ("examples_negative",
+         taxonomy.examples_for_prompt(block="негативи")),
         ("rules", taxonomy.rules_for_prompt()),
     ):
         text = text.replace("{" + key + "}", value)
@@ -310,7 +315,13 @@ def classify(ticket: dict, settings: Settings, model: str | None = None,
             # and counting it twice would flatter every projection built on it.
             return result
 
-    result.triage = run(messages, result, prompt, settings)
+    # The contract is part of the version, not a constant: the field order in
+    # the schema decides what the model has produced before it commits to a
+    # label. CONTRACTS maps the version's name to (model class, schema).
+    model_cls, schema = CONTRACTS.get(getattr(prompt, "contract", "triage"),
+                                      (Triage, OUTPUT_SCHEMA))
+    result.triage = run(messages, result, prompt, settings, schema=schema,
+                        model_cls=model_cls)
 
     result.latency_ms = int((time.monotonic() - started) * 1000)
     if cache is not None and key and result.ok:

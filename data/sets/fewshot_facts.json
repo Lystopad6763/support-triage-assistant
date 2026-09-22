@@ -1,0 +1,111 @@
+{
+  "_про файл": [
+    "Анотація фактів пріоритету для few-shot блоку (taxonomy.examples_for_prompt).",
+    "Живе окремо від fewshot_v1.json, бо той файл перегенерується scripts/split_eval.py",
+    "і анотація в ньому загубилась би при наступному переспліті.",
+    "Текст тікета сюди НЕ копіюється - він береться з набору за id, щоб приклад",
+    "не міг розійтися з реальним рядком.",
+    "Кожна цитата мусить бути точним підрядком показаного (обрізаного) тексту;",
+    "examples_for_prompt() падає, якщо це не так - інакше блок учив би моделі",
+    "вигадувати цитати, а це один із дефектів, який ми й міряємо.",
+    "Набір fewshot не містить жодного рядка з hardship, тому цей факт лишається",
+    "без прикладу - його опис приходить із {priorities}.",
+    "Блок 'негативи' - підмножина 'порядку' для v7: лише рядки з порожнім списком,",
+    "і в них показується 'чому порожньо без назв' замість 'чому порожньо', бо v6",
+    "довів, що назва факту в тексті промпту піднімає частоту його заявок",
+    "(deadline: 1 -> 31 заявка з одного прикладу). Причини в 'чому порожньо'",
+    "лишаються недоторканими, щоб v6 відтворювався байт-у-байт."
+  ],
+  "порядок": [
+    {
+      "id": "gp:db0a0b86-227",
+      "факти": [
+        [
+          "still_bleeding",
+          "hoy han vuelto a cobrarme 29'90€"
+        ]
+      ],
+      "нащо": "два окремі списання, названі датою і сумою - підручниковий still_bleeding"
+    },
+    {
+      "id": "gp:8e3724d5-af2",
+      "факти": [],
+      "чому порожньо": "one charge, already in the past; \"my cards are not available for you to charge me\" says the card is OFF file, which is the opposite of card_exposed; cancelling a month ago is not a clock still running",
+      "нащо": "негатив: злий тон, велика сума, скасування в минулому - і жодного факту",
+      "чому порожньо без назв": "one charge, and it is already in the past; the card is no longer on file - \"my cards are not available for you to charge me\"; the cancellation happened a month ago, so nothing is pending"
+    },
+    {
+      "id": "gp:6a8dba2c-2b1",
+      "факти": [
+        [
+          "still_bleeding",
+          "charging me 10.79 every 6 days"
+        ],
+        [
+          "card_exposed",
+          "I have taken my card of google and u still charged me"
+        ]
+      ],
+      "нащо": "два факти в одному тікеті - модель схильна назвати один або жоден"
+    },
+    {
+      "id": "gp:70f36e96-83e",
+      "обрізати": 250,
+      "факти": [],
+      "чому порожньо": "the $2 trial and the $45 charge are ONE purchase flow, not money still moving; $45 is the ordinary amount in this corpus; \"they are Scammers\" names no venue",
+      "нащо": "рівно та пастка, на якій модель хибно заявляє still_bleeding 27 разів: пробний платіж плюс списання",
+      "чому порожньо без назв": "the $2 trial and the $45 charge are one purchase flow, not money that keeps moving; $45 is the ordinary amount here; \"they are Scammers\" names no bank, no platform and no authority"
+    },
+    {
+      "id": "gp:f2838531-d25",
+      "факти": [
+        [
+          "escalated_out",
+          "I will call my bank to void this auto biller"
+        ]
+      ],
+      "нащо": "погроза з названим органом - банк; поруч \"It actually falls under fraud\", яке органу не називає і саме по собі фактом не є"
+    },
+    {
+      "id": "gp:5c590b31-4a9",
+      "факти": [
+        [
+          "deadline",
+          "still in 7 day trial"
+        ]
+      ],
+      "нащо": "годинник цокає, грошей ще не знято - факт є, але м'який, отже P2"
+    },
+    {
+      "id": "as:5355417868",
+      "факти": [
+        [
+          "large_amount",
+          "the life-time purchase $119.99"
+        ]
+      ],
+      "нащо": "$119,99 проти звичних $40-50; і large_amount сам по собі це P2, не P1"
+    },
+    {
+      "id": "gp:2c19c10a-02c",
+      "обрізати": 260,
+      "факти": [],
+      "чому порожньо": "a defect with no money involved at all",
+      "нащо": "порожній список у категорії без білінгу, і не англійською",
+      "чому порожньо без назв": "a defect, with no money involved at all"
+    },
+    {
+      "id": "as:10137043012",
+      "факти": [],
+      "чому порожньо": "a feature request: nothing is broken and no money is involved",
+      "нащо": "other бере крок із таблиці (bug_report), а не route_to_human_review",
+      "чому порожньо без назв": "a feature request: nothing is broken and no money is involved"
+    }
+  ],
+  "негативи": [
+    "gp:8e3724d5-af2",
+    "gp:70f36e96-83e",
+    "gp:2c19c10a-02c",
+    "as:10137043012"
+  ]
+}
