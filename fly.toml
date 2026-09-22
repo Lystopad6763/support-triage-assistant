@@ -18,6 +18,13 @@ primary_region = "fra"
 # measured so far.
 swap_size_mb = 256
 
+# A deploy sends this signal first, and uvicorn reads SIGINT as "stop accepting,
+# finish what you are holding". The default five second grace would cut somebody's
+# draft in half; twenty covers the fifteen the process is allowed to spend winding
+# down, with room for the socket to close.
+kill_signal = "SIGINT"
+kill_timeout = 20
+
 [build]
 
 [http_service]
