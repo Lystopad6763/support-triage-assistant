@@ -4,7 +4,7 @@ import Reply from './components/Reply.jsx'
 import Citation from './components/Citation.jsx'
 import Sources from './components/Sources.jsx'
 import Meta from './components/Meta.jsx'
-import { EXAMPLES, MAX_CHARS } from './examples.js'
+import { EXAMPLES, MAX_CHARS, VISIBLE } from './examples.js'
 
 /**
  * The agent pastes a ticket and reads three drafts. That is the whole product,
@@ -26,6 +26,7 @@ export default function App() {
   const [error, setError] = useState(null)
   const [busy, setBusy] = useState(false)
   const [health, setHealth] = useState(null)
+  const [allExamples, setAllExamples] = useState(false)
   const box = useRef(null)
 
   useEffect(() => {
@@ -124,12 +125,23 @@ export default function App() {
 
       {!result && !busy && (
         <div className="examples">
-          <span className="examples-label">Справжні звернення:</span>
-          {EXAMPLES.map(e => (
-            <button key={e.label} className="chip" onClick={() => useExample(e.text)}>
+          <span className="examples-label">Тікети з відгуків у сторах:</span>
+          {(allExamples ? EXAMPLES : EXAMPLES.slice(0, VISIBLE)).map(e => (
+            <button key={e.id} className="chip" title={e.text}
+                    onClick={() => useExample(e.text)}>
               {e.label}
             </button>
           ))}
+          {!allExamples && EXAMPLES.length > VISIBLE && (
+            <button className="chip more" onClick={() => setAllExamples(true)}>
+              Більше ({EXAMPLES.length - VISIBLE})
+            </button>
+          )}
+          {allExamples && (
+            <button className="chip more" onClick={() => setAllExamples(false)}>
+              Згорнути
+            </button>
+          )}
         </div>
       )}
 

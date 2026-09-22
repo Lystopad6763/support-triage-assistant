@@ -1,39 +1,79 @@
-// Real tickets from benchmark/tickets.csv, not written for the demo.
+// Real tickets, straight out of benchmark/tickets.csv - the same 430 the
+// retrieval grid was scored on. Nothing here was written for the demo, which is
+// the point: a demo whose examples were composed for it proves only that they
+// were composed for it.
 //
-// Five, chosen to break in different places: a language the knowledge base is
-// not written in, a cancellation whose correct answer depends on the store, a
-// trial that converted, a delivery complaint mixed with a crash, and a pure
-// technical fault with no money in it at all. A demo whose examples all work
-// is a demo that has been arranged.
+// Twelve, chosen to break in different places. Nine languages against a
+// knowledge base that exists only in English. Both stores, including one whose
+// text names the other - the case where the store prefix would send retrieval
+// to the wrong cancellation rail. A trial that converted, a charge with no
+// subscription behind it, a service never delivered, and one complaint that is
+// really about the price of a free app.
+//
+// The first four show by default; the rest are behind "Більше", because a wall
+// of twelve chips is a wall, not a choice.
 export const MAX_CHARS = 12000
+export const VISIBLE = 4
 
 export const EXAMPLES = [
   {
-    label: 'Іспанська · списання без підписки',
-    text: 'Necesito que me ayuden, la aplicación acaba de hacer un cobro a mi cuenta. Y yo no tengo ninguna suscripción, hice una compra hace unos días, pero suscripción no tengo.',
+    id: "gp:953b362d-75b",
+    label: "Англійська · двічі списали",
+    text: "charged, my card 2 times and I didn't do anything with your site. 48 on April 30 and 58 on April 1st. I want my money back",
   },
   {
-    label: 'Німецька · пастка з пробним',
-    text: 'Dies ist ein Betrug. Ich habe lediglich 1 € bezahlt, dennoch wurden mir gestern 43 € von meiner Kreditkarte abgebucht. Ich fordere eine vollständige Rückerstattung. Ich habe die App unmittelbar nach der Zahlung von 1 € gelöscht.',
+    id: "as:7628936087",
+    label: "Іспанська · випадкова підписка",
+    text: "apreté sin querer para hacer una suscripción y ahora no la puedo cancelar me cobraron $49.49 dólares quiero mi dinero de vuelta",
   },
   {
-    label: 'Англійська · де скасувати',
-    text: 'Where do I cancel? How can you can charge per minute if you are sending an offline message? Same rate as if they\'re online? Rip off? Not to mention the the expensive package',
+    id: "gp:6915993b-f13",
+    label: "Німецька · не вдалося скасувати пробний",
+    text: "Ich bin äußerst unzufrieden mit der App, alles hängt und ich konnte mein Test-Abo nicht kündigen... Ich möchte ein refund",
   },
   {
-    label: 'Португальська · не отримав послугу',
-    text: 'Ele não entregou o serviço que eu paguei, quero o dinheiro de volta! O aplicativo trava o tempo todo, nao tem nenhum conteúdo relevante.',
+    id: "as:13425069663",
+    label: "Португальська · не отримав послугу",
+    text: "Ele não entregou o serviço que eu paguei, quero o dinheiro de volta! O aplicativo trava o tempo todo, nao tem nenhum conteúdo relevante.",
   },
   {
-    label: 'Англійська · застосунок не відкривається',
-    text: 'I haven\'t used this app in a while and I tried going into the app. It would exit without loading. It just started doing this issue for me and it still won\'t load. Please help to fix this issue for me so I can use this app without it doing this same issue',
+    id: "gp:ec01520a-736",
+    label: "Іспанська · $1 обернулись на $40",
+    text: "Pague por la prueba 1$ y NUNCA autorize a que me cobren 40$ pasado unos días, hasta había desinstalado la app DEVUELVAN MI DINERO",
   },
   {
-    // Answered in Ukrainian, not in the language it was written in.
-    // A company decision, enforced in app/assist.py rather than left
-    // to the model, and shown here so the rule is visible and not
-    // just asserted in a document nobody opens.
-    label: 'Російська · відповідь буде українською',
-    text: 'Я подписалась на 3 дня бесплатного использования приложения, после чего в тот же день отменила подписку, т.к. приложение выдало некорректные данные в расчете моей карты натальной. Сегодня у меня списали 19 долларов. Верните мои деньги.',
+    id: "as:11690424562",
+    label: "Турецька · 25 ₺ обернулись на 1054 ₺",
+    text: "25 türk lirası yazıyordu ama benden 1054,64 çekilmiş geri iade istiyorum. Türkçe dil desteği olmadığı için anlaşamıyoruz bir türlü.",
+  },
+  {
+    id: "gp:933d17fa-9b3",
+    label: "Португальська · магазин один, текст про інший",
+    text: "Me roubaram 207 reais! Eu não utilizei nenhum serviço. Apenas cheguei no Nebula por curiosidade. Quero meu dinheiro de volta",
+  },
+  {
+    id: "as:9410499825",
+    label: "Французька · не вдається скасувати",
+    text: "Une bonne appli cependant impossible d’annuler mon abonnement j’ai été prélevé 59€ c’est beaucoup trop . Je veux annuler",
+  },
+  {
+    id: "gp:a85982ee-f2b",
+    label: "Арабська · списання без підписки",
+    text: "لقد تم سحب مبلغ من البطاقة لدي ولا اعرف لماذا لم اشترك الا مرة واحدة الرجاء إرجاع المبلغ كان المبلغ ٤٥ دينار أردني لا أعرف لماذا",
+  },
+  {
+    id: "as:13564172721",
+    label: "Корейська · просить повернення",
+    text: "웹에서 결제해놓고 무조건 앱 다운로드해야 결과 볼 수 있고... 귀찮고 어디까지 가나 싶어서 깔아봤는데 결과 나오려면 10분 걸린다길래 각 보여서 그냥 지웁니다. 환불이나 해주든가. 결과도 내놓고 돈이나 받아먹든가.",
+  },
+  {
+    id: "gp:5ad4f47a-8c6",
+    label: "Тайська · автосписання без попередження",
+    text: "ยังไม่ทราบว่าทำไมถึงมีการตัดเงินไปแบบอัตโนมัติ แบบไม่แจ้งล่วงหน้าทั้งที่ยังไม่สมัครใช้บริการอะไร เสียเวลาไปทำบัตรเดบิตใหม่อีกแล้ว",
+  },
+  {
+    id: "gp:0d3c530a-79a",
+    label: "Англійська · «безкоштовний» застосунок",
+    text: "I cant see anything I want without paying and it was so called a free app I just wanna see the results like is it so hard to ask",
   },
 ]

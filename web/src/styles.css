@@ -172,6 +172,8 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 }
 
 .chip:hover { color: var(--text); border-color: var(--violet); background: var(--panel-2); }
+.chip.more { color: var(--accent); border-color: var(--line); background: transparent; }
+.chip.more:hover { color: var(--text); background: var(--panel-2); }
 
 /* ---------- working ---------- */
 
