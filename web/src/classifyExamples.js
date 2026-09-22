@@ -52,10 +52,10 @@ export const CLASSIFY_EXAMPLES = [
     text: "I love how I got to put \"non-binary\" as my gender cause I can't tell if I want to be a girl, or boy. Now on to the main topic It gives me random stuff that I have to \"buy\" and it wants to know where I live? What's up with that??",
   },
   {
-    id: "as:13425069663",
-    label: "Португальська · послугу не надано",
+    id: "gp:83ce12d3-9f5",
+    label: "Французька · доступу так і не дали",
     // nothing_delivered / P3 / refund_and_cancel
-    text: "O pior aplicativo que já usei na minha vida Ele não entregou o serviço que eu paguei, quero o dinheiro de volta! O aplicativo trava o tempo todo, nao tem nenhum conteúdo relevante.",
+    text: "Arnaque complète, je demande d'ailleurs le remboursement de la, somme dépenser puisque je n'ai eu accès à rien de ce que j'ai demandé.... Tout est en anglais et rien ne ressemblait à ma, demande très mauvaise expérience",
   },
   {
     id: "as:12669241957",
